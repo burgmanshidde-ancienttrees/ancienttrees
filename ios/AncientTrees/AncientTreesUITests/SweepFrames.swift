@@ -81,7 +81,7 @@ final class SweepFrames: XCTestCase {
         // where the flow ends had never been measured or photographed once.
         ("own-tree",     ["-tab=0", "-signed-in", "-mine-demo",
                           "-open=mine:00000000-0000-0000-0000-0000000000a1"], nil),
-        ("photo-viewer",  ["-tab=0", "-open=tree:ath_004", "-photo"], nil),
+        ("photo-viewer",  ["-tab=0", "-open=tree:ath_004", "-photo"], "photo-viewer"),
         ("species-pick",  ["-tab=0", "-open=tree:ath_004", "-speciespick"], nil),
         ("directions",   ["-tab=0", "-directions"], nil),
         ("review-ask",   ["-tab=0", "-review-ask"], nil),

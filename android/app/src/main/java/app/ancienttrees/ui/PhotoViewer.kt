@@ -23,6 +23,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.navigationBarsIgnoringVisibility
+import androidx.compose.foundation.layout.statusBarsIgnoringVisibility
+import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.shape.CircleShape
@@ -229,7 +232,11 @@ fun PhotoViewer(photos: List<Photo>, startAt: Int, onClose: () -> Unit) {
                 Column(
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(6.dp),
-                    modifier = Modifier.align(Alignment.BottomCenter).fillMaxWidth().navigationBarsPadding().padding(bottom = 16.dp),
+                    // Above where the navigation bar would be, hidden or not, as the
+                    // iPhone's credit keeps 16 above its home indicator (11 off).
+                    modifier = Modifier.align(Alignment.BottomCenter).fillMaxWidth()
+                        .windowInsetsPadding(androidx.compose.foundation.layout.WindowInsets.navigationBarsIgnoringVisibility)
+                        .padding(bottom = 16.dp),
                 ) {
                     if (photos.size > 1) {
                         Text(

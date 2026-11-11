@@ -149,6 +149,9 @@ struct PhotoViewer: View {
             }
         }
         .statusBarHidden()
+        // A container with the id, so SweepFrames can root the viewer on it and
+        // measure its own controls rather than the tree page under it.
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("photo-viewer")
         .onAppear { at = gallery.indices.contains(startAt) ? startAt : 0 }
         // The same words as the website's sheet (UIStrings photoDelete*).

@@ -7,10 +7,10 @@
   "city-map-full",
   "species-pick",
   "contribute",
-  "feedback"
+  "feedback",
+  "photo-viewer"
  ],
  "no_ios_baseline": {
-  "photo-viewer": "the iPhone's dump holds the tree page under the viewer, not the viewer",
   "collect-voted": "the iPhone's dump has no elements under collect-note-field",
   "collect-ticked": "the iPhone's dump names one element under collect-done; one element has no gaps to measure",
   "collect-compare": "the iPhone's dump names one element under collect-this-is-the-one; one element has no gaps to measure",

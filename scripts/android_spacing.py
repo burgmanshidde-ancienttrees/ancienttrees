@@ -522,6 +522,14 @@ def horizontal(pairs, W):
 def compare_page(pairs, ios_h, ios_els):
     """Gaps between neighbours and heights, for one Android dump."""
     gaps, heights = {}, {}
+    # A name the iPhone's screen carries more than once (a save heart on every
+    # card) cannot say which one it is: a different card order (CI's live feed,
+    # 2026-11-12) paired one card's heart with another's line. Such elements are
+    # left out of gaps and heights; their rows are judged through what is unique.
+    seen = {}
+    for e in ios_els:
+        seen[name_of(e)] = seen.get(name_of(e), 0) + 1
+    pairs = [(a, b) for a, b in pairs if seen.get(name_of(a), 0) <= 1]
     for a, b in pairs:
         heights[name_of(a)] = (a["h"], b["h"])
     for i, (ia, aa) in enumerate(pairs):
