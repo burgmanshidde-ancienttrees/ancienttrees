@@ -11,12 +11,16 @@ on:
       - '.github/workflows/android.yml'
       - 'scripts/android_spacing.py'
       - 'data/ios-frames.json'
+      - 'data/android-spacing-pending.json'
+      - 'data/android-parity.json'
   pull_request:
     paths:
       - 'android/**'
       - '.github/workflows/android.yml'
       - 'scripts/android_spacing.py'
       - 'data/ios-frames.json'
+      - 'data/android-spacing-pending.json'
+      - 'data/android-parity.json'
   workflow_dispatch:
 
 concurrency:
