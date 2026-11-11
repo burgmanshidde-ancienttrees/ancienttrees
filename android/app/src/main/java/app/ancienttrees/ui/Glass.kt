@@ -137,20 +137,22 @@ fun BackCircle(onBack: () -> Unit, modifier: Modifier = Modifier) {
 
 /**
  * iOS 26's soft scroll edge over the top of a page: what lies under the status
- * bar and the buttons is blurred and lightened, strongest at the top and gone
+ * bar is lightly blurred and lightened, strongest at the top and gone
  * by [height]. Without a blur, the ground fading out over the same height.
  */
 @Composable
-fun TopEdge(state: HazeState?, modifier: Modifier = Modifier, height: androidx.compose.ui.unit.Dp = 120.dp) {
+fun TopEdge(state: HazeState?, modifier: Modifier = Modifier, height: androidx.compose.ui.unit.Dp = 64.dp) {
     val ground = Brand.colors.ground
     val base = modifier.fillMaxWidth().height(height)
     if (state != null && GlassAvailable) {
         androidx.compose.foundation.layout.Box(
             base.hazeEffect(state) {
                 backgroundColor = ground
-                blurRadius = 16.dp
+                // Light: the iPhone keeps the photograph sharp and only washes the
+                // status bar's strip (pairs of 2026-11-11, tree and own-tree).
+                blurRadius = 4.dp
                 noiseFactor = 0f
-                tints = listOf(HazeTint(ground.copy(alpha = 0.45f)))
+                tints = listOf(HazeTint(ground.copy(alpha = 0.3f)))
                 progressive = dev.chrisbanes.haze.HazeProgressive.verticalGradient(startIntensity = 1f, endIntensity = 0f)
             },
         )
@@ -158,7 +160,7 @@ fun TopEdge(state: HazeState?, modifier: Modifier = Modifier, height: androidx.c
         androidx.compose.foundation.layout.Box(
             base.background(
                 androidx.compose.ui.graphics.Brush.verticalGradient(
-                    0f to ground.copy(alpha = 0.6f),
+                    0f to ground.copy(alpha = 0.35f),
                     1f to ground.copy(alpha = 0f),
                 ),
             ),
