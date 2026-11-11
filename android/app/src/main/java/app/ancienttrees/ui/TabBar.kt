@@ -101,7 +101,7 @@ private val TAB_TAGS = listOf("tab-map", "tab-discover", "tab-my-trees")
 private val ITEMS = listOf(
     TabItem(R.string.tab_map, Sym.Map, Sym.MapFill),
     TabItem(R.string.tab_discover, Sym.Search, Sym.Search),
-    TabItem(R.string.tab_my_trees, Sym.Eco, Sym.EcoFill),
+    TabItem(R.string.tab_my_trees, Sym.Leaf, Sym.LeafFill),
 )
 
 @Composable

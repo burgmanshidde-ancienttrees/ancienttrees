@@ -392,9 +392,9 @@ private fun PlusRow(city: String) {
             .padding(horizontal = 14.dp)
             .testTag("plus-row"),
     ) {
-        Icon(Sym.StarShineFill, null, tint = brand.moss, modifier = Modifier.size(18.dp))
+        Icon(Sym.SparklesSemibold, null, tint = brand.moss, modifier = Modifier.size(20.dp)) // sparkles at 15 semibold (PlusAsk.swift)
         Text(stringResource(R.string.plus_row), fontFamily = BrandFace, fontWeight = FontWeight.Medium, fontSize = 15.sp, color = brand.ink, modifier = Modifier.weight(1f))
-        Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
+        Icon(Sym.ChevronRightSemibold, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(19.dp))
     }
     if (asking) PlusQuestionSheet(city, "city") { asking = false }
 }
@@ -453,7 +453,7 @@ fun PlusQuestionSheet(city: String, openedFrom: String, onDismiss: () -> Unit) {
     when (step) {
         PlusStep.IDEA -> BrandSheet(
             title = stringResource(R.string.plus_title),
-            icon = Sym.StarShineFill,
+            icon = Sym.Sparkles,
             message = stringResource(R.string.plus_message),
             onDismiss = onDismiss,
             // Skip while the field is empty, so leaving it is plainly allowed; green once there is something.

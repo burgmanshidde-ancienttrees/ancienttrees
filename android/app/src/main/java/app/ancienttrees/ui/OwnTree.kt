@@ -520,7 +520,7 @@ private fun OwnTopButtons(onBack: () -> Unit, onEdit: (EditableField) -> Unit, o
                         },
                     )
                 item(R.string.ot_change_name, Sym.Edit) { onEdit(EditableField.NAME) }
-                item(R.string.ot_change_species, Sym.Eco) { onSpecies() }
+                item(R.string.ot_change_species, Sym.Leaf) { onSpecies() }
                 item(R.string.ot_change_age, Sym.CalendarMonth) { onEdit(EditableField.AGE) }
                 item(R.string.ot_change_girth, Sym.Straighten) { onEdit(EditableField.GIRTH) }
                 HorizontalDivider(color = brand.hairline)

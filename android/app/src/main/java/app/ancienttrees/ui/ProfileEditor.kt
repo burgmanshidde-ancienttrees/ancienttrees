@@ -164,7 +164,8 @@ fun ProfileEditorSheet(account: Account, profiles: Profiles, onDismiss: () -> Un
                 )
             }
             // One card, each row naming itself with the value on the right, as Apple's contact card.
-            Column(Modifier.fillMaxWidth().brandCard(10.dp)) {
+            // An iOS 26 Form section: corners 26.
+            Column(Modifier.fillMaxWidth().brandCard(26.dp)) {
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp).padding(horizontal = 16.dp),
@@ -180,7 +181,7 @@ fun ProfileEditorSheet(account: Account, profiles: Profiles, onDismiss: () -> Un
                         modifier = Modifier.weight(1f),
                         decorationBox = { inner ->
                             Box(contentAlignment = Alignment.CenterEnd) {
-                                if (name.isEmpty()) Text(stringResource(R.string.editor_name_prompt), fontSize = 17.sp, color = brand.inkSoft.copy(alpha = 0.6f))
+                                if (name.isEmpty()) Text(stringResource(R.string.editor_name_prompt), fontSize = 17.sp, color = placeholderGrey())
                                 inner()
                             }
                         },

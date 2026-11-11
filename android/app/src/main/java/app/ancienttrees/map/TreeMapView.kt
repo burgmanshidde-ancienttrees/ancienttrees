@@ -32,7 +32,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.viewinterop.AndroidView
-import androidx.core.graphics.PathParser
 import androidx.compose.ui.graphics.asAndroidPath
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
@@ -627,25 +626,14 @@ private fun pinBitmap(context: Context, shape: String, ticket: Boolean = false):
     paint.strokeWidth = 3 * density
     canvas.drawCircle(centre, centre, centre - 2.5f * density, paint)
 
+    // The silhouette flat and white, 20 points, centred on its own bounds
+    // (TreeMap.pin + SpeciesGlyph: SpeciesMark in 22, drawn into 20).
     val glyph = 20 * density
     paint.style = Paint.Style.FILL
+    paint.color = Color.WHITE
     canvas.save()
     canvas.translate((size - glyph) / 2, (size - glyph) / 2)
-    canvas.scale(glyph / 40f, glyph / 40f)
-    for (part in SpeciesIcons.icons[shape].orEmpty()) {
-        paint.alpha = (part.alpha * 255).toInt()
-        when (part) {
-            is SpeciesIcons.Part.Oval -> canvas.drawOval(RectF(part.left, part.top, part.right, part.bottom), paint)
-            is SpeciesIcons.Part.Shape -> {
-                val path = runCatching { PathParser.createPathFromPathData(part.d) }.getOrNull() ?: continue
-                val m = Matrix()
-                part.rotate?.let { m.setRotate(it[0], it[1], it[2]) }
-                part.translate?.let { m.setTranslate(it[0], it[1]) }
-                path.transform(m)
-                canvas.drawPath(path, paint)
-            }
-        }
-    }
+    canvas.drawPath(SpeciesPath.fitted(shape, glyph, glyph), paint)
     canvas.restore()
     // A TICKET, bottom left (TreeMap.pin, Hidde 2026-08-24/25): a white disc a
     // little bigger than the collected tick, the system's ticket glyph in a light
@@ -657,10 +645,17 @@ private fun pinBitmap(context: Context, shape: String, ticket: Boolean = false):
         paint.alpha = 255
         paint.color = Color.WHITE
         canvas.drawCircle(left + b / 2, top + b / 2, b / 2, paint)
-        val g = 11 * density
+        // ticket.fill at 9 pt bold is about 13 wide and 9.5 tall; the set's ticket
+        // fills 83 percent of its box across: a 12 dp box draws it 10 across inside the 17 disc, as the shots show.
+        val g = 12 * density
         canvas.save()
         canvas.translate(left + (b - g) / 2, top + (b - g) / 2)
-        canvas.scale(g / 24f, g / 24f)
+        // The set draws on 0 -960 960 960 (Symbols.kt), and a path taken out of
+        // its vector leaves the group's move behind: scale the grid, then move it
+        // into view. Scaled as a 24 grid it fell outside the disc, which drew empty
+        // (visual review 2026-11-11).
+        canvas.scale(g / 960f, g / 960f)
+        canvas.translate(0f, 960f)
         paint.color = TICKET_BLUE
         ticketPath()?.let { canvas.drawPath(it, paint) }
         canvas.restore()
@@ -670,7 +665,7 @@ private fun pinBitmap(context: Context, shape: String, ticket: Boolean = false):
 
 private val TICKET_BLUE = Color.rgb(46, 107, 168)
 
-/** Material's confirmation_number glyph as a path in its 24 by 24 box. */
+/** The set's confirmation_number glyph as a path on its own grid (0 -960 960 960). */
 private fun ticketPath(): android.graphics.Path? = runCatching {
     val out = android.graphics.Path()
     fun add(group: androidx.compose.ui.graphics.vector.VectorGroup) {
@@ -748,14 +743,7 @@ private fun minePinBitmap(context: Context): Bitmap {
     val glyph = 20 * density
     canvas.save()
     canvas.translate((size - glyph) / 2, (size - glyph) / 2)
-    canvas.scale(glyph / 40f, glyph / 40f)
-    for (part in SpeciesIcons.icons["broadleaf"].orEmpty()) {
-        paint.alpha = (part.alpha * 255).toInt()
-        when (part) {
-            is SpeciesIcons.Part.Oval -> canvas.drawOval(RectF(part.left, part.top, part.right, part.bottom), paint)
-            is SpeciesIcons.Part.Shape -> PathParser.createPathFromPathData(part.d)?.let { canvas.drawPath(it, paint) }
-        }
-    }
+    canvas.drawPath(SpeciesPath.fitted("broadleaf", glyph, glyph), paint)
     canvas.restore()
     return bitmap
 }

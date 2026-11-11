@@ -26,6 +26,12 @@ OUT = ROOT / "android/app/src/main/java/app/ancienttrees/ui/Symbols.kt"
 CACHE = ROOT / "out/tmp/material-symbols"
 VERSION = "0.48.0"
 URL = "https://cdn.jsdelivr.net/npm/@material-symbols/svg-{w}@{v}/rounded/{name}.svg"
+# The npm package leaves out a few glyphs the set itself still carries (auto_awesome,
+# the set's sparkles, is the one the iPhone's sparkles needs). Those come from
+# Google's own repository of the same set, at a pinned commit, on a 24 grid.
+GH_COMMIT = "10ecc14790612ca8fd164e3f4ffe9c16fc50d5b7"
+GH_URL = ("https://cdn.jsdelivr.net/gh/google/material-design-icons@{c}/symbols/web/{name}/"
+          "materialsymbolsrounded/{file}_24px.svg")
 
 # Kotlin name: (Material Symbols name, filled, weight, mirrors in right-to-left)
 # The SF Symbol each one stands for is named beside it. Weight 400 is SF's
@@ -119,7 +125,52 @@ GLYPHS = {
     "DirectionsWalk": ("directions_walk", False, 400, True),  # figure.walk
     "SendFill": ("send", True, 400, True),  # paperplane.fill
     "Merge": ("merge", False, 400, False),  # arrow.triangle.merge
+    # 2026-11-11 (visual review, icon rows): glyphs closer to the iPhone's SF Symbol.
+    # A set glyph may be turned or flipped to stand as the SF one stands; its
+    # shape is never redrawn. Where the set has no match the nearest one is used
+    # and listed in data/android-parity.json.
+    "Leaf": ("eco", False, 400, False, {"flip": True, "rotate": -25}),  # leaf: the set's leaf, flipped so its tip points up-left and its stem curls out bottom right
+    "LeafFill": ("eco", True, 400, False, {"flip": True, "rotate": -25}),  # leaf.fill
+    "LeafSemibold": ("eco", False, 600, False, {"flip": True, "rotate": -25}),  # leaf at a chip's .caption2.semibold
+    "BookmarkSemibold": ("bookmark", False, 600, False),  # bookmark, chip
+    "VerifiedSemibold": ("verified", False, 600, False),  # checkmark.seal, chip
+    "TicketSemibold": ("confirmation_number", False, 600, False),  # ticket, chip
+    "TurnUpRight": ("reply", False, 400, False, {"flip": True}),  # arrow.turn.up.right: the set's curved reply arrow, turned to point right
+    "TurnUpRightSemibold": ("reply", False, 600, False, {"flip": True}),
+    "Sparkles": ("auto_awesome", False, 400, False, {"src": "gh"}),  # sparkles
+    "SparklesFill": ("auto_awesome", True, 400, False, {"src": "gh"}),  # sparkle (one four-point star in SF; the set has it only with its two small ones)
+    "Building": ("domain", False, 400, False),  # building.2
+    "MapPin": ("keep", True, 400, False),  # mappin: the set's pin on a needle (no ball-headed pin in the set)
+    "CloseBold": ("close", False, 700, False),  # xmark .bold
+    "CheckBold": ("check", False, 700, False),  # checkmark .bold
+    "ChevronRightSemibold": ("chevron_right", False, 600, True),  # chevron.right .semibold
+    "InfoSemibold": ("info", False, 600, False),  # info.circle, heavier
+    "FavoriteSemibold": ("favorite", False, 600, False),  # heart .semibold
+    "AddSemibold": ("add", False, 600, False),  # plus .semibold
+    "AddBold": ("add", False, 700, False),  # plus .bold
+    "BookmarkFillSemibold": ("bookmark", True, 600, False),  # bookmark.fill on a card photo, 15 semibold
+    "ThumbUpSemibold": ("thumb_up", False, 600, False),
+    "ThumbUpFillSemibold": ("thumb_up", True, 600, False),
+    "ThumbDownSemibold": ("thumb_down", False, 600, False),
+    "ThumbDownFillSemibold": ("thumb_down", True, 600, False),
+    "PhotoLibrarySemibold": ("photo_library", False, 600, False),
+    # My trees' gear and Find people: 18 pt .medium (Collect.swift).
+    "SettingsMedium": ("settings", False, 500, False),
+    "SettingsFillMedium": ("settings", True, 500, False),
+    "PersonAddMedium": ("person_add", False, 500, False),
 }
+
+# SheetIconTile draws its symbol at 24 semibold (BrandSheet.swift): every glyph a
+# tile can carry gets a weight-600 twin, and Sym.semibold() hands the tile the twin.
+SEMIBOLD_TWINS = ["Check", "Verified", "VerifiedFill", "Park", "Merge", "Public", "Favorite",
+                  "PhotoCamera", "SendFill", "ImageFill", "Image", "MailFill", "Sparkles",
+                  "SparklesFill", "NearMe", "PhotoCameraFill", "Leaf", "Info", "Bookmark",
+                  "BookmarkFill", "LocationOff", "NearMeDisabled", "Lock", "Delete", "Star",
+                  "PhotoLibrary", "TurnUpRight", "Edit", "MapPin", "Map", "Search", "Add",
+                  "ChatBubble", "Building", "DirectionsWalk"]
+for _n in SEMIBOLD_TWINS:
+    _g = GLYPHS[_n]
+    GLYPHS.setdefault(_n + "Semibold", (_g[0], _g[1], 600, _g[3], *_g[4:]))
 
 NUMBER = re.compile(r"[+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?")
 
@@ -143,7 +194,27 @@ def normalise(d):
     return " ".join(out)
 
 
-def fetch(name, fill, weight):
+def fetch_gh(name, fill, weight):
+    """Google's repository: 24 grid, the weight and fill spelled in the file name."""
+    axes = (f"wght{weight}" if weight != 400 else "") + ("fill1" if fill else "")
+    file = f"{name}_{axes}" if axes else name
+    path = CACHE / "gh" / f"{file}.svg"
+    if not path.exists():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(["curl", "-sfm", "20", "-o", str(path),
+                        GH_URL.format(c=GH_COMMIT, name=name, file=file)], check=True)
+    svg = path.read_text()
+    if 'height="24"' not in svg or 'width="24"' not in svg:
+        raise ValueError(f"{file}: unexpected size")
+    paths = re.findall(r'<path d="([^"]+)"', svg)
+    if not paths:
+        raise ValueError(f"{file}: no path")
+    return [normalise(p) for p in paths]
+
+
+def fetch(name, fill, weight, src="npm"):
+    if src == "gh":
+        return fetch_gh(name, fill, weight)
     file = f"{name}-fill" if fill else name
     path = CACHE / f"w{weight}" / f"{file}.svg"
     if not path.exists():
@@ -175,12 +246,29 @@ def main():
         "/** The app's icons, one set: Material Symbols Rounded, each the glyph closest to the iPhone's SF Symbol. */",
         "object Sym {",
     ]
-    for kt, (name, fill, weight, mirror) in GLYPHS.items():
-        ds = fetch(name, fill, weight)
+    for kt, (name, fill, weight, mirror, *more) in GLYPHS.items():
+        opts = more[0] if more else {}
+        src = opts.get("src", "npm")
+        ds = fetch(name, fill, weight, src)
         args = ", ".join(f'"{d}"' for d in ds)
-        lines.append(f'    /** {name}{" filled" if fill else ""}, weight {weight}. */')
-        lines.append(f'    val {kt}: ImageVector by lazy {{ symbol("{kt}", {str(mirror).lower()}, {args}) }}')
+        how = (", flipped" if opts.get("flip") else "") + (", from Google's repository" if src == "gh" else "")
+        lines.append(f'    /** {name}{" filled" if fill else ""}, weight {weight}{how}. */')
+        if opts or src == "gh":
+            port = "24f" if src == "gh" else "960f"
+            lines.append(f'    val {kt}: ImageVector by lazy {{ symbolTurned("{kt}", {str(mirror).lower()}, {port}, '
+                         f'{str(bool(opts.get("flip"))).lower()}, {float(opts.get("rotate", 0))}f, {args}) }}')
+        else:
+            lines.append(f'    val {kt}: ImageVector by lazy {{ symbol("{kt}", {str(mirror).lower()}, {args}) }}')
     lines += [
+        "",
+        "    /** The weight-600 twin of a glyph a sheet tile carries (SheetIconTile: 24 semibold), else the glyph. */",
+        "    fun semibold(v: ImageVector): ImageVector = when (v.name) {",
+    ]
+    for n in SEMIBOLD_TWINS:
+        lines.append(f'        "{n}" -> {n}Semibold')
+    lines += [
+        "        else -> v",
+        "    }",
         "}",
         "",
         "private fun symbol(name: String, mirror: Boolean, vararg paths: String): ImageVector {",
@@ -188,6 +276,17 @@ def main():
         "    // The set draws on a viewBox of 0 -960 960 960: one group moves it into view.",
         "    b.addGroup(translationY = 960f)",
         "    for (d in paths) b.addPath(addPathNodes(d), fill = SolidColor(Color.Black))",
+        "    b.clearGroup()",
+        "    return b.build()",
+        "}",
+        "",
+        "/** A set glyph turned or flipped about its centre, on the npm grid (960) or Google's repository's (24). */",
+        "private fun symbolTurned(name: String, mirror: Boolean, port: Float, flip: Boolean, rotate: Float, vararg paths: String): ImageVector {",
+        "    val b = ImageVector.Builder(name, 24.dp, 24.dp, port, port, autoMirror = mirror)",
+        "    b.addGroup(rotate = rotate, pivotX = port / 2, pivotY = port / 2, scaleX = if (flip) -1f else 1f)",
+        "    if (port == 960f) b.addGroup(translationY = 960f)",
+        "    for (d in paths) b.addPath(addPathNodes(d), fill = SolidColor(Color.Black))",
+        "    if (port == 960f) b.clearGroup()",
         "    b.clearGroup()",
         "    return b.build()",
         "}",

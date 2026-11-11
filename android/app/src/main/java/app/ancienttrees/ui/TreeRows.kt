@@ -47,9 +47,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.res.stringResource
 import app.ancienttrees.R
-import androidx.core.graphics.PathParser
 import app.ancienttrees.feed.Tree
 import app.ancienttrees.map.SpeciesIcons
+import app.ancienttrees.map.SpeciesPath
 
 /** What a tree's marks read and what the bookmark does, from the screen that owns the account. */
 data class TreeMarks(
@@ -73,44 +73,38 @@ fun leafTile(): Brush {
 @Composable
 fun SpeciesMark(species: String, color: Color, modifier: Modifier = Modifier) {
     val shape = remember(species) { SpeciesIcons.archetype(species.substringBefore("(").trim()) }
-    val parts = SpeciesIcons.icons[shape].orEmpty()
+    // One path, one colour, centred on its own bounds (SpeciesShape): the iPhone
+    // never draws the website's half-transparent back layers.
     Canvas(modifier) {
-        scale(size.width / 40f, size.height / 40f, pivot = androidx.compose.ui.geometry.Offset.Zero) {
-            for (part in parts) {
-                val c = color.copy(alpha = color.alpha * part.alpha)
-                when (part) {
-                    is SpeciesIcons.Part.Oval -> drawOval(
-                        c,
-                        topLeft = androidx.compose.ui.geometry.Offset(part.left, part.top),
-                        size = androidx.compose.ui.geometry.Size(part.right - part.left, part.bottom - part.top),
-                    )
-                    is SpeciesIcons.Part.Shape -> {
-                        val p = runCatching { PathParser.createPathFromPathData(part.d) }.getOrNull() ?: continue
-                        val m = android.graphics.Matrix()
-                        part.rotate?.let { m.setRotate(it[0], it[1], it[2]) }
-                        part.translate?.let { m.setTranslate(it[0], it[1]) }
-                        p.transform(m)
-                        drawPath(p.asComposePath(), c)
-                    }
-                }
-            }
-        }
+        drawPath(SpeciesPath.fitted(shape, size.width, size.height).asComposePath(), color)
     }
 }
 
-/** "Silky Oak" or "Silky Oak · 100 years". */
+/**
+ * "Silky Oak · 100 years" (TreeMetaLine.swift): three texts 5 apart, the dot in
+ * the tertiary shade of the line's colour, 13 everywhere (the iPhone's own .font(13)
+ * inside wins over the card's 12 outside). The name gives way first, so a long
+ * species truncates and the age stays whole: "Eastern Cape Giant C... · 300 years".
+ */
 @Composable
-fun TreeMetaLine(tree: Tree, size: Int = 13, modifier: Modifier = Modifier) {
+fun TreeMetaLine(tree: Tree, @Suppress("UNUSED_PARAMETER") size: Int = 13, modifier: Modifier = Modifier) {
     val brand = Brand.colors
     val age = tree.cardAge
-    Text(
-        if (age != null) "${tree.commonName}  ·  $age" else tree.commonName,
-        fontSize = size.sp,
-        color = brand.inkSoft,
-        maxLines = 1,
-        overflow = TextOverflow.Ellipsis,
-        modifier = modifier,
-    )
+    // One line to a screen reader, as before: "Silky Oak · 100 years".
+    Row(modifier.semantics(mergeDescendants = true) { }, horizontalArrangement = Arrangement.spacedBy(5.dp), verticalAlignment = Alignment.CenterVertically) {
+        Text(
+            tree.commonName,
+            fontSize = 13.sp,
+            color = brand.inkSoft,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
+            modifier = Modifier.weight(1f, fill = false),
+        )
+        if (age != null) {
+            Text("·", fontSize = 13.sp, color = brand.inkSoft.copy(alpha = brand.inkSoft.alpha * 0.3f), maxLines = 1)
+            Text(age, fontSize = 13.sp, color = brand.inkSoft, maxLines = 1, softWrap = false)
+        }
+    }
 }
 
 /** "Highlights", "All 58 trees": the list's section heads. */
@@ -155,8 +149,9 @@ fun SaveMark(tree: Tree, onPhoto: Boolean) {
             .semantics { contentDescription = label },
     ) {
         if (onPhoto) {
-            Box(Modifier.size(33.dp).background(Color.Black.copy(alpha = 0.38f), CircleShape), contentAlignment = Alignment.Center) {
-                Icon(if (on) Sym.BookmarkFill else Sym.Bookmark, null, tint = Color.White, modifier = Modifier.size(17.dp))
+            // 15 semibold in a 0.38 black disc, padded 9 (SaveHeart .onPhoto): 20 dp, a 35 disc.
+            Box(Modifier.size(35.dp).background(Color.Black.copy(alpha = 0.38f), CircleShape), contentAlignment = Alignment.Center) {
+                Icon(if (on) Sym.BookmarkFillSemibold else Sym.BookmarkSemibold, null, tint = Color.White, modifier = Modifier.size(20.dp))
             }
         } else {
             Icon(
@@ -254,8 +249,11 @@ fun HighlightCard(tree: Tree, onOpen: () -> Unit) {
             Box(Modifier.align(Alignment.TopEnd).padding(2.dp)) { SaveMark(tree, onPhoto = true) }
             if (tree.id in marks.collected) Box(Modifier.align(Alignment.TopStart).padding(8.dp)) { SeenTag() }
         }
+        // .lineLimit(2, reservesSpace: true): two lines held, the name wrapped at
+        // words. The old trailing "\n" made a third line Compose had to ellipsize,
+        // and it clipped "The Twin Planes of the El|even" mid-word (2026-11-11).
         Text(
-            tree.name + "\n",
+            tree.name,
             fontFamily = BrandFace,
             fontWeight = FontWeight.Bold,
             fontSize = 15.sp,
@@ -288,7 +286,7 @@ fun MineTile(s: app.ancienttrees.account.OwnSighting, mine: app.ancienttrees.acc
             Box(Modifier.align(Alignment.TopStart).padding(8.dp)) { SeenTag() }
         }
         Text(
-            s.name + "\n",
+            s.name,
             fontFamily = BrandFace,
             fontWeight = FontWeight.Bold,
             fontSize = 15.sp,
@@ -345,9 +343,9 @@ fun TreeCard(
                     }
                 })
             } else {
-                Column(Modifier.align(Alignment.Center), horizontalAlignment = Alignment.CenterHorizontally) {
+                // VStack(spacing: 8): the mark, the name and the note all 8 apart (TreeCard.swift noPhoto).
+                Column(Modifier.align(Alignment.Center), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     SpeciesMark(tree.species, Color.White.copy(alpha = 0.9f), Modifier.size(66.dp))
-                    Spacer(Modifier.height(8.dp))
                     Text(tree.commonName, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = Color.White)
                     Text(stringResource(R.string.no_photo_yet), fontSize = 11.sp, color = Color.White.copy(alpha = 0.75f))
                 }

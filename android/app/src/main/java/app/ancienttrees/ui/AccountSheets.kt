@@ -63,7 +63,7 @@ import kotlinx.coroutines.launch
 
 @Composable
 private fun SheetTitle(text: String) {
-    Text(text, fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 26.sp, lineHeight = 31.sp)
+    Text(text, fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 26.sp, lineHeight = 31.sp, style = headlineStyle())
 }
 
 /** Signed in: who, sign out, delete. Each step that cannot be undone asks first. */

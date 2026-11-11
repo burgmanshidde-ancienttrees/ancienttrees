@@ -63,8 +63,10 @@ fun PinPicker(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.align(Alignment.Center).offset(y = (-20).dp),
         ) {
-            Icon(Sym.LocationOnFill, null, tint = Brand.colors.moss, modifier = Modifier.size(38.dp))
-            Box(Modifier.offset(y = (-4).dp).size(6.dp).shadow(2.dp, CircleShape).background(Brand.colors.moss, CircleShape))
+            // mappin at 34 semibold: a pin on a needle, never the teardrop. The set's
+            // own needle pin is keep (no ball-headed pin in it; data/android-parity.json).
+            Icon(Sym.MapPin, null, tint = Brand.colors.moss, modifier = Modifier.size(45.dp))
+            Box(Modifier.offset(y = (-3).dp).size(6.dp).shadow(2.dp, CircleShape).background(Brand.colors.moss, CircleShape))
         }
     }
 }

@@ -638,6 +638,7 @@ private fun SheetTitleText(text: String) {
         lineHeight = 31.sp,
         color = Brand.colors.ink,
         textAlign = TextAlign.Center,
+        style = headlineStyle(),
         modifier = Modifier.padding(horizontal = 18.dp).semantics { heading() },
     )
 }
@@ -836,7 +837,8 @@ private fun IdentifyStep(
                             .semantics { contentDescription = label }
                             .testTag("collect-compare-$i"),
                     ) {
-                        Icon(Sym.Info, null, tint = brand.moss, modifier = Modifier.size(22.dp))
+                        // info.circle at 20 (CollectSheet.swift:961).
+                        Icon(Sym.Info, null, tint = brand.moss, modifier = Modifier.size(27.dp))
                     }
                 }
             }
@@ -1065,11 +1067,12 @@ private fun WorthTheTripAsk(t: Tree, vote: String, host: CollectHost, modifier: 
             for ((value, label) in listOf("up" to R.string.cf_worth_yes, "down" to R.string.cf_worth_no)) {
                 val chosen = vote == value
                 val text = stringResource(label)
+                // hand.thumbsup / down at 20 semibold (WorthTheTripAsk).
                 val icon = when {
-                    value == "up" && chosen -> Sym.ThumbUpFill
-                    value == "up" -> Sym.ThumbUp
-                    chosen -> Sym.ThumbDownFill
-                    else -> Sym.ThumbDown
+                    value == "up" && chosen -> Sym.ThumbUpFillSemibold
+                    value == "up" -> Sym.ThumbUpSemibold
+                    chosen -> Sym.ThumbDownFillSemibold
+                    else -> Sym.ThumbDownSemibold
                 }
                 Box(
                     contentAlignment = Alignment.Center,
@@ -1092,7 +1095,7 @@ private fun WorthTheTripAsk(t: Tree, vote: String, host: CollectHost, modifier: 
                         .semantics { contentDescription = text }
                         .testTag("worth-the-trip-$value"),
                 ) {
-                    Icon(icon, null, tint = if (chosen) brand.moss else brand.ink, modifier = Modifier.size(22.dp))
+                    Icon(icon, null, tint = if (chosen) brand.moss else brand.ink, modifier = Modifier.size(27.dp))
                 }
             }
         }

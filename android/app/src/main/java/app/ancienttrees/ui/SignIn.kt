@@ -178,7 +178,7 @@ private fun Ask(account: Account, reason: SignInReason) {
             Spacer(Modifier.height(8.dp))
             Text(
                 headline(reason), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 26.sp,
-                lineHeight = 31.sp, color = brand.ink, textAlign = TextAlign.Center,
+                lineHeight = 31.sp, color = brand.ink, textAlign = TextAlign.Center, style = headlineStyle(),
             )
             Text(detail(reason), fontSize = 15.sp, color = brand.inkSoft, textAlign = TextAlign.Center)
         }
@@ -188,7 +188,7 @@ private fun Ask(account: Account, reason: SignInReason) {
             // A custom Sign in with Apple button, as the iPhone's (SignIn.swift; Apple's HIG
             // allows their logo, "Continue with Apple", black or white): loud, first.
             SignInPill(stringResource(R.string.signin_apple), loud = true, enabled = !working, tag = "signin-apple",
-                mark = { Icon(AppleLogo, null, Modifier.size(18.dp), tint = LocalContentColor.current) }) { account.openApple(context) }
+                mark = { Icon(AppleLogo, null, Modifier.size(22.dp), tint = LocalContentColor.current) }) { account.openApple(context) }
             SignInPill(stringResource(R.string.signin_google), loud = false, enabled = !working, tag = "signin-google",
                 mark = { Image(GoogleG, null, Modifier.size(18.dp)) }) { account.openGoogle(context) }
             if (!emailOpen) {
@@ -263,7 +263,7 @@ private fun CheckYourEmail(account: Account, to: String) {
         Spacer(Modifier.height(8.dp))
         Text(
             stringResource(R.string.signin_check_title), fontFamily = BrandFace, fontWeight = FontWeight.Bold,
-            fontSize = 26.sp, lineHeight = 31.sp, color = brand.ink, textAlign = TextAlign.Center,
+            fontSize = 26.sp, lineHeight = 31.sp, color = brand.ink, textAlign = TextAlign.Center, style = headlineStyle(),
         )
         Text(stringResource(R.string.signin_check_sub), fontSize = 15.sp, color = brand.inkSoft, textAlign = TextAlign.Center)
     }

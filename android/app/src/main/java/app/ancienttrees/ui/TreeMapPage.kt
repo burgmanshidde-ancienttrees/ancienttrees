@@ -59,7 +59,7 @@ fun TreeMapPage(tree: Tree, catalogue: Catalogue, onBack: () -> Unit, onOpen: (T
                     .clickable(role = Role.Button) { walkTo(context, tree.lat, tree.lng) }
                     .semantics { contentDescription = take },
             ) {
-                Icon(Sym.TurnRight, null, tint = brand.moss, modifier = Modifier.size(22.dp))
+                Icon(Sym.TurnUpRight, null, tint = brand.moss, modifier = Modifier.size(22.dp))
             }
         }
         TreeMapView(

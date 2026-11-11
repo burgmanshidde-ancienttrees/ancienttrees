@@ -355,8 +355,8 @@ private fun SettingsGear(progress: Float, onClick: () -> Unit, modifier: Modifie
             .semantics { contentDescription = label },
         contentAlignment = Alignment.Center,
     ) {
-        Icon(Sym.Settings, null, tint = brand.ink, modifier = Modifier.size(22.dp).graphicsLayer { alpha = 1f - progress })
-        Icon(Sym.SettingsFill, null, tint = brand.ink, modifier = Modifier.size(22.dp).graphicsLayer { alpha = progress })
+        Icon(Sym.SettingsMedium, null, tint = brand.ink, modifier = Modifier.size(24.dp).graphicsLayer { alpha = 1f - progress })
+        Icon(Sym.SettingsFillMedium, null, tint = brand.ink, modifier = Modifier.size(24.dp).graphicsLayer { alpha = progress })
     }
 }
 
@@ -512,7 +512,7 @@ private fun WhoRow(signedIn: Boolean, email: String?, mine: MyTrees, actions: My
                     .semantics { contentDescription = label },
                 contentAlignment = Alignment.Center,
             ) {
-                Icon(Sym.PersonAdd, null, tint = brand.ink, modifier = Modifier.size(22.dp))
+                Icon(Sym.PersonAddMedium, null, tint = brand.ink, modifier = Modifier.size(24.dp))
             }
         }
     }
@@ -816,7 +816,7 @@ private fun Mission(catalogue: Catalogue, origin: Here, located: Boolean, wishli
             )
             Text(stringResource(R.string.mt_mission_body), fontSize = 15.sp, color = brand.inkSoft)
             TreeCard(t, onOpen = { actions.openTree(t) })
-            SheetButtonView(SheetButton(stringResource(R.string.mt_show_way), SheetKind.SECONDARY, Sym.TurnRight) { actions.openTree(t) })
+            SheetButtonView(SheetButton(stringResource(R.string.mt_show_way), SheetKind.SECONDARY, Sym.TurnUpRight) { actions.openTree(t) })
         }
     } else {
         Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {

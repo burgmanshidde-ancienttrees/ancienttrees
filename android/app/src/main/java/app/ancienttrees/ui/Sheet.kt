@@ -9,6 +9,8 @@
 
 package app.ancienttrees.ui
 
+import androidx.compose.ui.graphics.TransformOrigin
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.ColumnScope
@@ -145,7 +147,20 @@ fun AppSheet(
     }
     ModalBottomSheet(
         onDismissRequest = onDismissRequest,
-        modifier = if (floating) modifier.padding(start = 8.dp, end = 8.dp, bottom = 10.dp) else modifier,
+        // SCALED, NOT NARROWED (visual review 2026-11-11): iOS 26 lays the fitted
+        // sheet out at the screen's full width and draws it smaller, so it stands
+        // 8 in from each side with everything in it about 4 percent smaller: the
+        // review-ask tile measures 53 for its 56, the sign-in title 258 for the
+        // 271 Core Text sets at 26 pt, while titles outside a sheet match to 1 dp.
+        // Laid out narrower, as before, the same words wrapped elsewhere and the
+        // type read 4 to 5 percent big. 10 above the bottom, as measured.
+        modifier = if (floating) modifier.graphicsLayer {
+            val s = (size.width - 16.dp.toPx()) / size.width
+            scaleX = s
+            scaleY = s
+            transformOrigin = TransformOrigin(0.5f, 1f)
+            translationY = -10.dp.toPx()
+        } else modifier,
         shape = if (floating) RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp, bottomStart = 36.dp, bottomEnd = 36.dp)
         else RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp),
         sheetState = sheetState,

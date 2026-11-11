@@ -21,6 +21,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-11 session: Android's icons and type as the iPhone's
+
+What changed in the Android app (the review's icon and type rows, out/parity-feel/visual-review-2026-11-11.md):
+- Sheets: iOS 26 draws a fitted sheet at full width and scaled about 4 percent smaller; Android now does the same (Sheet.kt). That was the "Gabarito 4 percent too wide": outside sheets the titles already matched to 1 dp. Text breaks as Apple's does: a two-line text never ends on one word ("Are you enjoying / Ancient Trees?", "...and the / Privacy notice."), a longer one may.
+- Species silhouettes are flat and one-tone, as the iPhone draws them; the wingnut no longer reads as a weeping crown. The ticket badge on paid-entry pins draws again (its glyph was off the disc).
+- Glyphs: the My trees leaf, curved directions arrow, outline sparkles for Plus, the early adopter's sparkle, an empty speech bubble for Send feedback, the needle pin in the pin picker, building icon in search, the round flat flags (the iPhone's flag-icons set), and sizes and weights read from the Swift (chips, card bookmark, close cross, tile glyphs, sheet buttons, tree page camera and thumbs, season tiles, Settings rows and chevrons, gear and Find people).
+- Type: search sets only the typed letters heavy, cultivar names upright, card meta lines 13 with the faint dot and the species giving way first, no more mid-word clipping of two-line card titles, navigation titles in Gabarito, Form sheets on the system's cool grey with 26 corners and the system's placeholder grey.
+
+Not changed, on purpose: the My trees gear still fills as the sheet rises. The Swift does that (Hidde, 2026-10-08); the iPhone frames show it outline only because the progress never reaches the button there, an iPhone bug.
+
 ## 2026-11-11 session: photographs sent from the website never reached the inbox
 
 - **Broken since 2026-09-23, fixed:** the website's Add photo inserted its sightings row without `shared`, the production column default is false, and the inbox and the photos page read shared rows only. So the only two photographs ever sent from a tree page (Padua 11-01, Lisbon 11-10) sat unseen, behind a "we look at every photograph" promise. add-photo-js.ts now sends `shared: true` as the app does; qa `check_web_add_photo_is_shared()` guards it (fails without the fix, checked); escaped bug ESC-2026-11-11-photographs-sent-from-a-tree-page-on-the, caught by that check. Live with the next deploy.

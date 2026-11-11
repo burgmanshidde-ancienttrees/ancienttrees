@@ -754,7 +754,8 @@ private fun SearchField(place: String?, onOpen: () -> Unit, onClear: () -> Unit,
                     .semantics { contentDescription = "Clear" },
             ) {
                 Box(Modifier.size(24.dp).background(brand.surfaceMuted, CircleShape), contentAlignment = Alignment.Center) {
-                    Icon(Sym.Close, null, tint = brand.inkSoft, modifier = Modifier.size(15.dp))
+                    // xmark at 11 bold in the muted disc (MapTab.swift leavePlace).
+                    Icon(Sym.CloseBold, null, tint = brand.inkSoft, modifier = Modifier.size(15.dp))
                 }
             }
         }
@@ -777,10 +778,11 @@ private fun FilterRow(
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         modifier = modifier.fillMaxWidth().horizontalScroll(rememberScrollState()).padding(horizontal = 16.dp),
     ) {
-        FilterChip("Want to visit", Sym.Bookmark, filters.favouritesOnly, onFavourites)
-        FilterChip("Collected", Sym.Verified, filters.collectedOnly, onCollected)
-        FilterChip(filters.species ?: "Species", Sym.Eco, filters.species != null, onSpecies)
-        FilterChip("Free to visit", Sym.ConfirmationNumber, filters.freeOnly, onFree)
+        // The iPhone's chip glyphs are .caption2.weight(.semibold) (FilterChip.swift).
+        FilterChip("Want to visit", Sym.BookmarkSemibold, filters.favouritesOnly, onFavourites)
+        FilterChip("Collected", Sym.VerifiedSemibold, filters.collectedOnly, onCollected)
+        FilterChip(filters.species ?: "Species", Sym.LeafSemibold, filters.species != null, onSpecies)
+        FilterChip("Free to visit", Sym.TicketSemibold, filters.freeOnly, onFree)
     }
 }
 
@@ -804,7 +806,8 @@ fun FilterChip(label: String, icon: ImageVector?, on: Boolean, onClick: () -> Un
                 .then(if (on) Modifier else Modifier.border(1.dp, brand.hairline, RoundedCornerShape(50)))
                 .padding(horizontal = 12.dp, vertical = 8.dp),
         ) {
-            if (icon != null) Icon(icon, null, tint = if (on) Color.White else brand.ink, modifier = Modifier.size(13.dp))
+            // .caption2 is 11 pt: 15 dp of the set's 24 grid draws the glyph as tall (SF pt x 4/3).
+            if (icon != null) Icon(icon, null, tint = if (on) Color.White else brand.ink, modifier = Modifier.size(15.dp))
             Text(label, fontFamily = BrandFace, fontWeight = FontWeight.Medium, fontSize = 13.sp, color = if (on) Color.White else brand.ink)
         }
     }
@@ -827,7 +830,8 @@ private fun MapPill(onClick: () -> Unit) {
             .background(brand.ground.copy(alpha = 0.96f), RoundedCornerShape(50))
             .padding(horizontal = 18.dp, vertical = 11.dp),
     ) {
-        Icon(Sym.MapFill, null, tint = brand.ink, modifier = Modifier.size(18.dp))
+        // Label("Map", systemImage: "map.fill") at .brand(15, .bold): the glyph at 15 pt.
+        Icon(Sym.MapFill, null, tint = brand.ink, modifier = Modifier.size(20.dp))
         Text("Map", fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 15.sp, color = brand.ink)
     }
 }

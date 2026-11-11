@@ -624,7 +624,8 @@ private fun AddPhotoButton(onClick: () -> Unit) {
             .semantics { contentDescription = label }
             .padding(horizontal = 14.dp),
     ) {
-        Icon(Sym.PhotoCameraFill, null, tint = brand.onMoss, modifier = Modifier.size(16.dp))
+        // Label("Add a photo", systemImage: "camera.fill") at .subheadline.weight(.semibold): 15 pt.
+        Icon(Sym.PhotoCameraFillSemibold, null, tint = brand.onMoss, modifier = Modifier.size(20.dp))
         Text(stringResource(R.string.add_a_photo), fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = brand.onMoss)
     }
 }
@@ -650,7 +651,8 @@ private fun AddPhotoPill(enabled: Boolean, onClick: () -> Unit) {
             horizontalArrangement = Arrangement.spacedBy(6.dp),
             modifier = Modifier.height(36.dp).background(brand.mossTint, CircleShape).padding(horizontal = 14.dp),
         ) {
-            Icon(Sym.PhotoCamera, null, tint = brand.moss, modifier = Modifier.size(16.dp))
+            // camera at 14 semibold (addPhotoRow).
+            Icon(Sym.PhotoCameraSemibold, null, tint = brand.moss, modifier = Modifier.size(19.dp))
             Text(stringResource(R.string.add_a_photo), fontSize = 14.sp, fontWeight = FontWeight.SemiBold, color = brand.moss)
         }
     }
@@ -825,7 +827,8 @@ private fun WorthItButton(tree: Tree, votes: MyVotes, counts: VoteCounts, signed
             .semantics { contentDescription = label },
     ) {
         val tint = if (cast) brand.moss else brand.ink
-        Icon(if (cast) Sym.ThumbUpFill else Sym.ThumbUp, null, tint = tint, modifier = Modifier.size(15.dp))
+        // WorthItButton(compact: true): hand.thumbsup at 13 semibold.
+        Icon(if (cast) Sym.ThumbUpFillSemibold else Sym.ThumbUpSemibold, null, tint = tint, modifier = Modifier.size(17.dp))
         counts.up(tree.id)?.let { n ->
             Text("$n", fontSize = 15.sp, color = tint, textDecoration = TextDecoration.Underline)
         }
@@ -1090,11 +1093,12 @@ private fun SeasonsRow(tree: Tree, onOpen: (Int) -> Unit, onAdd: () -> Unit) {
                         ) {
                             if (isNow) {
                                 Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(3.dp)) {
-                                    Icon(Sym.PhotoCamera, null, tint = brand.moss, modifier = Modifier.size(22.dp))
+                                    // camera and plus at 20 semibold (seasonTiles).
+                                    Icon(Sym.PhotoCameraSemibold, null, tint = brand.moss, modifier = Modifier.size(27.dp))
                                     Text(stringResource(R.string.season_now), fontSize = 12.sp, fontWeight = FontWeight.Bold, color = brand.moss)
                                 }
                             } else {
-                                Icon(Sym.Add, null, tint = brand.inkSoft.copy(alpha = 0.7f), modifier = Modifier.size(22.dp))
+                                Icon(Sym.AddSemibold, null, tint = brand.inkSoft.copy(alpha = 0.7f), modifier = Modifier.size(27.dp))
                             }
                         }
                         Text(
@@ -1270,7 +1274,7 @@ private fun NoteCard(body: String, date: java.time.Instant, name: String, initia
                 when {
                     avatar != null -> RemoteImage(avatar, null, Modifier.fillMaxSize(), placeholder = false)
                     initial != null -> Text(initial.uppercase(), fontFamily = BrandFace, fontWeight = FontWeight.Black, fontSize = 12.sp, color = brand.onMoss)
-                    else -> Icon(Sym.EcoFill, null, tint = brand.moss, modifier = Modifier.size(14.dp))
+                    else -> Icon(Sym.LeafFill, null, tint = brand.moss, modifier = Modifier.size(14.dp))
                 }
             }
             Text(name, fontSize = 13.sp, fontWeight = FontWeight.SemiBold, color = brand.ink, maxLines = 1, modifier = Modifier.weight(1f))
@@ -1548,11 +1552,11 @@ private fun ActionBar(
             val take = stringResource(R.string.take_me_there)
             if (standingHere) {
                 BigButton(collectLabel, collectIcon, Modifier.weight(1f), onCollect)
-                BarCircle(Sym.TurnRight, take, onClick = onDirections)
+                BarCircle(Sym.TurnUpRight, take, onClick = onDirections)
             } else {
                 BigButton(
                     if (kmAway != null) stringResource(R.string.take_me_there_far, farLabel(kmAway)) else take,
-                    Sym.TurnRightSemibold,
+                    Sym.TurnUpRightSemibold,
                     Modifier.weight(1f),
                     onDirections,
                 )
