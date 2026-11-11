@@ -1,6 +1,24 @@
 {
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
+    "2026-11-11": [
+      {
+        "date": "2026-11-11",
+        "kind": "write",
+        "target": "new-york-2 + new-york-3",
+        "tokens": 60000,
+        "trees": 1,
+        "note": "38 of 39 already live; nyc_094 checked by hand (not a duplicate of nyc_003) and shipped as nyc_144. Token count is an estimate."
+      },
+      {
+        "date": "2026-11-11",
+        "kind": "write",
+        "target": "chicago",
+        "tokens": 30000,
+        "trees": 0,
+        "note": "No-op: chi_040 to chi_044 and all 28 in chicago-verified.json already live; research files stale. Token count is an estimate."
+      }
+    ],
     "2026-11-10": [
       {
         "date": "2026-11-10",

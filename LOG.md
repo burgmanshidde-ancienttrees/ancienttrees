@@ -11,6 +11,10 @@
 
 <!-- archive-index -->
 
+## 2026-11-11 night run (window from 01:40 UTC)
+
+Rungs 1 to 3: no reader photos or notes waiting; health.py's only finding is that REVIEW.md is 2 days old (`gh workflow run review.yml` refused from the runner, HTTP 403) and one new web error type ("maplibregl is not defined", 1 report, 1 page, below the red threshold). Rung 5, write lane: New York merged 1 tree (nyc_144, the Pagoda Tree by the Camperdown Elm, no photo, app-only under APP FIRST). The shelf's "awaiting a writer: 392" is mostly stale: 38 of 39 New York trees and all Chicago trees were already live, so the Chicago pass wrote nothing. For Hidde: prepare.py's awaiting-a-writer count overstates the shelf; the research files passcheck calls stale could be cleaned up. Not done: a verify pass on a staged Portugal, Germany or Austria city.
+
 ## 2026-11-10 session: build 42's map sheet, the Airbnb way, on main (PR 40)
 
 - **What changed in the product:** the map's list, as Hidde decided on 11-08. At full height it is the page: no grip, no empty count strip, the list starts right under the search field (the sheet now covers the map behind the field too), and the floating Map pill is the way back. The pill drops the list to a new lowest stop where only the count bar stays ("22 trees") and the tab bar hides, so the map has the screen; a tap or a swipe on the bar brings both back. The opening peek (count plus the top of the first photo, his 08-22 ruling) is unchanged, so the tab bar is there at launch. Every city and country map is the map tab, so they follow; My trees keeps its stops. /explore on a phone drops the same strip (sheet reaches the bar, grip and count go) and gains the Map pill in all eight languages (UIStrings.mapPill). CONVENTIONS.md "A results list over a map, Airbnb's way".
