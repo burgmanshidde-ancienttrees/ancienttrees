@@ -2,14 +2,18 @@
 // MapWithSheet.swift, where every ruling behind these numbers is written down.
 //
 // An overlay in the screen rather than a presentation, so the tab bar stays
-// visible under it (Google Maps). Four stops: peek 168, card 400 (or the fitted
-// height of one tapped tree), half 52 percent, full. THE ARBITRATION is the
+// visible under it (Google Maps). Stops: peek 168, card 400 (or the fitted
+// height of one tapped tree), half 52 percent, full, and on the map tab's results
+// list (build 42, Airbnb's way) the bar below them: the grip and the count, with
+// the tab bar gone; there, full is the page under the search field, with no grip
+// and no count. THE ARBITRATION is the
 // iPhone's: below full height the sheet moves and the list does not scroll; at
 // full the list scrolls; at full with the list at its top, dragging down moves
 // the sheet again. A drag cancels the tap it started on (UIScrollView's rule,
 // which Compose's scrollable gives for free). At peek the content is a preview:
-// a tap raises the sheet to half and opens nothing. On release the flick is
-// projected and the nearest stop taken (Designing Fluid Interfaces, WWDC18).
+// a tap raises the sheet to half and opens nothing. A drag starts after 18 points
+// (DragGesture(minimumDistance: 18)); on release the flick is projected and the
+// nearest stop taken (predictedEndTranslation, Designing Fluid Interfaces, WWDC18).
 //
 // ANDROID-FORCED: no system material blur, so the sheet is the ground at 96
 // percent (data/android-parity.json "Glass behind floating bars").
@@ -71,9 +75,11 @@ import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 import kotlin.math.abs
 
-enum class SheetHeight { PEEK, CARD, HALF, FULL }
+enum class SheetHeight { BAR, PEEK, CARD, HALF, FULL }
 
 object SheetStops {
+    /** Until the header has been measured (SheetHeight.bar's fallback). */
+    val BAR = 80.dp
     val PEEK = 168.dp
     val CARD = 400.dp
     const val HALF = 0.52f
@@ -118,6 +124,8 @@ fun MapSheet(
      * back to half. Null keeps the plain grabber (the map tab).
      */
     pageClose: (() -> Unit)? = null,
+    /** BottomSheet's sheetResults (build 42): the bar stop, and full as the page under the field. */
+    results: Boolean = false,
     header: @Composable () -> Unit,
     content: @Composable () -> Unit,
 ) {
@@ -128,17 +136,26 @@ fun MapSheet(
     val scroll = rememberScrollState()
     var headerBottom by remember { mutableFloatStateOf(0f) }
     var contentHeight by remember { mutableFloatStateOf(0f) }
+    var headerHeight by remember { mutableFloatStateOf(0f) }
     val anim = remember { Animatable(-1f) }
     val brand = Brand.colors
+    // DragGesture(minimumDistance: 18): Compose's touch slop is already behind us
+    // when a drag arrives, so what is left of the 18 is held back here.
+    val slop = androidx.compose.ui.platform.LocalViewConfiguration.current.touchSlop
+    val holdBack = with(density) { 18.dp.toPx() } - slop
 
     BoxWithConstraints(modifier.fillMaxSize()) {
         val total = constraints.maxHeight.toFloat()
         val visible = total - bottom - top
-        val page = visible + top - fullInset
+        val page = visible + top - (if (results) 0f else fullInset)
         val barPx = with(density) { (barDepth + 8.dp).toPx() }
         val halfPts = visible * SheetStops.HALF
         val isLocked = locked || cardFits
         fun stop(s: SheetHeight): Float = when (s) {
+            // The grip and the count, measured (BottomSheet: 44 + headerHeight + 6).
+            SheetHeight.BAR -> with(density) {
+                if (headerHeight > 0) 44.dp.toPx() + headerHeight + 6.dp.toPx() else SheetStops.BAR.toPx()
+            }
             SheetHeight.PEEK -> with(density) { SheetStops.PEEK.toPx() }
             SheetHeight.CARD ->
                 if (cardFits && contentHeight > 0) minOf(headerBottom + contentHeight + barPx, halfPts)
@@ -152,7 +169,8 @@ fun MapSheet(
         LaunchedEffect(target) {
             if (anim.value < 0) anim.snapTo(target) else anim.animateTo(target, SheetStops.motion)
         }
-        val h = (if (anim.value < 0) target else anim.value).coerceIn(with(density) { 90.dp.toPx() }, page)
+        val floor = minOf(with(density) { 90.dp.toPx() }, stop(SheetHeight.BAR))
+        val h = (if (anim.value < 0) target else anim.value).coerceIn(floor, page)
         SideEffect {
             state.points = h
             state.screen = total
@@ -160,13 +178,24 @@ fun MapSheet(
             state.pageProgress = ((h - halfPts) / maxOf(page - halfPts, 1f)).coerceIn(0f, 1f)
         }
 
+        var dragging by remember { mutableStateOf(false) }
+        var held by remember { mutableFloatStateOf(0f) }
+
         fun settle(velocity: Float) {
-            // Where the flick would end, not where the finger let go.
+            // No drag ever started (under the 18 points): nothing to settle.
+            val wasDragging = dragging
+            dragging = false
+            held = 0f
+            if (!wasDragging) return
+            // Where the flick would end, not where the finger let go: SwiftUI's
+            // predictedEndTranslation, a quarter of a second of the release speed.
             val now = anim.value
-            val projected = now - velocity * 0.18f
+            val projected = now - velocity * 0.25f
             // Locked: only down, never up.
             val settled = if (isLocked && projected > now) latestTarget else projected
-            val stops = SheetHeight.entries.filter { it != SheetHeight.CARD || cardFits }
+            val stops = SheetHeight.entries.filter {
+                (it != SheetHeight.CARD || cardFits) && (it != SheetHeight.BAR || results)
+            }
             val next = stops.minBy { abs(stop(it) - settled) }
             if (next == state.height) {
                 scope.launch { anim.animateTo(latestTarget, SheetStops.motion) }
@@ -176,10 +205,18 @@ fun MapSheet(
         }
 
         fun dragBy(dy: Float) {
+            var by = dy
+            if (!dragging) {
+                held += dy
+                if (abs(held) < holdBack) return
+                dragging = true
+                by = held
+                held = 0f
+            }
             // Locked stops raising, never lowering.
-            var next = anim.value - dy
+            var next = anim.value - by
             if (isLocked) next = minOf(next, latestTarget)
-            scope.launch { anim.snapTo(next.coerceIn(with(density) { 90.dp.toPx() }, page)) }
+            scope.launch { anim.snapTo(next.coerceIn(floor, page)) }
         }
 
         var handingOff by remember { mutableStateOf(false) }
@@ -216,13 +253,21 @@ fun MapSheet(
             }
         }
 
-        val corner = 16.dp
+        // The sheet becoming the page: the map tab's results list and My trees.
+        val progress = if (results || (pageClose != null && fullInset == 0f)) state.pageProgress else 0f
+        // Build 42: the grip and the count fold away with the sheet, frame by frame.
+        val fold = if (results) state.pageProgress else 0f
+        val barPts = stop(SheetHeight.BAR)
+        val peekPts = stop(SheetHeight.PEEK)
+        val listShown = if (results) ((h - barPts) / maxOf(peekPts - barPts, 1f)).coerceIn(0f, 1f) else 1f
+        val lead = if (results) fullInset * fold else top * progress
+        val corner = 16.dp * (1f - progress)
         Column(
             Modifier
                 .align(Alignment.BottomCenter)
                 .fillMaxWidth()
                 .height(with(density) { (h + bottom).toDp() })
-                .shadow(10.dp, RoundedCornerShape(topStart = corner, topEnd = corner), ambientColor = Color.Black.copy(alpha = 0.12f), spotColor = Color.Black.copy(alpha = 0.12f))
+                .shadow(10.dp, RoundedCornerShape(topStart = corner, topEnd = corner), ambientColor = Color.Black.copy(alpha = 0.12f * (1f - progress)), spotColor = Color.Black.copy(alpha = 0.12f * (1f - progress)))
                 // The iPhone's regularMaterial over the map reads as a warm light
                 // grey (#F4F4F2 measured off its shots, 2026-11-10), not white.
                 .background(
@@ -230,7 +275,8 @@ fun MapSheet(
                     // measured at full height, #F4F4F2 over the map, 2026-11-10):
                     // nothing shows through (Hidde: My trees see-through), and the
                     // white discs of the gear and Find people stand out as on iOS.
-                    androidx.compose.ui.graphics.lerp(brand.ground, brand.surfaceMuted, 0.8f),
+                    // Over the map the iPhone's material; as the page, its plain ground.
+                    androidx.compose.ui.graphics.lerp(androidx.compose.ui.graphics.lerp(brand.ground, brand.surfaceMuted, 0.8f), brand.ground, progress),
                     RoundedCornerShape(topStart = corner, topEnd = corner),
                 )
                 .nestedScroll(connection)
@@ -239,7 +285,7 @@ fun MapSheet(
                 .pointerInput(Unit) {
                     awaitEachGesture {
                         val down = awaitFirstDown(requireUnconsumed = false, pass = PointerEventPass.Initial)
-                        if (state.height != SheetHeight.PEEK || isLocked) return@awaitEachGesture
+                        if ((state.height != SheetHeight.PEEK && state.height != SheetHeight.BAR) || isLocked) return@awaitEachGesture
                         var moved = false
                         while (true) {
                             val e = awaitPointerEvent(PointerEventPass.Initial)
@@ -256,14 +302,14 @@ fun MapSheet(
                     }
                 },
         ) {
-            val progress = if (pageClose != null && fullInset == 0f) state.pageProgress else 0f
-            // The status-bar strip, only as far as the sheet has risen into it.
-            if (progress > 0f) Spacer(Modifier.height(with(density) { (top * progress).toDp() }))
+            // Room for the status bar, or on the results list for the field over the page.
+            if (lead > 0f) Spacer(Modifier.height(with(density) { lead.toDp() }))
             // The grabber row: one fixed height, the capsule what you see.
             Box(
                 Modifier
                     .fillMaxWidth()
-                    .height(44.dp)
+                    .height(44.dp * (1f - fold))
+                    .graphicsLayer { alpha = 1f - fold; clip = true }
                     .dragHandle(::dragBy, ::settle),
                 contentAlignment = Alignment.TopCenter,
             ) {
@@ -296,7 +342,11 @@ fun MapSheet(
                 Modifier
                     .fillMaxWidth()
                     .dragHandle(::dragBy, ::settle)
-                    .onSizeChanged { headerBottom = with(density) { 44.dp.toPx() } + it.height },
+                    .onSizeChanged {
+                        headerBottom = with(density) { 44.dp.toPx() } + it.height
+                        // Only while it is whole: the count folds away towards full.
+                        if (fold == 0f && it.height > 0) headerHeight = it.height.toFloat()
+                    },
             ) { header() }
             Box(
                 Modifier
@@ -305,7 +355,7 @@ fun MapSheet(
                     .verticalScroll(scroll),
             ) {
                 Column(Modifier.fillMaxWidth()) {
-                    Box(Modifier.fillMaxWidth().onSizeChanged { contentHeight = it.height.toFloat() }) { content() }
+                    Box(Modifier.fillMaxWidth().graphicsLayer { alpha = listShown }.onSizeChanged { contentHeight = it.height.toFloat() }) { content() }
                     // Room at the end of the list, not a shorter list: content
                     // still passes under the floating bar (contentMargins).
                     Spacer(Modifier.height(barDepth + 8.dp))

@@ -52,6 +52,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
+import androidx.compose.animation.core.tween
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
@@ -143,6 +145,10 @@ fun MapTab(
     onAddTree: () -> Unit,
     onShare: (Tree) -> Unit,
     onSearching: (Boolean) -> Unit,
+    /** The stop the sheet settled on (the tab bar hides at the bar, build 42). */
+    onSheetStop: (SheetHeight) -> Unit = {},
+    /** A snackbar is up: it takes the Map pill's place. */
+    snackShowing: Boolean = false,
     raise: Int,
     /** A place, species or tree a tree page sends here, until their own pages are ported. */
     go: Pair<Long, SearchHit>? = null,
@@ -192,7 +198,10 @@ fun MapTab(
         }
     }
     LaunchedEffect(sheet.height) {
-        if (sheet.height == SheetHeight.PEEK && selected != null) {
+        // The sheet's stop, for the root: the tab bar steps away at the bar, and the
+        // snackbar stands where the pill stands at full (Navigator.mapTakesScreen).
+        onSheetStop(sheet.height)
+        if ((sheet.height == SheetHeight.PEEK || sheet.height == SheetHeight.BAR) && selected != null) {
             before = null
             selected = null
         }
@@ -265,7 +274,7 @@ fun MapTab(
             else -> null
         }
         // A PLACE RAISES THE LIST ONE STOP, NEVER LOWERS IT (Hidde, 2026-11-04).
-        if ((hit is SearchHit.City || hit is SearchHit.Country || hit is SearchHit.Place) && sheet.height == SheetHeight.PEEK) sheet.height = SheetHeight.CARD
+        if ((hit is SearchHit.City || hit is SearchHit.Country || hit is SearchHit.Place) && (sheet.height == SheetHeight.PEEK || sheet.height == SheetHeight.BAR)) sheet.height = SheetHeight.CARD
         flownPlace = hit as? SearchHit.Place
         selected = null
         val c = catalogue ?: return
@@ -322,6 +331,7 @@ fun MapTab(
 
     val stopCoverage = with(density) {
         when (sheet.height) {
+            SheetHeight.BAR -> SheetStops.BAR.toPx()
             SheetHeight.PEEK -> SheetStops.PEEK.toPx()
             SheetHeight.CARD -> SheetStops.CARD.toPx()
             else -> sheet.halfPx
@@ -398,10 +408,12 @@ fun MapTab(
             state = sheet,
             fullInset = if (searchBottom > 0) searchBottom + with(density) { 10.dp.toPx() } else 0f,
             cardFits = selected != null,
+            // Airbnb's results list (Hidde, 2026-11-08, build 42; MapTab.swift sheetResults).
+            results = true,
             header = {
                 val t = selected
                 if (t == null) {
-                    CountStrip(inReach, full = sheet.height == SheetHeight.FULL)
+                    CountStrip(inReach, fold = sheet.pageProgress)
                 } else {
                     TreePlaceHeader(t, onShare = { onShare(t) }, onClose = { selected = null })
                 }
@@ -415,7 +427,7 @@ fun MapTab(
                     Modifier.fillMaxWidth().padding(horizontal = 16.dp).padding(bottom = 110.dp),
                     verticalArrangement = Arrangement.spacedBy(12.dp),
                 ) {
-                    if (arrived != null && sheet.height != SheetHeight.PEEK) {
+                    if (arrived != null && sheet.height != SheetHeight.PEEK && sheet.height != SheetHeight.BAR) {
                         ArrivalCard(arrived, collected = arrived.id in marks.collected, onCollect = { onCollect(arrived) })
                     }
                     if (!nothingInView) {
@@ -500,12 +512,14 @@ fun MapTab(
 
         // AT FULL HEIGHT ONLY: the way back to the map (Hidde, 2026-08-25).
         AnimatedVisibility(
-            visible = sheet.height == SheetHeight.FULL && !searching,
-            enter = fadeIn(),
-            exit = fadeOut(),
+            // The snackbar takes the pill's place while it shows (MapTab.swift).
+            visible = sheet.height == SheetHeight.FULL && !searching && !snackShowing,
+            enter = fadeIn(tween(200, easing = Motion.EaseOut)),
+            exit = fadeOut(tween(200, easing = Motion.EaseOut)),
             modifier = Modifier.align(Alignment.BottomCenter).navigationBarsPadding().padding(bottom = 70.dp),
         ) {
-            MapPill { sheet.height = SheetHeight.PEEK }
+            // Down to the count bar, the map's whole screen (Airbnb's Map pill, build 42).
+            MapPill { sheet.height = SheetHeight.BAR }
         }
 
         if (searching && catalogue != null) {
@@ -630,7 +644,9 @@ private fun Modifier.layoutBleed(by: androidx.compose.ui.unit.Dp): Modifier =
 
 /** The count, small and centred under the grip; its words go at full height, the strip stays. */
 @Composable
-private fun CountStrip(inReach: Int, full: Boolean) {
+private fun CountStrip(inReach: Int, fold: Float) {
+    // AT FULL HEIGHT THE STRIP GOES, words and room alike, folding with the sheet
+    // frame by frame (Hidde, 2026-11-08, Airbnb, build 42; MapTab.swift countStrip).
     Text(
         if (inReach == 0) "No trees in view" else "$inReach ${if (inReach == 1) "tree" else "trees"}",
         fontFamily = BrandFace,
@@ -638,7 +654,15 @@ private fun CountStrip(inReach: Int, full: Boolean) {
         fontSize = 16.sp,
         color = Brand.colors.inkSoft,
         textAlign = TextAlign.Center,
-        modifier = Modifier.fillMaxWidth().graphicsLayer { alpha = if (full) 0f else 1f }.padding(bottom = 11.dp),
+        modifier = Modifier
+            .fillMaxWidth()
+            .testTag("map-count")
+            .layout { m, c ->
+                val p = m.measure(c)
+                val height = (p.height * (1f - fold)).toInt()
+                layout(p.width, height) { p.placeRelativeWithLayer(0, 0) { alpha = 1f - fold } }
+            }
+            .padding(bottom = 11.dp),
     )
 }
 
@@ -794,6 +818,7 @@ private fun MapPill(onClick: () -> Unit) {
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(6.dp),
         modifier = Modifier
+            .testTag("map-pill")
             .heightIn(min = 44.dp)
             .shadow(8.dp, RoundedCornerShape(50), ambientColor = Color.Black.copy(alpha = 0.18f), spotColor = Color.Black.copy(alpha = 0.18f))
             .clip(RoundedCornerShape(50))
