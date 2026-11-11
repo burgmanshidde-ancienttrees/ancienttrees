@@ -176,6 +176,7 @@ GLYPHS = {
     "SettingsMedium": ("settings", False, 500, False),
     "SettingsFillMedium": ("settings", True, 500, False),
     "PersonAddMedium": ("person_add", False, 500, False),
+    "AddLink": ("add_link", False, 400, False),  # link.badge.plus (SharedTreeView's missing link)
 }
 
 # SheetIconTile draws its symbol at 24 semibold (BrandSheet.swift): every glyph a

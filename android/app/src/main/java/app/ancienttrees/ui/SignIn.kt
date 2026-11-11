@@ -24,6 +24,10 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.isImeVisible
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.relocation.bringIntoViewRequester
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.offset
@@ -158,7 +162,8 @@ fun SignInSheet(account: Account, reason: SignInReason, onDismiss: () -> Unit) {
                     .verticalScroll(rememberScrollState())
                     .padding(horizontal = 22.dp)
                     .padding(top = 12.dp, bottom = 28.dp)
-                    .navigationBarsPadding(),
+                    .navigationBarsPadding()
+                    .imePadding(),
             ) {
                 when (val s = account.state) {
                     is SignIn.LinkSent -> CheckYourEmail(account, s.email)
@@ -246,7 +251,20 @@ private fun Ask(account: Account, reason: SignInReason) {
             }
         }
         account.problem?.let { Text(problemText(it), fontSize = 13.sp, color = Color(0xFFFF3B30)) }
-        Terms()
+        // THE LEGAL LINE STAYS ABOVE THE KEYBOARD (review 2026-11-11: the email
+        // field's keyboard covered it; on the iPhone the sheet rises with the
+        // keyboard and the line stays in sight). Once the keyboard is up, the
+        // sheet scrolls the line into view.
+        val terms = remember { androidx.compose.foundation.relocation.BringIntoViewRequester() }
+        @OptIn(androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
+        val ime = WindowInsets.isImeVisible
+        LaunchedEffect(emailOpen, ime) {
+            if (emailOpen && ime) {
+                kotlinx.coroutines.delay(250)
+                terms.bringIntoView()
+            }
+        }
+        Box(Modifier.bringIntoViewRequester(terms)) { Terms() }
     }
 }
 

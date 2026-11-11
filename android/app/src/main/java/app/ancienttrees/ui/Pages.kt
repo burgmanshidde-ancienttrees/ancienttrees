@@ -55,6 +55,8 @@ sealed class Page {
     data class TreePage(val id: String) : Page()
     /** One of yours (Route.mine). */
     data class Mine(val id: String) : Page()
+    /** Somebody else's tree from its unlisted link (SharedTreeView.swift), read only. */
+    data class Shared(val id: String) : Page()
     data class Species(val name: String) : Page()
     /** The map of one tree, pushed on the stack you are on (Route.treeMap). */
     data class TreeMap(val id: String) : Page()

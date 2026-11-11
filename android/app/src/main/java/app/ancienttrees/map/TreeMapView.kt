@@ -184,8 +184,14 @@ fun TreeMapView(
                 map.setMinZoomPreference(PinRules.WORLD_MIN_ZOOM)
                 // A first paint on the origin, so the map never shows the Atlantic.
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(origin.lat, origin.lng), openingZoom()))
-                // No logo; the OpenFreeMap credit stays, it is the price of the tiles.
+                // No logo and no floating credit button, as on the iPhone (TreeMap.swift:255):
+                // it sat behind the sheet or the card on every screen that has one
+                // (review 2026-11-11: under the pin picker's card). The credit is not
+                // optional, OpenFreeMap and the ODbL ask to be named, so it is named
+                // once, under Settings, Sources (sources_map_body), where Apple Maps'
+                // Legal Notices and every Mapbox app's info keep it.
                 map.uiSettings.isLogoEnabled = false
+                map.uiSettings.isAttributionEnabled = false
                 // NO ROTATION (Hidde, 2026-08-25): every label is a name to read.
                 map.uiSettings.isRotateGesturesEnabled = false
                 map.uiSettings.isCompassEnabled = false
@@ -365,14 +371,6 @@ fun TreeMapView(
         val (map, style) = ready ?: return@LaunchedEffect
         if (recentre == 0) return@LaunchedEffect
         if (startLocation(map, style, context)) follow(map)
-    }
-
-    // The credit stands clear of the system's navigation bar.
-    val bottomInset = WindowInsets.navigationBars.getBottom(LocalDensity.current)
-    LaunchedEffect(ready, bottomInset) {
-        val map = ready?.first ?: return@LaunchedEffect
-        val margin = (8 * context.resources.displayMetrics.density).toInt()
-        map.uiSettings.setAttributionMargins(margin, 0, 0, bottomInset + margin)
     }
 
     AndroidView(factory = { mapView }, modifier = modifier)

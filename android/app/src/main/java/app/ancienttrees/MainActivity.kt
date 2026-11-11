@@ -93,6 +93,7 @@ class MainActivity : ComponentActivity() {
         app.ancienttrees.ui.ImageStore.prepareCache(applicationContext)
         link = intent?.data
         launch = LaunchArgs.from(intent, applicationInfo)
+        launch.locale?.let { java.util.Locale.setDefault(it) }
         setContent {
             // A new set of launch arguments starts the screen afresh (debug builds only).
             androidx.compose.runtime.key(launch) {
@@ -127,7 +128,10 @@ class MainActivity : ComponentActivity() {
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
         link = intent.data
-        LaunchArgs.from(intent, applicationInfo).takeIf { it.args.isNotEmpty() }?.let { launch = it }
+        LaunchArgs.from(intent, applicationInfo).takeIf { it.args.isNotEmpty() }?.let {
+            it.locale?.let { l -> java.util.Locale.setDefault(l) }
+            launch = it
+        }
     }
 }
 
@@ -348,7 +352,12 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     }
     LaunchedEffect(Unit) {
         // The test account's session from an instrumented test, debug builds only.
-        if (launch.testSession?.let { account.useTestSession(it) } != true) account.restore()
+        when {
+            launch.testSession?.let { account.useTestSession(it) } == true -> Unit
+            // -signed-in acts signed in, as Account.swift:207 does (debug builds only).
+            launch.signedIn -> account.useStandIn()
+            else -> account.restore()
+        }
     }
     LaunchedEffect(Unit) { app.ancienttrees.ui.AppSwitches.refresh(launch.args) }
     // What people do, to the iPhone's PostHog project (account/Measure.kt). The
@@ -390,8 +399,11 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
             is app.ancienttrees.feed.LinkTarget.Collection -> { nav.tab = 1; collectionLink = System.nanoTime() to target.slug }
             is app.ancienttrees.feed.LinkTarget.Person -> routes.openPerson(target.id)
             is app.ancienttrees.feed.LinkTarget.Map -> { nav.clear(0); nav.tab = 0 }
-            // A shared tree of a reader's: the app has no screen for it yet, so the website shows it.
-            is app.ancienttrees.feed.LinkTarget.Shared, null ->
+            // A shared tree (Route.shared): your own opens as your tree, anybody
+            // else's read only (SharedTreeView.swift).
+            is app.ancienttrees.feed.LinkTarget.Shared ->
+                nav.push(if (myTrees.byId(target.id) != null) app.ancienttrees.ui.Page.Mine(target.id) else app.ancienttrees.ui.Page.Shared(target.id))
+            null ->
                 runCatching {
                     context.startActivity(Intent(Intent.ACTION_VIEW, uri).apply {
                         addCategory(Intent.CATEGORY_BROWSABLE)
@@ -487,8 +499,11 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     // The parity script's launch arguments: the iPhone's own (LaunchArgs.kt).
     val fixedAt = launch.at
     // Once, on the first catalogue: a refresh's newer one must not open it all again.
+    var launched by remember { mutableStateOf(false) }
     LaunchedEffect(catalogue != null) {
         val c = catalogue ?: return@LaunchedEffect
+        if (launched) return@LaunchedEffect
+        launched = true
         launch.openTree?.let { id -> c.tree(id)?.let { openTree(it) } }
         launch.openTree?.let { id -> c.tree(id) }?.let { t ->
             if (launch.placePin) placing = t
@@ -500,6 +515,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
             go = System.nanoTime() to SearchHit.City(slug, t?.city ?: slug, t?.lat ?: 0.0, t?.lng ?: 0.0)
         }
         launch.openSpecies?.let { openSpecies(it) }
+        launch.openCollection?.let { nav.push(app.ancienttrees.ui.Page.Discover(app.ancienttrees.ui.DiscoverPage.Collection(it))) }
         if (launch.signIn) {
             // The sweep's -signin is the keep-a-tree sheet, as on the iPhone.
             signInReason = app.ancienttrees.ui.SignInReason.KeepTree("")
@@ -741,6 +757,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     app.ancienttrees.ui.TreeMapPage(tree, cat, onBack = { nav.pop() }, onOpen = { openTree(it) })
                 }
                 is app.ancienttrees.ui.Page.Discover -> app.ancienttrees.ui.DiscoverPageScreen(p.page, cat, discoverActions, onBack = { nav.pop() })
+                is app.ancienttrees.ui.Page.Shared -> app.ancienttrees.ui.SharedTreeScreen(p.id, onBack = { nav.pop() }, onFindNear = { nav.clear(0); nav.tab = 0 })
                 else -> if (p.isProfile) app.ancienttrees.ui.ProfilePageScreen(p, routes, settingsHost, peopleHost)
             }
         }
