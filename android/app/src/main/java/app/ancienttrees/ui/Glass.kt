@@ -140,34 +140,22 @@ fun BackCircle(onBack: () -> Unit, modifier: Modifier = Modifier) {
 }
 
 /**
- * iOS 26's soft scroll edge over the top of a page: what lies under the status
- * bar is lightly blurred and lightened, strongest at the top and gone
- * by [height]. Without a blur, the ground fading out over the same height.
+ * iOS 26's soft scroll edge over the top of a page: the status bar's strip
+ * lightly washed with the ground, gone by [height]. A gradient, not a blur: at
+ * the light setting the pairs called for (2026-11-11) a blur added nothing a
+ * gradient does not, and Haze's progressive blur is the costliest kind, heavy
+ * enough on an emulator without a GPU to stall the page (PR 55's walk).
+ * [state] is kept so a page can pass its glass source unchanged.
  */
 @Composable
-fun TopEdge(state: HazeState?, modifier: Modifier = Modifier, height: androidx.compose.ui.unit.Dp = 64.dp) {
+fun TopEdge(@Suppress("UNUSED_PARAMETER") state: HazeState?, modifier: Modifier = Modifier, height: androidx.compose.ui.unit.Dp = 64.dp) {
     val ground = Brand.colors.ground
-    val base = modifier.fillMaxWidth().height(height)
-    if (state != null && GlassAvailable) {
-        androidx.compose.foundation.layout.Box(
-            base.hazeEffect(state) {
-                backgroundColor = ground
-                // Light: the iPhone keeps the photograph sharp and only washes the
-                // status bar's strip (pairs of 2026-11-11, tree and own-tree).
-                blurRadius = 4.dp
-                noiseFactor = 0f
-                tints = listOf(HazeTint(ground.copy(alpha = 0.3f)))
-                progressive = dev.chrisbanes.haze.HazeProgressive.verticalGradient(startIntensity = 1f, endIntensity = 0f)
-            },
-        )
-    } else {
-        androidx.compose.foundation.layout.Box(
-            base.background(
-                androidx.compose.ui.graphics.Brush.verticalGradient(
-                    0f to ground.copy(alpha = 0.35f),
-                    1f to ground.copy(alpha = 0f),
-                ),
+    androidx.compose.foundation.layout.Box(
+        modifier.fillMaxWidth().height(height).background(
+            androidx.compose.ui.graphics.Brush.verticalGradient(
+                0f to ground.copy(alpha = 0.35f),
+                1f to ground.copy(alpha = 0f),
             ),
-        )
-    }
+        ),
+    )
 }
