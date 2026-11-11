@@ -54,6 +54,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
@@ -348,6 +349,8 @@ private fun SettingsGear(progress: Float, onClick: () -> Unit, modifier: Modifie
     Box(
         modifier
             .size(44.dp)
+            // iOS 26's white circle with its soft shadow (visual review 2026-11-11).
+            .shadow(8.dp, CircleShape, ambientColor = androidx.compose.ui.graphics.Color.Black.copy(alpha = 0.10f), spotColor = androidx.compose.ui.graphics.Color.Black.copy(alpha = 0.10f))
             .clip(CircleShape)
             .clickable(role = Role.Button, onClick = onClick)
             // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
@@ -505,6 +508,8 @@ private fun WhoRow(signedIn: Boolean, email: String?, mine: MyTrees, actions: My
                 Modifier
                     .offset(x = 4.dp)
                     .size(44.dp)
+                    // iOS 26's white circle with its soft shadow (visual review 2026-11-11).
+                    .shadow(8.dp, CircleShape, ambientColor = androidx.compose.ui.graphics.Color.Black.copy(alpha = 0.10f), spotColor = androidx.compose.ui.graphics.Color.Black.copy(alpha = 0.10f))
                     .clip(CircleShape)
                     .clickable(role = Role.Button, onClick = actions.findPeople)
                     // The ripple stays inside the shape (Airbnb's line, 2026-11-10).

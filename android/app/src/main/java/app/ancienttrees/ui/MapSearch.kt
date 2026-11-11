@@ -123,6 +123,8 @@ fun MapSearch(
     origin: Here,
     initial: String,
     onPick: (SearchHit) -> Unit,
+    /** At the tap, before the cover has slid away: the map moves while it goes (MapTab.swift take). */
+    onPickStart: (SearchHit) -> Unit = {},
     onBack: () -> Unit,
 ) {
     val brand = Brand.colors
@@ -187,6 +189,7 @@ fun MapSearch(
             recent.demo(listOf(e) + recent.rows.filter { it.id != e.id })
             GlobalScope.launch { recent.record(e, who.token()) }
         }
+        onPickStart(hit)
         leave { onPick(hit) }
     }
 

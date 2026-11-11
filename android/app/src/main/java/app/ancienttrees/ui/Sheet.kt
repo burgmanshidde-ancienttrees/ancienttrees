@@ -167,6 +167,9 @@ fun AppSheet(
         containerColor = containerColor,
         dragHandle = dragHandle,
         properties = properties,
+        // The iPhone's dimming is light: white under it reads #D6D6DA, Material's 32
+        // percent black reads #A8A8A8 (review 2026-11-11, row 124).
+        scrimColor = Color.Black.copy(alpha = 0.16f),
     ) {
         // A sheet opened from inside this one has its own owner.
         CompositionLocalProvider(LocalSheetClose provides close, LocalSheetPresence provides null) { content() }

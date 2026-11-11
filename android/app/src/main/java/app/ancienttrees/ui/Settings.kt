@@ -445,17 +445,15 @@ fun PushedBar(title: String, onBack: () -> Unit, trailing: (@Composable () -> Un
     // the iPhone (android_spacing.py, 2026-11-11).
     Box(Modifier.fillMaxWidth().statusBarsPadding().height(54.dp)) {
     Box(Modifier.fillMaxWidth().height(44.dp)) {
-        Box(
-            Modifier.align(Alignment.CenterStart).size(44.dp).clickable(role = Role.Button, onClick = onBack),
-            contentAlignment = Alignment.Center,
-        ) {
-            Icon(Sym.ArrowBack, stringResource(R.string.back), tint = brand.ink, modifier = Modifier.size(22.dp))
-        }
+        // iOS 26's back button sits in a white circle (visual review 2026-11-11, row 60);
+        // the arrow is Android's (Airbnb's line).
+        BackCircle(onBack, Modifier.align(Alignment.CenterStart).padding(start = 16.dp))
         Text(
             // The navigation bar title: Gabarito Bold 17 (UINavigationBarAppearance, AncientTreesApp.swift).
             title, fontFamily = BrandFace, fontSize = 17.sp, fontWeight = FontWeight.Bold, color = brand.ink, maxLines = 1,
             overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center,
-            modifier = Modifier.align(Alignment.Center).padding(horizontal = 52.dp),
+            // Clear of the back circle (16 + 44 + 8).
+            modifier = Modifier.align(Alignment.Center).padding(horizontal = 68.dp),
         )
         trailing?.let { Box(Modifier.align(Alignment.CenterEnd).padding(end = 8.dp)) { it() } }
     }
@@ -481,24 +479,21 @@ fun BarSheet(
         // A Form's ground is the system's grouped grey, cool rather than our warm
         // muted (systemGroupedBackground: F2F2F7; a sheet's elevated 1C1C1E in the dark).
         containerColor = if (grouped) (if (brand.ground.red < 0.5f) androidx.compose.ui.graphics.Color(0xFF1C1C1E) else androidx.compose.ui.graphics.Color(0xFFF2F2F7)) else brand.ground,
-        // The bar is the top of this sheet; the handle sits over it (BrandSheetHandle).
+        // A NavigationStack sheet on the iPhone shows no grabber (review 2026-11-11, row 72).
         dragHandle = null,
         floating = !grouped,
     ) {
         Column(Modifier.fillMaxWidth().let { if (grouped) it.fillMaxHeight(0.94f) else it }.navigationBarsPadding()) {
             Box(Modifier.fillMaxWidth().height(56.dp)) {
-                BrandSheetHandle(Modifier.align(Alignment.TopCenter))
-                // Cancel slides the sheet down first (Sheet.kt).
+                // Cancel slides the sheet down first (Sheet.kt). Both ends in iOS 26's
+                // white capsules (review 2026-11-11, rows 69, 112).
                 val close = LocalSheetClose.current
                 leading?.let { (label, act) ->
-                    Text(label, fontSize = 17.sp, color = brand.moss, modifier = Modifier.align(Alignment.CenterStart)
-                        .clickable(role = Role.Button) { close(act) }.padding(horizontal = 16.dp, vertical = 12.dp))
+                    BarCapsule(label, { close(act) }, Modifier.align(Alignment.CenterStart).padding(start = 16.dp))
                 }
                 Text(title, fontFamily = BrandFace, fontSize = 17.sp, fontWeight = FontWeight.Bold, color = brand.ink, modifier = Modifier.align(Alignment.Center))
                 trailing?.let { (label, act) ->
-                    Text(label, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = brand.moss,
-                        modifier = Modifier.align(Alignment.CenterEnd).alpha(if (trailingEnabled) 1f else 0.4f)
-                            .clickable(enabled = trailingEnabled, role = Role.Button, onClick = act).padding(horizontal = 16.dp, vertical = 12.dp))
+                    BarCapsule(label, act, Modifier.align(Alignment.CenterEnd).padding(end = 16.dp), enabled = trailingEnabled, bold = true)
                 }
             }
             val column = this

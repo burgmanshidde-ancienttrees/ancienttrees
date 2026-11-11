@@ -116,6 +116,8 @@ fun ContributeSheet(
     AppSheet(
         onDismissRequest = onDismiss,
         containerColor = brand.surfaceMuted,
+        // A NavigationStack sheet: no grabber on the iPhone.
+        dragHandle = null,
         // Full height: edge to edge, as the .large detent.
         floating = false,
     ) {
@@ -127,12 +129,8 @@ fun ContributeSheet(
         ) {
             // The inline bar: Cancel (Done once sent) at the left, the title centred.
             Row(Modifier.fillMaxWidth().height(44.dp), verticalAlignment = Alignment.CenterVertically) {
-                Text(
-                    stringResource(if (sent) R.string.done else R.string.cancel),
-                    fontSize = 17.sp,
-                    color = brand.moss,
-                    modifier = Modifier.width(72.dp).clickable(role = Role.Button, onClick = onDismiss),
-                )
+                // iOS 26's capsule (review 2026-11-11, row 122).
+                BarCapsule(stringResource(if (sent) R.string.done else R.string.cancel), onDismiss)
                 Text(
                     stringResource(
                         when {

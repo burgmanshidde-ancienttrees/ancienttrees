@@ -16,6 +16,18 @@ package app.ancienttrees.ui
 
 import android.os.Build
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.Icon
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.Modifier
@@ -65,3 +77,85 @@ fun Modifier.glass(state: HazeState?, shape: Shape, fallback: Color, tint: Float
 /** Tuned against the iPhone's tab bar over the same list (out/parity, 2026-11-11). */
 const val GLASS_BLUR = 24f
 const val GLASS_TINT = 0.72f
+
+// ---------------------------------------------------------------- iOS 26 bars
+// The visual review of 2026-11-11 (out/parity-feel/visual-review-2026-11-11.md):
+// iOS 26 draws a NavigationStack's bar buttons as white capsules with a soft
+// shadow (Cancel, Save, Close, Done), its back button in a white circle, and
+// fades the content that slides under the bar at the top of a page (the soft
+// scroll edge). The shapes are the iPhone's; back keeps Android's arrow.
+
+/**
+ * A bar's text button in its capsule: Cancel, Save, Close, Done. White on a white
+ * bar, so the shadow is what draws it: Android's elevation shadow at the iPhone's
+ * 0.10 vanished (pairs of 2026-11-11, Settings and place-pin), hence 0.2.
+ */
+@Composable
+fun BarCapsule(
+    label: String,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
+    bold: Boolean = false,
+    height: androidx.compose.ui.unit.Dp = 44.dp,
+) {
+    val brand = Brand.colors
+    androidx.compose.foundation.layout.Box(
+        contentAlignment = androidx.compose.ui.Alignment.Center,
+        modifier = modifier
+            .height(height)
+            .shadow(10.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.20f), spotColor = Color.Black.copy(alpha = 0.24f))
+            .clip(CircleShape)
+            .clickable(enabled = enabled, role = androidx.compose.ui.semantics.Role.Button, onClick = onClick)
+            .background(brand.ground, CircleShape)
+            .padding(horizontal = 16.dp),
+    ) {
+        Text(
+            label,
+            fontSize = 17.sp,
+            fontWeight = if (bold) FontWeight.SemiBold else FontWeight.Normal,
+            color = brand.moss.copy(alpha = if (enabled) 1f else 0.4f),
+            maxLines = 1,
+        )
+    }
+}
+
+/** A pushed page's back button: Android's arrow in iOS 26's white circle. */
+@Composable
+fun BackCircle(onBack: () -> Unit, modifier: Modifier = Modifier) {
+    val brand = Brand.colors
+    val label = androidx.compose.ui.res.stringResource(app.ancienttrees.R.string.back)
+    androidx.compose.foundation.layout.Box(
+        contentAlignment = androidx.compose.ui.Alignment.Center,
+        modifier = modifier
+            .size(44.dp)
+            .shadow(10.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.20f), spotColor = Color.Black.copy(alpha = 0.24f))
+            .clip(CircleShape)
+            .clickable(role = androidx.compose.ui.semantics.Role.Button, onClick = onBack)
+            .background(brand.ground, CircleShape)
+            .semantics { contentDescription = label },
+    ) {
+        Icon(Sym.ArrowBack, null, tint = brand.ink, modifier = Modifier.size(22.dp))
+    }
+}
+
+/**
+ * iOS 26's soft scroll edge over the top of a page: the status bar's strip
+ * lightly washed with the ground, gone by [height]. A gradient, not a blur: at
+ * the light setting the pairs called for (2026-11-11) a blur added nothing a
+ * gradient does not, and Haze's progressive blur is the costliest kind, heavy
+ * enough on an emulator without a GPU to stall the page (PR 55's walk).
+ * [state] is kept so a page can pass its glass source unchanged.
+ */
+@Composable
+fun TopEdge(@Suppress("UNUSED_PARAMETER") state: HazeState?, modifier: Modifier = Modifier, height: androidx.compose.ui.unit.Dp = 64.dp) {
+    val ground = Brand.colors.ground
+    androidx.compose.foundation.layout.Box(
+        modifier.fillMaxWidth().height(height).background(
+            androidx.compose.ui.graphics.Brush.verticalGradient(
+                0f to ground.copy(alpha = 0.35f),
+                1f to ground.copy(alpha = 0f),
+            ),
+        ),
+    )
+}

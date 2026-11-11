@@ -207,6 +207,9 @@ fun MapTab(
         }
     }
     BackHandler(enabled = selected != null) { selected = null }
+    // BACK FROM A SEARCHED PLACE RETURNS TO THE MAP, as the field's cross does
+    // (visual review 2026-11-11, flow 163: it left the app). Below a chosen tree.
+    BackHandler(enabled = focusPlace != null && selected == null) { focusPlace = null }
 
     val focus = region?.let { Here((it.south + it.north) / 2, (it.west + it.east) / 2) } ?: origin
     val box = region ?: ViewBox(origin.lat - 0.05, origin.lng - 0.08, origin.lat + 0.05, origin.lng + 0.08)
@@ -527,9 +530,11 @@ fun MapTab(
                 catalogue = catalogue,
                 origin = origin,
                 initial = launch.search.orEmpty(),
+                // The map flies to the place while the cover slides down, as on the iPhone
+                // (review 2026-11-11, flow 162: the map lagged a second behind the sheet).
+                onPickStart = { take(it) },
                 onPick = {
                     searching = false
-                    take(it)
                 },
                 onBack = { searching = false },
             )
@@ -823,11 +828,16 @@ private fun MapPill(onClick: () -> Unit) {
         modifier = Modifier
             .testTag("map-pill")
             .heightIn(min = 44.dp)
-            .shadow(8.dp, RoundedCornerShape(50), ambientColor = Color.Black.copy(alpha = 0.18f), spotColor = Color.Black.copy(alpha = 0.18f))
+            // THE SAME MATERIAL THE TAB BAR WEARS (MapTab.swift: .regularMaterial, shadow
+            // 0.18 radius 8 y 2): the ground with the bar's 6 percent ink wash and white
+            // edge, so it stands off the white rows it floats over (review 2026-11-11).
+            .shadow(12.dp, RoundedCornerShape(50), ambientColor = Color.Black.copy(alpha = 0.25f), spotColor = Color.Black.copy(alpha = 0.30f))
             .clip(RoundedCornerShape(50))
             .clickable(role = Role.Button, onClick = onClick)
             // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
-            .background(brand.ground.copy(alpha = 0.96f), RoundedCornerShape(50))
+            .background(brand.ground, RoundedCornerShape(50))
+            .background(brand.ink.copy(alpha = 0.06f), RoundedCornerShape(50))
+            .border(0.5.dp, Color.White.copy(alpha = 0.25f), RoundedCornerShape(50))
             .padding(horizontal = 18.dp, vertical = 11.dp),
     ) {
         // Label("Map", systemImage: "map.fill") at .brand(15, .bold): the glyph at 15 pt.
