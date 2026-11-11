@@ -531,6 +531,28 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     }
     val origin = here ?: DAM_SQUARE
     val located = here != null
+    // THE NEAR-A-TREE BANNER (NearbyBanner.kt, ContentView.checkNearby): asked about
+    // every ten metres or so, never over a sheet, each tree once a session.
+    var nearby by remember { mutableStateOf<app.ancienttrees.ui.Nearby?>(null) }
+    var announced by remember { mutableStateOf(setOf<String>()) }
+    val rootSheet = collectStart != null || asking
+    val nearKey = "${(origin.lat * 10_000).toInt()}|${(origin.lng * 10_000).toInt()}|${catalogue?.version}"
+    LaunchedEffect(nearKey) {
+        val c = catalogue ?: return@LaunchedEffect
+        if (!located || rootSheet || nearby != null) return@LaunchedEffect
+        val hit = app.ancienttrees.ui.nearbyTree(c, origin, saves.collected, announced) ?: return@LaunchedEffect
+        announced = announced + hit.tree.id
+        nearby = hit
+        // .sensoryFeedback(.impact(weight: .light), trigger: nearby?.tree.id)
+        app.ancienttrees.ui.Haptics.light(view)
+    }
+    // Gone after eight seconds, or as soon as a sheet comes up.
+    LaunchedEffect(nearby?.tree?.id) {
+        if (nearby == null) return@LaunchedEffect
+        kotlinx.coroutines.delay(8000)
+        nearby = null
+    }
+    LaunchedEffect(rootSheet) { if (rootSheet) nearby = null }
     var raise by remember { mutableIntStateOf(0) }
     var searching by remember { mutableStateOf(false) }
     val trees = catalogue?.trees.orEmpty()
@@ -913,6 +935,28 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 reason = signInReason ?: (pendingHeart ?: pendingCollect)?.name?.let { app.ancienttrees.ui.SignInReason.KeepTree(it) }
                     ?: app.ancienttrees.ui.SignInReason.General,
                 onDismiss = { asking = false; signInReason = null; pendingHeart = null; pendingCollect = null; pendingAfterSignIn = null },
+            )
+        }
+        run {
+            val n = nearby
+            val onItsPage = n != null && nav.top == app.ancienttrees.ui.Page.TreePage(n.tree.id)
+            app.ancienttrees.ui.NearbyBanner(
+                shown = n,
+                onItsPage = onItsPage,
+                open = {
+                    nearby = null
+                    if (n != null) {
+                        // Already reading it: the tap is the page's own Collect, not the page again.
+                        if (onItsPage) {
+                            val start = app.ancienttrees.ui.CollectStart(about = n.tree.name, addsPhoto = true, knownTree = n.tree.id)
+                            if (signedIn) collectStart = start else { pendingAfterSignIn = { collectStart = start }; asking = true }
+                        } else {
+                            openTree(n.tree)
+                        }
+                    }
+                },
+                dismiss = { nearby = null },
+                modifier = Modifier.align(Alignment.TopCenter),
             )
         }
         app.ancienttrees.ui.SnackBar(

@@ -153,6 +153,8 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                         for (m in listOf(false, true)) {
                             DropdownMenuItem(
                                 text = { Text(stringResource(if (m) R.string.units_miles else R.string.units_km), color = brand.ink) },
+                                // A Picker in a Menu ticks the current value (Profile.swift:243).
+                                leadingIcon = { MenuTick(m == miles) },
                                 onClick = { Units.set(context, m); miles = m; menu = false },
                             )
                         }
@@ -171,6 +173,7 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                         for (a in Directions.MapsApp.entries) {
                             DropdownMenuItem(
                                 text = { Text(a.label(context), color = brand.ink) },
+                                leadingIcon = { MenuTick(a == directionsApp) },
                                 onClick = { Directions.setPreferred(context, a); directionsApp = a; dirMenu = false },
                             )
                         }
@@ -414,6 +417,14 @@ private fun RowFrame(onClick: () -> Unit, tag: String?, vertical: Dp = 0.dp, con
     )
 }
 
+/** The tick beside a menu's current value, or its room when it is not current (Menu with a Picker). */
+@Composable
+fun MenuTick(on: Boolean) {
+    Box(Modifier.size(20.dp), contentAlignment = Alignment.Center) {
+        if (on) Icon(Sym.Check, null, tint = Brand.colors.ink, modifier = Modifier.size(18.dp))
+    }
+}
+
 /** A pushed page's bar: back on the left and the title inline in the middle. */
 @Composable
 fun PushedBar(title: String, onBack: () -> Unit, trailing: (@Composable () -> Unit)? = null) {
@@ -453,6 +464,7 @@ fun BarSheet(
         containerColor = if (grouped) brand.surfaceMuted else brand.ground,
         // The bar is the top of this sheet; the handle sits over it (BrandSheetHandle).
         dragHandle = null,
+        floating = !grouped,
     ) {
         Column(Modifier.fillMaxWidth().let { if (grouped) it.fillMaxHeight(0.94f) else it }.navigationBarsPadding()) {
             Box(Modifier.fillMaxWidth().height(56.dp)) {

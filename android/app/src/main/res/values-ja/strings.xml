@@ -232,4 +232,9 @@
     <string name="uncollect">集めた木から外す</string>
     <string name="uncollected">集めた木から外しました</string>
     <string name="collected_on">%1$s。</string>
+    <!-- The near-a-tree banner (NearbyBanner.swift). -->
+    <string name="nearby_title">%2$sまであと%1$d m</string>
+    <string name="nearby_tap_collect">ここをタップして集める</string>
+    <string name="nearby_open_collect">開くと集められます</string>
+    <string name="nearby_dismiss">閉じる</string>
 </resources>

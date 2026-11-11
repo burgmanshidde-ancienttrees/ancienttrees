@@ -205,7 +205,8 @@ fun DiscoverScreen(
     }
     val headerShift by animateIntAsState(
         if (headerHidden) -(headerPx + with(density) { 80.dp.roundToPx() }) else 0,
-        tween(250),
+        // .snappy(duration: 0.25) (Home.swift:261).
+        Motion.snappy(0.25f),
         label = "header",
     )
     // Tapping Discover while on Discover scrolls back up.
@@ -586,7 +587,8 @@ private fun Shelf(modifier: Modifier = Modifier, spacing: Dp = 12.dp, content: L
     val state = rememberLazyListState()
     LazyRow(
         state = state,
-        flingBehavior = rememberSnapFlingBehavior(state),
+        // .viewAligned: a card's leading edge comes to rest on the 16 margin (Home.swift:516).
+        flingBehavior = rememberSnapFlingBehavior(state, androidx.compose.foundation.gestures.snapping.SnapPosition.Start),
         contentPadding = PaddingValues(horizontal = 16.dp),
         horizontalArrangement = Arrangement.spacedBy(spacing),
         verticalAlignment = Alignment.Top,

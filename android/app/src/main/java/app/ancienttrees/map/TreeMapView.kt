@@ -96,8 +96,27 @@ private class MapHolder {
     /** The tree the camera last went to. */
     var centred: String? = null
 
+    private var swaps = 0
+
+    /**
+     * NO FADE DURING THE SWAP (TreeMap.swift performsPlacementTransitions; Hidde,
+     * 2026-11-08: "knipperende pins ... de eerste 10 seconde na download"):
+     * MapLibre cross-fades symbols over 0.3 s, so the same pins on the same spots
+     * dipped once per data swap. Placement transitions are off for the swap and
+     * back on once it is drawn, so a pan or zoom still fades pins as before.
+     */
     fun redraw() {
-        style?.getSourceAs<GeoJsonSource>(SOURCE)?.setGeoJson(collection(trees, spots, spread))
+        val st = style ?: return
+        val swap = ++swaps
+        // Only on a style still in charge: MapLibre throws when a transition is set
+        // while a newer style loads (caught by the flow walk, 2026-11-11).
+        if (st.isFullyLoaded) st.transition = org.maplibre.android.style.layers.TransitionOptions(300, 0, false)
+        st.getSourceAs<GeoJsonSource>(SOURCE)?.setGeoJson(collection(trees, spots, spread))
+        android.os.Handler(android.os.Looper.getMainLooper()).postDelayed({
+            if (swap == swaps && style === st && st.isFullyLoaded) {
+                st.transition = org.maplibre.android.style.layers.TransitionOptions(300, 0, true)
+            }
+        }, 350)
     }
 }
 private val MOSS = Color.rgb(51, 89, 51)

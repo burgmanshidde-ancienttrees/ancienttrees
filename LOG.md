@@ -24,6 +24,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-11-11 session: a map library that does not load no longer stops the page
 
 Nothing changes for anyone whose map loads. When the MapLibre script never arrives or the browser cannot parse it (3 reports in 24 hours: /hong-kong on Chrome 75, /assen and a Waremme tree on Chrome 156), the rest of the page now keeps working and the map's buttons hide, as they already did without WebGL. `atCanMap()` in lib/map.ts asks for the library too; qa's `check_a_map_is_only_built_when_it_can_be()` holds it. Tested on a copy of the live Waremme page without the library: the old code threw this error, the new code throws nothing. The full qa needs the CI build; only the new check ran locally. web_errors stays red until these reports fall out of its 24 hours.
+## 2026-11-11 session: Android moves like the iPhone (feel audit, PR 44 and this PR)
+
+- **What changed in the product:** on Android a page now slides in over the one under it, and the back gesture drags it with your finger. Each tab keeps its own history and scroll, and re-tapping a tab goes back to its root. Sheets slide down before they go, and the fitted ones float as a card with the cream handle. The save and collect haptics are in. Photographs stay on disk between launches (256 MB, Android's own HTTP cache, no library). Collect steps cross-fade, the photo viewer and search slide up as covers, the snackbar leaves properly, carousels snap to the margin, pins no longer blink on a data swap, and the near-a-tree banner exists, with its light tap, in eight languages. The tree's own map is a pushed page, so back returns to the tree.
+- **Under Airbnb's line (Hidde, 2026-11-10):** the press is Android's ripple clipped to the button, and the overscroll is Android's stretch, off on the tree page.
+- **Checked:** android.yml build and walk; the emulator walk including the signed-in round trip; slowed frame sequences and normal-speed frames of push, back drag and cancel, sheet in and out, viewer up and down (out/feel/). The walk caught one crash of mine before merge (a map style transition set while a newer style loaded), fixed.
+- **Not done:** audit row 12 (a fitted sheet that also drags to full height) needs its own sheet component, Material's has one fitted stop; most Low rows. data/android-parity.json `_feel` lists every row.
 
 ## 2026-11-11, night run, second attempt (no new trees)
 

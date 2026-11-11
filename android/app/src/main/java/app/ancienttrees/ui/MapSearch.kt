@@ -52,6 +52,10 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
@@ -127,7 +131,32 @@ fun MapSearch(
     val index = remember(catalogue) { SearchIndex(catalogue) }
     val focus = remember { FocusRequester() }
     LaunchedEffect(Unit) { runCatching { focus.requestFocus() } }
-    BackHandler(onBack = onBack)
+    // A FULL-SCREEN COVER (MapTab.swift:728, Home.swift:355): it slides up over the
+    // map and down again on the way out.
+    val keyboard = androidx.compose.ui.platform.LocalSoftwareKeyboardController.current
+    val rise = remember { androidx.compose.animation.core.Animatable(0f) }
+    val leaveScope = rememberCoroutineScope()
+    var leaving by remember { mutableStateOf(false) }
+    LaunchedEffect(Unit) { rise.animateTo(1f, Motion.push()) }
+    fun leave(then: () -> Unit) {
+        if (leaving) return
+        leaving = true
+        keyboard?.hide()
+        leaveScope.launch {
+            rise.animateTo(0f, Motion.push())
+            then()
+        }
+    }
+    BackHandler { leave(onBack) }
+    // The keyboard goes as soon as the results move (.scrollDismissesKeyboard(.immediately)).
+    val dropKeyboard = remember {
+        object : androidx.compose.ui.input.nestedscroll.NestedScrollConnection {
+            override fun onPreScroll(available: androidx.compose.ui.geometry.Offset, source: androidx.compose.ui.input.nestedscroll.NestedScrollSource): androidx.compose.ui.geometry.Offset {
+                if (source == androidx.compose.ui.input.nestedscroll.NestedScrollSource.UserInput && available.y != 0f) keyboard?.hide()
+                return androidx.compose.ui.geometry.Offset.Zero
+            }
+        }
+    }
     val who = LocalSearchAccount.current
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
@@ -158,12 +187,13 @@ fun MapSearch(
             recent.demo(listOf(e) + recent.rows.filter { it.id != e.id })
             GlobalScope.launch { recent.record(e, who.token()) }
         }
-        onPick(hit)
+        leave { onPick(hit) }
     }
 
     Column(
         Modifier
             .fillMaxSize()
+            .graphicsLayer { translationY = (1f - rise.value) * size.height }
             .background(brand.ground)
             .statusBarsPadding()
             .imePadding()
@@ -185,7 +215,7 @@ fun MapSearch(
         ) {
             Box(
                 contentAlignment = Alignment.Center,
-                modifier = Modifier.size(44.dp).clickable(onClick = onBack).semantics { contentDescription = "Back to the map" },
+                modifier = Modifier.size(44.dp).clip(CircleShape).clickable { leave(onBack) }.semantics { contentDescription = "Back to the map" },
             ) { Icon(Sym.ArrowBack, null, tint = brand.ink, modifier = Modifier.size(22.dp)) }
             Box(Modifier.weight(1f)) {
                 if (query.isEmpty()) Text(SEARCH_PLACEHOLDER, fontSize = 17.sp, fontWeight = FontWeight.Medium, color = brand.inkSoft, maxLines = 1)
@@ -196,6 +226,8 @@ fun MapSearch(
                     textStyle = sfStyle(fontSize = 17.sp, fontWeight = FontWeight.Medium, color = brand.ink),
                     cursorBrush = SolidColor(brand.ink),
                     keyboardOptions = KeyboardOptions(autoCorrectEnabled = false, imeAction = ImeAction.Search),
+                    // Search on the keyboard puts the keyboard away (.submitLabel(.search)).
+                    keyboardActions = androidx.compose.foundation.text.KeyboardActions(onSearch = { keyboard?.hide() }),
                     modifier = Modifier.fillMaxWidth().focusRequester(focus),
                 )
             }
@@ -229,7 +261,7 @@ fun MapSearch(
             }
         }
         Box(Modifier.fillMaxWidth().height(0.5.dp).background(brand.hairline))
-        LazyColumn(Modifier.fillMaxWidth().weight(1f)) {
+        LazyColumn(Modifier.fillMaxWidth().weight(1f).nestedScroll(dropKeyboard)) {
             if (query.length < 2) {
                 val mine = recentRows(catalogue, index, recent.rows)
                 if (mine.isNotEmpty()) {

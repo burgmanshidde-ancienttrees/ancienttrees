@@ -102,7 +102,8 @@ fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: 
             // THE PILL IS ONE VIEW THAT MOVES (Hidde, 2026-08-26): it slides
             // between items rather than fading in and out, as iOS does.
             val itemWidth = (maxWidth - 4.dp * (ITEMS.size - 1)) / ITEMS.size
-            val x by animateDpAsState((itemWidth + 4.dp) * selected, tween(280), label = "tab-pill")
+            // .snappy(duration: 0.28) (TabBar.swift:114).
+            val x by animateDpAsState((itemWidth + 4.dp) * selected, Motion.snappy(0.28f), label = "tab-pill")
             Box(
                 Modifier
                     .offset(x = x)

@@ -116,6 +116,8 @@ fun ContributeSheet(
     AppSheet(
         onDismissRequest = onDismiss,
         containerColor = brand.surfaceMuted,
+        // Full height: edge to edge, as the .large detent.
+        floating = false,
     ) {
         Column(
             // Full height, as the iPhone's form sheet (the .large detent of a NavigationStack).
