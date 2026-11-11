@@ -23,6 +23,10 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-11 code (full)
+
+- APP-BUG-shared-photo-url-force-unwrap, ios/AncientTrees/AncientTrees/Screens/SharedTreeView.swift:108: shared tree photo URL from a server file name is force-unwrapped.
+
 ## 2026-11-11
 
 Web half: the last 24 hours were Android parity work, one maps fix (atCanMap() asks for maplibregl, qa holds it) and data. No em dashes in site/dist HTML. Standing findings are unchanged.
