@@ -279,8 +279,14 @@ fun MapSheet(
                     // measured at full height, #F4F4F2 over the map, 2026-11-10):
                     // nothing shows through (Hidde: My trees see-through), and the
                     // white discs of the gear and Find people stand out as on iOS.
-                    // Over the map the iPhone's material; as the page, its plain ground.
-                    androidx.compose.ui.graphics.lerp(androidx.compose.ui.graphics.lerp(brand.ground, brand.surfaceMuted, 0.8f), brand.ground, progress),
+                    // Over the map the iPhone's material. The map's results list becomes the
+                    // plain white page at full (build 42); My trees keeps the grey it measures
+                    // at full height (#F5F6F5), where its white circles stand out.
+                    androidx.compose.ui.graphics.lerp(
+                        androidx.compose.ui.graphics.lerp(brand.ground, brand.surfaceMuted, 0.8f),
+                        brand.ground,
+                        if (results) progress else 0f,
+                    ),
                     RoundedCornerShape(topStart = corner, topEnd = corner),
                 )
                 .nestedScroll(connection)
