@@ -99,15 +99,13 @@ def main():
         install(APKS / "androidTest" / "debug" / "app-debug-androidTest.apk")
         for perm in ("ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"):
             adb("shell", "pm", "grant", PACKAGE, "android.permission." + perm)
-        adb("shell", "run-as", PACKAGE, "rm", "-rf", "files/walk")
+        adb("shell", "rm", "-rf", "/data/local/tmp/walk")
         r = adb(*cmd, timeout=3600)
         # The frames each step left (FlowWalk.shoot), out of the app's own files.
         if OUT.exists():
             shutil.rmtree(OUT)
         OUT.mkdir(parents=True)
-        tar = subprocess.run([ADB, "exec-out", "run-as", PACKAGE, "tar", "c", "-C", "files", "walk"], capture_output=True)
-        if tar.stdout:
-            subprocess.run(["tar", "x", "-C", str(OUT), "--strip-components", "1"], input=tar.stdout)
+        adb("pull", "/data/local/tmp/walk/.", str(OUT))
     failed = 0
     test = None
     for line in r.stdout.splitlines():

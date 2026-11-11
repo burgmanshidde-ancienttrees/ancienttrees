@@ -17,7 +17,6 @@
 package app.ancienttrees
 
 import android.content.Intent
-import android.graphics.Bitmap
 import android.net.Uri
 import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.test.ExperimentalTestApi
@@ -48,7 +47,6 @@ import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import java.io.File
 
 /** One thing a person does, and what to call the picture it leaves. */
 class Step(val name: String, val act: Walker.() -> Unit)
@@ -123,6 +121,8 @@ class Walker(val rule: ComposeTestRule) {
             return rule.onAllNodesWithTag("search-result-tree").onFirst()
         }
         // A tag on the map's rows and highlights, a description on Discover's tiles.
+        // A feed scrolled past its shelves shows none: one more swipe, as a thumb would.
+        repeat(3) { if (!exists("tree-card")) swipeUp() }
         waitFor("tree-card")
         return rule.onAllNodes(named("tree-card")).onFirst()
     }
@@ -177,11 +177,17 @@ class FlowWalk {
         }
     }
 
+    /**
+     * The frame, written by the shell to /data/local/tmp/walk/, which outlives the
+     * app: gradle uninstalls it after the run, and android.yml pulls the folder
+     * into the walk's artifact so a red step on CI comes with its picture.
+     */
     private fun shoot(flow: String, n: Int, name: String) {
-        val ctx = InstrumentationRegistry.getInstrumentation().targetContext
-        val dir = File(ctx.filesDir, "walk").apply { mkdirs() }
-        val shot: Bitmap = InstrumentationRegistry.getInstrumentation().uiAutomation.takeScreenshot() ?: return
-        File(dir, "%s__%02d-%s.png".format(flow, n, name)).outputStream().use { shot.compress(Bitmap.CompressFormat.PNG, 90, it) }
+        val ui = InstrumentationRegistry.getInstrumentation().uiAutomation
+        fun sh(cmd: String) = ui.executeShellCommand(cmd).close()
+        sh("mkdir -p /data/local/tmp/walk")
+        sh("screencap -p /data/local/tmp/walk/" + "%s__%02d-%s.png".format(flow, n, name))
+        Thread.sleep(300)
     }
 
     // A signed-in account, because signed out is a different and much shorter app.

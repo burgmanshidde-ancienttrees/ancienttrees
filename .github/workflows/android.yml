@@ -154,14 +154,17 @@ jobs:
           ram-size: 4096M
           disable-animations: true
           working-directory: android
-          script: ./gradlew --no-daemon connectedDebugAndroidTest "-Pandroid.testInstrumentationRunnerArguments.AT_SESSION=$AT_SESSION" -Pandroid.testInstrumentationRunnerArguments.notClass=app.ancienttrees.ButtonWalk
+          # The frames every step left (FlowWalk.shoot) come out whether it passed or not.
+          script: ./gradlew --no-daemon connectedDebugAndroidTest "-Pandroid.testInstrumentationRunnerArguments.AT_SESSION=$AT_SESSION" -Pandroid.testInstrumentationRunnerArguments.notClass=app.ancienttrees.ButtonWalk; s=$?; adb pull /data/local/tmp/walk ../out/android-walk || true; exit $s
 
       - name: Keep the walk's report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: android-walk-report
-          path: android/app/build/reports/androidTests/connected
+          path: |
+            android/app/build/reports/androidTests/connected
+            out/android-walk
           retention-days: 7
 
   # THE IPHONE'S VERTICAL SPACING (scripts/android_spacing.py; Hidde,

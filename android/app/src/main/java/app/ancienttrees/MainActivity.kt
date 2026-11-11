@@ -286,8 +286,12 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
             collectStart = app.ancienttrees.ui.CollectStart(about = t.name, knownTree = t.id, pickedIn = p, pickedMore = more)
         }
     }
+    // READ AT THE TAP, not captured: the tab bar is remembered movable content, so
+    // a `signedIn` captured when it was made stayed false after the account signed
+    // in, and the camera did nothing (found 2026-11-11 by the signed-in camera walk).
+    fun signedInNow() = account.state is SignIn.SignedIn
     fun collectFromLibrary(t: Tree) {
-        if (!signedIn) {
+        if (!signedInNow()) {
             pendingAfterSignIn = { collectFromLibrary(t) }
             asking = true
             return
@@ -296,7 +300,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         library.launch(androidx.activity.result.PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
     }
     fun collect(t: Tree) {
-        if (!signedIn) {
+        if (!signedInNow()) {
             pendingCollect = t
             asking = true
             return
@@ -310,7 +314,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     // 2026-10-12: "first login than overlay"; ContentView.openCollect). Who is
     // signed in is the server's answer (account.state), never the phone's.
     fun openCollect() {
-        if (signedIn) {
+        if (signedInNow()) {
             collectStart = app.ancienttrees.ui.CollectStart()
         } else {
             pendingAfterSignIn = { collectStart = app.ancienttrees.ui.CollectStart() }
@@ -329,7 +333,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     // THE THREE HAPTICS (Motion.kt): selection on a save, success on a collect.
     val view = androidx.compose.ui.platform.LocalView.current
     fun heart(t: Tree) {
-        if (signedIn) {
+        if (signedInNow()) {
             app.ancienttrees.ui.Haptics.selection(view)
             val adding = t.id !in saves.hearts
             scope.launch { saves.toggle(t.id) }
