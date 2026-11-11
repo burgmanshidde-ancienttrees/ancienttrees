@@ -305,6 +305,27 @@ def bug_cell(surface, today):
 
 # ---------------------------------------------------------------- live
 
+def night_ios_live():
+    """The iOS Live cell of the newest DATA.md entry, as (colour, reason),
+    or None. That entry was written by data-digest.yml, which has the key."""
+    try:
+        md = open(os.path.join(ROOT, "DATA.md"), encoding="utf-8").read()
+    except OSError:
+        return None
+    start = md.find("\n## ")
+    end = md.find("\n## ", start + 1)
+    entry = md[start:end if end > 0 else len(md)]
+    m = re.search(r"^\| Live \| [^|]* \| ([^|]*) \|", entry, re.M)
+    if not m:
+        return None
+    cell = m.group(1).strip()
+    colour, _, reason = cell.partition(":")
+    colour = colour.strip()
+    if colour not in ("green", "orange", "red"):
+        return None
+    return colour, (reason.strip() + " " if reason.strip() else "") + "(from the night's crash read)"
+
+
 def ios_live():
     try:
         import crashes
@@ -312,6 +333,13 @@ def ios_live():
     except Exception as e:
         return "grey", "crash data unreadable (%s)" % str(e)[:50]
     if sigs is None:
+        # No key here (a cloud session): Hidde, 2026-11-11, "kun je me alleen
+        # crashes geven die op de app gebeurt naar de gebruikers nu maak ik me
+        # voor niks zorgen". The night's digest read the crashes with the key,
+        # so its iOS Live cell stands; grey only when that is missing too.
+        night = night_ios_live()
+        if night:
+            return night
         return "grey", "crash data unreadable (%s)" % stores
     levels = [a["level"] for a in crashes.assess(sigs, stores)]
     if "urgent" in levels:
