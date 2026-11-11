@@ -58,6 +58,42 @@ jobs:
           path: android/app/build/outputs/apk/debug/*.apk
           retention-days: 14
 
+  # THE RELEASE BUILD AS GOOGLE PLAY TAKES IT: bundleRelease with R8 on,
+  # unsigned here (the upload key lives only on the Mac, scripts/
+  # android_release.py signs it there), so a change that breaks the release
+  # build, a shrinker rule or a resource R8 strips, is caught on the pull request
+  # and not on upload day. The merged manifest is held to the Data safety form:
+  # no advertising id permission (drafts/play-console-forms.md).
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Build the release bundle (unsigned)
+        working-directory: android
+        run: ./gradlew --no-daemon bundleRelease
+
+      - name: No advertising id in the release manifest
+        run: |
+          m=$(find android/app/build/intermediates -path '*release*' -name AndroidManifest.xml | head -1)
+          test -n "$m"
+          if grep -q 'com.google.android.gms.permission.AD_ID' "$m"; then echo "::error::AD_ID permission in $m"; exit 1; fi
+
+      - name: Keep the bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-release-aab-unsigned
+          path: android/app/build/outputs/bundle/release/*.aab
+          retention-days: 7
+
   # THE ROUTES AND THE SIGNED-IN ROUND TRIP on an emulator (FlowWalk.kt,
   # SignedInRoundTrip.kt), the Android twin of ios.yml's signed-in tests:
   # a save on the real test account (scripts/test_session.py, ours, never a

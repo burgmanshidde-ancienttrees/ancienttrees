@@ -1,7 +1,41 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
+}
+
+// THE UPLOAD KEY for Google Play (scripts/android_release.py). Read from the
+// environment, else from ~/.ancienttrees-android.env, else local.properties;
+// the keystore itself lives at ~/.ancienttrees-android-upload.jks and never in
+// the repository (it is public). Without them the release build comes out
+// unsigned, which is what CI builds to prove the release still compiles.
+// Play App Signing re-signs what reaches a phone; this key only proves the
+// upload is ours, and Google can reset it if it is ever lost.
+val uploadKey: Map<String, String> = run {
+    val keys = listOf(
+        "ANCIENTTREES_UPLOAD_STORE_FILE",
+        "ANCIENTTREES_UPLOAD_STORE_PASSWORD",
+        "ANCIENTTREES_UPLOAD_KEY_ALIAS",
+        "ANCIENTTREES_UPLOAD_KEY_PASSWORD",
+    )
+    val found = HashMap<String, String>()
+    val home = File(System.getProperty("user.home"), ".ancienttrees-android.env")
+    if (home.exists()) {
+        home.readLines().forEach { line ->
+            val k = line.substringBefore("=").trim().removePrefix("export ").trim()
+            val v = line.substringAfter("=", "").trim().trim('"', '\'')
+            if (k in keys && v.isNotEmpty()) found[k] = v
+        }
+    }
+    val local = rootProject.file("local.properties")
+    if (local.exists()) {
+        val props = Properties().apply { local.inputStream().use { load(it) } }
+        keys.forEach { k -> props.getProperty(k)?.takeIf { it.isNotEmpty() }?.let { found[k] = it } }
+    }
+    keys.forEach { k -> System.getenv(k)?.takeIf { it.isNotEmpty() }?.let { found[k] = it } }
+    if (keys.all { it in found } && File(found.getValue(keys[0])).exists()) found else emptyMap()
 }
 
 android {
@@ -18,6 +52,27 @@ android {
     }
 
     buildFeatures { compose = true }
+
+    signingConfigs {
+        if (uploadKey.isNotEmpty()) {
+            create("upload") {
+                storeFile = File(uploadKey.getValue("ANCIENTTREES_UPLOAD_STORE_FILE"))
+                storePassword = uploadKey.getValue("ANCIENTTREES_UPLOAD_STORE_PASSWORD")
+                keyAlias = uploadKey.getValue("ANCIENTTREES_UPLOAD_KEY_ALIAS")
+                keyPassword = uploadKey.getValue("ANCIENTTREES_UPLOAD_KEY_PASSWORD")
+            }
+        }
+    }
+
+    buildTypes {
+        getByName("release") {
+            // R8 shrinks and renames; proguard-rules.pro keeps what is found by name.
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            if (uploadKey.isNotEmpty()) signingConfig = signingConfigs.getByName("upload")
+        }
+    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
