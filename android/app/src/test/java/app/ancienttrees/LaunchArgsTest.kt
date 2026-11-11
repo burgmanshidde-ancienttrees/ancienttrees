@@ -28,4 +28,21 @@ class LaunchArgsTest {
         assertEquals("", LaunchArgs(listOf("-search")).search)
         assertNull(LaunchArgs(emptyList()).search)
     }
+
+    // The sweep's origin goes first and the first -at wins, on both phones (collect-away).
+    @Test fun theFirstPositionWins() {
+        assertEquals(52.3731 to 4.8922, LaunchArgs(listOf("-at=52.3731,4.8922", "-collect", "-at=52.03,5.91")).at)
+    }
+
+    // -AppleLocale: the iPhone simulator's region, so units and the country guess agree.
+    @Test fun theRegionIsRead() {
+        assertEquals(java.util.Locale("en", "NL"), LaunchArgs(listOf("-AppleLocale=en_NL")).locale)
+        assertNull(LaunchArgs(listOf("-AppleLocale=nonsense")).locale)
+        assertNull(LaunchArgs(emptyList()).locale)
+    }
+
+    @Test fun aCollectionIsOpened() {
+        assertEquals("ancient-oaks-of-europe", LaunchArgs(listOf("-open=collection:ancient-oaks-of-europe")).openCollection)
+        assertNull(LaunchArgs(listOf("-open=tree:ath_004")).openCollection)
+    }
 }

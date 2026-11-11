@@ -23,6 +23,9 @@ data class LaunchArgs(val args: List<String>, val testSession: String? = null) {
     /** -open=city:<slug>: the map looking at that city, its place header in the sheet (ContentView.debugRoute). */
     val openCity: String? get() = value("-open")?.takeIf { it.startsWith("city:") }?.removePrefix("city:")
 
+    /** -open=collection:<slug>: a curated collection's page (ContentView.debugRoute .collection). */
+    val openCollection: String? get() = value("-open")?.takeIf { it.startsWith("collection:") }?.removePrefix("collection:")
+
     /** -open=species:<Common name>: the species page (Species.swift). */
     val openSpecies: String? get() = value("-open")?.takeIf { it.startsWith("species:") }?.removePrefix("species:")
 
@@ -72,6 +75,17 @@ data class LaunchArgs(val args: List<String>, val testSession: String? = null) {
 
     /** -signed-in: the sweep's stand-in for an account, debug builds only; nothing is sent without a real one. */
     val signedIn: Boolean get() = "-signed-in" in args
+
+    /**
+     * -AppleLocale=en_NL: the region the phone says it is in, the iPhone's own
+     * launch argument (NSArgumentDomain). Units and the country guess follow the
+     * phone's region on both phones (Units.swift, Profiles.countryGuess), so the
+     * parity frames and the walks stand Android in the iPhone simulator's region
+     * instead of the emulator's en_US (review 2026-11-11: Miles, United States).
+     */
+    val locale: java.util.Locale?
+        get() = value("-AppleLocale")?.split("_", "-")?.takeIf { it.size == 2 && it[1].length == 2 }
+            ?.let { java.util.Locale(it[0], it[1]) }
 
     /** A fixed position, as the iPhone's sweep stands in Athens without a real fix. */
     val at: Pair<Double, Double>?

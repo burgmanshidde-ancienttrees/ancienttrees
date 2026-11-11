@@ -318,6 +318,19 @@ class MyTrees(private val account: Account) {
         version++
     }
 
+    /**
+     * A saved draft under -signed-in's stand-in (Account.useStandIn): kept in
+     * memory as the iPhone's Sightings.commit keeps it, so the page turns into
+     * your tree and the walk sees the confirmation. Nothing is sent.
+     */
+    fun keepStandIn(d: Collector.Draft) {
+        if (!account.standIn) return
+        demoSeeded = true
+        all = listOf(OwnSighting(id = d.id, treeId = null, name = d.name, lat = d.lat, lng = d.lng, date = System.currentTimeMillis(),
+            note = d.note, species = d.species, age = d.age, girthCm = d.girthCm)) + all
+        version++
+    }
+
     // MARK: - reading
 
     private fun parse(o: JSONObject): OwnSighting? {

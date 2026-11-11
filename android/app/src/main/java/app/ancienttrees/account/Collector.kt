@@ -182,6 +182,9 @@ object Collector {
         girthCm: Int? = null,
     ): Boolean {
         val s = account.fresh() ?: return false
+        // -signed-in's stand-in (Account.useStandIn): the iPhone keeps the row on the
+        // phone and its sync fails quietly; here nothing is sent and the flow goes on.
+        if (account.standIn) return true
         var stored: String? = storedPath
         if (jpeg != null) {
             val path = "${s.userId}/$id.jpg"
@@ -210,6 +213,7 @@ object Collector {
     /** The tick: one `visited` row, today. */
     suspend fun tick(account: Account, treeId: String): Boolean {
         val s = account.fresh() ?: return false
+        if (account.standIn) return true
         val ok = Supa.upsert(
             "/rest/v1/visited?on_conflict=user_id,tree_id",
             s.accessToken,
@@ -244,6 +248,7 @@ object Collector {
      * and the row turns `sent` when that landed.
      */
     suspend fun saveDraft(account: Account, d: Draft, city: String?): Boolean {
+        if (account.standIn) return true
         if (!send(account, d.id, null, d.name, d.lat, d.lng, d.jpeg, d.extras, d.taken, note = d.note, species = d.species,
                 age = d.age, girthCm = d.girthCm)) {
             return false

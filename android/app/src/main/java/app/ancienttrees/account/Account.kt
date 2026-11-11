@@ -75,6 +75,27 @@ class Account(context: Context) {
     }
 
 
+    /**
+     * -signed-in, THE SWEEP'S STAND-IN (Account.swift:207, the same family as
+     * -at= and -collected=): a local session with no tokens, so save, the camera
+     * and every gate act signed in and a walk measures the thing it tests, not
+     * the sign-in sheet. It is not a way to sign in: there is no account behind
+     * it, nothing is written to the phone, and every network call fails as it
+     * would for an expired session. Only a debuggable build reads launch
+     * arguments (LaunchArgs.from), so a release build never gets here.
+     */
+    fun useStandIn() {
+        standIn = true
+        testing = true
+        session = Session("", "", Long.MAX_VALUE, STAND_IN_ID, "test@ancienttrees.app")
+        state = SignIn.SignedIn("test@ancienttrees.app")
+        problem = null
+    }
+
+    /** True under [useStandIn]: what the person does stays on screen, nothing is sent. */
+    var standIn = false
+        private set
+
     /** Spend the stored token with the server; only its yes signs anybody in. */
     suspend fun restore() {
         val stored = prefs.getString(KEY_REFRESH, null)
@@ -250,6 +271,7 @@ class Account(context: Context) {
 
     companion object {
         private const val KEY_REFRESH = "session.refresh"
+        const val STAND_IN_ID = "00000000-0000-0000-0000-000000000000"
 
         /** Supabase's authorize URL for one provider, coming back to the app's callback. */
         fun authorizeUrl(provider: String): String =
