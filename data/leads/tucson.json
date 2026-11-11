@@ -61,7 +61,10 @@
    "source": "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4",
    "date": "2026-11-04",
    "species": "Jacaranda (Jacaranda sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "status": "held",
+   "held_why": "Held twice by writing passes (2026-11-10, 2026-11-11): below the page floor, no size, age, story or confirmed champion status, so no reason a visitor standing there can see.",
+   "held_date": "2026-11-11"
   },
   {
    "name": "UA guajillo (Berlandier's acacia), accession 8219",
@@ -97,7 +100,10 @@
    "source": "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4",
    "date": "2026-11-04",
    "species": "Fig (Ficus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "status": "held",
+   "held_why": "Held twice by writing passes (2026-11-10, 2026-11-11): below the page floor; only a GIS heritage flag and a 1950 install date, no page text, size or story.",
+   "held_date": "2026-11-11"
   }
  ],
  "blocked": []
