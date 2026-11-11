@@ -26,6 +26,13 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **What changed in the product:** on Android, as on the iPhone since PR 40, the map's list at full height is now the page under the search field, with no grip and no count. The Map pill drops it to a new lowest stop where only the count shows and the tab bar steps away, and a tap on that bar brings both back. A drag starts after 18 points and a flick is projected the way SwiftUI does (audit row 30). The grip, the count and the corners change with the sheet frame by frame. Every city and country map follows, since they are the map tab; My trees keeps its stops.
 - **Checked:** map, map-full and map-bar shot on both phones and looked at side by side; pill, bar and flick walked on the emulator; a new FlowWalk step covers pill and back.
 - **Open:** about 10 points less air above Highlights than the iPhone, left to the spacing measurer. The projection's quarter second is the commonly reported figure for SwiftUI, not read from Apple's source.
+## 2026-11-11 session: Android ready for Google Play, waiting on Hidde's verified account
+
+- **Release build**: `python3 scripts/android_release.py` builds the .aab with R8 on, signed with a new upload key that lives only on the Mac (`~/.ancienttrees-android-upload.jks`, passwords in `~/.ancienttrees-android.env`, never in the repo), checks the signature and copies it to out/play/. SHA-256 of the upload key `4F:42:47:55:68:02:7B:2D:4F:B6:ED:54:82:62:3B:00:84:B7:8B:B5:AB:5D:E1:9B:B2:CD:CF:32:6D:75:2F:F2`, now in assetlinks.json beside the debug key; Play App Signing's key joins after the first upload.
+- **Runs**: the release APK installed on the emulator, map, Discover, My trees, a tree page and back, no crash (`scripts/android_release_walk.py`). No AD_ID permission in the merged manifest.
+- **CI**: android.yml job `release` builds the release bundle unsigned on every Android change and fails on an AD_ID permission.
+- **Drafts**: drafts/play-store-listing.md (eight languages, `scripts/play_listing_check.py` counts and pitch-checks), drafts/play-console-forms.md (Data safety, content rating, audience, ads, closed test), drafts/play-console-steps.md (his click list, Dutch). Graphics in out/play/ on the Mac: icon 512, feature graphic from the press logo, four phone shots 1080x1920 from the release build (`scripts/play_shots.py`).
+- For Hidde: category and public contact address are his choice (in the listing draft); then the click list once Google has verified him.
 
 ## 2026-11-11 session: a map library that does not load no longer stops the page
 

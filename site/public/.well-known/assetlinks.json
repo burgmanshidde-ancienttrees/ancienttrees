@@ -1,11 +1,14 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "app.ancienttrees.android",
       "sha256_cert_fingerprints": [
-        "D8:7C:32:B1:02:90:3E:E3:FA:B7:70:FD:9E:0E:0D:A9:FD:B3:0B:CC:0C:E9:17:BA:A7:71:F3:8E:36:F4:2C:09"
+        "D8:7C:32:B1:02:90:3E:E3:FA:B7:70:FD:9E:0E:0D:A9:FD:B3:0B:CC:0C:E9:17:BA:A7:71:F3:8E:36:F4:2C:09",
+        "4F:42:47:55:68:02:7B:2D:4F:B6:ED:54:82:62:3B:00:84:B7:8B:B5:AB:5D:E1:9B:B2:CD:CF:32:6D:75:2F:F2"
       ]
     }
   }
