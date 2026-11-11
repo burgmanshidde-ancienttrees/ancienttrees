@@ -17,6 +17,8 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
+import androidx.compose.ui.layout.layout
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -133,15 +135,26 @@ fun BrandSheet(
     AppSheet(onDismissRequest = onDismiss, containerColor = brand.ground) {
         // A button slides the sheet down first, then acts (Sheet.kt, the iPhone's dismiss()).
         val close = LocalSheetClose.current
-        Box {
+        // BrandSheet.swift starts its content 36 below the sheet's top, the handle
+        // drawn inside that room; AppSheet's handle keeps 48 (Sheet.kt) and the
+        // column its 12, so this sheet comes 24 up (the title sat 24 lower).
+        Box(
+            Modifier.layout { m, c ->
+                val p = m.measure(c)
+                val t = 24.dp.roundToPx()
+                layout(p.width, (p.height - t).coerceAtLeast(0)) { p.place(0, -t) }
+            },
+        ) {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier
                     .fillMaxWidth()
                     .verticalScroll(rememberScrollState())
                     .padding(horizontal = 24.dp)
-                    .padding(top = 12.dp, bottom = 16.dp)
-                    .navigationBarsPadding(),
+                    // BrandSheet.swift on iOS 26: the last button 28 above the floating
+                    // card's bottom edge. The card stands on Android's navigation bar
+                    // (Sheet.kt), so only its distance to the screen's edge differs.
+                    .padding(top = 12.dp, bottom = 28.dp),
             ) {
                 icon?.let {
                     SheetIconTile(it, iconTint, iconGround)
@@ -184,7 +197,9 @@ fun BrandSheet(
                     )
                 }
             }
-            SheetCloseButton(onDismiss, Modifier.align(Alignment.TopEnd))
+            // SheetCloseButton.swift: .padding(.top, 8) from the sheet's top edge,
+            // which is 24 above this box's top here.
+            SheetCloseButton(onDismiss, Modifier.align(Alignment.TopEnd).offset(y = (-16).dp))
         }
     }
 }

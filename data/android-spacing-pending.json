@@ -5,35 +5,12 @@
   "map-full",
   "map-pin",
   "search",
-  "photo-viewer",
-  "signin",
-  "collection-tab",
-  "collection-tab-full",
-  "own-tree",
-  "profile",
-  "profile-signed-in",
-  "profile-edit",
-  "signin-email",
-  "refused",
-  "people",
-  "early-adopter",
-  "early-adopter-sheet",
   "collect-intro",
   "collect-away",
   "collect-place",
-  "collect-identify",
-  "collect-ticked",
-  "collect-voted",
-  "collect-compare",
-  "collect-describe",
   "city",
   "city-map-full",
-  "place-pin",
-  "species-pick",
-  "directions",
-  "review-ask",
-  "contribute",
-  "feedback"
+  "species-pick"
  ],
  "no_ios_baseline": {
   "profile-edit": "SweepFrames opens it without -signed-in, so the iPhone's dump is signed-out My trees, not the editor (fix the frame in SweepFrames.swift, then refresh data/ios-frames.json)",
@@ -41,6 +18,9 @@
   "people": "the iPhone's dump has no elements under people-sheet",
   "contribute": "the iPhone's dump has no elements under contribute-sheet",
   "feedback": "the iPhone's dump has no elements under contribute-sheet",
-  "collect-voted": "the iPhone's dump has no elements under collect-note-field"
+  "collect-voted": "the iPhone's dump has no elements under collect-note-field",
+  "collect-ticked": "the iPhone's dump names one element under collect-done; one element has no gaps to measure",
+  "collect-compare": "the iPhone's dump names one element under collect-this-is-the-one; one element has no gaps to measure",
+  "collect-describe": "the iPhone's dump names two elements under draft-save, neither of which Android names the same; nothing to pair"
  }
 }

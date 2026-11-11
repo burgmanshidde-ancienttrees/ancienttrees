@@ -498,8 +498,24 @@ def compare_page(pairs, ios_h, ios_els):
     return gaps, heights
 
 
+def sheet_scale(ios):
+    """The factor a sheet's frames were read at on the iPhone.
+
+    SweepFrames reads a sheet while iOS 26 is still zooming it in: every
+    BrandSheet button is exactly 48 in the Swift (SheetButtonStyle .frame(height:
+    48)) and the dump says 46.1, its 31 point title 30.1. Heights and gaps on such
+    a screen are scaled back by the button (found 2026-11-11); positions from the
+    screen's edges are left as read.
+    """
+    if not any(e["id"] in ("sheet-close", "spot-close", "xmark") for e in ios["els"]):
+        return 1.0  # not a presented sheet
+    hs = [e["h"] for e in ios["els"] if e["t"] == "Button" and 45.5 < e["h"] < 47.9 and e["w"] > 300]
+    return 48.0 / max(set(hs), key=hs.count) if hs else 1.0
+
+
 def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
     allowed_what = {a["what"]: a.get("why", "") for a in allowed}
+    k = sheet_scale(ios)
     gaps, heights, insets_, seen_gap = {}, {}, {}, {}
     matched = 0
     for n, xml in enumerate(xml_pages):
@@ -509,13 +525,13 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
         g, h = compare_page(pairs, ios["h"], ios["els"])
         # A scrolled page meets the same element again: keep the reading
         # where it stood whole (accessibility bounds are cut, never grown).
-        for k, v in g.items():
-            if k not in seen_gap or v[2] > seen_gap[k][2]:
-                seen_gap[k] = v
-                gaps[k] = v[:2]
-        for k, v in h.items():
-            if k not in heights or v[1] > heights[k][1]:
-                heights[k] = v
+        for key, v in g.items():
+            if key not in seen_gap or v[2] > seen_gap[key][2]:
+                seen_gap[key] = v
+                gaps[key] = (round(v[0] * k, 1), v[1])
+        for key, v in h.items():
+            if key not in heights or v[1] > heights[key][1]:
+                heights[key] = (round(v[0] * k, 1), v[1])
         if n == 0 and pairs:
             # The first named thing under the top safe area, and the lowest one
             # above the bottom one (a tab bar, an action bar, a sheet's button).
@@ -556,7 +572,7 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
                          "fails": abs(d) > FAIL and what_s not in allowed_what,
                          "allowed": allowed_what.get(what_s)})
     rows.sort(key=lambda r: -abs(r["diff"]))
-    return {"matched": matched, "measured": len(gaps) + len(heights) + len(insets_),
+    return {"ios_scale": round(k, 4), "matched": matched, "measured": len(gaps) + len(heights) + len(insets_),
             "gaps": len(gaps), "differences": rows,
             "failing": sum(1 for r in rows if r["fails"])}
 
@@ -602,6 +618,11 @@ def main():
                     sys.exit("the build did not install, so nothing would be measured on it:\n" + said[-400:])
                 for perm in ("ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"):
                     adb.shell("pm", "grant", PACKAGE, "android.permission." + perm)
+                # The system restarts the app by itself a moment after an install
+                # (android_parity.py, API 37); let that pass, or the first screen
+                # measured is that restart (the tree page "did not open", twice).
+                adb.shell("am", "start", "-W", "-n", ACTIVITY)
+                time.sleep(10)
             w_px, h_px, density = set_width(adb)
             try:
                 adb.shell("am", "force-stop", PACKAGE)
