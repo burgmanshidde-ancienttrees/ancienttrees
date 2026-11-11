@@ -80,6 +80,10 @@ class Walker(val rule: ComposeTestRule) {
         // Then return, as FlowWalk.swift types "DELETE\n": the keyboard goes away and
         // the button under it can be reached (on CI it lay under the keyboard).
         runCatching { rule.onAllNodes(named(id)).onFirst().performImeAction() }
+        // And wait for the keyboard to be gone and the sheet to settle: on CI a tap
+        // made while it was still sliding away landed outside the sheet and closed it.
+        runCatching { androidx.test.espresso.Espresso.closeSoftKeyboard() }
+        Thread.sleep(1500)
         rule.waitForIdle()
     }
 
