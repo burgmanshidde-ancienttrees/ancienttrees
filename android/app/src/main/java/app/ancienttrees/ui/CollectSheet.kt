@@ -618,7 +618,9 @@ private fun CollectIntro(
                 modifier = Modifier.padding(horizontal = 18.dp).padding(top = 8.dp, bottom = 22.dp),
             )
             Column(verticalArrangement = Arrangement.spacedBy(12.dp), modifier = Modifier.fillMaxWidth()) {
-                SheetButtonView(SheetButton(stringResource(R.string.cf_take), SheetKind.PRIMARY, Sym.PhotoCamera, onStart), Modifier.testTag("add-start"))
+                // A long press is the library, the shortcut iNaturalist puts on its camera
+                // button (CollectIntro.swift:136); a second way in, never the only one.
+                SheetButtonView(SheetButton(stringResource(R.string.cf_take), SheetKind.PRIMARY, Sym.PhotoCamera, onStart), Modifier.testTag("add-start"), onLongPress = onLibrary)
                 SheetButtonView(SheetButton(stringResource(R.string.cf_choose), SheetKind.SECONDARY, Sym.PhotoLibrary, onLibrary), Modifier.testTag("add-library"))
             }
         }

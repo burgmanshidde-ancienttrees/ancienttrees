@@ -2,10 +2,6 @@
   "_note": "Per iOS screen (SweepFrames.swift names): its Android status (not-ported, in-progress, parity) and the differences still open. Read by scripts/android_parity.py. DECISIONS.md 2026-11-10.",
   "_android_forced": [
     {
-      "what": "Glass behind floating bars",
-      "why": "Android has no system material blur for what lies under a view; the tab bar is the ground fully opaque with a 14 percent ink wash and the map sheet a warm light grey (#F4F4F2), both measured off the iPhone's shots so nothing behind is legible."
-    },
-    {
       "what": "Back",
       "why": "Android's system back gesture and button close the top sheet or page, as every Android app does."
     },
@@ -410,11 +406,15 @@
       "28": "Over the photo: Android's clipped ripple (Airbnb's line), not glass that scales.",
       "29": "No pin fade during a data swap.",
       "33 (pill spring only), 42, 43": ".snappy on the tab pill, the Discover header, the email field.",
-      "30": "The flick: 18 point minimum drag and the release projected a quarter of a second ahead, SwiftUI's predictedEndTranslation (the quarter is the commonly reported figure, not read from Apple's source)."
+      "30": "The flick: 18 point minimum drag and the release projected a quarter of a second ahead, SwiftUI's predictedEndTranslation (the quarter is the commonly reported figure, not read from Apple's source).",
+      "glass": "The iPhone's frosted material behind the tab bar, its camera disc and the round buttons over the tree's photograph: a backdrop blur on Android 12+ through Haze 1.7.2 (RenderEffect, API 31; developer.android.com/reference/android/graphics/RenderEffect), opaque ground below 31. Not forced after all. The one thing it cannot frost is the map, which MapLibre draws on its own GL surface.",
+      "37": "Card placeholders on the iPhone's #F2F2F2 (Brand.surfaceMuted), row thumbnails on the moss tint, leaf-tile cards keep the tile, the big tree card a white spinner in Android's shape.",
+      "39": "The launch loading screen: the oak mark and a spinner on the ground until the catalogue is read, and after six seconds the iPhone's line, in eight languages.",
+      "40": "A long press on Take a photograph opens the library (CollectIntro.swift:136)."
     },
     "not_done": {
       "12": "A fitted sheet that can also be dragged to full height. Material's ModalBottomSheet has one fitted height and no second stop, so it needs its own sheet component.",
-      "low": "31, 32, 33 (icon change), 35-41, 44-46 are not done; Low was only where cheap."
+      "low": "31, 32, 33 (icon change), 35, 36 and 38 (spinner shapes stay Android's by Airbnb's line), 41 (toggle stays Android's), 44, 45, 46."
     }
   }
 }

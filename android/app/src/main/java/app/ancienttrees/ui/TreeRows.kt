@@ -203,7 +203,8 @@ fun TreeRow(tree: Tree, onOpen: () -> Unit) {
             Box(Modifier.fillMaxSize().clip(RoundedCornerShape(10.dp)).background(brand.mossTint), contentAlignment = Alignment.Center) {
                 val photo = tree.photo
                 if (photo != null) {
-                    RemoteImage(photo.card, null, Modifier.fillMaxSize())
+                    // A row's thumbnail waits on the moss tint (TreeRow.swift:68).
+                    RemoteImage(photo.card, null, Modifier.fillMaxSize(), fallback = { Box(Modifier.fillMaxSize().background(Brand.colors.mossTint)) })
                 } else {
                     SpeciesMark(tree.species, brand.moss, Modifier.size(30.dp))
                 }
@@ -248,7 +249,8 @@ fun HighlightCard(tree: Tree, onOpen: () -> Unit) {
             .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onOpen),
     ) {
         Box(Modifier.size(220.dp, 150.dp).clip(RoundedCornerShape(12.dp)).background(leafTile())) {
-            tree.photo?.let { RemoteImage(it.card, null, Modifier.fillMaxSize()) }
+            // Over the leaf tile, which is its placeholder (TreeRow.swift:106).
+            tree.photo?.let { RemoteImage(it.card, null, Modifier.fillMaxSize(), placeholder = false) }
             Box(Modifier.align(Alignment.TopEnd).padding(2.dp)) { SaveMark(tree, onPhoto = true) }
             if (tree.id in marks.collected) Box(Modifier.align(Alignment.TopStart).padding(8.dp)) { SeenTag() }
         }
@@ -335,7 +337,13 @@ fun TreeCard(
         Box(Modifier.fillMaxWidth().height(190.dp).background(leafTile())) {
             val photo = tree.photo
             if (photo != null) {
-                RemoteImage(photo.card, null, Modifier.fillMaxSize(), placeholder = false)
+                // The leaf tile with a white spinner until it lands (TreeCard.swift:116);
+                // the spinner in Android's own shape (Airbnb's line).
+                RemoteImage(photo.card, null, Modifier.fillMaxSize(), fallback = {
+                    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                        androidx.compose.material3.CircularProgressIndicator(color = Color.White, strokeWidth = 2.dp, modifier = Modifier.size(24.dp))
+                    }
+                })
             } else {
                 Column(Modifier.align(Alignment.Center), horizontalAlignment = Alignment.CenterHorizontally) {
                     SpeciesMark(tree.species, Color.White.copy(alpha = 0.9f), Modifier.size(66.dp))

@@ -21,6 +21,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-11 session: Android's glass, and the last small controls
+
+- **What changed in the product:** on Android 12 and later, the tab bar, its camera disc and the round buttons over a tree's photograph are frosted glass like the iPhone's: what lies behind them is blurred under a milky tint. Before Android 12 they keep the opaque ground they had. The one thing the glass cannot frost is the map itself, which MapLibre draws on its own GL surface. Photographs that are still loading wait on the iPhone's grey, row thumbnails on the moss tint, and the big tree card shows a white spinner. Until the catalogue is read the app shows the oak mark and a spinner, and after six seconds the iPhone's "taking longer than it should" line, in eight languages. A long press on Take a photograph opens the library, iNaturalist's shortcut.
+- **Library:** Haze 1.7.2 (dev.chrisbanes.haze), the release built against this app's Compose 1.10 and Kotlin 2.2.21, for the backdrop blur (hard list 5). It moves androidx.activity to 1.12.2 and nothing else.
+- **Kept as Android's (Airbnb's line):** spinner and toggle shapes.
+- **Parity:** "Glass behind floating bars" is off `_android_forced`, with its source.
+
 ## 2026-11-11 session: Android has build 42's map sheet
 
 - **What changed in the product:** on Android, as on the iPhone since PR 40, the map's list at full height is now the page under the search field, with no grip and no count. The Map pill drops it to a new lowest stop where only the count shows and the tab bar steps away, and a tap on that bar brings both back. A drag starts after 18 points and a flick is projected the way SwiftUI does (audit row 30). The grip, the count and the corners change with the sheet frame by frame. Every city and country map follows, since they are the map tab; My trees keeps its stops.

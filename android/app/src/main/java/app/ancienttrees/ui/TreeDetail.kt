@@ -266,7 +266,9 @@ private fun TreeDetailInner(
 
         // NO STRETCH OVER THE HERO (Airbnb's line, Hidde 2026-11-10): Android's
         // overscroll stays everywhere else, but it distorted the photograph here.
-        Column(Modifier.fillMaxSize().verticalScroll(scroll, overscrollEffect = null)) {
+        // The photograph and the page over it, for the round buttons' glass (Glass.kt).
+        val photoGlass = dev.chrisbanes.haze.rememberHazeState()
+        Column(Modifier.fillMaxSize().glassSource(photoGlass).verticalScroll(scroll, overscrollEffect = null)) {
             // THE PAGE SLIDES OVER THE PHOTOGRAPH: the hero keeps half the scroll.
             Box(Modifier.zIndex(0f).graphicsLayer { translationY = scroll.value * 0.5f }) {
                 Hero(
@@ -341,6 +343,7 @@ private fun TreeDetailInner(
                 ),
         )
         TopButtons(
+            glassState = photoGlass,
             tree = tree,
             onBack = actions.onBack,
             onShare = actions.onShare,
@@ -661,7 +664,7 @@ private fun AddPhotoPill(enabled: Boolean, onClick: () -> Unit) {
  * (data/android-parity.json, forced).
  */
 @Composable
-private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onReport: (String) -> Unit) {
+private fun TopButtons(glassState: dev.chrisbanes.haze.HazeState?, tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onReport: (String) -> Unit) {
     val brand = Brand.colors
     val glass = brand.ground.copy(alpha = 0.92f)
     var menu by remember { mutableStateOf(false) }
@@ -678,7 +681,8 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
                 .clip(CircleShape)
                 .clickable(role = Role.Button, onClick = onBack)
                 // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
-                .background(glass, CircleShape)
+                // iOS 26's glass circle (TreeDetail.swift:805), over the photograph.
+                .glass(glassState, CircleShape, glass)
                 .semantics { contentDescription = back }
                 .testTag("back-to-map"),
             contentAlignment = Alignment.Center,
@@ -688,7 +692,7 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
         Spacer(Modifier.weight(1f))
         Row(
             // Clipped, so each half's ripple stays inside the capsule (Airbnb's line, 2026-11-10).
-            Modifier.height(44.dp).shadow(2.dp, CircleShape).clip(CircleShape).background(glass, CircleShape),
+            Modifier.height(44.dp).shadow(2.dp, CircleShape).clip(CircleShape).glass(glassState, CircleShape, glass),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             val share = stringResource(R.string.share_tree)

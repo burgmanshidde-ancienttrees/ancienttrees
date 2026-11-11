@@ -238,4 +238,6 @@
     <string name="nearby_tap_collect">Tik hier om hem te verzamelen</string>
     <string name="nearby_open_collect">Open hem om hem te verzamelen</string>
     <string name="nearby_dismiss">Wegdoen</string>
+    <!-- The launch loading screen, after six seconds (ContentView.swift slowStart). -->
+    <string name="slow_start">Dit duurt langer dan het zou moeten. Sluit de app en open hem opnieuw, en laat het ons weten als het blijft gebeuren.</string>
 </resources>

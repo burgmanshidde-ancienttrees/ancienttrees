@@ -681,7 +681,8 @@ private fun PlaceCard(name: String, sub: String, cover: Tree?, onOpen: () -> Uni
     ) {
         val url = cover?.photo?.card
         if (url != null) {
-            RemoteImage(url, null, Modifier.fillMaxSize())
+            // Over the leaf tile, its placeholder (Home.swift:981).
+            RemoteImage(url, null, Modifier.fillMaxSize(), placeholder = false)
         } else {
             SpeciesMark(cover?.species ?: "Pedunculate Oak", Color.White.copy(alpha = 0.85f), Modifier.size(46.dp).align(Alignment.Center))
         }

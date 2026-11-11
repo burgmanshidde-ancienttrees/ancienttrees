@@ -154,6 +154,7 @@ fun RemoteImage(
     } else if (fallback != null) {
         Box(modifier) { fallback() }
     } else if (placeholder) {
-        Box(modifier.background(MaterialTheme.colorScheme.surfaceVariant))
+        // The iPhone's placeholder grey, Brand.surfaceMuted (#F2F2F2; TreePhoto { Brand.surfaceMuted }).
+        Box(modifier.background(Brand.colors.surfaceMuted))
     }
 }

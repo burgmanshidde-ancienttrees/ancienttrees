@@ -107,11 +107,14 @@ private val ITEMS = listOf(
 @Composable
 fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: Modifier = Modifier) {
     val brand = Brand.colors
-    // OPAQUE, measured off the iPhone's shots (2026-11-10): its regularMaterial
-    // is frosted to near-opaque, so nothing behind it is legible; Android has no
-    // blur, and at 92 percent the rows under the bar read straight through it.
+    // THE IPHONE'S MATERIAL (TabBar.swift:158): a blur of what lies behind, the
+    // ground's milk over it, and a 6 percent wash of ink (Glass.kt). Without a blur
+    // (before Android 12) the opaque ground and the 14 percent wash measured off the
+    // iPhone's shots (2026-11-10), so nothing behind reads through.
+    val haze = LocalBarGlass.current
+    val blurred = haze != null && GlassAvailable
     val glass = brand.ground
-    val wash = brand.ink.copy(alpha = 0.14f)
+    val wash = brand.ink.copy(alpha = if (blurred) 0.06f else 0.14f)
     val edge = Color.White.copy(alpha = 0.25f)
     Row(
         horizontalArrangement = Arrangement.spacedBy(10.dp),
@@ -123,7 +126,7 @@ fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: 
             Modifier
                 .weight(1f)
                 .shadow(10.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.10f), spotColor = Color.Black.copy(alpha = 0.10f))
-                .background(glass, CircleShape)
+                .glass(haze, CircleShape, glass)
                 .background(wash, CircleShape)
                 .border(0.5.dp, edge, CircleShape)
                 .padding(4.dp),
@@ -193,7 +196,7 @@ fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: 
                 // The ripple stays inside the disc (Airbnb's line, 2026-11-10).
                 .clip(CircleShape)
                 .clickable(role = Role.Button, onClick = collect)
-                .background(glass, CircleShape)
+                .glass(haze, CircleShape, glass)
                 .background(wash, CircleShape)
                 .border(0.5.dp, edge, CircleShape)
                 .testTag("tab-collect")
