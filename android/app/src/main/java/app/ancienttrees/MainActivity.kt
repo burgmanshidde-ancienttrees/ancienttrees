@@ -18,6 +18,8 @@ import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.statusBars
+import androidx.compose.foundation.layout.navigationBarsIgnoringVisibility
+import androidx.compose.foundation.layout.statusBarsIgnoringVisibility
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.activity.enableEdgeToEdge
@@ -98,8 +100,12 @@ class MainActivity : ComponentActivity() {
                 // from the system's dumps they varied between boots of one emulator
                 // (a Pixel 6 status bar read 47.6 one run, 23.4 the next).
                 val d = androidx.compose.ui.platform.LocalDensity.current
-                val insetTop = androidx.compose.foundation.layout.WindowInsets.statusBars.getTop(d)
-                val insetBottom = androidx.compose.foundation.layout.WindowInsets.navigationBars.getBottom(d)
+                // Ignoring visibility, as the iPhone's safe area does: a screen that hides
+                // the status bar (the photo viewer) still lays out under where it was.
+                @OptIn(androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
+                val insetTop = androidx.compose.foundation.layout.WindowInsets.statusBarsIgnoringVisibility.getTop(d)
+                @OptIn(androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
+                val insetBottom = androidx.compose.foundation.layout.WindowInsets.navigationBarsIgnoringVisibility.getBottom(d)
                 androidx.compose.runtime.LaunchedEffect(insetTop, insetBottom) {
                     android.util.Log.i("AncientTrees", "insets top=$insetTop bottom=$insetBottom density=${d.density}")
                 }
