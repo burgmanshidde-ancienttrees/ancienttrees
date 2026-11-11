@@ -423,6 +423,14 @@
       {
         "what": "early-adopter-badge height",
         "why": "Accessibility box, not layout: the iPhone reports the 44 point tap frame or the capsule, Android the drawn text inside it. The gaps to the neighbours, which carry the layout, are within 2."
+      },
+      {
+        "what": "profile-flag height",
+        "why": "The flag is drawn 20 by 20 (CountryFlag, as the iPhone's). In this frame Android's My trees has no demo collection (visual review 2026-11-11, early-adopter row, open), so the profile row stands at the foot of the screen and the accessibility dump reports only the flag's visible half. Measured since the flag carries the iPhone's profile-flag id (2026-11-11); goes when the demo collection reaches Android."
+      },
+      {
+        "what": "profile-flag -> ambassador-badge",
+        "why": "The flag is drawn 20 by 20 (CountryFlag, as the iPhone's). In this frame Android's My trees has no demo collection (visual review 2026-11-11, early-adopter row, open), so the profile row stands at the foot of the screen and the accessibility dump reports only the flag's visible half. Measured since the flag carries the iPhone's profile-flag id (2026-11-11); goes when the demo collection reaches Android."
       }
     ]
   },

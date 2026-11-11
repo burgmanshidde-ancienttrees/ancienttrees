@@ -19,6 +19,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -129,7 +130,8 @@ fun CountryFlag(code: String?, size: Int = 20) {
         modifier = Modifier
             .size(size.dp)
             .clip(CircleShape)
-            .border(1.dp, Color.Black.copy(alpha = 0.08f), CircleShape),
+            .border(1.dp, Color.Black.copy(alpha = 0.08f), CircleShape)
+            .testTag("profile-flag"),
     )
 }
 

@@ -90,7 +90,8 @@ fun SpeciesMark(species: String, color: Color, modifier: Modifier = Modifier) {
 fun TreeMetaLine(tree: Tree, @Suppress("UNUSED_PARAMETER") size: Int = 13, modifier: Modifier = Modifier) {
     val brand = Brand.colors
     val age = tree.cardAge
-    Row(modifier, horizontalArrangement = Arrangement.spacedBy(5.dp), verticalAlignment = Alignment.CenterVertically) {
+    // One line to a screen reader, as before: "Silky Oak · 100 years".
+    Row(modifier.semantics(mergeDescendants = true) { }, horizontalArrangement = Arrangement.spacedBy(5.dp), verticalAlignment = Alignment.CenterVertically) {
         Text(
             tree.commonName,
             fontSize = 13.sp,
@@ -342,9 +343,9 @@ fun TreeCard(
                     }
                 })
             } else {
-                Column(Modifier.align(Alignment.Center), horizontalAlignment = Alignment.CenterHorizontally) {
+                // VStack(spacing: 8): the mark, the name and the note all 8 apart (TreeCard.swift noPhoto).
+                Column(Modifier.align(Alignment.Center), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     SpeciesMark(tree.species, Color.White.copy(alpha = 0.9f), Modifier.size(66.dp))
-                    Spacer(Modifier.height(8.dp))
                     Text(tree.commonName, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = Color.White)
                     Text(stringResource(R.string.no_photo_yet), fontSize = 11.sp, color = Color.White.copy(alpha = 0.75f))
                 }
