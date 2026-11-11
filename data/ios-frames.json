@@ -1,5 +1,5 @@
 {
-"_source": "SweepFrames dump, 2026-11-10, iPhone 17 Pro",
+"_source": "SweepFrames dump, 2026-11-11, iPhone 17 Pro",
 "_safe": [
 62.0,
 34.0
@@ -4286,6 +4286,26 @@
 "els": [
 {
 "t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "Settings",
+"y": 73.7,
+"h": 20.7,
+"x": 169.3,
+"w": 63.3,
+"s": "fixed"
+},
+{
+"t": "Button",
 "id": "profile-signin",
 "label": "Sign in, Register and sign in to add and save trees.",
 "y": 122.0,
@@ -4780,6 +4800,26 @@
 "w": 402.0,
 "h": 874.0,
 "els": [
+{
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "Settings",
+"y": 73.7,
+"h": 20.7,
+"x": 169.3,
+"w": 63.3,
+"s": "fixed"
+},
 {
 "t": "Button",
 "id": "profile-signin",
@@ -5328,6 +5368,46 @@
 "els": [
 {
 "t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "square.and.arrow.up",
+"label": "Share this tree",
+"y": 66.0,
+"h": 36.0,
+"x": 283.0,
+"w": 39.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "ours-menu",
+"label": "Report a problem",
+"y": 66.0,
+"h": 36.0,
+"x": 338.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Image",
+"id": "exclamationmark.bubble",
+"label": "Alert",
+"y": 72.7,
+"h": 22.7,
+"x": 347.7,
+"w": 24.3,
+"s": "fixed"
+},
+{
+"t": "Button",
 "id": "tree-map-swap",
 "label": "Show this tree on the map",
 "y": 202.0,
@@ -5692,6 +5772,46 @@
 "w": 402.0,
 "h": 874.0,
 "els": [
+{
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "square.and.arrow.up",
+"label": "Share this tree",
+"y": 66.0,
+"h": 36.0,
+"x": 283.0,
+"w": 39.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "ours-menu",
+"label": "Report a problem",
+"y": 66.0,
+"h": 36.0,
+"x": 338.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Image",
+"id": "exclamationmark.bubble",
+"label": "Alert",
+"y": 72.7,
+"h": 22.7,
+"x": 347.7,
+"w": 24.3,
+"s": "fixed"
+},
 {
 "t": "StaticText",
 "id": "",
@@ -7411,6 +7531,26 @@
 "h": 874.0,
 "els": [
 {
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "Aleppo Pine",
+"y": 73.7,
+"h": 20.7,
+"x": 155.7,
+"w": 90.3,
+"s": "fixed"
+},
+{
 "t": "StaticText",
 "id": "",
 "label": "Aleppo Pine",
@@ -7757,6 +7897,26 @@
 "h": 874.0,
 "els": [
 {
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "Europe",
+"y": 73.7,
+"h": 20.7,
+"x": 72.0,
+"w": 314.0,
+"s": "fixed"
+},
+{
 "t": "StaticText",
 "id": "",
 "label": "An oak does most of its living quietly, which is why so few of the truly old ones get noticed until someone measures the trunk. These eight, pedunculate and holm, span from a Tegel Forest giant that predates Berlin",
@@ -8072,6 +8232,46 @@
 "w": 402.0,
 "h": 874.0,
 "els": [
+{
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "square.and.arrow.up",
+"label": "Share this tree",
+"y": 66.0,
+"h": 36.0,
+"x": 283.0,
+"w": 39.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "ours-menu",
+"label": "Report a problem",
+"y": 66.0,
+"h": 36.0,
+"x": 338.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Image",
+"id": "exclamationmark.bubble",
+"label": "Alert",
+"y": 72.7,
+"h": 22.7,
+"x": 347.7,
+"w": 24.3,
+"s": "fixed"
+},
 {
 "t": "Button",
 "id": "tree-map-swap",
@@ -8434,6 +8634,26 @@
 },
 {
 "t": "Button",
+"id": "",
+"label": "Cancel",
+"y": 66.0,
+"h": 36.0,
+"x": 20.0,
+"w": 76.7,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "Where is it really?",
+"y": 73.7,
+"h": 20.7,
+"x": 132.7,
+"w": 136.7,
+"s": "fixed"
+},
+{
+"t": "Button",
 "id": "map-recentre",
 "label": "Back to my location",
 "y": 601.3,
@@ -8498,6 +8718,36 @@
 "w": 402.0,
 "h": 874.0,
 "els": [
+{
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "mine-menu",
+"label": "More",
+"y": 66.0,
+"h": 36.0,
+"x": 349.0,
+"w": 30.0,
+"s": "fixed"
+},
+{
+"t": "Image",
+"id": "ellipsis.circle",
+"label": "More",
+"y": 73.0,
+"h": 22.3,
+"x": 353.0,
+"w": 22.3,
+"s": "fixed"
+},
 {
 "t": "Button",
 "id": "tree-photo-open",
@@ -8754,6 +9004,46 @@
 "w": 402.0,
 "h": 874.0,
 "els": [
+{
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "square.and.arrow.up",
+"label": "Share this tree",
+"y": 66.0,
+"h": 36.0,
+"x": 283.0,
+"w": 39.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "ours-menu",
+"label": "Report a problem",
+"y": 66.0,
+"h": 36.0,
+"x": 338.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Image",
+"id": "exclamationmark.bubble",
+"label": "Alert",
+"y": 72.7,
+"h": 22.7,
+"x": 347.7,
+"w": 24.3,
+"s": "fixed"
+},
 {
 "t": "Button",
 "id": "tree-map-swap",
@@ -9152,6 +9442,46 @@
 "els": [
 {
 "t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "square.and.arrow.up",
+"label": "Share this tree",
+"y": 66.0,
+"h": 36.0,
+"x": 283.0,
+"w": 39.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "ours-menu",
+"label": "Report a problem",
+"y": 66.0,
+"h": 36.0,
+"x": 338.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Image",
+"id": "exclamationmark.bubble",
+"label": "Alert",
+"y": 72.7,
+"h": 22.7,
+"x": 347.7,
+"w": 24.3,
+"s": "fixed"
+},
+{
+"t": "Button",
 "id": "tree-map-swap",
 "label": "Show this tree on the map",
 "y": 202.0,
@@ -9508,6 +9838,26 @@
 "h": 52.0,
 "x": 330.0,
 "w": 52.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "",
+"label": "Close",
+"y": 82.0,
+"h": 36.0,
+"x": 20.0,
+"w": 67.0,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "What kind of tree is it?",
+"y": 89.7,
+"h": 20.7,
+"x": 114.0,
+"w": 173.7,
 "s": "fixed"
 },
 {
@@ -10844,6 +11194,36 @@
 "h": 58.0,
 "x": 328.0,
 "w": 58.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "",
+"label": "Cancel",
+"y": 82.0,
+"h": 36.0,
+"x": 20.0,
+"w": 76.7,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "Your profile",
+"y": 89.7,
+"h": 20.7,
+"x": 157.3,
+"w": 87.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "",
+"label": "Save",
+"y": 82.0,
+"h": 36.0,
+"x": 319.7,
+"w": 62.3,
 "s": "fixed"
 }
 ]

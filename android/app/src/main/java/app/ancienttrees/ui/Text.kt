@@ -76,7 +76,9 @@ private fun lines(lineHeight: TextUnit, fontSize: TextUnit, fontFamily: FontFami
     if (family != null && family != TextFace) return lineHeight to style // Gabarito keeps its own lines
     val h = if (lineHeight.isSpecified) lineHeight else style.lineHeight
     if (!h.isSpecified) return lineHeight to style
-    return h to style.copy(lineHeightStyle = style.lineHeightStyle ?: SWIFT_LINES)
+    // Always ours: Material's default style carries its own (Center, Trim.None),
+    // and left in place it adds the leading after the last line after all.
+    return h to style.copy(lineHeightStyle = SWIFT_LINES)
 }
 
 /** A text field's style: Inter at SF's tracking. */

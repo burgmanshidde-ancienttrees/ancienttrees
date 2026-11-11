@@ -331,7 +331,8 @@ private fun Identity(host: SettingsHost) {
                 host.email?.let { Text(it, fontSize = 13.sp, color = brand.inkSoft, maxLines = 1, overflow = TextOverflow.Ellipsis) }
             } else {
                 Text(stringResource(R.string.settings_sign_in), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 18.sp, color = brand.ink)
-                Text(stringResource(R.string.signin_prompt), fontSize = 13.sp, color = brand.inkSoft)
+                // .footnote: its 18 between lines, as the iPhone's two lines (33.7).
+                Text(stringResource(R.string.signin_prompt), fontSize = 13.sp, lineHeight = 18.sp, color = brand.inkSoft)
             }
         }
         Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))

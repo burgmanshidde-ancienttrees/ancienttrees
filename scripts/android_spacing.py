@@ -122,7 +122,10 @@ def ios_from_dump(path):
             # Off the side (the end of a shelf): Android cuts these, so neither counts.
             if (el.x < 0 or el.x + el.w > s["w"]) and el.w < s["w"]:
                 continue
-            if appfit.inside(el, appfit.NOT_OURS) or in_map(el):
+            # The navigation bar is measured here (appfit leaves it out): its
+            # height is the page's start, and without its title Android's bar
+            # title takes the page heading's place in the matching.
+            if appfit.inside(el, tuple(t for t in appfit.NOT_OURS if t != "NavigationBar")) or in_map(el):
                 continue
             # The text inside a button reports the BUTTON's frame on the
             # iPhone, not its own line box: it says nothing about the text.
@@ -242,9 +245,14 @@ def insets(adb, density):
         tops = [int(v) for v in re.findall(r"type=statusBars[^\n]*?top=(\d+)", text)]
     if not bottoms:
         bottoms = [int(v) for v in re.findall(r"type=navigationBars[^\n]*?bottom=(\d+)", text)]
-    # The most common reading, not the largest.
-    pick = lambda xs: max(set(xs), key=xs.count) if xs else 0
-    return pick(tops) * 160 / density, pick(bottoms) * 160 / density
+    # The status bar is the LARGEST top source (on a Pixel 6 it holds the
+    # camera cutout: 47.6 dp, where other lines say 23.4), the navigation bar
+    # the SMALLEST bottom one (a gesture bar is 24; larger readings are other
+    # rotations and the taskbar). Checked against where Discover's title lands,
+    # 4 under the status bar as on the iPhone, on both CI and the Mac's emulator.
+    top = max(tops) if tops else 0
+    bottom = min(b for b in bottoms if b > 0) if any(b > 0 for b in bottoms) else 0
+    return top * 160 / density, bottom * 160 / density
 
 
 def dump_screen(adb, name, args, scrolls, density):
@@ -330,7 +338,8 @@ def android_nodes(xml_text, density, screen_h_dp):
                 if node.get("clickable") == "true" and not (text or desc):
                     # A tappable box whose words sit in a child: the iPhone's
                     # Button carries those words as its label and its own frame.
-                    text = " ".join(t for t in (c.get("text", "") for c in node.iter("node")) if t)
+                    text = " ".join(t for t in (c.get("text", "") or c.get("content-desc", "")
+                                                for c in node.iter("node")) if t)
                 clipped = False
                 if clip is not None:
                     # The accessibility bounds are cut at the scroller's edge,
@@ -492,11 +501,21 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
                 insets_[f"screen top -> {name_of(ia)}"] = from_top
             else:
                 insets_[f"top safe area -> {name_of(ia)}"] = from_safe
-            ia, aa = max(pairs, key=lambda p: p[0]["y"] + p[0]["h"])
-            if ia["y"] + ia["h"] <= ios["h"] and ia["y"] + ia["h"] > ios["h"] * 0.75:
-                insets_[f"{name_of(ia)} -> bottom safe area"] = (
-                    round(ios["h"] - IOS_SAFE[1] - ia["y"] - ia["h"], 1),
-                    round(screen_h_dp - safe_and[1] - aa["y"] - aa["h"], 1))
+            # Only what stands still has a distance from the foot: where a
+            # scrolling page happens to end says nothing. From the safe area or
+            # from the screen's edge, whichever agrees better, as at the top
+            # (TabBar.swift's rule is "22 above the edge").
+            fixed = [p for p in pairs if p[0]["s"] == "fixed" and p[1]["s"] == "fixed"]
+            if fixed:
+                ia, aa = max(fixed, key=lambda p: p[0]["y"] + p[0]["h"])
+                if ios["h"] * 0.75 < ia["y"] + ia["h"] <= ios["h"]:
+                    i_edge, a_edge = ios["h"] - ia["y"] - ia["h"], screen_h_dp - aa["y"] - aa["h"]
+                    from_safe = (round(i_edge - IOS_SAFE[1], 1), round(a_edge - safe_and[1], 1))
+                    from_edge = (round(i_edge, 1), round(a_edge, 1))
+                    if abs(from_edge[1] - from_edge[0]) < abs(from_safe[1] - from_safe[0]):
+                        insets_[f"{name_of(ia)} -> screen foot"] = from_edge
+                    else:
+                        insets_[f"{name_of(ia)} -> bottom safe area"] = from_safe
     rows = []
     for kind, table, suffix in (("inset", insets_, ""), ("gap", gaps, ""), ("height", heights, " height")):
         for what, (vi, va) in table.items():
