@@ -462,6 +462,8 @@ fun CollectSheet(
         containerColor = brand.ground,
         properties = ModalBottomSheetProperties(shouldDismissOnBackPress = true),
         modifier = Modifier.testTag("spot-sheet"),
+        // The map and list steps take the whole height, edge to edge (.large).
+        floating = !(stage == Stage.Place || stage == Stage.Identify),
     ) {
         val tall = stage == Stage.Place || stage == Stage.Identify
         // A STEP CHANGES WITH SWIFTUI'S .snappy (CollectSheet.swift withAnimation(.snappy)):

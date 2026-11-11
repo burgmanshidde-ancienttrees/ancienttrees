@@ -110,6 +110,14 @@ fun AppSheet(
     containerColor: Color = Brand.colors.ground,
     dragHandle: (@Composable () -> Unit)? = { BrandSheetHandle() },
     properties: androidx.compose.material3.ModalBottomSheetProperties = androidx.compose.material3.ModalBottomSheetProperties(),
+    /**
+     * iOS 26's fitted sheet: a card inset from the edges with every corner round
+     * (row 13). Measured off the iPhone's sign-in sheet (out/parity/ios/signin.png,
+     * 1206 px = 402 pt): 8 in from each side, 10 above the bottom, corners 28 at
+     * the top and 36 at the bottom. A full-height sheet stays edge to edge, as
+     * the .large detent does.
+     */
+    floating: Boolean = true,
     content: @Composable ColumnScope.() -> Unit,
 ) {
     val scope = rememberCoroutineScope()
@@ -137,7 +145,9 @@ fun AppSheet(
     }
     ModalBottomSheet(
         onDismissRequest = onDismissRequest,
-        modifier = modifier,
+        modifier = if (floating) modifier.padding(start = 8.dp, end = 8.dp, bottom = 10.dp) else modifier,
+        shape = if (floating) RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp, bottomStart = 36.dp, bottomEnd = 36.dp)
+        else RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp),
         sheetState = sheetState,
         containerColor = containerColor,
         dragHandle = dragHandle,

@@ -29,6 +29,12 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.core.CubicBezierEasing
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -53,6 +59,9 @@ data class Snack(
 /** Any screen posts a snack through this; the app root draws it. */
 val LocalSnack = compositionLocalOf<(Snack) -> Unit> { {} }
 
+/** SwiftUI's .easeIn. */
+private val EaseIn = CubicBezierEasing(0.42f, 0f, 1f, 1f)
+
 val SignedInIcon: ImageVector = Sym.CheckCircleFill
 
 @Composable
@@ -63,13 +72,18 @@ fun SnackBar(snack: Snack?, lift: Dp, viewLabel: String, undoLabel: String, dism
         delay(4000)
         dismiss()
     }
+    // The last one stays drawn while it leaves, so the exit is seen (it vanished).
+    var last by remember { mutableStateOf(snack) }
+    if (snack != null) last = snack
+    // SaveHeart.swift: .move(edge: .bottom) with .opacity; in 0.2 s ease-out,
+    // out 0.2 s ease-in after four seconds.
     AnimatedVisibility(
         visible = snack != null,
-        enter = slideInVertically { it } + fadeIn(),
-        exit = slideOutVertically { it } + fadeOut(),
+        enter = slideInVertically(tween(200, easing = Motion.EaseOut)) { it } + fadeIn(tween(200, easing = Motion.EaseOut)),
+        exit = slideOutVertically(tween(200, easing = EaseIn)) { it } + fadeOut(tween(200, easing = EaseIn)),
         modifier = modifier,
     ) {
-        val s = snack ?: return@AnimatedVisibility
+        val s = last ?: return@AnimatedVisibility
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(12.dp),

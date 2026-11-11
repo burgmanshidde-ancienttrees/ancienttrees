@@ -234,4 +234,9 @@
     <string name="uncollect">Remove from collected</string>
     <string name="uncollected">Removed from collected</string>
     <string name="collected_on">On %1$s.</string>
+    <!-- The near-a-tree banner (NearbyBanner.swift). -->
+    <string name="nearby_title">You are %1$d m from %2$s</string>
+    <string name="nearby_tap_collect">Tap here to collect it</string>
+    <string name="nearby_open_collect">You can open it to collect it</string>
+    <string name="nearby_dismiss">Dismiss</string>
 </resources>

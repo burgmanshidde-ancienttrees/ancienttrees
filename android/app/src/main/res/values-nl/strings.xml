@@ -233,4 +233,9 @@
     <string name="uncollect">Uit verzameld halen</string>
     <string name="uncollected">Uit verzameld gehaald</string>
     <string name="collected_on">Op %1$s.</string>
+    <!-- The near-a-tree banner (NearbyBanner.swift). -->
+    <string name="nearby_title">Je bent %1$d m van %2$s</string>
+    <string name="nearby_tap_collect">Tik hier om hem te verzamelen</string>
+    <string name="nearby_open_collect">Open hem om hem te verzamelen</string>
+    <string name="nearby_dismiss">Wegdoen</string>
 </resources>

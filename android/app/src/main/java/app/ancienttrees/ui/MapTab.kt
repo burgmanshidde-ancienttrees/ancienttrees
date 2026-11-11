@@ -573,7 +573,11 @@ private fun PlaceList(
     val shownMines = if (myTrees != null) mines else emptyList()
     if (shownMines.isNotEmpty() || collected.isNotEmpty()) {
         SheetSectionHead("Collected")
+        val collectedRow = androidx.compose.foundation.lazy.rememberLazyListState()
         LazyRow(
+            state = collectedRow,
+            // .viewAligned to the 16 margin (MapTab.swift:1097).
+            flingBehavior = androidx.compose.foundation.gestures.snapping.rememberSnapFlingBehavior(collectedRow, androidx.compose.foundation.gestures.snapping.SnapPosition.Start),
             horizontalArrangement = Arrangement.spacedBy(12.dp),
             contentPadding = PaddingValues(horizontal = 16.dp),
             modifier = Modifier.fillMaxWidth().padding(bottom = 6.dp).layoutBleed(16.dp),
@@ -603,7 +607,11 @@ private fun PlaceList(
 
 @Composable
 private fun Shelf(trees: List<Tree>, onOpen: (Tree) -> Unit) {
+    val row = androidx.compose.foundation.lazy.rememberLazyListState()
     LazyRow(
+        state = row,
+        // .viewAligned to the 16 margin (MapTab.swift:1127).
+        flingBehavior = androidx.compose.foundation.gestures.snapping.rememberSnapFlingBehavior(row, androidx.compose.foundation.gestures.snapping.SnapPosition.Start),
         horizontalArrangement = Arrangement.spacedBy(12.dp),
         contentPadding = PaddingValues(horizontal = 16.dp),
         modifier = Modifier.fillMaxWidth().padding(bottom = 6.dp).layoutBleed(16.dp),

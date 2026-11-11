@@ -320,6 +320,26 @@ private fun TreeDetailInner(
             }
         }
 
+        // THE SOFT SCROLL EDGE (TreeDetail.swift:729-741; iOS 26 draws it, iOS 18 the
+        // same fade by hand): as the page slides up under the status bar and the
+        // buttons, the ground fades in behind them, near-solid at the top
+        // (0.92, 0.8 at 60 percent, clear at 150), so the bar stays legible.
+        // At rest over the photograph there is nothing.
+        val density = androidx.compose.ui.platform.LocalDensity.current
+        val edge = with(density) { (scroll.value / heroHeight.toPx().coerceAtLeast(1f)).coerceIn(0f, 1f) }
+        Box(
+            Modifier
+                .fillMaxWidth()
+                .height(150.dp)
+                .graphicsLayer { alpha = edge }
+                .background(
+                    androidx.compose.ui.graphics.Brush.verticalGradient(
+                        0f to brand.ground.copy(alpha = 0.92f),
+                        0.6f to brand.ground.copy(alpha = 0.8f),
+                        1f to brand.ground.copy(alpha = 0f),
+                    ),
+                ),
+        )
         TopButtons(
             tree = tree,
             onBack = actions.onBack,
@@ -392,6 +412,12 @@ private fun Hero(
     val brand = Brand.colors
     val photo = tree.photo
     val noTap = remember { MutableInteractionSource() }
+    // PHOTO AND MAP TRADE PLACES with a 0.22 s ease-in-out (TreeDetail.swift:788, 917, 977).
+    androidx.compose.animation.Crossfade(
+        targetState = showingMap,
+        animationSpec = androidx.compose.animation.core.tween(220, easing = Motion.EaseInOut),
+        label = "hero-swap",
+    ) { showingMap ->
     when {
         showingMap -> Box(
             Modifier
@@ -508,6 +534,7 @@ private fun Hero(
                 AddPhotoButton(onAddPhoto)
             }
         }
+    }
     }
 }
 
@@ -655,7 +682,8 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
         }
         Spacer(Modifier.weight(1f))
         Row(
-            Modifier.height(44.dp).shadow(2.dp, CircleShape).background(glass, CircleShape),
+            // Clipped, so each half's ripple stays inside the capsule (Airbnb's line, 2026-11-10).
+            Modifier.height(44.dp).shadow(2.dp, CircleShape).clip(CircleShape).background(glass, CircleShape),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             val share = stringResource(R.string.share_tree)

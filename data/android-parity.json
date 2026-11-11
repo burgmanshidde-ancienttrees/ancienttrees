@@ -383,5 +383,36 @@
       "name": "Discover (main conversation)",
       "since": "2026-11-10"
     }
+  },
+  "_feel": {
+    "_note": "How it moves, audit of 2026-11-10 (out/parity-feel/audit-2026-11-10.md), rows against the iPhone's Swift. Airbnb's line applies: motion is the iPhone's, the ripple and the overscroll stretch are Android's.",
+    "closed": {
+      "1-3": "A stack per tab with slide transitions, the back gesture dragging the page, history and scroll kept across tabs (ui/Pages.kt, PR 44).",
+      "4": "Sheets slide down before they go (ui/Sheet.kt, PR 44).",
+      "5-6": "Android's ripple on every control, clipped to round and capsule shapes. Left plain on purpose: the launch cover's tap-anywhere and the story's tap-to-expand, which have no button shape.",
+      "7": "The three haptics (Motion.kt Haptics).",
+      "8": "Android's stretch stays; off on the tree page so the hero is never distorted.",
+      "9": "Collect steps with .snappy, the sheet height following.",
+      "10": "256 MB disk cache through HttpResponseCache, 64 MB memory, dedupe, eight at a time, hero first, three attempts.",
+      "11": "The iPhone's handle, 36 by 5, cream.",
+      "13": "Fitted sheets float: 8 in, 10 up, corners 28 and 36, measured off the iPhone sign-in sheet. Full-height sheets stay edge to edge.",
+      "14": "The tree's own map is a pushed page (TreeMapPage.kt).",
+      "15": "A re-tap pops to the root; only Discover scrolls to top, as on the iPhone.",
+      "16": "Photo and map trade places in 0.22 s.",
+      "17-19": "Photo viewer: a cover in the app's own window sliding up and down, swipe down closes, the iPhone's timings, white spinner on black.",
+      "20-22": "Search slides up as a cover; Search on the keyboard and scrolling the results both put the keyboard away.",
+      "23": "Snackbar leaves with slide and fade, 0.2 s ease-in.",
+      "24": "Near-a-tree banner with light haptic, eight seconds, every language (NearbyBanner.kt).",
+      "25": "Ticks on the two Settings pickers. Action menus carry none on the iPhone either.",
+      "26": "Carousels snap to the 16 margin.",
+      "27": "The ground fades in behind the top buttons as the page scrolls under them (the soft scroll edge).",
+      "28": "Over the photo: Android's clipped ripple (Airbnb's line), not glass that scales.",
+      "29": "No pin fade during a data swap.",
+      "33 (pill spring only), 42, 43": ".snappy on the tab pill, the Discover header, the email field."
+    },
+    "not_done": {
+      "12": "A fitted sheet that can also be dragged to full height. Material's ModalBottomSheet has one fitted height and no second stop, so it needs its own sheet component.",
+      "low": "31, 32, 33 (icon change), 35-41, 44-46 are not done; Low was only where cheap."
+    }
   }
 }

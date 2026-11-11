@@ -49,6 +49,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.animation.animateContentSize
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
@@ -182,7 +183,8 @@ private fun Ask(account: Account, reason: SignInReason) {
             Text(detail(reason), fontSize = 15.sp, color = brand.inkSoft, textAlign = TextAlign.Center)
         }
         // 10 apart, where Hidde stopped complaining (SignIn.swift, 2026-10-09).
-        Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        // The email field opens with .snappy (SignIn.swift:224): the sheet grows to it.
+        Column(verticalArrangement = Arrangement.spacedBy(10.dp), modifier = Modifier.animateContentSize(Motion.snappy())) {
             // A custom Sign in with Apple button, as the iPhone's (SignIn.swift; Apple's HIG
             // allows their logo, "Continue with Apple", black or white): loud, first.
             SignInPill(stringResource(R.string.signin_apple), loud = true, enabled = !working, tag = "signin-apple",

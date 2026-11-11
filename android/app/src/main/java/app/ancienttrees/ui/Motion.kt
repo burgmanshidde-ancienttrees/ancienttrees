@@ -24,7 +24,13 @@ import androidx.compose.animation.core.spring
 
 object Motion {
     /** SwiftUI's .snappy: duration 0.5, bounce 0.15 (CollectSheet.swift's steps). */
-    fun <T> snappy(): SpringSpec<T> = spring(dampingRatio = 0.85f, stiffness = 158f)
+    fun <T> snappy(): SpringSpec<T> = snappy(0.5f)
+
+    /** .snappy(duration:): bounce 0.15, the spring's response the given seconds. */
+    fun <T> snappy(duration: Float): SpringSpec<T> {
+        val w = 2f * Math.PI.toFloat() / duration
+        return spring(dampingRatio = 0.85f, stiffness = w * w)
+    }
 
     /** UIKit's navigation push and pop: critically damped, about half a second. */
     fun <T> push(): SpringSpec<T> = spring(dampingRatio = 1f, stiffness = 158f)
