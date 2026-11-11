@@ -400,23 +400,26 @@ def match(ios_els, and_nodes):
     pairs, used = [], set()
     for kind in ("id", "t"):
         index = {}
-        for i, e in enumerate(ios_els):
-            for k in keys_ios(e):
-                if k[0] == kind:
-                    index.setdefault(k[1], []).append(i)
         for n in and_nodes:
-            if id(n) in used:
-                continue
             for k in keys_android(n):
+                if k[0] == kind:
+                    index.setdefault(k[1], []).append(n)
+        for i, e in enumerate(ios_els):
+            if ("i", i) in used:
+                continue
+            for k in keys_ios(e):
                 if k[0] != kind:
                     continue
-                free = [i for i in index.get(k[1], []) if ("i", i) not in used
-                        and (kind == "id" or kinds_fit(ios_els[i], n))]
+                free = [n for n in index.get(k[1], []) if id(n) not in used
+                        and (kind == "id" or kinds_fit(e, n))]
                 if free:
-                    i = free[0]
+                    # The same words twice (a title and a gear behind the page):
+                    # the one standing where this one stands; down a list, in order.
+                    n = min(free, key=lambda n: (round(abs(n["x"] - e["x"]) / 6),
+                                                 round(abs(n["w"] - e["w"]) / 12), n["y"]))
                     used.add(("i", i))
                     used.add(id(n))
-                    pairs.append((ios_els[i], n))
+                    pairs.append((e, n))
                     break
     pairs = [(a, touch_box(a, n)) for a, n in pairs]
     pairs.sort(key=lambda p: (p[0]["y"], p[0]["x"]))
@@ -495,9 +498,13 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
             # From the safe area, or from the screen's top for a page that
             # draws under the status bar (a hero photograph): whichever agrees
             # better is how the page was laid out.
+            # Not for a sheet: it stands on the foot of a screen 19 taller here,
+            # so its top says nothing and its foot is judged below.
             from_safe = (round(ia["y"] - IOS_SAFE[0], 1), round(aa["y"] - safe_and[0], 1))
             from_top = (round(ia["y"], 1), round(aa["y"], 1))
-            if abs(from_top[1] - from_top[0]) < abs(from_safe[1] - from_safe[0]):
+            if ia["y"] > ios["h"] * 0.3:
+                pass
+            elif abs(from_top[1] - from_top[0]) < abs(from_safe[1] - from_safe[0]):
                 insets_[f"screen top -> {name_of(ia)}"] = from_top
             else:
                 insets_[f"top safe area -> {name_of(ia)}"] = from_safe

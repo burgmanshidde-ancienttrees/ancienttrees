@@ -639,7 +639,8 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
     val glass = brand.ground.copy(alpha = 0.92f)
     var menu by remember { mutableStateOf(false) }
     Row(
-        Modifier.fillMaxWidth().statusBarsPadding().padding(horizontal = 16.dp, vertical = 6.dp),
+        // At the top of the safe area, as the iPhone's toolbar (BackButton {16, 62}).
+        Modifier.fillMaxWidth().statusBarsPadding().padding(horizontal = 16.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         val back = stringResource(R.string.back)
