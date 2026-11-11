@@ -214,6 +214,9 @@ def set_width(adb, width_dp=402):
     """Density so the screen is width_dp wide; returns the physical size."""
     size = adb.shell("wm", "size")
     m = re.search(r"Physical size: (\d+)x(\d+)", size)
+    if not m:
+        sys.exit("no Android device answers adb: start the emulator (Medium_Phone_API_37.0), "
+                 "or judge the dumps already taken with --no-device")
     w_px, h_px = int(m.group(1)), int(m.group(2))
     density = round(w_px * 160 / width_dp)
     adb.shell("wm", "density", str(density))
