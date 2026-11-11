@@ -515,7 +515,7 @@ private fun DraftTopButtons(
                         },
                     )
                 item(R.string.ot_change_name, Sym.Edit) { onEdit(Field.NAME) }
-                item(R.string.ot_change_species, Sym.Eco) { onSpecies() }
+                item(R.string.ot_change_species, Sym.Leaf) { onSpecies() }
                 item(R.string.ot_change_age, Sym.CalendarMonth) { onEdit(Field.AGE) }
                 item(R.string.ot_change_girth, Sym.Straighten) { onEdit(Field.GIRTH) }
                 item(R.string.ot_move_pin, Sym.PinDrop) { onMovePin() }

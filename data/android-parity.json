@@ -43,7 +43,7 @@
     },
     {
       "what": "Sheets",
-      "why": "Android's bottom sheet runs the full width of the screen with its own drag handle; the iPhone's sheet on iOS 26 floats with a margin. Content, sizes and order are the same."
+      "why": "A modal sheet is Material's bottom sheet on Android and SwiftUI's .sheet on the iPhone. The fitted one is drawn as the iPhone draws it on iOS 26: laid out at the screen's full width and scaled to stand 8 in from each side and 10 above the bottom, so its words wrap where the iPhone's do (measured 2026-11-11: the review-ask tile 53 for its 56, the sign-in title 258 for the 271 Core Text sets). Content, sizes and order are the same."
     },
     {
       "what": "Library photographs",
@@ -60,6 +60,10 @@
     {
       "what": "Rating the app",
       "why": "The iPhone's Yes opens Apple's rating dialog; Android's opens Google Play's own review card (the Play review library), the platform's equivalent."
+    },
+    {
+      "what": "Glyphs the open set does not have",
+      "why": "Every icon comes from Material Symbols Rounded (android/generate_symbols.py), never traced from SF Symbols. Where the set has no glyph of the SF shape, the nearest one stands in (visual review 2026-11-11): map.fill is the set's map, whose middle panel is drawn open; leaf is the set's eco leaf, flipped so it lies as the iPhone's does; arrow.turn.up.right is the set's reply arrow, flipped; sparkles and the early adopter's sparkle are auto_awesome (one four-point star has no glyph of its own), from Google's repository of the same set; building.2 is domain; mappin, a ball on a needle, is keep, the set's pin on a needle; person.badge.plus is person_add, whose plus has no disc; ruler is straighten; bubble.left is chat_bubble; ticket is confirmation_number. Sizes and weights are the iPhone's: SF points x 4/3 in dp, weight 600 for semibold, 700 for bold."
     }
   ],
   "map": {

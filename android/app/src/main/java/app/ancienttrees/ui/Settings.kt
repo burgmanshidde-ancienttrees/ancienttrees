@@ -166,7 +166,7 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                 // apps and nothing else: no "Ask again" (Hidde, 2026-08-29).
                 var dirMenu by remember { mutableStateOf(false) }
                 Box {
-                    SettingsRow(Sym.TurnRight, stringResource(R.string.settings_directions),
+                    SettingsRow(Sym.TurnUpRight, stringResource(R.string.settings_directions),
                         value = directionsApp?.label(context) ?: stringResource(R.string.directions_ask_each),
                         trailing = Sym.UnfoldMore, tag = "profile-directions") { dirMenu = true }
                     DropdownMenu(expanded = dirMenu, onDismissRequest = { dirMenu = false }, modifier = Modifier.background(brand.surface)) {
@@ -212,13 +212,13 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                 // (PlaceBox.kt PlusQuestionSheet, PlusAsk.swift); the row goes once
                 // this install answered or the server's switch is off (AppSwitches).
                 if (AppSwitches.showPlus(context)) {
-                    SettingsRow(Sym.StarShineFill, stringResource(R.string.plus_title), tag = "profile-plus") {
+                    SettingsRow(Sym.Sparkles, stringResource(R.string.plus_title), tag = "profile-plus") {
                         app.ancienttrees.account.Measure.event("plus-open", mapOf("from" to "settings"))
                         askingPlus = true
                     }
                     RowDivider(48.dp)
                 }
-                SettingsRow(Sym.Chat, stringResource(R.string.settings_feedback), tag = "profile-feedback") {
+                SettingsRow(Sym.ChatBubble, stringResource(R.string.settings_feedback), tag = "profile-feedback") {
                     givingFeedback = true
                 }
                 RowDivider(48.dp)
@@ -338,7 +338,7 @@ private fun Identity(host: SettingsHost) {
                 Text(stringResource(R.string.signin_prompt), fontSize = 13.sp, lineHeight = 18.sp, color = brand.inkSoft)
             }
         }
-        Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
+        Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(SETTINGS_CHEVRON))
     }
 }
 
@@ -361,6 +361,15 @@ private fun Group(title: String, content: @Composable ColumnScope.() -> Unit) {
 @Composable
 private fun RowDivider(inset: Dp) = HorizontalDivider(Modifier.padding(start = inset), thickness = 0.5.dp, color = Brand.colors.hairline)
 
+/**
+ * The row glyph takes the row's .body, 17 pt, in a 20 wide frame (Profile.swift),
+ * so it draws 20 across like the iPhone's ruler; the chevron is .footnote, 12 tall
+ * on the iPhone, where the set's chevron fills less of its box (measured
+ * 2026-11-11: 9 tall at 16 dp).
+ */
+private val SETTINGS_GLYPH = 23.dp
+private val SETTINGS_CHEVRON = 21.dp
+
 /** One settings row, 48 high: the icon 20 wide in moss, the title, a value, the chevron. */
 @Composable
 private fun SettingsRow(
@@ -373,10 +382,10 @@ private fun SettingsRow(
 ) {
     val brand = Brand.colors
     RowFrame(onClick, tag) {
-        Icon(icon, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+        Icon(icon, null, tint = brand.moss, modifier = Modifier.size(SETTINGS_GLYPH))
         Text(title, fontSize = 16.sp, color = brand.ink, modifier = Modifier.weight(1f))
         value?.let { Text(it, fontSize = 16.sp, color = brand.inkSoft) }
-        Icon(trailing, null, tint = brand.inkSoft, modifier = Modifier.size(16.dp))
+        Icon(trailing, null, tint = if (trailing == Sym.ChevronRight) brand.inkSoft.copy(alpha = 0.6f) else brand.inkSoft, modifier = Modifier.size(if (trailing == Sym.ChevronRight) SETTINGS_CHEVRON else 16.dp))
     }
 }
 
@@ -385,7 +394,7 @@ private fun SettingsRow(
 private fun LinkRow(icon: ImageVector, title: String, subtitle: String? = null, onClick: () -> Unit) {
     val brand = Brand.colors
     RowFrame(onClick, null, vertical = if (subtitle == null) 0.dp else 10.dp) {
-        Icon(icon, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+        Icon(icon, null, tint = brand.moss, modifier = Modifier.size(SETTINGS_GLYPH))
         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
             Text(title, fontSize = 16.sp, color = brand.ink)
             subtitle?.let { Text(it, fontSize = 13.sp, color = brand.inkSoft) }
@@ -399,7 +408,7 @@ private fun PlainRow(title: String, color: androidx.compose.ui.graphics.Color, c
     val brand = Brand.colors
     RowFrame(onClick, tag) {
         Text(title, fontSize = 16.sp, color = color, modifier = Modifier.weight(1f))
-        if (chevron) Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(16.dp))
+        if (chevron) Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(SETTINGS_CHEVRON))
     }
 }
 
@@ -443,7 +452,8 @@ fun PushedBar(title: String, onBack: () -> Unit, trailing: (@Composable () -> Un
             Icon(Sym.ArrowBack, stringResource(R.string.back), tint = brand.ink, modifier = Modifier.size(22.dp))
         }
         Text(
-            title, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = brand.ink, maxLines = 1,
+            // The navigation bar title: Gabarito Bold 17 (UINavigationBarAppearance, AncientTreesApp.swift).
+            title, fontFamily = BrandFace, fontSize = 17.sp, fontWeight = FontWeight.Bold, color = brand.ink, maxLines = 1,
             overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center,
             modifier = Modifier.align(Alignment.Center).padding(horizontal = 52.dp),
         )
@@ -468,7 +478,9 @@ fun BarSheet(
     val brand = Brand.colors
     AppSheet(
         onDismissRequest = onDismiss,
-        containerColor = if (grouped) brand.surfaceMuted else brand.ground,
+        // A Form's ground is the system's grouped grey, cool rather than our warm
+        // muted (systemGroupedBackground: F2F2F7; a sheet's elevated 1C1C1E in the dark).
+        containerColor = if (grouped) (if (brand.ground.red < 0.5f) androidx.compose.ui.graphics.Color(0xFF1C1C1E) else androidx.compose.ui.graphics.Color(0xFFF2F2F7)) else brand.ground,
         // The bar is the top of this sheet; the handle sits over it (BrandSheetHandle).
         dragHandle = null,
         floating = !grouped,
@@ -482,7 +494,7 @@ fun BarSheet(
                     Text(label, fontSize = 17.sp, color = brand.moss, modifier = Modifier.align(Alignment.CenterStart)
                         .clickable(role = Role.Button) { close(act) }.padding(horizontal = 16.dp, vertical = 12.dp))
                 }
-                Text(title, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = brand.ink, modifier = Modifier.align(Alignment.Center))
+                Text(title, fontFamily = BrandFace, fontSize = 17.sp, fontWeight = FontWeight.Bold, color = brand.ink, modifier = Modifier.align(Alignment.Center))
                 trailing?.let { (label, act) ->
                     Text(label, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = brand.moss,
                         modifier = Modifier.align(Alignment.CenterEnd).alpha(if (trailingEnabled) 1f else 0.4f)

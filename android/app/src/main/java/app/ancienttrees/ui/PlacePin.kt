@@ -173,7 +173,7 @@ fun PlacePin(
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(48.dp)
-                        .background(brand.moss.copy(alpha = if (enabled) 1f else 0.4f), RoundedCornerShape(50))
+                        .background(brand.moss.copy(alpha = if (enabled) 1f else 0.5f), RoundedCornerShape(50)) // disabled: half (iPhone A3B593 over white)
                         .clickable(enabled = enabled, role = Role.Button) {
                             // Signed out: the sign-in sheet, and nothing is sent until they press again.
                             if (!signedIn) onNeedsSignIn { } else send()

@@ -157,3 +157,17 @@ fun Text(
         onTextLayout = onTextLayout, style = st,
     )
 }
+
+/** UIColor.placeholderText: the grey of a text field's prompt (3C3C43 at 30 percent; EBEBF5 at 30 in the dark). */
+@androidx.compose.runtime.Composable
+fun placeholderGrey(): Color =
+    if (Brand.colors.ground.red < 0.5f) Color(0x4DEBEBF5) else Color(0x4D3C3C43)
+
+/**
+ * A headline's line breaking as Apple's: TextKit's standard strategy pushes a word
+ * down rather than leave one alone on the last line ("Are you enjoying / Ancient
+ * Trees?", where Compose's greedy break left "Trees?" by itself). Compose's
+ * Heading strategy balances the lines the same way.
+ */
+@Composable
+fun headlineStyle(): TextStyle = LocalTextStyle.current.copy(lineBreak = androidx.compose.ui.text.style.LineBreak.Heading)

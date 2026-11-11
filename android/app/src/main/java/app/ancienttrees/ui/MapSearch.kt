@@ -311,7 +311,7 @@ fun MapSearch(
                 item { Head("Places worth a trip") }
                 for (c in index.cities.take(6)) {
                     item {
-                        ResultRow(c.name, "${c.country} · ${treesLabel(c.count)}", Sym.Apartment, query) {
+                        ResultRow(c.name, "${c.country} · ${treesLabel(c.count)}", Sym.Building, query) {
                             pick(SearchHit.City(c.slug, c.name, c.lat, c.lng))
                         }
                     }
@@ -394,7 +394,7 @@ private fun rank(c: Catalogue, idx: SearchIndex, query: String, lane: Lane, orig
         val n = fold(city.name)
         val other = c.aka(city.slug).any { startsAWord(fold(it)) }
         if (startsAWord(n) || fold(city.country).startsWith(q) || n.contains(q) || other) {
-            places.add(PlaceRow("c:" + city.slug, city.name, "${city.country} · ${treesLabel(city.count)}", Sym.Apartment, SearchHit.City(city.slug, city.name, city.lat, city.lng)))
+            places.add(PlaceRow("c:" + city.slug, city.name, "${city.country} · ${treesLabel(city.count)}", Sym.Building, SearchHit.City(city.slug, city.name, city.lat, city.lng)))
         }
     }
     val species = c.filterSpecies(c.speciesNames, query)
@@ -419,7 +419,11 @@ private fun Note(text: String) {
     Text(text, fontSize = 15.sp, color = Brand.colors.inkSoft, modifier = Modifier.padding(horizontal = 16.dp).padding(top = 24.dp))
 }
 
-/** The typed part heavier: bold name, black for what matches. */
+/**
+ * The letters you typed, heavier (MapSearch.swift highlighted): what comes before
+ * them regular, the typed part Black, the rest Bold; a name nothing matched is
+ * Bold throughout. "Indianapo|lis|", "Elm, |lis|ted as Lombarts' Elm".
+ */
 private fun highlighted(name: String, query: String): AnnotatedString {
     val q = fold(query)
     val f = fold(name)
@@ -429,7 +433,7 @@ private fun highlighted(name: String, query: String): AnnotatedString {
             withStyle(SpanStyle(fontWeight = FontWeight.Bold)) { append(name) }
             return@buildAnnotatedString
         }
-        withStyle(SpanStyle(fontWeight = FontWeight.Bold)) { append(name.substring(0, at)) }
+        append(name.substring(0, at))
         withStyle(SpanStyle(fontWeight = FontWeight.Black)) { append(name.substring(at, at + q.length)) }
         withStyle(SpanStyle(fontWeight = FontWeight.Bold)) { append(name.substring(at + q.length)) }
     }
@@ -459,7 +463,7 @@ private fun SpeciesResultRow(c: Catalogue, name: String, hit: SpeciesHit, query:
     PlainResultRow(
         name = name,
         sub = "",
-        icon = Sym.Eco,
+        icon = Sym.Leaf,
         onClick = onClick,
         title = {
             Text(highlighted(name, query), fontFamily = BrandFace, fontSize = 16.sp, color = brand.ink, maxLines = 1, overflow = TextOverflow.Ellipsis)
@@ -469,7 +473,7 @@ private fun SpeciesResultRow(c: Catalogue, name: String, hit: SpeciesHit, query:
                 buildAnnotatedString {
                     if (via != null) append("$via · ")
                     if (sci != null) {
-                        withStyle(SpanStyle(fontStyle = FontStyle.Italic)) { append(sci) }
+                        append(scientificName(sci)) // cultivar and rank words upright (scientificNameText)
                         append(" · ")
                     }
                     append(count)

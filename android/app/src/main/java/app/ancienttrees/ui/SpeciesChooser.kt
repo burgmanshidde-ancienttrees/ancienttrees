@@ -111,7 +111,7 @@ fun SpeciesChooser(
                 SpeciesListRow(onClick = { onPick(name); onClose() }) {
                     SpeciesMark(name, brand.moss, Modifier.size(26.dp))
                     SpeciesRowName(catalogue, name, hit, modifier = Modifier.weight(1f))
-                    if (isCurrent(name)) Icon(Sym.Check, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+                    if (isCurrent(name)) Icon(Sym.CheckSemibold, null, tint = brand.moss, modifier = Modifier.size(23.dp))
                     else Text("${counts[name] ?: 0}", fontSize = 15.sp, color = brand.inkSoft)
                 }
             }
@@ -126,7 +126,7 @@ fun SpeciesChooser(
                     SpeciesListRow(onClick = { onPick(row.species); onClose() }) {
                         SpeciesMark(row.c, brand.moss, Modifier.size(26.dp))
                         SpeciesRowName(catalogue, row.c, hit, latin = if (row.isGenus) row.l + " sp." else row.l, modifier = Modifier.weight(1f))
-                        if (isCurrent(row.species) || isCurrent(row.c)) Icon(Sym.Check, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+                        if (isCurrent(row.species) || isCurrent(row.c)) Icon(Sym.CheckSemibold, null, tint = brand.moss, modifier = Modifier.size(23.dp))
                     }
                 }
             }
@@ -218,8 +218,9 @@ internal fun LazyListScope.groupedSection(
         item(key = "h-$header") {
             Text(
                 headerText(),
-                fontSize = 15.sp,
-                fontWeight = FontWeight.Medium,
+                // An iOS 26 inset-grouped section header: 17 semibold.
+                fontSize = 17.sp,
+                fontWeight = FontWeight.SemiBold,
                 color = Brand.colors.inkSoft,
                 modifier = Modifier.padding(start = 32.dp, end = 32.dp, top = 6.dp, bottom = 8.dp),
             )

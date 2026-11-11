@@ -90,7 +90,7 @@ fun EarlyAdopterBadge(size: Int = 12) {
             .background(brand.gold.copy(alpha = 0.18f), RoundedCornerShape(50))
             .padding(top = 3.dp, bottom = 3.dp, start = 7.dp, end = 9.dp),
     ) {
-        Icon(Sym.StarShineFill, null, tint = brand.goldInk, modifier = Modifier.size((size + 1).dp))
+        Icon(Sym.SparklesFill, null, tint = brand.goldInk, modifier = Modifier.size((size + 1).dp))
         Text(stringResource(R.string.early_adopter), color = brand.goldInk, fontSize = size.sp, fontWeight = FontWeight.Medium, maxLines = 1)
     }
 }
@@ -101,7 +101,7 @@ fun EarlyAdopterSheet(onDismiss: () -> Unit) {
     BrandSheet(
         title = stringResource(R.string.early_title),
         message = stringResource(R.string.early_body),
-        icon = Sym.StarShineFill,
+        icon = Sym.SparklesFill,
         iconTint = Brand.colors.goldInk,
         iconGround = Brand.colors.gold.copy(alpha = 0.18f),
         onDismiss = onDismiss,
@@ -116,16 +116,21 @@ fun EarlyAdopterSheet(onDismiss: () -> Unit) {
  */
 @Composable
 fun CountryFlag(code: String?, size: Int = 20) {
-    val emoji = flagEmoji(code) ?: return
-    Box(
-        Modifier
+    // A FLAT FLAG, the website's own (flag-icons, ui/Flags.kt), filled into the
+    // circle as Polarsteps draws it (CountryFlag, AmbassadorBadge.swift). The
+    // system's emoji waves at an angle, and cropped to a circle the Dutch flag
+    // lost its blue band (visual review 2026-11-11). No flag file, no flag.
+    if (flagEmoji(code) == null) return
+    val res = FLAGS[code!!.lowercase(Locale.ROOT)] ?: return
+    androidx.compose.foundation.Image(
+        androidx.compose.ui.res.painterResource(res),
+        contentDescription = countryName(code.uppercase(Locale.ROOT)),
+        contentScale = androidx.compose.ui.layout.ContentScale.Crop,
+        modifier = Modifier
             .size(size.dp)
             .clip(CircleShape)
             .border(1.dp, Color.Black.copy(alpha = 0.08f), CircleShape),
-        contentAlignment = Alignment.Center,
-    ) {
-        Text(emoji, fontSize = (size * 1.25f).sp, maxLines = 1, softWrap = false)
-    }
+    )
 }
 
 /** "NL" to the regional-indicator pair the system draws as the Dutch flag. */

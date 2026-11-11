@@ -96,7 +96,8 @@ fun SheetButtonView(
             .background(bg, RoundedCornerShape(50)),
     ) {
         b.icon?.let {
-            Icon(it, null, tint = fg, modifier = Modifier.size(18.dp))
+            // The label's symbol takes the button's 16 (quiet 15) semibold (BrandSheet.swift:62).
+            Icon(Sym.semibold(it), null, tint = fg, modifier = Modifier.size(if (quiet) 20.dp else 21.dp))
             Spacer(Modifier.width(8.dp))
         }
         Text(b.label, color = fg, fontSize = if (quiet) 15.sp else 16.sp, fontWeight = FontWeight.SemiBold)
@@ -111,7 +112,8 @@ fun SheetIconTile(icon: ImageVector, tint: Color? = null, ground: Color? = null)
         Modifier.size(56.dp).background(ground ?: brand.mossTint, RoundedCornerShape(14.dp)),
         contentAlignment = Alignment.Center,
     ) {
-        Icon(icon, null, tint = tint ?: brand.moss, modifier = Modifier.size(26.dp))
+        // .font(.system(size: 24, weight: .semibold)): the twin at weight 600, 24 pt as 32 dp.
+        Icon(Sym.semibold(icon), null, tint = tint ?: brand.moss, modifier = Modifier.size(32.dp))
     }
 }
 
@@ -168,6 +170,7 @@ fun BrandSheet(
                     lineHeight = 31.sp,
                     color = brand.ink,
                     textAlign = TextAlign.Center,
+                    style = headlineStyle(),
                     modifier = Modifier.padding(horizontal = 18.dp).semantics { heading() },
                 )
                 message?.let {
@@ -221,7 +224,8 @@ fun SheetCloseButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
             .semantics { contentDescription = label },
     ) {
         Box(Modifier.size(30.dp).background(brand.surfaceMuted, CircleShape), contentAlignment = Alignment.Center) {
-            Icon(Sym.Close, null, tint = brand.inkSoft, modifier = Modifier.size(17.dp))
+            // xmark at 13 bold (SheetCloseButton).
+            Icon(Sym.CloseBold, null, tint = brand.inkSoft, modifier = Modifier.size(17.dp))
         }
     }
 }

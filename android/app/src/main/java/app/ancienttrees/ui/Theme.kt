@@ -45,6 +45,10 @@ val BrandFace = FontFamily(
     Font(R.font.gabarito_regular, FontWeight.Normal),
     Font(R.font.gabarito_medium, FontWeight.Medium),
     Font(R.font.gabarito_bold, FontWeight.Bold),
+    // The iPhone's Font.brand maps .heavy and .black to these two files; search
+    // sets the letters you typed in Black (MapSearch.swift highlighted).
+    Font(R.font.gabarito_extrabold, FontWeight.ExtraBold),
+    Font(R.font.gabarito_black, FontWeight.Black),
 )
 
 /**
