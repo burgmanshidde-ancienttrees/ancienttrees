@@ -36,6 +36,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.foundation.layout.statusBarsIgnoringVisibility
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.BoxWithConstraints
 import kotlinx.coroutines.launch
@@ -57,6 +60,7 @@ import app.ancienttrees.R
 import app.ancienttrees.feed.Photo
 import kotlin.math.abs
 
+@OptIn(androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
 @Composable
 fun PhotoViewer(photos: List<Photo>, startAt: Int, onClose: () -> Unit) {
     if (photos.isEmpty()) return
@@ -208,7 +212,10 @@ fun PhotoViewer(photos: List<Photo>, startAt: Int, onClose: () -> Unit) {
                     contentAlignment = Alignment.Center,
                     modifier = Modifier
                         .align(Alignment.TopEnd)
-                        .statusBarsPadding()
+                        // Below the status bar even while it is hidden: the iPhone keeps the
+                        // close X under the island (review 2026-11-11, row 59); statusBarsPadding
+                        // is 0 once the bar is hidden, which put it in the corner.
+                        .windowInsetsPadding(WindowInsets.statusBarsIgnoringVisibility)
                         .padding(horizontal = 8.dp)
                         .size(44.dp)
                         .clip(CircleShape)

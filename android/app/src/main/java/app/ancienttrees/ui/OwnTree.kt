@@ -142,7 +142,9 @@ private fun OwnTreeInner(
         // heroHeight: the photograph's shape across the page, stopped at 60 percent.
         val heroHeight = minOf(maxWidth * (4f / 3f), maxHeight * 0.6f)
         val scroll = rememberScrollState()
-        Column(Modifier.fillMaxSize().verticalScroll(scroll)) {
+        // The photograph and the page, for the glass buttons and the soft top edge (Glass.kt).
+        val ownGlass = dev.chrisbanes.haze.rememberHazeState()
+        Column(Modifier.fillMaxSize().glassSource(ownGlass).verticalScroll(scroll)) {
             Box(Modifier.zIndex(0f).graphicsLayer { translationY = scroll.value * 0.5f }) {
                 OwnPhoto(s, mine, Modifier.fillMaxWidth().height(heroHeight), maxSide = 1600) {
                     Box(Modifier.fillMaxWidth().height(heroHeight).background(brand.surfaceMuted))
@@ -203,7 +205,10 @@ private fun OwnTreeInner(
             }
         }
 
+        // iOS 26's soft edge over the photograph's top (review 2026-11-11, row 56).
+        TopEdge(ownGlass)
         OwnTopButtons(
+            glassState = ownGlass,
             onBack = onBack,
             onEdit = { editing = it },
             onSpecies = { choosingSpecies = true },
@@ -480,7 +485,7 @@ private fun MorePhotos(s: OwnSighting, mine: MyTrees) {
 
 /** Back, and the ellipsis menu: the fields you can fill, then Remove, last and marked. */
 @Composable
-private fun OwnTopButtons(onBack: () -> Unit, onEdit: (EditableField) -> Unit, onSpecies: () -> Unit, onRemove: () -> Unit) {
+private fun OwnTopButtons(glassState: dev.chrisbanes.haze.HazeState?, onBack: () -> Unit, onEdit: (EditableField) -> Unit, onSpecies: () -> Unit, onRemove: () -> Unit) {
     val brand = Brand.colors
     var menu by remember { mutableStateOf(false) }
     Row(
@@ -490,7 +495,8 @@ private fun OwnTopButtons(onBack: () -> Unit, onEdit: (EditableField) -> Unit, o
     ) {
         val back = stringResource(R.string.back)
         Box(
-            Modifier.size(44.dp).softDisc()
+            // Glass circles tinted by the photograph, as the tree page's (review row 57).
+            Modifier.size(44.dp).shadow(2.dp, CircleShape).glass(glassState, CircleShape, brand.surface)
                 .clickable(role = Role.Button, onClick = onBack).semantics { contentDescription = back },
             contentAlignment = Alignment.Center,
         ) {
@@ -500,7 +506,7 @@ private fun OwnTopButtons(onBack: () -> Unit, onEdit: (EditableField) -> Unit, o
         val more = stringResource(R.string.ot_more)
         Box {
             Box(
-                Modifier.size(44.dp).softDisc()
+                Modifier.size(44.dp).shadow(2.dp, CircleShape).glass(glassState, CircleShape, brand.surface)
                     .clickable(role = Role.Button) { menu = true }.semantics { contentDescription = more },
                 contentAlignment = Alignment.Center,
             ) {

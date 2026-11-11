@@ -162,6 +162,20 @@ internal fun ColumnScope.SearchableList(
             contentPadding = androidx.compose.foundation.layout.PaddingValues(bottom = 96.dp),
             content = content,
         )
+        // The list fades out behind the floating field, iOS 26's soft scroll edge at
+        // the foot (visual review 2026-11-11, row 116).
+        Box(
+            Modifier
+                .align(Alignment.BottomCenter)
+                .fillMaxWidth()
+                .height(96.dp)
+                .background(
+                    androidx.compose.ui.graphics.Brush.verticalGradient(
+                        0f to Brand.colors.surfaceMuted.copy(alpha = 0f),
+                        1f to Brand.colors.surfaceMuted,
+                    ),
+                ),
+        )
         SheetSearchField(query, onQuery, prompt, Modifier.align(Alignment.BottomCenter))
     }
 }

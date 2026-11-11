@@ -322,6 +322,9 @@ private fun TreeDetailInner(
             }
         }
 
+        // At rest too, iOS 26 softens what lies under the status bar and the buttons,
+        // over the photograph and over the map of a tree without one (review rows 28, 37).
+        TopEdge(photoGlass)
         // THE SOFT SCROLL EDGE (TreeDetail.swift:729-741; iOS 26 draws it, iOS 18 the
         // same fade by hand): as the page slides up under the status bar and the
         // buttons, the ground fades in behind them, near-solid at the top

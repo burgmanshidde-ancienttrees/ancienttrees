@@ -207,6 +207,9 @@ fun MapTab(
         }
     }
     BackHandler(enabled = selected != null) { selected = null }
+    // BACK FROM A SEARCHED PLACE RETURNS TO THE MAP, as the field's cross does
+    // (visual review 2026-11-11, flow 163: it left the app). Below a chosen tree.
+    BackHandler(enabled = focusPlace != null && selected == null) { focusPlace = null }
 
     val focus = region?.let { Here((it.south + it.north) / 2, (it.west + it.east) / 2) } ?: origin
     val box = region ?: ViewBox(origin.lat - 0.05, origin.lng - 0.08, origin.lat + 0.05, origin.lng + 0.08)
@@ -527,9 +530,11 @@ fun MapTab(
                 catalogue = catalogue,
                 origin = origin,
                 initial = launch.search.orEmpty(),
+                // The map flies to the place while the cover slides down, as on the iPhone
+                // (review 2026-11-11, flow 162: the map lagged a second behind the sheet).
+                onPickStart = { take(it) },
                 onPick = {
                     searching = false
-                    take(it)
                 },
                 onBack = { searching = false },
             )
