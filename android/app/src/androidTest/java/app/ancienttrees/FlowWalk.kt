@@ -65,8 +65,9 @@ class Walker(val rule: ComposeTestRule) {
 
     /** Tap ONCE IT IS THERE (FlowWalk.swift's tap: a sheet springs, a list fills, a push animates). */
     fun tap(id: String) {
-        rule.waitUntilAtLeastOneExists(named(id), slow)
-        val node = rule.onAllNodes(named(id)).onFirst()
+        // There AND enabled: a button the screen is still unlocking (Delete waits for the word) is not there yet.
+        rule.waitUntilAtLeastOneExists(named(id) and androidx.compose.ui.test.isEnabled(), slow)
+        val node = rule.onAllNodes(named(id) and androidx.compose.ui.test.isEnabled()).onFirst()
         runCatching { node.performScrollTo() }
         node.performClick()
         rule.waitForIdle()
@@ -99,10 +100,15 @@ class Walker(val rule: ComposeTestRule) {
         rule.waitForIdle()
     }
 
-    /** The page's own back control (FlowWalk.swift's back: the navigation bar's first button). */
+    /**
+     * The page's own back control, when there is one (FlowWalk.swift's back taps the
+     * navigation bar's first button only if the bar has one). Whether a way back
+     * exists is the invariant's question, asked after every step, not this one's.
+     */
     fun back() {
         val m = hasContentDescription("Back") or hasContentDescription("Back to the map") or hasTestTag("back-to-map") or hasTestTag("draft-back")
-        rule.waitUntilAtLeastOneExists(m, slow)
+        runCatching { rule.waitUntilAtLeastOneExists(m, 5_000) }
+        if (rule.onAllNodes(m).fetchSemanticsNodes().isEmpty()) return
         rule.onAllNodes(m).onFirst().performClick()
         rule.waitForIdle()
     }
