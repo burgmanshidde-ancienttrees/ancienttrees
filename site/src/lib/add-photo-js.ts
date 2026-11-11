@@ -358,6 +358,12 @@ export const ADD_PHOTO_JS = `
           body: JSON.stringify({
             id: id, tree_id: treeId, name: treeName,
             lat: lat, lng: lng, photo: uid + '/' + id + '.jpg',
+            // SHARED, said out loud as the app says it (SightingSync.push):
+            // the column's default in production is false, and an unshared row
+            // never reaches the inbox, so the two photographs sent from tree
+            // pages before 2026-11-11 sat unseen behind a "we look at every
+            // photograph" promise (qa check_web_add_photo_is_shared).
+            shared: true,
             note: 'Photograph sent from this tree\\u2019s page on the website. '
                   + 'The position on this row is the tree\\u2019s own published '
                   + 'coordinate, not a device fix, and is not evidence about the pin.'

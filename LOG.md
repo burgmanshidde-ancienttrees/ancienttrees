@@ -21,6 +21,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-11 session: photographs sent from the website never reached the inbox
+
+- **Broken since 2026-09-23, fixed:** the website's Add photo inserted its sightings row without `shared`, the production column default is false, and the inbox and the photos page read shared rows only. So the only two photographs ever sent from a tree page (Padua 11-01, Lisbon 11-10) sat unseen, behind a "we look at every photograph" promise. add-photo-js.ts now sends `shared: true` as the app does; qa `check_web_add_photo_is_shared()` guards it (fails without the fix, checked); escaped bug ESC-2026-11-11-photographs-sent-from-a-tree-page-on-the, caught by that check. Live with the next deploy.
+- **The two stranded photographs:** set shared on the account and judged after looking. Lisbon's lis_021 Tipuana, in full yellow flower in the roundabout garden, published as its first photograph (the "on the page" mail goes at the next knock). Padua's was a weeping pagoda tree in a private front garden, not Piazza Capitaniato: rejected as the wrong tree.
+- **Nothing else missed:** the sightings bucket holds 48 files without a row; 45 are ours or a deleted test account, the three strangers' are from before the web upload existed or carry the app's uppercase file names.
+- **Why the week was quiet:** 8 stranger photographs 11-01 to 11-05 (5 from one Paris visitor on 11-02), 1 since; no failed app syncs in PostHog. "Stop sharing the link" is still in 1.0.3's menu (gone from 1.0.4), but nobody used it.
+
 ## 2026-11-11 daily publish (scheduled task): the last 3 held trees into the app, queue empty
 
 - **What went on main, app only under APP FIRST, no web page or place page:** the Bute Park Tulip Tree as Cardiff's crd_010 (13 trees) and Windsor's first two, the Signing Oak and the Canadian Memorial Avenue pin oak (wsr_001, wsr_002, a new place), from build_uk_under_ten.py limited to those two places (out/tmp/build_uk_under_ten_cardiff_windsor.py). city_names nothing to do, preflight 0 problems; app-only trees do not count against the pace.

@@ -858,6 +858,27 @@ def check_the_privacy_page_names_what_we_store():
     return ["%s (compliance audit, 2026-11-10)" % p for p in privacycheck.problems()]
 
 
+def check_web_add_photo_is_shared():
+    """A photograph sent from a tree page on the website says `shared: true`.
+
+    Found 2026-11-11 when Hidde asked why a week brought no photos: the only
+    two photographs ever sent from the website (Padua 11-01, Lisbon 11-10) were
+    stored unshared, because the web insert left the field to the column's
+    default, which is false in production. The inbox and the photos page read
+    shared rows only, so both sat unseen while the page had told the sender
+    "we look at every photograph". The app has always sent it explicitly
+    (SightingSync.push, Android Collector). Removing this check needs Hidde."""
+    src = Path(__file__).resolve().parent.parent / "site" / "src" / "lib" / "add-photo-js.ts"
+    try:
+        text = src.read_text(encoding="utf-8")
+    except OSError:
+        return ["site/src/lib/add-photo-js.ts is missing"]
+    if "/rest/v1/sightings', {" in text and "shared: true" not in text:
+        return ["site/src/lib/add-photo-js.ts inserts a sighting without shared: true, "
+                "so the photograph never reaches the inbox (2026-11-11)"]
+    return []
+
+
 def check_a_given_photo_records_the_yes():
     """A photograph somebody gave us by mail goes up only with their yes on file.
 
@@ -4019,6 +4040,7 @@ def main():
     failures += check_the_quality_line_stays_in_the_digest()
     failures += check_the_privacy_page_names_what_we_store()
     failures += check_a_given_photo_records_the_yes()
+    failures += check_web_add_photo_is_shared()
     failures += check_an_escaped_bug_has_a_test()
     failures += check_every_reader_photo_reaches_hidde()
     failures += check_everything_sent_reaches_hidde()
