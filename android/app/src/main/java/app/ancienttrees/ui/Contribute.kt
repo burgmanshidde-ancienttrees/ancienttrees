@@ -174,7 +174,9 @@ fun ContributeSheet(
             }
 
             @Composable
-            fun Divider() = HorizontalDivider(Modifier.padding(start = 16.dp), thickness = 0.5.dp, color = brand.hairline)
+            // iOS 26's grouped-list separator stops short of the card's right edge too
+            // (measured 32 on the species chooser's list; the review's contribute row).
+            fun Divider() = HorizontalDivider(Modifier.padding(start = 16.dp, end = 32.dp), thickness = 0.5.dp, color = brand.hairline)
 
             when {
                 sent -> Column(group.then(cell), verticalArrangement = Arrangement.spacedBy(4.dp)) {
