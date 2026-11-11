@@ -74,6 +74,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="*", default=[], help="Class or Class#method, e.g. FlowWalk#settings")
     ap.add_argument("--no-build", action="store_true")
+    ap.add_argument("--screens", help="ButtonWalk only: these screens, e.g. map,tree")
     a = ap.parse_args()
     env = dict(os.environ, JAVA_HOME=JBR, ANDROID_HOME=str(SDK))
     if not a.no_build:
@@ -88,6 +89,8 @@ def main():
     if session:
         # Quoted for the device shell: the session carries "|" between its parts.
         cmd += ["-e", "AT_SESSION", "'" + session + "'"]
+    if a.screens:
+        cmd += ["-e", "screens", a.screens]
     if a.only:
         cmd += ["-e", "class", ",".join("app.ancienttrees." + o for o in a.only)]
     cmd.append(RUNNER)

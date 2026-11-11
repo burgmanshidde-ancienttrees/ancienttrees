@@ -180,13 +180,18 @@ fun PageStack(
         val moving = shown.any { it.progress.isRunning }
         // What lies over layer i: the progress of the page above it, if any.
         fun above(i: Int): Float = shown.getOrNull(i + 1)?.progress?.value ?: 0f
+        // A layer a page has settled over is out of the accessibility tree, as
+        // UIKit's navigation stack takes it out of VoiceOver's: TalkBack read the
+        // My trees page under Settings, and ButtonWalk tapped its controls
+        // through Settings and found them dead (2026-11-11).
+        fun covered(i: Int): Boolean = !moving && above(i) >= 1f
 
         Box(
             Modifier
                 .fillMaxSize()
                 .placedIf(rootPlaced || active)
                 // Off screen is out of the accessibility tree too: TalkBack never reads a hidden tab.
-                .then(if (rootPlaced || active) Modifier else Modifier.clearAndSetSemantics { })
+                .then(if ((rootPlaced || active) && !covered(-1)) Modifier else Modifier.clearAndSetSemantics { })
                 .graphicsLayer { translationX = -0.3f * w * above(-1) },
         ) {
             root()
@@ -198,7 +203,7 @@ fun PageStack(
                     Modifier
                         .fillMaxSize()
                         .placedIf(active)
-                        .then(if (active) Modifier else Modifier.clearAndSetSemantics { })
+                        .then(if (active && !covered(i)) Modifier else Modifier.clearAndSetSemantics { })
                         .graphicsLayer {
                             translationX = w * (1f - s.progress.value) - 0.3f * w * above(i)
                         }

@@ -240,7 +240,9 @@ class ButtonWalk {
 
     private fun walkAll(signedIn: Boolean) {
         val problems = ArrayList<String>()
-        for ((name, args) in screens) {
+        // -e screens map,tree: only those (python3 scripts/android_walk.py --only ButtonWalk --screens map,tree).
+        val only = InstrumentationRegistry.getArguments().getString("screens")?.split(",")?.filter { it.isNotBlank() }
+        for ((name, args) in screens.filter { only.isNullOrEmpty() || it.first in only }) {
             val label = name + if (signedIn) " (signed in)" else " (signed out)"
             runCatching { walk(label, name, if (signedIn) args + "-signed-in" else args, problems) }
                 .onFailure { problems.add("$label: ${it.message?.take(200)}") }
