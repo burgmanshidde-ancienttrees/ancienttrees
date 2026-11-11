@@ -215,6 +215,14 @@
       {
         "what": "add-library -> screen foot",
         "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing."
+      },
+      {
+        "what": "spot-close height",
+        "why": "Accessibility box, not drawing: the X is drawn whole, 14 to 62 below the sheet's top (centre 38, the iPhone's 38), but Android cuts its reported box where the sheet's content area begins, which moves the measured centre and height."
+      },
+      {
+        "what": "sheet top -> close centre",
+        "why": "Accessibility box, not drawing: the X is drawn whole, 14 to 62 below the sheet's top (centre 38, the iPhone's 38), but Android cuts its reported box where the sheet's content area begins, which moves the measured centre and height."
       }
     ]
   },
@@ -229,6 +237,14 @@
       {
         "what": "add-library -> screen foot",
         "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing."
+      },
+      {
+        "what": "spot-close height",
+        "why": "Accessibility box, not drawing: the X is drawn whole, 14 to 62 below the sheet's top (centre 38, the iPhone's 38), but Android cuts its reported box where the sheet's content area begins, which moves the measured centre and height."
+      },
+      {
+        "what": "sheet top -> close centre",
+        "why": "Accessibility box, not drawing: the X is drawn whole, 14 to 62 below the sheet's top (centre 38, the iPhone's 38), but Android cuts its reported box where the sheet's content area begins, which moves the measured centre and height."
       }
     ]
   },

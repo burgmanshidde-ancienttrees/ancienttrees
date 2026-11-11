@@ -1,3 +1,5 @@
+@file:OptIn(androidx.compose.ui.ExperimentalComposeUiApi::class)
+
 // EVERY SHEET LEAVES THE WAY IT CAME (audit 2026-11-10, row 4): on the iPhone a
 // sheet whose state goes away slides down (BrandSheet.swift:189 dismiss()); on
 // Android taking the sheet out of the composition removed it in one frame,
@@ -11,6 +13,9 @@ package app.ancienttrees.ui
 
 import androidx.compose.ui.graphics.TransformOrigin
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.testTagsAsResourceId
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.ColumnScope
@@ -95,7 +100,12 @@ fun BrandSheetHandle(modifier: Modifier = Modifier) {
         modifier
             .padding(top = 12.dp, bottom = 31.dp)
             .size(36.dp, 5.dp)
-            .background(Brand.colors.creamDark, RoundedCornerShape(50)),
+            .background(Brand.colors.creamDark, RoundedCornerShape(50))
+            // Seen by scripts/android_spacing.py, which measures every sheet's X and
+            // first element from it as the iPhone's 'Sheet Grabber' (a sheet is its
+            // own window, so its tags are exported here as well as in MainActivity).
+            .semantics { testTagsAsResourceId = true }
+            .testTag("sheet-grabber"),
     )
 }
 

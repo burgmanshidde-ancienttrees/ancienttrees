@@ -33,6 +33,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.offset
+import androidx.compose.ui.layout.layout
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -593,7 +595,16 @@ private fun CollectIntro(
     onClose: () -> Unit,
 ) {
     val brand = Brand.colors
-    Box {
+    // CollectSheet.swift: the intro 24 below the sheet's top (.padding(.top, 24),
+    // the handle drawn inside), its X at 16 (close.offset(y: -8)). AppSheet's
+    // handle keeps 48 here, so the intro comes 36 up; its tile sat 37 lower.
+    Box(
+        Modifier.layout { m, c ->
+            val p = m.measure(c)
+            val t = 36.dp.roundToPx()
+            layout(p.width, (p.height - t).coerceAtLeast(0)) { p.place(0, -t) }
+        },
+    ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
@@ -627,7 +638,9 @@ private fun CollectIntro(
                 SheetButtonView(SheetButton(stringResource(R.string.cf_choose), SheetKind.SECONDARY, Sym.PhotoLibrary, onLibrary), Modifier.testTag("add-library"))
             }
         }
-        SheetCloseButton(onClose, Modifier.align(Alignment.TopEnd).padding(top = 0.dp))
+        // The iPhone's X box spans 16 to 60 below the sheet's top (centre 38); this
+        // 48 box, with the intro lifted 36, centres there 2 down.
+        SheetCloseButton(onClose, Modifier.align(Alignment.TopEnd).offset(y = 2.dp))
     }
 }
 

@@ -83,7 +83,7 @@ IOS_TYPES = {"StaticText", "Image", "TextField", "SecureTextField", "SearchField
 # The phone's own furniture and the map's: neither is laid out by us.
 IOS_SKIP_TYPES = {"Keyboard", "KeyboardKey", "NavigationBar"}
 IOS_SKIP_IDS = {"AdditionalDimmingOverlay", "PopoverDimmingView"}
-IOS_SKIP_LABELS = {"Sheet Grabber", "Legal", "Compass", "About this map", "You Are Here"}
+IOS_SKIP_LABELS = {"Legal", "Compass", "About this map", "You Are Here"}
 
 
 def norm(s):
@@ -137,6 +137,18 @@ def ios_from_dump(path):
                         "y": round(el.y, 1), "h": round(el.h, 1),
                         "x": round(el.x, 1), "w": round(el.w, 1),
                         "s": scroller(el, s["h"])})
+        # THE SHEET'S TOP (Hidde, 2026-11-11: the X sat far too low and nothing
+        # measured it). The iPhone draws its own grabber, so the accessibility tree
+        # has none; the sheet's frame is the first ancestor of the close button as
+        # wide as a sheet.
+        close = next((el for el in s["els"] if el.ident in ("sheet-close", "spot-close", "xmark")), None)
+        p = close.parent if close else None
+        while p is not None and not (p.w >= s["w"] - 40 and p.h >= 120 and p.y > 0):
+            p = p.parent
+        if p is not None:
+            out_top = {"t": "SheetTop", "id": "sheet-top", "label": "", "y": round(p.y, 1), "h": 0.0,
+                       "x": round(p.x, 1), "w": round(p.w, 1), "s": "fixed"}
+            els.append(out_top)
         out[s["name"]] = {"w": s["w"], "h": s["h"], "els": els}
     IOS_FRAMES.write_text(json.dumps(out, indent=0, ensure_ascii=False) + "\n")
     print(f"wrote {IOS_FRAMES.relative_to(ROOT)}: {len(screens)} screens")
@@ -568,6 +580,7 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pen
     allowed_what = {a["what"]: a.get("why", "") for a in allowed}
     k = sheet_scale(ios)
     gaps, heights, insets_, seen_gap, across = {}, {}, {}, {}, {}
+    sheet_pairs, sheet_nodes = [], []
     matched = 0
     for n, xml in enumerate(xml_pages):
         nodes = android_nodes(xml, density, screen_h_dp)
@@ -585,6 +598,8 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pen
         for key, v in h.items():
             if key not in heights or v[1] > heights[key][1]:
                 heights[key] = (round(v[0] * k, 1), v[1])
+        if n == 0:
+            sheet_pairs, sheet_nodes = pairs, nodes
         if n == 0 and pairs:
             # The first named thing under the top safe area, and the lowest one
             # above the bottom one (a tab bar, an action bar, a sheet's button).
@@ -614,6 +629,22 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pen
                         insets_[f"{name_of(ia)} -> screen foot"] = from_edge
                     else:
                         insets_[f"{name_of(ia)} -> bottom safe area"] = from_safe
+    # THE SHEET'S TOP, from its grabber on both phones: the X's middle and the
+    # first thing under the grabber. A screen's height cannot move these, so
+    # they are judged like any gap (the 2026-11-11 miss: "leaves a sheet's top
+    # alone" let an X sit 35 too low through CI).
+    top_i = next((e for e in ios["els"] if e["id"] == "sheet-top"), None)
+    grab_a = next((n for n in sheet_nodes if n["id"] == "sheet-grabber"), None)
+    if top_i and grab_a and sheet_pairs:
+        ti, ta = top_i["y"], grab_a["y"] - 12  # BrandSheetHandle: 12 below the sheet's top
+        closes = [p for p in sheet_pairs if p[0]["id"] in ("sheet-close", "spot-close", "xmark")]
+        for ci, ca in closes[:1]:
+            insets_["sheet top -> close centre"] = (round((ci["y"] + ci["h"] / 2 - ti) * k, 1),
+                                                   round(ca["y"] + ca["h"] / 2 - ta, 1))
+        below = [p for p in sheet_pairs if p not in closes and p[0]["y"] > ti and p[0]["id"] != "sheet-top"]
+        if below:
+            fi, fa = min(below, key=lambda p: p[0]["y"])
+            insets_[f"sheet top -> {name_of(fi)}"] = (round((fi["y"] - ti) * k, 1), round(fa["y"] - ta, 1))
     rows = []
     for kind, table, suffix in (("inset", insets_, ""), ("gap", gaps, ""), ("height", heights, " height"),
                                 ("across", across, "")):
