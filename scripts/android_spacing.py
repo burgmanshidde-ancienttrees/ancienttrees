@@ -270,8 +270,17 @@ def dump_screen(adb, name, args, scrolls, density):
         time.sleep(1)
     time.sleep(6)
     XML_DIR.mkdir(parents=True, exist_ok=True)
-    for old in XML_DIR.glob(f"{name}-*.xml"):
+    for old in list(XML_DIR.glob(f"{name}-*.xml")) + list(XML_DIR.glob(f"{name}-safe.json")):
         old.unlink()
+    # The insets the app itself laid out against (MainActivity logs them, in px
+    # with its own density; the first frame reports 0 before the window has any).
+    got = re.findall(r"insets top=(\d+) bottom=(\d+) density=([\d.]+)",
+                     adb.run("logcat", "-d", "-s", "AncientTrees"))
+    if got:
+        t, b, d = got[-1]
+        (XML_DIR / f"{name}-safe.json").write_text(json.dumps([int(t) / float(d), int(b) / float(d)]))
+    else:
+        print(f"  {name}: the app logged no insets; using the system's reading", flush=True)
     w_px, h_px = map(int, re.search(r"(\d+)x(\d+)", adb.shell("wm", "size")).groups())
     for n in range(scrolls + 1):
         xml = dump_ours(adb, density)
@@ -516,14 +525,11 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
             # better is how the page was laid out.
             # Not for a sheet: it stands on the foot of a screen 19 taller here,
             # so its top says nothing and its foot is judged below.
-            from_safe = (round(ia["y"] - IOS_SAFE[0], 1), round(aa["y"] - safe_and[0], 1))
-            from_top = (round(ia["y"], 1), round(aa["y"], 1))
-            if ia["y"] > ios["h"] * 0.3:
-                pass
-            elif abs(from_top[1] - from_top[0]) < abs(from_safe[1] - from_safe[0]):
-                insets_[f"screen top -> {name_of(ia)}"] = from_top
-            else:
-                insets_[f"top safe area -> {name_of(ia)}"] = from_safe
+            # From each phone's own safe area: both apps lay out from it (the
+            # iPhone's 62, the status bar the app itself reports here).
+            if ia["y"] <= ios["h"] * 0.3:
+                insets_[f"top safe area -> {name_of(ia)}"] = (
+                    round(ia["y"] - IOS_SAFE[0], 1), round(aa["y"] - safe_and[0], 1))
             # Only what stands still has a distance from the foot: where a
             # scrolling page happens to end says nothing. From the safe area or
             # from the screen's edge, whichever agrees better, as at the top
@@ -582,7 +588,18 @@ def main():
 
         def measure():
             if a.apk:
-                adb.run("install", "-r", a.apk)
+                # A build signed with another key (a release walk's) refuses the
+                # update without a word to stdout, and every screen is then
+                # measured on THAT build (2026-11-11). Say so, and replace it.
+                out = subprocess.run([adb.adb, "install", "-r", a.apk], capture_output=True, text=True)
+                said = out.stdout + out.stderr
+                if "INSTALL_FAILED_UPDATE_INCOMPATIBLE" in said:
+                    print("another signature's build is installed: uninstalling it first", flush=True)
+                    adb.run("uninstall", PACKAGE)
+                    out = subprocess.run([adb.adb, "install", a.apk], capture_output=True, text=True)
+                    said = out.stdout + out.stderr
+                if "Success" not in said:
+                    sys.exit("the build did not install, so nothing would be measured on it:\n" + said[-400:])
                 for perm in ("ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"):
                     adb.shell("pm", "grant", PACKAGE, "android.permission." + perm)
             w_px, h_px, density = set_width(adb)
@@ -610,6 +627,8 @@ def main():
     failing = 0
     for name in names:
         pages = [p.read_text() for p in sorted(XML_DIR.glob(f"{name}-*.xml"))]
+        own = XML_DIR / f"{name}-safe.json"
+        safe = json.loads(own.read_text()) if own.exists() else meta["safe"]
         if name not in ios_all or not pages:
             result[name] = {"error": "no iPhone frames" if name not in ios_all else "no Android dump"}
             print(f"FAIL {name:<22} {result[name]['error']}")
@@ -620,7 +639,7 @@ def main():
             print(f"n/a  {name:<22} {no_baseline[name]}")
             continue
         allowed = status.get(name, {}).get("spacing_allowed", [])
-        r = judge(name, ios_all[name], pages, meta["density"], meta["safe"], meta["h_dp"], allowed)
+        r = judge(name, ios_all[name], pages, meta["density"], safe, meta["h_dp"], allowed)
         r["pending"] = name in pending
         # NOTHING MEASURED IS A FAILURE, pending or not: the first CI run
         # matched nothing on 37 screens and called every one "ok".

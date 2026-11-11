@@ -17,6 +17,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.statusBars
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.activity.enableEdgeToEdge
@@ -93,6 +94,15 @@ class MainActivity : ComponentActivity() {
             androidx.compose.runtime.key(launch) {
                 // Test tags as resource ids, so UI Automator names an element as
                 // the iPhone's accessibilityIdentifier does (scripts/android_spacing.py).
+                // And the insets this window lays out against, for the same script: read
+                // from the system's dumps they varied between boots of one emulator
+                // (a Pixel 6 status bar read 47.6 one run, 23.4 the next).
+                val d = androidx.compose.ui.platform.LocalDensity.current
+                val insetTop = androidx.compose.foundation.layout.WindowInsets.statusBars.getTop(d)
+                val insetBottom = androidx.compose.foundation.layout.WindowInsets.navigationBars.getBottom(d)
+                androidx.compose.runtime.LaunchedEffect(insetTop, insetBottom) {
+                    android.util.Log.i("AncientTrees", "insets top=$insetTop bottom=$insetBottom density=${d.density}")
+                }
                 @OptIn(androidx.compose.ui.ExperimentalComposeUiApi::class)
                 androidx.compose.foundation.layout.Box(
                     androidx.compose.ui.Modifier.semantics { testTagsAsResourceId = true },
