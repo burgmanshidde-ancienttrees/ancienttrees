@@ -30,6 +30,7 @@ What changed in the Android app (the review's icon and type rows, out/parity-fee
 - Type: search sets only the typed letters heavy, cultivar names upright, card meta lines 13 with the faint dot and the species giving way first, no more mid-word clipping of two-line card titles, navigation titles in Gabarito, Form sheets on the system's cool grey with 26 corners and the system's placeholder grey.
 
 Not changed, on purpose: the My trees gear still fills as the sheet rises. The Swift does that (Hidde, 2026-10-08); the iPhone frames show it outline only because the progress never reaches the button there, an iPhone bug.
+
 ## 2026-11-11 session: photographs sent from the website never reached the inbox
 
 - **Broken since 2026-09-23, fixed:** the website's Add photo inserted its sightings row without `shared`, the production column default is false, and the inbox and the photos page read shared rows only. So the only two photographs ever sent from a tree page (Padua 11-01, Lisbon 11-10) sat unseen, behind a "we look at every photograph" promise. add-photo-js.ts now sends `shared: true` as the app does; qa `check_web_add_photo_is_shared()` guards it (fails without the fix, checked); escaped bug ESC-2026-11-11-photographs-sent-from-a-tree-page-on-the, caught by that check. Live with the next deploy.
