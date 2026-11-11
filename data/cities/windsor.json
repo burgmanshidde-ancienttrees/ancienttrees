@@ -1,0 +1,108 @@
+{
+  "city": "Windsor",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "An oak said to be 900 years old stands near Snow Hill in Windsor Great Park, and it has a bronze double in the Savill Garden visitor centre. The Signing Oak was 9.55 metres round when the Tree Register recorded it in 2008. Its name comes from 1972, when, by the account attached to it, a Statement of Intent recognising the park as a conservation area was signed beneath it. Reaching it takes about an hour on foot down the Long Walk from Windsor.",
+  "meta_description": "The Signing Oak in Windsor Great Park is said to be 900 years old and 9.55 metres round. A bronze replica of it stands at the Savill Garden.",
+  "question_meta": "Windsor's oldest mapped tree is the Signing Oak in Windsor Great Park, said to be 900 years old and 9.55 metres round in 2008.",
+  "question_answer": "Windsor's oldest mapped tree is the Signing Oak, a Pedunculate Oak (Quercus robur) near Snow Hill in Windsor Great Park. Windsor Great Park and the Queen's Green Canopy put it at 900 years; a print listing says 800, and neither figure comes with a method.",
+  "question_context": "The oak was 9.55 metres round when the Tree Register recorded it in 2008, a trunk about three metres across. It stands in open parkland at the south-west corner of the wood north of Snow Hill, roughly 500 metres west-north-west of the Copper Horse statue. The Queen's Green Canopy named it one of its 70 Ancient Trees in 2022, and a bronze replica made from scans of the living tree stands in The Gallery Cafe at the Savill Garden visitor centre. The name comes from 1972, when, by the account attached to it, a Statement of Intent recognising the park as a conservation area was signed beneath it. Neither age comes with a method, so read either as an estimate, which would put its first leaves in the twelfth or early thirteenth century. The park is free and open daily from dawn to dusk, and the Tree Register records this oak as open access on Crown Estate land. From Windsor it is about an hour on foot down the Long Walk.",
+  "hero_tree_id": "wsr_001",
+  "oldest_tree_id": "wsr_001",
+  "faq": [
+    {
+      "q": "How old is the Signing Oak?",
+      "a": "Windsor Great Park and the Queen's Green Canopy say 900 years; a print listing says 800. Neither figure comes with a method, so it is an estimate."
+    },
+    {
+      "q": "Why is it called the Signing Oak?",
+      "a": "By the account attached to it, a Statement of Intent recognising the park as a conservation area was signed beneath it in 1972."
+    },
+    {
+      "q": "How do you get to it from Windsor?",
+      "a": "Walk the Long Walk to Snow Hill, about an hour from the Windsor stations. The oak is roughly 500 metres west-north-west of the Copper Horse statue."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wsr_001",
+      "name": "The Signing Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 900 years",
+      "age_min": 800,
+      "age_max": 900,
+      "age_basis": "source",
+      "girth_cm": 955,
+      "location": {
+        "address": "Snow Hill, Windsor Great Park, near Battle Bourne (south-west corner of the wood), Windsor SL4",
+        "latitude": 51.45157,
+        "longitude": -0.614221,
+        "neighbourhood": "Windsor Great Park"
+      },
+      "story": "There are two of this oak. One stands in open parkland on the edge of a wood near Snow Hill, in Windsor Great Park. The other is bronze, a replica made from scans of the living tree, and it stands in The Gallery Cafe at the Savill Garden visitor centre.\n\nThe living one was 9.55 metres round when the Tree Register recorded it in 2008, a trunk about three metres across. Windsor Great Park and the Queen's Green Canopy both call it 900 years old, and in 2022 the Canopy chose it as one of its 70 Ancient Trees. A print listing says 800. Neither figure comes with a method, so read the age as an estimate, somewhere in the twelfth or early thirteenth century for its first leaves.\n\nThe name comes from 1972. By the account attached to it, the Crown Estate Commissioners and the Nature Conservancy Council signed a Statement of Intent under its branches, recognising the park as a conservation area. That is the story the tree is known by. The Tree Register names the oak without describing the day.\n\nIt takes some reaching, about an hour on foot from Windsor down the Long Walk to Snow Hill, and then roughly 500 metres west-north-west of the Copper Horse statue. If you go, tell us how it is looking.",
+      "verified_sources": [
+        "https://www.treeregister.org/tree-directory/tree/189522",
+        "https://www.windsorgreatpark.co.uk/the-bronze-oak/",
+        "https://shop.queensgreencanopy.org/ancient-trees-and-ancient-woodland/70-ancient-trees/"
+      ],
+      "official_register": {
+        "name": "The Tree Register (TROBI), tree 189522",
+        "url": "https://www.treeregister.org/tree-directory/tree/189522"
+      },
+      "access": "Free. Windsor Great Park is open daily from dawn to dusk, and the Tree Register records this oak as open access on Crown Estate land. Keep out of areas the park map marks as private.",
+      "transport": "Windsor & Eton Central or Windsor & Eton Riverside station, then roughly 4 km on foot along the Long Walk to Snow Hill, about an hour. The oak is roughly 500 m west-north-west of the Copper Horse statue. Park car parks are an alternative.",
+      "how_to_recognise": "You can recognise it by the trunk, 9.55 metres round in 2008 and about three metres across. It stands in open parkland at the south-west corner of the wood north of Snow Hill, near Battle Bourne.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wsr_002",
+      "name": "The Pin Oak, Canadian Memorial Avenue",
+      "species": "Pin Oak (Quercus palustris)",
+      "age_estimate": "not documented",
+      "age_basis": "source",
+      "girth_cm": 283,
+      "height_m": 30.6,
+      "location": {
+        "address": "Canadian Memorial Avenue, Valley Gardens, Windsor Great Park, Egham TW20",
+        "latitude": 51.415906,
+        "longitude": -0.594548,
+        "neighbourhood": "Windsor Great Park"
+      },
+      "story": "The tallest pin oak in Britain and Ireland is only 90 centimetres across. The Tree Register lists this one as the height champion for its species, in those islands and in England and Surrey as well, at 30.6 metres when it was measured in 2021. Its height is about 34 times its width, a slender build for a champion.\n\nIt is not an ancient tree and nothing here pretends it is. Pin oaks come from eastern North America, and this one is one of a planted row along Canadian Memorial Avenue in the Valley Gardens, on the southern side of Windsor Great Park. We have not established when the avenue went in, so the tree's age stays open. If you know it, tell us.\n\nThe register entry is the single source for all of this, and it records the girth as 283 centimetres, Crown Estate ownership and public access. An iNaturalist record from August 2026 falls within range of the spot, though nobody has checked that it shows this particular oak.\n\nThe pin is good to about ten metres at best on an avenue of similar trees, which is why the way to find it is to look up. Go in late October, when pin oaks turn dark red.",
+      "verified_sources": [
+        "https://www.treeregister.org/tree-directory/tree/125681/",
+        "https://www.treeregister.org/champion-trees-list/?list_search=Windsor+Great+Park&per_page=100"
+      ],
+      "official_register": {
+        "name": "The Tree Register (TROBI), tree 125681",
+        "url": "https://www.treeregister.org/tree-directory/tree/125681/"
+      },
+      "access": "Free to walk into. The Tree Register records public open access on Crown Estate land in the Valley Gardens, Windsor Great Park. Car parking in the Valley Gardens is charged.",
+      "transport": "Virginia Water station is about 3 km to the south-east in a straight line, further on foot. By car, use the charged Valley Gardens car parks.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the leaves turn dark red to russet"
+      },
+      "how_to_recognise": "You can recognise it by its height, the tallest of the oaks along the south side of Canadian Memorial Avenue, mid-way along: 30.6 metres high and 283 centimetres round, about 90 across.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

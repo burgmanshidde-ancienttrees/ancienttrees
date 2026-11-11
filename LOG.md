@@ -21,6 +21,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-11 daily publish (scheduled task): the last 3 held trees into the app, queue empty
+
+- **What went on main, app only under APP FIRST, no web page or place page:** the Bute Park Tulip Tree as Cardiff's crd_010 (13 trees) and Windsor's first two, the Signing Oak and the Canadian Memorial Avenue pin oak (wsr_001, wsr_002, a new place), from build_uk_under_ten.py limited to those two places (out/tmp/build_uk_under_ten_cardiff_windsor.py). city_names nothing to do, preflight 0 problems; app-only trees do not count against the pace.
+- **Checked:** /cardiff 200, /windsor 404, as APP FIRST wants. No claims stood on either place.
+- **Daily publish: queue empty.** Every builder since 11-02 is now on main; the trees still on the shelf are held for their own reasons (see the 11-08 entry). For Hidde: the daily task "publish-held-trees-daily" can be switched off under Scheduled; the night run's write passes put new trees straight into the app.
+
 ## 2026-11-11 session: Android's glass, and the last small controls
 
 - **What changed in the product:** on Android 12 and later, the tab bar, its camera disc and the round buttons over a tree's photograph are frosted glass like the iPhone's: what lies behind them is blurred under a milky tint. Before Android 12 they keep the opaque ground they had. The one thing the glass cannot frost is the map itself, which MapLibre draws on its own GL surface. Photographs that are still loading wait on the iPhone's grey, row thumbnails on the moss tint, and the big tree card shows a white spinner. Until the catalogue is read the app shows the oak mark and a spinner, and after six seconds the iPhone's "taking longer than it should" line, in eight languages. A long press on Take a photograph opens the library, iNaturalist's shortcut.
