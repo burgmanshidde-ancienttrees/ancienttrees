@@ -90,7 +90,9 @@ def norm(s):
     # "Amsterdam, 27 trees" (a button's label) and "Amsterdam 27 trees" (the
     # words inside the tappable box) are one name.
     s = re.sub(r"[,.:;\u00a0]", " ", s or "")
-    return re.sub(r"\s+", " ", s).strip().lower()
+    # The opening words are enough for a long text, and a folded story carries
+    # its "more" at the end on Android.
+    return re.sub(r"\s+", " ", s).strip().lower()[:80]
 
 
 BUTTONS = {"Button", "Link", "Switch", "Toggle", "Slider", "SegmentedControl"}
@@ -441,7 +443,7 @@ def touch_box(e, n):
     return n
 
 
-def compare_page(pairs, ios_h):
+def compare_page(pairs, ios_h, ios_els):
     """Gaps between neighbours and heights, for one Android dump."""
     gaps, heights = {}, {}
     for a, b in pairs:
@@ -463,6 +465,20 @@ def compare_page(pairs, ios_h):
             continue
         top = min(ib["y"] for ib, _ in below)
         ib, ab = next(p for p in below if p[0]["y"] == top)
+        # NEIGHBOURS ONLY: nothing of ours between them on the iPhone, nothing
+        # matched between them on Android. Across a block one app does not name,
+        # or a list the two apps order differently, a difference says nothing
+        # about spacing (a map sheet read +426 between two rows).
+        lo, hi = ia["y"] + ia["h"], ib["y"]
+        if any(e is not ia and e is not ib and (e["s"] == "fixed") == (ia["s"] == "fixed")
+               and e["y"] >= lo - 0.5 and e["y"] + e["h"] <= hi + 0.5
+               and e["x"] < ia["x"] + ia["w"] and ia["x"] < e["x"] + e["w"]
+               for e in ios_els):
+            continue
+        if any(n is not aa and n is not ab and aa["y"] + aa["h"] - 0.5 <= n["y"] and n["y"] + n["h"] <= ab["y"] + 0.5
+               and n["x"] < aa["x"] + aa["w"] and aa["x"] < n["x"] + n["w"]
+               for _, n in pairs):
+            continue
         g_ios = ib["y"] - (ia["y"] + ia["h"])
         g_and = ab["y"] - (aa["y"] + aa["h"])
         if ab["y"] < aa["y"]:
@@ -481,7 +497,7 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
         nodes = android_nodes(xml, density, screen_h_dp)
         pairs = match(ios["els"], nodes)
         matched = max(matched, len(pairs))
-        g, h = compare_page(pairs, ios["h"])
+        g, h = compare_page(pairs, ios["h"], ios["els"])
         # A scrolled page meets the same element again: keep the reading
         # where it stood whole (accessibility bounds are cut, never grown).
         for k, v in g.items():

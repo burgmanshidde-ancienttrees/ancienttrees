@@ -29,7 +29,6 @@ import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.layout.layout
-import androidx.compose.ui.unit.isSp
 import androidx.compose.ui.unit.dp
 import app.ancienttrees.R
 
@@ -50,15 +49,15 @@ fun ExpandableText(text: AnnotatedString, lines: Int, style: TextStyle, modifier
     Box(
         modifier
             .fillMaxWidth()
-            .layout { m, c ->
-                val p = m.measure(c)
-                layout(p.width, p.height - foldTrim) { p.place(0, 0) }
-            }
             .clickable(
                 enabled = cut && !expanded,
                 interactionSource = remember { MutableInteractionSource() },
                 indication = null,
-            ) { expanded = true },
+            ) { expanded = true }
+            .layout { m, c ->
+                val p = m.measure(c)
+                layout(p.width, p.height - foldTrim) { p.place(0, 0) }
+            },
     ) {
         Text(
             text,
