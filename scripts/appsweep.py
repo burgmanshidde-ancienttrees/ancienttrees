@@ -333,7 +333,7 @@ def screens(sub):
         # the day Profile moved (found 2026-08-28).
         ("contribute",    ["-tab=2", "-settings", "-contribute"], 5),
         ("feedback",      ["-tab=2", "-settings", "-feedback"], 5),
-        ("profile-edit",  ["-tab=2", "-profile-edit"], 5),
+        ("profile-edit",  ["-tab=2", "-signed-in", "-profile-edit"], 5),
         # WITH ROWS IN IT (-people-demo), because an empty list cannot show
         # the report and block controls, and those are the two the App Store
         # checks by tapping.

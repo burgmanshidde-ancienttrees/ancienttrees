@@ -445,7 +445,25 @@
       "Blocked people are held in memory and read back from the server's blocks table; the iPhone also keeps the list on the phone (hard rule 11 on Android).",
       "Share your profile opens Android's share sheet (forced)."
     ],
-    "owner": null
+    "owner": null,
+    "spacing_allowed": [
+      {
+        "what": "people-suggested height",
+        "why": "Header frame, not words: the iPhone reports the section header's 33 point frame, Android the word inside it, 7 above that frame's foot. Read so, the gaps agree: 22 above the frame on both, 17 from the frame's foot to the first row (Android: 7 + 17)."
+      },
+      {
+        "what": "people-share -> people-suggested",
+        "why": "Header frame, not words: the iPhone reports the section header's 33 point frame, Android the word inside it, 7 above that frame's foot. Read so, the gaps agree: 22 above the frame on both, 17 from the frame's foot to the first row (Android: 7 + 17)."
+      },
+      {
+        "what": "Share your profile -> people-suggested",
+        "why": "Header frame, not words: the iPhone reports the section header's 33 point frame, Android the word inside it, 7 above that frame's foot. Read so, the gaps agree: 22 above the frame on both, 17 from the frame's foot to the first row (Android: 7 + 17)."
+      },
+      {
+        "what": "people-suggested -> person-follow",
+        "why": "Header frame, not words: the iPhone reports the section header's 33 point frame, Android the word inside it, 7 above that frame's foot. Read so, the gaps agree: 22 above the frame on both, 17 from the frame's foot to the first row (Android: 7 + 17)."
+      }
+    ]
   },
   "early-adopter": {
     "status": "parity",

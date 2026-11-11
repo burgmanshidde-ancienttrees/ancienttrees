@@ -90,7 +90,10 @@ final class SweepFrames: XCTestCase {
         ("refused",      ["-tab=0", "-refused"], "permission-recovery-location"),
         ("contribute",   ["-tab=2", "-settings", "-contribute"], "contribute-sheet"),
         ("feedback",     ["-tab=2", "-settings", "-feedback"], "contribute-sheet"),
-        ("profile-edit", ["-tab=2", "-profile-edit"], nil),
+        // Signed in, which is the editor's own state; and its root, so the sweep
+        // waits for the editor and measures it rather than My trees under it
+        // (2026-11-11: the dump held signed-out My trees under this name).
+        ("profile-edit", ["-tab=2", "-signed-in", "-profile-edit"], "profile-editor"),
         ("people",       ["-tab=2", "-signed-in", "-people", "-people-demo"], "people-sheet"),
         // The early-adopter badge on My trees and its one-time sheet (2026-10-16).
         ("early-adopter", ["-tab=2", "-signed-in", "-earlyadopter", "-country=NL", "-ambassador=Paris"], nil),

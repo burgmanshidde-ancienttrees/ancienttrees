@@ -305,7 +305,8 @@ private fun FindPeopleInner(host: PeopleHost, source: PeopleSource, onBack: () -
                     Row(
                         horizontalArrangement = Arrangement.spacedBy(12.dp),
                         verticalAlignment = Alignment.CenterVertically,
-                        modifier = Modifier.fillMaxWidth().heightIn(min = 44.dp)
+                        // The iPhone's list cell: 74 tall, its icon from 16 (SweepFrames people).
+                        modifier = Modifier.fillMaxWidth().heightIn(min = 74.dp)
                             .clickable(role = Role.Button) {
                                 when {
                                     host.profiles.myPublic == true -> shareProfile(me)
@@ -313,19 +314,24 @@ private fun FindPeopleInner(host: PeopleHost, source: PeopleSource, onBack: () -
                                     else -> askingPublic = true
                                 }
                             }
-                            .padding(horizontal = 20.dp, vertical = 6.dp).testTag("people-share"),
+                            .padding(horizontal = 16.dp, vertical = 6.dp).testTag("people-share"),
                     ) {
                         Box(Modifier.size(32.dp), contentAlignment = Alignment.Center) {
                             Icon(Sym.Share, null, tint = brand.moss, modifier = Modifier.size(20.dp))
                         }
                         Text(stringResource(R.string.people_share), fontSize = 16.sp, color = brand.ink)
                     }
-                    HorizontalDivider(Modifier.padding(start = 20.dp), thickness = 0.5.dp, color = brand.hairline)
+                    // From the words to 16 short of the edge, as iOS 26's list separator.
+                    HorizontalDivider(Modifier.padding(start = 60.dp, end = 16.dp), thickness = 0.5.dp, color = brand.hairline)
                 }
             }
             if (showsSuggestions) {
                 item {
-                    Eyebrow(stringResource(R.string.people_suggested), Modifier.padding(start = 20.dp, top = 16.dp, bottom = 4.dp).testTag("people-suggested"))
+                    // iOS 26's section header: 22 below the share cell, 33 tall, the
+                    // word on its foot (SweepFrames: 272 to 305 under a cell ending at 250).
+                    Box(Modifier.fillMaxWidth().padding(top = 22.dp).height(33.dp), contentAlignment = Alignment.BottomStart) {
+                        Eyebrow(stringResource(R.string.people_suggested), Modifier.padding(start = 16.dp, bottom = 7.dp).testTag("people-suggested"))
+                    }
                 }
                 items(suggestions, key = { "s" + it.profile.userId }) { s ->
                     PersonRow(host, s.profile, s.reason, s.ambassador || host.profiles.placesByUser[s.profile.userId].orEmpty().isNotEmpty(),
@@ -430,7 +436,9 @@ private fun SearchField(query: String, onChange: (String) -> Unit) {
         singleLine = true,
         textStyle = sfStyle(fontSize = 17.sp, color = brand.ink),
         keyboardOptions = KeyboardOptions(autoCorrectEnabled = false),
-        modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp).padding(top = 4.dp, bottom = 10.dp),
+        // The iPhone's bar carries its search field in 60 under the 54 (SweepFrames
+        // people: the first cell at 114 below the safe area); here 4 + 40 + 16.
+        modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp).padding(top = 4.dp, bottom = 16.dp),
         decorationBox = { inner ->
             Row(
                 verticalAlignment = Alignment.CenterVertically,
@@ -464,7 +472,9 @@ private fun PersonRow(
     val scope = rememberCoroutineScope()
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier.fillMaxWidth().padding(start = 20.dp, end = 8.dp, top = 6.dp, bottom = 6.dp),
+        // The iPhone's list row: 17 above and below a 44 row (78 apart), the avatar
+        // at 16, the more button ending 16 from the edge (SweepFrames people).
+        modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 16.dp, top = 17.dp, bottom = 17.dp),
     ) {
         Row(
             horizontalArrangement = Arrangement.spacedBy(12.dp),

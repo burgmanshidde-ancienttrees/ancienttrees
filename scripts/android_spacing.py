@@ -127,7 +127,11 @@ def ios_from_dump(path):
             # The navigation bar is measured here (appfit leaves it out): its
             # height is the page's start, and without its title Android's bar
             # title takes the page heading's place in the matching.
-            if appfit.inside(el, tuple(t for t in appfit.NOT_OURS if t != "NavigationBar")) or in_map(el):
+            # Only the map and the keyboard are not ours to space. A Form or a List
+            # is a Table or CollectionView on the iPhone, and its rows are exactly
+            # what we lay out (profile-edit, people, contribute and the species
+            # chooser measured nothing until 2026-11-11).
+            if appfit.inside(el, ("Map", "Keyboard", "KeyboardKey")) or in_map(el):
                 continue
             # The text inside a button reports the BUTTON's frame on the
             # iPhone, not its own line box: it says nothing about the text.

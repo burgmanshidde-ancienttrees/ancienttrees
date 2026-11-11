@@ -44,7 +44,12 @@ fun PinPicker(
     recentre: Int = 0,
 ) {
     val latest by rememberUpdatedState(onMove)
-    val opening = remember { MoveRequest(1L, boxAround(start.lat, start.lng, spanMetres)) }
+    // TreeMap.swift zoom(forMeters:): the span is laid across 375 points whatever
+    // the phone, so a wider screen shows proportionally more. Fitting the span to
+    // this screen's own width opened about 10 percent closer than the iPhone
+    // (the review's place-pin row: "zoomed in much further").
+    val widthDp = androidx.compose.ui.platform.LocalConfiguration.current.screenWidthDp
+    val opening = remember { MoveRequest(1L, boxAround(start.lat, start.lng, spanMetres * widthDp / 375.0)) }
     Box(modifier) {
         TreeMapView(
             trees = trees,
