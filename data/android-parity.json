@@ -315,6 +315,32 @@
     "status": "parity",
     "differences": [
       "The map's place header, its Highlights and Collected shelves, the white box with the ambassador row and the Plus box under the trees, ported from PlaceAmbassadors.swift, AmbassadorBadge.swift and PlusAsk.swift (PlaceBox.kt). A failed ambassador request says so on the one sheet: Android has no shared snackbar yet."
+    ],
+    "spacing_allowed": [
+      {
+        "what": "map-count -> tab-collect",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower: the gaps from the filter row down to the sheet and from the sheet's content to the tab bar grow with it. The same rule on a taller screen."
+      },
+      {
+        "what": "Want to visit -> map-count",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower: the gaps from the filter row down to the sheet and from the sheet's content to the tab bar grow with it. The same rule on a taller screen."
+      },
+      {
+        "what": "Collected -> map-count",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower: the gaps from the filter row down to the sheet and from the sheet's content to the tab bar grow with it. The same rule on a taller screen."
+      },
+      {
+        "what": "Species -> map-count",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower: the gaps from the filter row down to the sheet and from the sheet's content to the tab bar grow with it. The same rule on a taller screen."
+      },
+      {
+        "what": "filter-favourites -> map-count",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower: the gaps from the filter row down to the sheet and from the sheet's content to the tab bar grow with it. The same rule on a taller screen."
+      },
+      {
+        "what": "filter-mine -> map-count",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower: the gaps from the filter row down to the sheet and from the sheet's content to the tab bar grow with it. The same rule on a taller screen."
+      }
     ]
   },
   "city-map-full": {
@@ -375,6 +401,16 @@
     "status": "parity",
     "differences": [
       "SpeciesChooser.kt from SpeciesChooser.swift, now also on your own tree and the draft: grouped list, matched name and Latin under each row, Not on the map yet, Use what you typed, the search field at the foot. Close is the bar's plain text as in every ported sheet (BarSheet), where iOS 26 draws a capsule. The map's Species filter (SpeciesPicker.kt) uses the same list."
+    ],
+    "spacing_allowed": [
+      {
+        "what": "Growing near you first height",
+        "why": "Header frame, not words: the iPhone reports the list section header's 40 point frame, Android the line of words in it; the first row starts at the frame's foot on the iPhone and 8 under the words here."
+      },
+      {
+        "what": "Growing near you first -> Oriental Plane, Platanus orientalis, 70",
+        "why": "Header frame, not words: the iPhone reports the list section header's 40 point frame, Android the line of words in it; the first row starts at the frame's foot on the iPhone and 8 under the words here."
+      }
     ]
   },
   "directions": {
