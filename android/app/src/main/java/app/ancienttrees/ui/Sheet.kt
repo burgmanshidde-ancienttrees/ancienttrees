@@ -152,7 +152,6 @@ fun AppSheet(
     val scope = rememberCoroutineScope()
     val growth = remember { SheetGrowth() }
     val density = androidx.compose.ui.platform.LocalDensity.current
-    growth.topClear = androidx.compose.foundation.layout.WindowInsets.statusBars.getTop(density) + with(density) { 10.dp.toPx() }
     // How far up the sheet has grown, 0 at the fitted height and 1 at full.
     val frac = if (grows) growth.fraction else 0f
     val presence = LocalSheetPresence.current
@@ -182,6 +181,9 @@ fun AppSheet(
     val insetDensity = androidx.compose.ui.platform.LocalDensity.current
     val gestureOnly = (WindowInsets.navigationBars.getBottom(insetDensity) -
         WindowInsets.tappableElement.getBottom(insetDensity)).coerceAtLeast(0)
+    // The full height's top: under the status bar with 10 of air, as .large stops.
+    // The card is drawn down by the gesture bar, so it may grow that much taller.
+    growth.topClear = WindowInsets.statusBars.getTop(density) + with(density) { 10.dp.toPx() } - gestureOnly
     ModalBottomSheet(
         onDismissRequest = onDismissRequest,
         // SCALED, NOT NARROWED (visual review 2026-11-11): iOS 26 lays the fitted
