@@ -679,6 +679,23 @@ IOS_LARGE_NAV_MID = 38.0
 IOS_LARGE_CLOSE_MID = 26.0
 FULL_SHEET_NAV = {"contribute", "feedback", "profile-edit", "species-pick"}
 FULL_SHEET_X = {"collect-place", "collect-identify"}
+# The fitted collect steps: BrandSheet's layout on the iPhone (CollectSheet.swift
+# `fits`), the X's middle 30 under the sheet's top (SheetCloseButton.swift: 8 and
+# a 44 box; the shots read 31). Their dumps hold one element, so only this is held.
+FITTED_SHEET_X = {"collect-ticked", "collect-voted", "collect-compare"}
+IOS_FITTED_CLOSE_MID = 30.0
+
+
+def fitted_x(xml, density, h_dp):
+    """(what, iPhone, Android) for a fitted sheet's X, from the grabber's top."""
+    nodes = android_nodes(xml, density, h_dp)
+    grab = next((n for n in nodes if n["id"] == "sheet-grabber"), None)
+    x = next((n for n in nodes if n["id"] in ("spot-close", "sheet-close")
+              or n["desc"] in ("Close",) and n["w"] < 60), None)
+    if grab is None or x is None:
+        return [("sheet grabber not found" if grab is None else "sheet close button not found", 1.0, 0.0)]
+    top = grab["y"] - 12  # BrandSheetHandle: 12 under the sheet's top
+    return [("sheet top -> close centre", IOS_FITTED_CLOSE_MID, round(x["y"] + x["h"] / 2 - top, 1))]
 
 
 def under_tab_bar(els):
@@ -947,6 +964,22 @@ def main():
             failing += 1
             continue
         if name in no_baseline:
+            # The X is still held against the iPhone's on a fitted collect step,
+            # from Android's own dump (FITTED_SHEET_X): these sheets are where it
+            # stood 70 under the top against 31 and nothing caught it (2026-11-12).
+            if name in FITTED_SHEET_X:
+                rows = fitted_x(pages[0], meta["density"], meta["h_dp"])
+                # A missing grabber or X fails whatever its numbers say.
+                bad = [r for r in rows if "not found" in r[0] or abs(r[2] - r[1]) > FAIL]
+                result[name] = {"error": "not comparable: " + no_baseline[name], "x": rows}
+                if bad:
+                    failing += len(bad)
+                    print(f"FAIL {name:<22} {no_baseline[name]}")
+                    for what, vi, va in bad:
+                        print(f"   ! inset  {va - vi:+6.1f}  {what}  (iPhone {vi}, Android {va})")
+                    continue
+                print(f"n/a  {name:<22} {no_baseline[name]}; X {rows[0][2] if rows else '?'} under the top (iPhone {IOS_FITTED_CLOSE_MID})")
+                continue
             result[name] = {"error": "not comparable: " + no_baseline[name]}
             print(f"n/a  {name:<22} {no_baseline[name]}")
             continue
