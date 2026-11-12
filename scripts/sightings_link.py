@@ -87,7 +87,58 @@ def main(argv):
                  {"tree_id": tree, "status": "published", "updated_at": now})
         fixed += 1
     print(f"sightings_link: {len(rows)} sighting(s) behind published photographs, {fixed} linked")
+    tick_collected(dry)
     return 0
+
+
+def tick_collected(dry):
+    """A PHOTOGRAPH OF A TREE IS A VISIT (Hidde, 2026-11-12: "je kan niet een
+    foto hebben zonder er te zijn geweest ... waar je hem ook vandaan komt").
+
+    Every surface ticks the tree when the photograph is taken (CollectSheet's
+    claim on the iPhone, Collector on Android, add-photo-js on the web; qa's
+    check_a_photo_is_a_visit_on_every_surface). This is the backstop for what
+    no surface can do: a reader's NEW tree has no tree id when they photograph
+    it, and gets one only when we publish it (main() above), so seven readers'
+    published trees were missing from their own Collected on 2026-11-12. Any
+    account, any route: a sighting with a photograph and a tree id gets a
+    `visited` row for that tree, dated the day it reached us, unless a viewing
+    pass rejected it as the wrong tree (data/sightings-processed.json). Never
+    overwrites an existing tick, never removes one.
+    """
+    rejected = set()
+    try:
+        with open(os.path.join(ROOT, "data", "sightings-processed.json"), encoding="utf-8") as fh:
+            done = json.load(fh).get("done") or {}
+        rejected = {k for k, v in done.items() if isinstance(v, dict) and v.get("outcome") == "rejected"}
+    except (OSError, ValueError):
+        pass
+    # Dated the day it reached us, not the day the camera says (Hidde, same day:
+    # "upload datum is relevanter"); a sighting row has no created_at, and
+    # updated_at is that day for every row nobody edited since.
+    sights = _req("/rest/v1/sightings?select=id,user_id,tree_id,updated_at"
+                  "&photo=not.is.null&tree_id=not.is.null&limit=10000") or []
+    have = {(v["user_id"], v["tree_id"]) for v in
+            (_req("/rest/v1/visited?select=user_id,tree_id&limit=100000") or [])}
+    rows = {}
+    for r in sights:
+        key = (r["user_id"], r["tree_id"])
+        if r["id"] in rejected or key in have or key in rows:
+            continue
+        rows[key] = {"user_id": r["user_id"], "tree_id": r["tree_id"],
+                     "visited_at": (r.get("updated_at") or "")[:10] or None}
+    for (_, tree) in rows:
+        print(f"  collected: {tree}" + (" (dry)" if dry else ""))
+    if rows and not dry:
+        req = urllib.request.Request(
+            SUPA + "/rest/v1/visited?on_conflict=user_id,tree_id", method="POST",
+            data=json.dumps(list(rows.values())).encode(),
+            headers={"apikey": KEY, "Authorization": "Bearer " + KEY,
+                     "Content-Type": "application/json",
+                     "Prefer": "resolution=ignore-duplicates,return=minimal"})
+        urllib.request.urlopen(req, timeout=30).close()
+    print(f"sightings_link: {len(sights)} photographed sighting(s) on a tree, {len(rows)} ticked as collected"
+          + (" (dry)" if dry else ""))
 
 
 if __name__ == "__main__":

@@ -887,6 +887,54 @@ def check_web_add_photo_is_shared():
     return out
 
 
+def check_a_photo_is_a_visit_on_every_surface():
+    """A photograph of one of our trees ticks it as collected, on every surface.
+
+    Hidde, 2026-11-12: "je kan niet een foto hebben zonder er te zijn geweest
+    ... waar je hem ook vandaan komt (van web, Android, wherever)". The web half
+    is check_web_add_photo_is_shared; this is the two apps. A reader's NEW tree
+    gets its tree id only when we publish it, and scripts/sightings_link.py
+    ticks those on every knock. Removing this check needs Hidde.
+
+    iPhone: every sightings.record(...) that carries a tree id (not treeId: nil)
+    sits after a saved.toggleVisited in the same function (CollectSheet.claim).
+    Android: a sighting with a tree id is only ever sent through
+    Collector.collect, which ends in tick(); every direct Collector.send passes
+    null as the tree.
+    """
+    import re
+    root = Path(__file__).resolve().parent.parent
+    out = []
+    for p in (root / "ios" / "AncientTrees" / "AncientTrees").rglob("*.swift"):
+        text = p.read_text(encoding="utf-8", errors="replace")
+        for m in re.finditer(r"sightings\.record\(treeId:\s*([^,]+),", text):
+            if m.group(1).strip() == "nil":
+                continue
+            fn = text.rfind("func ", 0, m.start())
+            if "toggleVisited(" not in text[fn:m.start()]:
+                out.append("%s: a photograph of one of our trees is recorded without "
+                           "saved.toggleVisited before it, so it never reaches Collected (2026-11-12)"
+                           % p.relative_to(root))
+    android = root / "android" / "app" / "src" / "main" / "java"
+    if android.exists():
+        for p in android.rglob("*.kt"):
+            text = p.read_text(encoding="utf-8", errors="replace")
+            for m in re.finditer(r"Collector\.send\(([^)]*)\)", text):
+                args = [a.strip() for a in m.group(1).split(",")]
+                if len(args) >= 3 and args[2] != "null":
+                    out.append("%s: Collector.send with a tree id skips the tick; use Collector.collect "
+                               "(2026-11-12)" % p.relative_to(root))
+        col = android / "app" / "ancienttrees" / "account" / "Collector.kt"
+        if col.exists():
+            t = col.read_text(encoding="utf-8")
+            body = t[t.find("suspend fun collect("):]
+            body = body[:body.find("\n    }\n")]
+            if "tick(" not in body:
+                out.append("android Collector.collect no longer ends in tick(), so a photograph "
+                           "of one of our trees is not collected (2026-11-12)")
+    return out
+
+
 def check_a_given_photo_records_the_yes():
     """A photograph somebody gave us by mail goes up only with their yes on file.
 
@@ -4049,6 +4097,7 @@ def main():
     failures += check_the_privacy_page_names_what_we_store()
     failures += check_a_given_photo_records_the_yes()
     failures += check_web_add_photo_is_shared()
+    failures += check_a_photo_is_a_visit_on_every_surface()
     failures += check_an_escaped_bug_has_a_test()
     failures += check_every_reader_photo_reaches_hidde()
     failures += check_everything_sent_reaches_hidde()
