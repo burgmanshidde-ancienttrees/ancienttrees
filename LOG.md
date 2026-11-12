@@ -16,6 +16,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-11-12 session: FNP interview done
 
 - Hidde talked to Hans Hofele (Frankfurter Neue Presse) about the Eschersheimer Linde and the app. Print for sure, maybe online; Hans sends the PDF. Two promises recorded in drafts/OUTREACH.md "FNP interview, 2026-11-12": a mail when Android is out (new list "Tell when Android ships", for the session that publishes Android) and app screenshots with Hans's own photographs of the lime (his photos are not in the mail thread or the app inbox yet).
+- Fixed: our press mail to the FNP linked /de/frankfurt/eschersheimer-linde, a 404 since the translation trim of 11-05. Every tree url of a trimmed translation (47 overlays) now redirects to its English tree page (redirect-map.ts, f9c78da5d); checked live.
 
 ## 2026-11-12 session: inbox, Valencia's photo ask sent
 
