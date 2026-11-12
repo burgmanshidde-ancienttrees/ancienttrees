@@ -137,11 +137,15 @@ fun SignInSheet(account: Account, reason: SignInReason, onDismiss: () -> Unit) {
     ) {
         // SignIn.swift: content 36 below the sheet's top (the handle drawn inside that
         // room), 28 above the floating card's foot, the X 8 down. AppSheet's handle
-        // keeps 48 (Sheet.kt), so the box comes 36 up; the icon sat 37 lower.
+        // keeps 48 (Sheet.kt), so the content comes 36 up; the icon sat 37 lower.
+        // The box comes 24 and the scroll's own padding does the rest: lifted the
+        // whole 36, the scroll area began over the grabber, and Compose leaves a
+        // node covered by a later one out of the accessibility tree (the measurer
+        // found no grabber, 2026-11-12). Nothing on screen moves.
         PlainText { Box(
             Modifier.layout { m, c ->
                 val p = m.measure(c)
-                val t = 36.dp.roundToPx()
+                val t = 24.dp.roundToPx()
                 layout(p.width, (p.height - t).coerceAtLeast(0)) { p.place(0, -t) }
             },
         ) {
@@ -151,7 +155,7 @@ fun SignInSheet(account: Account, reason: SignInReason, onDismiss: () -> Unit) {
                     .fillMaxWidth()
                     .verticalScroll(rememberScrollState())
                     .padding(horizontal = 22.dp)
-                    .padding(top = 24.dp, bottom = 28.dp)
+                    .padding(top = 12.dp, bottom = 28.dp)
                     .navigationBarsPadding(),
             ) {
                 when (val s = account.state) {
@@ -162,7 +166,7 @@ fun SignInSheet(account: Account, reason: SignInReason, onDismiss: () -> Unit) {
                     else -> Ask(account, reason)
                 }
             }
-            SheetCloseButton({ account.dismissProblem(); onDismiss() }, Modifier.align(Alignment.TopEnd).offset(y = (-4).dp))
+            SheetCloseButton({ account.dismissProblem(); onDismiss() }, Modifier.align(Alignment.TopEnd).offset(y = (-16).dp))
         } }
     }
 }

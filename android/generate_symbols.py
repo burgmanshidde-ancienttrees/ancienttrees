@@ -138,7 +138,15 @@ GLYPHS = {
     "TurnUpRight": ("reply", False, 400, False, {"flip": True}),  # arrow.turn.up.right: the set's curved reply arrow, turned to point right
     "TurnUpRightSemibold": ("reply", False, 600, False, {"flip": True}),
     "Sparkles": ("auto_awesome", False, 400, False, {"src": "gh"}),  # sparkles
-    "SparklesFill": ("auto_awesome", True, 400, False, {"src": "gh"}),  # sparkle (one four-point star in SF; the set has it only with its two small ones)
+    "SparklesFill": ("auto_awesome", True, 400, False, {"src": "gh"}),  # sparkles.fill
+    # sparkle: SF's ONE four-point star (AmbassadorBadge.swift, the early-adopter
+    # badge and its sheet). The set has no lone one (searched 0.48.0, 0.48.3 and
+    # Google's catalogue, 2026-11-12: spark is not in it), so this is the big
+    # star of the set's own auto_awesome, its second absolute subpath, centred
+    # (it stands at 9,12 with a reach of 6.575) and scaled to the set's 20 live
+    # area. The set's geometry, nothing drawn.
+    "Sparkle": ("auto_awesome", True, 400, False,
+                {"src": "gh", "part": 1, "centre": (9.0, 12.0), "reach": 6.575}),
     "Building": ("domain", False, 400, False),  # building.2
     "MapPin": ("keep", True, 400, False),  # mappin: the set's pin on a needle (no ball-headed pin in the set)
     "CloseBold": ("close", False, 700, False),  # xmark .bold
@@ -250,10 +258,20 @@ def main():
         opts = more[0] if more else {}
         src = opts.get("src", "npm")
         ds = fetch(name, fill, weight, src)
+        if "part" in opts:
+            # One subpath of a glyph: the path split where an absolute move starts.
+            whole = " ".join(ds)
+            parts = ["M" + x for x in whole.split("M") if x.strip()]
+            ds = [parts[opts["part"]].strip()]
         args = ", ".join(f'"{d}"' for d in ds)
         how = (", flipped" if opts.get("flip") else "") + (", from Google's repository" if src == "gh" else "")
         lines.append(f'    /** {name}{" filled" if fill else ""}, weight {weight}{how}. */')
-        if opts or src == "gh":
+        if "centre" in opts:
+            cx, cy = opts["centre"]
+            k = 10.0 / opts["reach"]
+            lines.append(f'    val {kt}: ImageVector by lazy {{ symbolPart("{kt}", {k:.4f}f, {(12 - cx) * k:.4f}f, '
+                         f'{(12 - cy) * k:.4f}f, {args}) }}')
+        elif opts or src == "gh":
             port = "24f" if src == "gh" else "960f"
             lines.append(f'    val {kt}: ImageVector by lazy {{ symbolTurned("{kt}", {str(mirror).lower()}, {port}, '
                          f'{str(bool(opts.get("flip"))).lower()}, {float(opts.get("rotate", 0))}f, {args}) }}')
@@ -275,6 +293,15 @@ def main():
         "    val b = ImageVector.Builder(name, 24.dp, 24.dp, 960f, 960f, autoMirror = mirror)",
         "    // The set draws on a viewBox of 0 -960 960 960: one group moves it into view.",
         "    b.addGroup(translationY = 960f)",
+        "    for (d in paths) b.addPath(addPathNodes(d), fill = SolidColor(Color.Black))",
+        "    b.clearGroup()",
+        "    return b.build()",
+        "}",
+        "",
+        "/** One part of a set glyph on Google's 24 grid, scaled about the centre and moved there. */",
+        "private fun symbolPart(name: String, scale: Float, dx: Float, dy: Float, vararg paths: String): ImageVector {",
+        "    val b = ImageVector.Builder(name, 24.dp, 24.dp, 24f, 24f)",
+        "    b.addGroup(pivotX = 12f, pivotY = 12f, scaleX = scale, scaleY = scale, translationX = dx, translationY = dy)",
         "    for (d in paths) b.addPath(addPathNodes(d), fill = SolidColor(Color.Black))",
         "    b.clearGroup()",
         "    return b.build()",

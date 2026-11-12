@@ -654,6 +654,17 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pen
     # alone" let an X sit 35 too low through CI).
     top_i = next((e for e in ios["els"] if e["id"] == "sheet-top"), None)
     grab_a = next((n for n in sheet_nodes if n["id"] == "sheet-grabber"), None)
+    # WHAT IS MISSING FAILS, never "no row" (2026-11-12: the collect intro's X was
+    # clipped away and its tile cut at a hard line under the grabber, and the
+    # check passed because a row it could not make was a row it did not judge).
+    missing = []
+    if top_i:
+        if not grab_a:
+            missing.append("sheet grabber not found")
+        i_close = [e for e in ios["els"] if e["id"] in ("sheet-close", "spot-close", "xmark")]
+        a_close = [p for p in sheet_pairs if p[0]["id"] in ("sheet-close", "spot-close", "xmark")]
+        if i_close and not a_close:
+            missing.append("sheet close button not found")
     if top_i and grab_a and sheet_pairs:
         ti, ta = top_i["y"], grab_a["y"] - 12  # BrandSheetHandle: 12 below the sheet's top
         closes = [p for p in sheet_pairs if p[0]["id"] in ("sheet-close", "spot-close", "xmark")]
@@ -664,7 +675,11 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pen
         if below:
             fi, fa = min(below, key=lambda p: p[0]["y"])
             insets_[f"sheet top -> {name_of(fi)}"] = (round((fi["y"] - ti) * k, 1), round(fa["y"] - ta, 1))
-    rows = []
+            # A box cut by its parent is reported at its visible size: the first
+            # element shorter than the iPhone's is the cut, not a spacing.
+            insets_[f"sheet top first {name_of(fi)} height"] = (round(fi["h"] * k, 1), round(fa["h"], 1))
+    rows = [{"kind": "missing", "what": m, "ios": 1, "android": 0, "diff": -1,
+             "fails": m not in allowed_what, "allowed": allowed_what.get(m)} for m in missing]
     for kind, table, suffix in (("inset", insets_, ""), ("gap", gaps, ""), ("height", heights, " height"),
                                 ("across", across, "")):
         for what, (vi, va) in table.items():

@@ -108,8 +108,7 @@ fun BrandSheetHandle(modifier: Modifier = Modifier) {
             .background(Brand.colors.creamDark, RoundedCornerShape(50))
             // Seen by scripts/android_spacing.py, which measures every sheet's X and
             // first element from it as the iPhone's 'Sheet Grabber' (a sheet is its
-            // own window, so its tags are exported here as well as in MainActivity).
-            .semantics { testTagsAsResourceId = true }
+            // own window; AppSheet exports its tags, as MainActivity does the app's).
             .testTag("sheet-grabber"),
     )
 }
@@ -174,7 +173,11 @@ fun AppSheet(
         // 271 Core Text sets at 26 pt, while titles outside a sheet match to 1 dp.
         // Laid out narrower, as before, the same words wrapped elsewhere and the
         // type read 4 to 5 percent big. 10 above the bottom, as measured.
-        modifier = if (floating) modifier.graphicsLayer {
+        // A sheet is its own window, out of reach of MainActivity's
+        // testTagsAsResourceId: set here, every sheet's tags reach UI Automator.
+        // Set only on the handle, it exported nothing on the sign-in sheet, whose
+        // content never set it, and the measurer found no grabber (2026-11-12).
+        modifier = if (floating) modifier.semantics { testTagsAsResourceId = true }.graphicsLayer {
             val s = (size.width - 16.dp.toPx()) / size.width
             scaleX = s
             scaleY = s
@@ -184,7 +187,7 @@ fun AppSheet(
             // by the bar's height (its foot stood 31.6 up, the last button 58 against
             // the iPhone's 35; android_spacing.py, 2026-11-12).
             translationY = -10.dp.toPx() + gestureOnly
-        } else modifier,
+        } else modifier.semantics { testTagsAsResourceId = true },
         shape = if (floating) RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp, bottomStart = 36.dp, bottomEnd = 36.dp)
         else RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp),
         sheetState = sheetState,
