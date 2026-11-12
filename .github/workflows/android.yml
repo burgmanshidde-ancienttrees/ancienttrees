@@ -166,7 +166,7 @@ jobs:
           # each test 4 (FlowWalk's Timeout rule), and the runner's, crash and app lines
           # of the phone's log (never the whole log: the artifact is public) go into the
           # report, the last test that started printed here.
-          script: timeout 1500 ./gradlew --no-daemon connectedDebugAndroidTest "-Pandroid.testInstrumentationRunnerArguments.AT_SESSION=$AT_SESSION" -Pandroid.testInstrumentationRunnerArguments.notClass=app.ancienttrees.ButtonWalk; s=$?; mkdir -p ../out/android-walk; adb pull /data/local/tmp/walk/. ../out/android-walk || true; adb logcat -d -s TestRunner:* AndroidRuntime:* AncientTrees:* > ../out/android-walk/logcat.txt || true; if [ $s -ne 0 ]; then echo "walk ended $s; the tests that started:"; grep "TestRunner: started" ../out/android-walk/logcat.txt | tail -3; fi; exit $s
+          script: 'timeout 1500 ./gradlew --no-daemon connectedDebugAndroidTest "-Pandroid.testInstrumentationRunnerArguments.AT_SESSION=$AT_SESSION" -Pandroid.testInstrumentationRunnerArguments.notClass=app.ancienttrees.ButtonWalk; s=$?; mkdir -p ../out/android-walk; adb pull /data/local/tmp/walk/. ../out/android-walk || true; adb logcat -d -s TestRunner:* AndroidRuntime:* AncientTrees:* > ../out/android-walk/logcat.txt || true; if [ $s -ne 0 ]; then echo "walk ended $s; the tests that started:"; grep "TestRunner: started" ../out/android-walk/logcat.txt | tail -3; fi; exit $s'
 
       - name: Keep the walk's report
         if: always()
