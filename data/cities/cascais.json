@@ -1,0 +1,65 @@
+{
+  "city": "Cascais",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "Cascais keeps its classified tree in a public park in the town. A Moreton Bay fig in Parque Marechal Carmona has been a Portuguese tree of public interest since 1996, with a trunk 7.5 metres round and a crown 20.8 metres tall. The park itself, by guides' account the joined gardens of the Castro Guimarães palace and the Gandarinha estate, opened to the public in 1944, and it is free to walk in daily.",
+  "meta_description": "Cascais's classified tree: a Moreton Bay fig in Parque Marechal Carmona, 7.5 metres round, protected by Portugal since 1996 and free to see daily.",
+  "question_meta": "Cascais's classified fig in Parque Marechal Carmona was put at about 110 years by Portugal's tree register at its last measurement.",
+  "question_answer": "The classified old tree in Cascais is the Moreton Bay fig in Parque Marechal Carmona, a Portuguese tree of public interest since 1996. The national register put it at about 110 years at its last measurement, with a trunk 7.5 metres round.",
+  "question_context": "Portugal's forestry institute, the ICNF, declared the fig a tree of public interest in the official gazette on 28 November 1996, and the town of Cascais lists it among its own classified trees under the name árvore-da-borracha, the rubber tree. The register gives a girth of 7.5 metres and, in a 2016 record, a height of 20.8 metres. Its age of about 110 years is the register's figure at the last measurement rather than a ring count, so the tree has had some years since; a fair band is 100 to 130. Parque Marechal Carmona is, by guides' account, the gardens of the Castro Guimarães palace and the Gandarinha estate, joined and opened to the public in 1944, so by the register's age the fig was already growing when the park opened. Cascais's own guide to the park mentions more than one Moreton Bay fig, and only one of them is classified, which is why the girth is the thing to look for. The park is free and open every day, with earlier closing in winter than in summer, so check the hours before you go late.",
+  "hero_tree_id": "csc_001",
+  "oldest_tree_id": "csc_001",
+  "faq": [
+    {
+      "q": "Where is the old fig in Cascais?",
+      "a": "In Parque Marechal Carmona, the public park in the town. It is the Moreton Bay fig classified as a tree of public interest, with a trunk 7.5 metres round."
+    },
+    {
+      "q": "How old is the Cascais fig?",
+      "a": "Portugal's tree register put it at about 110 years at its last measurement. That is an estimate, so read it as a band of roughly 100 to 130."
+    },
+    {
+      "q": "Is Parque Marechal Carmona free?",
+      "a": "Yes. It is a free public park open every day, closing earlier in winter than in summer."
+    }
+  ],
+  "trees": [
+    {
+      "id": "csc_001",
+      "name": "The Moreton Bay Fig of Parque Marechal Carmona",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 110 years",
+      "age_min": 100,
+      "age_max": 130,
+      "girth_cm": 750,
+      "height_m": 20.8,
+      "location": {
+        "address": "Parque Marechal Carmona, Cascais",
+        "latitude": 38.69465,
+        "longitude": -9.42154,
+        "neighbourhood": "Cascais"
+      },
+      "verified_sources": [
+        "https://www.cascais.pt/sub-area/arvores-de-cascais",
+        "http://www2.icnf.pt/portal/florestas/ArvoresFicha?Processo=KNJ1/299&Concelho=&Freguesia=&Distrito=",
+        "https://www.wikidata.org/wiki/Q98444712",
+        "https://www.timeout.com/lisbon/attractions/marechal-carmona-park"
+      ],
+      "official_register": {
+        "name": "ICNF Arvores de Interesse Publico (declared DR II Serie 276, 28/11/1996)",
+        "url": "http://www2.icnf.pt/portal/florestas/ArvoresFicha?Processo=KNJ1/299&Concelho=&Freguesia=&Distrito="
+      },
+      "access": "Free public park, daily; Time Out lists roughly 8:30 to 17:45 in winter and 19:45 in summer, other listings differ, check before going.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "An Australian fig with a trunk seven and a half metres round grows in a park in Cascais, and Portugal has protected it since 1996. The forestry institute, the ICNF, lists it as a tree of public interest, declared in the official gazette on 28 November 1996, and the town of Cascais carries it on its own list of classified trees under the name árvore-da-borracha, the rubber tree.\n\nThe register's numbers do most of the talking. A girth of 7.5 metres, a height of 20.8 metres in a 2016 record, and an age of about 110 years at its last measurement. A register age is the age when somebody last looked, so the tree has had some years since, and we give it a band of 100 to 130 rather than pretend to know which.\n\nThe ground it stands on is Parque Marechal Carmona, which guides describe as the gardens of the Castro Guimarães palace and the Gandarinha estate, joined and opened to the public in 1944. By the register's age, the fig was already growing when the gates opened.\n\nCascais's own guide to the park mentions Moreton Bay figs in the plural, and only one of them is classified. Our pin is the register's point rather than a single crown, so the girth is the number to check against. The park is free and open daily, closing earlier in winter than in summer.",
+      "how_to_recognise": "You can recognise it by the trunk, 7.5 metres round, under a crown 20.8 metres tall. It stands in Parque Marechal Carmona, which has more than one Moreton Bay fig; this is the one the state classified.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
