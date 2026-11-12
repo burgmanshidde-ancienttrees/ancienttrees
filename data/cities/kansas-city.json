@@ -2,19 +2,19 @@
   "city": "Kansas City",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Kansas City's most remarkable trees are not scattered across parks and cemeteries: all four grow on one library lawn. The Linda Hall Library, a private research library near the UMKC campus, has spent decades measuring and cataloguing its grounds for the Champion Tree Program of Greater Kansas City, and four of its specimens are now the largest of their kind anywhere in the metro. An oak, a double-flowered horsechestnut, a purple beech and the last living relative of its own botanical family, all free to walk among, dawn to dusk.",
-  "meta_description": "Kansas City's champion trees: an oak, a purple beech, a double-flowered horsechestnut and a rare rubber tree, all growing on one library lawn.",
-  "question_meta": "Kansas City's oldest tree is the 1956 double-flowered horsechestnut on the Linda Hall Library lawn, about 70 years old. Full list of 4.",
+  "intro": "Four of Kansas City's champion trees grow on one library lawn. The Linda Hall Library, a private research library near the UMKC campus, has spent decades cataloguing its grounds for the Champion Tree Program of Greater Kansas City, and an oak, a double-flowered horsechestnut, a purple beech and the last living relative of its own botanical family are now the largest of their kind in the metro, free to walk among dawn to dusk. The fifth, Missouri's largest smoketree, stands 16 kilometres east at the Vaile Mansion in Independence.",
+  "meta_description": "Kansas City's champion trees: an oak, a purple beech, a horsechestnut and a rare rubber tree on one library lawn, plus Missouri's largest smoketree.",
+  "question_meta": "Kansas City's oldest dated tree is the 1956 double-flowered horsechestnut on the Linda Hall Library lawn, about 70 years old. Full list of 5.",
   "question_answer": "The oldest tree in Kansas City's collection is the double-flowered horsechestnut planted in 1956 on the grounds of the Linda Hall Library, near Rockhill Road by the UMKC campus, making it about 70 years old. It is also the metro's largest known specimen of its kind, with a trunk 231 centimetres round.",
-  "question_context": "Every tree on this page grows within a few hundred feet of each other on the Linda Hall Library's arboretum lawn, and every age here starts from the same kind of record: a planting date kept in the library's own files rather than a growth-ring estimate. The horsechestnut went into the ground in 1956, the purple beech in 1971, the Shumard oak in 1968, and the hardy rubber tree, the youngest of the four, in 1975. All four are registered with the Champion Tree Program of Greater Kansas City, a metro-wide survey that has tracked the largest known tree of each species since 1955, when the J.C. Nichols Company's own landscaping department started the count. All four hold that title for their kind today, from a Chinese species with no close living relatives to a horsechestnut bred never to drop a conker. Nobody outside the library has independently measured any of them since a 2008 survey, so treat the girths and heights on this page as the institution's own record rather than a fresh third-party check, and tell us if you have measured one more recently.",
+  "question_context": "Four of the trees on this page grow within a few hundred feet of each other on the Linda Hall Library's arboretum lawn, and every age there starts from the same kind of record: a planting date kept in the library's own files rather than a growth-ring estimate. The horsechestnut went into the ground in 1956, the purple beech in 1971, the Shumard oak in 1968, and the hardy rubber tree, the youngest of the four, in 1975. All four are registered with the Champion Tree Program of Greater Kansas City, a metro-wide survey that has tracked the largest known tree of each species since 1955, when the J.C. Nichols Company's own landscaping department started the count. All four hold that title for their kind today, from a Chinese species with no close living relatives to a horsechestnut bred never to drop a conker. Nobody outside the library has independently measured any of them since a 2008 survey, so treat the girths and heights on this page as the institution's own record rather than a fresh third-party check, and tell us if you have measured one more recently. The smoketree in Independence has no published age.",
   "faq": [
     {
       "q": "What is the oldest tree in Kansas City?",
       "a": "The double-flowered horsechestnut on the Linda Hall Library lawn, planted in 1956 and about 70 years old. It is also the metro's largest known specimen of its kind."
     },
     {
-      "q": "Why are all of Kansas City's remarkable trees at one library?",
-      "a": "The Linda Hall Library's grounds have been surveyed and catalogued for decades as part of the Champion Tree Program of Greater Kansas City, a metro-wide register that has tracked the largest tree of each species since 1955. Four of the library's own trees currently hold that title."
+      "q": "Why are most of Kansas City's remarkable trees at one library?",
+      "a": "The Linda Hall Library's grounds have been surveyed and catalogued for decades as part of the Champion Tree Program of Greater Kansas City, a metro-wide register that has tracked the largest tree of each species since 1955. Four of the library's own trees currently hold that title. The fifth tree here, Missouri's largest smoketree, grows on the grounds of the Vaile Mansion in Independence."
     },
     {
       "q": "Is the Linda Hall Library arboretum free to visit?",
@@ -179,6 +179,43 @@
       "official_register": {
         "name": "Linda Hall Library Arboretum accession 13b-1-1 (Greater Kansas City Champion Tree), no. 13b-1-1",
         "url": "https://www.lindahall.org/about/arboretum/hardy-rubber-tree-13b-1-1/"
+      }
+    },
+    {
+      "id": "kcm_005",
+      "name": "The Vaile Mansion Smoketree",
+      "species": "American Smoketree (Cotinus obovatus)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 241,
+      "height_m": 12.5,
+      "location": {
+        "address": "Vaile Mansion & Arboretum, 1500 N Liberty St, Independence, Missouri 64050",
+        "latitude": 39.10733,
+        "longitude": -94.41679,
+        "neighbourhood": "Independence (Kansas City metro)"
+      },
+      "verified_sources": [
+        "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0 (Missouri Department of Conservation champion layer, Smoke tree, Jackson County, public location Vaile Mansion, public access YES)",
+        "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0 (City of Independence heritage tree, approved, public, category LEG, location 1500 N Liberty St)",
+        "https://www.jchs.org/jchs-e-journal/2023/3/15/gilded-age-splendor-of-vaile-mansion-endures-into-21-st-century (Jackson County Historical Society essay by a Vaile Society volunteer: grounds hold a Missouri state champion smoke tree)",
+        "https://arbnet.org/morton-register/vaile-mansion-arboretum/ (ArbNet Level I accredited arboretum, collection includes the Missouri State Champion Smoketree)"
+      ],
+      "official_register": {
+        "name": "Missouri Register of Champion Trees (Missouri Department of Conservation)",
+        "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
+      },
+      "access": "Vaile Mansion is a museum run by the Victorian Society of the Vaile Mansion; tours (adults about $10) Thursday to Saturday 10 to 4 and Sunday 1 to 4, April 1 to October 31, plus holiday tours late Nov to Dec 22. No source states whether the grounds can be walked outside tour hours or without a ticket; confirm on 816-503-6700 before promising it. MDC lists public access YES. Independence is about 16 km east of downtown Kansas City.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its size: a smoketree 12.5 metres tall with a crown 11.9 metres wide, in a species that usually stays small. It stands on the Vaile Mansion grounds; ask at the mansion which one.",
+      "story": "American smoketrees are supposed to stay small. This one is Missouri's largest, 12.5 metres tall on the grounds of the Vaile Mansion in Independence.\n\nThe Missouri Department of Conservation's champion register gives it a trunk 2.41 metres round, 95 inches, under a crown 11.9 metres across. The species is normally a small, often multi-stemmed tree, six to nine metres at most by the Missouri Botanical Garden's account, so this is a great deal of smoketree. The girth may have been taken around several stems at once. No source says, so read it as the register's number rather than proof of one solid trunk.\n\nIt grows on the five acres around the Vaile Mansion, a Gilded Age house that is now a museum and an accredited arboretum. Its neighbours there include a Liberty elm from the Elm Research Institute and an avenue of 30 sugar maples in two rows north of the house. In 2026 the City of Independence added the smoketree to its own heritage tree list as well.\n\nNow the honest part. No source we found says exactly where on the grounds it stands, and the latest written mentions are a 2023 historical society essay and the arboretum's listing, so ask at the mansion which tree it is. The house is open for paid tours from April to October and again before Christmas. Nobody has published the tree's age either. If you know when it was planted, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]
