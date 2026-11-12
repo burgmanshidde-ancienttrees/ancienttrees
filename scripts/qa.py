@@ -716,6 +716,34 @@ def check_a_deleted_account_keeps_its_photographs():
     if "sightings" in purge:
         out.append("site/src/pages/account/settings.astro: deleting an account deletes photographs of "
                    "trees; only the avatar goes, the trees stay (Hidde, 2026-11-12).")
+    # The two apps, the same rule: their account deletion touches no sightings
+    # bucket, directly or through a helper it calls (the iPhone's old
+    # SightingSync.purge).
+    def body(text, start):
+        i = text.find(start)
+        if i < 0:
+            return None
+        depth, j = 0, text.find("{", i)
+        while j < len(text):
+            depth += {"{": 1, "}": -1}.get(text[j], 0)
+            if depth == 0:
+                return text[i:j + 1]
+            j += 1
+        return text[i:]
+    for rel, start in (("ios/AncientTrees/AncientTrees/Kit/Account.swift", "func deleteAccount("),
+                       ("android/app/src/main/java/app/ancienttrees/account/Account.kt", "fun deleteAccount(")):
+        path = root / rel
+        if not path.exists():
+            continue
+        fn = body(path.read_text(encoding="utf-8"), start)
+        if fn is None:
+            out.append("%s: no deleteAccount found; the check that it keeps photographs of trees cannot "
+                       "read it (Hidde, 2026-11-12)." % rel)
+            continue
+        code = "\n".join(l for l in fn.splitlines() if not l.lstrip().startswith(("//", "*", "/*")))
+        if re.search(r"sightings|purge\(", code):
+            out.append("%s: deleteAccount deletes photographs of trees (the sightings or shared-sightings "
+                       "bucket); only the avatar goes, the trees stay (Hidde, 2026-11-12)." % rel)
     return out
 
 

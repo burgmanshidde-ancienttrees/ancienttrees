@@ -608,13 +608,14 @@ public final class Account {
         _ = try? await Net.data(
             for: Supa.request("/storage/v1/object/avatars/\(s.userId)/avatar.jpg",
                               method: "DELETE", token: s.accessToken))
-        // And the sighting photographs, which are the same problem and were
-        // missed. Their ROWS cascade off auth.users; the JPEGs in the
-        // sightings bucket do not, so before 2026-08-28 deleting an account
-        // left every picture somebody had taken sitting under a path that is
-        // their own user id, while the privacy page promised nothing is kept
-        // back. Found while writing that page's missing paragraph.
-        await SightingSync.purge(userId: s.userId, token: s.accessToken)
+        // ONLY THE AVATAR. The photographs of trees stay (Hidde, 2026-11-12:
+        // "het hele idee is toch dat we de bomen houden als mensen hun account
+        // verwijderen", and "als we een boom niet approven maar nog 2 andere m
+        // aanmelden we m alsnog goed kunnen keuren"). From 2026-08-28 this also
+        // emptied the sightings bucket; the rows' link to the person goes with
+        // the account, the pictures stay, and scripts/sightings_link.py takes a
+        // gone account's public shared copy down. qa.py
+        // check_a_deleted_account_keeps_its_photographs() holds it.
         let r = Supa.request("/rest/v1/rpc/delete_user", token: s.accessToken)
         let ok = (try? await Net.data(for: r))
             .flatMap { ($0.1 as? HTTPURLResponse) }
