@@ -282,6 +282,24 @@ def insets(adb, density):
     return top * 160 / density, bottom * 160 / density
 
 
+def settled(adb, density, tries=5, gap=2.0):
+    """A dump taken once the screen holds still: two in a row, `gap` seconds
+    apart, with every element of ours where it was. CI's emulator was still
+    sliding species-pick's sheet in when the first look came (2026-11-12: its
+    top not found, its rows 5 short). Not every second: a dump of a long list
+    holds the app's main thread, and a tighter loop made it stop answering."""
+    def shape(x):
+        return re.findall(r'package="' + re.escape(PACKAGE) + r'"[^>]*?bounds="([^"]+)"', x)
+    xml = dump_ours(adb, density)
+    for _ in range(tries):
+        time.sleep(gap)
+        nxt = dump_ours(adb, density)
+        if shape(nxt) == shape(xml):
+            return nxt
+        xml = nxt
+    return xml
+
+
 # Screens whose iPhone frames are of a sheet under the sign-in sheet it opens
 # (SweepFrames roots contribute and feedback at contribute-sheet).
 UNDER_SIGN_IN = {"contribute", "feedback"}
@@ -333,7 +351,7 @@ def dump_screen(adb, name, args, scrolls, density):
         print(f"  {name}: the app logged no insets; using the system's reading", flush=True)
     w_px, h_px = map(int, re.search(r"(\d+)x(\d+)", adb.shell("wm", "size")).groups())
     for n in range(scrolls + 1):
-        xml = dump_ours(adb, density)
+        xml = dump_ours(adb, density) if n else settled(adb, density)
         (XML_DIR / f"{name}-{n}.xml").write_text(xml)
         if n < scrolls:
             if 'scrollable="true"' not in xml:
@@ -723,10 +741,11 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pen
     allowed_within = {a["what"]: a.get("within") for a in allowed}
     k = sheet_scale(ios)
     gaps, heights, insets_, seen_gap, across = {}, {}, {}, {}, {}
-    sheet_pairs, sheet_nodes = [], []
+    sheet_pairs, sheet_nodes, all_nodes = [], [], []
     matched = 0
     for n, xml in enumerate(xml_pages):
         nodes = android_nodes(xml, density, screen_h_dp)
+        all_nodes.append(nodes)
         gone_i = past_first_card(ios["els"], lambda e: e["t"] in BUTTONS, ios["w"]) | under_tab_bar(ios["els"])
         # Below the screen's foot on the iPhone: Android reports nothing it does not
         # show, so the map's Highlights text at 954 and 993 on an 874 screen paired
@@ -821,18 +840,21 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pen
     # (CollectSheet.swift closeRow: 4 + 22). Hidde, 2026-11-12: "veel kruisjes op
     # de overlay verkeerd" and "de titel op de overlay teveel naar boven", which
     # this check had passed.
-    full_a = next((n for n in sheet_nodes if n["id"] == "full-sheet-top"), None)
+    # The first page that shows the sheet's top: a page taken mid-slide may not.
+    full_nodes = next((ns for ns in all_nodes if any(n["id"] == "full-sheet-top" for n in ns)), sheet_nodes)
+    full_a = next((n for n in full_nodes if n["id"] == "full-sheet-top"), None)
+    sheet_nodes_full = full_nodes
     if full_a is not None:
         ft = full_a["y"]
         insets_["full sheet top under the status bar"] = (IOS_LARGE_TOP_GAP, round(ft - safe_and[0], 1))
-        bar = next((n for n in sheet_nodes if n["id"] == "sheet-nav-bar"), None)
+        bar = next((n for n in sheet_nodes_full if n["id"] == "sheet-nav-bar"), None)
         if screen in FULL_SHEET_NAV:
             if bar is None:
                 missing.append("sheet navigation row not found")
             else:
                 insets_["full sheet: navigation row middle under its top"] = (IOS_LARGE_NAV_MID, round(bar["y"] + bar["h"] / 2 - ft, 1))
         if screen in FULL_SHEET_X:
-            x = next((n for n in sheet_nodes if n["id"] in ("spot-close", "sheet-close")
+            x = next((n for n in sheet_nodes_full if n["id"] in ("spot-close", "sheet-close")
                       or n["desc"] in ("Close", "Close sheet") and n["w"] < 60), None)
             if x is None:
                 missing.append("sheet close button not found")
