@@ -510,7 +510,7 @@
         "longitude": 13.0954604,
         "neighbourhood": "Sacrow"
       },
-      "story": "A German tree archive says one of the trunks here is really two oaks grown into one. Potsdam protects three pedunculate oaks behind the last houses of the Weinmeisterweg in Sacrow as natural monument number 12, and gives them girths of 470, 560 and 650 centimetres. The Ostdeutsches Baumarchiv, a private record of old trees, counted them differently on its 2021 visit: one oak at 589 centimetres, and a twin, fused at the base and grown together above chest height, which it could only tape as a single trunk of 673.\n\nThe two sets of numbers do not quite meet. The twin comes out larger than the register's biggest oak, which fits a tree that kept growing after the city measured it, or a tape held at another height. The register does not say when it measured, so both figures stand here and neither is corrected into the other.\n\nThe city protects them for science, rarity, distinctiveness and beauty. It gives no age, and nobody we have found has dated them.\n\nGetting there means passing the last houses at the forest edge. The map shows a bollard on the way in that lets walkers through, with private gates and a private service road close by. Keep to the public way and out of the gardens.\n\nThe latest sighting we know of is that 2021 visit. If you go, tell us they still stand. The thousand-year oak in the Schlosspark is about 500 metres away.",
+      "story": "A German tree archive says one of the trunks here is really two oaks grown into one. Potsdam protects three pedunculate oaks behind the last houses of the Weinmeisterweg in Sacrow as natural monument number 12, and gives them girths of 470, 560 and 650 centimetres. The Ostdeutsches Baumarchiv, a private record of old trees, counted them differently on its 2021 visit. It found one oak at 589 centimetres and a twin, fused at the base and grown together above chest height, which it could only tape as a single trunk of 673.\n\nThe two sets of numbers do not quite meet. The twin comes out larger than the register's biggest oak, which fits a tree that kept growing after the city measured it, or a tape held at another height. The register does not say when it measured, so both figures stand here and neither is corrected into the other.\n\nThe city protects them for science, rarity, distinctiveness and beauty. It gives no age, and nobody we have found has dated them.\n\nGetting there means passing the last houses at the forest edge. The map shows a bollard on the way in that lets walkers through, with private gates and a private service road close by. Keep to the public way and out of the gardens.\n\nThe latest sighting we know of is that 2021 visit. If you go, tell us they still stand. The thousand-year oak in the Schlosspark is about 500 metres away.",
       "verified_sources": [
         "https://www.potsdam.de/de/content/naturdenkmal-nr-12-stiel-eichen-sacrow",
         "https://www.openstreetmap.org/node/8678746917 (sibling nodes 8678746918, 8678746919, 8678746920: natural=tree, denotation=natural_monument, circumference 6.50 / 5.60 / 4.70, description:url the city page)",
@@ -521,10 +521,18 @@
       "access": "Free to see. The oaks stand west of the Weinmeisterweg, behind the last houses at the forest edge; OSM shows a foot-passable bollard (foot=yes, motor_vehicle=no) on the way in, and also private gates and a private service road nearby, so approach on the public way and stay off fenced gardens.",
       "transport": "Sacrow, north of Potsdam; reached by city bus to Sacrow then a short walk along the Weinmeisterweg (stop not checked). About 500 m (straight line) from the Thousand-Year Oak in the Schlosspark Sacrow.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://ancienttrees.app/photos/pot_011-the-three-oaks-of-the-weinmeisterweg.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/brandenburg/2-kategorie/potsdam-2/",
+        "status": "approved",
+        "width": 1067,
+        "height": 1600,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/brandenburg/2-kategorie/potsdam-2/), his page 'Zwillingseiche bei Potsdam'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-11-12 on his page text: his twin oak (6.50 m, registered natural monument in Sacrow) is the 650 cm trunk of our three; 69 m from our pin. Looked at before approval. Not an open licence; ask him before reuse elsewhere.",
+        "permission": {
+          "words": "Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link",
+          "date": "2026-10-10"
+        }
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -559,15 +567,18 @@
       "access": "Free, open at all times: stands by the public Krampnitzer Strasse (OSM highway=residential), seen from the road.",
       "transport": "Sacrow, north of Potsdam; city bus to Sacrow (stop not checked). About 300 m (straight line) east of the Thousand-Year Oak in the Schlosspark Sacrow.",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Stieleiche%2C_Potsdamer_ND_14_in_Sacrow.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "WikiVagant, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/pot_012-the-roadside-oak-of-sacrow-lippert.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/brandenburg/3-kategorie/potsdam-2/",
         "status": "approved",
-        "approved_by": "viewing pass",
-        "approved_on": "2026-10-21",
-        "width": 2448,
-        "height": 3696,
-        "taken_month": 9
+        "width": 1067,
+        "height": 1600,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/brandenburg/3-kategorie/potsdam-2/), his page 'Eiche bei Potsdam'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-11-12 on his page text: his roadside oak toward Krampnitz (6.05 m in 2022, Fröhlich 5.60 m in 1994) is our Krampnitzer Strasse oak (575 cm in the register); 66 m from our pin. Looked at before approval. Not an open licence; ask him before reuse elsewhere.",
+        "permission": {
+          "words": "Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link",
+          "date": "2026-10-10"
+        }
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
@@ -576,7 +587,20 @@
       "official_register": {
         "name": "Landeshauptstadt Potsdam, Naturdenkmal Nr. 14",
         "url": "https://www.potsdam.de/de/content/naturdenkmal-nr-14-stiel-eiche-sacrow"
-      }
+      },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Stieleiche%2C_Potsdamer_ND_14_in_Sacrow.jpg",
+          "license": "CC BY-SA 4.0",
+          "attribution": "WikiVagant, via Wikimedia Commons",
+          "status": "approved",
+          "approved_by": "viewing pass",
+          "approved_on": "2026-10-21",
+          "width": 2448,
+          "height": 3696,
+          "taken_month": 9
+        }
+      ]
     },
     {
       "id": "pot_013",
