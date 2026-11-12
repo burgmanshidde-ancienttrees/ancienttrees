@@ -233,6 +233,16 @@ belongs in Helpful Details or nowhere.
 - NO: "My name is Hidde... My goal is to get people excited... One of the trees on it is the Great Yew of Ormiston"
 - YES: "My name is Hidde... a map of remarkable old trees worth a detour. One of the trees on it is the Great Yew of Ormiston...: <link>. My goal is to get people excited..."
 
+**an idiom about money where his plain reason was asked for** (added 2026-11-05)
+
+- NO: "Plus is how Ancient Trees will pay its own way."
+- YES: "We're working on Plus to make Ancient Trees a sustainable platform."
+
+**reciting their own news back to them before reacting** (added 2026-11-12)
+
+- NO: "Een bomenboek over de singels en grachten, en nu een nieuw boek voor het 125-jarig bestaan, daar ben ik erg benieuwd naar."
+- YES: "Benieuwd naar je opkomende boek ook 🙂"
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**

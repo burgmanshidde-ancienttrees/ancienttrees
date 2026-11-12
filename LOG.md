@@ -17,6 +17,11 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - Hidde talked to Hans Hofele (Frankfurter Neue Presse) about the Eschersheimer Linde and the app. Print for sure, maybe online; Hans sends the PDF. Two promises recorded in drafts/OUTREACH.md "FNP interview, 2026-11-12": a mail when Android is out (new list "Tell when Android ships", for the session that publishes Android) and app screenshots with Hans's own photographs of the lime (his photos are not in the mail thread or the app inbox yet).
 
+## 2026-11-12 session: inbox, Valencia's photo ask sent
+
+- **Sent (Hidde: "die naar valencia mag eruit"):** reply to the València parks service's tree heritage section, asking whether the photographs on their geoportal fichas of the monumental trees may go on our pages, credited "Ajuntament de València". Their yes would open photos for the Valencia page (31 trees, almost none photographed).
+- **Drafted, not sent:** KNNV Utrecht (Hidde's own text; she is searching her archive and has a new tree book at the publisher), Genziana Ricci in Ferrara (asks her favourite old tree between Bologna and Ferrara). No reply needed: Dorit's "gute Idee, das mache ich", Remember Singapore's polite no.
+
 ## 2026-11-12 session: Rainer Lippert's yes on file
 
 - All 57 of Rainer Lippert's photographs (52 German trees) now carry his 2026-10-10 yes in `permission` {words, date}, as the 11-10 compliance rule asks; they were on the baseline before. Each links his monumentale-eichen.de page; none came from monumentaltrees.com (hard rule 1). His yes covers photos from his own site only.
