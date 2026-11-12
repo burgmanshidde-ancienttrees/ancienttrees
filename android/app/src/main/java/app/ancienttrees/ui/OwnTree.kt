@@ -238,10 +238,26 @@ private fun OwnTreeInner(
                             return@launch
                         }
                         app.ancienttrees.account.Measure.event("share_tapped", mapOf("where" to "your_photo"))
+                        // THE CARD BESIDE THE LINK (Kit/ShareCard.swift, Strava): Instagram
+                        // takes the picture, Messages takes both.
+                        val card = runCatching {
+                            kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Default) {
+                                val photo = s.photo?.let { path -> mine.photoBytes(path) }?.let { b ->
+                                    android.graphics.BitmapFactory.decodeByteArray(b, 0, b.size)
+                                }
+                                ShareCard.file(context, ShareCard.render(context, photo, s.name, s.species, java.util.Date(s.date)))
+                            }
+                        }.getOrNull()
+                        val image = card?.let { androidx.core.content.FileProvider.getUriForFile(context, context.packageName + ".photos", it) }
                         val send = Intent(Intent.ACTION_SEND).apply {
-                            type = "text/plain"
+                            type = if (image != null) "image/jpeg" else "text/plain"
                             putExtra(Intent.EXTRA_SUBJECT, tree.name)
                             putExtra(Intent.EXTRA_TEXT, url)
+                            if (image != null) {
+                                putExtra(Intent.EXTRA_STREAM, image)
+                                clipData = android.content.ClipData.newRawUri(null, image)
+                                addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                            }
                         }
                         context.startActivity(Intent.createChooser(send, null))
                     }

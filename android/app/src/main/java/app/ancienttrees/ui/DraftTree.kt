@@ -157,7 +157,7 @@ fun DraftTree(
                 title = stringResource(R.string.cf_added_title),
                 message = n,
                 onDismiss = { savedName = null },
-                buttons = listOf(SheetButton(stringResource(R.string.cf_done), SheetKind.PRIMARY) { savedName = null }),
+                buttons = listOf(SheetButton(stringResource(R.string.cf_done), SheetKind.PRIMARY, tag = "saved-done") { savedName = null }),
             )
         }
         return
@@ -174,6 +174,7 @@ fun DraftTree(
         saving = true
         scope.launch {
             val ok = Collector.saveDraft(account, d, city)
+            if (ok) mine.keepStandIn(d)
             if (ok) mine.load(force = true)
             saving = false
             when {

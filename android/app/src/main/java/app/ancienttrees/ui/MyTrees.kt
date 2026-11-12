@@ -54,6 +54,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.zIndex
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.draw.clip
@@ -355,7 +356,8 @@ private fun SettingsGear(progress: Float, onClick: () -> Unit, modifier: Modifie
             .clickable(role = Role.Button, onClick = onClick)
             // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
             .background(brand.surface, CircleShape)
-            .semantics { contentDescription = label },
+            .semantics { contentDescription = label }
+            .testTag("mytrees-settings"),
         contentAlignment = Alignment.Center,
     ) {
         Icon(Sym.SettingsMedium, null, tint = brand.ink, modifier = Modifier.size(24.dp).graphicsLayer { alpha = 1f - progress })
@@ -454,7 +456,11 @@ private fun WhoRow(signedIn: Boolean, email: String?, mine: MyTrees, actions: My
                 }
             }
             Column {
-                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                // The name row stands above the counts: their 44 tap frame reaches 12
+                // up into it, and Compose leaves a covered part out of a node's
+                // accessibility box, which cut the flag in half for TalkBack and the
+                // spacing check (iPhone: the whole 20 flag).
+                Row(Modifier.zIndex(1f), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     val name = if (signedIn) {
                         me?.displayName ?: email?.substringBefore("@") ?: stringResource(R.string.mt_your_trees)
                     } else {

@@ -4108,6 +4108,8 @@ What we take, pending Hidde's word on the system signs: brand, type, colour, lay
 
 Lesson for the parity file: a difference listed as forced by Android needs a source. Two were not forced: Sign in with Apple (the website already signs in with Apple over a plain OAuth redirect) and glass behind bars (Android 12+ blurs).
 
+The launch (2026-11-11, Hidde: "heeft android een ander splashscreen?"): Android 12 and later always draw a system splash with the app's icon on a plain ground, held until the first frame (developer.android.com/develop/ui/views/launch/splash-screen); Airbnb and Instagram show their icon there. So the splash is Android's and everything around it the iPhone's: the ground of its generated launch screen (white, black in dark), our own icon, the same ground behind the first frame so there is no flash, then the cover with its 2.4 s and 0.4 s fade, and the location question only after it (themes.xml Theme.AncientTrees.Starting, androidx core-splashscreen).
+
 ## Your own trees on a public profile, and "Approved" on the ones we took in (2026-11-12)
 
 Hidde, 2026-11-12: two collections, ours and each person's own; their own trees always online on their profile, only odd photographs moderated; the design with "Approved" approved the same day (preview/inspect/approved-mock.html, measured on the live profile).

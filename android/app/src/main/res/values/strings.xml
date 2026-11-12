@@ -241,4 +241,10 @@
     <string name="nearby_dismiss">Dismiss</string>
     <!-- The launch loading screen, after six seconds (ContentView.swift slowStart). -->
     <string name="slow_start">This is taking longer than it should. Close the app and open it again, and if it keeps happening, tell us.</string>
+    <!-- SharedTreeView.swift: somebody else's tree from its unlisted link -->
+    <string name="shared_a_tree">A tree</string>
+    <string name="shared_overline">A tree someone found</string>
+    <string name="shared_find_near">Find the trees near you</string>
+    <string name="shared_missing">This link does not lead to a tree</string>
+    <string name="shared_missing_why">It may have been taken down by the person who shared it.</string>
 </resources>

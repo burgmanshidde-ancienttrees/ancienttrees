@@ -227,7 +227,9 @@ fun MapSearch(
                     onValueChange = { query = it },
                     singleLine = true,
                     textStyle = sfStyle(fontSize = 17.sp, fontWeight = FontWeight.Medium, color = brand.ink),
-                    cursorBrush = SolidColor(brand.ink),
+                    // The app's tint, as the iPhone's caret is (review 2026-11-11: a moss caret
+                    // after "lis" on the iPhone). It blinks on both phones, so a frame can miss it.
+                    cursorBrush = SolidColor(brand.moss),
                     keyboardOptions = KeyboardOptions(autoCorrectEnabled = false, imeAction = ImeAction.Search),
                     // Search on the keyboard puts the keyboard away (.submitLabel(.search)).
                     keyboardActions = androidx.compose.foundation.text.KeyboardActions(onSearch = { keyboard?.hide() }),
@@ -309,7 +311,7 @@ fun MapSearch(
                     .take(4)
                 if (near.isNotEmpty()) {
                     item { Head("Near you") }
-                    for (t in near) item { ResultRow(t.name, "${t.commonName} · ${t.city}", Sym.Park, query) { pick(SearchHit.OneTree(t)) } }
+                    for (t in near) item { Box(Modifier.testTag("search-result-tree")) { ResultRow(t.name, "${t.commonName} · ${t.city}", Sym.Park, query) { pick(SearchHit.OneTree(t)) } } }
                 }
                 item { Head("Places worth a trip") }
                 for (c in index.cities.take(6)) {
@@ -373,7 +375,7 @@ fun MapSearch(
                 }
                 if (showTrees && r.trees.isNotEmpty()) {
                     if (lane == Lane.TOP) item { Head("Trees") }
-                    for (t in r.trees) item { ResultRow(t.name, "${t.commonName} · ${t.city}", Sym.Park, query) { pick(SearchHit.OneTree(t)) } }
+                    for (t in r.trees) item { Box(Modifier.testTag("search-result-tree")) { ResultRow(t.name, "${t.commonName} · ${t.city}", Sym.Park, query) { pick(SearchHit.OneTree(t)) } } }
                 }
             }
             item { Spacer(Modifier.height(24.dp)) }

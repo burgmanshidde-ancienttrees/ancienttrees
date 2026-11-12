@@ -24,6 +24,8 @@ class Saves(private val account: Account) {
         private set
 
     suspend fun load() {
+        // The stand-in has no account to read; the seeded lanes stay as they are.
+        if (account.standIn) return
         val s = account.fresh() ?: run { forget(); return }
         val saveRows = Supa.rows("/rest/v1/saves?select=tree_id,created_at", s.accessToken)
         val visitRows = Supa.rows("/rest/v1/visited?select=tree_id,visited_at", s.accessToken)
@@ -54,6 +56,7 @@ class Saves(private val account: Account) {
         val at = collectedAt[treeId] ?: System.currentTimeMillis()
         collected = collected - treeId
         collectedAt = collectedAt - treeId
+        if (account.standIn) return at
         val ok = Supa.delete("/rest/v1/visited?tree_id=eq.${URLEncoder.encode(treeId, "UTF-8")}", s.accessToken)
         if (!ok) {
             collected = collected + treeId
@@ -69,6 +72,7 @@ class Saves(private val account: Account) {
         val s = account.fresh() ?: return false
         collected = collected + treeId
         collectedAt = collectedAt + (treeId to at)
+        if (account.standIn) return true
         val ok = Supa.upsert(
             "/rest/v1/visited?on_conflict=user_id,tree_id",
             s.accessToken,
@@ -109,6 +113,8 @@ class Saves(private val account: Account) {
         val on = treeId !in hearts
         hearts = if (on) hearts + treeId else hearts - treeId
         heartedAt = if (on) heartedAt + (treeId to System.currentTimeMillis()) else heartedAt - treeId
+        // The stand-in keeps the change on screen, as the iPhone's local save does.
+        if (account.standIn) return true
         val id = URLEncoder.encode(treeId, "UTF-8")
         val ok = if (on) {
             Supa.upsert(

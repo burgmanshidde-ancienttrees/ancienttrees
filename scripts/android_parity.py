@@ -22,6 +22,7 @@ in data/android-parity.json, which this page shows and never writes.
 Writes out/parity/index.html, out/parity/ios/*.png, out/parity/android/*.png.
 """
 import argparse
+import hashlib
 import html
 import json
 import os
@@ -44,6 +45,10 @@ IOS_DEVICE = "iPhone 17 Pro"
 # appsweep.py stands every frame at Dam square unless the frame names its own
 # place, so the Android frame does too.
 ORIGIN = "-at=52.3731,4.8922"
+# The iPhone simulator's region (defaults read -g AppleLocale: en_NL). Units and
+# the profile's country follow the phone's region on both phones, so Android
+# stands in the same one, not the emulator's en_US (LaunchArgs.locale).
+REGION = "-AppleLocale=en_NL"
 
 # name -> the iPhone's launch arguments, taken from appsweep.py itself (which
 # picks real subject trees out of the bundled feed: the longest name with a
@@ -59,7 +64,7 @@ PORTED = ["map", "map-full", "map-bar", "map-pin", "search", "tree", "tree-nopho
           "explore", "collection-tab", "collection-tab-full", "own-tree", "profile", "profile-signed-in",
           "profile-edit", "signin-email", "refused", "people", "early-adopter", "early-adopter-sheet",
           "collect-intro", "collect-away", "collect-place", "collect-identify", "collect-ticked", "collect-voted",
-          "collect-compare", "collect-describe", "city", "city-map-full", "place-pin", "species", "species-pick",
+          "collect-compare", "collect-describe", "city", "city-map-full", "place-pin", "species", "collection", "species-pick",
           "directions", "review-ask", "contribute", "feedback"]
 
 
@@ -67,8 +72,59 @@ def run(cmd, **kw):
     return subprocess.run(cmd, check=False, text=True, capture_output=True, **kw)
 
 
+LIVE_VERSION = "https://ancienttrees.app/api/version.json"
+
+
+def live_version():
+    """The live catalogue's version, or None offline."""
+    import urllib.request
+    try:
+        with urllib.request.urlopen(LIVE_VERSION, timeout=20) as r:
+            return json.loads(r.read().decode()).get("version")
+    except Exception:
+        return None
+
+
+def wait_for_catalogue(read_head, who, version):
+    """Until the phone holds the live catalogue (its download starts with the version).
+
+    THE SAME TREES ON BOTH PHONES (review 2026-11-11: "All 22 trees" on the
+    iPhone, "All 23" on Android, other ages). Both apps bundle the very same
+    file (android/app/build.gradle.kts reads ios/.../Data as its assets), but
+    both read a download over it when they have one and refresh at every launch,
+    and the iPhone simulator still held a download from the day before while the
+    emulator had today's. So both are brought to the live catalogue before the
+    first frame: the app is opened and given time to finish its refresh."""
+    if not version:
+        print(f"{who}: live version unknown (offline?), frames may show different catalogues")
+        return
+    for _ in range(45):
+        if version in (read_head() or ""):
+            return
+        time.sleep(2)
+    print(f"{who}: still not on the live catalogue {version} after 90 s; frames may differ in trees")
+
+
+def ios_warm(version):
+    """Open the app once on the iPhone and wait for its refresh to land."""
+    devices = json.loads(run(["xcrun", "simctl", "list", "devices", "-j"]).stdout or "{}").get("devices", {})
+    udid = next((d["udid"] for ds in devices.values() for d in ds if d["name"] == IOS_DEVICE and d.get("isAvailable")), None)
+    if not udid:
+        return
+    run(["xcrun", "simctl", "boot", udid])
+    run(["xcrun", "simctl", "launch", udid, appsweep.BUNDLE, ORIGIN, "-no-cover"])
+
+    def head():
+        data = run(["xcrun", "simctl", "get_app_container", udid, appsweep.BUNDLE, "data"]).stdout.strip()
+        f = pathlib.Path(data) / "Library" / "Application Support" / "catalogue" / "trees.json"
+        return f.open().read(80) if data and f.exists() else ""
+    wait_for_catalogue(head, "ios", version)
+    run(["xcrun", "simctl", "terminate", udid, appsweep.BUNDLE])
+
+
 def ios(frames, build):
     out = OUT / "ios-sweep"
+    ios_warm(live_version())
     for i, name in enumerate(frames):
         cmd = [sys.executable, str(ROOT / "scripts" / "appsweep.py"), "--only", name,
                "--device", IOS_DEVICE, "--out", str(out)]
@@ -94,7 +150,7 @@ def _android(frames, build):
         r = run(["./gradlew", "-q", "assembleDebug"], cwd=ROOT / "android", env=env)
         if r.returncode != 0:
             sys.exit("android build failed:\n" + r.stdout[-2000:] + r.stderr[-2000:])
-        run([ADB, "install", "-r", str(ROOT / "android/app/build/outputs/apk/debug/app-debug.apk")])
+        install_debug()
         # LOCATION GRANTED BEFORE ANY START (2026-11-10, Hidde watching the
         # emulator: the system's location question stood alone over the home
         # screen). A start without -at asks on first open, as the iPhone does;
@@ -107,11 +163,22 @@ def _android(frames, build):
         # let that happen before the first frame.
         run([ADB, "shell", "am", "start", "-W", "-n", ACTIVITY])
         time.sleep(10)
+    # The live catalogue on the phone before the first frame, as on the iPhone (ios_warm).
+    run([ADB, "shell", "am", "start", "-n", ACTIVITY, "--esa", "args", "'" + ORIGIN.replace(",", "\\,") + ",-no-cover'"])
+    wait_for_catalogue(lambda: run([ADB, "exec-out", "run-as", PACKAGE, "head", "-c", "80", "files/catalogue/trees.json"]).stdout,
+                       "android", live_version())
+    # A RELEASE BUILD IGNORES EVERY LAUNCH ARGUMENT (LaunchArgs.from reads them
+    # only when the app is debuggable). Found 2026-11-11: another session had left
+    # a release build installed, the debug install failed on the signature, and
+    # 37 frames were the same default map. So the build on the phone is checked
+    # whether or not this run installed it.
+    require_debuggable()
     for name in frames:
         run([ADB, "shell", "am", "force-stop", PACKAGE])
-        args = FRAMES[name]
-        if not any(a.startswith("-at=") for a in args):
-            args = args + [ORIGIN]
+        # The sweep's origin FIRST, as appsweep.py launches (ORIGIN, then the
+        # frame's own), and the first -at wins on both phones: collect-away
+        # stands at Dam square on the iPhone, so it does here too.
+        args = [ORIGIN, REGION] + FRAMES[name]
         # am splits --esa on commas; a comma inside one argument (-at=lat,lng)
         # is written \, and the whole list quoted for the device's shell.
         joined = ",".join(a.replace(",", "\\,") for a in args)
@@ -129,7 +196,55 @@ def _android(frames, build):
         (OUT / "android" / f"{name}.png").write_bytes(png.stdout)
 
 
-def page(frames):
+APK = ROOT / "android/app/build/outputs/apk/debug/app-debug.apk"
+
+
+def install_debug():
+    """Install the debug build, or stop. A build signed with another key (a
+    release build another session left, android_release.py --install) refuses
+    `install -r` with INSTALL_FAILED_UPDATE_INCOMPATIBLE: that one is uninstalled
+    and the debug build installed fresh. Any other failure ends the run."""
+    r = run([ADB, "install", "-r", str(APK)])
+    if "Success" not in r.stdout:
+        why = (r.stdout + r.stderr).strip()
+        if "INCOMPATIBLE" in why or "signatures do not match" in why:
+            print("android: another build's signature on the phone; uninstalling it for the debug build")
+            run([ADB, "uninstall", PACKAGE])
+            r = run([ADB, "install", str(APK)])
+            why = (r.stdout + r.stderr).strip()
+        if "Success" not in r.stdout:
+            sys.exit("android: adb install failed, so every frame would show whatever build is on the phone:\n" + why[-1500:])
+
+
+def require_debuggable():
+    flags = run([ADB, "shell", "dumpsys", "package", PACKAGE]).stdout
+    line = next((l for l in flags.splitlines() if "flags=[" in l), "")
+    if "DEBUGGABLE" not in line:
+        sys.exit("android: the build on the phone is not debuggable (a release build?), so it ignores every "
+                 "launch argument and every frame would be the default map. Run without --no-build.")
+
+
+# Frames that are the same picture on the iPhone too, so the same picture on
+# Android is no fault: -show-email changes nothing since the email route shows
+# by default (Launch.emailSignIn), on both phones.
+SAME_ON_BOTH = [{"signin", "signin-email"}]
+
+
+def identical_frames(frames, folder):
+    """Groups of frames whose screenshots are byte for byte the same picture.
+
+    Two launch states that photograph identically mean the arguments did not
+    reach the app (a release build, a crash to the launcher, an argument the
+    port does not read). A group the iPhone shares (SAME_ON_BOTH) is allowed."""
+    by = {}
+    for name in frames:
+        f = folder / f"{name}.png"
+        if f.exists() and f.stat().st_size:
+            by.setdefault(hashlib.md5(f.read_bytes()).hexdigest(), []).append(name)
+    return [g for g in by.values() if len(g) > 1 and set(g) not in SAME_ON_BOTH]
+
+
+def page(frames, same=()):
     status = json.loads(STATUS.read_text()) if STATUS.exists() else {}
     forced = status.get("_android_forced", [])
     # scripts/android_spacing.py's measurement, when one was made: the vertical
@@ -166,6 +281,9 @@ def page(frames):
   <h3>Open differences</h3><ul>{diffs}</ul>
   {sp_html}
 </section>""")
+    same_html = ("<p style=\"background:#FBE9E7;color:#B22222;padding:8px 12px;border-radius:8px\"><b>Not to be trusted:</b> "
+                 "these Android frames are the same picture, so their launch arguments did not reach the app: "
+                 + html.escape("; ".join(", ".join(g) for g in same)) + "</p>") if same else ""
     forced_html = "".join(f"<li><b>{html.escape(f['what'])}</b>: {html.escape(f['why'])}</li>" for f in forced)
     (OUT / "index.html").write_text(f"""<!doctype html><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -181,6 +299,7 @@ table{{border-collapse:collapse;font-size:14px}} td,th{{padding:3px 10px;border-
 </style>
 <h1>Android next to iPhone</h1>
 <p>Each screen in the same state on both phones. A difference without a reason is a bug.</p>
+{same_html}
 <h3>What Android itself forces</h3><ul>{forced_html}</ul>
 <table><tr><th>Screen</th><th>Status</th><th>Vertical spacing (android_spacing.py)</th></tr>{''.join(table)}</table>
 {''.join(rows)}
@@ -247,9 +366,15 @@ def main():
         (OUT / d).mkdir(parents=True, exist_ok=True)
     if not a.no_android:
         android(frames, build=not a.no_build)
+    same = identical_frames(frames, OUT / "android")
     if not a.no_ios:
         ios(frames, build=not a.no_build)
-    page(frames)
+    page(frames, same)
+    if same:
+        # Refused, not warned: the page above shows them, but a run that made
+        # them must not read as a good run.
+        sys.exit("android: these frames are the same picture, so their launch arguments did not reach the app: "
+                 + "; ".join(", ".join(g) for g in same))
 
 
 if __name__ == "__main__":

@@ -301,7 +301,7 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                         scope.launch { host.account.signOut(); signingOut = false }
                     }
                 },
-                SheetButton(stringResource(R.string.cancel), SheetKind.SECONDARY) { confirmingSignOut = false },
+                SheetButton(stringResource(R.string.cancel), SheetKind.SECONDARY, tag = "signout-cancel") { confirmingSignOut = false },
             ),
         )
     }
@@ -640,7 +640,7 @@ private fun DeleteAccountSheet(host: SettingsHost, onDismiss: () -> Unit) {
                         if (ok) { host.profiles.forgetLocally(); host.signedOut(); onDismiss() }
                     }
                 },
-                SheetButton(stringResource(R.string.cancel), SheetKind.SECONDARY) { confirming = false },
+                SheetButton(stringResource(R.string.cancel), SheetKind.SECONDARY, tag = "delete-cancel") { confirming = false },
             ),
         )
     }
