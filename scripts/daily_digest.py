@@ -3697,6 +3697,65 @@ def _week_of(iso, today):
     return 0 if 1 <= age <= 7 else (1 if 8 <= age <= 14 else None)
 
 
+def _contributor_days(key):
+    """{stranger's user id: sorted days a photograph of theirs reached us}.
+
+    The day is the photo FILE's upload time in the sightings bucket (Hidde,
+    2026-11-12: "upload datum is relevanter"): a sighting row has no created_at,
+    and taken_at is the camera's day, which for a picture from the camera roll
+    can be a summer ago. Every photographed sighting counts, any route (app,
+    website), any verdict, shared or not: the person uploaded it. One storage
+    listing per contributing account, a handful at our volume."""
+    rows, _ = _supa("/rest/v1/sightings?select=user_id,photo&photo=not.is.null&limit=10000", key)
+    want = collections.defaultdict(set)
+    for r in rows or []:
+        if not is_ours(r.get("user_id")):
+            want[r["user_id"]].add(r["photo"])
+    out = {}
+    for uid, photos in want.items():
+        req = urllib.request.Request(
+            SUPA + "/storage/v1/object/list/sightings",
+            data=json.dumps({"prefix": uid + "/", "limit": 1000}).encode(), method="POST",
+            headers={"apikey": key, "Authorization": "Bearer " + key, "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            files = json.load(r)
+        days = sorted({(f.get("created_at") or "")[:10] for f in files
+                       if uid + "/" + f.get("name", "") in photos and f.get("created_at")})
+        if days:
+            out[uid] = days
+    return out
+
+
+_CONTRIBUTORS = {}
+
+
+def contributors(today):
+    """_contributor_days, fetched once per digest."""
+    if "days" not in _CONTRIBUTORS:
+        key = os.environ.get("SUPABASE_SERVICE_KEY")
+        _CONTRIBUTORS["days"] = _contributor_days(key) if key else None
+    return _CONTRIBUTORS["days"]
+
+
+def north_star_line(today):
+    """The north star, all time, above everything else (Hidde, 2026-11-12: "een
+    totaallijst ... van mensen die ooit hebben geupload en mensen die dat vaker
+    dan een keer hebben gedaan, als een soort van North Star-getal bovenin").
+    People, never photos: a stranger who ever uploaded a tree or a photograph,
+    and those who did it on more than one day. The change is the seven days to
+    yesterday, so the line also says whether this week moved it."""
+    days = contributors(today)
+    if days is None:
+        return ""
+    week_start = (today - datetime.timedelta(days=7)).isoformat()
+    ever = len(days)
+    again = sum(1 for d in days.values() if len(d) > 1)
+    new = sum(1 for d in days.values() if d[0] >= week_start)
+    new_again = sum(1 for d in days.values() if len(d) > 1 and d[1] >= week_start)
+    return ("**North star: %d people have uploaded a tree or photo of their own (+%d this week); "
+            "%d of them did it on more than one day (+%d).**" % (ever, new, again, new_again))
+
+
 def _hl_downloads(_today):
     """First-time App Store downloads, Apple's own count, by week."""
     if not os.environ.get("ASC_KEY_ID"):
@@ -3748,15 +3807,15 @@ def _hl_supabase(today):
         w = _week_of(r.get("created_at"), today)
         if w is not None:
             wk[w] += 1
-    try:
-        rows, _ = _supa("/rest/v1/sightings?select=user_id,created_at&photo=not.is.null"
-                        "&shared=eq.true&created_at=gte.%sT00:00:00" % since, key)
-    except Exception:
-        rows = []
-    for r in rows or []:
-        w = _week_of(r.get("created_at"), today)
-        if w is not None and not is_ours(r.get("user_id")):
-            wk[w] += 1
+    # Photographs by the day they reached us. This read sightings.created_at
+    # until 2026-11-12, a column the table does not have: PostgREST refused
+    # the query, the except swallowed it, and no app photograph was ever
+    # counted here. Now the same upload days the north star line uses.
+    for d in (contributors(today) or {}).values():
+        for day in d:
+            w = _week_of(day, today)
+            if w is not None:
+                wk[w] += 1
     out["contributions"] = wk
     # Shares (Hidde, 2026-10-30: "digest mag"): a tap on a share control on
     # the website, and a visit arriving on a shared link from either surface
@@ -4150,6 +4209,13 @@ def main():
             blocks.insert(2, plus)
     except Exception as e:
         blocks.insert(2, "**Plus question**: failed today (%s)." % str(e)[:90])
+    # The north star, on top of his numbers (Hidde, 2026-11-12).
+    try:
+        star = north_star_line(today)
+        if star:
+            blocks.insert(0, star)
+    except Exception as e:
+        blocks.insert(0, "north_star_line: failed today (%s)." % str(e)[:90])
     # Above even the headline: a crash that needs a new build now.
     try:
         urgent = urgent_crash_line(today)
