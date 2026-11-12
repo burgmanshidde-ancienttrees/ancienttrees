@@ -3431,6 +3431,13 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
   z-index: 2; max-width: calc(100% - 12px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   font-size: 10px; font-weight: 600; padding: 3px 7px; border-radius: 999px; background: #fff; color: var(--moss);
   pointer-events: none; }
+/* "Approved" top-left on a tree this person added and we took into the map
+   (Hidde, 2026-11-12, approved design): the app's MineCard capsule, moss with
+   the white seal, at the city pill's size and inset. CONVENTIONS.md 2026-11-12. */
+.acct-lanes .saved-list > li .appr-chip { position: absolute; left: 6px; top: 6px; z-index: 2;
+  display: inline-flex; align-items: center; gap: 3px; font-size: 10px; line-height: 16px; font-weight: 600;
+  padding: 3px 7px 3px 5px; border-radius: 999px; background: var(--moss); color: #fff; pointer-events: none; }
+.acct-lanes .saved-list > li .appr-chip svg { width: 12px; height: 12px; flex: none; }
 
 /* Want to visit, empty (2026-10-10): Discover's ghost row, the app's wantEmpty. */
 .want-empty { display: flex; flex-direction: column; gap: 14px; }

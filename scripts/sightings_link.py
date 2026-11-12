@@ -21,6 +21,7 @@ import glob
 import json
 import os
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -88,7 +89,36 @@ def main(argv):
         fixed += 1
     print(f"sightings_link: {len(rows)} sighting(s) behind published photographs, {fixed} linked")
     tick_collected(dry)
+    mark_added(dry)
     return 0
+
+
+def mark_added(dry):
+    """The sighting a reader's own tree grew from carries `added = true`, which
+    public_profile() reads to put "Approved" on that tree's tile (Hidde,
+    2026-11-12, supabase/approved-on-profiles.sql). The city file knows:
+    found_by_reader.sighting_id. Idempotent; before that file is pasted the
+    column does not exist and this says so in one line."""
+    ids = set()
+    for path in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+        with open(path, encoding="utf-8") as fh:
+            for t in json.load(fh).get("trees") or []:
+                sid = (t.get("found_by_reader") or {}).get("sighting_id")
+                if sid and not str(sid).startswith("tip-"):
+                    ids.add(str(sid).lower())
+    if not ids:
+        return
+    try:
+        rows = _req("/rest/v1/sightings?select=id,added&id=in.(%s)" % ",".join(sorted(ids))) or []
+    except urllib.error.HTTPError as e:
+        print("sightings_link: added not marked (HTTP %s; supabase/approved-on-profiles.sql is FOR HIDDE)" % e.code)
+        return
+    todo = [r["id"] for r in rows if not r.get("added")]
+    if todo and not dry:
+        q = urllib.parse.urlencode({"id": "in.(%s)" % ",".join(todo)})
+        _req("/rest/v1/sightings?%s" % q, "PATCH", {"added": True})
+    print("sightings_link: %d reader-found tree(s), %d marked added%s"
+          % (len(rows), len(todo), " (dry)" if dry else ""))
 
 
 def tick_collected(dry):

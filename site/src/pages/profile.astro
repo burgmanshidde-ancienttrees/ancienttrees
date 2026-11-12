@@ -142,7 +142,7 @@ const LOCK = icon("lock-simple", "bold", "ic");
     }
     if (p.created_at && (!UNTIL || p.created_at < UNTIL)) el("pp-early").hidden = false;
     follow(p);
-    lists(p.visited || [], p.saves || []);
+    lists(p.visited || [], p.saves || [], p.approved || [], p.own || []);
     remeasure();
   }
 
@@ -209,20 +209,39 @@ const LOCK = icon("lock-simple", "bold", "ic");
 
   // THE TWO LISTS AND THE MAP, the account page's own: ids from the server,
   // what each tree is from /api/cards.json, the one card.
-  function lists(visited, saves) {
+  // approved: our trees this person ADDED (Approved top-left, the app's
+  // MineCard capsule). own: the trees they added that are not in our
+  // selection, shown beside the rest with their shared photograph and,
+  // unless they hid it, their pin (Hidde, 2026-11-12; CONVENTIONS.md
+  // "Your own trees on a public profile"). Both come from public_profile()
+  // (supabase/approved-on-profiles.sql) and are empty until that is pasted.
+  function esc(t) { return String(t == null ? "" : t).replace(/[&"<>]/g, function(c) {
+    return { "&": "&amp;", '"': "&quot;", "<": "&lt;", ">": "&gt;" }[c]; }); }
+  function ownTile(o) {
+    var name = o.name || String(o.species || "").split("(")[0].trim() || "A tree";
+    var src = SB + "/storage/v1/object/public/shared-sightings/" + String(o.photo).split("/").map(encodeURIComponent).join("/");
+    return '<li><article class="tree-card tree-card-nonum tree-card-link">'
+      + '<div class="tree-card-photo"><img src="' + esc(src) + '" alt="' + esc(name) + '" loading="lazy"></div>'
+      + '<div class="tree-card-top"><h3 class="tree-name"><a href="/t?id=' + encodeURIComponent(String(o.id).toLowerCase())
+      + '">' + esc(name) + '</a></h3></div></article></li>';
+  }
+  function lists(visited, saves, approved, own) {
+    var isApproved = {};
+    approved.forEach(function(id) { isApproved[id] = true; });
     C.catalogue().then(function(cards) {
-      function fill(listId, emptyId, ids) {
+      function fill(listId, emptyId, ids, extra) {
         var known = ids.filter(function(id) { return cards[id]; });
         var node = el(listId);
-        if (!known.length) { el(emptyId).hidden = false; return; }
+        if (!known.length && !extra) { el(emptyId).hidden = false; return; }
         node.innerHTML = known.map(function(id) {
           var city = String(cards[id].c || "").replace(/[&"<>]/g, "");
-          return '<li' + (city ? ' data-city="' + city + '"' : '') + '>' + C.card(id, cards[id], false, false) + '</li>';
-        }).join("");
+          var chip = isApproved[id] ? '<span class="appr-chip">' + SEAL + 'Approved</span>' : '';
+          return '<li' + (city ? ' data-city="' + city + '"' : '') + '>' + chip + C.card(id, cards[id], false, false) + '</li>';
+        }).join("") + (extra || "");
         node.hidden = false;
         if (window.atPaintSaves) window.atPaintSaves();
       }
-      fill("visited-list", "mine-empty", visited);
+      fill("visited-list", "mine-empty", visited, own.map(ownTile).join(""));
       fill("saved-list", "saved-empty", saves);
       if (!window.atSetMyTrees) return;
       var got = {};
@@ -234,7 +253,11 @@ const LOCK = icon("lock-simple", "bold", "ic");
         var c = cards[id];
         return { type: "Feature", geometry: { type: "Point", coordinates: [c.x, c.y] },
                  properties: { name: c.n, city: c.c || "", url: c.u, got: got[id] ? 1 : 0 } };
-      }));
+      }).concat(own.filter(function(o) { return typeof o.lat === "number" && typeof o.lng === "number"; })
+        .map(function(o) {
+          return { type: "Feature", geometry: { type: "Point", coordinates: [o.lng, o.lat] },
+                   properties: { name: o.name || "A tree", city: "", url: "/t?id=" + String(o.id).toLowerCase(), got: 1 } };
+        })));
     });
   }
 

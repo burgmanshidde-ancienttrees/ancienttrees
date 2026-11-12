@@ -63,6 +63,9 @@ drop policy if exists "follows are readable" on public.follows;
 create policy "follows are readable" on public.follows
   for select to authenticated using (true);
 
+-- SUPERSEDED BY supabase/approved-on-profiles.sql (2026-11-12), which adds
+-- 'approved' and 'own'. Running this file after that one takes them away
+-- again, so paste that one last.
 create or replace function public.public_profile(uid uuid)
 returns json
 language sql

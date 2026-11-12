@@ -4107,3 +4107,13 @@ Hidde: "waarom zijn alle lettertypes en iconen anders maak het zo veel hetzelfde
 What we take, pending Hidde's word on the system signs: brand, type, colour, layout, cards, sheets, tab bar and all motion as the iPhone's; back, share and the overflow menu, and the system's own reflexes (Android's overscroll stretch, a clipped ripple), in Android's form.
 
 Lesson for the parity file: a difference listed as forced by Android needs a source. Two were not forced: Sign in with Apple (the website already signs in with Apple over a plain OAuth redirect) and glass behind bars (Android 12+ blurs).
+
+## Your own trees on a public profile, and "Approved" on the ones we took in (2026-11-12)
+
+Hidde, 2026-11-12: two collections, ours and each person's own; their own trees always online on their profile, only odd photographs moderated; the design with "Approved" approved the same day (preview/inspect/approved-mock.html, measured on the live profile).
+
+- **iNaturalist** (inaturalist.org/pages/geoprivacy, read 2026-09-02; this entry 2026-11-12 from that reading, the site sat behind a Cloudflare check on the day): every observation is public with its location by default; the observer may set it Obscured or Private, and only threatened taxa are obscured automatically. Research Grade marks the confirmed ones.
+- **Strava** (support.strava.com, Activity Privacy Controls): an activity is public with its map; map visibility is a separate per-activity choice.
+- **Google Maps**: "Approved" on a contribution it accepted, our word since 2026-10-09.
+
+**What we do:** a public profile shows the person's own trees beside the trees they collected, with their pin unless they chose to hide the exact spot (sightings.hide_location, open by default as iNaturalist's). A tree they added that we took into the map carries "Approved" top-left on its tile: the app's MineCard capsule (moss fill, white seal-check), at the size and inset of the city pill (600 10px/16px, padding 3px 7px, 6px in). Their own-only trees carry no label. Our catalogue trees they visited look as before. The 2026-09-02 entry's reading that a person's own position never travels was ours, not his, and is replaced by this one. supabase/approved-on-profiles.sql.
