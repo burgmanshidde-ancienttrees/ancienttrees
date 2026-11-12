@@ -634,6 +634,6 @@
     "not_done": {
       "low": "31, 32, 33 (icon change), 35, 36 and 38 (spinner shapes stay Android's by Airbnb's line), 41 (toggle stays Android's), 44, 45, 46."
     },
-    "cold_start": "Release build, first pins (2026-11-12): iPhone simulator 1.5 to 1.7 s fresh, 1.1 to 1.3 s relaunch; Android emulator before 9.0 to 12.8 s fresh, 4.5 to 7.5 s relaunch; after 5.3 to 5.4 s fresh, 4.2 to 5.2 s relaunch. Fixed: the catalogue loads from onCreate (CataloguePreload), the map style comes from disk or the APK instead of the network. Left: MapLibre's GL map takes 2 to 3 s to hand over on the emulator, not measured on a real phone."
+    "cold_start": "Release build, first pins from process start, median of five (2026-11-12, emulator to itself): Android 3.1 s first launch (splash 1.7, map 2.6), 2.3 s relaunch (splash 1.4, map 1.8); iPhone simulator 1.5 to 1.7 s and 1.1 to 1.3 s. Before PR 57: 9 to 13 s and 4.5 to 7.5 s on a shared emulator. Fixed: the catalogue loads from onCreate (CataloguePreload), the map style comes from disk or the APK. Not measured on a real phone."
   }
 }
