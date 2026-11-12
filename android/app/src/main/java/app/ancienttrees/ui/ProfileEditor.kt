@@ -142,10 +142,12 @@ fun ProfileEditorSheet(account: Account, profiles: Profiles, onDismiss: () -> Un
         Column(
             verticalArrangement = Arrangement.spacedBy(20.dp),
             modifier = Modifier.fillMaxWidth().verticalScroll(rememberScrollState())
-                .padding(horizontal = 16.dp).padding(top = 16.dp, bottom = 32.dp).testTag("profile-editor"),
+                // The iPhone's grouped Form (SweepFrames profile-edit): its first section
+                // 35 under the bar, 50 from Choose a photo to the card, rows 52.
+                .padding(horizontal = 16.dp).padding(top = 35.dp, bottom = 32.dp).testTag("profile-editor"),
         ) {
             // THE PHOTO LEADS, LARGE AND CENTRED, with Change photo under it.
-            Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
+            Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth().padding(bottom = 30.dp)) {
                 Box(Modifier.size(96.dp).clip(CircleShape).background(brand.moss.copy(alpha = 0.12f)), contentAlignment = Alignment.Center) {
                     val p = preview
                     val url = profiles.me?.avatarUrl
@@ -168,7 +170,7 @@ fun ProfileEditorSheet(account: Account, profiles: Profiles, onDismiss: () -> Un
             Column(Modifier.fillMaxWidth().brandCard(26.dp)) {
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
-                    modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp).padding(horizontal = 16.dp),
+                    modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp).padding(horizontal = 16.dp),
                 ) {
                     Text(stringResource(R.string.editor_name), fontSize = 17.sp, color = brand.ink)
                     Spacer(Modifier.size(16.dp))
@@ -190,7 +192,7 @@ fun ProfileEditorSheet(account: Account, profiles: Profiles, onDismiss: () -> Un
                 HorizontalDivider(Modifier.padding(start = 16.dp), thickness = 0.5.dp, color = brand.hairline)
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
-                    modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp).clickable(role = Role.Button) { picking = true }
+                    modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp).clickable(role = Role.Button) { picking = true }
                         .padding(horizontal = 16.dp).testTag("profile-country"),
                 ) {
                     Text(stringResource(R.string.editor_country), fontSize = 17.sp, color = brand.ink, modifier = Modifier.weight(1f))

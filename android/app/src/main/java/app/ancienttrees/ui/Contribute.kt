@@ -36,6 +36,7 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
@@ -118,8 +119,10 @@ fun ContributeSheet(
         containerColor = brand.surfaceMuted,
         // A NavigationStack sheet: no grabber on the iPhone.
         dragHandle = null,
-        // Full height: edge to edge, as the .large detent.
+        // Full height: edge to edge, as the .large detent, which stops at the safe
+        // area's top on the iPhone (the review: "starts 62 pt down, map above").
         floating = false,
+        modifier = Modifier.statusBarsPadding(),
     ) {
         Column(
             // Full height, as the iPhone's form sheet (the .large detent of a NavigationStack).
@@ -171,7 +174,9 @@ fun ContributeSheet(
             }
 
             @Composable
-            fun Divider() = HorizontalDivider(Modifier.padding(start = 16.dp), thickness = 0.5.dp, color = brand.hairline)
+            // iOS 26's grouped-list separator stops short of the card's right edge too
+            // (measured 32 on the species chooser's list; the review's contribute row).
+            fun Divider() = HorizontalDivider(Modifier.padding(start = 16.dp, end = 32.dp), thickness = 0.5.dp, color = brand.hairline)
 
             when {
                 sent -> Column(group.then(cell), verticalArrangement = Arrangement.spacedBy(4.dp)) {

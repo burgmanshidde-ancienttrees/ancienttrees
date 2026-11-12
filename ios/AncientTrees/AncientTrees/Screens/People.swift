@@ -190,6 +190,10 @@ struct PeopleView: View {
                              : source == .followers ? "Followers" : "Following")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar(.visible, for: .navigationBar)
+            // A CONTAINER with the id, so the sweep's root is an ancestor of the
+            // rows (without .contain iOS gave the id to one leaf, and SweepFrames
+            // measured nothing under it; android_spacing.py, 2026-11-11).
+            .accessibilityElement(children: .contain)
             .accessibilityIdentifier("people-sheet")
     }
 

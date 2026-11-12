@@ -252,7 +252,8 @@ internal fun LazyListScope.groupedSection(
         )
         Column(Modifier.padding(horizontal = 16.dp).clip(shape).background(Brand.colors.surface)) {
             row(i)
-            if (!last) Box(Modifier.padding(start = 54.dp).fillMaxWidth().height(0.5.dp).background(Brand.colors.hairline))
+            // iOS 26's inset-grouped separator: from the name, stopping 32 short of the card's edge.
+            if (!last) Box(Modifier.padding(start = 54.dp, end = 32.dp).fillMaxWidth().height(0.5.dp).background(Brand.colors.hairline))
         }
     }
     if (footer != null) {
@@ -277,7 +278,9 @@ internal fun SpeciesListRow(onClick: () -> Unit, minHeight: Dp = 44.dp, content:
             .fillMaxWidth()
             .heightIn(min = minHeight)
             .clickable(role = Role.Button, onClick = onClick)
-            .padding(horizontal = 16.dp, vertical = 11.dp),
+            // iOS 26's List row: 18 above and below (SweepFrames: a name and its Latin
+            // line make a 74 point row there; at 11 the rows were 60.5).
+            .padding(horizontal = 16.dp, vertical = 18.dp),
         content = content,
     )
 }

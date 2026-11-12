@@ -83,7 +83,7 @@ IOS_TYPES = {"StaticText", "Image", "TextField", "SecureTextField", "SearchField
 # The phone's own furniture and the map's: neither is laid out by us.
 IOS_SKIP_TYPES = {"Keyboard", "KeyboardKey", "NavigationBar"}
 IOS_SKIP_IDS = {"AdditionalDimmingOverlay", "PopoverDimmingView"}
-IOS_SKIP_LABELS = {"Sheet Grabber", "Legal", "Compass", "About this map", "You Are Here"}
+IOS_SKIP_LABELS = {"Legal", "Compass", "About this map", "You Are Here"}
 
 
 def norm(s):
@@ -127,7 +127,11 @@ def ios_from_dump(path):
             # The navigation bar is measured here (appfit leaves it out): its
             # height is the page's start, and without its title Android's bar
             # title takes the page heading's place in the matching.
-            if appfit.inside(el, tuple(t for t in appfit.NOT_OURS if t != "NavigationBar")) or in_map(el):
+            # Only the map and the keyboard are not ours to space. A Form or a List
+            # is a Table or CollectionView on the iPhone, and its rows are exactly
+            # what we lay out (profile-edit, people, contribute and the species
+            # chooser measured nothing until 2026-11-11).
+            if appfit.inside(el, ("Map", "Keyboard", "KeyboardKey")) or in_map(el):
                 continue
             # The text inside a button reports the BUTTON's frame on the
             # iPhone, not its own line box: it says nothing about the text.
@@ -137,6 +141,18 @@ def ios_from_dump(path):
                         "y": round(el.y, 1), "h": round(el.h, 1),
                         "x": round(el.x, 1), "w": round(el.w, 1),
                         "s": scroller(el, s["h"])})
+        # THE SHEET'S TOP (Hidde, 2026-11-11: the X sat far too low and nothing
+        # measured it). The iPhone draws its own grabber, so the accessibility tree
+        # has none; the sheet's frame is the first ancestor of the close button as
+        # wide as a sheet.
+        close = next((el for el in s["els"] if el.ident in ("sheet-close", "spot-close", "xmark")), None)
+        p = close.parent if close else None
+        while p is not None and not (p.w >= s["w"] - 40 and p.h >= 120 and p.y > 0):
+            p = p.parent
+        if p is not None:
+            out_top = {"t": "SheetTop", "id": "sheet-top", "label": "", "y": round(p.y, 1), "h": 0.0,
+                       "x": round(p.x, 1), "w": round(p.w, 1), "s": "fixed"}
+            els.append(out_top)
         out[s["name"]] = {"w": s["w"], "h": s["h"], "els": els}
     IOS_FRAMES.write_text(json.dumps(out, indent=0, ensure_ascii=False) + "\n")
     print(f"wrote {IOS_FRAMES.relative_to(ROOT)}: {len(screens)} screens")
@@ -449,12 +465,71 @@ def touch_box(e, n):
     """
     if (n["clk"] or n["cls"] == "Button") and abs(n["h"] - 48) < 0.6 and e["h"] < 47.5:
         n = dict(n, y=round(n["y"] + (48 - e["h"]) / 2, 1), h=e["h"])
+    # The same growth sideways, for a control narrower than 48.
+    if (n["clk"] or n["cls"] == "Button") and abs(n["w"] - 48) < 0.6 and e["w"] < 47.5:
+        n = dict(n, x=round(n["x"] + (48 - e["w"]) / 2, 1), w=e["w"])
     return n
+
+
+TEXT = {"StaticText", "TextView"}
+
+
+def horizontal(pairs, W):
+    """Margins, centring and gaps in a row, on the same pairs (2026-11-11, Hidde
+    on how each page is laid out across its width).
+
+    Both screens are 402 wide while measuring, so a margin is a margin. Text is
+    judged on its aligned side only: where a line's words end is the typeface's
+    width, not our layout. Something centred on the iPhone (its middle within 1
+    of the screen's) is judged by its middle.
+    """
+    out = {}
+    for e, n in pairs:
+        if e["w"] >= W - 1 or e["x"] < 0 or e["x"] + e["w"] > W:
+            continue
+        nm = name_of(e)
+        mid_i = e["x"] + e["w"] / 2
+        if abs(mid_i - W / 2) < 1:
+            out[f"{nm} centre"] = (round(mid_i - W / 2, 1), round(n["x"] + n["w"] / 2 - W / 2, 1))
+            continue
+        left = (round(e["x"], 1), round(n["x"], 1))
+        right = (round(W - e["x"] - e["w"], 1), round(W - n["x"] - n["w"], 1))
+        if e["t"] in TEXT or n["cls"] in TEXT:
+            # Aligned to one side; the other end is where its words stop.
+            if abs(right[1] - right[0]) < abs(left[1] - left[0]):
+                out[f"{nm} right"] = right
+            else:
+                out[f"{nm} left"] = left
+        else:
+            out[f"{nm} left"] = left
+            out[f"{nm} right"] = right
+    # Neighbours in a row: overlapping vertically, next to the right, in the same
+    # order on Android, and the left one not a text (its end is the typeface's).
+    for i, (e, n) in enumerate(pairs):
+        if e["t"] in TEXT:
+            continue
+        row = [(f, m) for f, m in pairs if f is not e and f["x"] >= e["x"] + e["w"] - 0.5
+               and f["y"] < e["y"] + e["h"] and e["y"] < f["y"] + f["h"]]
+        if not row:
+            continue
+        f, m = min(row, key=lambda p: p[0]["x"])
+        if m["x"] < n["x"] + n["w"] - 0.5:
+            continue
+        out[f"{name_of(e)} | {name_of(f)}"] = (round(f["x"] - e["x"] - e["w"], 1), round(m["x"] - n["x"] - n["w"], 1))
+    return out
 
 
 def compare_page(pairs, ios_h, ios_els):
     """Gaps between neighbours and heights, for one Android dump."""
     gaps, heights = {}, {}
+    # A name the iPhone's screen carries more than once (a save heart on every
+    # card) cannot say which one it is: a different card order (CI's live feed,
+    # 2026-11-12) paired one card's heart with another's line. Such elements are
+    # left out of gaps and heights; their rows are judged through what is unique.
+    seen = {}
+    for e in ios_els:
+        seen[name_of(e)] = seen.get(name_of(e), 0) + 1
+    pairs = [(a, b) for a, b in pairs if seen.get(name_of(a), 0) <= 1]
     for a, b in pairs:
         heights[name_of(a)] = (a["h"], b["h"])
     for i, (ia, aa) in enumerate(pairs):
@@ -507,22 +582,32 @@ def sheet_scale(ios):
     a screen are scaled back by the button (found 2026-11-11); positions from the
     screen's edges are left as read.
     """
-    if not any(e["id"] in ("sheet-close", "spot-close", "xmark") for e in ios["els"]):
-        return 1.0  # not a presented sheet
+    # Since PR 54 Android draws its floating sheet at the same scale (Sheet.kt,
+    # graphicsLayer, 8 in from each side), so both phones are read as drawn and
+    # nothing is scaled back here; correcting only the iPhone counted it twice.
+    return 1.0
     hs = [e["h"] for e in ios["els"] if e["t"] == "Button" and 45.5 < e["h"] < 47.9 and e["w"] > 300]
     return 48.0 / max(set(hs), key=hs.count) if hs else 1.0
 
 
-def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
+def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pending=True):
     allowed_what = {a["what"]: a.get("why", "") for a in allowed}
+    # A reason covers the difference it explains, not any size: one written for a
+    # 28 dp foot hid a 107 dp one after a later change (2026-11-12). "within" sets
+    # the largest difference it covers; a reason without one covers any size, so
+    # give one wherever the size is what the reason is about.
+    allowed_within = {a["what"]: a.get("within") for a in allowed}
     k = sheet_scale(ios)
-    gaps, heights, insets_, seen_gap = {}, {}, {}, {}
+    gaps, heights, insets_, seen_gap, across = {}, {}, {}, {}, {}
+    sheet_pairs, sheet_nodes = [], []
     matched = 0
     for n, xml in enumerate(xml_pages):
         nodes = android_nodes(xml, density, screen_h_dp)
         pairs = match(ios["els"], nodes)
         matched = max(matched, len(pairs))
         g, h = compare_page(pairs, ios["h"], ios["els"])
+        for key, v in horizontal(pairs, ios["w"]).items():
+            across.setdefault(key, v)
         # A scrolled page meets the same element again: keep the reading
         # where it stood whole (accessibility bounds are cut, never grown).
         for key, v in g.items():
@@ -532,6 +617,8 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
         for key, v in h.items():
             if key not in heights or v[1] > heights[key][1]:
                 heights[key] = (round(v[0] * k, 1), v[1])
+        if n == 0:
+            sheet_pairs, sheet_nodes = pairs, nodes
         if n == 0 and pairs:
             # The first named thing under the top safe area, and the lowest one
             # above the bottom one (a tab bar, an action bar, a sheet's button).
@@ -561,18 +648,39 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
                         insets_[f"{name_of(ia)} -> screen foot"] = from_edge
                     else:
                         insets_[f"{name_of(ia)} -> bottom safe area"] = from_safe
+    # THE SHEET'S TOP, from its grabber on both phones: the X's middle and the
+    # first thing under the grabber. A screen's height cannot move these, so
+    # they are judged like any gap (the 2026-11-11 miss: "leaves a sheet's top
+    # alone" let an X sit 35 too low through CI).
+    top_i = next((e for e in ios["els"] if e["id"] == "sheet-top"), None)
+    grab_a = next((n for n in sheet_nodes if n["id"] == "sheet-grabber"), None)
+    if top_i and grab_a and sheet_pairs:
+        ti, ta = top_i["y"], grab_a["y"] - 12  # BrandSheetHandle: 12 below the sheet's top
+        closes = [p for p in sheet_pairs if p[0]["id"] in ("sheet-close", "spot-close", "xmark")]
+        for ci, ca in closes[:1]:
+            insets_["sheet top -> close centre"] = (round((ci["y"] + ci["h"] / 2 - ti) * k, 1),
+                                                   round(ca["y"] + ca["h"] / 2 - ta, 1))
+        below = [p for p in sheet_pairs if p not in closes and p[0]["y"] > ti and p[0]["id"] != "sheet-top"]
+        if below:
+            fi, fa = min(below, key=lambda p: p[0]["y"])
+            insets_[f"sheet top -> {name_of(fi)}"] = (round((fi["y"] - ti) * k, 1), round(fa["y"] - ta, 1))
     rows = []
-    for kind, table, suffix in (("inset", insets_, ""), ("gap", gaps, ""), ("height", heights, " height")):
+    for kind, table, suffix in (("inset", insets_, ""), ("gap", gaps, ""), ("height", heights, " height"),
+                                ("across", across, "")):
         for what, (vi, va) in table.items():
             d = round(va - vi, 1)
             if abs(d) <= REPORT:
                 continue
             what_s = what + suffix
             rows.append({"kind": kind, "what": what_s, "ios": vi, "android": va, "diff": d,
-                         "fails": abs(d) > FAIL and what_s not in allowed_what,
+                         "fails": abs(d) > FAIL and (what_s not in allowed_what
+                                                     or (allowed_within.get(what_s) is not None
+                                                         and abs(d) > allowed_within[what_s]))
+                         and not (kind == "across" and h_pending),
                          "allowed": allowed_what.get(what_s)})
     rows.sort(key=lambda r: -abs(r["diff"]))
-    return {"ios_scale": round(k, 4), "matched": matched, "measured": len(gaps) + len(heights) + len(insets_),
+    return {"ios_scale": round(k, 4), "matched": matched,
+            "measured": len(gaps) + len(heights) + len(insets_) + len(across), "across": len(across),
             "gaps": len(gaps), "differences": rows,
             "failing": sum(1 for r in rows if r["fails"])}
 
@@ -592,6 +700,9 @@ def main():
     ios_all = json.loads(IOS_FRAMES.read_text())
     pend = json.loads(PENDING.read_text()) if PENDING.exists() else {}
     pending = set(pend.get("screens", []))
+    # The horizontal half has its own list (added 2026-11-11): every screen
+    # starts on it and leaves when its margins and rows are fixed or listed.
+    h_pending = set(pend.get("screens_across", []))
     # Screens the iPhone's dump cannot be held against, each with its reason:
     # measured, shown, never passed off as equal.
     no_baseline = pend.get("no_ios_baseline", {})
@@ -660,7 +771,8 @@ def main():
             print(f"n/a  {name:<22} {no_baseline[name]}")
             continue
         allowed = status.get(name, {}).get("spacing_allowed", [])
-        r = judge(name, ios_all[name], pages, meta["density"], safe, meta["h_dp"], allowed)
+        r = judge(name, ios_all[name], pages, meta["density"], safe, meta["h_dp"], allowed,
+                  h_pending=name in h_pending)
         r["pending"] = name in pending
         # NOTHING MEASURED IS A FAILURE, pending or not: the first CI run
         # matched nothing on 37 screens and called every one "ok".

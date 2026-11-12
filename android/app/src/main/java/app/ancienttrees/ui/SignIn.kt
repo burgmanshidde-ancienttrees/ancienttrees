@@ -26,6 +26,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.offset
+import androidx.compose.ui.layout.layout
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -133,14 +135,23 @@ fun SignInSheet(account: Account, reason: SignInReason, onDismiss: () -> Unit) {
         containerColor = brand.ground,
         modifier = Modifier.testTag("signin-sheet"),
     ) {
-        PlainText { Box {
+        // SignIn.swift: content 36 below the sheet's top (the handle drawn inside that
+        // room), 28 above the floating card's foot, the X 8 down. AppSheet's handle
+        // keeps 48 (Sheet.kt), so the box comes 36 up; the icon sat 37 lower.
+        PlainText { Box(
+            Modifier.layout { m, c ->
+                val p = m.measure(c)
+                val t = 36.dp.roundToPx()
+                layout(p.width, (p.height - t).coerceAtLeast(0)) { p.place(0, -t) }
+            },
+        ) {
             Column(
                 verticalArrangement = Arrangement.spacedBy(18.dp),
                 modifier = Modifier
                     .fillMaxWidth()
                     .verticalScroll(rememberScrollState())
                     .padding(horizontal = 22.dp)
-                    .padding(top = 24.dp, bottom = 16.dp)
+                    .padding(top = 24.dp, bottom = 28.dp)
                     .navigationBarsPadding(),
             ) {
                 when (val s = account.state) {
@@ -151,7 +162,7 @@ fun SignInSheet(account: Account, reason: SignInReason, onDismiss: () -> Unit) {
                     else -> Ask(account, reason)
                 }
             }
-            SheetCloseButton({ account.dismissProblem(); onDismiss() }, Modifier.align(Alignment.TopEnd))
+            SheetCloseButton({ account.dismissProblem(); onDismiss() }, Modifier.align(Alignment.TopEnd).offset(y = (-4).dp))
         } }
     }
 }

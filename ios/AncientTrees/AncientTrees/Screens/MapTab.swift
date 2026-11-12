@@ -1120,6 +1120,11 @@ struct MapTab: View {
             }
             .scrollIndicators(.hidden)
             .scrollTargetBehavior(.viewAligned)
+            // A shelf by design, as the filter chips are: appfit reads the
+            // name (its lazy stack reports only the cards it has drawn, so the
+            // spill alone did not say so; CI, 2026-11-12).
+            .accessibilityElement(children: .contain)
+            .accessibilityIdentifier("highlights-shelf")
             .padding(.horizontal, -16)
             .padding(.bottom, 6)
         }
@@ -1150,6 +1155,11 @@ struct MapTab: View {
             }
             .scrollIndicators(.hidden)
             .scrollTargetBehavior(.viewAligned)
+            // A shelf by design, as the filter chips are: appfit reads the
+            // name (its lazy stack reports only the cards it has drawn, so the
+            // spill alone did not say so; CI, 2026-11-12).
+            .accessibilityElement(children: .contain)
+            .accessibilityIdentifier("collected-shelf")
             .padding(.horizontal, -16)
             .padding(.bottom, 6)
         }

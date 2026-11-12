@@ -99,6 +99,10 @@ struct ProfileEditor: View {
             }
             .navigationTitle("Your profile")
             .navigationBarTitleDisplayMode(.inline)
+            // The sweep's root (SweepFrames "profile-edit"): a container, so the
+            // editor's rows are measured under it (android_spacing.py, 2026-11-11).
+            .accessibilityElement(children: .contain)
+            .accessibilityIdentifier("profile-editor")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { dismiss() }

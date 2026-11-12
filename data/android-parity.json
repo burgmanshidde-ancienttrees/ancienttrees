@@ -206,11 +206,51 @@
   },
   "collect-intro": {
     "status": "parity",
-    "differences": []
+    "differences": [],
+    "spacing_allowed": [
+      {
+        "what": "add-library -> bottom safe area",
+        "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing.",
+        "within": 12
+      },
+      {
+        "what": "add-library -> screen foot",
+        "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing.",
+        "within": 12
+      },
+      {
+        "what": "spot-close height",
+        "why": "Accessibility box, not drawing: the X is drawn whole, 14 to 62 below the sheet's top (centre 38, the iPhone's 38), but Android cuts its reported box where the sheet's content area begins, which moves the measured centre and height."
+      },
+      {
+        "what": "sheet top -> close centre",
+        "why": "Accessibility box, not drawing: the X is drawn whole, 14 to 62 below the sheet's top (centre 38, the iPhone's 38), but Android cuts its reported box where the sheet's content area begins, which moves the measured centre and height."
+      }
+    ]
   },
   "collect-away": {
     "status": "parity",
-    "differences": []
+    "differences": [],
+    "spacing_allowed": [
+      {
+        "what": "add-library -> bottom safe area",
+        "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing.",
+        "within": 12
+      },
+      {
+        "what": "add-library -> screen foot",
+        "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing.",
+        "within": 12
+      },
+      {
+        "what": "spot-close height",
+        "why": "Accessibility box, not drawing: the X is drawn whole, 14 to 62 below the sheet's top (centre 38, the iPhone's 38), but Android cuts its reported box where the sheet's content area begins, which moves the measured centre and height."
+      },
+      {
+        "what": "sheet top -> close centre",
+        "why": "Accessibility box, not drawing: the X is drawn whole, 14 to 62 below the sheet's top (centre 38, the iPhone's 38), but Android cuts its reported box where the sheet's content area begins, which moves the measured centre and height."
+      }
+    ]
   },
   "collect-place": {
     "status": "parity",
@@ -218,7 +258,13 @@
   },
   "collect-identify": {
     "status": "parity",
-    "differences": []
+    "differences": [],
+    "spacing_allowed": [
+      {
+        "what": "collect-not-sure right",
+        "why": "Tap area, not drawing: the iPhone's button is as wide as its words (no maxWidth in CollectSheet.swift), Android's ChoiceRow spans the row like the rows above it; the words stand at the same 20 from the left on both."
+      }
+    ]
   },
   "collect-ticked": {
     "status": "parity",
@@ -273,6 +319,32 @@
     "status": "parity",
     "differences": [
       "The map's place header, its Highlights and Collected shelves, the white box with the ambassador row and the Plus box under the trees, ported from PlaceAmbassadors.swift, AmbassadorBadge.swift and PlusAsk.swift (PlaceBox.kt). A failed ambassador request says so on the one sheet: Android has no shared snackbar yet."
+    ],
+    "spacing_allowed": [
+      {
+        "what": "map-count -> tab-collect",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower: the gaps from the filter row down to the sheet and from the sheet's content to the tab bar grow with it. The same rule on a taller screen."
+      },
+      {
+        "what": "Want to visit -> map-count",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower: the gaps from the filter row down to the sheet and from the sheet's content to the tab bar grow with it. The same rule on a taller screen."
+      },
+      {
+        "what": "Collected -> map-count",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower: the gaps from the filter row down to the sheet and from the sheet's content to the tab bar grow with it. The same rule on a taller screen."
+      },
+      {
+        "what": "Species -> map-count",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower: the gaps from the filter row down to the sheet and from the sheet's content to the tab bar grow with it. The same rule on a taller screen."
+      },
+      {
+        "what": "filter-favourites -> map-count",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower: the gaps from the filter row down to the sheet and from the sheet's content to the tab bar grow with it. The same rule on a taller screen."
+      },
+      {
+        "what": "filter-mine -> map-count",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower: the gaps from the filter row down to the sheet and from the sheet's content to the tab bar grow with it. The same rule on a taller screen."
+      }
     ]
   },
   "city-map-full": {
@@ -333,6 +405,16 @@
     "status": "parity",
     "differences": [
       "SpeciesChooser.kt from SpeciesChooser.swift, now also on your own tree and the draft: grouped list, matched name and Latin under each row, Not on the map yet, Use what you typed, the search field at the foot. Close is the bar's plain text as in every ported sheet (BarSheet), where iOS 26 draws a capsule. The map's Species filter (SpeciesPicker.kt) uses the same list."
+    ],
+    "spacing_allowed": [
+      {
+        "what": "Growing near you first height",
+        "why": "Header frame, not words: the iPhone reports the list section header's 40 point frame, Android the line of words in it; the first row starts at the frame's foot on the iPhone and 8 under the words here."
+      },
+      {
+        "what": "Growing near you first -> Oriental Plane, Platanus orientalis, 70",
+        "why": "Header frame, not words: the iPhone reports the list section header's 40 point frame, Android the line of words in it; the first row starts at the frame's foot on the iPhone and 8 under the words here."
+      }
     ]
   },
   "directions": {
@@ -341,7 +423,8 @@
     "spacing_allowed": [
       {
         "what": "directions-google -> screen foot",
-        "why": "Different buttons: the iPhone offers Apple Maps then Google Maps, Android Google Maps then Another maps app (no Apple Maps on Android), so the last button is not the same one; and the card stands on Android's navigation bar, as on every sheet."
+        "why": "Different buttons: the iPhone offers Apple Maps then Google Maps, Android Google Maps then Another maps app (no Apple Maps on Android). Google is the last button on the iPhone and the first here, one 46 button and its 12 higher; the foot itself matches within 3.",
+        "within": 62
       }
     ]
   },
@@ -354,7 +437,8 @@
     "spacing_allowed": [
       {
         "what": "review-no -> screen foot",
-        "why": "The last button stands 28 above the floating card's bottom edge on both (BrandSheet.swift .padding(.bottom, 28)). Android's card stands on its navigation bar (Sheet.kt), so the distance to the screen's edge adds that bar: Android's system bar, not our spacing."
+        "why": "The last button stands 28 above the floating card's bottom edge on both (BrandSheet.swift .padding(.bottom, 28)). Android's card stands on its navigation bar (Sheet.kt), so the distance to the screen's edge adds that bar: Android's system bar, not our spacing.",
+        "within": 12
       }
     ]
   },
@@ -403,7 +487,34 @@
       "Blocked people are held in memory and read back from the server's blocks table; the iPhone also keeps the list on the phone (hard rule 11 on Android).",
       "Share your profile opens Android's share sheet (forced)."
     ],
-    "owner": null
+    "owner": null,
+    "spacing_allowed": [
+      {
+        "what": "people-suggested height",
+        "why": "Header frame, not words: the iPhone reports the section header's 33 point frame, Android the word inside it, 7 above that frame's foot. Read so, the gaps agree: 22 above the frame on both, 17 from the frame's foot to the first row (Android: 7 + 17).",
+        "within": 21
+      },
+      {
+        "what": "people-share -> people-suggested",
+        "why": "Header frame, not words: the iPhone reports the section header's 33 point frame, Android the word inside it, 7 above that frame's foot. Read so, the gaps agree: 22 above the frame on both, 17 from the frame's foot to the first row (Android: 7 + 17).",
+        "within": 21
+      },
+      {
+        "what": "Share your profile -> people-suggested",
+        "why": "Header frame, not words: the iPhone reports the section header's 33 point frame, Android the word inside it, 7 above that frame's foot. Read so, the gaps agree: 22 above the frame on both, 17 from the frame's foot to the first row (Android: 7 + 17).",
+        "within": 21
+      },
+      {
+        "what": "people-suggested -> person-follow",
+        "why": "Header frame, not words: the iPhone reports the section header's 33 point frame, Android the word inside it, 7 above that frame's foot. Read so, the gaps agree: 22 above the frame on both, 17 from the frame's foot to the first row (Android: 7 + 17).",
+        "within": 21
+      },
+      {
+        "what": "people-suggested -> Hugo V.",
+        "why": "Header frame, not words: the iPhone reports the section header's 33 point frame, Android the word inside it, 7 above that frame's foot. Read so, the gaps agree: 22 above the frame on both, 17 from the frame's foot to the first row (Android: 7 + 17).",
+        "within": 9
+      }
+    ]
   },
   "early-adopter": {
     "status": "parity",
@@ -441,7 +552,8 @@
     "spacing_allowed": [
       {
         "what": "early-adopter-done -> screen foot",
-        "why": "The last button stands 28 above the floating card's bottom edge on both (BrandSheet.swift .padding(.bottom, 28)). Android's card stands on its navigation bar (Sheet.kt), so the distance to the screen's edge adds that bar: Android's system bar, not our spacing."
+        "why": "The last button stands 28 above the floating card's bottom edge on both (BrandSheet.swift .padding(.bottom, 28)). Android's card stands on its navigation bar (Sheet.kt), so the distance to the screen's edge adds that bar: Android's system bar, not our spacing.",
+        "within": 12
       }
     ]
   },

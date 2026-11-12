@@ -250,7 +250,9 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                 fontSize = 11.sp, color = brand.inkSoft.copy(alpha = 0.8f), textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxWidth().padding(top = 4.dp).testTag("build-line"),
             )
-            Spacer(Modifier.height(80.dp))
+            // Profile.swift's Color.clear 80, inside a ScrollView that already keeps
+            // clear of the home indicator: here that bar has to be added.
+            Spacer(Modifier.navigationBarsPadding().height(80.dp))
         }
     }
 
@@ -482,6 +484,9 @@ fun BarSheet(
         // A NavigationStack sheet on the iPhone shows no grabber (review 2026-11-11, row 72).
         dragHandle = null,
         floating = !grouped,
+        // A page sheet stops under the status bar on the iPhone (species-pick: its bar
+        // at 78, a strip of the page above); 94 percent of what is left lands at ~76.
+        modifier = Modifier.statusBarsPadding(),
     ) {
         Column(Modifier.fillMaxWidth().let { if (grouped) it.fillMaxHeight(0.94f) else it }.navigationBarsPadding()) {
             Box(Modifier.fillMaxWidth().height(56.dp)) {
