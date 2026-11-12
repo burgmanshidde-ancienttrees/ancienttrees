@@ -13,6 +13,11 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-12 session: Rainer Lippert's yes on file
+
+- All 57 of Rainer Lippert's photographs (52 German trees) now carry his 2026-10-10 yes in `permission` {words, date}, as the 11-10 compliance rule asks; they were on the baseline before. Each links his monumentale-eichen.de page; none came from monumentaltrees.com (hard rule 1). His yes covers photos from his own site only.
+- Open: 149 of 381 German trees have no approved photograph; the 10-25 pass read 78 of his 2,882 site pages by place name, so a coordinate pass over the rest is the next step on the same permission.
+
 ## 2026-11-12 night run (window from 11:21 UTC): two app-only trees, San Francisco a wall
 
 - Rung 1 and 2 clear (no sightings, no notes; health only notes that GitHub dropped 7 of 12 knocks). Shelf said refill: verify pass on San Francisco found nothing new (seventh pass, register exhausted; the six Bush Street blue gums have no size, age or pin source, so they stay a lead). San Francisco walled for 48h.
