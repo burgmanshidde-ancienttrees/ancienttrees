@@ -17,6 +17,7 @@
 package app.ancienttrees
 
 import android.content.Intent
+import java.util.concurrent.TimeUnit
 import android.net.Uri
 import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.test.ExperimentalTestApi
@@ -47,6 +48,7 @@ import org.junit.After
 import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
+import org.junit.rules.Timeout
 import org.junit.runner.RunWith
 
 /** One thing a person does, and what to call the picture it leaves. */
@@ -151,7 +153,11 @@ class Walker(val rule: ComposeTestRule) {
 @OptIn(ExperimentalTestApi::class)
 @RunWith(AndroidJUnit4::class)
 class FlowWalk {
-    @get:Rule val rule = createEmptyComposeRule()
+    // A HANG FAILS FAST, NAMING ITS TEST (2026-11-12: a CI walk sat 35 minutes after
+    // test 1 until the job's 40 ran out, and said nothing). The stuck thread's
+    // stack goes into the failure.
+    @get:Rule(order = 0) val limit: Timeout = Timeout.builder().withTimeout(4, TimeUnit.MINUTES).withLookingForStuckThread(true).build()
+    @get:Rule(order = 1) val rule = createEmptyComposeRule()
     private var scenario: ActivityScenario<MainActivity>? = null
     private val walker by lazy { Walker(rule) }
 
