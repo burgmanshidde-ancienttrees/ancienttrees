@@ -473,6 +473,21 @@ export function buildRedirectStubs(): RedirectStub[] {
         stubs.push({ outputPath: `${lang}/${slug}/${q}.html`, targetRelative: `../../${slug}/oldest-tree`, canonical: qc, title });
         stubs.push({ outputPath: `${lang}/${slug}/${q}/index.html`, targetRelative: `../../../${slug}/oldest-tree`, canonical: qc, title });
       }
+      // A TRIMMED overlay (i18n.ts overlayBuilt, 2026-11-05) still on disk had
+      // real tree pages at /<lang>/<city>/<tree> until that day, and they were
+      // linked from outside (our press mail to the FNP linked
+      // /de/frankfurt/eschersheimer-linde, a 404 from the trim to 2026-11-12).
+      // Each lands on its English tree page (hard rule 3). A fallback city with
+      // no overlay file never had tree pages in that language, so it gets none.
+      if (!fs.existsSync(path.join(DATA, "i18n", lang, `${slug}.json`))) continue;
+      for (const treeSlug of Object.values(treeSlugsForCity(slug))) {
+        stubs.push({
+          outputPath: `${lang}/${slug}/${treeSlug}.html`,
+          targetRelative: `../../${slug}/${treeSlug}`,
+          canonical: `${BASE_URL}/${slug}/${treeSlug}`,
+          title: "Moved: this tree",
+        });
+      }
     }
   }
   // /plus was a sibling fakedoor page, closed 2026-07-29 a day after going
