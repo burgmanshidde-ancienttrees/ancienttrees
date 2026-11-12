@@ -31,6 +31,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Sent (Hidde: "to cockie is goed"):** KNNV Utrecht, his own text; she is searching her archive and has a new tree book at the publisher.
 - **Sent (Hidde: "Send it"):** Genziana Ricci, his text rendered in Italian in Ferrara (asks her favourite old tree between Bologna and Ferrara). No reply needed: Dorit's "gute Idee, das mache ich", Remember Singapore's polite no.
 
+## 2026-11-12 session: four more trees get Rainer Lippert's photographs
+
+- **Live with this deploy**: the Bethmannpark Ginkgo and the Schwanheim Old Oaks in Frankfurt, the Three Oaks of the Weinmeisterweg and the Roadside Oak of Sacrow in Potsdam now lead with his photograph, credited and linked, his 10-10 yes in `permission`. Three had no photo; Sacrow's Commons lead moved into the strip. All four were held on 10-25 on distance alone; matched today on his page text instead (the ginkgo's 4.84 m of 2015 is our girth exactly; his twin oak is our 650 cm trunk; his roadside oak toward Krampnitz is ours; Schwanheim is the same wood-pasture grove). Pixels looked at.
+- A looser pass (any genus, 3 km) over our 318 German trees without a unique photo found nothing else: the other ten near pairs are different trees by his own girths and places. His site is mostly rural giants; our gaps are mostly city street trees he has not photographed.
+- pot_011's story lost a colon reveal (English and German) now that it faces Google.
+
 ## 2026-11-12 session: Rainer Lippert's yes on file
 
 - All 57 of Rainer Lippert's photographs (52 German trees) now carry his 2026-10-10 yes in `permission` {words, date}, as the 11-10 compliance rule asks; they were on the baseline before. Each links his monumentale-eichen.de page; none came from monumentaltrees.com (hard rule 1). His yes covers photos from his own site only.
