@@ -510,7 +510,7 @@ fun BarSheet(
             SheetNavBar(
                 full = grouped,
                 leading = leading?.let { (label, act) -> label to { close(act) } },
-                title = { Text(title, fontFamily = BrandFace, fontSize = 17.sp, fontWeight = FontWeight.Bold, color = brand.ink) },
+                title = title,
                 trailing = trailing,
                 trailingEnabled = trailingEnabled,
             )
@@ -533,7 +533,10 @@ fun BarSheet(
 fun SheetNavBar(
     full: Boolean,
     leading: Pair<String, () -> Unit>?,
-    title: @Composable () -> Unit,
+    /** Set here, never by a caller: every bar title on the iPhone is Gabarito Bold 17
+     * (UINavigationBarAppearance, AncientTreesApp.swift); contribute's had been set
+     * in Inter SemiBold and read lighter (2026-11-12). */
+    title: String,
     trailing: Pair<String, () -> Unit>? = null,
     trailingEnabled: Boolean = true,
     leadingTag: String? = null,
@@ -542,7 +545,12 @@ fun SheetNavBar(
         leading?.let { (label, act) ->
             BarCapsule(label, act, Modifier.align(Alignment.CenterStart).padding(start = 20.dp).let { m -> leadingTag?.let { m.testTag(it) } ?: m }, height = 36.dp)
         }
-        Box(Modifier.align(Alignment.Center)) { title() }
+        Text(
+            title, fontFamily = BrandFace, fontSize = 17.sp, fontWeight = FontWeight.Bold, color = Brand.colors.ink,
+            maxLines = 1, overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center,
+            // Clear of the capsules at both ends.
+            modifier = Modifier.align(Alignment.Center).padding(horizontal = 96.dp),
+        )
         trailing?.let { (label, act) ->
             BarCapsule(label, act, Modifier.align(Alignment.CenterEnd).padding(end = 20.dp), enabled = trailingEnabled, bold = true, height = 36.dp)
         }
