@@ -1,5 +1,11 @@
 # LOG
 
+## 2026-11-12 session: a website photograph now counts as collected
+
+- **Fixed:** Add photo on a tree page ticked the tree as collected only when it came through the collect flow, so the Lisbon photographer's profile showed nothing under Collected. A photograph now ticks it whichever button sent it, as in the app (add-photo-js.ts; qa `check_web_add_photo_is_shared()` now also guards this; escaped bug ESC-2026-11-12). Her lis_021 was ticked on the account by hand (visited, 2026-11-10); her profile shows the tree with her photo and pin, looked at.
+- **Checked, nothing missed:** /contribute's form never received a photograph (0 of 227 submissions; the insert with a photo works, tested as apptest and cleaned up). Strangers' web tree tips: 18, 17 from one German contributor, none since the 2026-09-24 sign-in wall (Hidde: leave the wall). 13 stranger accounts have ever added a photograph, 12 with one live.
+- **Drafted, not sent:** drafts/reply-piero-unalberoalgiorno-2026-11-12.md, asking where the weeping sophora of his 11-01 website photo stands. Waits for Hidde's yes.
+
 ## 2026-11-12 07:32 UTC night run (rung 2, short)
 
 Rung 1 empty (no sightings, no new notes). health.py had one open APP BUG row: the shared tree's photo URL was force-unwrapped. Fixed in SharedTreeView.swift (percent-encoded, nil when invalid, 0d625d527) and the row set `fixed`. No Swift test: it cannot run on this Linux runner, so the row says so. Health is green apart from "5 of 12 knocks delivered", which is GitHub dropping the cron. I did not start tree work: the shelf wants a verify pass (930 leads one source short), which I did not take in this window. For Hidde: next iOS build carries this fix.

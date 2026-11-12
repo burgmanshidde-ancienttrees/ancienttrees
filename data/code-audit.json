@@ -294,6 +294,17 @@
    "found_by": "hidde",
    "test": "scripts/qa.py check_web_add_photo_is_shared",
    "fixed_in": "be3392c2a"
+  },
+  {
+   "id": "ESC-2026-11-12-a-photograph-sent-with-the-website-s-add",
+   "surface": "WEB",
+   "kind": "BUG",
+   "file": "site/src/lib/add-photo-js.ts",
+   "summary": "A photograph sent with the website's Add photo did not tick the tree as collected, so the photographer's profile stayed empty",
+   "first_seen": "2026-11-12",
+   "status": "open",
+   "found_by": "hidde",
+   "test": "scripts/qa.py check_web_add_photo_is_shared"
   }
  ]
 }

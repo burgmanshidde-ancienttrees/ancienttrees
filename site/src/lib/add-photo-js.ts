@@ -375,11 +375,16 @@ export const ADD_PHOTO_JS = `
         btn.hidden = true;
         file.value = ''; if (cam) cam.value = '';
         sayWithLink(msgThanks);
+        // A PHOTOGRAPH OF THE TREE IS A VISIT, whichever button sent it, as
+        // in the app, where a photograph of a mapped tree is only ever taken
+        // through Collect (Hidde, 2026-11-12, on a website photographer whose
+        // profile showed nothing under Collected).
+        if (window.atPushVisited && !(window.atHasVisited && window.atHasVisited(treeId))) {
+          window.atPushVisited(treeId, true);
+          try { at.track('visit'); } catch (err) {}
+          if (window.atPaintSeen) window.atPaintSeen();
+        }
         if (collecting && window.atPushVisited) {
-          if (!(window.atHasVisited && window.atHasVisited(treeId))) {
-            window.atPushVisited(treeId, true);
-            try { at.track('visit'); } catch (err) {}
-          }
           if (window.atPaintSeen) window.atPaintSeen();
           var sb = document.querySelector('.seen-btn');
           if (window.atSnack) window.atSnack((sb && sb.getAttribute('data-l-done')) || 'Collected',

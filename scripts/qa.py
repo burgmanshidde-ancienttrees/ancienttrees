@@ -873,10 +873,18 @@ def check_web_add_photo_is_shared():
         text = src.read_text(encoding="utf-8")
     except OSError:
         return ["site/src/lib/add-photo-js.ts is missing"]
+    out = []
     if "/rest/v1/sightings', {" in text and "shared: true" not in text:
-        return ["site/src/lib/add-photo-js.ts inserts a sighting without shared: true, "
-                "so the photograph never reaches the inbox (2026-11-11)"]
-    return []
+        out.append("site/src/lib/add-photo-js.ts inserts a sighting without shared: true, "
+                   "so the photograph never reaches the inbox (2026-11-11)")
+    # And a photograph is a visit, whichever button sent it (2026-11-12: the
+    # Lisbon photographer's profile showed nothing under Collected, because only
+    # the collect flow ticked the tree). The tick must not sit inside the
+    # `if (collecting` branch.
+    if "window.atPushVisited && !(window.atHasVisited && window.atHasVisited(treeId))" not in text:
+        out.append("site/src/lib/add-photo-js.ts: a photograph sent with Add photo no longer "
+                   "ticks the tree as collected, as the app does (2026-11-12)")
+    return out
 
 
 def check_a_given_photo_records_the_yes():
