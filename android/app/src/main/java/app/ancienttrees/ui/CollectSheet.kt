@@ -483,7 +483,12 @@ fun CollectSheet(
         // away and Android showed none (2026-11-12, collect-place, collect-identify).
         val lift by androidx.compose.animation.core.animateDpAsState(
             when {
-                stage == Stage.Intro -> 36.dp
+                // The fitted steps (ticked, unsure, compare) too: on the iPhone they
+                // are BrandSheet's layout, content 36 under the top and the X on
+                // the sheet's (CollectSheet.swift, `fits`). Left in the handle's
+                // 48, their X stood level with the title, 70 down against 31, and
+                // everything 23 low (2026-11-12, the GPU frames).
+                stage == Stage.Intro || fits -> 36.dp
                 tall -> 44.dp
                 else -> 0.dp
             },
@@ -695,13 +700,22 @@ private fun FitStep(onClose: () -> Unit, content: @Composable ColumnScope.() -> 
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
                 .fillMaxWidth()
+                // 36 under the sheet's top, as the iPhone's .padding(.top, 36): the
+                // caller lifts this 36 into the handle's 48, leaving 12; 12 outside
+                // the scroll and 12 in it. Outside, so the scroll starts under the
+                // grabber: lifted over it, Compose left the covered grabber out of
+                // the tree (the measurer found none, as on sign-in).
+                .padding(top = 12.dp)
                 .verticalScroll(rememberScrollState())
                 .padding(horizontal = 24.dp)
                 .padding(top = 12.dp, bottom = 16.dp)
                 .navigationBarsPadding(),
             content = content,
         )
-        SheetCloseButton(onClose, Modifier.align(Alignment.TopEnd))
+        // SheetCloseButton.swift: 8 under the sheet's top in a 44 box, its middle at
+        // 30; this 48 box, 12 under the top once lifted, centres there 6 up (its 30
+        // circle stays inside the steps' clip; only the box's empty edge is cut).
+        SheetCloseButton(onClose, Modifier.align(Alignment.TopEnd).offset(y = (-6).dp))
     }
 }
 

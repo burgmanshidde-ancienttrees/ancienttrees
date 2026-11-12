@@ -134,21 +134,13 @@ fun ContributeSheet(
         SheetNavBar(
             full = true,
             leading = stringResource(if (sent) R.string.done else R.string.cancel) to onDismiss,
-            title = {
-                Text(
-                    stringResource(
+            title = stringResource(
                         when {
                             sent -> R.string.sent_title
                             feedbackMode -> R.string.feedback_title
                             else -> R.string.tell_us
                         },
-                    ),
-                    fontSize = 17.sp,
-                    fontWeight = FontWeight.SemiBold,
-                    color = brand.ink,
-                    textAlign = TextAlign.Center,
-                )
-            },
+            ),
         )
         Column(
             Modifier.fillMaxWidth().weight(1f)
