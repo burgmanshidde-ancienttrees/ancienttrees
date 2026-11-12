@@ -26,6 +26,9 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -124,16 +127,14 @@ fun ContributeSheet(
         floating = false,
         modifier = Modifier.statusBarsPadding(),
     ) {
-        Column(
-            // Full height, as the iPhone's form sheet (the .large detent of a NavigationStack).
-            Modifier.fillMaxWidth().fillMaxHeight().testTag("contribute-sheet")
-                .verticalScroll(rememberScrollState())
-                .padding(horizontal = 16.dp).padding(bottom = 24.dp).navigationBarsPadding().imePadding(),
-        ) {
-            // The inline bar: Cancel (Done once sent) at the left, the title centred.
-            Row(Modifier.fillMaxWidth().height(44.dp), verticalAlignment = Alignment.CenterVertically) {
-                // iOS 26's capsule (review 2026-11-11, row 122).
-                BarCapsule(stringResource(if (sent) R.string.done else R.string.cancel), onDismiss)
+        // Full height, as the iPhone's form sheet (the .large detent of a NavigationStack).
+        Column(Modifier.fillMaxWidth().fillMaxHeight().testTag("contribute-sheet")) {
+        // The inline bar, which a NavigationStack keeps while the form scrolls: Cancel
+        // (Done once sent) and the title, through the one sheet bar (SheetNavBar).
+        SheetNavBar(
+            full = true,
+            leading = stringResource(if (sent) R.string.done else R.string.cancel) to onDismiss,
+            title = {
                 Text(
                     stringResource(
                         when {
@@ -146,12 +147,17 @@ fun ContributeSheet(
                     fontWeight = FontWeight.SemiBold,
                     color = brand.ink,
                     textAlign = TextAlign.Center,
-                    modifier = Modifier.weight(1f),
                 )
-                Spacer(Modifier.width(72.dp))
-            }
-            // The Form's own inset under an inline bar.
-            Spacer(Modifier.height(48.dp))
+            },
+        )
+        Column(
+            Modifier.fillMaxWidth().weight(1f)
+                .verticalScroll(rememberScrollState())
+                .padding(horizontal = 16.dp).padding(bottom = 24.dp).navigationBarsPadding().imePadding(),
+        ) {
+            // The Form's own inset under the bar: its first row 105 under the sheet's
+            // top on the iPhone (SweepFrames contribute: 167 on a sheet at 62).
+            Spacer(Modifier.height(29.dp))
             // iOS 26's grouped rows: 52 tall, the group's corners round at 20.
             val group = Modifier.fillMaxWidth().background(brand.surface, RoundedCornerShape(20.dp))
             val cell = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 15.dp)
@@ -188,7 +194,12 @@ fun ContributeSheet(
                 }
                 // Two rows of one section, as the iPhone's Form draws them: the reason, then the button.
                 !signedIn -> Column(group) {
-                    Text(stringResource(R.string.report_needs_account), fontSize = 13.sp, color = brand.inkSoft, modifier = cell)
+                    // One element the size of its cell, as the iPhone's Form row reads
+                    // (63.7 with its padding; the words alone read 31 and a 15 gap).
+                    val needs = stringResource(R.string.report_needs_account)
+                    Box(Modifier.fillMaxWidth().semantics { contentDescription = needs }.padding(horizontal = 16.dp, vertical = 15.dp)) {
+                        Text(needs, fontSize = 13.sp, color = brand.inkSoft, modifier = Modifier.clearAndSetSemantics {})
+                    }
                     Divider()
                     Text(
                         stringResource(R.string.sign_in),
@@ -286,6 +297,7 @@ fun ContributeSheet(
                     }
                 }
             }
+        }
         }
     }
 }

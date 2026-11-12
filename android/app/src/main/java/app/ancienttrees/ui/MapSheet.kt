@@ -151,19 +151,23 @@ fun MapSheet(
         val barPx = with(density) { (barDepth + 8.dp).toPx() }
         val halfPts = visible * SheetStops.HALF
         val isLocked = locked || cardFits
+        // THE IPHONE'S STOPS STAND ON ITS 34 HOME INDICATOR, the floating tab bar on
+        // the screen's edge (26 up on both). Over Android's 24 gesture bar the same
+        // stop put the sheet's content 10 nearer the tab bar (map-bar's count, the
+        // map's Highlights; 2026-11-12), so the fixed stops take the difference.
+        // Three-button navigation is taller than 34: nothing is added there.
+        val homeLift = with(density) { (34.dp.toPx() - bottom).coerceAtLeast(0f) }
         fun stop(s: SheetHeight): Float = when (s) {
-            // The grip and the count, 15 above the navigation bar: the iPhone's
-            // frames (data/ios-frames.json map-bar: count 794.7 + 30.3, 15 above the
-            // home indicator's safe area), which is where the recentre control's 120
-            // leaves it 74.7 below. BottomSheet's own sum says + 6; its drawn sheet
-            // stands 9 higher, and the drawn sheet is what a person sees.
+            // The grip and the count: BottomSheet's own sum, 44 + the header + 6.
             SheetHeight.BAR -> with(density) {
-                if (headerHeight > 0) 44.dp.toPx() + headerHeight + 15.dp.toPx() else SheetStops.BAR.toPx()
+                if (headerHeight > 0) 44.dp.toPx() + headerHeight + 6.dp.toPx() + homeLift else SheetStops.BAR.toPx() + homeLift
             }
-            SheetHeight.PEEK -> with(density) { SheetStops.PEEK.toPx() }
+            SheetHeight.PEEK -> with(density) { SheetStops.PEEK.toPx() } + homeLift
+            // The fitted card counts from the floating bar's depth, which is measured
+            // from the edge already (map-pin's place row within 1 of the iPhone's).
             SheetHeight.CARD ->
                 if (cardFits && contentHeight > 0) minOf(headerBottom + contentHeight + barPx, halfPts)
-                else with(density) { SheetStops.CARD.toPx() }
+                else with(density) { SheetStops.CARD.toPx() } + homeLift
             SheetHeight.HALF -> halfPts
             SheetHeight.FULL -> page
         }

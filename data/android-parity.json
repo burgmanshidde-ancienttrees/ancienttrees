@@ -82,7 +82,21 @@
       "At full the list is the page under the field, no grip and no count, the Map pill over it (BottomSheet sheetResults, MapSheet.kt results). As map.",
       "The count can differ by a tree between the phones: their screens frame a slightly different area."
     ],
-    "owner": null
+    "owner": null,
+    "spacing_allowed": [
+      {
+        "what": "The Falckplantsoen Pagoda Tree height",
+        "why": "Typeface: the iPhone's Gabarito sets \"The Falckplantsoen Pagoda Tree\" wider than Android's at 16 bold, so in the same 246 wide title column (TreeRow.swift: 64 thumb, 12, title, 4, heart; TreeRows.kt the same) it wraps to two lines there and fits one here; the meta line under it follows the wrap.",
+        "within": 19,
+        "source": "data/ios-frames.json map-full; ios/AncientTrees/AncientTrees/Screens/TreeRow.swift"
+      },
+      {
+        "what": "116-136 years right",
+        "why": "Typeface: the iPhone's Gabarito sets \"The Falckplantsoen Pagoda Tree\" wider than Android's at 16 bold, so in the same 246 wide title column (TreeRow.swift: 64 thumb, 12, title, 4, heart; TreeRows.kt the same) it wraps to two lines there and fits one here; the meta line under it follows the wrap.",
+        "within": 17,
+        "source": "data/ios-frames.json map-full; ios/AncientTrees/AncientTrees/Screens/TreeRow.swift"
+      }
+    ]
   },
   "map-bar": {
     "status": "parity",
@@ -414,6 +428,12 @@
       {
         "what": "Growing near you first -> Oriental Plane, Platanus orientalis, 70",
         "why": "Header frame, not words: the iPhone reports the list section header's 40 point frame, Android the line of words in it; the first row starts at the frame's foot on the iPhone and 8 under the words here."
+      },
+      {
+        "what": "Close height",
+        "why": "Accessibility box: the capsule is drawn 36 tall on both (BarCapsule height 36, iOS 26's bar capsule in SweepFrames), but Compose reports a tappable thing grown to its 48 touch target, read here as 42; the drawn capsule stands 20 under the sheet's top on both.",
+        "within": 7,
+        "source": "out/parity/android/species-pick.png; data/ios-frames.json species-pick"
       }
     ]
   },
@@ -542,6 +562,24 @@
       {
         "what": "profile-flag -> ambassador-badge",
         "why": "The flag is drawn 20 by 20 (CountryFlag, as the iPhone's). In this frame Android's My trees has no demo collection (visual review 2026-11-11, early-adopter row, open), so the profile row stands at the foot of the screen and the accessibility dump reports only the flag's visible half. Measured since the flag carries the iPhone's profile-flag id (2026-11-11); goes when the demo collection reaches Android."
+      },
+      {
+        "what": "Early adopter left",
+        "why": "Typeface: \"Paris ambassador\" in the pill is 149 wide in SF and 143 in Inter at 12 medium; the gap to the early-adopter tag is the same 6 on both (AmbassadorBadge.swift HStack, Badges.kt), so the tag and its words start 6 to 8 earlier here.",
+        "within": 9,
+        "source": "data/ios-frames.json early-adopter; ios/AncientTrees/AncientTrees/Screens/AmbassadorBadge.swift"
+      },
+      {
+        "what": "early-adopter-badge left",
+        "why": "Typeface: \"Paris ambassador\" in the pill is 149 wide in SF and 143 in Inter at 12 medium; the gap to the early-adopter tag is the same 6 on both (AmbassadorBadge.swift HStack, Badges.kt), so the tag and its words start 6 to 8 earlier here.",
+        "within": 7,
+        "source": "data/ios-frames.json early-adopter; ios/AncientTrees/AncientTrees/Screens/AmbassadorBadge.swift"
+      },
+      {
+        "what": "ambassador-badge right",
+        "why": "Typeface: \"Paris ambassador\" in the pill is 149 wide in SF and 143 in Inter at 12 medium; the gap to the early-adopter tag is the same 6 on both (AmbassadorBadge.swift HStack, Badges.kt), so the tag and its words start 6 to 8 earlier here.",
+        "within": 7,
+        "source": "data/ios-frames.json early-adopter; ios/AncientTrees/AncientTrees/Screens/AmbassadorBadge.swift"
       }
     ]
   },

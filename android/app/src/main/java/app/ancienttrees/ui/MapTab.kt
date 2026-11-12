@@ -372,7 +372,9 @@ fun MapTab(
                         coverage = sheet.points,
                         visible = sheet.screen - navBottom,
                         cardPx = SheetStops.CARD.toPx(),
-                        minLift = 120.dp.toPx(),
+                        // 120 above the iPhone's 34 home indicator: over the 24 gesture bar
+                        // the 10 between them too, as the sheet's stops (MapSheet homeLift).
+                        minLift = 120.dp.toPx() + (34.dp.toPx() - navBottom).coerceAtLeast(0f),
                         gap = 12.dp.toPx(),
                         fade = 60.dp.toPx(),
                     )
@@ -415,10 +417,17 @@ fun MapTab(
             results = true,
             header = {
                 val t = selected
-                if (t == null) {
-                    CountStrip(inReach, fold = sheet.pageProgress)
-                } else {
-                    TreePlaceHeader(t, onShare = { onShare(t) }, onClose = { selected = null })
+                androidx.compose.foundation.layout.Column {
+                    if (t == null) {
+                        CountStrip(inReach, fold = sheet.pageProgress)
+                    } else {
+                        TreePlaceHeader(t, onShare = { onShare(t) }, onClose = { selected = null })
+                    }
+                    // THE IPHONE AS IT SHIPS (Hidde, 2026-11-12, "maak hem verder af"):
+                    // MapTab.swift's header stacks the count or the place row and the
+                    // map-idle marker (1 point, once the map is idle) with its 8
+                    // spacing, so 9 more stand under it, count and place row alike.
+                    androidx.compose.foundation.layout.Spacer(Modifier.height(9.dp))
                 }
             },
         ) {
@@ -519,7 +528,13 @@ fun MapTab(
             visible = sheet.height == SheetHeight.FULL && !searching && !snackShowing,
             enter = fadeIn(tween(200, easing = Motion.EaseOut)),
             exit = fadeOut(tween(200, easing = Motion.EaseOut)),
-            modifier = Modifier.align(Alignment.BottomCenter).navigationBarsPadding().padding(bottom = 70.dp),
+            // 70 above the iPhone's 34 home indicator, 104 from the edge as its tab bar
+            // counts; over the 24 gesture bar the 10 between them is added (it stood
+            // 18 above the tab bar against the iPhone's 28, 2026-11-12).
+            modifier = Modifier.align(Alignment.BottomCenter).navigationBarsPadding()
+                .padding(bottom = 70.dp + (34.dp - with(LocalDensity.current) {
+                    WindowInsets.navigationBars.getBottom(this).toDp()
+                }).coerceAtLeast(0.dp)),
         ) {
             // Down to the count bar, the map's whole screen (Airbnb's Map pill, build 42).
             MapPill { sheet.height = SheetHeight.BAR }

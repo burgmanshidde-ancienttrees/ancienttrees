@@ -71,11 +71,12 @@ fun AmbassadorBadge(
     }
     if (open != null) {
         Box(
-            Modifier.heightIn(min = 44.dp).clickable { open(places.first()) },
+            // AmbassadorBadge.swift's identifiers, so both phones name the same thing.
+            Modifier.heightIn(min = 44.dp).clickable { open(places.first()) }.testTag("ambassador-badge"),
             contentAlignment = Alignment.CenterStart,
         ) { pill() }
     } else {
-        pill()
+        Box(Modifier.testTag("ambassador-badge")) { pill() }
     }
 }
 
@@ -88,6 +89,7 @@ fun EarlyAdopterBadge(size: Int = 12) {
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
             .wrapContentSize()
+            .testTag("early-adopter-badge")
             .background(brand.gold.copy(alpha = 0.18f), RoundedCornerShape(50))
             .padding(top = 3.dp, bottom = 3.dp, start = 7.dp, end = 9.dp),
     ) {

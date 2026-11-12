@@ -116,7 +116,8 @@ def _android(frames, build):
         # is written \, and the whole list quoted for the device's shell.
         joined = ",".join(a.replace(",", "\\,") for a in args)
         run([ADB, "logcat", "-c"])
-        run([ADB, "shell", "am", "start", "-W", "-n", ACTIVITY, "--esa", "args", "'" + joined + "'"])
+        # A fresh task: Recents otherwise brings the last screen back with its old intent.
+        run([ADB, "shell", "am", "start", "-W", "--activity-clear-task", "-n", ACTIVITY, "--esa", "args", "'" + joined + "'"])
         # Until the app says its catalogue is read (MainActivity logs it), then
         # time for the tiles and the photographs.
         for _ in range(90):

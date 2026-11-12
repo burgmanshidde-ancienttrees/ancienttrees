@@ -95,13 +95,22 @@ def norm(s):
     return re.sub(r"\s+", " ", s).strip().lower()[:80]
 
 
-BUTTONS = {"Button", "Link", "Switch", "Toggle", "Slider", "SegmentedControl"}
+BUTTONS = {"Button", "Link", "Switch", "Toggle", "Slider", "SegmentedControl", "SearchField"}
+# iOS 26 draws its search field as a glass capsule 5 points outside the frame
+# the accessibility tree gives (species-pick: frame 33,803 336x38, capsule
+# 28,798 346x48 in out/parity/side-by-side/species-pick.png at 1.4876 px a
+# point). Android's field node is the capsule, so the iPhone's is grown to it.
+SEARCH_CAPSULE = 5.0
 
 
 def kinds_fit(e, n):
     """A button matches something tappable, a line of text matches text: a
     card labelled "Baarn" is not the caption "Baarn" inside another card."""
     tappable = n["clk"] or n["cls"] in ("Button", "Switch", "CheckBox")
+    # A glyph is never a line of words: own-tree's plus.circle ("Add") paired
+    # with the word Add beside it (2026-11-12).
+    if e["t"] == "Image" and n["cls"] in TEXT:
+        return False
     return (e["t"] in BUTTONS) == tappable
 
 
@@ -273,20 +282,37 @@ def insets(adb, density):
     return top * 160 / density, bottom * 160 / density
 
 
+# Screens whose iPhone frames are of a sheet under the sign-in sheet it opens
+# (SweepFrames roots contribute and feedback at contribute-sheet).
+UNDER_SIGN_IN = {"contribute", "feedback"}
+
+
 def dump_screen(adb, name, args, scrolls, density):
     adb.shell("am", "force-stop", PACKAGE)
     if not any(a.startswith("-at=") for a in args):
         args = args + [ORIGIN]
     joined = ",".join(a.replace(",", "\\,") for a in args)
     adb.run("logcat", "-c")
-    adb.shell("am", "start", "-W", "-n", ACTIVITY, "--esa", "args", "'" + joined + "'")
+    # A fresh task each time: without it the task in Recents came back with its
+    # old intent, and the city was measured under the collect sheet the screen
+    # before it had opened (2026-11-12).
+    adb.shell("am", "start", "-W", "--activity-clear-task", "-n", ACTIVITY, "--esa", "args", "'" + joined + "'")
     for _ in range(90):
         if "catalogue" in adb.run("logcat", "-d", "-s", "AncientTrees"):
             break
         time.sleep(1)
     time.sleep(6)
+    if name in UNDER_SIGN_IN:
+        # The sheet puts the sign-in sheet over itself on arrival, on both phones;
+        # the iPhone's dump is rooted at the sheet under it, so this one is read
+        # with the sign-in sheet closed (system back), as a person sees it then.
+        if 'resource-id="signin-sheet"' in dump_ours(adb, density):
+            adb.shell("input", "keyevent", "KEYCODE_BACK")
+            time.sleep(3)
     XML_DIR.mkdir(parents=True, exist_ok=True)
-    for old in list(XML_DIR.glob(f"{name}-*.xml")) + list(XML_DIR.glob(f"{name}-safe.json")):
+    # Only this screen's numbered pages: "{name}-*" also took map-full's for map,
+    # tree-nophoto's for tree and city-map-full's for city (2026-11-12).
+    for old in list(XML_DIR.glob(f"{name}-[0-9]*.xml")) + list(XML_DIR.glob(f"{name}-safe.json")):
         old.unlink()
     # The insets the app itself laid out against (MainActivity logs them, in px
     # with its own density; the first frame reports 0 before the window has any).
@@ -489,6 +515,22 @@ def horizontal(pairs, W):
             continue
         nm = name_of(e)
         mid_i = e["x"] + e["w"] / 2
+        if e["t"] == "Image":
+            # An icon is where its middle is: the iPhone gives the glyph's own
+            # frame, Android the 44 box it is tapped in (own-tree's ellipsis:
+            # 353 + 22 against 342 + 44, both centred on 364).
+            out[f"{nm} middle"] = (round(mid_i, 1), round(n["x"] + n["w"] / 2, 1))
+            continue
+        if e["t"] in TEXT and e["x"] <= 16.5 and e["w"] >= W - 33:
+            # A text frame from margin to margin is a Form cell's or a section
+            # header's: its words start 16 inside it (species-pick's "Growing near
+            # you first", contribute's account line), so the frame says nothing
+            # about where they stand across. Its height and gaps are still read.
+            continue
+        if e["t"] == "TextField" and e["w"] > W * 0.8:
+            # A field's frame across the card: its left is the edge both set.
+            out[f"{nm} left"] = (round(e["x"], 1), round(n["x"], 1))
+            continue
         if abs(mid_i - W / 2) < 1:
             out[f"{nm} centre"] = (round(mid_i - W / 2, 1), round(n["x"] + n["w"] / 2 - W / 2, 1))
             continue
@@ -519,7 +561,7 @@ def horizontal(pairs, W):
     return out
 
 
-def compare_page(pairs, ios_h, ios_els):
+def compare_page(pairs, ios_h, ios_els, and_nodes=None):
     """Gaps between neighbours and heights, for one Android dump."""
     gaps, heights = {}, {}
     # A name the iPhone's screen carries more than once (a save heart on every
@@ -559,9 +601,12 @@ def compare_page(pairs, ios_h, ios_els):
                and e["x"] < ia["x"] + ia["w"] and ia["x"] < e["x"] + e["w"]
                for e in ios_els):
             continue
+        # Every named node on Android, as every element on the iPhone: a row the
+        # live feed put between two others on one phone only (map-full's list,
+        # 25.6 against 120.5, 2026-11-12) is not a gap.
         if any(n is not aa and n is not ab and aa["y"] + aa["h"] - 0.5 <= n["y"] and n["y"] + n["h"] <= ab["y"] + 0.5
                and n["x"] < aa["x"] + aa["w"] and aa["x"] < n["x"] + n["w"]
-               for _, n in pairs):
+               for n in (and_nodes if and_nodes is not None else [m for _, m in pairs])):
             continue
         g_ios = ib["y"] - (ia["y"] + ia["h"])
         g_and = ab["y"] - (aa["y"] + aa["h"])
@@ -590,6 +635,60 @@ def sheet_scale(ios):
     return 48.0 / max(set(hs), key=hs.count) if hs else 1.0
 
 
+def past_first_card(els, tappable, screen_w=402.0):
+    """What stands in a shelf's second card or later, on either phone.
+
+    A shelf is a row of tappable cards, each taller than 100 and narrower
+    than three quarters of the screen (Highlights,
+    Collected, Discover's rows). It scrolls, and the live feed can order it
+    differently on the two phones, so only its first card, at rest on the
+    margin on both, is held against the other phone: the Highlights' second
+    card paired the iPhone's "London Plane" at 248 with a list row's at 92
+    (2026-11-12, 156 across).
+    """
+    cards = [e for e in els if tappable(e) and e["h"] > 100 and e["w"] < screen_w * 0.75]
+    drop = set()
+    for c in cards:
+        # A lone card counts too: the iPhone's dump leaves out a card the screen's
+        # side cuts, so a shelf can show it one card and the words of the next.
+        row = [d for d in cards if abs(d["y"] - c["y"]) < 4 and abs(d["h"] - c["h"]) < 4]
+        first = min(row, key=lambda d: d["x"])
+        top, bottom = c["y"], c["y"] + c["h"]
+        for e in els:
+            mid_x, mid_y = e["x"] + e["w"] / 2, e["y"] + e["h"] / 2
+            if top - 1 <= mid_y <= bottom + 1 and not (first["x"] <= mid_x <= first["x"] + first["w"]):
+                drop.add(id(e))
+    return drop
+
+
+TAB_IDS = ("tab-map", "tab-discover", "tab-my-trees", "tab-collect")
+
+# The iPhone's full sheets, read from its shots (see judge): the top's distance
+# under the status bar, the navigation row's middle and the close circle's
+# middle under the top, and which screens carry each.
+IOS_LARGE_TOP_GAP = 12.0
+IOS_LARGE_NAV_MID = 38.0
+IOS_LARGE_CLOSE_MID = 26.0
+FULL_SHEET_NAV = {"contribute", "feedback", "profile-edit", "species-pick"}
+FULL_SHEET_X = {"collect-place", "collect-identify"}
+
+
+def under_tab_bar(els):
+    """What stands behind the floating tab bar, on either phone.
+
+    Nobody can read it there, and Android cuts a covered box at the bar's edge
+    (Compose leaves the covered part out of the accessibility tree): the city's
+    "Become the Aarhus ambassador" read 115 from the left, where the Map tab
+    ends, against the iPhone's 58, with the row behind both bars (2026-11-12).
+    """
+    tabs = [e for e in els if e["id"] in TAB_IDS]
+    if not tabs:
+        return set()
+    top, bottom = min(t["y"] for t in tabs), max(t["y"] + t["h"] for t in tabs)
+    return {id(e) for e in els if e["id"] not in TAB_IDS and e["y"] + e["h"] > top + 1
+            and e["y"] < bottom and e["w"] < 400 and not any(e is t for t in tabs)}
+
+
 def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pending=True):
     allowed_what = {a["what"]: a.get("why", "") for a in allowed}
     # A reason covers the difference it explains, not any size: one written for a
@@ -603,10 +702,30 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pen
     matched = 0
     for n, xml in enumerate(xml_pages):
         nodes = android_nodes(xml, density, screen_h_dp)
-        pairs = match(ios["els"], nodes)
+        gone_i = past_first_card(ios["els"], lambda e: e["t"] in BUTTONS, ios["w"]) | under_tab_bar(ios["els"])
+        # Below the screen's foot on the iPhone: Android reports nothing it does not
+        # show, so the map's Highlights text at 954 and 993 on an 874 screen paired
+        # with list rows that were (2026-11-12).
+        gone_i |= {id(e) for e in ios["els"] if e["y"] >= ios["h"] - 0.5}
+        # Two names on one frame are one element: map-pin's dump gives save-heart
+        # the place card's whole 370 x 190 (2026-11-12). The first name stands.
+        frames_seen = set()
+        for e in ios["els"]:
+            f = (e["x"], e["y"], e["w"], e["h"])
+            if f in frames_seen:
+                gone_i.add(id(e))
+            frames_seen.add(f)
+        gone_a = past_first_card(nodes, lambda n: n["clk"] or n["cls"] in ("Button", "Switch", "CheckBox")) | under_tab_bar(nodes)
+        pairs = match([e for e in ios["els"] if id(e) not in gone_i], [n for n in nodes if id(n) not in gone_a])
         matched = max(matched, len(pairs))
-        g, h = compare_page(pairs, ios["h"], ios["els"])
-        for key, v in horizontal(pairs, ios["w"]).items():
+        g, h = compare_page(pairs, ios["h"], ios["els"], [n for n in nodes if id(n) not in gone_a])
+        # A name the iPhone carries more than once cannot say which one it is, across
+        # as down (the tree's "Species": the facts label and a chip, 2026-11-12).
+        names = {}
+        for e in ios["els"]:
+            names[name_of(e)] = names.get(name_of(e), 0) + 1
+        once = [(e, n) for e, n in pairs if names.get(name_of(e), 0) <= 1]
+        for key, v in horizontal(once, ios["w"]).items():
             across.setdefault(key, v)
         # A scrolled page meets the same element again: keep the reading
         # where it stood whole (accessibility bounds are cut, never grown).
@@ -630,7 +749,10 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pen
             # so its top says nothing and its foot is judged below.
             # From each phone's own safe area: both apps lay out from it (the
             # iPhone's 62, the status bar the app itself reports here).
-            if ia["y"] <= ios["h"] * 0.3:
+            # A full sheet's top is judged from the sheet (below), never from the
+            # safe area: the iPhone's sits on its 62, Android's 10 under its bar.
+            full_sheet = any(m["id"] == "full-sheet-top" for m in nodes)
+            if ia["y"] <= ios["h"] * 0.3 and not full_sheet:
                 insets_[f"top safe area -> {name_of(ia)}"] = (
                     round(ia["y"] - IOS_SAFE[0], 1), round(aa["y"] - safe_and[0], 1))
             # Only what stands still has a distance from the foot: where a
@@ -665,6 +787,34 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pen
         a_close = [p for p in sheet_pairs if p[0]["id"] in ("sheet-close", "spot-close", "xmark")]
         if i_close and not a_close:
             missing.append("sheet close button not found")
+    # A FULL SHEET (.large) on Android marks its top (Sheet.kt, full-sheet-top).
+    # The iPhone's dumps are rooted below that top, so its numbers come from its
+    # shots (out/parity-feel/android-review-2026-11-11/ios, 1206 px = 402 pt):
+    # the sheet's top 12 under the status bar (62 under a Dynamic Island ending
+    # at 50), the navigation row's middle 38 under that top (contribute, feedback,
+    # profile-edit, species-pick), the collect steps' close circle's middle 26
+    # (CollectSheet.swift closeRow: 4 + 22). Hidde, 2026-11-12: "veel kruisjes op
+    # de overlay verkeerd" and "de titel op de overlay teveel naar boven", which
+    # this check had passed.
+    full_a = next((n for n in sheet_nodes if n["id"] == "full-sheet-top"), None)
+    if full_a is not None:
+        ft = full_a["y"]
+        insets_["full sheet top under the status bar"] = (IOS_LARGE_TOP_GAP, round(ft - safe_and[0], 1))
+        bar = next((n for n in sheet_nodes if n["id"] == "sheet-nav-bar"), None)
+        if screen in FULL_SHEET_NAV:
+            if bar is None:
+                missing.append("sheet navigation row not found")
+            else:
+                insets_["full sheet: navigation row middle under its top"] = (IOS_LARGE_NAV_MID, round(bar["y"] + bar["h"] / 2 - ft, 1))
+        if screen in FULL_SHEET_X:
+            x = next((n for n in sheet_nodes if n["id"] in ("spot-close", "sheet-close")
+                      or n["desc"] in ("Close", "Close sheet") and n["w"] < 60), None)
+            if x is None:
+                missing.append("sheet close button not found")
+            else:
+                insets_["full sheet: close middle under its top"] = (IOS_LARGE_CLOSE_MID, round(x["y"] + x["h"] / 2 - ft, 1))
+    elif screen in FULL_SHEET_NAV | FULL_SHEET_X:
+        missing.append("full sheet top not found")
     if top_i and grab_a and sheet_pairs:
         ti, ta = top_i["y"], grab_a["y"] - 12  # BrandSheetHandle: 12 below the sheet's top
         closes = [p for p in sheet_pairs if p[0]["id"] in ("sheet-close", "spot-close", "xmark")]
@@ -713,6 +863,11 @@ def main():
         ios_from_dump(a.ios_dump)
         return
     ios_all = json.loads(IOS_FRAMES.read_text())
+    for scr in ios_all.values():
+        for e in (scr.get("els", []) if isinstance(scr, dict) else []):
+            if e.get("t") == "SearchField":
+                e["x"] -= SEARCH_CAPSULE; e["y"] -= SEARCH_CAPSULE
+                e["w"] += 2 * SEARCH_CAPSULE; e["h"] += 2 * SEARCH_CAPSULE
     pend = json.loads(PENDING.read_text()) if PENDING.exists() else {}
     pending = set(pend.get("screens", []))
     # The horizontal half has its own list (added 2026-11-11): every screen
@@ -773,7 +928,9 @@ def main():
     result = {"_device": meta, "_threshold": {"report": REPORT, "fail": FAIL}}
     failing = 0
     for name in names:
-        pages = [p.read_text() for p in sorted(XML_DIR.glob(f"{name}-*.xml"))]
+        # This screen's pages only (see dump_screen): a looser pattern judged map
+        # against map-full's and map-pin's dumps too, and tree against tree-nophoto's.
+        pages = [p.read_text() for p in sorted(XML_DIR.glob(f"{name}-[0-9]*.xml"))]
         own = XML_DIR / f"{name}-safe.json"
         safe = json.loads(own.read_text()) if own.exists() else meta["safe"]
         if name not in ios_all or not pages:
