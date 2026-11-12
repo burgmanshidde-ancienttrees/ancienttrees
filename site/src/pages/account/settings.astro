@@ -583,30 +583,20 @@ const crumbItems: [string, string | null][] = [
   // app sat under the account's own folder, and deleting that account from the
   // WEBSITE left every one of them in the bucket while /privacy promised
   // otherwise. Same promise, same handler, so it is closed here too.
+  //
+  // THE TREES STAY (Hidde, 2026-11-12: "het hele idee is toch dat we de bomen
+  // houden als mensen hun account verwijderen", and of a tree we have not
+  // approved yet: "als we een boom niet approven maar nog 2 andere m aanmelden
+  // we m alsnog goed kunnen keuren"). So only the face goes from here; the
+  // photographs of trees stay in the private bucket, unlinked, and the knock
+  // takes their public copies down (scripts/sightings_link.py,
+  // drop_public_copies_of_gone_accounts). /privacy and /terms say so.
   function purgeFiles(token, done) {
     if (!myId) { done(); return; }
     var uid = encodeURIComponent(myId);
-    var head = { "apikey": KEY, "Authorization": "Bearer " + token };
-    function drop(bucket, path) {
-      return fetch(SB + "/storage/v1/object/" + bucket + "/" + path,
-                   { method: "DELETE", headers: head }).catch(function() {});
-    }
-    fetch(SB + "/storage/v1/object/list/sightings", {
-      method: "POST",
-      headers: { "apikey": KEY, "Authorization": "Bearer " + token,
-                 "Content-Type": "application/json" },
-      body: JSON.stringify({ prefix: myId, limit: 200 })
-    }).then(function(r) { return r.ok ? r.json() : []; })
-      .catch(function() { return []; })
-      .then(function(rows) {
-        var jobs = [drop("avatars", uid + "/avatar.jpg")];
-        (rows || []).forEach(function(row) {
-          // The name is passed through as the app passes it, because it is a
-          // path inside the folder and encoding a slash would break it.
-          if (row && row.name) jobs.push(drop("sightings", uid + "/" + row.name));
-        });
-        Promise.all(jobs).then(done, done);
-      });
+    fetch(SB + "/storage/v1/object/avatars/" + uid + "/avatar.jpg",
+          { method: "DELETE", headers: { "apikey": KEY, "Authorization": "Bearer " + token } })
+      .catch(function() {}).then(done, done);
   }
 
   delBtn.addEventListener("click", function() {

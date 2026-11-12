@@ -90,7 +90,52 @@ def main(argv):
     print(f"sightings_link: {len(rows)} sighting(s) behind published photographs, {fixed} linked")
     tick_collected(dry)
     mark_added(dry)
+    drop_public_copies_of_gone_accounts(dry)
     return 0
+
+
+def drop_public_copies_of_gone_accounts(dry):
+    """A deleted account's trees stay; their PUBLIC copies go (Hidde,
+    2026-11-12: "het hele idee is toch dat we de bomen houden als mensen hun
+    account verwijderen"). The phones and the website now delete only the
+    avatar when an account goes, so the photographs of trees stay in the
+    private sightings bucket, where data/leads/_sightings.json (unlinked by
+    photo_takedown.py) and the published pages still point. What would
+    otherwise outlive the person in public is the copy in shared-sightings,
+    readable by anyone holding its address; this deletes the copies under any
+    folder whose account no longer exists. Never a private original, never a
+    living account's file."""
+    def call(path, method="GET", body=None):
+        req = urllib.request.Request(SUPA + path, method=method,
+                                     data=json.dumps(body).encode() if body is not None else None,
+                                     headers={"apikey": KEY, "Authorization": "Bearer " + KEY,
+                                              "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            raw = r.read()
+        return json.loads(raw) if raw else None
+
+    alive, page = set(), 1
+    while True:
+        got = (call("/auth/v1/admin/users?page=%d&per_page=1000" % page) or {}).get("users") or []
+        alive |= {u["id"] for u in got}
+        if len(got) < 1000:
+            break
+        page += 1
+    if not alive:
+        print("sightings_link: no accounts read, public copies left alone")
+        return
+    gone = []
+    for folder in call("/storage/v1/object/list/shared-sightings", "POST", {"prefix": "", "limit": 1000}) or []:
+        if folder.get("id") or folder["name"] in alive:
+            continue
+        for f in call("/storage/v1/object/list/shared-sightings", "POST",
+                      {"prefix": folder["name"] + "/", "limit": 1000}) or []:
+            if f.get("id"):
+                gone.append(folder["name"] + "/" + f["name"])
+    if gone and not dry:
+        call("/storage/v1/object/shared-sightings", "DELETE", {"prefixes": gone})
+    print("sightings_link: %d public copie(s) of deleted accounts %s"
+          % (len(gone), "would go (dry)" if dry else "taken down"))
 
 
 def mark_added(dry):

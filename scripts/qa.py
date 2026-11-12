@@ -706,6 +706,16 @@ def check_a_deleted_account_keeps_its_photographs():
     if "Take down a photograph" in flow or "photograph and badge came off" in flow:
         out.append(".github/workflows/nightly.yml says a deleted account's photograph is taken "
                    "down; it is unlinked and stays (Hidde, 2026-10-25).")
+    # AND THE UNPUBLISHED ONES TOO (Hidde, 2026-11-12: "het hele idee is toch dat
+    # we de bomen houden", "als we een boom niet approven maar nog 2 andere m
+    # aanmelden we m alsnog goed kunnen keuren"): deleting an account removes
+    # only the avatar from storage, never a photograph of a tree.
+    settings = (root / "site/src/pages/account/settings.astro").read_text(encoding="utf-8")
+    purge = settings[settings.find("function purgeFiles"):]
+    purge = purge[:purge.find("\n  }\n")]
+    if "sightings" in purge:
+        out.append("site/src/pages/account/settings.astro: deleting an account deletes photographs of "
+                   "trees; only the avatar goes, the trees stay (Hidde, 2026-11-12).")
     return out
 
 
