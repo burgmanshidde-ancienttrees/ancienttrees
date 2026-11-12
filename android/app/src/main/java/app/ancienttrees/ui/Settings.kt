@@ -31,6 +31,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -387,7 +388,19 @@ private fun SettingsRow(
         Icon(icon, null, tint = brand.moss, modifier = Modifier.size(SETTINGS_GLYPH))
         Text(title, fontSize = 16.sp, color = brand.ink, modifier = Modifier.weight(1f))
         value?.let { Text(it, fontSize = 16.sp, color = brand.inkSoft) }
-        Icon(trailing, null, tint = if (trailing == Sym.ChevronRight) brand.inkSoft.copy(alpha = 0.6f) else brand.inkSoft, modifier = Modifier.size(if (trailing == Sym.ChevronRight) SETTINGS_CHEVRON else 16.dp))
+        val glyph = if (trailing == Sym.ChevronRight) SETTINGS_CHEVRON else 16.dp
+        val tint = if (trailing == Sym.ChevronRight) brand.inkSoft.copy(alpha = 0.6f) else brand.inkSoft
+        if (value != null) {
+            // A row with a value ends in .caption2 on the iPhone (Profile.swift, Location
+            // and Directions): chevron.right 8 wide, chevron.up.chevron.down 10, so the
+            // value stands 36 and 38 from the card's edge (it stood 49 and 44 here).
+            // The glyph keeps its size, centred on that frame.
+            Box(Modifier.width(if (trailing == Sym.ChevronRight) 8.dp else 10.dp), contentAlignment = Alignment.Center) {
+                Icon(trailing, null, tint = tint, modifier = Modifier.requiredSize(glyph))
+            }
+        } else {
+            Icon(trailing, null, tint = tint, modifier = Modifier.size(glyph))
+        }
     }
 }
 
@@ -484,25 +497,54 @@ fun BarSheet(
         // A NavigationStack sheet on the iPhone shows no grabber (review 2026-11-11, row 72).
         dragHandle = null,
         floating = !grouped,
-        // A page sheet stops under the status bar on the iPhone (species-pick: its bar
-        // at 78, a strip of the page above); 94 percent of what is left lands at ~76.
+        // A Form sheet stops at the safe area's top on the iPhone, covering the page's
+        // buttons (out/parity/side-by-side/species-pick.png: the sheet's top at 61.8,
+        // the iPhone's 62); here it stood 51 below the status bar, back and share
+        // showing above it (2026-11-12). Its bar puts the capsules 20 below the top
+        // and the title's middle 38 down, so it is 76 tall.
         modifier = Modifier.statusBarsPadding(),
     ) {
-        Column(Modifier.fillMaxWidth().let { if (grouped) it.fillMaxHeight(0.94f) else it }.navigationBarsPadding()) {
-            Box(Modifier.fillMaxWidth().height(56.dp)) {
-                // Cancel slides the sheet down first (Sheet.kt). Both ends in iOS 26's
-                // white capsules (review 2026-11-11, rows 69, 112).
-                val close = LocalSheetClose.current
-                leading?.let { (label, act) ->
-                    BarCapsule(label, { close(act) }, Modifier.align(Alignment.CenterStart).padding(start = 16.dp))
-                }
-                Text(title, fontFamily = BrandFace, fontSize = 17.sp, fontWeight = FontWeight.Bold, color = brand.ink, modifier = Modifier.align(Alignment.Center))
-                trailing?.let { (label, act) ->
-                    BarCapsule(label, act, Modifier.align(Alignment.CenterEnd).padding(end = 16.dp), enabled = trailingEnabled, bold = true)
-                }
-            }
+        Column(Modifier.fillMaxWidth().let { if (grouped) it.fillMaxHeight() else it }.navigationBarsPadding()) {
+            // Cancel slides the sheet down first (Sheet.kt).
+            val close = LocalSheetClose.current
+            SheetNavBar(
+                full = grouped,
+                leading = leading?.let { (label, act) -> label to { close(act) } },
+                title = { Text(title, fontFamily = BrandFace, fontSize = 17.sp, fontWeight = FontWeight.Bold, color = brand.ink) },
+                trailing = trailing,
+                trailingEnabled = trailingEnabled,
+            )
             val column = this
             PlainText { column.content() }
+        }
+    }
+}
+
+/**
+ * THE ONE BAR OF A SHEET WITH A NAVIGATION ROW: Cancel or Close at the leading
+ * end, the title centred, Done at the trailing end, both ends in iOS 26's white
+ * capsules, 36 tall and 20 from the edge (every bar capsule in SweepFrames).
+ * On a full sheet (.large) the row's middle stands 38 under the sheet's top, as
+ * contribute, feedback, profile-edit and species-pick all measure on the iPhone
+ * (Hidde, 2026-11-12: "ook de titel op de overlay teveel naar boven"), so it is
+ * 76 tall; a fitted sheet keeps 56.
+ */
+@Composable
+fun SheetNavBar(
+    full: Boolean,
+    leading: Pair<String, () -> Unit>?,
+    title: @Composable () -> Unit,
+    trailing: Pair<String, () -> Unit>? = null,
+    trailingEnabled: Boolean = true,
+    leadingTag: String? = null,
+) {
+    Box(Modifier.fillMaxWidth().height(if (full) 76.dp else 56.dp).testTag("sheet-nav-bar")) {
+        leading?.let { (label, act) ->
+            BarCapsule(label, act, Modifier.align(Alignment.CenterStart).padding(start = 20.dp).let { m -> leadingTag?.let { m.testTag(it) } ?: m }, height = 36.dp)
+        }
+        Box(Modifier.align(Alignment.Center)) { title() }
+        trailing?.let { (label, act) ->
+            BarCapsule(label, act, Modifier.align(Alignment.CenterEnd).padding(end = 20.dp), enabled = trailingEnabled, bold = true, height = 36.dp)
         }
     }
 }

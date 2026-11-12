@@ -60,6 +60,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
@@ -437,14 +438,18 @@ private fun SearchField(query: String, onChange: (String) -> Unit) {
         textStyle = sfStyle(fontSize = 17.sp, color = brand.ink),
         keyboardOptions = KeyboardOptions(autoCorrectEnabled = false),
         // The iPhone's bar carries its search field in 60 under the 54 (SweepFrames
-        // people: the first cell at 114 below the safe area); here 4 + 40 + 16.
-        modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp).padding(top = 4.dp, bottom = 16.dp),
+        // people: the first cell at 114 below the safe area): iOS 26's white capsule,
+        // 44 tall with a soft shadow, right under the bar, then 16 (its shot: 117 to
+        // 160; the field here was 40 and grey, 2026-11-12).
+        modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp).padding(bottom = 16.dp),
         decorationBox = { inner ->
             Row(
                 verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.fillMaxWidth().height(40.dp).background(brand.surfaceMuted, RoundedCornerShape(50)).padding(horizontal = 12.dp),
+                modifier = Modifier.fillMaxWidth().height(44.dp)
+                    .shadow(10.dp, RoundedCornerShape(50), ambientColor = Color.Black.copy(alpha = 0.12f), spotColor = Color.Black.copy(alpha = 0.12f))
+                    .background(brand.surface, RoundedCornerShape(50)).padding(horizontal = 14.dp),
             ) {
-                Icon(Sym.Search, null, tint = brand.inkSoft, modifier = Modifier.size(18.dp))
+                Icon(Sym.Search, null, tint = brand.ink, modifier = Modifier.size(20.dp))
                 Spacer(Modifier.size(6.dp))
                 Box(Modifier.weight(1f)) {
                     if (query.isEmpty()) Text(stringResource(R.string.people_search), fontSize = 17.sp, color = brand.inkSoft.copy(alpha = 0.8f))
@@ -476,10 +481,13 @@ private fun PersonRow(
         // at 16, the more button ending 16 from the edge (SweepFrames people).
         modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 16.dp, top = 17.dp, bottom = 17.dp),
     ) {
-        Row(
+        // People.swift: HStack(spacing: 12) of the name button, which hugs what it
+        // holds, a Spacer(minLength: 8), Follow and the ellipsis. The flexible room
+        // is this Box; the tap area inside it is only as wide as the name.
+        Box(Modifier.weight(1f)) { Row(
             horizontalArrangement = Arrangement.spacedBy(12.dp),
             verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier.weight(1f).clickable(role = Role.Button) { host.openPerson(p.userId) }.testTag("person-open"),
+            modifier = Modifier.clickable(role = Role.Button) { host.openPerson(p.userId) }.testTag("person-open"),
         ) {
             Box {
                 Avatar(p.avatarUrl, p.displayName, 40, initialSize = 16)
@@ -500,8 +508,8 @@ private fun PersonRow(
                     AmbassadorBadge(host.profiles.placesByUser[p.userId].orEmpty(), compact = true)
                 }
             }
-        }
-        Spacer(Modifier.size(8.dp))
+        } }
+        Spacer(Modifier.size(32.dp))
         if (hidden) {
             Text(
                 stringResource(R.string.people_unblock), fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = brand.moss, textAlign = TextAlign.End,
@@ -518,6 +526,7 @@ private fun PersonRow(
             )
         }
         val more = stringResource(R.string.people_more, p.displayName)
+        Spacer(Modifier.size(12.dp))
         Box(
             Modifier.size(44.dp).clickable(role = Role.Button, onClick = onMore).semantics { contentDescription = more }.testTag("person-more"),
             contentAlignment = Alignment.Center,

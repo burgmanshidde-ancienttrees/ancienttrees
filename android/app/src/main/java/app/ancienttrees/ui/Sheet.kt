@@ -25,6 +25,7 @@ import androidx.compose.foundation.layout.WindowInsetsSides
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -208,12 +209,25 @@ fun AppSheet(
             // by the bar's height (its foot stood 31.6 up, the last button 58 against
             // the iPhone's 35; android_spacing.py, 2026-11-12).
             translationY = -10.dp.toPx() * (1f - frac) + gestureOnly
-        } else modifier.semantics { testTagsAsResourceId = true },
+        // A FULL SHEET (.large) stands under the status bar with 10 of air, the same
+        // rule as topClear above, for every caller: contribute, feedback and the
+        // collect steps sat against the status bar, profile-edit and species-pick
+        // 50 lower (Hidde, 2026-11-12: "veel kruisjes op de overlay verkeerd").
+        // A caller's own statusBarsPadding finds the inset already taken.
+        } else modifier.statusBarsPadding().padding(top = 10.dp).semantics { testTagsAsResourceId = true },
         shape = if (floating) RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp, bottomStart = 36.dp * (1f - frac), bottomEnd = 36.dp * (1f - frac))
         else RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp),
         sheetState = sheetState,
         containerColor = containerColor,
-        dragHandle = dragHandle,
+        // A full sheet marks its top for scripts/android_spacing.py, which holds it
+        // and the navigation row under it against the iPhone's (a point tall, in the
+        // handle's slot, which Material lays at the top of the surface).
+        dragHandle = if (floating) dragHandle else ({
+            androidx.compose.foundation.layout.Column(horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally) {
+                Box(Modifier.size(1.dp).testTag("full-sheet-top"))
+                dragHandle?.invoke()
+            }
+        }),
         properties = properties,
         // The iPhone's dimming is light: white under it reads #D6D6DA, Material's 32
         // percent black reads #A8A8A8 (review 2026-11-11, row 124).

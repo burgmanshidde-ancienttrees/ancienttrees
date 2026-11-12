@@ -29,6 +29,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
@@ -184,6 +185,13 @@ internal fun ColumnScope.SearchableList(
 @Composable
 internal fun SheetSearchField(query: String, onQuery: (String) -> Unit, prompt: String, modifier: Modifier = Modifier) {
     val brand = Brand.colors
+    // iOS 26's bottom search capsule: 48 tall, 28 from each side and 28 above the
+    // screen's foot (out/parity/side-by-side/species-pick.png, 2026-11-12). This
+    // field stands on the navigation bar, so the bar's height comes off the 28;
+    // over three-button navigation it keeps 4 above the buttons.
+    val nav = with(androidx.compose.ui.platform.LocalDensity.current) {
+        androidx.compose.foundation.layout.WindowInsets.navigationBars.getBottom(this).toDp()
+    }
     BasicTextField(
         value = query,
         onValueChange = onQuery,
@@ -192,7 +200,7 @@ internal fun SheetSearchField(query: String, onQuery: (String) -> Unit, prompt: 
         cursorBrush = SolidColor(brand.moss),
         modifier = modifier
             .imePadding()
-            .padding(horizontal = 22.dp, vertical = 14.dp)
+            .padding(start = 28.dp, end = 28.dp, top = 14.dp, bottom = (28.dp - nav).coerceAtLeast(4.dp))
             .fillMaxWidth()
             .testTag("species-search"),
         decorationBox = { inner ->

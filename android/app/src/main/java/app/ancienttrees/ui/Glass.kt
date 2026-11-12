@@ -108,7 +108,9 @@ fun BarCapsule(
             .clip(CircleShape)
             .clickable(enabled = enabled, role = androidx.compose.ui.semantics.Role.Button, onClick = onClick)
             .background(brand.ground, CircleShape)
-            .padding(horizontal = 16.dp),
+            // iOS 26's bar capsule: about 12 either side of its word (SweepFrames:
+            // Close 67 wide, Cancel 76.7, at 17 point; 16 here read 9 wider).
+            .padding(horizontal = 12.dp),
     ) {
         Text(
             label,
@@ -129,7 +131,10 @@ fun BackCircle(onBack: () -> Unit, modifier: Modifier = Modifier) {
         contentAlignment = androidx.compose.ui.Alignment.Center,
         modifier = modifier
             .size(44.dp)
-            .shadow(10.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.20f), spotColor = Color.Black.copy(alpha = 0.24f))
+            // iOS 26's glass circle throws a wider, darker halo than this did: 7 to 13
+            // levels darker just outside it on the iPhone's people page, 2 here, so
+            // white on white it vanished (2026-11-12).
+            .shadow(14.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.35f), spotColor = Color.Black.copy(alpha = 0.40f))
             .clip(CircleShape)
             .clickable(role = androidx.compose.ui.semantics.Role.Button, onClick = onBack)
             .background(brand.ground, CircleShape)

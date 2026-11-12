@@ -44,6 +44,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.layout.windowInsetsTopHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListScope
@@ -585,8 +586,10 @@ fun ShelfHeader(title: String, seeAll: (() -> Unit)? = null) {
             modifier = Modifier.weight(1f).alignByBaseline().semantics { heading() },
         )
         if (seeAll != null) {
+            // Style.swift: the words, HStack's 5 and a .caption2 chevron about 5.3 wide
+            // ending on the margin (the words stood 7 further in here, 2026-11-12).
             Row(
-                horizontalArrangement = Arrangement.spacedBy(3.dp),
+                horizontalArrangement = Arrangement.spacedBy(5.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
                     .alignByBaseline()
@@ -595,7 +598,9 @@ fun ShelfHeader(title: String, seeAll: (() -> Unit)? = null) {
                     .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = seeAll),
             ) {
                 Text(stringResource(R.string.see_all), fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = brand.moss)
-                Icon(Sym.ChevronRight, null, tint = brand.moss, modifier = Modifier.size(14.dp))
+                Box(Modifier.width(6.dp), contentAlignment = Alignment.Center) {
+                    Icon(Sym.ChevronRight, null, tint = brand.moss, modifier = Modifier.requiredSize(14.dp))
+                }
             }
         }
     }

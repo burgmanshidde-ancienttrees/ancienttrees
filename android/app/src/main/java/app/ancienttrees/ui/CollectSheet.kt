@@ -478,14 +478,24 @@ fun CollectSheet(
         // lift is on this box, outside animateContentSize, which clips: lifted
         // inside it, the tile was cut at a hard line under the grabber and the X
         // clipped away (2026-11-12, out/parity/android/collect-intro.png).
+        // The tall steps likewise come 44 up for their close row 4 under the top
+        // (CollectSheet.swift closeRow); lifted inside the clip, their X was cut
+        // away and Android showed none (2026-11-12, collect-place, collect-identify).
         val lift by androidx.compose.animation.core.animateDpAsState(
-            if (stage == Stage.Intro) 36.dp else 0.dp, label = "collect-intro-lift",
+            when {
+                stage == Stage.Intro -> 36.dp
+                tall -> 44.dp
+                else -> 0.dp
+            },
+            label = "collect-step-lift",
         )
         Box(
             (if (tall) Modifier.fillMaxHeight() else Modifier)
                 .layout { m, c ->
-                    val p = m.measure(c)
                     val t = lift.roundToPx()
+                    // A tall step fills the sheet: it is measured 44 taller, so it
+                    // keeps its foot when it moves up into the handle's room.
+                    val p = m.measure(if (tall && c.hasBoundedHeight) c.copy(maxHeight = c.maxHeight + t, minHeight = minOf(c.minHeight + t, c.maxHeight + t)) else c)
                     layout(p.width, (p.height - t).coerceAtLeast(0)) { p.place(0, -t) }
                 }
                 .animateContentSize(Motion.snappy()),
@@ -697,24 +707,14 @@ private fun FitStep(onClose: () -> Unit, content: @Composable ColumnScope.() -> 
 
 @Composable
 private fun CloseRow(onClose: () -> Unit) {
-    Row(Modifier.fillMaxWidth().padding(horizontal = 2.dp), horizontalArrangement = Arrangement.End) {
+    // closeRow: 12 in and a 44 box, the 30 circle 19 from the edge; this 48 box
+    // takes 10 to put it there (it stood at 11).
+    Row(Modifier.fillMaxWidth().padding(horizontal = 10.dp), horizontalArrangement = Arrangement.End) {
         SheetCloseButton(onClose)
     }
 }
 
 // MARK: - Where does it stand
-
-/**
- * The tall steps' close row 4 below the sheet's top, as CollectSheet.swift's
- * closeRow (.padding(.top, 4)): AppSheet's handle keeps 48 above the content, so
- * the step comes 44 up into it, taking that room at its foot. Measured, the
- * place step's title sat 47.6 lower than the iPhone's.
- */
-private fun Modifier.intoHandleRoom(by: Dp): Modifier = layout { m, c ->
-    val t = by.roundToPx()
-    val p = m.measure(if (c.hasBoundedHeight) c.copy(maxHeight = c.maxHeight + t, minHeight = minOf(c.minHeight + t, c.maxHeight + t)) else c)
-    layout(p.width, (p.height - t).coerceAtLeast(0)) { p.place(0, -t) }
-}
 
 @Composable
 private fun PlaceStep(
@@ -728,7 +728,7 @@ private fun PlaceStep(
 ) {
     val brand = Brand.colors
     var recentre by remember { mutableIntStateOf(0) }
-    Column(Modifier.fillMaxSize().intoHandleRoom(44.dp)) {
+    Column(Modifier.fillMaxSize()) {
         CloseRow(onClose)
         Column(Modifier.padding(horizontal = 20.dp).padding(bottom = 12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
             Text(stringResource(R.string.cf_where), fontFamily = BrandFace, fontWeight = FontWeight.ExtraBold, fontSize = 24.sp, color = brand.ink)
@@ -797,7 +797,7 @@ private fun IdentifyStep(
     onClose: () -> Unit,
 ) {
     val brand = Brand.colors
-    Column(Modifier.fillMaxSize().intoHandleRoom(44.dp)) {
+    Column(Modifier.fillMaxSize()) {
         CloseRow(onClose)
         Column(
             verticalArrangement = Arrangement.spacedBy(20.dp),
@@ -892,7 +892,8 @@ private fun ChoiceRow(icon: androidx.compose.ui.graphics.vector.ImageVector, tin
     val brand = Brand.colors
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier.fillMaxWidth().heightIn(min = 44.dp).clickable(role = Role.Button, onClick = onClick).testTag(tag),
+        // The iPhone's Button hugs its HStack (CollectSheet.swift, collect-not-sure).
+        modifier = Modifier.heightIn(min = 44.dp).clickable(role = Role.Button, onClick = onClick).testTag(tag),
     ) {
         Icon(icon, null, tint = tint, modifier = Modifier.size(24.dp))
         Spacer(Modifier.width(10.dp))
