@@ -10,6 +10,13 @@ checkmark.seal.fill). Lucide has no filled twins. One set, never mixed, and
 every glyph comes from it: nothing here is drawn by hand. Back, share and
 the overflow menu take Android's form (Airbnb's line, DECISIONS.md 2026-11-10).
 
+ONE EXCEPTION (DECISIONS.md 2026-11-12): the iPhone's `mappin`, a round head
+on a needle (PinPicker.swift:57), has no twin in Material Symbols, whose pins
+are teardrops and a thumbtack (`keep`, which stood in until then and read as a
+different thing). It comes from Phosphor 2.1.1, `map-pin-simple` fill, the set
+the website draws (site/src/icons/phosphor, chosen 2026-09-24), fetched from
+its published npm package (MIT, android/ICONS-LICENSE-MIT-PHOSPHOR.txt).
+
 Each glyph is fetched from the published npm package at a pinned version and
 turned into a Compose ImageVector. Run again after changing GLYPHS:
 
@@ -32,6 +39,9 @@ URL = "https://cdn.jsdelivr.net/npm/@material-symbols/svg-{w}@{v}/rounded/{name}
 GH_COMMIT = "10ecc14790612ca8fd164e3f4ffe9c16fc50d5b7"
 GH_URL = ("https://cdn.jsdelivr.net/gh/google/material-design-icons@{c}/symbols/web/{name}/"
           "materialsymbolsrounded/{file}_24px.svg")
+# The one glyph from another set (see the docstring): Phosphor at the website's version.
+PH_VERSION = "2.1.1"
+PH_URL = "https://cdn.jsdelivr.net/npm/@phosphor-icons/core@{v}/assets/{weight}/{name}.svg"
 
 # Kotlin name: (Material Symbols name, filled, weight, mirrors in right-to-left)
 # The SF Symbol each one stands for is named beside it. Weight 400 is SF's
@@ -148,7 +158,7 @@ GLYPHS = {
     "Sparkle": ("auto_awesome", True, 400, False,
                 {"src": "gh", "part": 1, "centre": (9.0, 12.0), "reach": 6.575}),
     "Building": ("domain", False, 400, False),  # building.2
-    "MapPin": ("keep", True, 400, False),  # mappin: the set's pin on a needle (no ball-headed pin in the set)
+    "MapPin": ("map-pin-simple", True, 400, False, {"src": "phosphor"}),  # mappin: Phosphor's round head on a needle, the one glyph from outside the set (docstring)
     "CloseBold": ("close", False, 700, False),  # xmark .bold
     "CheckBold": ("check", False, 700, False),  # checkmark .bold
     "ChevronRightSemibold": ("chevron_right", False, 600, True),  # chevron.right .semibold
@@ -220,7 +230,27 @@ def fetch_gh(name, fill, weight):
     return [normalise(p) for p in paths]
 
 
+def fetch_phosphor(name, fill):
+    """Phosphor's published package: a 256 grid, fill as its own weight."""
+    weight = "fill" if fill else "regular"
+    file = f"{name}-fill" if fill else name
+    path = CACHE / "phosphor" / f"{file}.svg"
+    if not path.exists():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(["curl", "-sfm", "20", "-o", str(path),
+                        PH_URL.format(v=PH_VERSION, weight=weight, name=file)], check=True)
+    svg = path.read_text()
+    if 'viewBox="0 0 256 256"' not in svg:
+        raise ValueError(f"{file}: unexpected viewBox")
+    paths = re.findall(r'<path d="([^"]+)"', svg)
+    if not paths:
+        raise ValueError(f"{file}: no path")
+    return [normalise(p) for p in paths]
+
+
 def fetch(name, fill, weight, src="npm"):
+    if src == "phosphor":
+        return fetch_phosphor(name, fill)
     if src == "gh":
         return fetch_gh(name, fill, weight)
     file = f"{name}-fill" if fill else name
@@ -264,7 +294,8 @@ def main():
             parts = ["M" + x for x in whole.split("M") if x.strip()]
             ds = [parts[opts["part"]].strip()]
         args = ", ".join(f'"{d}"' for d in ds)
-        how = (", flipped" if opts.get("flip") else "") + (", from Google's repository" if src == "gh" else "")
+        how = (", flipped" if opts.get("flip") else "") + (", from Google's repository" if src == "gh" else "") \
+            + (f", Phosphor {PH_VERSION} (MIT), the one glyph from outside the set" if src == "phosphor" else "")
         lines.append(f'    /** {name}{" filled" if fill else ""}, weight {weight}{how}. */')
         if "centre" in opts:
             cx, cy = opts["centre"]
@@ -272,7 +303,7 @@ def main():
             lines.append(f'    val {kt}: ImageVector by lazy {{ symbolPart("{kt}", {k:.4f}f, {(12 - cx) * k:.4f}f, '
                          f'{(12 - cy) * k:.4f}f, {args}) }}')
         elif opts or src == "gh":
-            port = "24f" if src == "gh" else "960f"
+            port = {"gh": "24f", "phosphor": "256f"}.get(src, "960f")
             lines.append(f'    val {kt}: ImageVector by lazy {{ symbolTurned("{kt}", {str(mirror).lower()}, {port}, '
                          f'{str(bool(opts.get("flip"))).lower()}, {float(opts.get("rotate", 0))}f, {args}) }}')
         else:

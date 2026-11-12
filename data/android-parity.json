@@ -268,7 +268,13 @@
   },
   "collect-place": {
     "status": "parity",
-    "differences": []
+    "differences": [
+      {
+        "what": "The pin's glyph is Phosphor's, not the app's one icon set",
+        "why": "The iPhone draws SF mappin, a round head on a needle (PinPicker.swift:57). Material Symbols Rounded, the set every other Android glyph comes from, has no ball-headed pin (its pins are teardrops and the keep thumbtack, which stood in and read as a different object). Phosphor 2.1.1 map-pin-simple fill, the set the website draws, is the one exception: same shape, from a published package, never drawn.",
+        "source": "android/generate_symbols.py (docstring, GLYPHS MapPin); DECISIONS.md 2026-11-12; https://cdn.jsdelivr.net/npm/@phosphor-icons/core@2.1.1/assets/fill/map-pin-simple-fill.svg"
+      }
+    ]
   },
   "collect-identify": {
     "status": "parity",
