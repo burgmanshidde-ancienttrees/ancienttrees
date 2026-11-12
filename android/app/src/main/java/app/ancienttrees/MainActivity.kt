@@ -509,6 +509,9 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         // The sweep's stand-ins for an account (debug builds only, nothing sent).
         if (launch.mineDemo) myTrees.seedDemo(launch.at?.first ?: DAM_SQUARE.lat, launch.at?.second ?: DAM_SQUARE.lng)
         if (launch.collectedIds.isNotEmpty() || launch.savedIds.isNotEmpty()) saves.seed(launch.collectedIds, launch.savedIds)
+        launch.args.firstOrNull { it.startsWith("-approved=") }?.let { arg ->
+            myTrees.demoApproved(arg.removePrefix("-approved=").split(",").filter { it.isNotEmpty() }.toSet())
+        }
         launch.openMine?.let { nav.push(app.ancienttrees.ui.Page.Mine(it)) }
     }
     LaunchedEffect(Unit) {
@@ -641,6 +644,16 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         editName = { routes.editProfile = true },
         openPerson = { routes.openPerson(it) },
         openTree = { openTree(it) },
+        // The app has no screen for a reader's shared tree yet (the Shared link
+        // above), so its page opens in the browser, as that link does.
+        openShared = { url ->
+            runCatching {
+                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)).apply {
+                    addCategory(Intent.CATEGORY_BROWSABLE)
+                    selector = Intent(Intent.ACTION_VIEW, Uri.parse("https://"))
+                })
+            }
+        },
                 )
 
     // A TREE PAGE on any stack.

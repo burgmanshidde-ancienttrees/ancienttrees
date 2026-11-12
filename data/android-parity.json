@@ -485,7 +485,8 @@
     "differences": [
       "Pull to refresh on Find people loads who you follow and Suggested again (Material's pull to refresh, People.swift RefreshableWhen); Followers and Following keep still, as on the iPhone.",
       "Blocked people are held in memory and read back from the server's blocks table; the iPhone also keeps the list on the phone (hard rule 11 on Android).",
-      "Share your profile opens Android's share sheet (forced)."
+      "Share your profile opens Android's share sheet (forced).",
+      "A person's own tree on their profile (2026-11-12) opens its shared page in the browser, as a shared-tree link already does on Android: the app has no SharedTreeView yet. The iPhone opens it in the app (Route.shared). The Approved capsule, the own tiles and their order match."
     ],
     "owner": null,
     "spacing_allowed": [

@@ -622,7 +622,7 @@ private fun LaneContent(
                                 OwnPhoto(item.s, mine, Modifier.fillMaxSize()) { Named(item.s.name) }
                             }
                             is TimelineItem.Sent -> CollectedTile(item.t.city) { Named(item.t.title) }
-                            is TimelineItem.Ours -> CollectedTile(item.t.city, Modifier.clickable { actions.openTree(item.t) }.semantics { contentDescription = item.t.name }) {
+                            is TimelineItem.Ours -> CollectedTile(item.t.city, Modifier.clickable { actions.openTree(item.t) }.semantics { contentDescription = item.t.name }, approved = item.t.id in mine.approved) {
                                 OursPicture(item.t, shots[item.t.id], mine)
                             }
                         }
@@ -687,7 +687,7 @@ private fun CountryChips(countries: List<Pair<String, Int>>, total: Int, country
 
 /** CollectedTile: a photograph in a 3:4 tile, its city on a tag, nothing else. */
 @Composable
-private fun CollectedTile(city: String?, modifier: Modifier = Modifier, picture: @Composable () -> Unit) {
+private fun CollectedTile(city: String?, modifier: Modifier = Modifier, approved: Boolean = false, picture: @Composable () -> Unit) {
     Box(
         Modifier
             .fillMaxWidth()
@@ -697,6 +697,8 @@ private fun CollectedTile(city: String?, modifier: Modifier = Modifier, picture:
     ) {
         picture()
         if (!city.isNullOrEmpty()) TagPill(city, Modifier.align(Alignment.BottomStart).padding(6.dp))
+        // A tree you added that we took into the map (Hidde, 2026-11-12).
+        if (approved) ApprovedPill(Modifier.align(Alignment.TopStart).padding(6.dp))
     }
 }
 

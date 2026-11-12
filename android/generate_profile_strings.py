@@ -123,6 +123,7 @@ S = {
  "people_followers_word": ["followers", "volgers", "Follower", "abonnés", "seguidores", "follower", "seguidores", "フォロワー"],
  "people_following_word": ["following", "volgend", "folgt", "abonnements", "siguiendo", "seguiti", "a seguir", "フォロー中"],
  "person_lane_collected": ["Collected", "Verzameld", "Gesammelt", "Collectés", "Coleccionados", "Collezionati", "Colecionadas", "コレクト"],
+ "profile_approved": ["Approved", "Goedgekeurd", "Genehmigt", "Approuvé", "Aprobado", "Approvato", "Aprovado", "承認済み"],
  "person_none_collected": ["No trees collected yet.", "Nog geen bomen verzameld.", "Noch keine Bäume gesammelt.", "Aucun arbre collecté pour l'instant.", "Aún no ha coleccionado árboles.", "Nessun albero collezionato.", "Ainda sem árvores colecionadas.", "まだコレクトした木はありません。"],
  "person_none_saved": ["No trees saved yet.", "Nog geen bomen bewaard.", "Noch keine Bäume gespeichert.", "Aucun arbre gardé pour l'instant.", "Aún no ha guardado árboles.", "Nessun albero salvato.", "Ainda sem árvores guardadas.", "まだ保存した木はありません。"],
  "person_private": ["This profile is private.", "Dit profiel is privé.", "Dieses Profil ist privat.", "Ce profil est privé.", "Este perfil es privado.", "Questo profilo è privato.", "Este perfil é privado.", "このプロフィールは非公開です。"],
