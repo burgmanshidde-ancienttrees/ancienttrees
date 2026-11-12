@@ -2,25 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-08T23:42:19+00:00",
-   "date": "2026-09-08",
-   "run_id": "34291804285",
-   "minutes": 0.3,
-   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
-   "attempts": 1,
-   "turns": null,
-   "denials": null,
-   "denials_source": "NOT FOUND; result keys were: ",
-   "ended": "cut off at the cap, no result record",
-   "tokens": null,
-   "claims_held": [],
-   "commits": 0,
-   "cities_touched": 0,
-   "cities": [],
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-09-08T23:44:24+00:00",
    "date": "2026-09-08",
    "run_id": "34291960494",
@@ -21363,6 +21344,27 @@
     }
    ],
    "trees": 1,
+   "logged": true
+  },
+  {
+   "started": "2026-11-12T07:32:10+00:00",
+   "date": "2026-11-12",
+   "run_id": "43175895822",
+   "minutes": 2.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 49,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 208146,
+   "claims_held": [
+    "coimbra"
+   ],
+   "commits": 4,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
    "logged": true
   }
  ],
