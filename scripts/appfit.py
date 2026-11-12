@@ -334,6 +334,15 @@ def in_shelf(el):
     return False
 
 
+def _under(el, ancestor):
+    p = el.parent
+    while p is not None:
+        if p is ancestor:
+            return True
+        p = p.parent
+    return False
+
+
 def mark_shelves(screen):
     """Find the horizontal shelves, and ONLY the horizontal shelves.
 
@@ -368,6 +377,15 @@ def mark_shelves(screen):
             if not children:
                 continue
             span = max(c.right for c in children) - min(c.x for c in children)
+            if el.ident.endswith("-shelf"):
+                # A lazy stack inside a declared shelf reports a box as wide as
+                # the cards it has drawn, not the row: the Highlights' was 252
+                # with one card and 402 with four (CI, 2026-11-12, every card
+                # past the second called CLIPPED). So a declared shelf measures
+                # everything inside it, which only a declared one may.
+                inner = [d for d in screen["els"] if d is not el and _under(d, el)]
+                if inner:
+                    span = max(span, max(d.right for d in inner) - min(d.x for d in inner))
             # A row DECLARED as a shelf by its identifier ("...-shelf") scrolls
             # by design even when it is only a little wider than the screen:
             # the map's four filter chips spill 13 points on iOS 18, which is
