@@ -60,13 +60,19 @@
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Frankfurt-Eschersheim_Lindenbaum.JPG",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Daviidos, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/frk_001-the-eschersheimer-linde-hofele.jpg",
+        "license": "Used with permission from Hans Hofele; credit required",
+        "source": "mail",
+        "attribution": "Hans Hofele",
         "status": "approved",
-        "width": 2664,
-        "height": 4000,
-        "taken_month": 9
+        "width": 1270,
+        "height": 1600,
+        "taken_month": 11,
+        "permission": {
+          "words": "Hans agreed on the phone with Hidde on 2026-11-12 that his photographs go into the app (Hidde promised him screenshots of them there), then mailed them: 'some pics of the Eschersheimer Linde'.",
+          "date": "2026-11-12"
+        },
+        "note": "Sent by mail on 2026-11-12 after the FNP interview. Looked at 2026-11-12: The lime from the street: full autumn crown over Eschersheimer Landstrasse, the U-Bahn sign of Lindenbaum station on the right, tracks on the left. Daylight and colour. Not an open licence: credit him and ask before reuse elsewhere."
       },
       "how_to_recognise": "You can recognise it by standing right on the public street beside the U-Bahn line. It stands on Eschersheimer Landstraße, at Lindenbaum station.",
       "official_register": {
@@ -74,7 +80,48 @@
         "url": "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/eschersheimer-linde"
       },
       "height_m": 25,
-      "verify_notes": "2026-11-10: the U-Bahn bend 'wegen des Baumes' rests on one unreferenced sentence in de.wikipedia (Eschersheimer Linde); frankfurt.de says nothing about it. Written as local account, never as fact. Station named after the street Am Lindenbaum, which the article says is named after the tree."
+      "verify_notes": "2026-11-10: the U-Bahn bend 'wegen des Baumes' rests on one unreferenced sentence in de.wikipedia (Eschersheimer Linde); frankfurt.de says nothing about it. Written as local account, never as fact. Station named after the street Am Lindenbaum, which the article says is named after the tree.",
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/frk_001-the-eschersheimer-linde-hofele-trunk.jpg",
+          "license": "Used with permission from Hans Hofele; credit required",
+          "source": "mail",
+          "attribution": "Hans Hofele",
+          "status": "approved",
+          "width": 1202,
+          "height": 1600,
+          "taken_month": 11,
+          "permission": {
+            "words": "Hans agreed on the phone with Hidde on 2026-11-12 that his photographs go into the app (Hidde promised him screenshots of them there), then mailed them: 'some pics of the Eschersheimer Linde'.",
+            "date": "2026-11-12"
+          },
+          "note": "Sent by mail on 2026-11-12 after the FNP interview. Looked at 2026-11-12: The burred trunk close, the U-Bahn tracks and Eschersheimer Landstrasse behind it. Daylight and colour. Not an open licence: credit him and ask before reuse elsewhere."
+        },
+        {
+          "url": "https://ancienttrees.app/photos/frk_001-the-eschersheimer-linde-hofele-crown.jpg",
+          "license": "Used with permission from Hans Hofele; credit required",
+          "source": "mail",
+          "attribution": "Hans Hofele",
+          "status": "approved",
+          "width": 1202,
+          "height": 1600,
+          "taken_month": 11,
+          "permission": {
+            "words": "Hans agreed on the phone with Hidde on 2026-11-12 that his photographs go into the app (Hidde promised him screenshots of them there), then mailed them: 'some pics of the Eschersheimer Linde'.",
+            "date": "2026-11-12"
+          },
+          "note": "Sent by mail on 2026-11-12 after the FNP interview. Looked at 2026-11-12: The crown against the low sun, the trunk dark, the street and tracks beside it. Backlit, so never the lead. Not an open licence: credit him and ask before reuse elsewhere."
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Frankfurt-Eschersheim_Lindenbaum.JPG",
+          "license": "CC BY-SA 3.0",
+          "attribution": "Daviidos, via Wikimedia Commons",
+          "status": "approved",
+          "width": 2664,
+          "height": 4000,
+          "taken_month": 9
+        }
+      ]
     },
     {
       "id": "frk_002",
