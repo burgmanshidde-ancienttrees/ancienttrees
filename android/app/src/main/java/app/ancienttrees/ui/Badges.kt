@@ -91,7 +91,7 @@ fun EarlyAdopterBadge(size: Int = 12) {
             .background(brand.gold.copy(alpha = 0.18f), RoundedCornerShape(50))
             .padding(top = 3.dp, bottom = 3.dp, start = 7.dp, end = 9.dp),
     ) {
-        Icon(Sym.SparklesFill, null, tint = brand.goldInk, modifier = Modifier.size((size + 1).dp))
+        Icon(Sym.Sparkle, null, tint = brand.goldInk, modifier = Modifier.size((size + 1).dp))
         Text(stringResource(R.string.early_adopter), color = brand.goldInk, fontSize = size.sp, fontWeight = FontWeight.Medium, maxLines = 1)
     }
 }
@@ -102,7 +102,7 @@ fun EarlyAdopterSheet(onDismiss: () -> Unit) {
     BrandSheet(
         title = stringResource(R.string.early_title),
         message = stringResource(R.string.early_body),
-        icon = Sym.SparklesFill,
+        icon = Sym.Sparkle,
         iconTint = Brand.colors.goldInk,
         iconGround = Brand.colors.gold.copy(alpha = 0.18f),
         onDismiss = onDismiss,

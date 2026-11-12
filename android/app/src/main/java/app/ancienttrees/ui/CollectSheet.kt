@@ -474,8 +474,20 @@ fun CollectSheet(
         val tall = stage == Stage.Place || stage == Stage.Identify
         // A STEP CHANGES WITH SWIFTUI'S .snappy (CollectSheet.swift withAnimation(.snappy)):
         // the old step fades out, the new one in, and the sheet grows or shrinks to it.
+        // The intro stands 36 up in AppSheet's handle room (see CollectIntro). The
+        // lift is on this box, outside animateContentSize, which clips: lifted
+        // inside it, the tile was cut at a hard line under the grabber and the X
+        // clipped away (2026-11-12, out/parity/android/collect-intro.png).
+        val lift by androidx.compose.animation.core.animateDpAsState(
+            if (stage == Stage.Intro) 36.dp else 0.dp, label = "collect-intro-lift",
+        )
         Box(
             (if (tall) Modifier.fillMaxHeight() else Modifier)
+                .layout { m, c ->
+                    val p = m.measure(c)
+                    val t = lift.roundToPx()
+                    layout(p.width, (p.height - t).coerceAtLeast(0)) { p.place(0, -t) }
+                }
                 .animateContentSize(Motion.snappy()),
         ) {
             androidx.compose.animation.AnimatedContent(
@@ -598,14 +610,9 @@ private fun CollectIntro(
     val brand = Brand.colors
     // CollectSheet.swift: the intro 24 below the sheet's top (.padding(.top, 24),
     // the handle drawn inside), its X at 16 (close.offset(y: -8)). AppSheet's
-    // handle keeps 48 here, so the intro comes 36 up; its tile sat 37 lower.
-    Box(
-        Modifier.layout { m, c ->
-            val p = m.measure(c)
-            val t = 36.dp.roundToPx()
-            layout(p.width, (p.height - t).coerceAtLeast(0)) { p.place(0, -t) }
-        },
-    ) {
+    // handle keeps 48 here, so the intro comes 36 up (the caller lifts it, outside
+    // its clipping box); its tile sat 37 lower.
+    Box {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
