@@ -87,6 +87,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        // The catalogue starts reading now, not after the first frame (CataloguePreload).
+        app.ancienttrees.feed.CataloguePreload.start(applicationContext)
         // Photographs on disk between launches (RemoteImage.kt, the iPhone's ImageStore.prepareCache).
         app.ancienttrees.ui.ImageStore.prepareCache(applicationContext)
         link = intent?.data
@@ -510,7 +512,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     }
     LaunchedEffect(Unit) {
         val started = android.os.SystemClock.elapsedRealtime()
-        catalogue = store.load()
+        catalogue = app.ancienttrees.feed.CataloguePreload.await(context)
         android.util.Log.i("AncientTrees", "catalogue ${catalogue?.trees?.size} trees in ${android.os.SystemClock.elapsedRealtime() - started} ms")
         store.refresh(catalogue?.version)?.let { catalogue = it }
     }

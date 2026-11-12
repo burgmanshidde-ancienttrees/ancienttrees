@@ -85,6 +85,9 @@ android {
     sourceSets {
         getByName("main") {
             assets.srcDir("../../ios/AncientTrees/AncientTrees/Data")
+            // THE MAP'S STYLE AS THE SITE SERVES IT, so a first launch draws pins
+            // without waiting on the network for it (map/TreeMapView.kt styleFromDisk).
+            assets.srcDir(layout.buildDirectory.dir("generated/mapstyle"))
         }
     }
 }
@@ -131,3 +134,11 @@ dependencies {
     // Android has org.json built in; a test on the build machine needs a copy.
     testImplementation("org.json:json:20250107")
 }
+
+// The two map styles from the website's own assets, copied into the app's assets.
+val copyMapStyle by tasks.registering(Sync::class) {
+    from("../../site/public/assets") { include("map-style.json", "map-style-dark.json") }
+    into(layout.buildDirectory.dir("generated/mapstyle/map-style"))
+}
+tasks.matching { it.name.startsWith("merge") && it.name.endsWith("Assets") }.configureEach { dependsOn(copyMapStyle) }
+tasks.matching { it.name.contains("lint", ignoreCase = true) }.configureEach { mustRunAfter(copyMapStyle) }

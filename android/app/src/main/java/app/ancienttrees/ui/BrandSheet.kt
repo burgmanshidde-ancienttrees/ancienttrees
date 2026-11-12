@@ -134,7 +134,12 @@ fun BrandSheet(
     extra: @Composable ColumnScope.() -> Unit = {},
 ) {
     val brand = Brand.colors
-    AppSheet(onDismissRequest = onDismiss, containerColor = brand.ground) {
+    AppSheet(
+        // Fitted, and a drag up grows it to the full height (BrandSheet.swift:193, SignIn.swift:148).
+        grows = true,
+        onDismissRequest = onDismiss,
+        containerColor = brand.ground,
+    ) {
         // A button slides the sheet down first, then acts (Sheet.kt, the iPhone's dismiss()).
         val close = LocalSheetClose.current
         // BrandSheet.swift starts its content 36 below the sheet's top, the handle

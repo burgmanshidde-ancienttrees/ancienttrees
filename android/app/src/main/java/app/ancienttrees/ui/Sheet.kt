@@ -43,6 +43,12 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.runtime.withFrameNanos
 import androidx.compose.ui.Modifier
+import androidx.compose.foundation.layout.statusBars
+import androidx.compose.foundation.gestures.awaitFirstDown
+import androidx.compose.foundation.gestures.awaitEachGesture
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.layout
+import androidx.compose.ui.layout.onPlaced
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.CoroutineScope
@@ -134,9 +140,21 @@ fun AppSheet(
      * the .large detent does.
      */
     floating: Boolean = true,
+    /**
+     * THE SECOND STOP, iOS's .large (BrandSheet.swift:193, SignIn.swift:148): the
+     * sheet opens at its fitted height and a drag up grows it to the full height,
+     * rubber-banding past it; release settles on the nearer stop. A drag down from
+     * the fitted height is still Material's own, which dismisses. Audit row 12.
+     */
+    grows: Boolean = false,
     content: @Composable ColumnScope.() -> Unit,
 ) {
     val scope = rememberCoroutineScope()
+    val growth = remember { SheetGrowth() }
+    val density = androidx.compose.ui.platform.LocalDensity.current
+    growth.topClear = androidx.compose.foundation.layout.WindowInsets.statusBars.getTop(density) + with(density) { 10.dp.toPx() }
+    // How far up the sheet has grown, 0 at the fitted height and 1 at full.
+    val frac = if (grows) growth.fraction else 0f
     val presence = LocalSheetPresence.current
     val wanted by rememberUpdatedState(presence?.visible ?: true)
     val close = remember(sheetState) { sheetClose(scope, sheetState) { wanted } }
@@ -177,8 +195,9 @@ fun AppSheet(
         // testTagsAsResourceId: set here, every sheet's tags reach UI Automator.
         // Set only on the handle, it exported nothing on the sign-in sheet, whose
         // content never set it, and the measurer found no grabber (2026-11-12).
+        // Growing to .large the floating card goes edge to edge, as iOS 26's does.
         modifier = if (floating) modifier.semantics { testTagsAsResourceId = true }.graphicsLayer {
-            val s = (size.width - 16.dp.toPx()) / size.width
+            val s = (size.width - 16.dp.toPx() * (1f - frac)) / size.width
             scaleX = s
             scaleY = s
             transformOrigin = TransformOrigin(0.5f, 1f)
@@ -186,9 +205,9 @@ fun AppSheet(
             // bar: the sheet's window stops on the navigation bar, so it comes down
             // by the bar's height (its foot stood 31.6 up, the last button 58 against
             // the iPhone's 35; android_spacing.py, 2026-11-12).
-            translationY = -10.dp.toPx() + gestureOnly
+            translationY = -10.dp.toPx() * (1f - frac) + gestureOnly
         } else modifier.semantics { testTagsAsResourceId = true },
-        shape = if (floating) RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp, bottomStart = 36.dp, bottomEnd = 36.dp)
+        shape = if (floating) RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp, bottomStart = 36.dp * (1f - frac), bottomEnd = 36.dp * (1f - frac))
         else RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp),
         sheetState = sheetState,
         containerColor = containerColor,
@@ -210,6 +229,107 @@ fun AppSheet(
         },
     ) {
         // A sheet opened from inside this one has its own owner.
-        CompositionLocalProvider(LocalSheetClose provides close, LocalSheetPresence provides null) { content() }
+        CompositionLocalProvider(LocalSheetClose provides close, LocalSheetPresence provides null) {
+            if (grows) {
+                androidx.compose.foundation.layout.Column(growth.modifier(scope)) { content() }
+            } else {
+                content()
+            }
+        }
     }
+}
+
+/**
+ * The fitted sheet's growth toward the full height (AppSheet `grows`): the
+ * content is laid out at its own height and the sheet reports that plus [extra],
+ * so Material's sheet rises with it; the drag is read before the content's own
+ * gestures, and only once it has travelled past the touch slop, so taps pass.
+ */
+class SheetGrowth {
+    private val extra = androidx.compose.animation.core.Animatable(0f)
+    private var room by androidx.compose.runtime.mutableFloatStateOf(1f)
+    private var placed: androidx.compose.ui.layout.LayoutCoordinates? = null
+    /** Kept clear above the full height: the status bar and 10 of air, as .large stops. */
+    var topClear by androidx.compose.runtime.mutableFloatStateOf(0f)
+
+    /** 0 at the fitted height, 1 at the full height. */
+    val fraction: Float get() = (extra.value / room).coerceIn(0f, 1f)
+
+    /** UIKit's rubber band past the full height: a third of the finger's travel, tapering. */
+    private fun band(raw: Float): Float {
+        if (raw <= room) return raw
+        val over = raw - room
+        return room + (1f - 1f / (over * 0.55f / room + 1f)) * room * 0.18f
+    }
+
+    fun modifier(scope: kotlinx.coroutines.CoroutineScope): Modifier = Modifier
+        .layout { measurable, constraints ->
+            // Bounded: the content may scroll, and a scroll refuses an endless height.
+            val p = measurable.measure(constraints.copy(minHeight = 0))
+            // The full height: the window under the status bar and 10 of air, as .large.
+            val full = (constraints.maxHeight - topClear.toInt()).coerceAtLeast(p.height)
+            room = (full - p.height).toFloat().coerceAtLeast(1f)
+            val h = (p.height + band(extra.value).coerceAtLeast(0f)).toInt().coerceAtMost(constraints.maxHeight - topClear.toInt())
+            layout(p.width, h) { p.place(0, 0) }
+        }
+        .onPlaced { placed = it }
+        .pointerInput(Unit) {
+            val slop = viewConfiguration.touchSlop
+            awaitEachGesture {
+                val down = awaitFirstDown(requireUnconsumed = false, pass = androidx.compose.ui.input.pointer.PointerEventPass.Initial)
+                val tracker = androidx.compose.ui.input.pointer.util.VelocityTracker()
+                // The finger in the window, not on the content: the content this
+                // listens on moves up as the sheet grows, so its own positions read an
+                // upward flick as a downward one (2026-11-12, v +2931 for a flick up).
+                fun windowY(at: androidx.compose.ui.geometry.Offset): Float =
+                    placed?.takeIf { it.isAttached }?.localToWindow(at)?.y ?: at.y
+                val startY = windowY(down.position)
+                var lastY = startY
+                tracker.addPosition(down.uptimeMillis, androidx.compose.ui.geometry.Offset(0f, startY))
+                var travelled = 0f
+                var engaged = false
+                // Where the finger has the sheet, kept here: each move's snap is launched,
+                // and reading extra back before the last one landed lost travel (a drag
+                // of 600 down from the full height moved it 375).
+                var at = extra.value
+                while (true) {
+                    val e = awaitPointerEvent(androidx.compose.ui.input.pointer.PointerEventPass.Initial)
+                    val c = e.changes.firstOrNull { it.id == down.id } ?: break
+                    val y = windowY(c.position)
+                    val dy = y - lastY
+                    lastY = y
+                    travelled += dy
+                    // The lift's own sample counts, or a short flick reads as slow.
+                    tracker.addPosition(c.uptimeMillis, androidx.compose.ui.geometry.Offset(0f, y))
+                    if (!engaged) {
+                        // Lifted before the slop: a tap, the content's.
+                        if (!c.pressed || kotlin.math.abs(travelled) < slop) {
+                            if (!c.pressed) break else continue
+                        }
+                        // Up, or down while grown: the growth's. Down at the fitted height:
+                        // Material's own drag, which dismisses.
+                        engaged = travelled < 0 || at > 0f
+                        if (!engaged) break
+                        // From where the finger went down, as a pan's translation counts.
+                        at = (at - travelled).coerceAtLeast(0f)
+                    } else {
+                        // Every move, the lift's included: its step is part of the travel.
+                        at = (at - dy).coerceAtLeast(0f)
+                    }
+                    c.consume()
+                    val next = at
+                    scope.launch { extra.snapTo(next) }
+                    if (!c.pressed) break
+                }
+                if (engaged) {
+                    val v = tracker.calculateVelocity().y
+                    // Where the flick would end (predictedEndTranslation), then the nearer stop.
+                    val projected = at - v * 0.25f
+                    val target = if (projected > room / 2f) room else 0f
+                    scope.launch {
+                        extra.animateTo(target, androidx.compose.animation.core.spring(dampingRatio = 1f, stiffness = 503f), -v)
+                    }
+                }
+            }
+        }
 }
