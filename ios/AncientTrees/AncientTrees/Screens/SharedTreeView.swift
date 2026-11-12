@@ -104,8 +104,10 @@ struct SharedTreeView: View {
         let rows = await Supa.rows("/rest/v1/rpc/shared_tree?tid=" + id.uuidString.lowercased())
         guard let row = rows.first else { state = .missing; return }
         let name = (row["name"] as? String) ?? "A tree"
-        let photo = (row["photo"] as? String).map { file in
-            URL(string: Supa.url + "/storage/v1/object/public/shared-sightings/" + file)!
+        // The file name comes from the server: encode it, and no photo beats a crash.
+        let photo = (row["photo"] as? String).flatMap { file -> URL? in
+            let safe = file.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? file
+            return URL(string: Supa.url + "/storage/v1/object/public/shared-sightings/" + safe)
         }
         var takenAt: Date?
         if let raw = row["taken_at"] as? String {
