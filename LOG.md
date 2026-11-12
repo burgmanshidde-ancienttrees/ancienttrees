@@ -13,10 +13,14 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-12 session: FNP interview done
+
+- Hidde talked to Hans Hofele (Frankfurter Neue Presse) about the Eschersheimer Linde and the app. Print for sure, maybe online; Hans sends the PDF. Two promises recorded in drafts/OUTREACH.md "FNP interview, 2026-11-12": a mail when Android is out (new list "Tell when Android ships", for the session that publishes Android) and app screenshots with Hans's own photographs of the lime (his photos are not in the mail thread or the app inbox yet).
+
 ## 2026-11-12 session: Rainer Lippert's yes on file
 
 - All 57 of Rainer Lippert's photographs (52 German trees) now carry his 2026-10-10 yes in `permission` {words, date}, as the 11-10 compliance rule asks; they were on the baseline before. Each links his monumentale-eichen.de page; none came from monumentaltrees.com (hard rule 1). His yes covers photos from his own site only.
-- Open: 149 of 381 German trees have no approved photograph; the 10-25 pass read 78 of his 2,882 site pages by place name, so a coordinate pass over the rest is the next step on the same permission.
+- Open: 149 of 381 German trees have no approved photograph. The 10-25 coordinate pass over his whole site (1,838 oaks, 551 other pages) found no more matches among our trees; his monumentaltrees.com photos of trees not on his own site are outside his yes and would need a new ask.
 
 ## 2026-11-12 night run (window from 11:21 UTC): two app-only trees, San Francisco a wall
 
