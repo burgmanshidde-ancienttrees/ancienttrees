@@ -2,25 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-08T23:44:24+00:00",
-   "date": "2026-09-08",
-   "run_id": "34291960494",
-   "minutes": 0.3,
-   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
-   "attempts": 1,
-   "turns": null,
-   "denials": null,
-   "denials_source": "NOT FOUND; result keys were: ",
-   "ended": "cut off at the cap, no result record",
-   "tokens": null,
-   "claims_held": [],
-   "commits": 0,
-   "cities_touched": 0,
-   "cities": [],
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-09-09T00:24:48+00:00",
    "date": "2026-09-09",
    "run_id": "34294865387",
@@ -21365,6 +21346,36 @@
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-11-12T11:21:17+00:00",
+   "date": "2026-11-12",
+   "run_id": "43208347643",
+   "minutes": 8.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 76,
+   "denials": 1,
+   "denials_source": "permission_denials: Bash(env)",
+   "ended": "success",
+   "tokens": 450452,
+   "claims_held": [
+    "fort-worth"
+   ],
+   "commits": 6,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "cascais",
+     "trees": 1
+    },
+    {
+     "city": "kansas-city",
+     "trees": 1
+    }
+   ],
+   "trees": 2,
    "logged": true
   }
  ],
