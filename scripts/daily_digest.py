@@ -2066,7 +2066,8 @@ def day_by_day_section(today):
     cols = collections.OrderedDict((k, None) for k in (
         "Visitors", "New accounts", "Saves", "Android waitlist", "App downloads",
         "App phones", "Trees opened in the app", "Trees collected",
-        "Trees sent", "Feedback", "Ambassador asks", "App photos", "Tree notes",
+        "Trees sent", "Feedback", "Ambassador asks", "Website photos", "iPhone photos",
+        "Android photos", "Tree notes",
         "App Store reviews"))
     totals = {}  # a row whose week is not the sum of its days
     pending = {}  # row -> days the source has not reported yet: "–", never 0
@@ -2097,14 +2098,6 @@ def day_by_day_section(today):
             "Android waitlist": lambda: [(r.get("created_at"), 1) for r in
                                          _supa("/rest/v1/waitlist?select=created_at&created_at=gte.%s"
                                                % since, key)[0] or []],
-            # A sighting the app merely re-sent (same content, new updated_at)
-            # is not a new photograph (scripts/sighting_changes.py).
-            "App photos": lambda: [(r.get("updated_at"), 1) for r in
-                                   _supa("/rest/v1/sightings?select=%s&shared=eq.true"
-                                         "&photo=not.is.null&updated_at=gte.%s"
-                                         % (sighting_changes.SELECT, since), key)[0] or []
-                                   if not is_ours(r.get("user_id"))
-                                   and sighting_changes.status(r) != "same"],
             "Tree notes": lambda: [(r.get("created_at"), 1) for r in
                                    _supa("/rest/v1/tree_notes?select=user_id,created_at"
                                          "&created_at=gte.%s" % since, key)[0] or []
@@ -2115,6 +2108,19 @@ def day_by_day_section(today):
                 fill(name, fn())
             except Exception as e:
                 print("day_by_day %s: %s" % (name, str(e)[:100]))
+        # Reader photographs, one row per surface (Hidde, 2026-11-12: a website
+        # upload was counted as an app photo). A sighting the app merely re-sent
+        # (same content, new updated_at) is not a new photograph
+        # (scripts/sighting_changes.py).
+        try:
+            shot = [r for r in _supa("/rest/v1/sightings?select=*&shared=eq.true"
+                                     "&photo=not.is.null&updated_at=gte.%s" % since, key)[0] or []
+                    if not is_ours(r.get("user_id")) and sighting_changes.status(r) != "same"]
+            for where in sighting_changes.SURFACES:
+                fill("%s photos" % where.capitalize() if where == "website" else "%s photos" % where,
+                     [(r.get("updated_at"), 1) for r in shot if sighting_changes.surface(r) == where])
+        except Exception as e:
+            print("day_by_day photos: %s" % str(e)[:100])
         try:
             subs, _ = _supa("/rest/v1/submissions?select=id,created_at,kind,why,user_id"
                             "&created_at=gte.%s" % since, key)

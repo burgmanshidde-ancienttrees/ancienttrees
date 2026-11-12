@@ -94,3 +94,11 @@ alter table public.sightings
 alter table public.sightings
   add column if not exists extra_photos text[]
   check (extra_photos is null or cardinality(extra_photos) <= 3);
+
+-- WHICH SURFACE SENT IT (Hidde, 2026-11-12: "split up android app and web from now on").
+-- 'android' from the Android app; empty is the iPhone, which never sends it; a
+-- photograph sent from a tree's page on the website is told by its note. Not
+-- personal data: a label of the app, never the device. Safe to run again.
+alter table public.sightings
+  add column if not exists client text
+  check (client is null or client in ('ios', 'android', 'web'));

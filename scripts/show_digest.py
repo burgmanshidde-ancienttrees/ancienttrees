@@ -216,9 +216,9 @@ def readers_in_full(day):
         import sighting_changes
         shown = sighting_changes.load()
         pending = {}
-        for r in inbox.get("/rest/v1/sightings?select=%s"
+        for r in inbox.get("/rest/v1/sightings?select=*"
                            "&shared=eq.true&updated_at=gte.%s&order=updated_at.asc"
-                           % (sighting_changes.SELECT, since), key) or []:
+                           % since, key) or []:
             if is_ours(r.get("user_id")):
                 continue
             state = sighting_changes.status(r, shown)
@@ -228,13 +228,13 @@ def readers_in_full(day):
             if r["id"].lower() in by_sighting and state == "new":
                 continue  # the submission row above already is this tree
             page = tree_page(r["tree_id"]) if r.get("tree_id") else None
-            rows.append((r["updated_at"], "app photograph" + (" (changed since you saw it)" if state == "changed" else ""),
+            rows.append((r["updated_at"], "%s photograph" % sighting_changes.surface(r) + (" (changed since you saw it)" if state == "changed" else ""),
                          r.get("tree_id") or r.get("name") or "-",
                          r.get("note") or "", [page] if page else [], photo_state(r, processed)))
         with open(os.path.join(OUT, "sightings-pending.json"), "w", encoding="utf-8") as fh:
             json.dump(pending, fh)
     except Exception as e:
-        rows.append(("", "app photographs", "-", "database unreadable (%s)" % str(e)[:60], [], ""))
+        rows.append(("", "reader photographs", "-", "database unreadable (%s)" % str(e)[:60], [], ""))
     try:
         # Written App Store reviews (Hidde, 2026-10-29: "zou je die ook mee
         # willen nemen in de daily als die er is"). The nickname stays out.

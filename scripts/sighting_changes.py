@@ -53,6 +53,24 @@ def save(shown):
         fh.write("\n")
 
 
+# Which surface sent a photograph (Hidde, 2026-11-12: the digest called a
+# website upload an app photograph). The website's row says so in its note
+# (site/src/lib/add-photo-js.ts); Android sends client "android"
+# (Collector.row); the iPhone sends neither. Read with select=* so the digest
+# keeps working before supabase/sightings.sql's `client` column is pasted.
+SURFACES = ("website", "iPhone", "Android")
+WEB_NOTE = "Photograph sent from this tree’s page on the website."
+
+
+def surface(row):
+    client = (row.get("client") or "").lower()
+    if client == "web" or (row.get("note") or "").startswith(WEB_NOTE):
+        return "website"
+    if client == "android":
+        return "Android"
+    return "iPhone"
+
+
 def status(row, shown=None):
     """'new' (never seen), 'changed' (seen, then really changed) or 'same'."""
     shown = load() if shown is None else shown

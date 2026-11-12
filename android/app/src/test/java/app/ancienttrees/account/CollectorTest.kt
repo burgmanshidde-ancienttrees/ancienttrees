@@ -11,9 +11,10 @@ class CollectorTest {
     @Test fun theRowCarriesTheIphonesKeysAndWhereThePhoneStood() {
         val r = Collector.row("u1", "ID-1", "lis_001", "The Ajuda Dragon Tree", 38.7, -9.2, "u1/ID-1.jpg", noon)
         assertEquals(
-            setOf("user_id", "id", "tree_id", "name", "note", "lat", "lng", "taken_at", "status", "updated_at", "shared", "photo"),
+            setOf("user_id", "id", "tree_id", "name", "note", "lat", "lng", "taken_at", "status", "updated_at", "shared", "photo", "client"),
             r.keys().asSequence().toSet(),
         )
+        assertEquals("android", r.getString("client"))
         assertEquals("mine", r.getString("status"))
         assertEquals(true, r.getBoolean("shared"))
         assertEquals(38.7, r.getDouble("lat"), 0.0)

@@ -119,6 +119,9 @@ object Collector {
             .put("updated_at", iso(now))
             .put("shared", true)
             .put("photo", photo ?: JSONObject.NULL)
+            // The one key the iPhone does not send: the digest tells Android's photographs
+            // from the iPhone's by it (Hidde, 2026-11-12). No value means the iPhone.
+            .put("client", "android")
             .apply {
                 if (species != null) put("species", species)
                 if (age != null) put("age", age)
@@ -193,7 +196,10 @@ object Collector {
         val full = row(s.userId, id, treeId, name, lat, lng, stored, taken = taken, status = status,
             note = note, species = species, extras = extrasStored, age = age, girthCm = girthCm)
         val url = "/rest/v1/sightings?on_conflict=user_id,id"
+        // Until supabase/sightings.sql's `client` column is live, a row carrying it is
+        // refused; the photograph matters more than the label, so it goes again without.
         val ok = Supa.upsert(url, s.accessToken, JSONArray().put(full)) ||
+            Supa.upsert(url, s.accessToken, JSONArray().put(full.apply { remove("client") })) ||
             (full.has("extra_photos") && Supa.upsert(url, s.accessToken, JSONArray().put(full.apply { remove("extra_photos") })))
         // A NEW sighting, not a row changed afterwards (Sightings.record and .commit). The
         // name, note and coordinates of somebody's own tree are deliberately not sent.
