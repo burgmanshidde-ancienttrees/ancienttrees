@@ -1919,12 +1919,15 @@ enum MapLayers {
                 // published asset wherever one exists. `ticket.fill` is what
                 // Wallet and every Apple surface use for exactly this, so it
                 // arrives already learned.
-                let b: CGFloat = 17
+                // 15 like the other two corners since 2026-11-12 (it was 17,
+                // "a little bigger than the tick"; Hidde asked for all three
+                // corners in one style).
+                let b: CGFloat = 15
                 let r = CGRect(x: 1, y: d - b - 1, width: b, height: b)
                 cornerDisc(r)
                 let blue = UIColor(red: 0.18, green: 0.42, blue: 0.66, alpha: 1)
                 if let glyph = UIImage(systemName: "ticket.fill")?
-                    .withConfiguration(UIImage.SymbolConfiguration(pointSize: 9,
+                    .withConfiguration(UIImage.SymbolConfiguration(pointSize: 7,
                                                                    weight: .bold))
                     .withTintColor(blue, renderingMode: .alwaysOriginal) {
                     let s = glyph.size
