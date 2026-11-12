@@ -372,6 +372,71 @@ def quality_placeholder(md):
     return md[:end] + "\n\n" + QUALITY_MARK + md[end:]
 
 
+STAR_MARK = "NORTHSTARGOESHERE"
+
+
+def north_star_html(today):
+    """The north star as two stat tiles with a 12-week sparkline each (Hidde,
+    2026-11-12: "zou je de northstar getallen visueler kunnen tonen").
+
+    Stat-tile contract (dataviz skill): label, value, signed delta against a
+    named period, and the trend. One series per tile, so one hue: the brand's
+    moss for line and marker (a grey de-emphasis line failed the palette
+    validator's chroma and contrast checks on white). Each weekly point carries
+    a native tooltip with its date and value, and the numbers are written out
+    under the line, so nothing is read from colour alone. Local page only:
+    DATA.md keeps the one-line version, because the weekly series is built
+    from per-person upload days."""
+    import daily_digest
+    days = daily_digest.contributors(today)
+    if not days:
+        return None
+    weeks = [today - datetime.timedelta(days=7 * k) for k in range(11, -1, -1)]
+
+    def series(nth):
+        return [sum(1 for d in days.values() if len(d) > nth and d[nth] < w.isoformat()) for w in weeks]
+
+    def spark(vals, label):
+        W, H, P = 220, 48, 6
+        hi = max(max(vals), 1)
+        xs = [P + i * (W - 2 * P) / (len(vals) - 1) for i in range(len(vals))]
+        ys = [H - P - v * (H - 2 * P) / hi for v in vals]
+        pts = " ".join("%.1f,%.1f" % p for p in zip(xs, ys))
+        dots = "".join(
+            '<circle cx="%.1f" cy="%.1f" r="%d" fill="#4A6B2A" stroke="#fff" stroke-width="2">'
+            '<title>%s: %d by %s</title></circle>'
+            % (x, y, 5 if i == len(vals) - 1 else 3, label, v, (w - datetime.timedelta(days=1)).strftime("%d %b"))
+            for i, (x, y, v, w) in enumerate(zip(xs, ys, vals, weeks)))
+        return ('<svg viewBox="0 0 %d %d" width="%d" height="%d" role="img" aria-label="%s over 12 weeks: %s">'
+                '<line x1="%d" y1="%d" x2="%d" y2="%d" stroke="#ecebe4" stroke-width="1"/>'
+                '<polyline points="%s" fill="none" stroke="#4A6B2A" stroke-width="2" '
+                'stroke-linejoin="round" stroke-linecap="round"/>%s</svg>'
+                % (W, H, W, H, html.escape(label), ", ".join(map(str, vals)),
+                   P, H - P, W - P, H - P, pts, dots))
+
+    def tile(label, vals):
+        now, delta = vals[-1], vals[-1] - vals[-2]
+        d = ('<span class="ns-delta up">+%d this week</span>' % delta if delta > 0
+             else '<span class="ns-delta">+0 this week</span>')
+        return ('<div class="ns-tile"><div class="ns-label">%s</div>'
+                '<div class="ns-value">%d</div>%s%s'
+                '<div class="ns-axis"><span>%s</span><span>now</span></div></div>'
+                % (html.escape(label), now, d, spark(vals, label),
+                   (weeks[0] - datetime.timedelta(days=1)).strftime("%d %b")))
+
+    style = ('<style>.ns{display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 22px}'
+             '.ns-cap{font-weight:700;margin:0 0 8px}'
+             '.ns-tile{background:#fff;border:1px solid #ecebe4;border-radius:14px;padding:14px 16px 10px;width:252px}'
+             '.ns-label{font-size:13px;line-height:18px;color:#5d6457;min-height:36px}'
+             '.ns-value{font-size:40px;font-weight:600;line-height:1.1;margin:2px 0;color:#1f2a17}'
+             '.ns-delta{display:block;font-size:13px;line-height:18px;color:#5d6457}.ns-delta.up{color:#4A6B2A;font-weight:600}'
+             '.ns-tile svg{display:block;margin-top:8px}'
+             '.ns-axis{display:flex;justify-content:space-between;font-size:11px;color:#5d6457;margin-top:2px}</style>')
+    return (style + '<p class="ns-cap">North star</p><div class="ns">'
+            + tile("People who uploaded a tree or photo of their own", series(0))
+            + tile("... and did it on more than one day", series(1)) + "</div>")
+
+
 def quality_html():
     """The lights computed now (Hidde, 2026-11-04). When that fails, one line
     saying so, never an empty space where the line should be."""
@@ -458,7 +523,17 @@ def main():
     elif missing:
         print("reader words: %d shown, %d not matched in the database" % (shown, missing))
     md = quality_placeholder(md)
+    # The north star line becomes two tiles with their trend (2026-11-12).
+    star = None
+    try:
+        star = north_star_html(datetime.date.fromisoformat(day) + datetime.timedelta(days=1))
+    except Exception as e:
+        print("north star tiles: %s" % str(e)[:120])
+    if star:
+        md = re.sub(r"^\*\*North star:.*$", STAR_MARK, md, count=1, flags=re.M)
     body = render(md).replace("<p>%s</p>" % QUALITY_MARK, quality_html(), 1)
+    if star:
+        body = body.replace("<p>%s</p>" % STAR_MARK, star, 1)
     page = PAGE % {"day": html.escape(day), "body": body}
     for folder, name in ((OUT, "index.html"), (PREVIEW, "digest.html")):
         try:
