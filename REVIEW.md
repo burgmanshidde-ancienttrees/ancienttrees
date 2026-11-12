@@ -32,6 +32,13 @@ Web half: the last 24 hours were Cardiff and Windsor trees into the app, an add-
 - NOTE data/cities/windsor.json wsr_002 story: "An iNaturalist record from August 2026 falls within range of the spot, though nobody has checked that it shows this particular oak." Narrates our process and states a non-fact; "Public copy never narrates our process". Drop the sentence.
 - NOTE the 11-07 question stands: data/walk-routes.json routing through app-only trees that have no page is unchecked.
 
+App half (iPhone SE: people, photo-viewer, place-pin, profile-edit, profile-signed-in, profile):
+
+- NOTE APP profile-edit.png: Country is pre-filled "United States" with the Name still empty, so a new account shows a country nobody chose, and it is public with the profile. Show it empty until picked, or fill it from the device region and say so. For a session.
+- NOTE APP profile.png and profile-signed-in.png: "Ancient Trees Plus" sits under the HELP heading beside Send feedback and Rate the app. The section title disagrees with what the row is (an offer). For a session; the paywall line is Hidde's (hard list 2).
+- NOTE APP place-pin.png: two marks stand on the map, the drop pin and the tree disc beneath it, so "until the pin sits on the tree" is ambiguous about which one moves. For a session.
+- Nothing wrong found on people.png and photo-viewer.png (credit and licence shown).
+
 ## 2026-11-11 code (full)
 
 - APP-BUG-shared-photo-url-force-unwrap, ios/AncientTrees/AncientTrees/Screens/SharedTreeView.swift:108: shared tree photo URL from a server file name is force-unwrapped.
