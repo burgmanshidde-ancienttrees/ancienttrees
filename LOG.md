@@ -12,6 +12,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-11-12 night run (window from 11:21 UTC): two app-only trees, San Francisco a wall
+
+- Rung 1 and 2 clear (no sightings, no notes; health only notes that GitHub dropped 7 of 12 knocks). Shelf said refill: verify pass on San Francisco found nothing new (seventh pass, register exhausted; the six Bush Street blue gums have no size, age or pin source, so they stay a lead). San Francisco walled for 48h.
+- Write pass over the pending files: merged kcm_005 (Vaile Mansion Smoketree, Kansas City, copy rewritten for five trees) and csc_001 (Moreton Bay fig, Cascais, new one-tree place). Both app-only under APP FIRST. 15 entries held or duplicates (sfo_012/014/015 duplicate live trees; frk_027 schoolyard; dmr_002 unconfirmed standing; inn_007 private plot; brd_001 and cdl_001 access unproven; sgz_003 needs an honest access line, story already written; det_001/002 no coordinates).
+- Many `data/research/*-verified.json` files are stale (already published); not deleted.
+
 ## 2026-11-12 session: a sign-in ends where the tap was going
 
 - **Fixed (Hidde: tapping Isabelle R. on the home page asked for a sign-in and then landed back on the home page):** the website's sign-in sheet now keeps the exact address it was opened on and, for a visitor's name, whose photograph was tapped; after Google, Apple or the mail link the page goes there and finishes the act, so the name opens the profile. The same cause broke Follow on somebody's profile: Supabase returns to the path without its query, so `/profile?u=X` came back as your own `/profile` and the follow was dropped. Both fixed in signin-js.ts (head relay) and visitors-row-js.ts. Checked in a fake browser (jsc): home, profile with query, an unrelated page, an off-site address refused.

@@ -1,6 +1,24 @@
 {
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
+    "2026-11-12": [
+      {
+        "date": "2026-11-12",
+        "kind": "verify",
+        "target": "san-francisco",
+        "tokens": 71000,
+        "trees": 0,
+        "note": "Seventh deepen pass, register exhausted; Bush Street blue gums stay a lead. Token count is an estimate."
+      },
+      {
+        "date": "2026-11-12",
+        "kind": "write",
+        "target": "sf, frankfurt, kansas-city, dartmoor, innsbruck, sintra, brindisi, taiwan, grazalema, detroit, croatia-central-dalmatia",
+        "tokens": 160000,
+        "trees": 2,
+        "note": "kcm_005 and csc_001 (new Cascais place) merged; 15 held or duplicate on standing reasons. Token count is an estimate."
+      }
+    ],
     "2026-11-11": [
       {
         "date": "2026-11-11",
