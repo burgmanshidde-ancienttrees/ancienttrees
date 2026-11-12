@@ -373,7 +373,9 @@ struct HomeView: View {
         // long way, because two shelves (walks, best in your country) depend
         // on where you are. A tenth of a degree is about ten kilometres.
         .task(id: "\(catalogue.version)|\(location.known)|\(Int(origin.lat * 10))|\(Int(origin.lng * 10))") { buildShelves() }
-        .task { visitorRows = await NewFromVisitors.load(token: await account.freshToken()) }
+        // Asked again on a sign-in or out: the account id comes only to a
+        // signed-in caller, so the names turn into links without a relaunch.
+        .task(id: account.isSignedIn) { visitorRows = await NewFromVisitors.load(token: await account.freshToken()) }
     }
 
     /// The website leads with one tree rather than with a grid, and so does
@@ -537,6 +539,24 @@ struct HomeView: View {
     /// public profile shows to everyone; a tap opens the profile, and signed
     /// out it asks for a sign-in first (Hidde, 2026-11-06, the Instagram and
     /// Pinterest way). No public profile: "A visitor", not a link.
+    /// A visitor's name, tapped. Signed out the server hands no account id,
+    /// so the sign-in's job asks for the row again with the new session and
+    /// finishes on the profile the tap was for, never back on Discover
+    /// (Hidde, 2026-11-12, the website's Isabelle R.: "you land where you
+    /// were, not where you were going"; Nudge.settle says the same rule).
+    private func openVisitor(_ r: NewFromVisitors.Row) {
+        if let id = r.author_id, account.isSignedIn { navigator.push = .person(id); return }
+        nudge.require(.general) {
+            Task { @MainActor in
+                let rows = await NewFromVisitors.load(token: await account.freshToken())
+                visitorRows = rows
+                if let id = rows.first(where: { $0.sighting_id == r.sighting_id })?.author_id {
+                    navigator.push = .person(id)
+                }
+            }
+        }
+    }
+
     @ViewBuilder private func visitorLine(_ r: NewFromVisitors.Row) -> some View {
         // A generated name ("Green Fig 1965") prints and links like any
         // other (Hidde, 2026-11-07: "a visitor is weird that its
@@ -576,7 +596,7 @@ struct HomeView: View {
             line.accessibilityLabel(name)
         } else {
             Button {
-                if let id = r.author_id { navigator.push = .person(id) } else { nudge.require(.general) }
+                openVisitor(r)
             } label: { line }
             .buttonStyle(.plain)
             .accessibilityLabel("\(name), open profile")

@@ -1,5 +1,11 @@
 # LOG
 
+## 2026-11-12 session: a sign-in ends where the tap was going
+
+- **Fixed (Hidde: tapping Isabelle R. on the home page asked for a sign-in and then landed back on the home page):** the website's sign-in sheet now keeps the exact address it was opened on and, for a visitor's name, whose photograph was tapped; after Google, Apple or the mail link the page goes there and finishes the act, so the name opens the profile. The same cause broke Follow on somebody's profile: Supabase returns to the path without its query, so `/profile?u=X` came back as your own `/profile` and the follow was dropped. Both fixed in signin-js.ts (head relay) and visitors-row-js.ts. Checked in a fake browser (jsc): home, profile with query, an unrelated page, an off-site address refused.
+- **Apps:** iPhone (Home.swift `openVisitor`) and Android (Discover.kt `openVisitor`) asked for a sign-in on the same name and then did nothing; the sign-in now re-asks the row with the new session and opens the profile, and the row reloads on any sign-in. Every other gate in both apps already finishes its act (save, collect, map filters, add photo).
+- qa `check_a_sign_in_ends_where_the_tap_was_going()`; escaped bug ESC-2026-11-12-a-sign-in-asked-by-a-tap.
+
 ## 2026-11-12 session: a website photograph now counts as collected
 
 - **Fixed:** Add photo on a tree page ticked the tree as collected only when it came through the collect flow, so the Lisbon photographer's profile showed nothing under Collected. A photograph now ticks it whichever button sent it, as in the app (add-photo-js.ts; qa `check_web_add_photo_is_shared()` now also guards this; escaped bug ESC-2026-11-12). Her lis_021 was ticked on the account by hand (visited, 2026-11-10); her profile shows the tree with her photo and pin, looked at.

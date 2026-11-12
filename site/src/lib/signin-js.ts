@@ -49,7 +49,23 @@ export const SIGNIN_CATCH_JS = `
     window.atSignInFailed = h.error_code || h.error;
     return;
   }
-  if (!h.access_token) return;
+  // THE SECOND LEG OF A RETURN (2026-11-12, below): the page the sign-in was
+  // asked from, reached by location.replace with no token in the url. The act
+  // waiting for it is handed on exactly as if the token had landed here.
+  if (!h.access_token) {
+    try {
+      var r = JSON.parse(localStorage.getItem('ancienttrees_pending') || 'null');
+      if (r && r.relay && r.at && Date.now() - r.at < 1800000
+          && (r.go || r.back || '').split('#')[0] === location.pathname + location.search
+          && localStorage.getItem('ancienttrees_session')) {
+        localStorage.removeItem('ancienttrees_pending');
+        r.relay = 0;
+        document.documentElement.dataset.signedIn = '1';
+        window.atJustSignedIn = r;
+      }
+    } catch (e) {}
+    return;
+  }
   try {
     localStorage.setItem('ancienttrees_session', JSON.stringify({
       access_token: h.access_token,
@@ -69,6 +85,31 @@ export const SIGNIN_CATCH_JS = `
   // Half an hour, because a magic link is read in another app and sometimes on
   // another device, and replaying a press from yesterday is a surprise.
   if (!want || !want.at || Date.now() - want.at > 1800000) want = {};
+  // BACK TO WHERE THEY WERE GOING (Hidde, 2026-11-12: "als je inlogt kom je
+  // op de pagina waar ze al op hadden geklikt"; Auth0's returnTo, Google's
+  // continue=). Supabase returns to redirect_to, which is the path without its
+  // query, so /profile?u=X came back as /profile, the visitor's OWN profile,
+  // and a tap that was going somewhere (a name on the home page) came back to
+  // where it started. The sheet wrote the exact address it was opened on
+  // (back) or the one the tap was for (go); when the token lands anywhere
+  // else, the act is put back with relay set and the page goes there, where
+  // the leg above hands it on. Same-site paths only, never a full url.
+  var dest = want.go || want.back || '';
+  var same = false;
+  try { same = dest.charAt(0) === '/' && new URL(dest, location.href).origin === location.origin; } catch (e) {}
+  if (same) {
+    if (dest.split('#')[0] !== location.pathname + location.search) {
+      try {
+        want.relay = 1;
+        localStorage.setItem('ancienttrees_pending', JSON.stringify(want));
+        window.atRelaying = true;
+        location.replace(dest);
+        return;
+      } catch (e) {}
+    } else if (dest.indexOf('#') > -1 && !location.hash) {
+      history.replaceState(null, '', dest);
+    }
+  }
   window.atJustSignedIn = want;
 })();
 </script>
@@ -151,6 +192,13 @@ export const SIGNIN_JS = `
     if (want.kind === 'plus') { window.atPendingPlus = true; return; }
     // Follow: /profile reads this once it knows who is signed in.
     if (want.kind === 'follow') { window.atPendingFollow = want.user; return; }
+    // A visitor's name: the row's own script opens the profile once it has
+    // asked the server who sent it (visitors-row-js atGoVisitor).
+    if (want.kind === 'visitor') {
+      window.atPendingVisitor = want.sighting;
+      if (window.atGoVisitor) window.atGoVisitor();
+      return;
+    }
     if (!want.tree) return;
     if (!document.querySelector('[data-tree="' + want.tree + '"]')) return;
     // The account's answer FIRST. Both lists were fetched by their own scripts
@@ -425,35 +473,40 @@ export const SIGNIN_JS = `
     // What the person was trying to DO, kept for the page they come back to.
     // Written here rather than at each gate so a new gate cannot forget it, and
     // cleared below the moment they dismiss the sheet instead of signing in.
+    // And WHERE (2026-11-12): the exact address the sheet was opened on, query
+    // and map state included, so the return lands on it and not on the bare
+    // path Supabase hands back; want.go when the tap was on its way to another
+    // page. The head (SIGNIN_CATCH_JS) takes them there.
     try {
+      var keep = { at: Date.now(), back: location.pathname + location.search + location.hash };
+      if (want && want.go) keep.go = want.go;
       if (want && want.tree) {
-        localStorage.setItem('ancienttrees_pending',
-          JSON.stringify({ kind: want.kind, tree: want.tree, at: Date.now() }));
+        keep.kind = want.kind; keep.tree = want.tree;
       } else if (want && want.kind === 'filter' && want.filter) {
         // The map's Favourites or My trees chip (2026-10-07): switched on
         // after the sign-in rather than forgotten by it.
-        localStorage.setItem('ancienttrees_pending',
-          JSON.stringify({ kind: 'filter', filter: want.filter, at: Date.now() }));
+        keep.kind = 'filter'; keep.filter = want.filter;
       } else if (want && want.kind === 'ambassador' && want.city) {
         // The open seat (Hidde, 2026-10-07: "it should fire a login screen
         // and after that confirm ambassadorship"): the city, so the page
         // they land back on reopens the confirm step rather than swallowing
         // the tap.
-        localStorage.setItem('ancienttrees_pending',
-          JSON.stringify({ kind: 'ambassador', city: want.city, at: Date.now() }));
+        keep.kind = 'ambassador'; keep.city = want.city;
       } else if (want && want.kind === 'plus') {
         // "Tell me" on the Plus question (2026-11-04): the page they land back
         // on reopens that step; nothing is pressed for them.
-        localStorage.setItem('ancienttrees_pending',
-          JSON.stringify({ kind: 'plus', city: want.city || '', at: Date.now() }));
+        keep.kind = 'plus'; keep.city = want.city || '';
       } else if (want && want.kind === 'follow' && want.user) {
         // Follow on somebody's profile (2026-10-28): who, so the profile
         // they land back on follows them, as a save is finished after it.
-        localStorage.setItem('ancienttrees_pending',
-          JSON.stringify({ kind: 'follow', user: want.user, at: Date.now() }));
-      } else {
-        localStorage.removeItem('ancienttrees_pending');
+        keep.kind = 'follow'; keep.user = want.user;
+      } else if (want && want.kind === 'visitor' && want.sighting) {
+        // A name in the home page's New from visitors row (2026-11-12): the
+        // account id comes only to a signed-in caller, so the row finds the
+        // profile once the sign-in lands and opens it (visitors-row-js).
+        keep.kind = 'visitor'; keep.sighting = want.sighting;
       }
+      localStorage.setItem('ancienttrees_pending', JSON.stringify(keep));
     } catch (e) {}
     // Name the tree that was just saved. A 'feedback' reason (the gated
     // vote/report/contribute flows) swaps both lines: nothing was saved, so the

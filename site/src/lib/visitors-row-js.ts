@@ -80,7 +80,9 @@ export function visitorsRowJs(visitorWord: string): string {
     // The one door (atCollection.gate): a session the server accepts gets the
     // profile (the page may have painted before it answered); otherwise sign
     // in first, the app's nudge.require(.general).
-    var ask = function () { if (window.atOpenSignIn) window.atOpenSignIn(null, null, null); };
+    // The sheet keeps which name was tapped, so the sign-in ends on that
+    // profile and not back here (Hidde, 2026-11-12, Isabelle R.).
+    var ask = function () { if (window.atOpenSignIn) window.atOpenSignIn(null, null, { kind: 'visitor', sighting: b.dataset.sighting }); };
     var C = window.atCollection;
     if (!C || !C.gate) { ask(); return; }
     C.gate(function (s) {
@@ -90,6 +92,22 @@ export function visitorsRowJs(visitorWord: string): string {
       });
     }, ask);
   });
+  // AFTER THE SIGN-IN THAT A NAME ASKED FOR (2026-11-12): signin-js hands the
+  // tapped photograph's id over as atPendingVisitor; the server, asked with
+  // the new session, says whose it is, and the tap finishes on that profile.
+  window.atGoVisitor = function () {
+    var id = window.atPendingVisitor;
+    var C = window.atCollection;
+    if (!id || !C || !C.gate) return;
+    window.atPendingVisitor = null;
+    C.gate(function (s) {
+      load(s.access_token).then(function (rows) {
+        var hit = (rows || []).filter(function (r) { return r.sighting_id === id; })[0];
+        if (hit && hit.author_id) location.href = '/profile?u=' + encodeURIComponent(hit.author_id);
+      });
+    }, function () {});
+  };
+  if (window.atPendingVisitor) window.atGoVisitor();
   function start() {
     var el = document.getElementById('nfv-data');
     if (!el) return;

@@ -306,6 +306,17 @@
    "found_by": "hidde",
    "test": "scripts/qa.py check_web_add_photo_is_shared",
    "fixed_in": "6750b7409"
+  },
+  {
+   "id": "ESC-2026-11-12-a-sign-in-asked-by-a-tap-came-back-to-th",
+   "surface": "WEB",
+   "kind": "BUG",
+   "file": "",
+   "summary": "A sign-in asked by a tap came back to the page it started on, not where the tap was going (home visitor name to profile; /profile?u= lost its query)",
+   "first_seen": "2026-11-12",
+   "status": "open",
+   "found_by": "hidde",
+   "test": "qa.check_a_sign_in_ends_where_the_tap_was_going"
   }
  ]
 }

@@ -185,6 +185,20 @@ fun DiscoverScreen(
 
     val list = rememberLazyListState()
     val scope = rememberCoroutineScope()
+    // A visitor's name, tapped signed out (Home.swift openVisitor): the server
+    // hands the account id only to a signed-in caller, so after the sign-in the
+    // row is asked again and the tap finishes on the profile it was for,
+    // never back on Discover (Hidde, 2026-11-12, the web's Isabelle R.).
+    val openVisitor: (NewFromVisitors.Row) -> Unit = { r ->
+        val id = r.authorId
+        if (id != null && signedIn) act.openPerson(id) else act.signIn {
+            scope.launch {
+                val rows = NewFromVisitors.load(token())
+                visitorRows = rows
+                rows.firstOrNull { it.sightingId == r.sightingId }?.authorId?.let(act.openPerson)
+            }
+        }
+    }
     val density = LocalDensity.current
     // QUICK RETURN (Hidde, 2026-10-12): the header slides away reading down and
     // returns on any scroll up; near the top it is always there.
@@ -238,6 +252,7 @@ fun DiscoverScreen(
                 discoverContent(
                     deck, catalogue, origin, located, signedIn, wantToVisit, visitorRows, email, token, act, myPlaces,
                     open = act.openPage,
+                    openVisitor = openVisitor,
                 )
                 item(key = "end") { Spacer(Modifier.height(30.dp + 90.dp)) } // clear of the floating tab bar
             }
@@ -362,6 +377,7 @@ private fun LazyListScope.discoverContent(
     act: DiscoverActions,
     myPlaces: List<String>,
     open: (DiscoverPage) -> Unit,
+    openVisitor: (NewFromVisitors.Row) -> Unit,
 ) {
     fun tag(t: Tree): String = tagFor(t, origin, located)
 
@@ -382,7 +398,7 @@ private fun LazyListScope.discoverContent(
                     items(fresh, key = { it.first.sightingId }) { (row, tree) ->
                         Column(verticalArrangement = Arrangement.spacedBy(7.dp)) {
                             Tile(tree, tree.city, Modifier.width(TILE_WIDTH).semantics { contentDescription = "visitor-tile" }) { act.openTree(tree) }
-                            VisitorLine(row, signedIn, act)
+                            VisitorLine(row, openVisitor)
                         }
                     }
                 }
@@ -777,15 +793,14 @@ private fun HeroBand() {
  * points to tap on a 16 point line, the room hanging below (VISITOR_LINE_ROOM).
  */
 @Composable
-private fun VisitorLine(r: NewFromVisitors.Row, signedIn: Boolean, act: DiscoverActions) {
+private fun VisitorLine(r: NewFromVisitors.Row, openVisitor: (NewFromVisitors.Row) -> Unit) {
     val brand = Brand.colors
     val real = r.authorName
     val name = real ?: stringResource(R.string.discover_a_visitor)
     var m = Modifier.width(TILE_WIDTH).heightIn(min = VISITOR_LINE_HEIGHT)
     if (real != null) {
         m = m.clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current) {
-            val id = r.authorId
-            if (id != null && signedIn) act.openPerson(id) else act.signIn(null)
+            openVisitor(r)
         }.semantics { contentDescription = "visitor-name" }
     }
     Box(m, contentAlignment = Alignment.TopStart) {

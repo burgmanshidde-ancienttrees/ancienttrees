@@ -887,6 +887,50 @@ def check_web_add_photo_is_shared():
     return out
 
 
+def check_a_sign_in_ends_where_the_tap_was_going():
+    """A sign-in asked for by a tap ends where that tap was going.
+
+    Hidde, 2026-11-12: a name in the home page's New from visitors row asked
+    for a sign-in and the sign-in came back to the home page, not to the
+    profile ("als je inlogt kom je op de pagina waar ze al op hadden
+    geklikt"). Two causes: Supabase returns to redirect_to, a path without its
+    query, so /profile?u=X came back as /profile; and the name's gate kept no
+    note of where it was going. CONVENTIONS.md "Where you land after signing
+    in": the act that asked is finished. Removing this check needs Hidde.
+
+    Web: the sheet writes the exact address (back) into the pending act and
+    the head relays to it; the visitors row passes kind 'visitor'.
+    iPhone and Android: the visitor name's sign-in carries a job that opens
+    the profile (nudge.require(...) { ... } / act.signIn { ... }).
+    """
+    root = Path(__file__).resolve().parent.parent
+    out = []
+    lib = root / "site" / "src" / "lib"
+    si = (lib / "signin-js.ts").read_text(encoding="utf-8")
+    if "back: location.pathname + location.search + location.hash" not in si:
+        out.append("signin-js.ts: the sign-in sheet no longer keeps the address it was opened on (2026-11-12)")
+    if "location.replace(dest)" not in si or "r.relay" not in si:
+        out.append("signin-js.ts: the head no longer returns a sign-in to the page it was asked from (2026-11-12)")
+    vr = (lib / "visitors-row-js.ts").read_text(encoding="utf-8")
+    if "kind: 'visitor'" not in vr or "atGoVisitor" not in vr:
+        out.append("visitors-row-js.ts: a visitor's name asks for a sign-in without keeping whose profile it opens (2026-11-12)")
+    home = root / "ios" / "AncientTrees" / "AncientTrees" / "Screens" / "Home.swift"
+    if home.exists():
+        t = home.read_text(encoding="utf-8")
+        i = t.find("private func openVisitor(")
+        body = t[i:t.find("\n    }\n", i)] if i > -1 else ""
+        if "nudge.require(.general) {" not in body or ".person(" not in body:
+            out.append("Home.swift: a visitor's name signs in without opening the profile after (2026-11-12)")
+    disc = root / "android" / "app" / "src" / "main" / "java" / "app" / "ancienttrees" / "ui" / "Discover.kt"
+    if disc.exists():
+        t = disc.read_text(encoding="utf-8")
+        i = t.find("val openVisitor:")
+        body = t[i:i + 900] if i > -1 else ""
+        if "act.signIn {" not in body or "openPerson" not in body:
+            out.append("Discover.kt: a visitor's name signs in without opening the profile after (2026-11-12)")
+    return out
+
+
 def check_a_photo_is_a_visit_on_every_surface():
     """A photograph of one of our trees ticks it as collected, on every surface.
 
@@ -4098,6 +4142,7 @@ def main():
     failures += check_a_given_photo_records_the_yes()
     failures += check_web_add_photo_is_shared()
     failures += check_a_photo_is_a_visit_on_every_surface()
+    failures += check_a_sign_in_ends_where_the_tap_was_going()
     failures += check_an_escaped_bug_has_a_test()
     failures += check_every_reader_photo_reaches_hidde()
     failures += check_everything_sent_reaches_hidde()
