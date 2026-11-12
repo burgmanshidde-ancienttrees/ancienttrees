@@ -28,8 +28,8 @@
    "linked": 0
   },
   "press": {
-   "mailed": 121,
-   "answered": 7,
+   "mailed": 123,
+   "answered": 8,
    "only_auto": 1,
    "linked": 0
   },
@@ -58,17 +58,23 @@
    "linked": 0
   },
   "other": {
-   "mailed": 165,
-   "answered": 53,
+   "mailed": 163,
+   "answered": 52,
    "only_auto": 2,
    "linked": 2
   }
  },
  "weeks": {
   "2026-11-09": {
+   "press": {
+    "mailed": 2,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   },
    "other": {
-    "mailed": 5,
-    "answered": 2,
+    "mailed": 3,
+    "answered": 1,
     "only_auto": 0,
     "linked": 0
    }

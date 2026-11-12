@@ -1,5 +1,17 @@
 # LOG
 
+<!-- archive-index -->
+
+**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
+
+- [2026-11](archive/LOG-2026-11.md)
+- [2026-10](archive/LOG-2026-10.md)
+- [2026-09](archive/LOG-2026-09.md)
+- [2026-08](archive/LOG-2026-08.md)
+- [2026-07](archive/LOG-2026-07.md)
+
+So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+<!-- archive-index -->
 ## 2026-11-12 session: a sign-in ends where the tap was going
 
 - **Fixed (Hidde: tapping Isabelle R. on the home page asked for a sign-in and then landed back on the home page):** the website's sign-in sheet now keeps the exact address it was opened on and, for a visitor's name, whose photograph was tapped; after Google, Apple or the mail link the page goes there and finishes the act, so the name opens the profile. The same cause broke Follow on somebody's profile: Supabase returns to the path without its query, so `/profile?u=X` came back as your own `/profile` and the follow was dropped. Both fixed in signin-js.ts (head relay) and visitors-row-js.ts. Checked in a fake browser (jsc): home, profile with query, an unrelated page, an off-site address refused.
@@ -29,18 +41,6 @@ Rung 1 empty (no sightings, no new notes). health.py had one open APP BUG row: t
 - [2026-08](archive/LOG-2026-08.md)
 - [2026-07](archive/LOG-2026-07.md)
 
-<!-- archive-index -->
-
-**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
-
-- [2026-11](archive/LOG-2026-11.md)
-- [2026-10](archive/LOG-2026-10.md)
-- [2026-09](archive/LOG-2026-09.md)
-- [2026-08](archive/LOG-2026-08.md)
-- [2026-07](archive/LOG-2026-07.md)
-
-So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
-<!-- archive-index -->
 ## 2026-11-11 session: Android's icons and type as the iPhone's
 
 What changed in the Android app (the review's icon and type rows, out/parity-feel/visual-review-2026-11-11.md):

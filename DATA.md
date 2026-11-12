@@ -29,6 +29,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 **Today: nothing here needs you.** The blocks below are the standing picture.
 
+**North star: 13 people have uploaded a tree or photo of their own (+2 this week); 4 of them did it on more than one day (+0).**
+
 **The numbers that matter** (this week against the week before; strangers only)
 
 | Number | Why | This week | Week before |
@@ -40,20 +42,16 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 | Website visitors who came back | people who stay | 9 | 14 |
 | App downloads (first-time) | people | 22 | 14 |
 | New accounts | people | 2 | 12 |
-| Phones back within 30 days | people who stay | 3 of 15 | 4 of 7 |
+| Phones back within 30 days | people who stay | 2 of 14 | 5 of 7 |
 | Trees saved to Want to go | intent | 1 | 3 |
 | Trees collected | goal 1: stood at a tree | 2 | 5 |
-| Readers' contributions | data: trees, photos, corrections, votes | 1 | 3 |
+| Readers' contributions | data: trees, photos, corrections, votes | 3 | 6 |
 | Shares (app and web) | word of mouth, since 10-30 | 2 | 2 |
 | Visits from a shared link | what sharing brings | 0 | 2 |
 
 Website visitors are Google Analytics' count, so only people who accepted the cookie bar; a visitor who comes back on another browser or device counts as new, and GA cannot leave our own visits out, so read the came-back row as a direction, not a count. The 30-day row is the phones that arrived five weeks ago, so it moves slowly.
 
-**Quality**: Web green, iOS orange, Android grey, Backup red. Backup: Hidde's one-time setup in BACKUP_RESTORE.md.
-
-| | Web | iOS | Android |
-|---|---|---|---|
-| Open bugs | green | orange: 1 open | grey: no checks wired yet |
+**Quality**: Web green, iOS green, Android grey, Backup red. Backup: Hidde's one-time setup in BACKUP_RESTORE.md.
 
 **Plus question**: no answers yet.
 
@@ -72,7 +70,9 @@ Website visitors are Google Analytics' count, so only people who accepted the co
 | Trees sent | 1 | 0 | 0 | 0 | 0 | 0 | 0 | **1** |
 | Feedback | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **0** |
 | Ambassador asks | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **0** |
-| App photos | 0 | 0 | 1 | 0 | 0 | 0 | 1 | **2** |
+| Website photos | 0 | 0 | 0 | 0 | 0 | 0 | 1 | **1** |
+| iPhone photos | 0 | 0 | 1 | 0 | 0 | 0 | 0 | **1** |
+| Android photos | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **0** |
 | Tree notes | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **0** |
 | App Store reviews | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **0** |
 - – means the source has not reported that day yet (Apple's downloads arrive a day or two late), not zero.
@@ -89,6 +89,7 @@ Website visitors are Google Analytics' count, so only people who accepted the co
 **Waiting for you** (what the runs left for you since 2026-11-11)
 
 - 258 email addresses ready to mail (archive 2, nature 9, guide 9, press 135, source 65, council 16, tourism 7, society 7, other 5, garden 3); **the night run found no new contacts in two days**
+- next iOS build carries this fix.
 - the daily task "publish-held-trees-daily" can be switched off under Scheduled; the night run's write passes put new trees straight into the app.
 - category and public contact address are his choice (in the listing draft); then the click list once Google has verified him.
 - prepare.py's awaiting-a-writer count overstates the shelf; the research files passcheck calls stale could be cleaned up.
@@ -133,12 +134,33 @@ Google, the last 10 days it will give us (2-3 days behind; the newest row is sti
 | 11-08 | 126 | 9 | 7.1% |
 | **7 days** | **844** | **39** | **4.6%** |
 - **BING WATCHDOG:** impressions fell from 2847 to 844 week on week. That is the shape of a demotion; read the Bing Webmaster dashboard today.
-- Top Bing queries: oldest tree china (c8/i4, p12); picture of the tree in helsinki city center that was preserved (c3/i2, p4); ancient trees app (c2/i8, p5); fig tree in square alicante (c2/i4, p4); palma del cile (c2/i2, p6); cipresso calvo indro montanelli milano (c2/i2, p8); big trees of quebec city (c2/i1, p2); mit newton apple tree address (c2/i1, p2)
+- Top Bing queries: oldest tree china (c8/i4, p12); picture of the tree in helsinki city center that was preserved (c3/i2, p4); ancient trees app (c2/i8, p5); fig tree in square alicante (c2/i4, p4); cipresso calvo indro montanelli milano (c2/i2, p8); palma del cile (c2/i2, p6); big trees of quebec city (c2/i1, p2); mit newton apple tree address (c2/i1, p2)
 - Bing alone, from Bing Webmaster Tools. DuckDuckGo and Yahoo draw on the same index and publish no numbers. Bing's data lags about two days.
 
 ---
 
 **For the night run, not for you.** You can stop reading here.
+
+
+**What the machine did, the last 24 hours**
+
+| Started | Minutes | Trees | Commits | Refused | Cities |
+|---|---:|---:|---:|---:|---|
+| 11-12T07:32 | 2.6 | 0 | 4 | 0 | - |
+| **1 runs** | **3** | **0** | **4** | | |
+
+- 1 of 1 produced no trees; last build that went live: 0h ago.
+
+**What they made**
+
+- Fresh-eyes review: 7 finding(s)
+- Fresh-eyes review: 4 finding(s)
+- Log: shared-photo crash fix, audit row closed
+- Shared tree: the photo URL is percent-encoded and never force-unwrapped
+- Photographs readers sent, queued for a look; vouched ones live
+- Contributor replies and ambassador invitations sent, log updated
+- Record when each page last changed
+- Contributor replies and ambassador invitations sent, log updated
 
 Machine: 4 chain attempts yesterday, 1 got real work time (~10 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
 

@@ -563,24 +563,24 @@ so qa.py fails the deploy when the table and the json disagree.
 | 358 | Rouen | 0.54 | 72,334 | 12 | - | 1 | 6 | 20 | published, never ranked (may be uncrawled) |
 | 359 | Phoenix | 0.55 | - | - | - | - | - | 60 | predicted (travel demand) |
 | 360 | Roosendaal | 0.26 | - | 20 | - | 2 | 138 | 20 | published, never ranked (may be uncrawled) |
-| 361 | Windsor | 0.50 | 30,452 | 2 | - | - | - | 10 | predicted (travel demand) |
-| 362 | Killarney | 0.30 | 28,763 | 1 | 1 | - | - | 10 | published, never ranked (may be uncrawled) |
-| 363 | Yakushima | 0.28 | - | 2 | 2 | - | 1 | 10 | published, never ranked (may be uncrawled) |
-| 364 | Canterbury | 0.40 | 53,301 | 4 | 1 | 1 | - | 20 | published, never ranked (may be uncrawled) |
-| 365 | Zadar | 0.38 | 71,549 | 1 | - | - | 1 | 20 | published, never ranked (may be uncrawled) |
-| 366 | Toledo | 0.24 | 3,149 | - | - | - | - | 20 | predicted (travel demand) |
-| 367 | Anuradhapura | 0.32 | - | 1 | - | - | - | 20 | published, never ranked (may be uncrawled) |
-| 368 | Regensburg | 0.30 | 51,930 | 8 | 2 | 1 | 3 | 20 | published, never ranked (may be uncrawled) |
-| 369 | Bamberg | 0.24 | 28,716 | 9 | 7 | 1 | 12 | 20 | published, never ranked (may be uncrawled) |
-| 370 | Newark | 0.29 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 371 | Assisi | 0.17 | 30,278 | 6 | 1 | 2 | 6 | 10 | published, never ranked (may be uncrawled) |
-| 372 | Stratford-upon-Avon | 0.27 | 68,555 | 2 | - | - | - | 10 | published, never ranked (may be uncrawled) |
-| 373 | La Palma | 0.17 | - | 4 | 3 | - | - | 20 | published, never ranked (may be uncrawled) |
-| 374 | Allentown | 0.24 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 375 | Oss | 0.11 | - | 5 | - | - | 48 | 20 | published, never ranked (may be uncrawled) |
-| 376 | Queenstown | 0.16 | 36,672 | - | - | - | - | 10 | predicted (travel demand) |
-| 377 | Buffalo | 0.15 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 378 | San Juan | 0.15 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 361 | Killarney | 0.30 | 28,763 | 1 | 1 | - | - | 10 | published, never ranked (may be uncrawled) |
+| 362 | Yakushima | 0.28 | - | 2 | 2 | - | 1 | 10 | published, never ranked (may be uncrawled) |
+| 363 | Canterbury | 0.40 | 53,301 | 4 | 1 | 1 | - | 20 | published, never ranked (may be uncrawled) |
+| 364 | Zadar | 0.38 | 71,549 | 1 | - | - | 1 | 20 | published, never ranked (may be uncrawled) |
+| 365 | Toledo | 0.24 | 3,149 | - | - | - | - | 20 | predicted (travel demand) |
+| 366 | Anuradhapura | 0.32 | - | 1 | - | - | - | 20 | published, never ranked (may be uncrawled) |
+| 367 | Regensburg | 0.30 | 51,930 | 8 | 2 | 1 | 3 | 20 | published, never ranked (may be uncrawled) |
+| 368 | Bamberg | 0.24 | 28,716 | 9 | 7 | 1 | 12 | 20 | published, never ranked (may be uncrawled) |
+| 369 | Newark | 0.29 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 370 | Assisi | 0.17 | 30,278 | 6 | 1 | 2 | 6 | 10 | published, never ranked (may be uncrawled) |
+| 371 | Stratford-upon-Avon | 0.27 | 68,555 | 2 | - | - | - | 10 | published, never ranked (may be uncrawled) |
+| 372 | La Palma | 0.17 | - | 4 | 3 | - | - | 20 | published, never ranked (may be uncrawled) |
+| 373 | Allentown | 0.24 | - | - | - | - | - | 20 | predicted (travel demand) |
+| 374 | Oss | 0.11 | - | 5 | - | - | 48 | 20 | published, never ranked (may be uncrawled) |
+| 375 | Queenstown | 0.16 | 36,672 | - | - | - | - | 10 | predicted (travel demand) |
+| 376 | Buffalo | 0.15 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 377 | San Juan | 0.15 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 378 | Windsor | 0.13 | 30,452 | 2 | - | - | - | 10 | published, never ranked (may be uncrawled) |
 | 379 | Halifax | 0.08 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 380 | Memphis | 0.08 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 381 | George Town | 0.07 | 36,080 | 1 | - | - | - | 30 | published, never ranked (may be uncrawled) |

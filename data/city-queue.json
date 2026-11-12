@@ -8366,29 +8366,6 @@
   },
   {
    "rank": 361,
-   "city": "Windsor",
-   "country": "United Kingdom",
-   "slug": "windsor",
-   "score": 0.5,
-   "demand": 30452,
-   "basis": "predicted (travel demand)",
-   "status": "published",
-   "trees": 2,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 1,
-   "target": 10,
-   "ease": 1.02,
-   "work_score": 0.51,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "travel": 501,
-   "wikidata": 1
-  },
-  {
-   "rank": 362,
    "city": "Killarney",
    "country": "Ireland",
    "slug": "killarney",
@@ -8411,7 +8388,7 @@
    "wikidata": 0
   },
   {
-   "rank": 363,
+   "rank": 362,
    "city": "Yakushima",
    "country": "Japan",
    "slug": "yakushima",
@@ -8435,7 +8412,7 @@
    "wikidata": 3
   },
   {
-   "rank": 364,
+   "rank": 363,
    "city": "Canterbury",
    "country": "United Kingdom",
    "slug": "canterbury",
@@ -8458,7 +8435,7 @@
    "wikidata": 1
   },
   {
-   "rank": 365,
+   "rank": 364,
    "city": "Zadar",
    "country": "Croatia",
    "slug": "zadar",
@@ -8481,7 +8458,7 @@
    "wikidata": 0
   },
   {
-   "rank": 366,
+   "rank": 365,
    "city": "Toledo",
    "country": "Spain",
    "slug": "toledo",
@@ -8504,7 +8481,7 @@
    "wikidata": 0
   },
   {
-   "rank": 367,
+   "rank": 366,
    "city": "Anuradhapura",
    "country": "Sri Lanka",
    "slug": "anuradhapura",
@@ -8528,7 +8505,7 @@
    "wikidata": 0
   },
   {
-   "rank": 368,
+   "rank": 367,
    "city": "Regensburg",
    "country": "Germany",
    "slug": "regensburg",
@@ -8551,7 +8528,7 @@
    "wikidata": 0
   },
   {
-   "rank": 369,
+   "rank": 368,
    "city": "Bamberg",
    "country": "Germany",
    "slug": "bamberg",
@@ -8583,7 +8560,7 @@
    "score": 0.29,
    "basis": "predicted (travel demand)",
    "work_score": 0.29,
-   "rank": 370,
+   "rank": 369,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -8597,7 +8574,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 371,
+   "rank": 370,
    "city": "Assisi",
    "country": "Italy",
    "slug": "assisi",
@@ -8620,7 +8597,7 @@
    "wikidata": 0
   },
   {
-   "rank": 372,
+   "rank": 371,
    "city": "Stratford-upon-Avon",
    "country": "United Kingdom",
    "slug": "stratford-upon-avon",
@@ -8643,7 +8620,7 @@
    "wikidata": 1
   },
   {
-   "rank": 373,
+   "rank": 372,
    "city": "La Palma",
    "country": "Spain",
    "slug": "la-palma",
@@ -8676,7 +8653,7 @@
    "score": 0.24,
    "basis": "predicted (travel demand)",
    "work_score": 0.24,
-   "rank": 374,
+   "rank": 373,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -8703,7 +8680,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 0.22,
-   "rank": 375,
+   "rank": 374,
    "impressions_10d": 0,
    "clicks_10d": 0,
    "score": 0.11,
@@ -8713,7 +8690,7 @@
    "slug": "oss"
   },
   {
-   "rank": 376,
+   "rank": 375,
    "city": "Queenstown",
    "country": "New Zealand",
    "slug": "queenstown",
@@ -8745,7 +8722,7 @@
    "score": 0.15,
    "basis": "predicted (travel demand)",
    "work_score": 0.15,
-   "rank": 377,
+   "rank": 376,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -8768,7 +8745,7 @@
    "score": 0.15,
    "basis": "predicted (travel demand)",
    "work_score": 0.15,
-   "rank": 378,
+   "rank": 377,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -8780,6 +8757,29 @@
    "slug": "san-juan",
    "impressions_10d": 0,
    "clicks_10d": 0
+  },
+  {
+   "rank": 378,
+   "city": "Windsor",
+   "country": "United Kingdom",
+   "slug": "windsor",
+   "score": 0.13,
+   "demand": 30452,
+   "basis": "published, never ranked (may be uncrawled)",
+   "status": "published",
+   "trees": 2,
+   "photos": 0,
+   "walks": 0,
+   "register": 0,
+   "ready": 0,
+   "supply": 1,
+   "target": 10,
+   "ease": 1.02,
+   "work_score": 0.13,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "travel": 501,
+   "wikidata": 1
   },
   {
    "rank": 379,
