@@ -20,7 +20,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-11-12 session: inbox, Valencia's photo ask sent
 
 - **Sent (Hidde: "die naar valencia mag eruit"):** reply to the València parks service's tree heritage section, asking whether the photographs on their geoportal fichas of the monumental trees may go on our pages, credited "Ajuntament de València". Their yes would open photos for the Valencia page (31 trees, almost none photographed).
-- **Drafted, not sent:** KNNV Utrecht (Hidde's own text; she is searching her archive and has a new tree book at the publisher), Genziana Ricci in Ferrara (asks her favourite old tree between Bologna and Ferrara). No reply needed: Dorit's "gute Idee, das mache ich", Remember Singapore's polite no.
+- **Sent (Hidde: "to cockie is goed"):** KNNV Utrecht, his own text; she is searching her archive and has a new tree book at the publisher.
+- **Drafted, not sent:** Genziana Ricci, his text rendered in Italian in Ferrara (asks her favourite old tree between Bologna and Ferrara). No reply needed: Dorit's "gute Idee, das mache ich", Remember Singapore's polite no.
 
 ## 2026-11-12 session: Rainer Lippert's yes on file
 

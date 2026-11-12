@@ -243,6 +243,11 @@ belongs in Helpful Details or nowhere.
 - NO: "Een bomenboek over de singels en grachten, en nu een nieuw boek voor het 125-jarig bestaan, daar ben ik erg benieuwd naar."
 - YES: "Benieuwd naar je opkomende boek ook 🙂"
 
+**when their outlet is gone, turn the ask to them as a person instead of thanking for the news** (added 2026-11-12)
+
+- NO: "grazie per la risposta così gentile, e per avermi detto di Storiedipianura. Hai un albero antico preferito..."
+- YES: "Thank you for the kind reply. In that case more to you as a person; Do you have a favourite old tree..."
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**
