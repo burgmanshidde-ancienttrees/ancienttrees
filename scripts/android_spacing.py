@@ -306,7 +306,15 @@ def dump_screen(adb, name, args, scrolls, density):
         # The sheet puts the sign-in sheet over itself on arrival, on both phones;
         # the iPhone's dump is rooted at the sheet under it, so this one is read
         # with the sign-in sheet closed (system back), as a person sees it then.
-        if 'resource-id="signin-sheet"' in dump_ours(adb, density):
+        # It may come up a moment late (CI, 2026-11-12: contribute matched
+        # nothing): wait for it, close it, and see that it went.
+        for _ in range(10):
+            if 'resource-id="signin-sheet"' in dump_ours(adb, density):
+                break
+            time.sleep(1)
+        for _ in range(3):
+            if 'resource-id="signin-sheet"' not in dump_ours(adb, density):
+                break
             adb.shell("input", "keyevent", "KEYCODE_BACK")
             time.sleep(3)
     XML_DIR.mkdir(parents=True, exist_ok=True)
