@@ -1346,8 +1346,12 @@ enum MapLayers {
             // map drew ONE pin for fourteen hundred trees, silently.
             f.attributes = [idKey: t.id, "icon": name,
                             countKey: 1, kindKey: "tree", "at_label": "",
-                            "pr": pinPriority(hasPhoto: t.photo != nil, saves: t.saves ?? 0),
-                            "mini": t.mini == true]
+                            // A tree you saved takes its full pin before any
+                            // other and is never thinned out far away, so it is
+                            // never the dot under a neighbour (Hidde, 2026-11-12;
+                            // the website's city map does the same).
+                            "pr": loved ? -200_000 : pinPriority(hasPhoto: t.photo != nil, saves: t.saves ?? 0),
+                            "mini": t.mini == true && !loved]
             features.append(f)
         }
         state(for: style).leaves = features
@@ -1864,6 +1868,19 @@ enum MapLayers {
     /// toegevoegd"). The mark is a small white disc with a check, bottom right,
     /// which is where Google Maps hangs its saved-place flag and what the
     /// Collected control in this app already uses as its symbol.
+    /// One corner's white disc, with the website's small shadow (.pin-fav,
+    /// .pin-got, .pin-ticket: 0 1px 3px at 30%), so a corner reads as its own
+    /// mark on the solid pin rather than a bite out of it (2026-11-12).
+    private static func cornerDisc(_ r: CGRect) {
+        let ctx = UIGraphicsGetCurrentContext()
+        ctx?.saveGState()
+        ctx?.setShadow(offset: CGSize(width: 0, height: 0.75), blur: 2,
+                       color: UIColor(red: 0.1, green: 0.1, blue: 0.08, alpha: 0.35).cgColor)
+        UIColor.white.setFill()
+        UIBezierPath(ovalIn: r).fill()
+        ctx?.restoreGState()
+    }
+
     private static func pin(colour: UIColor, glyph: UIImage?, collected: Bool = false,
                             ticket: Bool = false, favourite: Bool = false) -> UIImage {
         let d: CGFloat = 38
@@ -1904,8 +1921,7 @@ enum MapLayers {
                 // arrives already learned.
                 let b: CGFloat = 17
                 let r = CGRect(x: 1, y: d - b - 1, width: b, height: b)
-                UIColor.white.setFill()
-                UIBezierPath(ovalIn: r).fill()
+                cornerDisc(r)
                 let blue = UIColor(red: 0.18, green: 0.42, blue: 0.66, alpha: 1)
                 if let glyph = UIImage(systemName: "ticket.fill")?
                     .withConfiguration(UIImage.SymbolConfiguration(pointSize: 9,
@@ -1923,42 +1939,46 @@ enum MapLayers {
             if favourite {
                 // TOP RIGHT, because the other two corners are taken: the
                 // ticket sits bottom left and the collected tick bottom right,
-                // and a tree can wear all three at once. Red rather than moss:
-                // a heart is red in every app anybody has used, and the heart
-                // on our own cards is already red, so the map agrees with the
-                // list.
+                // and a tree can wear all three at once. MOSS since 2026-11-12
+                // (Hidde: "trek ze allemaal eens naar de ticket stijl"): every
+                // corner is a white disc with a filled icon in colour, moss for
+                // what you did, blue for the place. It was red from the heart
+                // it used to be; the saved bookmark on the cards is moss.
                 let b: CGFloat = 15
                 let r = CGRect(x: d - b - 1, y: 1, width: b, height: b)
-                UIColor.white.setFill()
-                UIBezierPath(ovalIn: r).fill()
-                let red = UIColor(red: 0.85, green: 0.20, blue: 0.24, alpha: 1)
-                if let heart = UIImage(systemName: "bookmark.fill")?
-                    .withConfiguration(UIImage.SymbolConfiguration(pointSize: 8,
+                cornerDisc(r)
+                if let mark = UIImage(systemName: "bookmark.fill")?
+                    .withConfiguration(UIImage.SymbolConfiguration(pointSize: 7,
                                                                    weight: .bold))
-                    .withTintColor(red, renderingMode: .alwaysOriginal) {
-                    let sz = heart.size
-                    heart.draw(in: CGRect(x: r.midX - sz.width / 2,
-                                          y: r.midY - sz.height / 2,
-                                          width: sz.width, height: sz.height))
+                    .withTintColor(moss, renderingMode: .alwaysOriginal) {
+                    let sz = mark.size
+                    mark.draw(in: CGRect(x: r.midX - sz.width / 2,
+                                         y: r.midY - sz.height / 2,
+                                         width: sz.width, height: sz.height))
                 } else {
-                    red.setFill()
+                    moss.setFill()
                     UIBezierPath(ovalIn: r.insetBy(dx: 4, dy: 4)).fill()
                 }
             }
             if collected {
+                // A FILLED tick, Apple's checkmark.circle.fill, so it weighs
+                // what the bookmark and the ticket weigh (2026-11-12; a drawn
+                // line tick read thin beside them). Same white disc.
                 let b: CGFloat = 15
                 let r = CGRect(x: d - b - 1, y: d - b - 1, width: b, height: b)
-                UIColor.white.setFill()
-                UIBezierPath(ovalIn: r).fill()
-                let tick = UIBezierPath()
-                tick.move(to: .init(x: r.minX + 4.0, y: r.midY))
-                tick.addLine(to: .init(x: r.midX - 0.6, y: r.maxY - 4.4))
-                tick.addLine(to: .init(x: r.maxX - 3.6, y: r.minY + 4.6))
-                tick.lineWidth = 2.2
-                tick.lineCapStyle = .round
-                tick.lineJoinStyle = .round
-                colour.setStroke()
-                tick.stroke()
+                cornerDisc(r)
+                if let tick = UIImage(systemName: "checkmark.circle.fill")?
+                    .withConfiguration(UIImage.SymbolConfiguration(pointSize: 10,
+                                                                   weight: .bold))
+                    .withTintColor(moss, renderingMode: .alwaysOriginal) {
+                    let sz = tick.size
+                    tick.draw(in: CGRect(x: r.midX - sz.width / 2,
+                                         y: r.midY - sz.height / 2,
+                                         width: sz.width, height: sz.height))
+                } else {
+                    moss.setFill()
+                    UIBezierPath(ovalIn: r.insetBy(dx: 3, dy: 3)).fill()
+                }
             }
         }
     }
