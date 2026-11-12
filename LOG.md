@@ -13,6 +13,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-12 daily publish (scheduled task): queue empty
+
+- **Daily publish: queue empty.** No builder newer than 11-10 and every held set has been on main since 11-11; preflight 0 problems, pace not touched. For Hidde: the daily task "publish-held-trees-daily" can be switched off under Scheduled.
+
 ## 2026-11-12 session: saved trees show on the map, corners in one style
 
 - **A tree you saved is never a dot any more** (Hidde: four saved in Frankfurt and only two showed): on the website's city map saved trees take their full pin first (city-map-script.ts updatePins), and in the iPhone app they get the first pin priority and are never thinned out. Tested on the live Frankfurt page with a stand-in saved list: before, 3 of 4 bookmarks showed (the Goethe Ginkgo in Rödelheim was a dot).
