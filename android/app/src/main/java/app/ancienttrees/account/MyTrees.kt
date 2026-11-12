@@ -155,14 +155,20 @@ class MyTrees(private val account: Account) {
      * or when asked to (Collect.swift's once-per-account load, 2026-11-04).
      */
     suspend fun load(force: Boolean = false) {
-        if (demoSeeded) return
+        // The stand-in account (-signed-in) asks the server nothing, as its saves do.
+        if (demoSeeded || account.standIn) return
         val s = account.fresh() ?: run { forget(); return }
         if (!force && loadedFor == s.userId && System.currentTimeMillis() - loadedAt < 600_000) return
         val rows = Supa.rows("/rest/v1/sightings?select=*", s.accessToken)
-        all = rows.mapNotNull(::parse).sortedByDescending { it.date }
-        sent = mine(s.accessToken)
-        approved = Supa.rows("/rest/v1/sightings?select=tree_id&added=is.true&status=eq.published&tree_id=not.is.null", s.accessToken)
+        val yours = mine(s.accessToken)
+        val taken = Supa.rows("/rest/v1/sightings?select=tree_id&added=is.true&status=eq.published&tree_id=not.is.null", s.accessToken)
             .mapNotNull { it.str("tree_id") }.toSet()
+        // -mine-demo seeded while the server was asked: the demo stays (a slow CI
+        // catalogue let this answer land on top of it, and own-tree opened nothing).
+        if (demoSeeded) return
+        all = rows.mapNotNull(::parse).sortedByDescending { it.date }
+        sent = yours
+        approved = taken
         // Your name, face, flag and counts come from account/Profiles.kt (MainActivity loads it).
         loadedFor = s.userId
         loadedAt = System.currentTimeMillis()
