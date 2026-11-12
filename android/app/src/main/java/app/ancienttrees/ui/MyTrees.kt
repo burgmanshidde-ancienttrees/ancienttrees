@@ -54,6 +54,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.zIndex
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.draw.clip
@@ -455,7 +456,11 @@ private fun WhoRow(signedIn: Boolean, email: String?, mine: MyTrees, actions: My
                 }
             }
             Column {
-                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                // The name row stands above the counts: their 44 tap frame reaches 12
+                // up into it, and Compose leaves a covered part out of a node's
+                // accessibility box, which cut the flag in half for TalkBack and the
+                // spacing check (iPhone: the whole 20 flag).
+                Row(Modifier.zIndex(1f), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     val name = if (signedIn) {
                         me?.displayName ?: email?.substringBefore("@") ?: stringResource(R.string.mt_your_trees)
                     } else {
@@ -562,14 +567,14 @@ private fun LanePicker(lane: TreesLane, onPick: (TreesLane) -> Unit) {
     Box(Modifier.fillMaxWidth()) {
         Box(Modifier.align(Alignment.BottomStart).fillMaxWidth().height(1.dp).background(brand.hairline))
         Row(horizontalArrangement = Arrangement.spacedBy(24.dp)) {
-            LaneTab(stringResource(R.string.mt_collected), lane == TreesLane.SEEN, "lane-collected") { onPick(TreesLane.SEEN) }
-            LaneTab(stringResource(R.string.want_to_visit), lane == TreesLane.WANT, "lane-want") { onPick(TreesLane.WANT) }
+            LaneTab(stringResource(R.string.mt_collected), lane == TreesLane.SEEN) { onPick(TreesLane.SEEN) }
+            LaneTab(stringResource(R.string.want_to_visit), lane == TreesLane.WANT) { onPick(TreesLane.WANT) }
         }
     }
 }
 
 @Composable
-private fun LaneTab(title: String, on: Boolean, tag: String, onClick: () -> Unit) {
+private fun LaneTab(title: String, on: Boolean, onClick: () -> Unit) {
     val brand = Brand.colors
     val moss = brand.moss
     Text(
@@ -579,15 +584,11 @@ private fun LaneTab(title: String, on: Boolean, tag: String, onClick: () -> Unit
         color = if (on) brand.ink else brand.inkSoft,
         maxLines = 1,
         modifier = Modifier
-            // The 2 point moss line under the chosen word, on the hairline, across the whole 12 a side.
-            .drawBehind { if (on) drawRect(moss, Offset(0f, size.height - 2.dp.toPx()), Size(size.width, 2.dp.toPx())) }
-            // 12 a side as before, 2 of it outside the button: the iPhone's lane button
-            // is 43.3 tall (data/ios-frames.json lane-collected), Android's was 48.
-            .padding(vertical = 2.dp)
             .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, role = Role.Tab, onClick = onClick)
             .semantics { selected = on }
-            .testTag(tag)
-            .padding(vertical = 10.dp),
+            // The 2 point moss line under the chosen word, on the hairline.
+            .drawBehind { if (on) drawRect(moss, Offset(0f, size.height - 2.dp.toPx()), Size(size.width, 2.dp.toPx())) }
+            .padding(vertical = 12.dp),
     )
 }
 

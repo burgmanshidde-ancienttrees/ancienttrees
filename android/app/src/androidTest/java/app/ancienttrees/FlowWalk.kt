@@ -324,8 +324,8 @@ class FlowWalk {
     // The lane picker, reported dead three times on the iPhone before it was pinned.
     @Test fun myTreesLanes() = walk("my-trees-lanes", listOf("-tab=2") + signedIn,
         Step("raise-the-sheet") { drag(0.55f, 0.16f) },
-        Step("favourites") { tap("lane-want") },
-        Step("back-to-my-trees") { tap("lane-collected") },
+        Step("favourites") { tap("Want to visit") },
+        Step("back-to-my-trees") { tap("Collected") },
     )
 
     // THE ROUTE TO DELETING AN ACCOUNT (store rule): the tap is the assertion; it stops at Cancel.

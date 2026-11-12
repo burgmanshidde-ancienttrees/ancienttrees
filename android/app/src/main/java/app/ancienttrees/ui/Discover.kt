@@ -1116,7 +1116,10 @@ private fun CollectionPage(c: TreeCollection, catalogue: Catalogue, onBack: () -
             contentPadding = PaddingValues(top = 6.dp, bottom = 90.dp),
         ) {
             c.intro?.takeIf { it.isNotEmpty() }?.let { intro ->
-                item { Text(intro, fontSize = 16.sp, color = brand.inkSoft, modifier = Modifier.padding(horizontal = 16.dp).padding(top = 4.dp)) }
+                item {
+                    // .callout's leading, 21 between lines (Text.kt), as the species intro.
+                    Text(intro, fontSize = 16.sp, lineHeight = 21.sp, color = brand.inkSoft, modifier = Modifier.padding(horizontal = 16.dp).padding(top = 4.dp))
+                }
             }
             items(catalogue.treesOf(c), key = { it.id }) { t ->
                 TreeCard(t, { onOpen(t) }, Modifier.padding(horizontal = 16.dp))

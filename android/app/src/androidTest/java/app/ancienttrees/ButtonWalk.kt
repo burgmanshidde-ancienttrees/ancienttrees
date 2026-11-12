@@ -97,7 +97,7 @@ class ButtonWalk {
             "map|map-recentre" to "the camera already stands on the test's location",
             "map-bar|map-recentre" to "the camera already stands on the test's location",
             "my-trees|map-recentre" to "the camera already stands on the test's location",
-            "my-trees|lane-collected" to "already on Collected, the lane My trees opens on",
+            "my-trees|Collected" to "already on Collected, the lane My trees opens on",
         )
     }
 
