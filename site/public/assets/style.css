@@ -1705,7 +1705,7 @@ footer { border-top: 1px solid var(--cream-dark); }
 /* The colour has to be set on the svg itself: .pin-tree svg paints every
    glyph inside a pin moss, which is right for the silhouette and wrong for
    this one, and inheriting from .pin-ticket loses to it. */
-.pin-tree .pin-ticket svg { width: 10px; height: 10px; color: #2E6BA8; }
+.pin-tree .pin-ticket svg { width: 11px; height: 11px; color: #2E6BA8; fill: #2E6BA8; }
 
 /* A tree at its peak, on the map. The pin is already a species silhouette, so
    the effect belongs to the drawn tree: the silhouette takes the peak colour,

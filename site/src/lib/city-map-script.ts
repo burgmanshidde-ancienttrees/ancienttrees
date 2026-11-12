@@ -33,6 +33,10 @@ const PIN_BOOKMARK = icon("bookmark-simple", "fill", "pin-fav-ic");
 // The collected corner: a filled tick, so it weighs the same as the bookmark
 // and the ticket (Hidde, 2026-11-12, all three corners in the ticket's style).
 const PIN_TICK = icon("check-circle", "fill", "pin-got-ic");
+// The ticket corner: Phosphor's ticket fill, the web counterpart of the app's
+// ticket.fill (it was a hand-made rounded rectangle; Hidde, 2026-11-12, saw the
+// two apps' tickets differ).
+const PIN_TICKET = icon("ticket", "fill", "pin-ticket-ic");
 
 export interface OtherCity {
   slug: string;
@@ -506,7 +510,7 @@ markers.forEach(function(m, idx) {
                //                 bookmark icon")
                + '<span class="pin-fav" aria-hidden="true">${PIN_BOOKMARK}</span>'
                + (m.paid ? '<span class="pin-ticket" aria-hidden="true">'
-                   + '<svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 7.5A1.5 1.5 0 0 1 4.5 6h15A1.5 1.5 0 0 1 21 7.5V10a2 2 0 0 0 0 4v2.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5V14a2 2 0 0 0 0-4V7.5Z"/></svg>'
+                   + '${PIN_TICKET}'
                    + '</span>' : '');
   // A tree at its peak says so on the map. The particles fall from the CROWN of
   // the drawn species, not from a generic dot, which is the whole reason the
