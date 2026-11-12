@@ -1639,14 +1639,16 @@ footer { border-top: 1px solid var(--cream-dark); }
    trees you have stood in front of. Hidden until then, so a fresh map is just
    trees. The tick geometry matches .seen-mark on the check-in button, so the
    same gesture reads the same in both places. */
-.pin-got { position: absolute; bottom: -2px; right: -2px; width: 14px; height: 14px;
-  border-radius: 50%; background: var(--moss); border: 2px solid var(--cream);
+/* ALL THREE CORNERS ONE KIND (Hidde, 2026-11-12: "trek ze allemaal eens naar
+   de ticket stijl"): a white disc with a shadow and a FILLED icon in colour.
+   Moss is what you did (saved, collected), blue is about the place (ticket).
+   The tick is Phosphor's check-circle fill: a line tick on white read thin
+   beside the filled bookmark. CONVENTIONS.md "A tree you saved, on every map". */
+.pin-got { position: absolute; bottom: -3px; right: -3px; width: 15px; height: 15px;
+  border-radius: 50%; background: var(--cream); box-shadow: 0 1px 3px rgba(26,26,20,0.3);
   display: none; }
-.pin-tree.seen .pin-got { display: block; }
-.pin-tree.seen .pin-got::after { content: ''; position: absolute; left: 3px; top: 0.5px;
-  width: 3px; height: 6px; border: solid #fff; border-width: 0 1.5px 1.5px 0;
-  transform: rotate(45deg); }
-.pin-tree.active .pin-got { border-color: var(--moss); }
+.pin-tree.seen .pin-got { display: flex; align-items: center; justify-content: center; }
+.pin-tree .pin-got svg.pin-got-ic { width: 12px; height: 12px; fill: var(--moss); color: var(--moss); }
 
 /* THE OTHER TWO CORNERS (2026-09-12). The app's pin has worn three marks since
    2026-08-25 and this one wore the tick alone, so the same tree looked
@@ -1658,12 +1660,13 @@ footer { border-top: 1px solid var(--cream-dark); }
    rather than something you have done, and must not read as either of the
    other two. A tree can wear all three at once. */
 .pin-fav { position: absolute; top: -3px; right: -3px; width: 15px; height: 15px;
-  border-radius: 50%; background: var(--cream); border: 1.5px solid var(--cream);
+  border-radius: 50%; background: var(--cream);
   box-shadow: 0 1px 3px rgba(26,26,20,0.3); display: none; }
 .pin-tree.kept .pin-fav { display: flex; align-items: center; justify-content: center; }
-/* The bookmark (2026-10-15), red as the app's TreeMap draws it. The colour is
-   set on the svg itself for the same reason as the ticket's below. */
-.pin-tree .pin-fav svg.pin-fav-ic { width: 9px; height: 9px; fill: #D93340; color: #D93340; }
+/* The bookmark (2026-10-15), moss since 2026-11-12 like the saved bookmark on
+   the cards (it kept the heart's red when the heart became a bookmark). The
+   colour is set on the svg itself for the same reason as the ticket's below. */
+.pin-tree .pin-fav svg.pin-fav-ic { width: 9px; height: 9px; fill: var(--moss); color: var(--moss); }
 /* A DOT WHERE A PIN DID NOT FIT (2026-10-24, the Airbnb way, lib/map.ts
    PIN_DISTANCE): the same element, shrunk to a 14px moss-ringed cream dot with
    its drawing and corners hidden; it still selects its tree. */
@@ -1702,7 +1705,7 @@ footer { border-top: 1px solid var(--cream-dark); }
 /* The colour has to be set on the svg itself: .pin-tree svg paints every
    glyph inside a pin moss, which is right for the silhouette and wrong for
    this one, and inheriting from .pin-ticket loses to it. */
-.pin-ticket svg { width: 10px; height: 10px; color: #2E6BA8; }
+.pin-tree .pin-ticket svg { width: 10px; height: 10px; color: #2E6BA8; }
 
 /* A tree at its peak, on the map. The pin is already a species silhouette, so
    the effect belongs to the drawn tree: the silhouette takes the peak colour,

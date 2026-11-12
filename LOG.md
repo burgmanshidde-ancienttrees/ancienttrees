@@ -13,6 +13,14 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-12 session: saved trees show on the map, corners in one style
+
+- **A tree you saved is never a dot any more** (Hidde: four saved in Frankfurt and only two showed): on the website's city map saved trees take their full pin first (city-map-script.ts updatePins), and in the iPhone app they get the first pin priority and are never thinned out. Tested on the live Frankfurt page with a stand-in saved list: before, 3 of 4 bookmarks showed (the Goethe Ginkgo in Rödelheim was a dot).
+- **All three pin corners now in the ticket's style** (Hidde: "trek ze allemaal eens naar de ticket stijl"): a white disc with a shadow and a filled icon. The bookmark is moss instead of red (it kept the heart's red; the cards' bookmark is moss), the collected tick is a filled check-circle (Phosphor on the web, Apple's checkmark.circle.fill in the app) instead of a line tick, the ticket stays blue. Web and iPhone in the same change; the iPhone shows it from the next build.
+- Fixed in passing: the city map painted the saved corners only if the saved list arrived after the map script; it now paints once on start as well.
+- For Android: the same two changes (corner style, saved never a dot) before its first release.
+- Benchmark in CONVENTIONS.md "A tree you saved, on every map" (AllTrails heart on the pin, Google Maps' list icons kept on the map, both looked at in the browser). Explore and country maps still carry no saved mark; not part of this change.
+
 ## 2026-11-12 session: "Approved" and own trees on a profile, in both apps
 
 - **iPhone and Android now draw what the website's profile already shows (Hidde's approved design, CONVENTIONS.md "Your own trees on a public profile"):** on somebody's Collected grid an "Approved" capsule top-left on the trees they added that we took in (MineCard's moss capsule with the seal-check, at the city pill's size, 6 in), then their own trees with their shared photograph (or their name), each opening its shared page. Your own My trees grid marks your approved trees the same way, read from your own sightings rows. "Approved" in eight languages on Android.

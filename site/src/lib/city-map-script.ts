@@ -30,6 +30,9 @@ import { mapFiltersJs } from "./map-filters-js";
 
 // The saved-tree corner of a pin: the cards' own bookmark, filled.
 const PIN_BOOKMARK = icon("bookmark-simple", "fill", "pin-fav-ic");
+// The collected corner: a filled tick, so it weighs the same as the bookmark
+// and the ticket (Hidde, 2026-11-12, all three corners in the ticket's style).
+const PIN_TICK = icon("check-circle", "fill", "pin-got-ic");
 
 export interface OtherCity {
   slug: string;
@@ -299,7 +302,13 @@ function updatePins() {
   if (!far && activeIdx >= 0 && !stackOf[activeIdx]) {
     placed.push(map.project([markers[activeIdx].lng, markers[activeIdx].lat]));
   }
-  PIN_ORDER.forEach(function(i) {
+  // A TREE YOU SAVED IS PLACED FIRST, so it is never the dot under a neighbour
+  // (Hidde, 2026-11-12: four saved in Frankfurt and only two showed; Google
+  // Maps keeps saved places where it leaves others off). CONVENTIONS.md "A tree
+  // you saved, on every map".
+  var order = PIN_ORDER.filter(function(i) { return pins[i].classList.contains('kept'); })
+    .concat(PIN_ORDER.filter(function(i) { return !pins[i].classList.contains('kept'); }));
+  order.forEach(function(i) {
     pins[i].style.visibility = far || OFF[i] ? 'hidden' : '';
     if (far || OFF[i] || pins[i].classList.contains('pin-stacked')) { return; }
     // A spread stack's pins stand 36 apart by design: never dots.
@@ -480,7 +489,7 @@ markers.forEach(function(m, idx) {
                // something the number was only borrowing: whether you have
                // stood in front of this tree. Empty by default, a moss tick
                // once you have.
-               + '<span class="pin-got" aria-hidden="true"></span>'
+               + '<span class="pin-got" aria-hidden="true">${PIN_TICK}</span>'
                // THE THREE CORNERS, the app's own pin (2026-09-12, "trek dit
                // allemaal gelijk"). TreeMap.swift has drawn all three since
                // 2026-08-25 and this pin drew one: the tick. Same corners, same
@@ -827,7 +836,13 @@ window.atPaintPinFaves = function() {
     var kept = Boolean(window.atHasSaved && window.atHasSaved(m.id));
     pins[idx].classList.toggle('kept', kept);
   });
+  // Saved trees take their full pins first, so the dots are worked out again.
+  updatePins();
 };
+// The saved list may have arrived before this script ran (it is fetched by
+// tree-actions-js, which runs first); its paint found no pins then, so paint
+// once now from whatever answer is already held.
+window.atPaintPinFaves();
 
 function paintPassport() {
   var seen = readSeen();
