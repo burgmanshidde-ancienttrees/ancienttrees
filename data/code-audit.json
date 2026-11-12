@@ -314,9 +314,10 @@
    "file": "",
    "summary": "A sign-in asked by a tap came back to the page it started on, not where the tap was going (home visitor name to profile; /profile?u= lost its query)",
    "first_seen": "2026-11-12",
-   "status": "open",
+   "status": "fixed",
    "found_by": "hidde",
-   "test": "qa.check_a_sign_in_ends_where_the_tap_was_going"
+   "test": "qa.check_a_sign_in_ends_where_the_tap_was_going",
+   "fixed_in": "40721852b"
   }
  ]
 }
