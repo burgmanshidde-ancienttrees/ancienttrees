@@ -96,6 +96,7 @@ private class MapHolder {
     var centred: String? = null
 
     private var swaps = 0
+    private var firstPinsLogged = false
 
     /**
      * NO FADE DURING THE SWAP (TreeMap.swift performsPlacementTransitions; Hidde,
@@ -111,6 +112,12 @@ private class MapHolder {
         // while a newer style loads (caught by the flow walk, 2026-11-11).
         if (st.isFullyLoaded) st.transition = org.maplibre.android.style.layers.TransitionOptions(300, 0, false)
         st.getSourceAs<GeoJsonSource>(SOURCE)?.setGeoJson(collection(trees, spots, spread))
+        // THE FIRST PINS, timed from the process start: what a cold start costs a person.
+        if (!firstPinsLogged && trees.isNotEmpty()) {
+            firstPinsLogged = true
+            val since = android.os.SystemClock.elapsedRealtime() - android.os.Process.getStartElapsedRealtime()
+            android.util.Log.i("AncientTrees", "first pins ${trees.size} trees at $since ms from process start")
+        }
         android.os.Handler(android.os.Looper.getMainLooper()).postDelayed({
             if (swap == swaps && style === st && st.isFullyLoaded) {
                 st.transition = org.maplibre.android.style.layers.TransitionOptions(300, 0, true)
@@ -182,7 +189,7 @@ fun TreeMapView(
                 // NO ROTATION (Hidde, 2026-08-25): every label is a name to read.
                 map.uiSettings.isRotateGesturesEnabled = false
                 map.uiSettings.isCompassEnabled = false
-                map.setStyle(Style.Builder().fromUri(if (dark) STYLE_DARK else STYLE_LIGHT)) { style ->
+                map.setStyle(styleFromDisk(context, if (dark) STYLE_DARK else STYLE_LIGHT)) { style ->
                     // One image per shape, about fifteen, never one per species.
                     for (shape in SpeciesIcons.icons.keys) {
                         style.addImage(iconName(shape), pinBitmap(context, shape))
@@ -776,3 +783,41 @@ private fun photoPinBitmap(context: Context, photo: Bitmap): Bitmap {
 }
 
 private val INK = Color.rgb(0x26, 0x30, 0x1E)
+
+/**
+ * THE MAP'S STYLE FROM THE COPY ON DISK, refreshed behind it (cold-start
+ * measurement 2026-11-12): the style is served for ten minutes (max-age 600),
+ * so most launches waited on the network before a single pin could be drawn,
+ * 3.7 to 7.7 s from the process start on the emulator. Its sprite, glyph and
+ * tile addresses are absolute, so the JSON opens from text as it does from its
+ * address. The first launch, with no copy yet, still loads from the address.
+ */
+internal fun styleFromDisk(context: android.content.Context, url: String): Style.Builder {
+    val file = java.io.File(context.filesDir, "map-style/" + url.substringAfterLast('/'))
+    val onDisk = runCatching { file.readText() }.getOrNull()?.takeIf { it.trimStart().startsWith("{") }
+    // A first launch has no copy yet: the one built into the app, as the site serves it.
+    val kept = onDisk ?: runCatching {
+        context.assets.open("map-style/" + url.substringAfterLast('/')).bufferedReader().use { it.readText() }
+    }.getOrNull()?.takeIf { it.trimStart().startsWith("{") }
+    Thread {
+        runCatching {
+            val c = java.net.URL(url).openConnection() as java.net.HttpURLConnection
+            c.connectTimeout = 20_000
+            c.readTimeout = 20_000
+            try {
+                if (c.responseCode in 200..299) {
+                    val text = c.inputStream.bufferedReader().use { it.readText() }
+                    if (text != onDisk && text.trimStart().startsWith("{")) {
+                        file.parentFile?.mkdirs()
+                        val tmp = java.io.File(file.path + ".tmp")
+                        tmp.writeText(text)
+                        tmp.renameTo(file)
+                    }
+                }
+            } finally {
+                c.disconnect()
+            }
+        }
+    }.start()
+    return if (kept != null) Style.Builder().fromJson(kept) else Style.Builder().fromUri(url)
+}

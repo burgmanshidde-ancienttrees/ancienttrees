@@ -53,6 +53,15 @@ Rung 1 empty (no sightings, no new notes). health.py had one open APP BUG row: t
 - [2026-08](archive/LOG-2026-08.md)
 - [2026-07](archive/LOG-2026-07.md)
 
+## 2026-11-12 session: Android opens faster, and its sheets grow like the iPhone's
+
+What changed in the Android app:
+- The map shows its first trees sooner. On the emulator with a release build, the first pins came after 9 to 13 s on a first launch and 4.5 to 7.5 s after that; now 3.1 s and 2.3 s (median of five each, measured with nothing else on the emulator; the older numbers were taken while other sessions shared it). The iPhone simulator on the same Mac takes 1.5 to 1.7 s and 1.1 to 1.3 s. Two causes fixed: the catalogue only started loading once the screen was drawn (it now starts with the app), and the map's style was fetched from the network every launch (it now comes from the copy on the phone, kept fresh in the background, with one built into the app for the very first launch).
+- That leaves Android about 1.5 s behind on a first launch and 1.1 s on a relaunch, mostly MapLibre starting its map; a real phone has not been measured.
+- Sign-in and the other fitted sheets now drag up to the full height and back, rubber-banding at the top, as on the iPhone (audit row 12). A drag down from the fitted height still closes them.
+
+Breakage: none known. The emulator's swipe injector sometimes delivers the lift late, so a fast flick reads as a stop there; the logic was checked with flicks that arrived on time and with slow drags.
+
 ## 2026-11-11 session: Android's icons and type as the iPhone's
 
 What changed in the Android app (the review's icon and type rows, out/parity-feel/visual-review-2026-11-11.md):

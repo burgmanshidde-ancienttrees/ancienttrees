@@ -130,6 +130,8 @@ fun SignInSheet(account: Account, treeName: String?, onDismiss: () -> Unit) =
 fun SignInSheet(account: Account, reason: SignInReason, onDismiss: () -> Unit) {
     val brand = Brand.colors
     AppSheet(
+        // Fitted, and a drag up grows it to the full height (BrandSheet.swift:193, SignIn.swift:148).
+        grows = true,
         onDismissRequest = { account.dismissProblem(); onDismiss() },
         // SOLID, not glass, and the system's own ground (SignIn.swift presentationBackground).
         containerColor = brand.ground,

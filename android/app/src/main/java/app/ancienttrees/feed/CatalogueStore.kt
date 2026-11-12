@@ -10,6 +10,7 @@ package app.ancienttrees.feed
 import android.content.Context
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.async
 import java.io.File
 import java.net.HttpURLConnection
 import java.net.URL
@@ -113,5 +114,34 @@ class CatalogueStore(private val context: Context) {
         const val WALKS = "walks.json"
         const val SPECIES = "species.json"
         const val BROWSE = "browse.json"
+    }
+}
+
+/**
+ * THE CATALOGUE, STARTED WITH THE PROCESS (cold-start measurement 2026-11-12):
+ * loading from the screen's first composition began 1.6 to 3.0 s after the
+ * process started on the emulator, half of the wait before the first pins.
+ * MainActivity starts it in onCreate, before setContent; the screen awaits the
+ * same load, and a recreated activity reuses it.
+ */
+object CataloguePreload {
+    private var job: kotlinx.coroutines.Deferred<Catalogue?>? = null
+
+    @Synchronized
+    fun start(context: Context): kotlinx.coroutines.Deferred<Catalogue?> =
+        job ?: @OptIn(kotlinx.coroutines.DelicateCoroutinesApi::class)
+        kotlinx.coroutines.GlobalScope.async(Dispatchers.IO) { CatalogueStore(context.applicationContext).load() }
+            .also { job = it }
+
+    suspend fun await(context: Context): Catalogue? = start(context).await()
+
+    /**
+     * A refresh's newer catalogue, for the next activity in this process: kept as
+     * the first load, it handed the next screen the old version, whose refresh
+     * then swapped catalogues under it (PR 57's walk, a tree pushed twice).
+     */
+    @Synchronized
+    fun keep(catalogue: Catalogue) {
+        job = kotlinx.coroutines.CompletableDeferred(catalogue)
     }
 }
