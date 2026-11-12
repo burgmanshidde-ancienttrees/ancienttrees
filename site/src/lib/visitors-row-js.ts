@@ -98,7 +98,11 @@ export function visitorsRowJs(visitorWord: string): string {
   window.atGoVisitor = function () {
     var id = window.atPendingVisitor;
     var C = window.atCollection;
-    if (!id || !C || !C.gate) return;
+    if (!id) return;
+    // Signin-js lands before collection-js is on the page (Base.astro puts it
+    // after), so the first call can come before the one door exists; start()
+    // below calls again once the page is parsed (found 2026-11-12, live test).
+    if (!C || !C.gate) return;
     window.atPendingVisitor = null;
     C.gate(function (s) {
       load(s.access_token).then(function (rows) {
@@ -109,6 +113,7 @@ export function visitorsRowJs(visitorWord: string): string {
   };
   if (window.atPendingVisitor) window.atGoVisitor();
   function start() {
+    if (window.atPendingVisitor) window.atGoVisitor();
     var el = document.getElementById('nfv-data');
     if (!el) return;
     var cards = {};
