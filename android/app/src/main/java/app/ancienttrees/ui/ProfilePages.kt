@@ -29,6 +29,8 @@ class ProfileRoutes(args: List<String>, private val nav: Nav) {
             nav.push(Page.Privacy)
         }
         if ("-people" in args) nav.push(Page.People(PeopleSource.SEARCH))
+        // -open=person:<id>: somebody's profile (ContentView's -open=person:, the sweep's Marieke).
+        args.firstOrNull { it.startsWith("-open=person:") }?.let { nav.push(Page.Person(it.removePrefix("-open=person:"))) }
     }
 
     val showing: Boolean get() = nav.top?.isProfile == true

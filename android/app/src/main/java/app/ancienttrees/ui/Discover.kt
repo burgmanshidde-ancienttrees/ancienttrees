@@ -690,6 +690,25 @@ fun TagPill(text: String, modifier: Modifier = Modifier) {
     )
 }
 
+/**
+ * "Approved" on a tile (CollectedTile.swift's ApprovedPill): MineCard's capsule,
+ * moss with the white seal-check, at the city pill's size (10 sp semibold,
+ * 3 by 7 padding), set 6 in by the tile (CONVENTIONS.md 2026-11-12).
+ */
+@Composable
+fun ApprovedPill(modifier: Modifier = Modifier) {
+    val brand = Brand.colors
+    Row(
+        modifier.background(brand.moss, CircleShape).padding(start = 5.dp, end = 7.dp, top = 3.dp, bottom = 3.dp),
+        horizontalArrangement = Arrangement.spacedBy(3.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Icon(Sym.VerifiedFill, null, tint = Color.White, modifier = Modifier.size(12.dp))
+        Text(stringResource(R.string.profile_approved), fontSize = 10.sp, fontWeight = FontWeight.SemiBold,
+            color = Color.White, maxLines = 1, lineHeight = 12.sp)
+    }
+}
+
 /** A place: wide, because a place is a landscape (Airbnb's destination row). */
 @Composable
 private fun PlaceCard(name: String, sub: String, cover: Tree?, onOpen: () -> Unit) {

@@ -196,9 +196,17 @@ class Account(context: Context) {
         if (s != null) Supa.send("/auth/v1/logout", token = s.accessToken)
     }
 
-    /** The same delete_user() the website and the iPhone call. Saves and visits cascade. */
+    /**
+     * The same delete_user() the website and the iPhone call. Saves and visits cascade.
+     * From storage ONLY THE AVATAR goes, as on the iPhone (Account.swift): the
+     * photographs of trees stay (Hidde, 2026-11-12: "het hele idee is toch dat we de
+     * bomen houden als mensen hun account verwijderen"). Unguarded: an orphaned image
+     * is a tidy-up job, an account that will not delete is a broken promise.
+     * qa.py check_a_deleted_account_keeps_its_photographs() holds it.
+     */
     suspend fun deleteAccount(): Boolean {
         val s = fresh() ?: return false
+        Supa.send("/storage/v1/object/avatars/${s.userId}/avatar.jpg", method = "DELETE", token = s.accessToken)
         val ok = Supa.send("/rest/v1/rpc/delete_user", token = s.accessToken, body = "{}").ok
         if (ok) clear()
         return ok

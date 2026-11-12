@@ -48,6 +48,12 @@ public enum DemoPeople {
             created_at: "2026-09-01T10:00:00Z", followers: 12, following: 4,
             ambassador: ["Amsterdam"],
             visited: ["brn_001", "brn_002", "brn_008", "brn_005"],
-            saves: ["brn_003", "brn_007"])
+            saves: ["brn_003", "brn_007"],
+            // One tree she added that we took in, and one of her own
+            // (2026-11-12), so the sweep photographs Approved and an own tile.
+            approved: ["brn_001"],
+            own: [Profiles.OwnTree(id: "6F1A2B3C-4D5E-4F60-8A71-92B3C4D5E6F7", name: "Oak by the Eem",
+                                   species: "Pedunculate Oak (Quercus robur)", photo: nil,
+                                   lat: 52.2121, lng: 5.2873)])
     }
 }

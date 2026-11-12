@@ -40,7 +40,40 @@ class Profiles(private val args: List<String> = emptyList()) {
         val ambassador: List<String>,
         val visited: List<String>,
         val saves: List<String>,
+        /**
+         * Our trees this person ADDED, marked Approved, and their own trees not
+         * in our selection (Hidde, 2026-11-12; supabase/approved-on-profiles.sql).
+         * Empty on a database without that SQL.
+         */
+        val approved: List<String> = emptyList(),
+        val own: List<OwnTree> = emptyList(),
     )
+
+    /** One tree somebody added that is not in our selection (Profiles.OwnTree on the iPhone). */
+    data class OwnTree(
+        val id: String,
+        val name: String?,
+        val species: String?,
+        val photo: String?,
+        val lat: Double?,
+        val lng: Double?,
+    ) {
+        /** Theirs, else the species' common half, else "A tree" (profile.astro's ownTile). */
+        val title: String
+            get() = name?.trim()?.takeIf { it.isNotEmpty() }
+                ?: species.orEmpty().substringBefore("(").trim().takeIf { it.isNotEmpty() }
+                ?: "A tree"
+        /** The shared copy, the only photograph a visitor may load. */
+        val photoUrl: String?
+            get() = photo?.takeIf { it.isNotEmpty() }?.let { p ->
+                Supa.URL_BASE + "/storage/v1/object/public/shared-sightings/" +
+                    p.split("/").joinToString("/") { java.net.URLEncoder.encode(it, "UTF-8").replace("+", "%20") }
+            }
+        /** A sighting id, so its shared page opens; anything else is skipped. */
+        val opens: Boolean get() = UUID_RE.matches(id)
+        /** Its shared page, SightingSync.url(for:). */
+        val url: String get() = "https://ancienttrees.app/t?id=" + id.lowercase()
+    }
 
     data class Photographer(val place: String, val userId: String, val displayName: String, val avatarUrl: String?, val trees: Int)
 
@@ -226,22 +259,17 @@ class Profiles(private val args: List<String> = emptyList()) {
         DemoPeople.publicProfile(args, userId)?.let { return it }
         val r = Supa.send("/rest/v1/rpc/public_profile", token = token, body = JSONObject().put("uid", userId).toString())
         if (!r.ok) return null
-        return runCatching {
-            val j = JSONObject(r.body)
-            fun list(k: String) = j.optJSONArray(k)?.let { a -> (0 until a.length()).map { a.getString(it) } }.orEmpty()
-            PublicProfile(
-                userId = j.getString("user_id"),
-                displayName = j.optString("display_name"),
-                avatarUrl = j.str("avatar_url"),
-                country = j.str("country"),
-                createdAt = j.str("created_at"),
-                followers = j.optInt("followers"),
-                following = j.optInt("following"),
-                ambassador = list("ambassador"),
-                visited = list("visited"),
-                saves = list("saves"),
-            )
-        }.getOrNull()
+        return parsePublicProfile(r.body)
+    }
+
+    /**
+     * Our trees YOU added that we took into the map, for Approved on your own
+     * grid (Profiles.myApproved on the iPhone). Empty until the SQL is pasted.
+     */
+    suspend fun myApproved(token: String?): Set<String> {
+        if (token == null) return emptySet()
+        return Supa.rows("/rest/v1/sightings?select=tree_id&added=is.true&status=eq.published&tree_id=not.is.null", token)
+            .mapNotNull { it.str("tree_id") }.toSet()
     }
 
     suspend fun photographers(places: Map<String, List<String>>, token: String?): List<Photographer> {
@@ -267,6 +295,36 @@ class Profiles(private val args: List<String> = emptyList()) {
 
     companion object {
         const val DEMO_ME = "00000000-0000-0000-0000-0000000000ab"
+
+        /** public_profile()'s answer; a missing or malformed `approved` or `own` reads as empty. */
+        fun parsePublicProfile(body: String): Profiles.PublicProfile? = runCatching {
+            val j = JSONObject(body)
+            fun list(k: String) = j.optJSONArray(k)?.let { a -> (0 until a.length()).map { a.getString(it) } }.orEmpty()
+            fun num(o: JSONObject, k: String): Double? = if (o.isNull(k)) null else o.optDouble(k).takeIf { !it.isNaN() }
+            val own = runCatching {
+                j.optJSONArray("own")?.let { a ->
+                    (0 until a.length()).mapNotNull { i ->
+                        val o = a.optJSONObject(i) ?: return@mapNotNull null
+                        val id = o.str("id") ?: return@mapNotNull null
+                        Profiles.OwnTree(id, o.str("name"), o.str("species"), o.str("photo"), num(o, "lat"), num(o, "lng"))
+                    }
+                }.orEmpty()
+            }.getOrDefault(emptyList())
+            PublicProfile(
+                userId = j.getString("user_id"),
+                displayName = j.optString("display_name"),
+                avatarUrl = j.str("avatar_url"),
+                country = j.str("country"),
+                createdAt = j.str("created_at"),
+                followers = j.optInt("followers"),
+                following = j.optInt("following"),
+                ambassador = list("ambassador"),
+                visited = list("visited"),
+                saves = list("saves"),
+                approved = runCatching { list("approved") }.getOrDefault(emptyList()),
+                own = own,
+            )
+        }.getOrNull()
 
         private fun JSONObject.str(k: String): String? = if (isNull(k) || !has(k)) null else optString(k).takeIf { it.isNotEmpty() }
         private fun profile(j: JSONObject) = Profile(j.getString("user_id"), j.optString("display_name"), j.str("avatar_url"))
@@ -389,6 +447,13 @@ object DemoPeople {
         return Profiles.PublicProfile(
             userId, "Marieke", null, "NL", "2026-09-01T10:00:00Z", 12, 4, listOf("Amsterdam"),
             listOf("brn_001", "brn_002", "brn_008", "brn_005"), listOf("brn_003", "brn_007"),
+            // One tree she added that we took in, and one of her own (2026-11-12).
+            approved = listOf("brn_001"),
+            own = listOf(Profiles.OwnTree("6F1A2B3C-4D5E-4F60-8A71-92B3C4D5E6F7", "Oak by the Eem",
+                "Pedunculate Oak (Quercus robur)", null, 52.2121, 5.2873)),
         )
     }
 }
+
+private val UUID_RE = Regex("^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
+

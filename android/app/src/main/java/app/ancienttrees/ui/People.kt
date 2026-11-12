@@ -135,6 +135,8 @@ class PeopleHost(
     val editName: () -> Unit,
     val openPerson: (String) -> Unit,
     val openTree: (Tree) -> Unit,
+    /** Somebody's own tree: its shared page (SightingSync.url(for:)). */
+    val openShared: (String) -> Unit = {},
 )
 
 private data class Suggestion(val profile: Profiles.Profile, val reason: String, val ambassador: Boolean)
@@ -649,13 +651,20 @@ private fun PersonInner(host: PeopleHost, userId: String, onBack: () -> Unit) {
                 }
                 LaneTabs(lane) { lane = it }
                 val trees = (if (lane == 0) p.visited else p.saves).mapNotNull { host.catalogue?.tree(it) }
-                if (trees.isEmpty()) {
+                // Collected: our trees, Approved on the ones they added, then their own
+                // trees (Hidde, 2026-11-12; PersonProfile.swift grid(_:)).
+                val own = if (lane == 0) p.own.filter { it.opens } else emptyList()
+                val approved = p.approved.toSet()
+                if (trees.isEmpty() && own.isEmpty()) {
                     Text(stringResource(if (lane == 0) R.string.person_none_collected else R.string.person_none_saved), fontSize = 15.sp, color = brand.inkSoft)
                 } else {
                     Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                        for (row in trees.chunked(3)) {
+                        val tiles: List<@Composable (Modifier) -> Unit> =
+                            trees.map { t -> @Composable { m: Modifier -> GridTile(t, t.id in approved, m) { host.openTree(t) } } } +
+                                own.map { o -> @Composable { m: Modifier -> OwnTile(o, m) { host.openShared(o.url) } } }
+                        for (row in tiles.chunked(3)) {
                             Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                                for (t in row) GridTile(t, Modifier.weight(1f)) { host.openTree(t) }
+                                for (tile in row) tile(Modifier.weight(1f))
                                 repeat(3 - row.size) { Spacer(Modifier.weight(1f)) }
                             }
                         }
@@ -712,7 +721,7 @@ private fun LaneTabs(lane: Int, select: (Int) -> Unit) {
 
 /** CollectedTile (.ours): the photograph in a 3:4 tile and the city's tag. */
 @Composable
-private fun GridTile(t: Tree, modifier: Modifier, onOpen: () -> Unit) {
+private fun GridTile(t: Tree, approved: Boolean, modifier: Modifier, onOpen: () -> Unit) {
     val brand = Brand.colors
     Box(
         modifier.aspectRatio(3f / 4f).clip(RoundedCornerShape(12.dp)).background(brand.surfaceMuted)
@@ -723,5 +732,24 @@ private fun GridTile(t: Tree, modifier: Modifier, onOpen: () -> Unit) {
         else Text(t.name, fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 12.sp, color = brand.inkSoft,
             textAlign = TextAlign.Center, maxLines = 4, modifier = Modifier.align(Alignment.Center).padding(8.dp))
         if (t.city.isNotEmpty()) TagPill(t.city, Modifier.align(Alignment.BottomStart).padding(6.dp))
+        if (approved) ApprovedPill(Modifier.align(Alignment.TopStart).padding(6.dp))
+    }
+}
+
+/** CollectedTile (.shared): somebody's own tree, its shared photograph, else its name. */
+@Composable
+private fun OwnTile(o: Profiles.OwnTree, modifier: Modifier, onOpen: () -> Unit) {
+    val brand = Brand.colors
+    Box(
+        modifier.aspectRatio(3f / 4f).clip(RoundedCornerShape(12.dp)).background(brand.surfaceMuted)
+            .clickable(onClick = onOpen).testTag("own-tree-card"),
+    ) {
+        val named = @Composable {
+            Text(o.title, fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 12.sp, color = brand.inkSoft,
+                textAlign = TextAlign.Center, maxLines = 4, modifier = Modifier.align(Alignment.Center).padding(8.dp))
+        }
+        val url = o.photoUrl
+        if (url != null) RemoteImage(url, o.title, Modifier.fillMaxSize(), fallback = { Box(Modifier.fillMaxSize()) { named() } })
+        else named()
     }
 }

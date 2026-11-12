@@ -365,38 +365,9 @@ enum SightingSync {
         return data
     }
 
-    /// Every sighting photograph this account has uploaded, deleted.
-    ///
-    /// Called from Account.deleteAccount() before the account itself goes.
-    /// The sighting ROWS cascade off auth.users and need nobody's help; the
-    /// JPEGs in the bucket do not, because storage.objects is not reachable
-    /// by a foreign key and Supabase refuses a delete against it from SQL.
-    /// Until 2026-08-28 only the avatar was cleaned up this way, so deleting
-    /// an account left every photograph a person had taken sitting in the
-    /// bucket under a path that is literally their user id, while the privacy
-    /// page said "Nothing is kept back".
-    ///
-    /// Unguarded on purpose, the same reasoning as the avatar: if this fails
-    /// the account still goes. An orphaned file is a tidy-up job; an account
-    /// that will not delete is a broken promise and a rejected app.
-    static func purge(userId: String, token: String) async {
-        for name in await list(prefix: userId, token: token) {
-            await deleteObject("\(userId)/\(name)", token: token)
-        }
-    }
-
     private static func deleteObject(_ path: String, token: String) async {
         let r = Supa.request("/storage/v1/object/\(bucket)/\(path)", method: "DELETE", token: token)
         _ = try? await Net.data(for: r)
-    }
-
-    private static func list(prefix: String, token: String) async -> [String] {
-        let r = Supa.request("/storage/v1/object/list/\(bucket)", token: token,
-                             body: ["prefix": prefix, "limit": 200])
-        guard let (data, _) = try? await Net.data(for: r),
-              let j = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
-        else { return [] }
-        return j.compactMap { $0["name"] as? String }
     }
 
     // MARK: - sharing one of them

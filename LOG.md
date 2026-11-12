@@ -13,6 +13,13 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-12 session: "Approved" and own trees on a profile, in both apps
+
+- **iPhone and Android now draw what the website's profile already shows (Hidde's approved design, CONVENTIONS.md "Your own trees on a public profile"):** on somebody's Collected grid an "Approved" capsule top-left on the trees they added that we took in (MineCard's moss capsule with the seal-check, at the city pill's size, 6 in), then their own trees with their shared photograph (or their name), each opening its shared page. Your own My trees grid marks your approved trees the same way, read from your own sightings rows. "Approved" in eight languages on Android.
+- **Waits for Hidde's paste of supabase/approved-on-profiles.sql**: until then both lists are empty and the profiles look as before (unit tests on both phones decode a payload with and without the keys).
+- **Deleting an account keeps the photographs of trees in both apps** (Hidde, 2026-11-12: "het hele idee is toch dat we de bomen houden als mensen hun account verwijderen"): the iPhone no longer empties the sightings bucket on delete (SightingSync.purge gone), only the avatar goes; Android now deletes the avatar too, which it never did. qa `check_a_deleted_account_keeps_its_photographs()` reads both apps' deleteAccount now (checked red with the purge put back, green without).
+- Differences: Android opens an own tree's shared page in the browser (no shared-tree screen there yet; data/android-parity.json "people"). The iPhone's person page has no map, so the own tree's pin shows on the website's profile map only. Android gained the iPhone's `-open=person:<id>` launch argument; both apps take `-approved=<ids>` for the sweep.
+
 ## 2026-11-12 session: FNP interview done
 
 - Hidde talked to Hans Hofele (Frankfurter Neue Presse) about the Eschersheimer Linde and the app. Print for sure, maybe online; Hans sends the PDF. Two promises recorded in drafts/OUTREACH.md "FNP interview, 2026-11-12": a mail when Android is out (new list "Tell when Android ships", for the session that publishes Android) and app screenshots with Hans's own photographs of the lime (his photos are not in the mail thread or the app inbox yet).

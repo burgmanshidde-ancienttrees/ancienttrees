@@ -12,7 +12,11 @@
 import SwiftUI
 
 struct CollectedTile: View {
-    enum Kind { case ours(Tree), mine(Sightings.Sighting), sent(Submission.Sent) }
+    enum Kind {
+        case ours(Tree), mine(Sightings.Sighting), sent(Submission.Sent)
+        /// Somebody's own tree on their public profile, from its shared copy.
+        case shared(Profiles.OwnTree)
+    }
     let kind: Kind
     /// Where the tree stands, worked out by the screen (a tree you added is
     /// placed by the nearest tree we map).
@@ -20,6 +24,10 @@ struct CollectedTile: View {
     /// Your newest photograph of this tree of ours, looked up once for the
     /// whole grid by the screen (Sightings.newestShotByTree).
     var ownShot: Sightings.Sighting? = nil
+    /// A tree this person added that we took into the map: "Approved"
+    /// top-left (Hidde, 2026-11-12; CONVENTIONS.md "Your own trees on a
+    /// public profile").
+    var approved: Bool = false
     @Environment(Sightings.self) private var sightings
 
     var body: some View {
@@ -30,6 +38,7 @@ struct CollectedTile: View {
             // the tile before the clip, which read as off-screen (appfit).
             .overlay { picture.accessibilityHidden(true) }
             .overlay(alignment: .bottomLeading) { tag.padding(6) }
+            .overlay(alignment: .topLeading) { if approved { ApprovedPill().padding(6) } }
             .clipped()
             .contentShape(.rect)
             // ONE element the size of the tile, read as its tag. A landscape
@@ -37,7 +46,7 @@ struct CollectedTile: View {
             // clip, and its own frame read as running off the screen (appfit,
             // 2026-10-10, the third column of Discover's grid).
             .accessibilityElement(children: .ignore)
-            .accessibilityLabel(city ?? "")
+            .accessibilityLabel([city, approved ? "Approved" : nil].compactMap { $0 }.joined(separator: ", "))
     }
 
     @ViewBuilder private var picture: some View {
@@ -58,6 +67,12 @@ struct CollectedTile: View {
             }
         case .sent(let t):
             named(t.title)
+        case .shared(let o):
+            if let url = o.photoURL {
+                TreePhoto(url: url) { named(o.title) }
+            } else {
+                named(o.title)
+            }
         }
     }
 
@@ -97,6 +112,23 @@ struct TagPill: View {
             .lineLimit(2)
             .padding(.horizontal, 6).padding(.vertical, 3)
             .background(Brand.surface, in: .rect(cornerRadius: 8))
+    }
+}
+
+/// "Approved" on a tile: MineCard's capsule (moss, white seal-check, Google
+/// Maps' word for a contribution it accepted, CONVENTIONS.md 2026-10-09) at
+/// the city pill's size, so the two labels on one tile read as one family
+/// (CONVENTIONS.md 2026-11-12: 10 pt semibold, 3 by 7 padding, 6 pt in).
+struct ApprovedPill: View {
+    var body: some View {
+        HStack(spacing: 3) {
+            Image(systemName: "checkmark.seal.fill").font(.system(size: 11))
+            Text("Approved").font(.system(size: 10, weight: .semibold))
+        }
+        .foregroundStyle(.white)
+        .padding(.leading, 5).padding(.trailing, 7).padding(.vertical, 3)
+        .background(Brand.moss, in: .capsule)
+        .accessibilityHidden(true)
     }
 }
 

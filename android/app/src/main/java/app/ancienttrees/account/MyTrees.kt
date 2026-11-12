@@ -122,6 +122,9 @@ class MyTrees(private val account: Account) {
         private set
     var sent by mutableStateOf<List<SentTip>>(emptyList())
         private set
+    /** Our trees you added that we took into the map: Approved on your grid (2026-11-12). */
+    var approved by mutableStateOf<Set<String>>(emptySet())
+        private set
     var profile by mutableStateOf<MyProfile?>(null)
         private set
     /** Bumped on every change, so a page holding a copy reads the new one. */
@@ -158,6 +161,8 @@ class MyTrees(private val account: Account) {
         val rows = Supa.rows("/rest/v1/sightings?select=*", s.accessToken)
         all = rows.mapNotNull(::parse).sortedByDescending { it.date }
         sent = mine(s.accessToken)
+        approved = Supa.rows("/rest/v1/sightings?select=tree_id&added=is.true&status=eq.published&tree_id=not.is.null", s.accessToken)
+            .mapNotNull { it.str("tree_id") }.toSet()
         // Your name, face, flag and counts come from account/Profiles.kt (MainActivity loads it).
         loadedFor = s.userId
         loadedAt = System.currentTimeMillis()
@@ -169,6 +174,7 @@ class MyTrees(private val account: Account) {
         if (demoSeeded) return
         all = emptyList()
         sent = emptyList()
+        approved = emptySet()
         profile = null
         loadedFor = null
         version++
@@ -290,6 +296,9 @@ class MyTrees(private val account: Account) {
      * behind -mine-demo, at the fixed ids -open=mine: addresses. Debug builds
      * only (LaunchArgs reads nothing from a release build); nothing is sent.
      */
+    /** -approved=<id,id>: Approved on the demo grid, for the sweep (Collect.swift's argument). */
+    fun demoApproved(ids: Set<String>) { approved = ids }
+
     fun seedDemo(lat: Double, lng: Double, name: String? = "test") {
         if (demoSeeded) return
         demoSeeded = true
