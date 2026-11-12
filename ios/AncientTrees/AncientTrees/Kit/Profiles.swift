@@ -78,6 +78,42 @@ public final class Profiles {
         public let ambassador: [String]
         public let visited: [String]
         public let saves: [String]
+        /// Our trees this person ADDED, which the grid marks Approved, and
+        /// their own trees that are not in our selection (Hidde, 2026-11-12;
+        /// supabase/approved-on-profiles.sql, CONVENTIONS.md "Your own trees
+        /// on a public profile"). Empty on a database without that SQL: a
+        /// missing key decodes as an empty list, never as a failed profile.
+        public var approved: [String] = []
+        public var own: [OwnTree] = []
+    }
+
+    /// One tree somebody added that is not in our selection, as
+    /// public_profile() hands it out: no dates, the shared photograph's path
+    /// in the public shared-sightings bucket, and where it stands.
+    public struct OwnTree: Decodable, Sendable, Hashable, Identifiable {
+        public let id: String
+        public let name: String?
+        public let species: String?
+        public let photo: String?
+        public let lat: Double?
+        public let lng: Double?
+
+        /// The name on the tile: theirs, else the species' common half,
+        /// else "A tree" (profile.astro's ownTile).
+        public var title: String {
+            if let n = name?.trimmingCharacters(in: .whitespaces), !n.isEmpty { return n }
+            let common = (species ?? "").split(separator: "(").first
+                .map { $0.trimmingCharacters(in: .whitespaces) } ?? ""
+            return common.isEmpty ? "A tree" : common
+        }
+        /// The shared copy, the only photograph a visitor may load.
+        public var photoURL: URL? {
+            guard let photo, !photo.isEmpty else { return nil }
+            let safe = photo.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? photo
+            return URL(string: Supa.url + "/storage/v1/object/public/shared-sightings/" + safe)
+        }
+        /// Its shared page (Route.shared, SightingSync.url(for:) on the web).
+        public var uuid: UUID? { UUID(uuidString: id) }
     }
 
     public init() {
@@ -436,6 +472,19 @@ public final class Profiles {
         return try? JSONDecoder().decode(PublicProfile.self, from: data)
     }
 
+    /// Our trees YOU added that we took into the map, for the Approved
+    /// capsule on your own grid: the same rows public_profile() reads for a
+    /// visitor (sightings.added, written by scripts/sightings_link.py), read
+    /// under your own session so a private profile marks them too. Empty
+    /// until supabase/approved-on-profiles.sql is pasted (the column is
+    /// missing and the read fails quietly).
+    public func myApproved(token: String?) async -> Set<String> {
+        guard let token else { return [] }
+        let rows = await Supa.rows("/rest/v1/sightings?select=tree_id&added=is.true"
+                                   + "&status=eq.published&tree_id=not.is.null", token: token)
+        return Set(rows.compactMap { $0["tree_id"] as? String })
+    }
+
     /// One person who photographed trees in one place, from
     /// suggested_photographers() (supabase/suggested-people.sql): public
     /// profiles only, never you, never somebody blocked either way, and a
@@ -467,5 +516,30 @@ public final class Profiles {
             throw NSError(domain: "profiles", code: code)
         }
         return data
+    }
+}
+
+// A public_profile() row from before approved-on-profiles.sql has neither
+// key: decode them as empty lists. In an extension so the memberwise
+// initialiser (DemoPeople) stays.
+extension Profiles.PublicProfile {
+    private enum Keys: String, CodingKey {
+        case user_id, display_name, avatar_url, country, created_at, followers, following
+        case ambassador, visited, saves, approved, own
+    }
+    public init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: Keys.self)
+        self.init(user_id: try c.decode(String.self, forKey: .user_id),
+                  display_name: try c.decode(String.self, forKey: .display_name),
+                  avatar_url: try c.decodeIfPresent(String.self, forKey: .avatar_url),
+                  country: try c.decodeIfPresent(String.self, forKey: .country),
+                  created_at: try c.decodeIfPresent(String.self, forKey: .created_at),
+                  followers: try c.decode(Int.self, forKey: .followers),
+                  following: try c.decode(Int.self, forKey: .following),
+                  ambassador: try c.decode([String].self, forKey: .ambassador),
+                  visited: try c.decode([String].self, forKey: .visited),
+                  saves: try c.decode([String].self, forKey: .saves),
+                  approved: (try? c.decodeIfPresent([String].self, forKey: .approved)) ?? [],
+                  own: (try? c.decodeIfPresent([Profiles.OwnTree].self, forKey: .own)) ?? [])
     }
 }

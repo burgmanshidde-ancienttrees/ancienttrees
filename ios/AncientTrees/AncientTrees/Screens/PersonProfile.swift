@@ -163,19 +163,36 @@ struct PersonProfileView: View {
         .accessibilityIdentifier(id)
     }
 
+    /// Collected is our trees they ticked, "Approved" on the ones they added
+    /// that we took in, then their own trees that are not in our selection,
+    /// each opening its shared page (Hidde, 2026-11-12; profile.astro's
+    /// lists() and ownTile(), CONVENTIONS.md "Your own trees on a public
+    /// profile"). Want to visit is our trees only, as before.
     @ViewBuilder private func grid(_ p: Profiles.PublicProfile) -> some View {
         let trees = (lane == .seen ? p.visited : p.saves).compactMap { catalogue.tree($0) }
-        if trees.isEmpty {
+        let own = lane == .seen ? p.own.filter { $0.uuid != nil } : []
+        let approved = Set(p.approved)
+        if trees.isEmpty && own.isEmpty {
             Text(lane == .seen ? "No trees collected yet." : "No trees saved yet.")
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
         } else {
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 6), count: 3), spacing: 6) {
                 ForEach(trees) { t in
                     SheetLink(route: .tree(t.id)) {
-                        CollectedTile(kind: .ours(t), city: t.city).clipShape(Self.tileShape)
+                        CollectedTile(kind: .ours(t), city: t.city, approved: approved.contains(t.id))
+                            .clipShape(Self.tileShape)
                     }
                     .accessibilityIdentifier("tree-card")
-                    .accessibilityLabel(t.name)
+                    .accessibilityLabel(approved.contains(t.id) ? "\(t.name), Approved" : t.name)
+                }
+                ForEach(own) { o in
+                    if let id = o.uuid {
+                        SheetLink(route: .shared(id)) {
+                            CollectedTile(kind: .shared(o)).clipShape(Self.tileShape)
+                        }
+                        .accessibilityIdentifier("own-tree-card")
+                        .accessibilityLabel(o.title)
+                    }
                 }
             }
             .id(lane)

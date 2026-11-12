@@ -68,6 +68,8 @@ struct CollectView: View {
     /// 2026-09-23 neither surface read the second one back (see
     /// Submission.mine).
     @State private var sent: [Submission.Sent] = []
+    /// Our trees you added that we took into the map (Profiles.myApproved).
+    @State private var approvedIds: Set<String> = []
     /// Who the server answers above were asked for, after how many sends, and
     /// when. Held in memory only, for this session (hard rule 11).
     @State private var serverLoad: (who: String?, sends: Int, at: Date)?
@@ -341,7 +343,17 @@ struct CollectView: View {
                 return
             }
             let sends = Submission.sentCount
+            let args0 = ProcessInfo.processInfo.arguments
             sent = await Submission.mine(token: account.freshToken())
+            // "Approved" on the trees you added that we took in (2026-11-12),
+            // the server's answer; -approved=<id,id> draws it for the sweep.
+            if let arg = args0.first(where: { $0.hasPrefix("-approved=") }) {
+                approvedIds = Set(arg.dropFirst(10).split(separator: ",").map(String.init))
+            } else if account.isSignedIn {
+                approvedIds = await profiles.myApproved(token: account.freshToken())
+            } else {
+                approvedIds = []
+            }
             // The badge from the server's created_at and the feed's cutoff;
             // the sheet once per account, the flag the website also writes.
             // -earlyadopter draws the badge for the sweep; -earlyadoptersheet
@@ -634,9 +646,9 @@ struct CollectView: View {
                         case .sent(let t):
                             CollectedTile(kind: .sent(t), city: t.city).clipShape(Self.tileShape)
                         case .tree(let t, _):
-                            SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city, ownShot: shots[t.id]).clipShape(Self.tileShape) }
+                            SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city, ownShot: shots[t.id], approved: approvedIds.contains(t.id)).clipShape(Self.tileShape) }
                                 .accessibilityIdentifier("tree-card")
-                                .accessibilityLabel(t.name)
+                                .accessibilityLabel(approvedIds.contains(t.id) ? "\(t.name), Approved" : t.name)
                         }
                     }
                 }
