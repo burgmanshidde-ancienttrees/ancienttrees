@@ -29,6 +29,8 @@ create or replace view public.wishes with (security_invoker = true) as
 grant select on public.wishes to authenticated;
 
 -- The public profile's Want to visit reads the same rule.
+-- SUPERSEDED BY supabase/approved-on-profiles.sql (2026-11-12), which keeps
+-- this rule and adds 'approved' and 'own'; paste that one last.
 create or replace function public.public_profile(uid uuid)
 returns json
 language sql
