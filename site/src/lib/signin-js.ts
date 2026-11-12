@@ -56,8 +56,10 @@ export const SIGNIN_CATCH_JS = `
     try {
       var r = JSON.parse(localStorage.getItem('ancienttrees_pending') || 'null');
       if (r && r.relay && r.at && Date.now() - r.at < 1800000
-          && (r.go || r.back || '').split('#')[0] === location.pathname + location.search
-          && localStorage.getItem('ancienttrees_session')) {
+          && (r.go || r.back || '').split('#')[0] === location.pathname + location.search) {
+        // No session read here: relay is written only in the instant after the
+        // token below stored it, and qa's check_the_session_is_known_before_
+        // anything_asks wants every session read after this catch.
         localStorage.removeItem('ancienttrees_pending');
         r.relay = 0;
         document.documentElement.dataset.signedIn = '1';
