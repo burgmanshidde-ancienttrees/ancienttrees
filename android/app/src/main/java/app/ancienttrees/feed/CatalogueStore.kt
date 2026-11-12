@@ -134,4 +134,14 @@ object CataloguePreload {
             .also { job = it }
 
     suspend fun await(context: Context): Catalogue? = start(context).await()
+
+    /**
+     * A refresh's newer catalogue, for the next activity in this process: kept as
+     * the first load, it handed the next screen the old version, whose refresh
+     * then swapped catalogues under it (PR 57's walk, a tree pushed twice).
+     */
+    @Synchronized
+    fun keep(catalogue: Catalogue) {
+        job = kotlinx.coroutines.CompletableDeferred(catalogue)
+    }
 }

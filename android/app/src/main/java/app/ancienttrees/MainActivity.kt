@@ -486,7 +486,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
 
     // The parity script's launch arguments: the iPhone's own (LaunchArgs.kt).
     val fixedAt = launch.at
-    LaunchedEffect(catalogue) {
+    // Once, on the first catalogue: a refresh's newer one must not open it all again.
+    LaunchedEffect(catalogue != null) {
         val c = catalogue ?: return@LaunchedEffect
         launch.openTree?.let { id -> c.tree(id)?.let { openTree(it) } }
         launch.openTree?.let { id -> c.tree(id) }?.let { t ->
@@ -514,7 +515,10 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         val started = android.os.SystemClock.elapsedRealtime()
         catalogue = app.ancienttrees.feed.CataloguePreload.await(context)
         android.util.Log.i("AncientTrees", "catalogue ${catalogue?.trees?.size} trees in ${android.os.SystemClock.elapsedRealtime() - started} ms")
-        store.refresh(catalogue?.version)?.let { catalogue = it }
+        store.refresh(catalogue?.version)?.let {
+            catalogue = it
+            app.ancienttrees.feed.CataloguePreload.keep(it)
+        }
     }
 
     // A tree page opened counts as seen; closing it is the pause where the review ask may come.
