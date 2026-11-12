@@ -3393,8 +3393,11 @@ def check_photo_fields_reach_the_site():
     # live_first_on: stamped by sightings_publish.py --live-first on a reader's
     # photograph the knock put in the strip before anybody looked (2026-10-24),
     # read by daily_digest.py to list it with its undo.
+    # permission: the maker's yes to a photo given by mail {words, date}, kept
+    # in the data and never shown (CLAUDE.md Photos, 2026-11-10), read by qa's
+    # check_a_given_photo_records_the_yes().
     bookkeeping = {"sighting_id", "held_reason", "caption", "commons_file",
-                   "approved_by", "approved_on", "live_first_on"}
+                   "approved_by", "approved_on", "live_first_on", "permission"}
     seen = {}
     for path in sorted(glob.glob(os.path.join("data", "cities", "*.json"))):
         with open(path, encoding="utf-8") as fh:
