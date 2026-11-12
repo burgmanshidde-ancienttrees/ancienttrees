@@ -14,27 +14,23 @@
 -- 1. sightings.added: true on a sighting that became one of our trees because
 --    this person added it (a city file's found_by_reader.sighting_id). Written
 --    by scripts/sightings_link.py on every knock, never by a phone.
--- 2. sightings.hide_location: the person's "hide the exact spot" choice, the
---    iNaturalist geoprivacy switch. Default false, open, as iNaturalist's is.
---    The control that sets it comes with the apps; until then nobody can turn
---    it on and every own tree shows its pin.
--- 3. public_profile() returns two more lists:
+-- 2. public_profile() returns two more lists:
 --    'approved': ids of our trees that this person added (status published,
 --               added). The profile marks those tiles Approved.
 --    'own':      the trees this person added that are not in our selection:
---               id, name, species, the shared photograph's path, and the
---               position unless hide_location. No dates, sorted by id, like
---               the other lists.
+--               id, name, species, the shared photograph's path, and where
+--               it stands. No dates, sorted by id, like the other lists.
 --
--- A NEW PERSONAL-DATA COLUMN needs Hidde's yes (hard list 1): hide_location
--- is a setting about data we already hold, given the same day ("ja" to the
--- design that carries it). privacycheck.py reads this file; the privacy page
--- says what a public profile shows.
+-- NO "HIDE THE EXACT SPOT" (Hidde, 2026-11-12, after the design: "het hele
+-- idee is dat mensen bomen gaan bezoeken ... we lossen een probleem op dat er
+-- niet is en het gaat ons informatie kosten die we nodig hebben"). A tree on
+-- a profile is a tree somebody can walk to. The private switch on the whole
+-- profile stays the way out. privacycheck.py reads this file; the privacy
+-- page says what a public profile shows.
 --
 -- Paste into Supabase, SQL editor, Run. Safe to run twice.
 
 alter table public.sightings add column if not exists added boolean not null default false;
-alter table public.sightings add column if not exists hide_location boolean not null default false;
 
 create or replace function public.public_profile(uid uuid)
 returns json
@@ -72,8 +68,8 @@ as $$
                         'name', sg.name,
                         'species', sg.species,
                         'photo', p.user_id::text || '/' || upper(sg.id::text) || '.jpg',
-                        'lat', case when sg.hide_location then null else sg.lat end,
-                        'lng', case when sg.hide_location then null else sg.lng end)
+                        'lat', sg.lat,
+                        'lng', sg.lng)
                       order by sg.id)
                      from public.sightings sg
                      where sg.user_id = p.user_id and sg.tree_id is null

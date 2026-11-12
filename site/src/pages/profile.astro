@@ -211,8 +211,8 @@ const LOCK = icon("lock-simple", "bold", "ic");
   // what each tree is from /api/cards.json, the one card.
   // approved: our trees this person ADDED (Approved top-left, the app's
   // MineCard capsule). own: the trees they added that are not in our
-  // selection, shown beside the rest with their shared photograph and,
-  // unless they hid it, their pin (Hidde, 2026-11-12; CONVENTIONS.md
+  // selection, shown beside the rest with their shared photograph and
+  // their pin (Hidde, 2026-11-12; CONVENTIONS.md
   // "Your own trees on a public profile"). Both come from public_profile()
   // (supabase/approved-on-profiles.sql) and are empty until that is pasted.
   function esc(t) { return String(t == null ? "" : t).replace(/[&"<>]/g, function(c) {
