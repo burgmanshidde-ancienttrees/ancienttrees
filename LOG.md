@@ -1,5 +1,9 @@
 # LOG
 
+## 2026-11-12 07:32 UTC night run (rung 2, short)
+
+Rung 1 empty (no sightings, no new notes). health.py had one open APP BUG row: the shared tree's photo URL was force-unwrapped. Fixed in SharedTreeView.swift (percent-encoded, nil when invalid, 0d625d527) and the row set `fixed`. No Swift test: it cannot run on this Linux runner, so the row says so. Health is green apart from "5 of 12 knocks delivered", which is GitHub dropping the cron. I did not start tree work: the shelf wants a verify pass (930 leads one source short), which I did not take in this window. For Hidde: next iOS build carries this fix.
+
 
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 

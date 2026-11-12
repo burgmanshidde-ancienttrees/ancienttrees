@@ -279,7 +279,9 @@
    "summary": "The shared tree's photo URL is built from a server-supplied file name and force-unwrapped, so a name with a space or other unescaped character makes URL(string:) nil and crashes the screen.",
    "fix": "Percent-encode the file name and fall back to no photo when URL(string:) is nil.",
    "first_seen": "2026-11-11",
-   "status": "open"
+   "status": "fixed",
+   "fixed_in": "0d625d527",
+   "no_test_reason": "Swift cannot be built or run on the Linux night runner; the fix is a flatMap that returns nil on a bad URL, to be exercised by the iOS CI."
   },
   {
    "id": "ESC-2026-11-11-photographs-sent-from-a-tree-page-on-the",
