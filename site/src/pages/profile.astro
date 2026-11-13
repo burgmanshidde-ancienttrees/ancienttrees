@@ -219,12 +219,23 @@ const LOCK = icon("lock-simple", "bold", "ic");
     return { "&": "&amp;", '"': "&quot;", "<": "&lt;", ">": "&gt;" }[c]; }); }
   function ownTile(o) {
     var name = o.name || String(o.species || "").split("(")[0].trim() || "A tree";
-    var src = SB + "/storage/v1/object/public/shared-sightings/" + String(o.photo).split("/").map(encodeURIComponent).join("/");
+    // The tile loads the small copy (scripts/shared_thumbs.py, 2026-11-13,
+    // Supabase egress); one shared since the last knock has none yet and
+    // falls back to the full copy, which the tree's /t page always shows.
+    var path = String(o.photo).split("/").map(encodeURIComponent).join("/");
+    var full = SB + "/storage/v1/object/public/shared-sightings/" + path;
+    var src = SB + "/storage/v1/object/public/shared-thumbs/" + path;
     return '<li><article class="tree-card tree-card-nonum tree-card-link">'
-      + '<div class="tree-card-photo"><img src="' + esc(src) + '" alt="' + esc(name) + '" loading="lazy"></div>'
+      + '<div class="tree-card-photo"><img src="' + esc(src) + '" data-full="' + esc(full) + '" alt="' + esc(name) + '" loading="lazy"></div>'
       + '<div class="tree-card-top"><h3 class="tree-name"><a href="/t?id=' + encodeURIComponent(String(o.id).toLowerCase())
       + '">' + esc(name) + '</a></h3></div></article></li>';
   }
+  document.addEventListener("error", function(e) {
+    var img = e.target;
+    if (img && img.tagName === "IMG" && img.dataset && img.dataset.full && img.src !== img.dataset.full) {
+      img.src = img.dataset.full;
+    }
+  }, true);
   function lists(visited, saves, approved, own) {
     var isApproved = {};
     approved.forEach(function(id) { isApproved[id] = true; });

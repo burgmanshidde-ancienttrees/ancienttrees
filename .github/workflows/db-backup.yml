@@ -52,6 +52,34 @@ jobs:
           echo "last good backup $AGE day(s) ago"
           if [ "$AGE" -ge 6 ]; then echo "run=yes" >> "$GITHUB_OUTPUT"; else echo "run=no" >> "$GITHUB_OUTPUT"; fi
 
+      - name: Every file, or only the new ones
+        # Hidde, 2026-11-13 ("fix maar"): copying every stored file every week
+        # was a fifth of the free plan's monthly egress. Every file once in 28
+        # days (an artifact named ancienttrees-backup-<date>), in the weeks
+        # between only what changed since the last backup, two days of overlap
+        # (ancienttrees-backup-<date>-new). Kept 90 days, so a full one and
+        # everything after it are always there. The database dump is whole
+        # every time: it is small.
+        id: kind
+        if: steps.due.outputs.run == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ARTS=$(gh api "repos/${{ github.repository }}/actions/artifacts?per_page=100" \
+                 --jq '[.artifacts[] | select(.name | startswith("ancienttrees-backup-")) | select(.expired | not)]')
+          FULL=$(echo "$ARTS" | jq -r '[.[] | select(.name | test("^ancienttrees-backup-[0-9]{4}-[0-9]{2}-[0-9]{2}$"))] | sort_by(.created_at) | last | .created_at // empty')
+          LAST=$(echo "$ARTS" | jq -r 'sort_by(.created_at) | last | .created_at // empty')
+          FULL_AGE=999
+          if [ -n "$FULL" ]; then FULL_AGE=$(( ( $(date -u +%s) - $(date -u -d "$FULL" +%s) ) / 86400 )); fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$FULL_AGE" -ge 28 ] || [ -z "$LAST" ]; then
+            echo "every file (last full one $FULL_AGE day(s) ago)"
+            echo "since=" >> "$GITHUB_OUTPUT"; echo "suffix=" >> "$GITHUB_OUTPUT"
+          else
+            SINCE=$(date -u -d "$LAST - 2 days" +%F)
+            echo "only files changed since $SINCE (last full one $FULL_AGE day(s) ago)"
+            echo "since=$SINCE" >> "$GITHUB_OUTPUT"; echo "suffix=-new" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Check the secrets are there
         if: steps.due.outputs.run == 'yes'
         env:
@@ -92,7 +120,13 @@ jobs:
         if: steps.due.outputs.run == 'yes'
         env:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-        run: python3 scripts/backup_storage.py backup/storage
+          SINCE: ${{ steps.kind.outputs.since }}
+        run: |
+          if [ -n "$SINCE" ]; then
+            python3 scripts/backup_storage.py backup/storage --since "$SINCE"
+          else
+            python3 scripts/backup_storage.py backup/storage
+          fi
 
       - name: Pack and encrypt
         if: steps.due.outputs.run == 'yes'
@@ -112,7 +146,7 @@ jobs:
         if: steps.due.outputs.run == 'yes'
         uses: actions/upload-artifact@v4
         with:
-          name: ancienttrees-backup-${{ env.STAMP }}
+          name: ancienttrees-backup-${{ env.STAMP }}${{ steps.kind.outputs.suffix }}
           path: ancienttrees-*.tar.gz.gpg
           retention-days: 90
           if-no-files-found: error

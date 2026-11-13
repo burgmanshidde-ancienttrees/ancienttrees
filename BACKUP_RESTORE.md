@@ -16,7 +16,7 @@ Since 2026-11-04 (Hidde: "ok lets do option 1"): the free Supabase plan keeps no
 1. Actions, Database backup, the run you want, download the artifact `ancienttrees-backup-<date>` and unzip it.
 2. `gpg --decrypt ancienttrees-<date>.tar.gz.gpg > backup.tar.gz` (asks for the passphrase), then `tar -xzf backup.tar.gz`.
 3. `backup/database.sql` is plain SQL. Restore into a NEW Supabase project first, never over the live one: `psql "<new project's session pooler URI>" -f backup/database.sql`. Compare row counts with the live project before deciding anything.
-4. `backup/storage/<bucket>/...` are the files, uploaded back with the Supabase dashboard or the storage API under the same paths.
+4. `backup/storage/<bucket>/...` are the files, uploaded back with the Supabase dashboard or the storage API under the same paths. Since 2026-11-13 only one backup in 28 days holds every file (`ancienttrees-backup-<date>`); the weekly ones between hold only the files changed since the backup before (`ancienttrees-backup-<date>-new`), to stay inside the free plan's egress. So unpack the newest full one, then every `-new` after it in date order over the top. The database dump in each is whole.
 
 ## The quarterly test
 

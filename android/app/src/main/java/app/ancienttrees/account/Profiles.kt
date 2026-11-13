@@ -69,6 +69,10 @@ class Profiles(private val args: List<String> = emptyList()) {
                 Supa.URL_BASE + "/storage/v1/object/public/shared-sightings/" +
                     p.split("/").joinToString("/") { java.net.URLEncoder.encode(it, "UTF-8").replace("+", "%20") }
             }
+        /** The small copy for a tile, 600 px (scripts/shared_thumbs.py, 2026-11-13,
+         *  Profiles.swift thumbURL). Same path as the full one. */
+        val thumbUrl: String?
+            get() = photoUrl?.replace("/object/public/shared-sightings/", "/object/public/shared-thumbs/")
         /** A sighting id, so its shared page opens; anything else is skipped. */
         val opens: Boolean get() = UUID_RE.matches(id)
         /** Its shared page, SightingSync.url(for:). */

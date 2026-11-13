@@ -137,11 +137,15 @@ fun RemoteImage(
     placeholder: Boolean = true,
     urgent: Boolean = false,
     fallback: (@Composable () -> Unit)? = null,
+    /** Loaded when [url] gives nothing (TreePhoto's `fallback` on iOS): a shared
+     *  tile's small copy not made yet falls back to the full one (2026-11-13). */
+    orElse: String? = null,
 ) {
     val bitmap by produceState<Bitmap?>(memory.get(url), url) {
         // A recycled row never shows the previous tree's picture.
         value = memory.get(url)
         if (value == null) value = ImageStore.image(url, urgent)
+        if (value == null && orElse != null) value = memory.get(orElse) ?: ImageStore.image(orElse, urgent)
     }
     val loaded = bitmap
     if (loaded != null) {

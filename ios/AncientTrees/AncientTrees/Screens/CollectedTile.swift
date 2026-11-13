@@ -69,7 +69,7 @@ struct CollectedTile: View {
             named(t.title)
         case .shared(let o):
             if let url = o.photoURL {
-                TreePhoto(url: url) { named(o.title) }
+                TreePhoto(url: o.thumbURL ?? url, fallback: url) { named(o.title) }
             } else {
                 named(o.title)
             }

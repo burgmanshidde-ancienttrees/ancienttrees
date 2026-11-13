@@ -178,6 +178,10 @@ struct TreePhoto<Placeholder: View>: View {
     var contentMode: ContentMode = .fill
     /// Skip the download queue; see ImageStore.image(for:urgent:).
     var urgent = false
+    /// Loaded when `url` gives nothing: a shared tile's small copy that the
+    /// night run has not made yet falls back to the full one
+    /// (scripts/shared_thumbs.py, 2026-11-13).
+    var fallback: URL? = nil
     @ViewBuilder var placeholder: () -> Placeholder
 
     @State private var image: UIImage?
@@ -227,7 +231,10 @@ struct TreePhoto<Placeholder: View>: View {
             }
             image = nil
             shown = nil
-            let loaded = await ImageStore.shared.image(for: url, urgent: urgent)
+            var loaded = await ImageStore.shared.image(for: url, urgent: urgent)
+            if loaded == nil, let fallback, url == self.url {
+                loaded = await ImageStore.shared.image(for: fallback, urgent: urgent)
+            }
             // The view may have been handed a different tree while that ran.
             guard url == self.url else { return }
             image = loaded

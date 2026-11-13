@@ -749,7 +749,8 @@ private fun OwnTile(o: Profiles.OwnTree, modifier: Modifier, onOpen: () -> Unit)
                 textAlign = TextAlign.Center, maxLines = 4, modifier = Modifier.align(Alignment.Center).padding(8.dp))
         }
         val url = o.photoUrl
-        if (url != null) RemoteImage(url, o.title, Modifier.fillMaxSize(), fallback = { Box(Modifier.fillMaxSize()) { named() } })
+        if (url != null) RemoteImage(o.thumbUrl ?: url, o.title, Modifier.fillMaxSize(), orElse = url,
+            fallback = { Box(Modifier.fillMaxSize()) { named() } })
         else named()
     }
 }

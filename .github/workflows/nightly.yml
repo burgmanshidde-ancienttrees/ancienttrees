@@ -348,6 +348,10 @@ jobs:
           # And every reader sighting points at the tree it became, so the
           # app never shows one tree as two cards (2026-10-02).
           python3 scripts/sightings_link.py
+          # The small copy for the tiles (2026-11-13, Supabase egress): made for
+          # every new share, and gone with its original on the same run.
+          pip install --quiet pillow || true
+          python3 scripts/shared_thumbs.py || true
           # Path-limited, and it has to match what the commit stages below.
           # A bare `git diff --quiet` would see any unrelated change the run
           # had left in the tree, stage none of it, and then fail on "nothing

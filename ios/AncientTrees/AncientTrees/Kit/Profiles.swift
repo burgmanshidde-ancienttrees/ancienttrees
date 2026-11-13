@@ -112,6 +112,13 @@ public final class Profiles {
             let safe = photo.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? photo
             return URL(string: Supa.url + "/storage/v1/object/public/shared-sightings/" + safe)
         }
+        /// The small copy for a tile, 600 px (scripts/shared_thumbs.py,
+        /// 2026-11-13: the full one cost the free plan's egress). Same path.
+        public var thumbURL: URL? {
+            guard let photo, !photo.isEmpty else { return nil }
+            let safe = photo.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? photo
+            return URL(string: Supa.url + "/storage/v1/object/public/shared-thumbs/" + safe)
+        }
         /// Its shared page (Route.shared, SightingSync.url(for:) on the web).
         public var uuid: UUID? { UUID(uuidString: id) }
     }
