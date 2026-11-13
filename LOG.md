@@ -12,6 +12,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-13 session: outreach
+
+- **Five mails sent** (Hidde's 'Verstuur alle vijf'): Rijnmond, Il Messaggero, Prima la Martesana, Turismo Lucca, Corse Orientale (europe-source-2026-11-13, Variant A). Rijnmond source on rot_002 fixed (dead AMP link).
+- **US and UK wait for the Guardian piece, live Sunday 2026-11-15** (Hidde). Ready and held: us-uk-2026-11-13 (6) and us-uk-press-2026-11-13 (11). From Monday 11-16, in a session: swap the Wilder P.S. for the Guardian link once it is live, re-check every link, show Hidde, send on his word; Glasgow Live and Cambridge News are both Reach, so not the same day. Night runs leave them alone.
+- Found: the Suffragette Oak story (gla_002) says "days after" the 1918 Act; the Act passed 6 February, the oak went in on 20 April. Not fixed yet.
+
 ## 2026-11-13 session: Supabase egress back under the free plan
 
 Supabase mailed that the org passed the free plan's 5 GB egress this month (grace until 2026-12-13, then possible restrictions on accounts, saves and uploads). Hidde: no paying for now, and no smaller photographs ("fix maar").
