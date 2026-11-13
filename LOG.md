@@ -1,5 +1,11 @@
 # LOG
 
+## 2026-11-13 19:05 run (night-run)
+
+- **Build fixed (rung 2).** Deploy had been red because the tip-668 sighting row (Villa Salina oak) carried a raw account id as its photo path's first part; now the `people.ref` code (commit c88e24ed7), qa source checks green. This runner's token could not dispatch deploy.yml or nightly.yml (HTTP 403), so the build waits for the next push or schedule. For Hidde: nothing, unless deploy stays red.
+- Rung 1 and notes: nothing waiting. Prepare.py: 0 READY to write; Spokane claimed then released (1 unmined candidate of 19, wall for 48h), Porto refused (full at 32 of 30); Sintra, San Francisco, Guimaraes, Braga, Coimbra still walls.
+- Scout: Newark retried, the NJ big-tree list answers 403 to curl, verdict rewritten in data/register-scouting.json. No trees added this window.
+
 <!-- archive-index -->
 
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:

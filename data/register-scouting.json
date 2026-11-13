@@ -126,7 +126,8 @@
    "place": "Newark",
    "country": "United States",
    "status": "stalled",
-   "note": "SCOUTED 2026-10-16 on scout_next.py --target (#369). One search: no Newark NJ heritage or notable-tree register with open data; a 1980s street-tree inventory is mentioned but no public geolocated copy seen. The NJ Forest Service Big and Heritage Tree Registry (nj.gov/dep/parksandforests/forest/bigtrees) is statewide, 569 big-tree entries, licence and coordinates unchecked. Military Park Washington Sycamore is history only (Newark Public Library, Knowing Newark). Next angle: fetch the NJ Big Tree list and check for Essex County rows with coordinates and reuse terms."
+   "note": "SCOUTED 2026-10-16 on scout_next.py --target (#369). One search: no Newark NJ heritage or notable-tree register with open data; a 1980s street-tree inventory is mentioned but no public geolocated copy seen. The NJ Forest Service Big and Heritage Tree Registry (nj.gov/dep/parksandforests/forest/bigtrees) is statewide, 569 big-tree entries, licence and coordinates unchecked. Military Park Washington Sycamore is history only (Newark Public Library, Knowing Newark). Next angle: fetch the NJ Big Tree list and check for Essex County rows with coordinates and reuse terms. RETRIED 2026-11-13: dep.nj.gov/parksandforests/forest/bigtrees/ answers 403 (963 bytes, bot wall) to curl from the runner; list not read. Needs a session with a browser or another mirror of the list.",
+   "retried": "2026-11-13"
   },
   {
    "place": "Regensburg",
