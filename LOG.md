@@ -12,6 +12,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-13 session: Supabase egress back under the free plan
+
+Supabase mailed that the org passed the free plan's 5 GB egress this month (grace until 2026-12-13, then possible restrictions on accounts, saves and uploads). Hidde: no paying for now, and no smaller photographs ("fix maar").
+- **Backup**: db-backup.yml takes every stored file once in 28 days and only changed files in the weeks between (`-new` artifacts; BACKUP_RESTORE.md says how to restore). Tested: a week costs 24 MB instead of 145.
+- **Tiles**: `scripts/shared_thumbs.py` (night run, after sightings_link) keeps a 600 px copy of each shared photo in the new public bucket `shared-thumbs`; 127 made, 83 KB average against 934. Profile tiles on web, iOS and Android load it and fall back to the full copy; the shared tree page keeps the full photograph. iOS and Android take effect with their next builds.
+- **Avatars**: two oversized ones re-encoded to 512 px (476 and 117 KB to 43 and 69); new uploads were already 512.
+- Not known: the split of egress between database and storage, which only the Supabase dashboard shows (not signed in there). Check the usage page around 2026-11-20.
+
 ## 2026-11-13 night run (window from 07:04 UTC)
 
 - **Braga: 4 new trees in the app** (Turiz oak, Pindela tulip tree, redwood and Douglas fir; app-only under APP FIRST, no web page; Pindela is booking-only, 15 km out, said in the stories). Preflight 0 problems. Rung 1 empty (no sightings, no notes); health.py: only the deploy is behind main and 6 of 12 knocks delivered (deploy dispatched at window end).
