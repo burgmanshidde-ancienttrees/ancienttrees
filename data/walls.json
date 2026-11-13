@@ -197,11 +197,6 @@
       "released_at": "2026-11-07T13:39:07+00:00"
     },
     {
-      "slug": "london",
-      "kind": "verify",
-      "released_at": "2026-11-07T13:39:59+00:00"
-    },
-    {
       "slug": "leipzig",
       "kind": "verify",
       "released_at": "2026-11-07T18:13:28+00:00"
@@ -270,6 +265,11 @@
       "slug": "spokane",
       "kind": "verify",
       "released_at": "2026-11-13T19:07:55+00:00"
+    },
+    {
+      "slug": "london",
+      "kind": "verify",
+      "released_at": "2026-11-13T19:11:33+00:00"
     }
   ]
 }
