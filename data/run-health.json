@@ -2,62 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-09T06:42:35+00:00",
-   "date": "2026-09-09",
-   "run_id": "34320271150",
-   "minutes": 105.8,
-   "minutes_basis": "measured",
-   "attempts": 3,
-   "turns": 500,
-   "denials": 53,
-   "denials_source": "permission_denials: Bash, Bash(bash), Bash(cat), Bash(cd), Bash(chmod), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(gh), Bash(if), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(wc)",
-   "ended": "success",
-   "tokens": 13062681,
-   "claims_held": [],
-   "commits": 14,
-   "cities_touched": 9,
-   "cities": [
-    {
-     "city": "warsaw",
-     "trees": 7
-    },
-    {
-     "city": "oahu",
-     "trees": 4
-    },
-    {
-     "city": "cagliari",
-     "trees": 3
-    },
-    {
-     "city": "maastricht",
-     "trees": 3
-    },
-    {
-     "city": "sorrento",
-     "trees": 1
-    },
-    {
-     "city": "arnhem",
-     "trees": 0
-    },
-    {
-     "city": "barcelona",
-     "trees": 0
-    },
-    {
-     "city": "london",
-     "trees": 0
-    },
-    {
-     "city": "vienna",
-     "trees": 0
-    }
-   ],
-   "trees": 18,
-   "logged": true
-  },
-  {
    "started": "2026-09-09T08:29:47+00:00",
    "date": "2026-09-09",
    "run_id": "34329160559",
@@ -21058,6 +21002,28 @@
     "spokane"
    ],
    "commits": 6,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-11-13T19:04:53+00:00",
+   "date": "2026-11-13",
+   "run_id": "43488660107",
+   "minutes": 5.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 100,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 648695,
+   "claims_held": [
+    "bamberg",
+    "miami"
+   ],
+   "commits": 5,
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
