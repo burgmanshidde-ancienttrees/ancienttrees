@@ -1354,7 +1354,7 @@
    "user_id": "p_64aded5e0bdd8d60b3e78790",
    "mine": false,
    "name": "The Oak of Villa Salina Park",
-   "species": null,
+   "species": "Oak (Quercus sp.)",
    "age": null,
    "girth_cm": 580,
    "girth_hugs": null,
@@ -1372,8 +1372,9 @@
    "nearest_published_m": null,
    "register": null,
    "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
-   "seen": "2026-11-13"
+   "why": "Looked at the photo (a tall pedunculate-looking oak in daylight, a person beside it for scale) and read the note. Register-backed: Regione Emilia-Romagna's 2023 list of 25 new monumental trees has Quercus robur, Via Galliera 2, Castel Maggiore, 580 cm, 36 m, matching the reader's figures. Held only for location and access: the reader sent no coordinate, the villa is open only for events and no source says the park is open to walk in. Needs a GPS fix or a source for open access, then it ships (girth 580, height 36 from the register).",
+   "seen": "2026-11-13",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ]
 }
