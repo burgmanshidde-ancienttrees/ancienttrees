@@ -485374,6 +485374,11 @@
    ],
    "km": 1.53,
    "minutes": 19
+  },
+  "braga:brg_008,brg_009,brg_010": {
+   "rejected": true,
+   "routed_km": 0.35,
+   "worst_miss_m": 165
   }
  }
 }
