@@ -207,11 +207,6 @@
       "released_at": "2026-11-07T18:13:28+00:00"
     },
     {
-      "slug": "sintra",
-      "kind": "verify",
-      "released_at": "2026-11-08T00:59:23+00:00"
-    },
-    {
       "slug": "chicago",
       "kind": "verify",
       "released_at": "2026-11-08T01:01:34+00:00"
@@ -270,6 +265,11 @@
       "slug": "braga",
       "kind": "verify",
       "released_at": "2026-11-13T17:40:48+00:00"
+    },
+    {
+      "slug": "sintra",
+      "kind": "verify",
+      "released_at": "2026-11-13T17:41:25+00:00"
     }
   ]
 }

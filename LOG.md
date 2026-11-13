@@ -12,6 +12,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-13 night run (window from 17:38 UTC)
+
+- Rung 1: tip-668, a reader's Villa Salina oak (Castel Maggiore, Bologna). Photo looked at: a tall oak in daylight. Regione Emilia-Romagna's 2023 monumental list matches the reader's 580 cm and 36 m. Held, not rejected: no coordinate from the reader, and no source says the park is open outside events. Ships once a GPS fix or an open-access source turns up. Verdict is written in data/leads/_sightings.json.
+- Rung 5: Sintra verify pass found 0 new trees (register rows all judged or duplicates; one Monserrate eucalyptus lead with no girth or spot). Sintra and Braga are walls for 48h. Portland is full (33 of 30), so no claim.
+- Health: only 5 of 12 knocks delivered in 24h (GitHub dropping the cron). Everything else green.
+- Not done: `scripts/prepare.py` says the shelf is under its floor (930 leads need only a source), but the supply lanes I tried are empty. 
+
 ## 2026-11-13 session: outreach
 
 - **Five mails sent** (Hidde's 'Verstuur alle vijf'): Rijnmond, Il Messaggero, Prima la Martesana, Turismo Lucca, Corse Orientale (europe-source-2026-11-13, Variant A). Rijnmond source on rot_002 fixed (dead AMP link).

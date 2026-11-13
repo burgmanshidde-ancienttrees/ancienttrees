@@ -2,6 +2,7 @@
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
     "2026-11-13": [
+      {"date": "2026-11-13", "kind": "verify", "target": "sintra", "tokens": 65000, "trees": 0, "note": "Every register row already judged or duplicate; one Monserrate eucalyptus lead without girth or spot. Sintra walled 48h."},
       {"date": "2026-11-13", "kind": "verify", "target": "braga", "tokens": 88000, "trees": 4, "note": "Turiz oak plus three Pindela trees; 5 of 10 candidates were duplicates of live trees"},
       {"date": "2026-11-13", "kind": "write", "target": "braga", "tokens": 84000, "trees": 4, "note": "4 stories merged; app-only under APP_FIRST so place copy left alone"}
     ],
