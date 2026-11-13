@@ -44,6 +44,7 @@ from Xcode on a runner that holds no Apple key.
 """
 import argparse
 import datetime
+import gzip
 import json
 import os
 import re
@@ -108,10 +109,15 @@ def load_fixes():
 
 
 def _get(path, key, timeout=30):
+    # gzip (2026-11-13): MetricKit payloads are large and every health check
+    # reads two days of them; Supabase's free plan counts the bytes sent.
     req = urllib.request.Request(SUPA + path, headers={
-        "apikey": key, "Authorization": "Bearer " + key})
+        "apikey": key, "Authorization": "Bearer " + key, "Accept-Encoding": "gzip"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.load(r)
+        raw = r.read()
+        if r.headers.get("Content-Encoding") == "gzip":
+            raw = gzip.decompress(raw)
+        return json.loads(raw)
 
 
 def fetch_rows(key, days):

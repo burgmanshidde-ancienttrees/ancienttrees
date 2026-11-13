@@ -25,8 +25,19 @@ Mac both append to it, and last-write-wins would lose a send and re-mail
 somebody. Lists are unioned, keeping order, by their full JSON value.
 
 The key comes from SUPABASE_SERVICE_KEY, or else ~/.ancienttrees-supabase.env.
+
+LIGHT ON EGRESS (2026-11-13, Supabase mailed that the free plan's 5 GB a month
+was passed; Hidde: "fix maar"). The table is 6.4 MB of JSON, and the night run
+read it whole four times a knock (two pulls, two pushes that each read the
+remote first), about 160 MB a day, half of all our egress. Now every request
+asks for gzip (1.2 MB on the wire instead of 5.8), a pull leaves a snapshot of
+what it fetched (out/private-store-pulled.json, hashes only), and a push reads
+back only the files that changed on disk since that snapshot, so a push after
+a run that mailed nobody reads nothing. Without a snapshot it reads all, as before.
 """
 import glob
+import gzip
+import hashlib
 import json
 import os
 import subprocess
@@ -102,18 +113,31 @@ def key():
 
 def req(path, method="GET", body=None, prefer=None):
     k = key()
-    h = {"apikey": k, "Authorization": "Bearer " + k, "Content-Type": "application/json"}
+    h = {"apikey": k, "Authorization": "Bearer " + k, "Content-Type": "application/json",
+         "Accept-Encoding": "gzip"}
     if prefer:
         h["Prefer"] = prefer
     r = urllib.request.Request(SUPA + path, method=method, headers=h,
                                data=json.dumps(body).encode() if body is not None else None)
     with urllib.request.urlopen(r, timeout=60) as resp:
         raw = resp.read()
+        if resp.headers.get("Content-Encoding") == "gzip":
+            raw = gzip.decompress(raw)
     return json.loads(raw) if raw else None
 
 
-def remote():
-    out, start = {}, 0
+def remote(paths=None):
+    """Every file in the table, or only `paths` (those that exist there)."""
+    out = {}
+    if paths is not None:
+        paths = sorted(paths)
+        for i in range(0, len(paths), 40):
+            chunk = ",".join('"%s"' % p.replace('"', '\\"') for p in paths[i:i + 40])
+            q = urllib.parse.quote("in.(" + chunk + ")", safe="")
+            for r in req(f"/rest/v1/private_files?select=path,content&path={q}") or []:
+                out[r["path"]] = r["content"]
+        return out
+    start = 0
     while True:
         rows = req(f"/rest/v1/private_files?select=path,content&order=path&offset={start}&limit=200") or []
         for r in rows:
@@ -121,6 +145,26 @@ def remote():
         if len(rows) < 200:
             return out
         start += 200
+
+
+SNAPSHOT = os.path.join(ROOT, "out", "private-store-pulled.json")
+
+
+def _hash(text):
+    return hashlib.sha1(text.encode("utf-8")).hexdigest()
+
+
+def _snapshot():
+    try:
+        return json.load(open(SNAPSHOT))
+    except (OSError, ValueError):
+        return None
+
+
+def _save_snapshot(snap):
+    os.makedirs(os.path.dirname(SNAPSHOT), exist_ok=True)
+    with open(SNAPSHOT, "w") as fh:
+        json.dump(snap, fh)
 
 
 def local():
@@ -178,23 +222,35 @@ def pull():
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         with open(dest, "w", encoding="utf-8") as fh:
             fh.write(content)
+    _save_snapshot({p: _hash(c) for p, c in r.items()})
     print(f"private_store: pulled {len(r)} file(s)")
 
 
 def push():
-    mine, theirs = local(), remote()
-    rows = []
+    mine, snap = local(), _snapshot()
+    if snap is None:
+        theirs = remote()
+    else:
+        # Only what changed on disk since the last pull can need writing.
+        mine = {p: c for p, c in mine.items() if snap.get(p) != _hash(c)}
+        theirs = remote(mine.keys()) if mine else {}
+    rows, on_disk = [], {}
     for path, content in mine.items():
         body = merged(path, content, theirs.get(path))
+        on_disk[path] = content
         if body != theirs.get(path):
             rows.append({"path": path, "content": body})
             if body != content:
                 with open(os.path.join(ROOT, path), "w", encoding="utf-8") as fh:
                     fh.write(body)
+                on_disk[path] = body
     for i in range(0, len(rows), 50):
         req("/rest/v1/private_files?on_conflict=path", "POST",
             rows[i:i + 50],
             prefer="resolution=merge-duplicates,return=minimal")
+    if snap is not None and on_disk:
+        snap.update({p: _hash(c) for p, c in on_disk.items()})
+        _save_snapshot(snap)
     print(f"private_store: pushed {len(rows)} changed file(s)")
 
 

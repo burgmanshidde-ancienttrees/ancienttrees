@@ -24,7 +24,8 @@ Supabase mailed that the org passed the free plan's 5 GB egress this month (grac
 - **Backup**: db-backup.yml takes every stored file once in 28 days and only changed files in the weeks between (`-new` artifacts; BACKUP_RESTORE.md says how to restore). Tested: a week costs 24 MB instead of 145.
 - **Tiles**: `scripts/shared_thumbs.py` (night run, after sightings_link) keeps a 600 px copy of each shared photo in the new public bucket `shared-thumbs`; 127 made, 83 KB average against 934. Profile tiles on web, iOS and Android load it and fall back to the full copy; the shared tree page keeps the full photograph. iOS and Android take effect with their next builds.
 - **Avatars**: two oversized ones re-encoded to 512 px (476 and 117 KB to 43 and 69); new uploads were already 512.
-- Not known: the split of egress between database and storage, which only the Supabase dashboard shows (not signed in there). Check the usage page around 2026-11-20.
+- **The real source, found after Hidde pasted the usage page** (6.0 GB used 10-28 to 11-13, about 375 MB a day, with 19 active users, so machines, not people): `private_store.py` read the whole private_files table (6.4 MB) four times a knock, about 160 MB a day. Now gzip (5.8 MB to 1.2 on the wire), and a push reads back only files changed since the last pull (snapshot in out/), so a quiet knock's pushes read nothing. `crashes.py` (health and quality: 6 MB of MetricKit payloads) asks for gzip too.
+- Restriction comes from 2026-12-13 if the cycle 11-28 to 12-28 also passes 5 GB, so about 165 MB a day is the ceiling. Check the usage page around 2026-11-20 for the new daily level.
 
 ## 2026-11-13 night run (window from 07:04 UTC)
 
