@@ -31,6 +31,12 @@ Web half: the last 24 hours were a Rotterdam source link, Braga trees (app-only)
 - WARN site/dist/contribute.html (source site/src/pages/contribute.astro) still says "verified against independent sources" / "check every tip against independent sources", four times in the built page. False since "Good reader input IS the source" (2026-10-12). Eighteenth review. Replacement: "We read every submission before it is kept."
 - NOTE data/cities/windsor.json wsr_002 still carries the sentence "An iNaturalist record from August 2026 falls within range of the spot, though nobody has checked...". Narrates our process ("Public copy never narrates our process"). Drop it.
 
+App half (iPhone SE: refused, review-ask, search, signin-email, signin, species-pick):
+
+- NOTE APP search.png: typing "lis" lists Lisbon, then Indianapolis, Minneapolis and Alishan, matched mid-word. A reader typing a place expects names that start with it first; Alishan (2 trees) outranks nothing useful. For a session.
+- NOTE APP signin-email.png is byte-identical in look to signin.png (it shows the three-button choice, not an email form), so the screen named for email entry is not being exercised by the sweep. For a session.
+- Nothing wrong found on refused.png, review-ask.png or species-pick.png.
+
 ## 2026-11-12
 
 Web half: the last 24 hours were Cardiff and Windsor trees into the app, an add-photo fix, Android release prep. No em dashes in site/dist. Standing findings unchanged.
