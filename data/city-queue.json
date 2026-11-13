@@ -6697,29 +6697,6 @@
   },
   {
    "rank": 289,
-   "city": "Braga",
-   "country": "Portugal",
-   "slug": "braga",
-   "score": 1.0,
-   "demand": 34522,
-   "basis": "measured",
-   "status": "published",
-   "trees": 4,
-   "photos": 2,
-   "walks": 0,
-   "register": 8,
-   "ready": 0,
-   "supply": 15,
-   "target": 20,
-   "impressions_10d": 1,
-   "clicks_10d": 0,
-   "ease": 1.8,
-   "work_score": 1.8,
-   "travel": 2477,
-   "wikidata": 7
-  },
-  {
-   "rank": 290,
    "city": "Parma",
    "country": "Italy",
    "slug": "parma",
@@ -6742,7 +6719,7 @@
    "wikidata": 8
   },
   {
-   "rank": 291,
+   "rank": 290,
    "city": "Auckland",
    "country": "New Zealand",
    "slug": "auckland",
@@ -6765,7 +6742,7 @@
    "wikidata": 1
   },
   {
-   "rank": 292,
+   "rank": 291,
    "city": "Ferrara",
    "country": "Italy",
    "slug": "ferrara",
@@ -6786,6 +6763,29 @@
    "clicks_10d": 0,
    "travel": 835,
    "wikidata": 5
+  },
+  {
+   "rank": 292,
+   "city": "Braga",
+   "country": "Portugal",
+   "slug": "braga",
+   "score": 1.0,
+   "demand": 34522,
+   "basis": "measured",
+   "status": "published",
+   "trees": 8,
+   "photos": 2,
+   "walks": 0,
+   "register": 8,
+   "ready": 0,
+   "supply": 11,
+   "target": 20,
+   "impressions_10d": 1,
+   "clicks_10d": 0,
+   "ease": 1.72,
+   "work_score": 1.72,
+   "travel": 2477,
+   "wikidata": 3
   },
   {
    "rank": 293,

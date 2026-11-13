@@ -60,7 +60,7 @@ Thin places kept indexed (19), a destination tree or real impressions: Alishan, 
 | Maxaranguape | Brazil | 1 | 0 |
 | Nisia Floresta | Brazil | 1 | 0 |
 | Pirangi | Brazil | 1 | 0 |
-| Sao Paulo | Brazil | 1 | 7 |
+| Sao Paulo | Brazil | 1 | 6 |
 | Vassununga | Brazil | 1 | 0 |
 | Bansko | Bulgaria | 1 | 0 |
 | Garmen | Bulgaria | 1 | 0 |
@@ -296,7 +296,7 @@ Thin places kept indexed (19), a destination tree or real impressions: Alishan, 
 | Suzuka | Japan | 1 | 0 |
 | Takahagi | Japan | 1 | 0 |
 | Takahama | Japan | 1 | 0 |
-| Takayama | Japan | 1 | 22 |
+| Takayama | Japan | 1 | 15 |
 | Takeo | Japan | 1 | 0 |
 | Taketa | Japan | 1 | 0 |
 | Tamba | Japan | 2 | 0 |
@@ -437,7 +437,7 @@ Thin places kept indexed (19), a destination tree or real impressions: Alishan, 
 | Muxika | Spain | 1 | 0 |
 | Navajas | Spain | 1 | 0 |
 | Ondategi | Spain | 1 | 0 |
-| Tarragona | Spain | 3 | 2 |
+| Tarragona | Spain | 3 | 0 |
 | Valentin | Spain | 1 | 0 |
 | Villamudria | Spain | 1 | 0 |
 | Anuradhapura | Sri Lanka | 1 | 0 |

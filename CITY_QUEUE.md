@@ -491,10 +491,10 @@ so qa.py fails the deploy when the table and the json disagree.
 | 286 | Hobart | 1.23 | 81,734 | 11 | 1 | 2 | 455 | 20 | published, never ranked (may be uncrawled) |
 | 287 | Stirling | 1.78 | 43,558 | - | - | - | - | 10 | predicted (travel demand) |
 | 288 | Baltimore | 1.77 | - | 4 | - | - | - | 30 | published, never ranked (may be uncrawled) |
-| 289 | Braga | 1.00 | 34,522 | 4 | 2 | - | 8 | 20 | measured |
-| 290 | Parma | 1.00 | 40,425 | 5 | - | 1 | 7 | 20 | measured |
-| 291 | Auckland | 1.17 | 152,056 | 5 | 2 | - | 977 | 60 | published, never ranked (may be uncrawled) |
-| 292 | Ferrara | 1.00 | 27,490 | 5 | 3 | 1 | 7 | 20 | measured |
+| 289 | Parma | 1.00 | 40,425 | 5 | - | 1 | 7 | 20 | measured |
+| 290 | Auckland | 1.17 | 152,056 | 5 | 2 | - | 977 | 60 | published, never ranked (may be uncrawled) |
+| 291 | Ferrara | 1.00 | 27,490 | 5 | 3 | 1 | 7 | 20 | measured |
+| 292 | Braga | 1.00 | 34,522 | 8 | 2 | - | 8 | 20 | measured |
 | 293 | Dijon | 1.72 | 43,526 | - | - | - | - | 20 | predicted (travel demand) |
 | 294 | Annecy | 1.69 | 56,859 | - | - | - | - | 20 | predicted (travel demand) |
 | 295 | Pamplona | 1.00 | 128,065 | 25 | - | 3 | 9 | 20 | measured |

@@ -12,7 +12,6 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-
 ## 2026-11-13 night run (window from 07:04 UTC)
 
 - **Braga: 4 new trees in the app** (Turiz oak, Pindela tulip tree, redwood and Douglas fir; app-only under APP FIRST, no web page; Pindela is booking-only, 15 km out, said in the stories). Preflight 0 problems. Rung 1 empty (no sightings, no notes); health.py: only the deploy is behind main and 6 of 12 knocks delivered (deploy dispatched at window end).
