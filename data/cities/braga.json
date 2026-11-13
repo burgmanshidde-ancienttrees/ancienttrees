@@ -180,6 +180,172 @@
       "girth_cm": 370,
       "height_m": 25.5,
       "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. KNJ1/559 (data/registers/portugal-icnf.json), matched on our pin at 8 m (register_match.py, 2026-10-12)."
+    },
+    {
+      "id": "brg_007",
+      "name": "The Turiz Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 180 years",
+      "age_min": 150,
+      "age_max": 220,
+      "girth_cm": 428,
+      "height_m": 27,
+      "location": {
+        "address": "Rua do Pombal, Turiz, Vila Verde",
+        "latitude": 41.6262,
+        "longitude": -8.4544,
+        "neighbourhood": "Turiz"
+      },
+      "verified_sources": [
+        "https://www.jf-turiz.pt/freguesia/locais-a-visitar/7-quercus_robur_l_arvore_de_interesse_publico",
+        "https://www.icnf.pt/ (Arvoredo de Interesse Publico register, imported in data/registers/portugal-icnf.json)"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Publico, processo KNJ1/560 (Aviso n.o 15, 23/07/2010)",
+        "url": "https://www.jf-turiz.pt/freguesia/locais-a-visitar/7-quercus_robur_l_arvore_de_interesse_publico"
+      },
+      "access": "Stands at a road junction in front of the Casa do Cruzeiro on Rua do Pombal; seen from the public road. View from the street, do not enter the house grounds.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Between 2010 and 2017 this oak grew six metres taller, at least on paper. Portugal's register of trees of public interest measured it at 21 metres when it classified the tree in 2010. The parish council of Turiz measured 27 metres in 2017. An oak this age does not put on six metres in seven years, so one of the two figures is off, and nobody has said which. The girth moved less: 4.18 metres in the register, 4.28 metres at chest height and 5.32 at the base in the parish's numbers.\n\nThe setting is the firmer part. It stands where two roads cross on Rua do Pombal, north of Braga in the municipality of Vila Verde, in front of the Casa do Cruzeiro, a house built in 1838 that the parish calls typical of an old Minho quinta. The register gave the oak 170 years in 2010 and the parish 180 in 2017, which lands its beginning close to the years the house went up. No source says the two were planned together, so read that as a coincidence of dates, not a story.\n\nWhat you see from the road is the crown, about 23 metres by 22, nearly as wide as the tree is tall. The house is private, so this is a tree for the roadside.\n\nThe last published measurement is from 2017, and we have found no dated photograph since. If you pass it, tell us it still stands.",
+      "how_to_recognise": "You can recognise it by the crown, about 23 metres across, spreading over a road junction. It stands on Rua do Pombal in front of the Casa do Cruzeiro, seen from the street.",
+      "verify_notes": "Register KNJ1/560: Quercus robur, Vila Verde, freguesia Turiz, lugar Casa do Cruzeiro, classified Aviso 15 of 23/07/2010, register age 170 (2010), girth 4.18 m, height 21 m, crown 22.3 m, coordinate 41.6262,-8.4544. Parish council page (Junta de Freguesia de Turiz, fetched): same tree, 'situated at the road crossing in front of the Casa do Cruzeiro, built 1838, typical of an old Minho quinta'; perimeter at base 5.32 m, at 1.30 m 4.28 m, crown 23.4 x 22.1 m, height 27.0 m, age 180 years, last measured 2017, address Rua do Pombal. Girth conflict stated: 4.18 m (2010 register) vs 4.28 m at 1.30 m (2017 parish); recorded 428. Height 21 m (2010) vs 27 m (2017). Nominatim confirms Rua do Pombal at the register coordinate (road node 41.62623,-8.45439). Alive: 2017 measurement is latest; lifecheck NONE, so flagged, no recent dated photo found. Pin is a register coordinate at a road junction, not confirmed on the crown (Overpass unreachable). Age is register-derived, at last measurement.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "brg_008",
+      "name": "The Pindela Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "roughly 155 years",
+      "age_min": 130,
+      "age_max": 190,
+      "girth_cm": 594,
+      "height_m": 36,
+      "location": {
+        "address": "Quinta de Pindela, Sao Tiago da Cruz, Vila Nova de Famalicao",
+        "latitude": 41.43932,
+        "longitude": -8.50631,
+        "neighbourhood": "Cruz"
+      },
+      "verified_sources": [
+        "https://www.casadepindela.com/pt/sobre-quinta",
+        "https://pt.wikipedia.org/wiki/Casa,_quinta_e_mata_de_Pindela",
+        "https://www.icnf.pt/ (Arvoredo de Interesse Publico register, imported in data/registers/portugal-icnf.json)"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Publico, processo KNJ1/544 (Aviso n.o 4, 10/03/2010)",
+        "url": "https://www.casadepindela.com/pt/sobre-quinta"
+      },
+      "access": "Inside the private Quinta de Pindela estate (Casa de Pindela, hotel and events). The owner's site offers guided visits to the gardens and woods by prior booking only (casadepindela.com/pt/experiencias); no open-access hours published. Not a walk-up tree.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Mata de Pindela, Quinta de Pindela",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "story": "The owners of this tulip tree say it is 12 metres round. Portugal's register of trees of public interest says 5.94. Twelve would be an extraordinary waist for a tree of about 155 years, so the register's figure is the one used here, and the gap stays on the page. Height splits the same way: 25 metres on the owners' site, 36 in the register and in Wikipedia.\n\nThe family's own name for it is arvore do ponto, the tree of the point. None of our sources explains why.\n\nIt grows in the Mata de Pindela, the wood of a quinta near Vila Nova de Famalicao whose house, estate and wood are listed together as a Monumento de Interesse Publico. The register classified it in 2010 in the same notice as a coast redwood about 60 metres away and a Douglas fir a little further on. All three are North American, and the register put each at around 150 years when it measured them. Of the three, this is the one we know is alive: someone photographed it for iNaturalist on 30 October 2026.\n\nSeeing it takes planning. Pindela is a private estate, now a hotel and events venue, and the owners open the gardens and wood only on guided visits booked in advance. It lies about 15 kilometres from Braga, roughly 5 beyond Famalicao, and no practical public transport reaches the gate. This is a booking and a car or taxi, not a detour on foot.",
+      "how_to_recognise": "You can recognise it by the leaves, cut square across the tip, on a trunk about six metres round. It stands in the Mata de Pindela, about 60 metres from the estate's coast redwood.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the square-tipped leaves turn clear yellow"
+      },
+      "verify_notes": "Register KNJ1/544: tulip tree, lugar Sao Tiago da Cruz - Mata de Pindela, Vila Nova de Famalicao, classified Aviso 4 of 10/03/2010, register age 155 (last measured 2015), girth 5.94 m, height 36 m, crown 27.5 m. Owner (Casa de Pindela) lists it as 'Tulipeiro-da-virginia (arvore do ponto)', 25 m high and 12 m perimeter; Wikipedia says about 36 m. CONFLICT: owner 12 m perimeter vs register 5.94 m; 12 m is implausible for a 155-year tulip tree, register figure kept, 25 vs 36 m height noted. Part of the Casa, quinta e mata de Pindela, Monumento de Interesse Publico (DGPC, 2012 per Wikipedia; Portaria 740-DG/2012 per a blog, unseen). Alive: lifecheck RECENT, iNaturalist observation 2026-10-30 (inaturalist.org/observations/411733045) within range of the register pin. Three registered trees in the mata stand within about 300 m (see brg_009, brg_010); the sequoia stands about 60 m from the tulip tree. Distance: about 15 km from Braga centre, roughly 5 km beyond Vila Nova de Famalicao; no practical public transport to the estate, a car or taxi trip (the 30-minute public transport rule is NOT met, say so). Pin is the register coordinate inside the wood, not a confirmed crown.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "brg_009",
+      "name": "The Pindela Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 120,
+      "age_max": 180,
+      "girth_cm": 500,
+      "height_m": 40,
+      "location": {
+        "address": "Quinta de Pindela, Sao Tiago da Cruz, Vila Nova de Famalicao",
+        "latitude": 41.43882,
+        "longitude": -8.50465,
+        "neighbourhood": "Cruz"
+      },
+      "verified_sources": [
+        "https://www.casadepindela.com/pt/sobre-quinta",
+        "https://pt.wikipedia.org/wiki/Casa,_quinta_e_mata_de_Pindela",
+        "https://www.icnf.pt/ (Arvoredo de Interesse Publico register, imported in data/registers/portugal-icnf.json)"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Publico, processo KNJ1/545 (Aviso n.o 4, 10/03/2010)",
+        "url": "https://www.casadepindela.com/pt/sobre-quinta"
+      },
+      "access": "Inside the private Quinta de Pindela estate (Casa de Pindela, hotel and events). The owner's site offers guided visits to the gardens and woods by prior booking only (casadepindela.com/pt/experiencias); no open-access hours published. Not a walk-up tree.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Mata de Pindela, Quinta de Pindela",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "story": "A redwood from the coast of California stands 40 metres tall in a wood near Vila Nova de Famalicao, and on this estate it is the one tree whose numbers everyone agrees on. Portugal's register of trees of public interest gives 40 metres in height and 5 metres round the trunk. The owners of the Quinta de Pindela say the same, and Wikipedia gives about 40 metres too. Next door, the tulip tree's girth is argued over by a factor of two.\n\nThe shape is a column. The register measured a crown only 12 metres across, so the tree is more than three times as tall as it is wide.\n\nIt was classified in 2010, in the same notice as the tulip tree about 60 metres away and a Douglas fir further into the Mata de Pindela, and the register put it at 150 years at that measurement. Nobody has recorded when it was planted or by whom. If you know, tell us.\n\nWe have no dated photograph of the redwood itself. The owners still name it as a tree worth visiting in their 2026 copy, and the tulip tree beside it was photographed alive in October 2026.\n\nPindela is a private estate, a hotel and events venue, and its wood opens only on guided visits booked in advance. It is about 15 kilometres from Braga with no practical public transport to the gate. Book once and see the redwood and the tulip tree as one stop.",
+      "how_to_recognise": "You can recognise it by its height, about 40 metres, on a narrow crown only 12 metres across and a trunk 5 metres round. It stands in the Mata de Pindela, about 60 metres from the estate's tulip tree.",
+      "verify_notes": "Register KNJ1/545: Sequoia sempervirens, Mata de Pindela, classified Aviso 4 of 10/03/2010, register age 150 (last measured 2010), girth 5 m, height 40 m, crown 12 m. Owner page: 'Sequoia, 40 metros de altura e 5 metros de perimetro', Wikipedia about 40 m; figures agree. Coast redwood planting is documented nowhere for this specimen; age is the register's, at 2010 measurement. Alive: lifecheck NONE for this coordinate (the nearby tulip tree has an iNaturalist observation 2026-10-30); owner site still names it as a visit-worthy tree in its 2026 copy. Flagged: register plus owner only, no dated photograph of the redwood itself. Same access and distance caveats as brg_008 (private estate, guided visit by booking, about 15 km from Braga, no public transport to the gate). About 60 m from the tulip tree (brg_008): the pair works as one stop.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "brg_010",
+      "name": "The Pindela Douglas Fir",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 120,
+      "age_max": 180,
+      "girth_cm": 450,
+      "height_m": 30,
+      "location": {
+        "address": "Quinta de Pindela, Sao Tiago da Cruz, Vila Nova de Famalicao",
+        "latitude": 41.44078,
+        "longitude": -8.50281,
+        "neighbourhood": "Cruz"
+      },
+      "verified_sources": [
+        "https://www.casadepindela.com/pt/sobre-quinta",
+        "https://pt.wikipedia.org/wiki/Casa,_quinta_e_mata_de_Pindela",
+        "https://www.icnf.pt/ (Arvoredo de Interesse Publico register, imported in data/registers/portugal-icnf.json)"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Publico, processo KNJ1/546 (Aviso n.o 4, 10/03/2010)",
+        "url": "https://www.casadepindela.com/pt/sobre-quinta"
+      },
+      "access": "Inside the private Quinta de Pindela estate (Casa de Pindela, hotel and events). The owner's site offers guided visits to the gardens and woods by prior booking only (casadepindela.com/pt/experiencias); no open-access hours published. Not a walk-up tree.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Mata de Pindela, Quinta de Pindela",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "story": "Three sources agree this Douglas fir is 30 metres tall. They cannot agree how big round it is. Portugal's register of trees of public interest measured 4.5 metres when it classified the tree in 2010. The owners of the Quinta de Pindela give 6 metres. The register's figure is the one used here, and the difference stays on the page.\n\nIt is the third of the Mata de Pindela's protected trees, all North American, all classified in the same notice of March 2010. The coast redwood stands about 190 metres away and the tulip tree a little beyond it. Douglas fir comes from the Pacific side of North America, where it is one of the great timber trees, and this one was put at 150 years old at the 2010 measurement. Nobody has written down when it was planted.\n\nThe shape sets it apart from its redwood neighbour. Where the redwood's crown is 12 metres wide, the register measured this one at 20, on a tree of 30 metres.\n\nThe evidence that it still stands is thin: the owners still list it in their 2026 copy, but we have found no dated photograph. If you see it, tell us.\n\nPindela is a private estate, a hotel and events venue, and its wood opens only on guided visits booked in advance. It is about 15 kilometres from Braga, roughly 5 beyond Famalicao, with no practical public transport to the gate. Ask for all three trees on the same visit.",
+      "how_to_recognise": "You can recognise it by the crown, about 20 metres across on a 30-metre tree, far broader than the redwood's 12. It stands in the Mata de Pindela, about 190 metres from that redwood.",
+      "verify_notes": "Register KNJ1/546: Pseudotsuga menziesii, Mata de Pindela, classified Aviso 4 of 10/03/2010, register age 150 (last measured 2010), girth 4.5 m, height 30 m, crown 20 m. Owner page says 30 m high and 6 m perimeter (girth conflict 4.5 vs 6 m, register kept); Wikipedia about 30 m. Alive: lifecheck NONE here; owner copy of 2026 still lists it. Flagged, register plus owner only. About 190 m from the redwood (brg_009). Same access and distance caveats as brg_008. Possibly better folded with brg_008/brg_009 as one visit; the writer decides.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
