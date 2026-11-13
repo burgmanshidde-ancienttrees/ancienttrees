@@ -220,16 +220,3 @@ App half (iPhone SE: directions, early-adopter, early-adopter-sheet, explore, fe
 - NOTE APP explore.png: "767 trees at their best this month" carries a "13 within 20 km of you" count while the card's tag says "Baarn"; fine if the location is Baarn, but the Discover tab title and the tab label "My trees" still differ from the "Your trees" sheet noted on 10-29 (unchanged).
 - directions, early-adopter, early-adopter-sheet, feedback: read consistently, nothing contradicted.
 
-## 2026-10-29
-
-Web half: the last 24 hours changed no site pages beyond the profile bar (face opens the profile), find-people on the web and outreach/mail-voice files. No em dashes in built English HTML. Findings:
-
-- WARN (tenth review to see it) meta description prints a planting or event year as an age: `grep` of site/dist finds 94 pages with `A 17xx-20xx-year-old` (e.g. /riverside/roosevelt-palm). Hard rule 2, Verify (a derived age states its basis). `grep -c "year-old" scripts/qa.py` is still 0, so nothing refuses it and prose has not held for ten days. Build the qa.py check on built HTML first (a year 1700 to 2025 directly before "-year-old"), then fix the meta template.
-- WARN site/src/pages/contribute.astro:17 and :401 still say "Every submission is verified against independent sources before it goes live" / "We check every tip against independent sources". Made false by CLAUDE.md "Good reader input IS the source" (2026-10-12) and the 2026-10-21 Tangier ruling. Fourth review in a row. Replacement: "We check every submission before it goes live; a good photograph with a GPS fix is enough to start a page." Fix the translations too.
-
-App half (iPhone SE: collect-ticked, collect-voted, collection-tab, collection, contribute):
-
-- NOTE APP collection-tab.png: the tab is labelled "My trees" but the sheet under it is titled "Your trees" (and the subtitle says "Register and sign in", the sign-in sheet elsewhere says "Sign in"). Same screen, three wordings; pick one noun and verb. A session, not a night run.
-- NOTE APP collect-voted.png: the note field placeholder "Leave a note: share something you'd like the next visitors to read about this tree" uses a colon reveal and runs two sentences into one; "Share something the next visitor should know about this tree" says the same. PRODUCT_COPY.md register.
-- collect-ticked, collection (intro splash), contribute (sign-in sheet): read consistently, nothing contradicted.
-
