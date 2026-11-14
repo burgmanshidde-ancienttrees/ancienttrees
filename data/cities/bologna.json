@@ -10,7 +10,7 @@
   "faq": [
     {
       "q": "What is the oldest tree in Bologna?",
-      "a": "One of the monumental plane trees of Parco della Montagnola, planted around 1820 during the park's Napoleonic-era redesign, roughly 206 years old. The park is free to visit, near Via Indipendenza in the historic centre."
+      "a": "The oldest precisely dated is one of the monumental plane trees of Parco della Montagnola, planted around 1820 during the park's Napoleonic-era redesign, roughly 206 years old. The park is free to visit, near Via Indipendenza in the historic centre."
     },
     {
       "q": "Why does a cemetery have one of Bologna's notable trees?",
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Bologna's remarkable trees free to see?",
-      "a": "Most are, standing in free public parks, squares and the Certosa cemetery. The Cedro del Rizzoli grows in a working hospital's garden with public access during visiting hours, and the Orto Botanico charges a small entry fee."
+      "a": "Most are, standing in free public parks, squares and the Certosa cemetery. The Cedro del Rizzoli grows in a working hospital's garden with public access during visiting hours, and the Orto Botanico charges a small entry fee. The Villa Salina oak at Castel Maggiore, just north of the city, stands in a garden that opens for events and guided walks."
     },
     {
       "q": "Does Bologna have any trees tied to famous residents?",
@@ -488,6 +488,61 @@
       "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 545,
       "how_to_recognise": "You can recognise it as the largest tree in the garden, its foliage held in flat, ascending, tiered plates. It stands in the gardens of Villa delle Rose."
+    },
+    {
+      "id": "bol_013",
+      "name": "The Oak of Villa Salina",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "200 to 300 years by a reader's estimate",
+      "age_min": 200,
+      "age_max": 300,
+      "age_basis": "source",
+      "location": {
+        "address": "Parco di Villa Salina-Malpighi, Via Galliera 2, 40013 Castel Maggiore (BO)",
+        "latitude": 44.555333,
+        "longitude": 11.352806,
+        "neighbourhood": "Castel Maggiore (day trip from Bologna)"
+      },
+      "story": "Italy counts this pedunculate oak among its national monumental trees: 580 centimetres round and 36 metres tall in the 2023 list, standing in the garden behind Villa Salina at Castel Maggiore, just north of Bologna. A reader who sent us its photograph puts its age at 200 to 300 years, from historical sources.\n\nThe villa is from the sixteenth century, and Marcello Malpighi, the Bologna physician who looked at plants and bodies through the first microscopes, bought it in 1682. The same reader noticed a link they could not leave alone. In Malpighi's Anatome Plantarum, printed for the Royal Society in 1675 and 1679, an engraving by Robert White shows cherubs and tiger-like animals around a large oak. At the villa, sphinxes sit on the entrance pillars and painted cherubs fill the loggia ceiling, “some of whom appear to be holding oak branches.” In their words it is “an intriguing interplay of trees, symbols and decorative elements from different periods.”\n\nIn the photograph the trunk rises straight and grey for a long way before the first limbs spread, and a person reaching up at its foot comes nowhere near them. The reader tells us school groups visit, and the children are asked to put their arms around it.\n\nThe garden opens for events and for guided walks run by the town, so plan the visit around one.",
+      "how_to_recognise": "The biggest oak in the garden behind the villa: one straight grey trunk, bare for a long way up, before the limbs spread into a high open crown.",
+      "verified_sources": [
+        "https://patrimonioculturale.regione.emilia-romagna.it/notizie/2023/l-emilia-romagna-ha-25-nuovi-alberi-monumentali-ditalia/i-25-nuovi-alberi-monumentali.pdf",
+        "https://bur.regione.emilia-romagna.it/area-bollettini/bollettini-in-lavorazione/luglio-periodico-parte-seconda-2a-quindicina.2023-07-19.9761992070/approvazione-proposta-dellelenco-regionale-degli-alberi-monumentali-ditalia-art-7-della-legge-14-gennaio-2013-n-10/allegato-1",
+        "https://www.bolognawelcome.com/en/places/towers-historic-buildings/villa-salina-en"
+      ],
+      "official_register": {
+        "name": "Alberi Monumentali d'Italia, 2023 Emilia-Romagna additions, no. 01/C204/BO/08",
+        "url": "https://patrimonioculturale.regione.emilia-romagna.it/notizie/2023/l-emilia-romagna-ha-25-nuovi-alberi-monumentali-ditalia/i-25-nuovi-alberi-monumentali.pdf"
+      },
+      "girth_cm": 580,
+      "height_m": 36,
+      "found_by_reader": {
+        "sighting_id": "tip-668",
+        "date": "2026-11-13"
+      },
+      "verify_notes": "2026-11-14: published on Hidde's yes from a reader's website submission (tip 668, account p_64aded5e0bdd8d60b3e78790) with a photograph and a long note. Existence, species, girth and height from the 2023 list of 25 new Alberi Monumentali d'Italia for Emilia-Romagna (Via Galliera 2, Quercus robur, 580 cm, 36 m), matching the reader's figures; the July 2023 regional annex lists the same tree at Primo Maggio (Villa Salina) as 615 cm and over 35 m, with the coordinate used for the pin (approximate, register point, not a GPS fix at the trunk). Age 200 to 300 years is the reader's, from unnamed historical sources. Malpighi bought the villa in 1682 (Bologna Welcome); the engraving link and the schoolchildren's visits are the reader's and the story says so. Access: the park opens for events and for the Comune's guided walks (A spasso nel parco, booked by email); bookable visits count as public (rule 10). The reader's three further photographs (the 1675 engraving, the loggia ceiling, the gate sphinx) are not of the tree and are not published.",
+      "access": "In the park of Villa Salina, which opens for events and for guided walks run by the Comune di Castel Maggiore; check the Comune's site for the next date.",
+      "transport": "Via Galliera 2, Castel Maggiore; the TPER bus stop Villa Salina is at the gate.",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/bol_013-the-oak-of-villa-salina.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
+        "status": "approved",
+        "width": 600,
+        "height": 800,
+        "source": "contributor",
+        "contributor_user_id": "p_64aded5e0bdd8d60b3e78790",
+        "sighting_id": "tip-668",
+        "note": "Photographed by a reader and sent through the website with an account (2026-11-13); a viewing pass approved it on 2026-11-14: the whole trunk and crown in daylight and colour, a person at its foot for scale. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "pin_source": {
+        "kind": "official register coordinate",
+        "source": "https://bur.regione.emilia-romagna.it/area-bollettini/bollettini-in-lavorazione/luglio-periodico-parte-seconda-2a-quindicina.2023-07-19.9761992070/approvazione-proposta-dellelenco-regionale-degli-alberi-monumentali-ditalia-art-7-della-legge-14-gennaio-2013-n-10/allegato-1",
+        "date": "2026-11-14",
+        "note": "Regione Emilia-Romagna's 2023 annex gives N44 33 19.2, E11 21 10.1 for this oak."
+      }
     }
   ]
 }

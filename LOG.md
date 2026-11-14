@@ -12,6 +12,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-14 Villa Salina oak live (session, Hidde's yes)
+
+- **New tree: The Oak of Villa Salina (bologna/bol_013)**, a reader's website submission (tip 668) from Castel Maggiore, just north of Bologna. Pedunculate oak, 580 cm and 36 m from the 2023 list of new Alberi Monumentali d'Italia; age 200 to 300 years by the reader's estimate. The reader's photograph is the lead; their words on the Malpighi engraving and the loggia ceiling are quoted unnamed, in English and in the kept Italian overlay. Pin from the July 2023 regional annex's coordinate, approximate. Access: the park opens for events and the Comune's bookable guided walks (rule 10). The reader's three further photographs show the engraving, the ceiling and the gate, not the tree, so they stay unpublished. Bologna's free-to-see FAQ now names the oak, and the oldest-tree answer says "precisely dated" (the reader's estimate runs past 206 years).
+
 ## 2026-11-14 daily publish (scheduled task): queue empty
 
 - **Daily publish: queue empty.** No builder newer than 11-12; every written tree in the research files touched since 11-11 (Braga, Chicago, Fort Lauderdale, Kansas City, Leipzig, Miami, New York 3, Sintra) is already live, since write passes now put trees straight into the app. Detroit det_001/002 stay held for a pin, not for the pace. Nothing published, pace untouched. For Hidde: the daily task "publish-held-trees-daily" can be switched off under Scheduled.
