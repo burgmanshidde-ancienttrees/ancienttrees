@@ -12,6 +12,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-14 daily publish (scheduled task): queue empty
+
+- **Daily publish: queue empty.** No builder newer than 11-12; every written tree in the research files touched since 11-11 (Braga, Chicago, Fort Lauderdale, Kansas City, Leipzig, Miami, New York 3, Sintra) is already live, since write passes now put trees straight into the app. Detroit det_001/002 stay held for a pin, not for the pace. Nothing published, pace untouched. For Hidde: the daily task "publish-held-trees-daily" can be switched off under Scheduled.
+
 ## 2026-11-14 Leipzig write pass (session)
 
 - **Leipzig: 1 tree written and live in the app** (lpz_031 the Great Oak of Leinestrasse in Doesen, Naturdenkmal ND 101, one of the six tree monuments Leipzig held before 1992; 5.30 m round; the allotment colony behind it is named after it). Age kept at 300 to 400 years from a 2009 caption, the cadastre's 1686 class named as a class and not a planting; the 24 m versus 28 m height conflict between the two city records stated in the story. Seen from the pavement, recognition line written, no best_time. App-only under APP FIRST. Meta description now says 30 trees; Leipzig is at its target of 30. A CC BY-SA Commons photo (MKBler, 2019) is named in the old verify notes for a photo-judge pass. Claim released.
