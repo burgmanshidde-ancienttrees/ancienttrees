@@ -1,6 +1,10 @@
 {
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
+    "2026-11-14": [
+      {"date": "2026-11-14", "kind": "verify", "target": "chicago", "tokens": 85000, "trees": 3, "note": "10 Cook County champion rows delivered, 7 were already live under other ids; 3 new"},
+      {"date": "2026-11-14", "kind": "write", "target": "chicago", "tokens": 106000, "trees": 3, "note": "3 stories merged (chi_048, 049, 051)"}
+    ],
     "2026-11-13": [
       {"date": "2026-11-13", "kind": "verify", "target": "sintra", "tokens": 65000, "trees": 0, "note": "Every register row already judged or duplicate; one Monserrate eucalyptus lead without girth or spot. Sintra walled 48h."},
       {"date": "2026-11-13", "kind": "verify", "target": "braga", "tokens": 88000, "trees": 4, "note": "Turiz oak plus three Pindela trees; 5 of 10 candidates were duplicates of live trees"},
