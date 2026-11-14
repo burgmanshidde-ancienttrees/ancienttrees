@@ -3,7 +3,7 @@
   "country": "Germany",
   "status": "needs_curation",
   "intro": "Leipzig protects 148 trees as Naturdenkmale, Saxon state law's highest tier for an individual tree. Two restored villas on Karl-Heine-Strasse in Plagwitz hold a ginkgo, an elm, a bald cypress, a copper beech and a pagoda tree within 150 metres. Across the city stand a lime the painter Adolf von Menzel drew, Wahren's peace oak, a Lebanon oak, a red oak, a Hungarian oak and number 1 on the city's list, a medlar-leaved oak on the ring. Oldest of all is the Starkeiche in the Rosental, a hollow oak 6.69 metres round that two surveys put at about 350 years.",
-  "meta_description": "29 old trees in Leipzig: the Rosental's hollow Starkeiche, villa-garden rarities in Plagwitz, the lime Menzel drew, a peace oak and Naturdenkmal number 1.",
+  "meta_description": "30 old trees in Leipzig: the Rosental's hollow Starkeiche, villa-garden rarities in Plagwitz, the lime Menzel drew, a peace oak and Naturdenkmal number 1.",
   "question_meta": "Leipzig's oldest tree is the Starkeiche in the Rosental, an oak of 350 to 600 years. Where it stands, and 28 more old trees across the city.",
   "question_answer": "The oldest tree in Leipzig with a published age is the Starkeiche, a hollow pedunculate oak in the Rosental floodplain forest, 6.69 metres round. Two surveys put it at about 350 years; the 600 often quoted for it is, in the words of the man who measured it in 2017, far too high. Next come the Menzellinde in Schoenefeld, a small-leaved lime estimated at 200 to 300 years that the painter Adolf von Menzel drew on visits to the philosopher Moritz Lazarus's summer house, and an oak 5.45 metres round on Kantatenweg in Kleinzschocher. Most of Leipzig's other natural monuments carry no age at all, only the resolution that protected them: a bald cypress, a Japanese pagoda tree, a female ginkgo, a European white elm and a copper beech in two former villa gardens on Karl-Heine-Strasse in Plagwitz, and across the city a series of oaks, a plane on Leibnizstrasse and a Lebanon oak in Schoenau.",
   "question_context": "Saxony's nature protection law lets a municipality declare an individual tree a Naturdenkmal, its strongest legal protection, without requiring a documented age. Leipzig's own list gives each tree a designation number, a plot reference, the resolution that protects it and the protected zone around the trunk, which is often the only measure of size on record: 33 metres across for the oak on Dufourstrasse, 14 for the medlar-leaved oak on the Martin-Luther-Ring. The resolution year is a floor on how long each tree has stood, not a planting date. The city's tree cadastre adds girth and height for many of them, and its planting years are estimates for whole age classes, so this page never treats them as planting dates. The Starkeiche is not a natural monument at all and rests on two independent surveys. Every tree is flagged where the record is thin. Access varies by tree: most stand on the pavement or public ground, the elm and cypress grow in a villa garden now run as a public gallery, and four of the Plagwitz-area trees are seen from the street over villa walls.",
@@ -1204,6 +1204,43 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "lpz_031",
+      "name": "The Great Oak of Leinestrasse",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 530,
+      "height_m": 24,
+      "location": {
+        "address": "Leinestrasse, beside the allotment colony 'An der grossen Eiche' (fence no. 35), 04279 Leipzig",
+        "latitude": 51.2867,
+        "longitude": 12.40633,
+        "neighbourhood": "Doesen"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 101, Grosse Eiche Leinestrasse, Wikidata Q117662243)",
+        "https://geodienste.leipzig.de/l3/OpenData/wfs (layer OpenData:Baeume, baumnummer N78221: Stiel-Eiche, girth 530 cm, height 24 m, planting-year class 1686)",
+        "https://commons.wikimedia.org/wiki/File:MKBler_-_1377_-_Gro%C3%9Fe_Eiche_Leinestra%C3%9Fe.jpg (CC BY-SA 4.0, photographed 2019-12-28)",
+        "https://commons.wikimedia.org/wiki/File:D%C3%B6sen_Eiche.jpg (CC BY-SA 3.0, Martin Geisler, 2009: 'over 300 years old')"
+      ],
+      "official_register": {
+        "name": "Leipzig Naturdenkmal ND 101 (city Baumkataster N78221)",
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig"
+      },
+      "access": "Free; the oak stands on the pavement of Leinestrasse at the fence of the allotment colony, seen from the public street. Do not enter the allotment gardens.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The allotment gardens behind this oak are named after it, which tells you who was here first. The colony on Leinestrasse is called An der grossen Eiche, at the great oak, and the oak still stands on the pavement outside its fence.\n\nIt is also one of Leipzig's oldest protections. Natural monument number 101 is one of just six trees the city held as monuments before 1992, designations carried over from the law of the GDR. About 140 more have followed since, but this oak was on the short list first.\n\nThe city's tree cadastre gives the trunk 5.30 metres round and the tree 24 metres tall. The monument list says 28 metres, so two city records disagree by four metres, and we give you both.\n\nIts age is looser still. A photographer who captioned it in 2009 called it over 300 years old. The cadastre files it under a planting-year class of 1686, but that is a class it assigns to old trees in bulk, not a record of anyone planting this one. Somewhere between 300 and 400 years is as close as the sources go, and if you know more, tell us.\n\nIt was photographed standing in December 2019, a broad crown on a massively furrowed trunk. View it from the street. The gardens behind the fence are private plots, so stay on the pavement, which is where the oak is anyway.",
+      "how_to_recognise": "You can recognise it by the trunk, 5.30 metres round, standing on the pavement itself. It is at the fence of the allotment colony An der grossen Eiche on Leinestrasse, by fence number 35.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
