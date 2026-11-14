@@ -758,7 +758,12 @@ def send_mail(addr, subject, body, really, sighting_id):
     msg.set_content(body)
     try:
         with mailer.connect(creds, timeout=60) as server:
-            server.send_message(msg)
+            # A confirmation that what the reader just sent is live answers
+            # their own action, so the week's rest does not hold it (Hidde,
+            # 2026-11-14: "een bevestiging van het platform dat het live is
+            # zou goed zijn", when the Istanbul reader's welcome mail and the
+            # Villa Salina reader's thread would each have held theirs a week).
+            server.send_message(msg, recent_ok="confirms that the tree or photograph they sent is live")
     except Exception as e:
         print(f"  mail to {addr}: transport failed ({e.__class__.__name__})")
         return False

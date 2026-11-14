@@ -114,13 +114,18 @@ def full_note(sid):
     key = os.environ.get("SUPABASE_SERVICE_KEY")
     if not key:
         return None
+    # A tree sent through the website's form is "tip-<submission id>" and its
+    # words are the submission's `why`, not a sighting's note (2026-11-14: the
+    # Villa Salina reader gave an age in prose, and the mail asked for it).
+    tip = re.fullmatch(r"tip-(\d+)", str(sid))
+    path = (f"/rest/v1/submissions?select=why&id=eq.{tip.group(1)}" if tip
+            else f"/rest/v1/sightings?select=note&id=eq.{sid}")
     req = urllib.request.Request(
-        f"{SUPA}/rest/v1/sightings?select=note&id=eq.{sid}",
-        headers={"apikey": key, "Authorization": "Bearer " + key})
+        SUPA + path, headers={"apikey": key, "Authorization": "Bearer " + key})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             rows = json.loads(r.read()) or []
-        return rows[0].get("note") if rows else None
+        return (rows[0].get("why") if tip else rows[0].get("note")) if rows else None
     except Exception:
         return None
 
@@ -174,7 +179,7 @@ def note_invited(uid, slug, place, tree_name):
     save(AMBASSADORS, doc, indent=2)
 
 
-def mail_for(name, tree, city_name, page, gave=None, seat=False):
+def mail_for(name, tree, city_name, page, gave=None, seat=False, web=False):
     """THE ASK FOLLOWS WHAT THEY GAVE (Hidde, 2026-10-20, on the Freiburg beech,
     which arrived as a photograph and a pin and nothing else: "ask if they have
     more info on the tree (age, girth, story etc) ... make that standard unless
@@ -191,8 +196,10 @@ def mail_for(name, tree, city_name, page, gave=None, seat=False):
         wants = ", ".join(missing[:-1]) + (" or " if len(missing) > 1 else "") + missing[-1]
         ask = (f"Do you know more about it, {wants}? Just reply to this mail and it goes on the page.")
     else:
-        ask = ("Is there another tree near you that belongs on the map? You can add it in the app "
-               "the same way.")
+        # The way they used, so the ask is one they can do (2026-11-14: a
+        # website sender who works from a desktop was told to use the app).
+        ask = ("Is there another tree near you that belongs on the map? You can add it "
+               + ("on the website" if web else "in the app") + " the same way.")
     subject = "Your tree is on Ancient Trees"
     body = (
         f"Hi {name or 'there'},\n\n"
@@ -237,7 +244,7 @@ def main(argv):
             continue
         seat = seat_open(uid, city_slug)
         subject, body = mail_for(display_name(people.uid(uid)), tree, city_name, page,
-                                 what_they_gave(sid), seat=seat)
+                                 what_they_gave(sid), seat=seat, web=sid.startswith("tip-"))
         if send_mail(addr, subject, body, really, sid):
             done[sid] = {"tree_id": tree["id"], "date": datetime.date.today().isoformat()}
             if seat:
