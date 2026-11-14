@@ -2331,6 +2331,51 @@
    }
   },
   {
+   "common": "Candlenut",
+   "latin": "Aleurites moluccanus",
+   "names": {
+    "en": [
+     "Indian walnut",
+     "Kekuna tree",
+     "buah keras",
+     "candleberry"
+    ],
+    "nl": [
+     "Kemirinoot",
+     "kaarsnoot",
+     "kemirie"
+    ],
+    "de": [
+     "Kemirinuss",
+     "Kemirinussbaum",
+     "Kerzennuss",
+     "Kukui"
+    ],
+    "es": [
+     "Arbol candil",
+     "Camirium oleosum",
+     "Kukui",
+     "Manihot moluccana"
+    ],
+    "fr": [
+     "Bancoule",
+     "Bancoulier",
+     "Noyer de Bancoule",
+     "Noyer des Moluques"
+    ],
+    "pt": [
+     "Nogueira de Iguape",
+     "Nogueira-de-iguape"
+    ],
+    "ja": [
+     "キャンドルナッツ",
+     "キャンドルナッツツリー",
+     "ククイ",
+     "ククイナッツ"
+    ]
+   }
+  },
+  {
    "common": "Cannon Ball Tree",
    "latin": "Couroupita guianensis",
    "names": {
@@ -6119,6 +6164,27 @@
     ],
     "fr": [
      "Cyprès de Guadalupe"
+    ]
+   }
+  },
+  {
+   "common": "Gumbo Limbo",
+   "latin": "Bursera simaruba",
+   "names": {
+    "de": [
+     "Amerikanischer Balsam"
+    ],
+    "es": [
+     "Chaka",
+     "Indio desnudo",
+     "Jinocuabo",
+     "Jiñocuajo"
+    ],
+    "fr": [
+     "gommier rouge"
+    ],
+    "ja": [
+     "ガンボリンボ"
     ]
    }
   },
@@ -13994,6 +14060,10 @@
    }
   },
   {
+   "common": "Tantancayo",
+   "latin": "Albizia niopoides"
+  },
+  {
    "common": "Tasmanian Blue Gum",
    "latin": "Eucalyptus globulus",
    "names": {
@@ -16299,60 +16369,9 @@
    }
   },
   {
-   "common": "Tantancayo",
-   "latin": "Albizia niopoides",
-   "mapped": false
-  },
-  {
    "common": "Rain tree",
    "latin": "Albizia saman",
    "mapped": false
-  },
-  {
-   "common": "Candlenut tree",
-   "latin": "Aleurites moluccanus",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Candlenut",
-     "Indian walnut",
-     "Kekuna tree",
-     "buah keras"
-    ],
-    "nl": [
-     "Kemirinoot",
-     "kaarsnoot",
-     "kemirie"
-    ],
-    "de": [
-     "Kemirinuss",
-     "Kemirinussbaum",
-     "Kerzennuss",
-     "Kukui"
-    ],
-    "es": [
-     "Arbol candil",
-     "Camirium oleosum",
-     "Kukui",
-     "Manihot moluccana"
-    ],
-    "fr": [
-     "Bancoule",
-     "Bancoulier",
-     "Noyer de Bancoule",
-     "Noyer des Moluques"
-    ],
-    "pt": [
-     "Nogueira de Iguape",
-     "Nogueira-de-iguape"
-    ],
-    "ja": [
-     "キャンドルナッツ",
-     "キャンドルナッツツリー",
-     "ククイ",
-     "ククイナッツ"
-    ]
-   }
   },
   {
    "common": "Heart-leaved Alder",
@@ -16745,28 +16764,6 @@
      "Guayacan de bola",
      "Guayapan garrapo",
      "Ibiocai"
-    ]
-   }
-  },
-  {
-   "common": "Gumbo limbo",
-   "latin": "Bursera simaruba",
-   "mapped": false,
-   "names": {
-    "de": [
-     "Amerikanischer Balsam"
-    ],
-    "es": [
-     "Chaka",
-     "Indio desnudo",
-     "Jinocuabo",
-     "Jiñocuajo"
-    ],
-    "fr": [
-     "gommier rouge"
-    ],
-    "ja": [
-     "ガンボリンボ"
     ]
    }
   },
