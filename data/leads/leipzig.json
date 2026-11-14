@@ -1,243 +1,299 @@
 {
- "city": "Leipzig",
- "country": "Germany",
- "city_slug": "leipzig",
- "note": "Deepen pass 2026-10-12: nothing delivered, no measurement or per-tree authority record reachable. Source list: de.wikipedia Liste der Naturdenkmale in Leipzig (148 tree NDs, 0 with girth).",
- "leads": [
-  {
-   "name": "Starkeiche im Rosental (Auwald)",
-   "species": "Quercus robur (Pedunculate Oak)",
-   "lat": 51.355873,
-   "lng": 12.349381,
-   "status": "lead",
-   "why": "Often called Leipzig's oldest and stoutest tree. monumentale-eichen.de (Rainer Lippert, private survey, measured 2017): girth 6.65 m at breast height, 9.50 m at ground, ~27 m tall, crown ~20 m, hollow with a 1 m wide opening, vitality 'ok' in 2017; age 350 (survey and baumkunde.de register 5221) vs 600 (press) years. Not an ND and no authority register record found, so not RICH; pin is a survey coordinate in dense floodplain forest (Rosental), not confirmed on the trunk; no openly licensed photo checked. Strongest Leipzig candidate if a photo or OSM node is found. Alive 2017 only (lifecheck not run). Access: Rosental is a public park/forest with paths, unverified for the tree itself. 2026-10-18 verify pass: DELIVERED as lpz_026 (confirmed pin: OSM information board 4 m away, baumkunde GPS within 2 m, alive March 2024, 6.69 m girth Dec 2021). No open photograph exists on Commons."
-  },
-  {
-   "name": "Flatterulme Poelitzstrasse 32",
-   "species": "Ulmus laevis",
-   "lat": 51.35822,
-   "lng": 12.35598,
-   "status": "lead",
-   "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. DELIVERED as lpz_022 (N78917, 291 cm, 19 m). Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author 2026-10-14 write pass: story and recognition line written (data/research/leipzig-verified.json, lpz_022) but preflight refused it as not rich: missing pin (approximate cadastre point, no photo). Ships once the Commons photo (Ulmus minor Mill 01.JPG / 02, check it is this tree) is licence-checked and approved, or a GPS fix confirms the pin."
-  },
-  {
-   "name": "Ginkgo in Kleinzschocher",
-   "species": "Ginkgo biloba",
-   "lat": 51.31432,
-   "lng": 12.32978,
-   "status": "lead",
-   "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. DELIVERED as lpz_021 (N78815, 357 cm, 24 m). Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author 2026-10-14 write pass: story and recognition line written (data/research/leipzig-verified.json, lpz_021, folded with lpz_019 (same tree, same Wikidata Q117663121)) but preflight refused it as not rich: missing pin (approximate cadastre point, no photo). Ships once the Commons photo (Naturdenkmal Ginkgo im Rittergut Kleinzschocher-Kantatenweg 31 Leipzig - 2.jpg, CC BY-SA 4.0 Pixelkaktus per lpz_019) is licence-checked and approved, or a GPS fix confirms the pin."
-  },
-  {
-   "name": "Zweistaemmige Feldulme (Wolfgang-)",
-   "species": "Ulmus minor",
-   "lat": 51.30661,
-   "lng": 12.37409,
-   "status": "lead",
-   "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78902 Feld-Ulme 645 cm, 33 m (baumkunde 365 cm, 29 m, 2017), the stoutest ND elm, but cadastre area is 'Naturdenkmale auf Privatgrund' and baumkunde says Zugang: Privatgelaende (Wolfgang-Heinze-Strasse 31): private, access not shown, hard rule 10. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
-  },
-  {
-   "name": "Winterlinde Theodor-Neubauer-/Borsdorfer Strasse",
-   "species": "Tilia cordata",
-   "lat": 51.33529,
-   "lng": 12.41107,
-   "status": "lead",
-   "why": "[SKIPPED 2026-10-18 by the write pass] no cadastre match, no measurement, no photograph and nothing beyond the designation list; nothing to write a story from without inventing it. 2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. No cadastre tree within 60 m of the lead coordinate (51.33529,12.41107); not matched, not checked further. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
-  },
-  {
-   "name": "Esche in residential quarter (Anger-Crottendorf area)",
-   "species": "Fraxinus excelsior",
-   "lat": 51.35839,
-   "lng": 12.4078,
-   "status": "lead",
-   "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78822 Gemeine Esche 390 cm, 20 m, 'Naturdenkmale auf Privatgrund': private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
-  },
-  {
-   "name": "Platane in residential quarter",
-   "species": "Platanus x hispanica",
-   "lat": 51.3585,
-   "lng": 12.40854,
-   "status": "lead",
-   "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78821 Platane 455 cm, 27 m, 'Naturdenkmale auf Privatgrund': private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
-  },
-  {
-   "name": "Haengebuche in residential quarter",
-   "species": "Fagus sylvatica f. pendula",
-   "lat": 51.35828,
-   "lng": 12.40914,
-   "status": "lead",
-   "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. Cadastre has N78823 Veredelte Blut-Buche 377 cm, 23 m nearby on 'Naturdenkmale auf Privatgrund'; no hanging beech matched. Private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
-  },
-  {
-   "name": "Trauerweide Triftweg",
-   "species": "Salix alba 'Tristis'",
-   "lat": 51.30635,
-   "lng": 12.40447,
-   "status": "lead",
-   "why": "[SKIPPED 2026-10-18 by the write pass] no cadastre match, no measurement, no photograph and nothing beyond the designation list; nothing to write a story from without inventing it. 2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. No ND weeping willow matched within 60 m of the lead coordinate in the cadastre (only unrelated park trees); not matched. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
-  },
-  {
-   "name": "Ginkgo Abtnaundorfer Strasse 46",
-   "species": "Ginkgo biloba",
-   "lat": 51.36556,
-   "lng": 12.41989,
-   "status": "lead",
-   "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78825 Faecherblattbaum 178 cm, 23 m, 'Naturdenkmale auf Privatgrund': private ground, small girth, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
-  },
-  {
-   "name": "Blutbuche Abtnaundorfer Strasse",
-   "species": "Fagus sylvatica 'Purpurea'",
-   "lat": 51.36562,
-   "lng": 12.42065,
-   "status": "lead",
-   "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78824 Veredelte Blut-Buche 340 cm, 15 m, 'Naturdenkmale auf Privatgrund': private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
-  },
-  {
-   "name": "Blutbuche Abtnaundorfer Strasse (2)",
-   "species": "Fagus sylvatica 'Purpurea'",
-   "lat": 51.36882,
-   "lng": 12.41856,
-   "status": "lead",
-   "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78858 Veredelte Blut-Buche 435 cm, 26 m, 'Naturdenkmale auf Privatgrund' next to Abtnaundorfer Park: private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
-  },
-  {
-   "name": "Bergahorn Geithainer Strasse",
-   "species": "Acer pseudoplatanus",
-   "lat": 51.3422,
-   "lng": 12.43557,
-   "status": "lead",
-   "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78880 Berg-Ahorn 291 cm, 17 m, 'Naturdenkmale auf Privatgrund': private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
-  },
-  {
-   "name": "Stiel-Eichen am Torhaus Doelitz (Helenenstrasse)",
-   "species": "Quercus robur (Pedunculate Oak)",
-   "lat": 51.287766,
-   "lng": 12.38873,
-   "status": "lead",
-   "why": "Already published as lpz_029 (The Oaks of Doelitz Torhaus); write pass 2026-10-18. Cadastre N78872 Stiel-Eiche 570 cm, 28 m (city green Helenenstrasse/Torhaus) and N78884 550 cm, 23 m at 51.287454,12.389199 (36 m away), both Naturdenkmal. Public city green, lifecheck RECENT (iNaturalist 2026-04-26) but no photograph of either trunk in reach (Commons files nearby show the war memorial and Torhaus); the war memorial register entry mentions a Friedenseiche planted 1872 plus two later oaks, so which trunk is which is unsettled and the 570 cm girth does not fit an 1872 planting. Needs a photo or a sign to tell them apart. Strong candidate for a photo pass. 2026-10-18 verify pass: DELIVERED folded as lpz_029 (ND 114 = N78884; Commons photo Stieleiche Lzg. Helenenstr.jpg CC BY-SA 3.0 exists but which oak it shows is unsettled)."
-  },
-  {
-   "name": "Stieleiche Dorfanger Probstheida (Russenstrasse)",
-   "species": "Quercus robur",
-   "lat": 51.306533,
-   "lng": 12.428878,
-   "status": "lead",
-   "why": "2026-10-14 verify pass: city Baumkataster N78812, girth 374 cm, height 19 m, crown 20 m, public village green beside the Immanuelkirche; delivered as lpz_023. 2026-10-14 write pass: story and recognition line written (data/research/leipzig-verified.json, lpz_023) but preflight refused it as not rich: missing pin (approximate cadastre point, no photo). Ships once the Commons photo (Leipzig Stieleiche Russenstrasse.jpg, check it shows this oak) is licence-checked and approved, or a GPS fix confirms the pin."
-  },
-  {
-   "name": "Rosskastanie Doelitz-Doesen (N78203)",
-   "species": "Aesculus hippocastanum",
-   "lat": 51.29313,
-   "lng": 12.38575,
-   "status": "lead",
-   "why": "2026-10-18 verify pass: cadastre N78203, girth 891 cm, height 28 m, the stoutest tree in the whole Naturdenkmal export, but cadastre area 'Naturdenkmale auf Privatgrund' (Helenenstrasse area; the list's ND 45 Edelkastanie is 'im Hof der Helenenstrasse 44'). Private courtyard ground, access not shown, hard rule 10. Girth is possibly a multi-stem or buttressed mass, unchecked. Re-open if a source shows it can be seen from public ground."
-  },
-  {
-   "name": "Stieleiche Doelitz-Doesen (N78204)",
-   "species": "Quercus robur",
-   "lat": 51.29254,
-   "lng": 12.38754,
-   "status": "lead",
-   "why": "2026-10-18 verify pass: cadastre N78204, girth 605 cm, height 31 m, 'Naturdenkmale auf Privatgrund' in Doelitz-Doesen, about 130 m from N78203. Private ground, access not shown. Same unsolved access as N78203."
-  },
-  {
-   "name": "Schwarz-Pappel Altlindenau (N78862)",
-   "species": "Populus nigra",
-   "lat": 51.34428,
-   "lng": 12.32404,
-   "status": "lead",
-   "why": "2026-10-18 verify pass: cadastre N78862, girth 690 cm, height 37 m, 'Naturdenkmale auf Privatgrund'. Private ground, access not shown, no photo in reach. Black poplars of this girth are short-lived; alive unchecked."
-  },
-  {
-   "name": "Flatterulme an der B 2/95 (ND 29)",
-   "species": "Ulmus laevis",
-   "lat": 51.31782,
-   "lng": 12.35941,
-   "status": "lead",
-   "why": "Shipped as lpz_030 on 2026-10-18 (cadastre record Baeume.34681951, flagged, approximate, no photo yet; Commons 'Flatterulme Lzg. B2.jpg' CC BY-SA 3.0 Geisler Martin awaits a photo-judge look). 2026-10-18 verify pass: cadastre N78826 girth 374 cm height 24 m (list says 13 m); Commons photo 'Flatterulme Lzg. B2.jpg' (CC BY-SA 3.0, Geisler Martin, 2014-04-19). On the verge of a federal road, no liveness evidence, list/cadastre height conflict; not a pleasant place to stand. Could ship flagged if the photo is approved."
-  },
-  {
-   "name": "Zerreiche Windorfer Strasse (ND 116)",
-   "species": "Quercus cerris",
-   "lat": 51.31277,
-   "lng": 12.32697,
-   "status": "lead",
-   "why": "[SKIPPED 2026-10-18 by the write pass] below the floor of a reason somebody can see: 220 cm girth, 21 m, cadastre class year 1936; nothing in the record makes it worth the walk on its own. 2026-10-18 verify pass: cadastre N78886 girth 220 cm, height 21 m, in Volkspark Kleinzschocher, cadastre planting year 1936 (class estimate): a young tree, modest for a page. Commons photo 'Zerreiche Lzg. Wind. Str.jpg' CC BY-SA 3.0 (2014). Cluster with the Kantatenweg oak and manor ginkgo if the city wants a Kleinzschocher walk."
-  },
-  {
-   "name": "Walnusshybride im Alumnat Hillerstrasse 8-10 (ND 119)",
-   "species": "Juglans x intermedia",
-   "lat": 51.33685,
-   "lng": 12.36046,
-   "status": "lead",
-   "why": "[SKIPPED 2026-10-18 by the write pass] stands in the Alumnat, an institution courtyard; no source says the grounds are open (hard rule 10). 2026-10-18 verify pass: cadastre N78224 girth 324 cm, height 27 m, Commons photo 'Leipzig Naturdenkmal Walnussbaum Hillerstr 8 Nr 9.jpg'. Stands in the Alumnat, an institution courtyard: access needs a source (hard rule 10). About 380 m from lpz_007."
-  },
-  {
-   "name": "Eiche im Hahnholz (Weisse Elster, Volkspark Kleinzschocher)",
-   "species": "Quercus robur",
-   "lat": null,
-   "lng": null,
-   "status": "lead",
-   "why": "2026-10-18 verify pass: monumentale-eichen.de (Rainer Lippert, 3rd category): oak on the steep west bank of the Weisse Elster in the Hahnholz forest block that runs into Volkspark Kleinzschocher, about 6 m girth, trunk undamaged, large crown best seen from the far bank, a sign on the trunk says 460 years (Lippert thinks about half). No coordinate found: needs a GPS fix or an OSM node. Would join the Kleinzschocher cluster. No photo checked."
-  },
-  {
-   "name": "Rosental veteran oaks (Stadtforst poster)",
-   "species": "Quercus robur",
-   "lat": null,
-   "lng": null,
-   "status": "lead",
-   "why": "2026-10-18 verify pass: Leipziger Auwald Starkbaumkartierung poster (leipziger-auwald.de/upload/Forschung/Starkbaumkartierung/Starkbume_im_Rosental.pdf) reportedly names oaks of 6.50 m and 6.02 m girth in the Hinteres Rosental; the summary was not read on the page, so figures are unverified. Unnamed veterans near lpz_026, lead with no coordinate yet. Also baumkunde 7996 Sumpf-Eiche im Rosental (unchecked)."
-  },
-  {
-   "name": "Robinien Max-Planck-/Friedrich-Ebert-Strasse (ND row)",
-   "species": "Robinia pseudoacacia",
-   "lat": 51.34526,
-   "lng": 12.35438,
-   "status": "lead",
-   "why": "2026-10-18 verify pass: cadastre N78247, N78243, N78252, N78244, N78256, N78255: a row of six black locusts, girth 240 to 337 cm but only 9 to 15 m tall, in street green. An avenue of pollards, not one collectible point; not published."
-  },
-  {
-   "id": "lpz_019",
-   "name": "The Ginkgo of Kleinzschocher Manor",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "age_estimate": "not documented",
-   "height_m": 15,
-   "location": {
-    "address": "Rittergut Kleinzschocher, Kantatenweg 31, 04229 Leipzig",
-    "latitude": 51.31432,
-    "longitude": 12.32978,
-    "neighbourhood": "Kleinzschocher"
-   },
-   "verified_sources": [
-    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 18, Beschluss 601/96, 15 m)",
-    "https://www.wikidata.org/wiki/Q117663121",
-    "https://de.wikipedia.org/wiki/Rittergut_Kleinzschocher",
-    "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ginkgo_im_Rittergut_Kleinzschocher-Kantatenweg_31_Leipzig_-_2.jpg",
-    "https://www.inaturalist.org/observations/395825130"
-   ],
-   "access": "On the grounds of the former manor at Kantatenweg 31; whether the grounds are open to visitors is NOT established. Writer: hold unless access is stated; do not send anyone into private yards.",
-   "transport": "Kleinzschocher, about 5 km south-west of the centre; stops not verified.",
-   "location_precision": "approximate",
-   "curation_status": "flagged",
-   "photo_seen": {
-    "file": "Naturdenkmal Ginkgo im Rittergut Kleinzschocher-Kantatenweg 31 Leipzig - 2.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Pixelkaktus",
-    "date": "2019-08-15"
-   },
-   "verify_notes": "Register only (city Naturdenkmal ND 18, Beschluss 601/96); Wikidata item has two Commons photos and a Commons category. Register height 15 m; no girth or age. Life: lifecheck RECENT, iNaturalist observation 2026-08-30 at the spot. Manor history (de.wikipedia): first mentioned 1350; Bach's Bauernkantate premiered here 30 Aug 1742; publisher Christian Bernhard Tauchnitz bought the estate in 1848. The page does NOT say the ginkgo dates from any of these owners (bridge-claim trap, no age basis). A Flatterulme (ND 17, 12 m) stands about 45 m away in the same estate at 51.31471,12.32996, not delivered separately. Access is the open question; potential hard-rule-10 issue.",
-   "story": "Bach's Peasant Cantata had its first performance at this manor on 30 August 1742, and a ginkgo now stands on its grounds as one of Leipzig's protected natural monuments. The Rittergut Kleinzschocher is first mentioned in 1350, and the publisher Christian Bernhard Tauchnitz bought the estate in 1848. None of those dates belongs to the tree. No source we have found says when the ginkgo was planted, or by which owner, and we are not going to guess.\n\nWhat the city's register does say is short. It lists the tree as natural monument 18, protected under council resolution 601/96, and gives its height as 15 metres. No girth, no age. A photograph from 2019 and a naturalist's observation in August 2026 show that it is still standing.\n\nGinkgo is the oldest tree lineage on earth still growing, a species that was already old when the dinosaurs were young, and it ended up in European parks and manor gardens as a curiosity from East Asia. Here it shares the old estate with a second protected tree, a European white elm about 45 metres away, natural monument 17.\n\nIn November the leaves turn a clean butter yellow and tend to drop within days of each other. If you know when this one was planted, or how big it is round the trunk, tell us.",
-   "how_to_recognise": "You can recognise it by its fan-shaped leaves, a ginkgo about 15 metres tall on the Rittergut Kleinzschocher grounds at Kantatenweg 31. The protected white elm stands about 45 metres away.",
-   "best_time": {
-    "months": [
-     11
-    ],
-    "kind": "autumn colour",
-    "label": "November, when the fan-shaped leaves turn yellow and drop almost together"
-   },
-   "status": "duplicate",
-   "why": "Duplicate of lpz_021 (The Ginkgo of Kleinzschocher), the same tree at 0 m, already live; moved here from data/research/leipzig-verified.json by the 2026-10-18 write pass so it is never written twice. Kept for its notes on the manor and the ND 17 elm about 45 m away."
-  }
- ],
- "blocked": []
+  "city": "Leipzig",
+  "country": "Germany",
+  "city_slug": "leipzig",
+  "note": "Deepen pass 2026-10-12: nothing delivered, no measurement or per-tree authority record reachable. Source list: de.wikipedia Liste der Naturdenkmale in Leipzig (148 tree NDs, 0 with girth).",
+  "leads": [
+    {
+      "name": "Starkeiche im Rosental (Auwald)",
+      "species": "Quercus robur (Pedunculate Oak)",
+      "lat": 51.355873,
+      "lng": 12.349381,
+      "status": "lead",
+      "why": "Often called Leipzig's oldest and stoutest tree. monumentale-eichen.de (Rainer Lippert, private survey, measured 2017): girth 6.65 m at breast height, 9.50 m at ground, ~27 m tall, crown ~20 m, hollow with a 1 m wide opening, vitality 'ok' in 2017; age 350 (survey and baumkunde.de register 5221) vs 600 (press) years. Not an ND and no authority register record found, so not RICH; pin is a survey coordinate in dense floodplain forest (Rosental), not confirmed on the trunk; no openly licensed photo checked. Strongest Leipzig candidate if a photo or OSM node is found. Alive 2017 only (lifecheck not run). Access: Rosental is a public park/forest with paths, unverified for the tree itself. 2026-10-18 verify pass: DELIVERED as lpz_026 (confirmed pin: OSM information board 4 m away, baumkunde GPS within 2 m, alive March 2024, 6.69 m girth Dec 2021). No open photograph exists on Commons."
+    },
+    {
+      "name": "Flatterulme Poelitzstrasse 32",
+      "species": "Ulmus laevis",
+      "lat": 51.35822,
+      "lng": 12.35598,
+      "status": "lead",
+      "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. DELIVERED as lpz_022 (N78917, 291 cm, 19 m). Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author 2026-10-14 write pass: story and recognition line written (data/research/leipzig-verified.json, lpz_022) but preflight refused it as not rich: missing pin (approximate cadastre point, no photo). Ships once the Commons photo (Ulmus minor Mill 01.JPG / 02, check it is this tree) is licence-checked and approved, or a GPS fix confirms the pin."
+    },
+    {
+      "name": "Ginkgo in Kleinzschocher",
+      "species": "Ginkgo biloba",
+      "lat": 51.31432,
+      "lng": 12.32978,
+      "status": "lead",
+      "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. DELIVERED as lpz_021 (N78815, 357 cm, 24 m). Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author 2026-10-14 write pass: story and recognition line written (data/research/leipzig-verified.json, lpz_021, folded with lpz_019 (same tree, same Wikidata Q117663121)) but preflight refused it as not rich: missing pin (approximate cadastre point, no photo). Ships once the Commons photo (Naturdenkmal Ginkgo im Rittergut Kleinzschocher-Kantatenweg 31 Leipzig - 2.jpg, CC BY-SA 4.0 Pixelkaktus per lpz_019) is licence-checked and approved, or a GPS fix confirms the pin."
+    },
+    {
+      "name": "Zweistaemmige Feldulme (Wolfgang-)",
+      "species": "Ulmus minor",
+      "lat": 51.30661,
+      "lng": 12.37409,
+      "status": "lead",
+      "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78902 Feld-Ulme 645 cm, 33 m (baumkunde 365 cm, 29 m, 2017), the stoutest ND elm, but cadastre area is 'Naturdenkmale auf Privatgrund' and baumkunde says Zugang: Privatgelaende (Wolfgang-Heinze-Strasse 31): private, access not shown, hard rule 10. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
+    },
+    {
+      "name": "Winterlinde Theodor-Neubauer-/Borsdorfer Strasse",
+      "species": "Tilia cordata",
+      "lat": 51.33529,
+      "lng": 12.41107,
+      "status": "lead",
+      "why": "[SKIPPED 2026-10-18 by the write pass] no cadastre match, no measurement, no photograph and nothing beyond the designation list; nothing to write a story from without inventing it. 2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. No cadastre tree within 60 m of the lead coordinate (51.33529,12.41107); not matched, not checked further. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
+    },
+    {
+      "name": "Esche in residential quarter (Anger-Crottendorf area)",
+      "species": "Fraxinus excelsior",
+      "lat": 51.35839,
+      "lng": 12.4078,
+      "status": "lead",
+      "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78822 Gemeine Esche 390 cm, 20 m, 'Naturdenkmale auf Privatgrund': private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
+    },
+    {
+      "name": "Platane in residential quarter",
+      "species": "Platanus x hispanica",
+      "lat": 51.3585,
+      "lng": 12.40854,
+      "status": "lead",
+      "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78821 Platane 455 cm, 27 m, 'Naturdenkmale auf Privatgrund': private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
+    },
+    {
+      "name": "Haengebuche in residential quarter",
+      "species": "Fagus sylvatica f. pendula",
+      "lat": 51.35828,
+      "lng": 12.40914,
+      "status": "lead",
+      "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. Cadastre has N78823 Veredelte Blut-Buche 377 cm, 23 m nearby on 'Naturdenkmale auf Privatgrund'; no hanging beech matched. Private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
+    },
+    {
+      "name": "Trauerweide Triftweg",
+      "species": "Salix alba 'Tristis'",
+      "lat": 51.30635,
+      "lng": 12.40447,
+      "status": "lead",
+      "why": "[SKIPPED 2026-10-18 by the write pass] no cadastre match, no measurement, no photograph and nothing beyond the designation list; nothing to write a story from without inventing it. 2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. No ND weeping willow matched within 60 m of the lead coordinate in the cadastre (only unrelated park trees); not matched. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
+    },
+    {
+      "name": "Ginkgo Abtnaundorfer Strasse 46",
+      "species": "Ginkgo biloba",
+      "lat": 51.36556,
+      "lng": 12.41989,
+      "status": "lead",
+      "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78825 Faecherblattbaum 178 cm, 23 m, 'Naturdenkmale auf Privatgrund': private ground, small girth, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
+    },
+    {
+      "name": "Blutbuche Abtnaundorfer Strasse",
+      "species": "Fagus sylvatica 'Purpurea'",
+      "lat": 51.36562,
+      "lng": 12.42065,
+      "status": "lead",
+      "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78824 Veredelte Blut-Buche 340 cm, 15 m, 'Naturdenkmale auf Privatgrund': private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
+    },
+    {
+      "name": "Blutbuche Abtnaundorfer Strasse (2)",
+      "species": "Fagus sylvatica 'Purpurea'",
+      "lat": 51.36882,
+      "lng": 12.41856,
+      "status": "lead",
+      "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78858 Veredelte Blut-Buche 435 cm, 26 m, 'Naturdenkmale auf Privatgrund' next to Abtnaundorfer Park: private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
+    },
+    {
+      "name": "Bergahorn Geithainer Strasse",
+      "species": "Acer pseudoplatanus",
+      "lat": 51.3422,
+      "lng": 12.43557,
+      "status": "lead",
+      "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78880 Berg-Ahorn 291 cm, 17 m, 'Naturdenkmale auf Privatgrund': private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
+    },
+    {
+      "name": "Stiel-Eichen am Torhaus Doelitz (Helenenstrasse)",
+      "species": "Quercus robur (Pedunculate Oak)",
+      "lat": 51.287766,
+      "lng": 12.38873,
+      "status": "lead",
+      "why": "Already published as lpz_029 (The Oaks of Doelitz Torhaus); write pass 2026-10-18. Cadastre N78872 Stiel-Eiche 570 cm, 28 m (city green Helenenstrasse/Torhaus) and N78884 550 cm, 23 m at 51.287454,12.389199 (36 m away), both Naturdenkmal. Public city green, lifecheck RECENT (iNaturalist 2026-04-26) but no photograph of either trunk in reach (Commons files nearby show the war memorial and Torhaus); the war memorial register entry mentions a Friedenseiche planted 1872 plus two later oaks, so which trunk is which is unsettled and the 570 cm girth does not fit an 1872 planting. Needs a photo or a sign to tell them apart. Strong candidate for a photo pass. 2026-10-18 verify pass: DELIVERED folded as lpz_029 (ND 114 = N78884; Commons photo Stieleiche Lzg. Helenenstr.jpg CC BY-SA 3.0 exists but which oak it shows is unsettled)."
+    },
+    {
+      "name": "Stieleiche Dorfanger Probstheida (Russenstrasse)",
+      "species": "Quercus robur",
+      "lat": 51.306533,
+      "lng": 12.428878,
+      "status": "lead",
+      "why": "2026-10-14 verify pass: city Baumkataster N78812, girth 374 cm, height 19 m, crown 20 m, public village green beside the Immanuelkirche; delivered as lpz_023. 2026-10-14 write pass: story and recognition line written (data/research/leipzig-verified.json, lpz_023) but preflight refused it as not rich: missing pin (approximate cadastre point, no photo). Ships once the Commons photo (Leipzig Stieleiche Russenstrasse.jpg, check it shows this oak) is licence-checked and approved, or a GPS fix confirms the pin."
+    },
+    {
+      "name": "Rosskastanie Doelitz-Doesen (N78203)",
+      "species": "Aesculus hippocastanum",
+      "lat": 51.29313,
+      "lng": 12.38575,
+      "status": "lead",
+      "why": "2026-10-18 verify pass: cadastre N78203, girth 891 cm, height 28 m, the stoutest tree in the whole Naturdenkmal export, but cadastre area 'Naturdenkmale auf Privatgrund' (Helenenstrasse area; the list's ND 45 Edelkastanie is 'im Hof der Helenenstrasse 44'). Private courtyard ground, access not shown, hard rule 10. Girth is possibly a multi-stem or buttressed mass, unchecked. Re-open if a source shows it can be seen from public ground."
+    },
+    {
+      "name": "Stieleiche Doelitz-Doesen (N78204)",
+      "species": "Quercus robur",
+      "lat": 51.29254,
+      "lng": 12.38754,
+      "status": "lead",
+      "why": "2026-10-18 verify pass: cadastre N78204, girth 605 cm, height 31 m, 'Naturdenkmale auf Privatgrund' in Doelitz-Doesen, about 130 m from N78203. Private ground, access not shown. Same unsolved access as N78203."
+    },
+    {
+      "name": "Schwarz-Pappel Altlindenau (N78862)",
+      "species": "Populus nigra",
+      "lat": 51.34428,
+      "lng": 12.32404,
+      "status": "lead",
+      "why": "2026-10-18 verify pass: cadastre N78862, girth 690 cm, height 37 m, 'Naturdenkmale auf Privatgrund'. Private ground, access not shown, no photo in reach. Black poplars of this girth are short-lived; alive unchecked."
+    },
+    {
+      "name": "Flatterulme an der B 2/95 (ND 29)",
+      "species": "Ulmus laevis",
+      "lat": 51.31782,
+      "lng": 12.35941,
+      "status": "lead",
+      "why": "Shipped as lpz_030 on 2026-10-18 (cadastre record Baeume.34681951, flagged, approximate, no photo yet; Commons 'Flatterulme Lzg. B2.jpg' CC BY-SA 3.0 Geisler Martin awaits a photo-judge look). 2026-10-18 verify pass: cadastre N78826 girth 374 cm height 24 m (list says 13 m); Commons photo 'Flatterulme Lzg. B2.jpg' (CC BY-SA 3.0, Geisler Martin, 2014-04-19). On the verge of a federal road, no liveness evidence, list/cadastre height conflict; not a pleasant place to stand. Could ship flagged if the photo is approved."
+    },
+    {
+      "name": "Zerreiche Windorfer Strasse (ND 116)",
+      "species": "Quercus cerris",
+      "lat": 51.31277,
+      "lng": 12.32697,
+      "status": "lead",
+      "why": "[SKIPPED 2026-10-18 by the write pass] below the floor of a reason somebody can see: 220 cm girth, 21 m, cadastre class year 1936; nothing in the record makes it worth the walk on its own. 2026-10-18 verify pass: cadastre N78886 girth 220 cm, height 21 m, in Volkspark Kleinzschocher, cadastre planting year 1936 (class estimate): a young tree, modest for a page. Commons photo 'Zerreiche Lzg. Wind. Str.jpg' CC BY-SA 3.0 (2014). Cluster with the Kantatenweg oak and manor ginkgo if the city wants a Kleinzschocher walk."
+    },
+    {
+      "name": "Walnusshybride im Alumnat Hillerstrasse 8-10 (ND 119)",
+      "species": "Juglans x intermedia",
+      "lat": 51.33685,
+      "lng": 12.36046,
+      "status": "lead",
+      "why": "[SKIPPED 2026-10-18 by the write pass] stands in the Alumnat, an institution courtyard; no source says the grounds are open (hard rule 10). 2026-10-18 verify pass: cadastre N78224 girth 324 cm, height 27 m, Commons photo 'Leipzig Naturdenkmal Walnussbaum Hillerstr 8 Nr 9.jpg'. Stands in the Alumnat, an institution courtyard: access needs a source (hard rule 10). About 380 m from lpz_007."
+    },
+    {
+      "name": "Eiche im Hahnholz (Weisse Elster, Volkspark Kleinzschocher)",
+      "species": "Quercus robur",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "2026-10-18 verify pass: monumentale-eichen.de (Rainer Lippert, 3rd category): oak on the steep west bank of the Weisse Elster in the Hahnholz forest block that runs into Volkspark Kleinzschocher, about 6 m girth, trunk undamaged, large crown best seen from the far bank, a sign on the trunk says 460 years (Lippert thinks about half). No coordinate found: needs a GPS fix or an OSM node. Would join the Kleinzschocher cluster. No photo checked."
+    },
+    {
+      "name": "Rosental veteran oaks (Stadtforst poster)",
+      "species": "Quercus robur",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "2026-10-18 verify pass: Leipziger Auwald Starkbaumkartierung poster (leipziger-auwald.de/upload/Forschung/Starkbaumkartierung/Starkbume_im_Rosental.pdf) reportedly names oaks of 6.50 m and 6.02 m girth in the Hinteres Rosental; the summary was not read on the page, so figures are unverified. Unnamed veterans near lpz_026, lead with no coordinate yet. Also baumkunde 7996 Sumpf-Eiche im Rosental (unchecked)."
+    },
+    {
+      "name": "Robinien Max-Planck-/Friedrich-Ebert-Strasse (ND row)",
+      "species": "Robinia pseudoacacia",
+      "lat": 51.34526,
+      "lng": 12.35438,
+      "status": "lead",
+      "why": "2026-10-18 verify pass: cadastre N78247, N78243, N78252, N78244, N78256, N78255: a row of six black locusts, girth 240 to 337 cm but only 9 to 15 m tall, in street green. An avenue of pollards, not one collectible point; not published."
+    },
+    {
+      "id": "lpz_019",
+      "name": "The Ginkgo of Kleinzschocher Manor",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "not documented",
+      "height_m": 15,
+      "location": {
+        "address": "Rittergut Kleinzschocher, Kantatenweg 31, 04229 Leipzig",
+        "latitude": 51.31432,
+        "longitude": 12.32978,
+        "neighbourhood": "Kleinzschocher"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 18, Beschluss 601/96, 15 m)",
+        "https://www.wikidata.org/wiki/Q117663121",
+        "https://de.wikipedia.org/wiki/Rittergut_Kleinzschocher",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ginkgo_im_Rittergut_Kleinzschocher-Kantatenweg_31_Leipzig_-_2.jpg",
+        "https://www.inaturalist.org/observations/395825130"
+      ],
+      "access": "On the grounds of the former manor at Kantatenweg 31; whether the grounds are open to visitors is NOT established. Writer: hold unless access is stated; do not send anyone into private yards.",
+      "transport": "Kleinzschocher, about 5 km south-west of the centre; stops not verified.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo_seen": {
+        "file": "Naturdenkmal Ginkgo im Rittergut Kleinzschocher-Kantatenweg 31 Leipzig - 2.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Pixelkaktus",
+        "date": "2019-08-15"
+      },
+      "verify_notes": "Register only (city Naturdenkmal ND 18, Beschluss 601/96); Wikidata item has two Commons photos and a Commons category. Register height 15 m; no girth or age. Life: lifecheck RECENT, iNaturalist observation 2026-08-30 at the spot. Manor history (de.wikipedia): first mentioned 1350; Bach's Bauernkantate premiered here 30 Aug 1742; publisher Christian Bernhard Tauchnitz bought the estate in 1848. The page does NOT say the ginkgo dates from any of these owners (bridge-claim trap, no age basis). A Flatterulme (ND 17, 12 m) stands about 45 m away in the same estate at 51.31471,12.32996, not delivered separately. Access is the open question; potential hard-rule-10 issue.",
+      "story": "Bach's Peasant Cantata had its first performance at this manor on 30 August 1742, and a ginkgo now stands on its grounds as one of Leipzig's protected natural monuments. The Rittergut Kleinzschocher is first mentioned in 1350, and the publisher Christian Bernhard Tauchnitz bought the estate in 1848. None of those dates belongs to the tree. No source we have found says when the ginkgo was planted, or by which owner, and we are not going to guess.\n\nWhat the city's register does say is short. It lists the tree as natural monument 18, protected under council resolution 601/96, and gives its height as 15 metres. No girth, no age. A photograph from 2019 and a naturalist's observation in August 2026 show that it is still standing.\n\nGinkgo is the oldest tree lineage on earth still growing, a species that was already old when the dinosaurs were young, and it ended up in European parks and manor gardens as a curiosity from East Asia. Here it shares the old estate with a second protected tree, a European white elm about 45 metres away, natural monument 17.\n\nIn November the leaves turn a clean butter yellow and tend to drop within days of each other. If you know when this one was planted, or how big it is round the trunk, tell us.",
+      "how_to_recognise": "You can recognise it by its fan-shaped leaves, a ginkgo about 15 metres tall on the Rittergut Kleinzschocher grounds at Kantatenweg 31. The protected white elm stands about 45 metres away.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the fan-shaped leaves turn yellow and drop almost together"
+      },
+      "status": "duplicate",
+      "why": "Duplicate of lpz_021 (The Ginkgo of Kleinzschocher), the same tree at 0 m, already live; moved here from data/research/leipzig-verified.json by the 2026-10-18 write pass so it is never written twice. Kept for its notes on the manor and the ND 17 elm about 45 m away."
+    },
+    {
+      "name": "Stieleiche am Badeweg (ND 146, N78909)",
+      "species": "Quercus robur",
+      "lat": 51.29406,
+      "lng": 12.33079,
+      "status": "lead",
+      "why": "2026-11-14 deepen pass: cadastre N78909 girth 370 cm, height 24 m (list 22 m), ground 'Kleingaerten' KGV Am Badeweg, Grosszschocher; Commons Stieleiche Lzg. Badeweg.jpg CC BY-SA 3.0, 2014 only. Stands inside an allotment colony: no source says it can be seen from public ground (hard rule 10), no recent life evidence (lifecheck NONE). Re-open if a street view or photograph shows it from the road."
+    },
+    {
+      "name": "Silberpappel Kolmstrasse (ND 107, N78879)",
+      "species": "Populus alba",
+      "lat": 51.31808,
+      "lng": 12.42633,
+      "status": "lead",
+      "why": "2026-11-14 deepen pass: cadastre N78879 girth 352 cm, height 25 m (list 15 m, conflict), street green, Stoetteritz; Commons photo 2014 only; lifecheck NONE. Silver poplars are short-lived and the height conflict is unresolved; not worth the walk against the oaks. No coordinate problem."
+    },
+    {
+      "name": "Rosskastanie Papiermuehlstrasse/Oststrasse (ND 34, N79444)",
+      "species": "Aesculus hippocastanum",
+      "lat": 51.32272,
+      "lng": 12.42119,
+      "status": "lead",
+      "why": "2026-11-14 deepen pass: cadastre N79444 girth 354 cm, height only 14 m, planting-year class 1876; modest for a page; lifecheck NONE. Public green corner. Below the floor of a reason somebody can see."
+    },
+    {
+      "name": "Winterlinde Altes Dorf, Plausig (N78848)",
+      "species": "Tilia cordata",
+      "lat": 51.38604,
+      "lng": 12.4495,
+      "status": "lead",
+      "why": "2026-11-14 deepen pass: cadastre N78848 girth 355 cm, height 14 m, street green, about 800 m from lpz_027. Unchecked beyond the cadastre, no photograph, lifecheck NONE; modest."
+    },
+    {
+      "name": "Eiche Kleindoelzig (Q118105057)",
+      "species": "Quercus robur",
+      "lat": 51.35433,
+      "lng": 12.22147,
+      "status": "lead",
+      "why": "2026-11-14 deepen pass: Wikidata natural monument in Saxony with a Commons image (Eiche Kleindoelzig - Ansicht von Sueden.jpg) but no measurement or source read; about 12 km west of the centre in Markranstaedt, outside the city cadastre. Needs a naming source and a travel time before it is a Leipzig day trip."
+    },
+    {
+      "name": "Stieleiche Luetzowstrasse (N78911)",
+      "species": "Quercus robur",
+      "lat": 51.36269,
+      "lng": 12.37267,
+      "status": "lead",
+      "why": "2026-11-14 deepen pass: cadastre N78911 girth 396 cm, height 23 m, street green, Gohlis-Sued, about 1 km from lpz_028. Not on the city Naturdenkmal list (the Luetzowstrasse entry there is a locust, ND 88) and no Commons photo or second source found, so existence as a notable tree rests on the cadastre alone; lifecheck NONE."
+    },
+    {
+      "name": "Rosental veteran oaks poster (PDF not read)",
+      "species": "Quercus robur",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "2026-11-14 deepen pass: the poster PDF (leipziger-auwald.de/upload/Forschung/Starkbaumkartierung/Starkbume_im_Rosental.pdf) downloads (200, 1.5 MB) but this runner has no PDF text tool, so the 6.50 m and 6.02 m figures stay unverified. Needs a session with a PDF reader."
+    }
+  ],
+  "blocked": []
 }

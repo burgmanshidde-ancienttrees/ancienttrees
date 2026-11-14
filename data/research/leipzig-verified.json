@@ -1,757 +1,787 @@
 [
- {
-  "id": "lpz_008",
-  "name": "The Menzellinde",
-  "species": "Small-leaved Lime (Tilia cordata)",
-  "age_estimate": "roughly 200 to 300 years",
-  "age_min": 200,
-  "age_max": 300,
-  "age_basis": "source",
-  "girth_cm": 350,
-  "location": {
-   "address": "Leostrasse / corner Lazarusstrasse, 04347 Leipzig",
-   "latitude": 51.3608,
-   "longitude": 12.41342,
-   "neighbourhood": "Schönefeld"
+  {
+    "id": "lpz_008",
+    "name": "The Menzellinde",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "age_estimate": "roughly 200 to 300 years",
+    "age_min": 200,
+    "age_max": 300,
+    "age_basis": "source",
+    "girth_cm": 350,
+    "location": {
+      "address": "Leostrasse / corner Lazarusstrasse, 04347 Leipzig",
+      "latitude": 51.3608,
+      "longitude": 12.41342,
+      "neighbourhood": "Schönefeld"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 55, Beschluss 601/96)",
+      "https://de.wikipedia.org/wiki/Menzellinde",
+      "https://commons.wikimedia.org/wiki/File:Menzellinde_Süd.jpg"
+    ],
+    "access": "Free; stands on the street corner of Leostrasse and Lazarusstrasse, a sign is posted at the tree (Commons photo \"Hinweisschild\"). Look from the pavement.",
+    "transport": "Schönefeld, about 3.5 km north-east of the city centre; stops not verified",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_seen": {
+      "file": "Menzellinde Süd.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Caisare",
+      "date": "2020-08-03",
+      "also": [
+        "Menzellinde Nord.jpg (shows it from Leostrasse, 2020-07-10)"
+      ]
+    },
+    "verify_notes": "Protected as Naturdenkmal ND 55 in Leipzig (1996, city ordinance Nr. 01-79). Wikipedia article: Winterlinde, about 15 m high, crown 14 m, trunk circumference 3.50 m, protected zone 16 m, age estimated 200-300 years (exact dating impossible because the trunk has no heartwood inside). Crown branches braced with straps and iron rings. Named after the painter Adolf von Menzel, who drew this lime in his sketchbooks (study titled \"Alt-Schoenefeld Villa Lazarus\") on visits to the summer house of philosopher Moritz Lazarus on the plot of today's Kleingartenverein Schoene Heimat; Fontane, Paul Heyse and Clara Wieck also visited that house. An iron ring was fitted after a lightning strike (said to be Lazarus) and has since been grown over. Menzel noted bee swarms in the flowering crown. Pin: register and the article give the same coordinate (51.3608, 12.41342); Commons photo from Leostrasse agrees with the corner. Alive: dated Commons photos 2020, register amended 2015 and notes 2022 changes; lifecheck NONE. Register + Wikipedia only, so flagged. Distinguishing: the only Naturdenkmal on that street corner, sign at the foot; braced crown. Wikipedia and the city list are not fully independent (one source family).",
+    "story": "Adolf von Menzel drew this lime into his sketchbook, and it is still standing on the corner where he found it. The study is titled \"Alt-Schoenefeld Villa Lazarus\": Menzel came here as a guest of the philosopher Moritz Lazarus, whose summer house stood on the plot now taken by the Schoene Heimat allotment gardens. Theodor Fontane, Paul Heyse and Clara Wieck are among the other visitors recorded at that house. Menzel noted something a visitor can still check in July: bee swarms working the flowering crown.\n\nThe tree carries his name now. It is a small-leaved lime about 15 metres tall, with a crown 14 metres across and a trunk 3.50 metres round. Its age is an estimate of 200 to 300 years, and it will stay an estimate, because the trunk has no heartwood left inside it and there are no rings to count.\n\nIt has been patched, not pampered. After a lightning strike an iron ring was fitted around it, a repair the local story attaches to Lazarus's time, and the bark has since grown over the metal. Today straps and iron rings brace the main limbs of the crown.\n\nLeipzig protected it as Naturdenkmal number 55 in 1996, with a protected zone 16 metres across. A sign stands at its foot, which is the easiest way to be sure you have the right tree.",
+    "how_to_recognise": "You can recognise it by the crown braced with straps and iron rings and the Naturdenkmal sign at its foot. It stands alone on the corner of Leostrasse and Lazarusstrasse, the only protected tree on that corner.",
+    "best_time": {
+      "months": [
+        7
+      ],
+      "kind": "flowers",
+      "label": "July, when the lime flowers and the bees Menzel noticed are back in the crown"
+    }
   },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 55, Beschluss 601/96)",
-   "https://de.wikipedia.org/wiki/Menzellinde",
-   "https://commons.wikimedia.org/wiki/File:Menzellinde_Süd.jpg"
-  ],
-  "access": "Free; stands on the street corner of Leostrasse and Lazarusstrasse, a sign is posted at the tree (Commons photo \"Hinweisschild\"). Look from the pavement.",
-  "transport": "Schönefeld, about 3.5 km north-east of the city centre; stops not verified",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "Menzellinde Süd.jpg",
-   "license": "CC BY-SA 4.0",
-   "author": "Caisare",
-   "date": "2020-08-03",
-   "also": [
-    "Menzellinde Nord.jpg (shows it from Leostrasse, 2020-07-10)"
-   ]
+  {
+    "id": "lpz_009",
+    "name": "The Pedunculate Oak of Dufourstrasse",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "location": {
+      "address": "Dufourstrasse 6/8, 04107 Leipzig",
+      "latitude": 51.32858,
+      "longitude": 12.36948,
+      "neighbourhood": "Zentrum-Sued"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 46, Beschluss 1036/97 range)",
+      "https://commons.wikimedia.org/wiki/File:Stieleiche_Lzg._Dufourstr._6-8.jpg"
+    ],
+    "access": "Free; the oak stands beside the Pleissemuehlgraben canal and its public footpath (Commons photo from the path railing, 2014).",
+    "transport": "Zentrum-Sued, about 1.5 km south of the Markt; stops not verified",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_seen": {
+      "file": "Stieleiche Lzg. Dufourstr. 6-8.jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Martin Geisler",
+      "date": "2014-07-02"
+    },
+    "verify_notes": "Naturdenkmal ND 46 in the city list; protected zone 33 m across, the joint widest in the list; the photo shows a broad crown filling the gap between two apartment blocks above the canal. No girth, height or age in the register. Pin is the Wikipedia list coordinate (5 decimals), not independently confirmed; the photo shows the tree beside the canal footpath, consistent. Alive: Commons photo 2014 only; lifecheck NONE, so register-only and old photo: flagged. Age and girth unknown: let the page ask the reader.",
+    "story": "Leipzig keeps a protected zone around every one of its natural monuments, and this oak's is 33 metres across, as wide as any on the city's list. That number is the register's way of saying how far the roots and crown are judged to reach, and here it means a canopy that fills the whole gap between two apartment blocks.\n\nThe oak stands beside the Pleissemuehlgraben, one of the narrow mill canals that carried the river Pleisse's water through the city, with a public footpath and a railing along the bank. From the path you see it at its best: a broad, many-limbed pedunculate oak rising out of a channel lined with concrete and housing, the one thing in the view that is not a right angle.\n\nThe city designated it Naturdenkmal number 46 in the late 1990s. Beyond that the record is thin. The register gives no height, no girth and no age, and nobody we know of has published a measurement. A tree this broad in a dense inner district is unlikely to be young, but unlikely is not a date, and this page will not pretend otherwise.\n\nSo it is a question rather than a number. If you pass it with a tape measure, the trunk's circumference at chest height would tell us more than any guess. Send it to us and the page will carry it.",
+    "how_to_recognise": "You can recognise it by the broad crown filling the gap between two apartment blocks above the canal. It stands beside the Pleissemuehlgraben footpath at Dufourstrasse 6 to 8, best seen from the railing."
   },
-  "verify_notes": "Protected as Naturdenkmal ND 55 in Leipzig (1996, city ordinance Nr. 01-79). Wikipedia article: Winterlinde, about 15 m high, crown 14 m, trunk circumference 3.50 m, protected zone 16 m, age estimated 200-300 years (exact dating impossible because the trunk has no heartwood inside). Crown branches braced with straps and iron rings. Named after the painter Adolf von Menzel, who drew this lime in his sketchbooks (study titled \"Alt-Schoenefeld Villa Lazarus\") on visits to the summer house of philosopher Moritz Lazarus on the plot of today's Kleingartenverein Schoene Heimat; Fontane, Paul Heyse and Clara Wieck also visited that house. An iron ring was fitted after a lightning strike (said to be Lazarus) and has since been grown over. Menzel noted bee swarms in the flowering crown. Pin: register and the article give the same coordinate (51.3608, 12.41342); Commons photo from Leostrasse agrees with the corner. Alive: dated Commons photos 2020, register amended 2015 and notes 2022 changes; lifecheck NONE. Register + Wikipedia only, so flagged. Distinguishing: the only Naturdenkmal on that street corner, sign at the foot; braced crown. Wikipedia and the city list are not fully independent (one source family).",
-  "story": "Adolf von Menzel drew this lime into his sketchbook, and it is still standing on the corner where he found it. The study is titled \"Alt-Schoenefeld Villa Lazarus\": Menzel came here as a guest of the philosopher Moritz Lazarus, whose summer house stood on the plot now taken by the Schoene Heimat allotment gardens. Theodor Fontane, Paul Heyse and Clara Wieck are among the other visitors recorded at that house. Menzel noted something a visitor can still check in July: bee swarms working the flowering crown.\n\nThe tree carries his name now. It is a small-leaved lime about 15 metres tall, with a crown 14 metres across and a trunk 3.50 metres round. Its age is an estimate of 200 to 300 years, and it will stay an estimate, because the trunk has no heartwood left inside it and there are no rings to count.\n\nIt has been patched, not pampered. After a lightning strike an iron ring was fitted around it, a repair the local story attaches to Lazarus's time, and the bark has since grown over the metal. Today straps and iron rings brace the main limbs of the crown.\n\nLeipzig protected it as Naturdenkmal number 55 in 1996, with a protected zone 16 metres across. A sign stands at its foot, which is the easiest way to be sure you have the right tree.",
-  "how_to_recognise": "You can recognise it by the crown braced with straps and iron rings and the Naturdenkmal sign at its foot. It stands alone on the corner of Leostrasse and Lazarusstrasse, the only protected tree on that corner.",
-  "best_time": {
-   "months": [
-    7
-   ],
-   "kind": "flowers",
-   "label": "July, when the lime flowers and the bees Menzel noticed are back in the crown"
+  {
+    "id": "lpz_010",
+    "name": "The Oak of Demmeringstrasse",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "location": {
+      "address": "Demmeringstrasse 62, 04177 Leipzig",
+      "latitude": 51.33654,
+      "longitude": 12.3277,
+      "neighbourhood": "Lindenau"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 7, Beschluss 601/96)",
+      "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stieleiche_01.jpg",
+      "https://www.wikidata.org/wiki/Q117666885"
+    ],
+    "access": "Free; a street oak at the kerb, seen from the pavement.",
+    "transport": "Lindenau, about 3.5 km west of the centre; stops not verified",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_seen": {
+      "file": "Naturdenkmal Stieleiche 01.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Pixelkaktus",
+      "date": "2017-05-07",
+      "geotag": "51.336285, 12.327255 (about 30 m from the register coordinate)"
+    },
+    "verify_notes": "Naturdenkmal ND 7, protected zone 20 m. Big single oak whose crown stands above the street and the brick wall behind it. Register coordinate 51.33654,12.32770; the Commons photographer geotag lies about 30 m away (likely the camera position), so the pin is approximate. Alive: Commons photos of 2017 (spring leaf), lifecheck NONE. No girth or age in register. Part of a Lindenau group with ND 8 (Karl-Ferlemann-Strasse 2, about 150 m away, delivered as lpz_011) and ND 6 (Bergulme Demmeringstr 77, behind a fence, not delivered).",
+    "story": "Lindenau has two protected oaks within 150 metres of each other, and this is the one that hangs over a brick wall. Its crown spreads across Demmeringstrasse and above the parked cars, wide enough that in May, when the new leaves are still the acid green of spring, it is the brightest thing in the street.\n\nLeipzig listed it as Naturdenkmal number 7 under resolution 601/96, the same 1996 decision that protects the villa trees of Karl-Heine-Strasse. The register draws a protected zone 20 metres across around it. That is all the paperwork holds: no girth, no height, no age.\n\nThe setting does the rest. This is a street of tenement blocks, parked cars and graffiti, and a single oak with a crown that size turns it, for one stretch, into something closer to a village lane. A pedunculate oak can live for many centuries; how much of that this one has used up is not recorded.\n\nIt makes a short walk with its neighbour on Karl-Ferlemann-Strasse, round the corner to the north-west. A third protected tree, a wych elm at Demmeringstrasse 77, stands behind a fence close by and cannot be visited.\n\nNobody has dated this oak. If you know when it went in, or have measured the trunk, tell us.",
+    "how_to_recognise": "You can recognise it by the wide oak crown hanging over a low brick wall above the parked cars. It stands at Demmeringstrasse 62; the other protected oak is about 150 metres away on Karl-Ferlemann-Strasse."
+  },
+  {
+    "id": "lpz_011",
+    "name": "The Oak of Karl-Ferlemann-Strasse",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "location": {
+      "address": "Karl-Ferlemann-Strasse 2, 04177 Leipzig",
+      "latitude": 51.33769,
+      "longitude": 12.3264,
+      "neighbourhood": "Lindenau"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 8, Beschluss 601/96)",
+      "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stieleiche_Karl-Ferlemann-Straße_2_05.jpg",
+      "https://www.wikidata.org/wiki/Q117683437"
+    ],
+    "access": "Free; stands on a street corner beside the roadway and a lawn strip, seen from the pavement.",
+    "transport": "Lindenau, about 3.5 km west of the centre; stops not verified",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_seen": {
+      "file": "Naturdenkmal Stieleiche Karl-Ferlemann-Straße 2 05.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Pixelkaktus",
+      "date": "2017-05-07",
+      "geotag": "51.337517, 12.326148 (about 20 m from register coordinate)"
+    },
+    "verify_notes": "Naturdenkmal ND 8, protected zone 20 m. Broad round-crowned oak on an open street corner with a green strip; the clearest \"stand and look up\" setting of the Lindenau trees. Register coordinate 51.33769,12.32640. Alive: Commons photos 2017; lifecheck NONE. Walkable pair with lpz_010 (about 150 m apart). No girth or age.",
+    "story": "Of Leipzig's protected street oaks, this is the one with room to be seen. It stands on an open corner of Karl-Ferlemann-Strasse with a strip of lawn beside it and open ground around it, so the crown has grown the way an oak grows when it is left alone: broad, round and almost symmetrical, on a single dark trunk.\n\nThat matters more than it sounds. Several of the protected trees on this page stand behind villa railings or garden walls, and you see them in pieces. Here you can stand back across the street and take in the whole tree in one look, which is the closest thing in Lindenau to the field oak of a village green.\n\nLeipzig listed it as Naturdenkmal number 8 in 1996, under resolution 601/96, with a protected zone 20 metres across. The register stops there. It gives no girth, no height and no age, and no other source we have found fills the gap.\n\nThe second protected oak of this short walk stands about 150 metres away on Demmeringstrasse, its crown hanging over a brick wall: two oaks, two very different settings, five minutes apart on foot.\n\nNobody has dated this tree. If you know its history, or measure the trunk at chest height, tell us.",
+    "how_to_recognise": "You can recognise it by the broad, round crown on a single dark trunk, standing free on an open corner beside a strip of lawn. It stands at Karl-Ferlemann-Strasse 2, about 150 metres from the Demmeringstrasse oak."
+  },
+  {
+    "id": "lpz_012",
+    "name": "The Peace Oak of Wahren",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "location": {
+      "address": "Am Hirtenhaus / corner Rittergutsstrasse, 04159 Leipzig",
+      "latitude": 51.37274,
+      "longitude": 12.32244,
+      "neighbourhood": "Wahren"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 92, Beschluss 1036/97 range)",
+      "https://commons.wikimedia.org/wiki/File:File:92_Friedenseiche,_Am_Hirtenhaus_2.JPG"
+    ],
+    "access": "Free; stands on public ground at a street corner and road junction (photo shows pavement, signposts and road).",
+    "transport": "Wahren, about 5 km north-west of the centre; stops not verified",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_seen": {
+      "file": "92 Friedenseiche, Am Hirtenhaus 2.JPG",
+      "license": "CC BY-SA 4.0",
+      "author": "Edlerin",
+      "date": "2015-06-21",
+      "geotag": "51.372569, 12.322278 (about 20 m from register)"
+    },
+    "verify_notes": "Official name in the Leipzig list is \"Friedenseiche\" (peace oak), ND 92, protected zone 21 m; the list gives no planting year, so any link to the 1871 peace is NOT stated by the source: the writer must not claim it (name only). Large upright oak at a junction. Register coordinate 51.37274,12.32244. Alive: Commons photo June 2015; lifecheck NONE. No girth or age.",
+    "story": "Leipzig's register calls this tree the Friedenseiche, the peace oak, and then says nothing about which peace. German towns and villages planted peace oaks to mark the end of more than one war, usually on a square or at a crossroads where everybody would pass them. This one stands exactly there, at the junction of Am Hirtenhaus and Rittergutsstrasse in Wahren, but the city's list gives no planting year and no occasion, and we will not supply one.\n\nThe street names do some of the remembering. Am Hirtenhaus means at the herdsman's house, and Rittergutsstrasse is named for a manor estate: the vocabulary of the village Wahren was before Leipzig absorbed it in 1922. The oak now stands among apartment blocks, signposts and a parked car or two, tall and upright on a single straight trunk, the oldest-looking thing at the crossing by a distance.\n\nThe city protects it as Naturdenkmal number 92, with a zone 21 metres across. There is no recorded girth, height or age, so its title is the only history on file.\n\nThat makes it the most answerable question on this page. Somebody in Wahren may know when the peace oak went in and what it was planted for, from a parish chronicle, a plaque that has since gone, or a grandparent. If that is you, tell us, and the page will say it.",
+    "how_to_recognise": "You can recognise it by the tall, upright oak on a single straight trunk at the road junction, beside the street signs. It stands on the corner of Am Hirtenhaus and Rittergutsstrasse in Wahren."
+  },
+  {
+    "id": "lpz_013",
+    "name": "The Plane Tree of Leibnizstrasse",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "location": {
+      "address": "Leibnizstrasse 12, 04105 Leipzig",
+      "latitude": 51.34416,
+      "longitude": 12.36446,
+      "neighbourhood": "Nordvorstadt (Gohlis-Sued border)"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 138, Beschluss 1522/99 range)",
+      "https://commons.wikimedia.org/wiki/File:File:138_gemeine_Platane,_Leibnitz-Str._12.JPG",
+      "https://www.wikidata.org/wiki/Q138747856"
+    ],
+    "access": "Free to view; the trunk stands at the edge of the pavement in front of a villa-lined street (Commons photo shows trunk at the street frontage). Do not enter the property.",
+    "transport": "Nordvorstadt, about 1.5 km north of the Markt; stops not verified",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_seen": {
+      "file": "138 gemeine Platane, Leibnitz-Str. 12.JPG",
+      "license": "CC BY-SA 4.0",
+      "author": "Edlerin",
+      "date": "2015-06-05"
+    },
+    "verify_notes": "Naturdenkmal ND 138, protected zone 27 m across, one of the wider planes in the list. Huge cream-barked trunk flush with the street edge in the photo. Wikidata Q138747856 gives the same coordinate. A second plane, ND 131 (Gustav-Adolf-Strasse 19, 22 m zone), is listed about 65 m to the west at 51.34417,12.36352: same walk, not delivered because its photo was not viewed as public-side. Alive: Commons photo June 2015; lifecheck NONE. Flagged: register only and old photo; pin from list coordinate.",
+    "story": "The trunk of this plane stands flush with the street edge on Leibnizstrasse, so the pavement walks right past a pale, flaking column you cannot miss. Look up and the crown keeps going: it rises above the villa roofline on both sides, and Leipzig's register gives it a protected zone 27 metres across, one of the wider zones any plane on the city's list is granted.\n\nPlanes are the great survivors of nineteenth-century streets. They tolerate compacted soil, cut roots and soot, and they shed their bark in plates, which is why the trunk reads as a patchwork of cream, olive and grey. Those are the habits that keep a tree like this going on a street where the villas beside it are still being scaffolded and restored.\n\nThe city designated it Naturdenkmal number 138 in the late 1990s. The record says nothing about when it was planted, how tall it is or how big the trunk has grown.\n\nIt has company. A second protected plane, number 131, is listed about 65 metres to the west at Gustav-Adolf-Strasse 19. We have not confirmed that it can be seen from the street, so look for it on the way rather than counting on it.\n\nThe trunk itself stands at the front of a private property: view it from the pavement and do not go in. If you measure its girth, tell us.",
+    "how_to_recognise": "You can recognise it by the huge pale, flaking trunk standing flush with the pavement in front of the villas. It stands at Leibnizstrasse 12; a second listed plane is about 65 metres west on Gustav-Adolf-Strasse."
+  },
+  {
+    "id": "lpz_014",
+    "name": "The Lebanon Oak of Schoenau",
+    "species": "Lebanon Oak (Quercus libani)",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "location": {
+      "address": "Ludwigsburger Strasse 2, 04209 Leipzig",
+      "latitude": 51.32325,
+      "longitude": 12.29056,
+      "neighbourhood": "Schoenau"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 91, Beschluss 1036/97 range)",
+      "https://commons.wikimedia.org/wiki/File:File:Leipzig_Naturdenkmal_Nr._91_2024-05-04.jpg"
+    ],
+    "access": "Free; the Commons photo shows the tree beside an open footpath in public green (no fence). Access not documented by a source: flagged.",
+    "transport": "Schoenau, about 7 km west of the centre; stops not verified",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_seen": {
+      "file": "Leipzig Naturdenkmal Nr. 91 2024-05-04.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Vinaceus",
+      "date": "2024-05-04"
+    },
+    "verify_notes": "A Lebanon oak (Quercus libani, native to the Levant), an unusual species for a Leipzig street list, ND 91, protected zone 18 m. The list gives no age or girth. Alive: Commons photo of 4 May 2024, the freshest dated photo found for any candidate; lifecheck NONE. Register coordinate 51.32325,12.29056 (list). Far west and not in the Plagwitz cluster; outlier by about 5 km from the others. Pin approximate; photo shows it in a green path corridor.",
+    "story": "Lebanon oak belongs on the slopes of the Levant and the Taurus mountains, not on the western edge of Leipzig. Yet here it is, a natural monument in Schoenau, standing in a green corridor beside a footpath, and an unusual name to find on a German city's list of protected trees.\n\nUp close it does not look like the oaks you know, and the leaves are why. Instead of the rounded lobes of a pedunculate oak, Quercus libani carries long, narrow leaves edged with small bristle-tipped teeth, closer at first glance to a sweet chestnut than to anything a German child would draw as an oak. Its acorns take two summers to ripen rather than one.\n\nLeipzig protects it as Naturdenkmal number 91, with a protected zone 18 metres across. The city's list says nothing about who planted a Levantine oak on this spot, or when, and it gives no girth or height either. A photograph taken in May 2024 shows it in full leaf, which makes it the most recently confirmed tree of this group.\n\nIt is also the outlier: out on the city's western edge, kilometres from the Plagwitz villa trees, so this is a separate trip rather than part of the walk. Look at the leaves first, then at any oak you pass on the way back, and the difference is obvious.\n\nIf you know how this tree got here, tell us.",
+    "how_to_recognise": "You can recognise it by its long, narrow, chestnut-like leaves with bristle-tipped teeth, unlike any native oak. It stands beside the footpath in the green strip at Ludwigsburger Strasse 2 in Schoenau."
+  },
+  {
+    "id": "lpz_015",
+    "name": "The Medlar-Leaved Oak of Martin-Luther-Ring",
+    "species": "Sessile Oak, medlar-leaved cultivar (Quercus petraea \"Mespilifolia\")",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "location": {
+      "address": "Martin-Luther-Ring, 04109 Leipzig",
+      "latitude": 51.33549,
+      "longitude": 12.37067,
+      "neighbourhood": "Zentrum"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 1, Beschluss 601/96)",
+      "https://commons.wikimedia.org/wiki/File:Traubeneiche_Lzg._M.-Luther-R.jpg"
+    ],
+    "access": "Free; a street tree on the public pavement of the inner ring road.",
+    "transport": "Inner city, a few hundred metres from the Markt; stops not verified",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_seen": {
+      "file": "Traubeneiche Lzg. M.-Luther-R.jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Martin Geisler",
+      "date": "2014-08-11"
+    },
+    "verify_notes": "Listed first (ND 1) among the city Naturdenkmale, protected zone 14 m. Register species is the unusual cultivar Quercus petraea Mespilifolia (leaves like a medlar); the Commons photo shows a tall tree on the kerb but the cultivar cannot be judged from it, so species is as the register states. Register coordinate 51.33549,12.37067. Alive: Commons photo Aug 2014 only; lifecheck NONE. Flagged: register only, old photo, cultivar unverified from the photo.",
+    "story": "Number 1 on Leipzig's list of natural monuments is not a giant in a park. It is a street tree on the inner ring road, a few hundred metres from the Markt, with trams and traffic running past its roots.\n\nIt is also stranger than it looks from the kerb. The register records it as Quercus petraea \"Mespilifolia\", a cultivar of the sessile oak whose leaves are long and narrow, shaped more like a medlar's than an oak's, with little or none of the lobing that makes an oak leaf an oak leaf. Seen from the pavement, the crown looks finer and lighter than an ordinary oak's. We have taken the cultivar from the register; nobody we know of has checked it leaf in hand, and if you do, tell us what you find.\n\nThe road it stands on carries history of its own. Leipzig's Ring is the road the Monday demonstrators of autumn 1989 made famous, tens of thousands of people walking the circuit of the old town week after week. Nobody has dated this oak, so whether it was already standing that October is a question the record cannot answer.\n\nThe city protects it with a zone 14 metres across, small beside the 33 metres of the Dufourstrasse oak, which is what a pavement leaves room for. Its girth and height are unrecorded. A tape measure would settle the first.",
+    "how_to_recognise": "You can recognise it by its long, narrow leaves, unlike the lobed leaves of an ordinary oak, on a tall tree at the kerb. It stands on the pavement of Martin-Luther-Ring, the inner ring road near the Markt."
+  },
+  {
+    "id": "lpz_016",
+    "name": "The Hungarian Oak of Erich-Zeigner-Allee",
+    "species": "Hungarian Oak (Quercus frainetto)",
+    "age_estimate": "not documented",
+    "height_m": 33,
+    "location": {
+      "address": "Erich-Zeigner-Allee 43 a, 04229 Leipzig",
+      "latitude": 51.32849,
+      "longitude": 12.33936,
+      "neighbourhood": "Plagwitz"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 59, Beschluss 601/96, 33 m)",
+      "https://www.wikidata.org/wiki/Q139832100",
+      "https://commons.wikimedia.org/wiki/File:220806_Leipzig_ND-59.jpg",
+      "https://www.inaturalist.org/observations/320483302"
+    ],
+    "access": "Street address in Plagwitz; whether the trunk stands on public ground or in a courtyard is not established. View from the street; do not enter private yards.",
+    "transport": "Plagwitz, about 4 km west of the centre; stops not verified. About 1.2 km from the Karl-Heine-Strasse cluster.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_seen": {
+      "file": "220806 Leipzig ND-59.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Vinaceus",
+      "date": "2022-08-06"
+    },
+    "story": "The tallest tree in Leipzig's register of natural monuments is not a native. It is a Hungarian oak, a species from south-east Europe, and the city lists it at 33 metres.\n\nNo beech, plane or lime on that list is given a bigger figure. And it does not stand in a park or a villa garden. It stands at an ordinary street address on Erich-Zeigner-Allee in Plagwitz, the canal-cut district west of the centre that Leipzig built for its factories. The city protects it as natural monument number 59, under council resolution 601/96.\n\nHungarian oaks are rare this far north, and the leaves give one away: big, and cut into many deep, regular lobes, nothing like the small rounded leaves of the oaks Saxony grew up with. It was photographed in August 2022, and an observation was logged at the spot in October 2025, so as far as anyone has recorded, it is still up there.\n\nWhat it has lived through, we cannot honestly tell you. Nobody has published its age or the size of its trunk. If you have stood beside it with a tape measure, or know when it was planted, tell us.\n\nOne caution on the pin. It marks the register's point and has not been checked against aerial imagery. Whether the trunk stands on public ground or in a yard behind number 43a is not established either, so look from the street and stay out of private yards.",
+    "how_to_recognise": "You can recognise it by its leaves, big and cut into many deep, regular lobes, unlike a native oak's, on a crown the register puts at 33 metres. It stands at Erich-Zeigner-Allee 43a in Plagwitz; look from the street."
+  },
+  {
+    "id": "lpz_017",
+    "name": "The Honey Locust of Plagwitz Town Hall",
+    "species": "Honey Locust (Gleditsia triacanthos)",
+    "age_estimate": "not documented",
+    "height_m": 13,
+    "location": {
+      "address": "Alte Strasse, at the former Rathaus Plagwitz, 04229 Leipzig",
+      "latitude": 51.32956,
+      "longitude": 12.34063,
+      "neighbourhood": "Plagwitz"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 66, Beschluss 601/96, 13 m)",
+      "https://www.wikidata.org/wiki/Q139832163",
+      "https://commons.wikimedia.org/wiki/File:220806_Leipzig_ND-66.jpg",
+      "https://www.inaturalist.org/observations/207735634"
+    ],
+    "access": "Stands on Alte Strasse beside the old Plagwitz town hall; visible from the pavement (street position per register title, not independently checked).",
+    "transport": "Plagwitz, about 3.5 km west of the centre; stops not verified. About 250 m from the Karl-Heine-Strasse beech and pagoda tree.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_seen": {
+      "file": "220806 Leipzig ND-66.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Vinaceus",
+      "date": "2022-08-06"
+    },
+    "story": "Outside the old town hall of Plagwitz, Leipzig protects a tree from the other side of the Atlantic: a honey locust, a North American species that arms its trunk with branched thorns.\n\nIt is not a giant. The city's register gives it 13 metres, well under half the height of the tallest tree on the same list. It is natural monument number 66, protected under council resolution 601/96. What it has instead is an address. The former Rathaus Plagwitz is a relic of the years when Plagwitz was a town of its own, the industrial suburb that grew up along the canals west of Leipzig before the city absorbed it. The tree stands on Alte Strasse beside that building, on the pavement side as far as the register's description goes.\n\nNobody has recorded when it was planted, so whether it saw the council of an independent Plagwitz come and go is anybody's guess, and we will not pretend otherwise. No girth has been published either. If you know its story, tell us.\n\nThe leaves are the thing to look at up close: fine and feathery, split into dozens of small leaflets, so the crown throws a light, broken shade rather than the solid shadow of a lime. It was photographed in 2022 and logged again at the spot in April 2024.\n\nIt also makes an easy start to a short walk. The copper beech and the Japanese pagoda tree on Karl-Heine-Strasse are about 250 metres away.",
+    "how_to_recognise": "You can recognise it by its fine, feathery leaves, split into many small leaflets, on a tree of about 13 metres. It stands on Alte Strasse beside the former Plagwitz town hall."
+  },
+  {
+    "id": "lpz_018",
+    "name": "The Wych Elm of Demmeringstrasse",
+    "species": "Wych Elm (Ulmus glabra)",
+    "age_estimate": "not documented",
+    "height_m": 14,
+    "location": {
+      "address": "Demmeringstrasse 77, 04177 Leipzig",
+      "latitude": 51.33512,
+      "longitude": 12.32398,
+      "neighbourhood": "Lindenau"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 6, Flurstueck 636c, Beschluss 601/96, 14 m)",
+      "https://www.wikidata.org/wiki/Q117667861",
+      "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Bergulme_02.jpg",
+      "https://www.inaturalist.org/observations/308037929"
+    ],
+    "access": "Commons description says it stands on the plot at Demmeringstrasse 77, so possibly behind a fence; view from the street. Access not verified.",
+    "transport": "Lindenau, about 4.5 km west of the centre; stops not verified. About 150-250 m from lpz_010 (Oak of Demmeringstrasse) and lpz_011.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_seen": {
+      "file": "Naturdenkmal Bergulme 02.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Pixelkaktus",
+      "date": "2017-05-07"
+    },
+    "story": "Dutch elm disease has been killing Europe's elms since the last century, wych elms among them, which is why a living, protected one in a Lindenau street is worth the detour.\n\nLeipzig lists it as natural monument number 6, on the plot at Demmeringstrasse 77, under council resolution 601/96. The register gives it 14 metres and nothing else: no girth, no age, no reason recorded beyond the designation itself. So we will not invent one. How old it is, and whether it was already standing when the epidemic swept through, nobody has published. If you know, tell us.\n\nWhat we can say is that it is alive. It was photographed in full leaf in May 2017, and an observation was logged at the spot in August 2025.\n\nWych elms are the elms of hillsides and riverbanks, and they are easy to tell apart once you have handled a leaf: big, rough as fine sandpaper on top, lopsided where it meets the stalk, and sometimes ending in a few extra points. In early spring, before the leaves, the twigs carry clusters of flat, papery seeds.\n\nIt is also the third tree on a short walk. The Oak of Demmeringstrasse, its crown hanging over a brick wall, and the Oak of Karl-Ferlemann-Strasse both stand about 200 metres away.\n\nThe pin is the register's point and has not been checked on aerial imagery. The elm may stand behind a fence, so look from the street.",
+    "how_to_recognise": "You can recognise it by its big leaves, rough as sandpaper on top and lopsided at the base, on a tree of about 14 metres. It stands on the plot at Demmeringstrasse 77, maybe behind a fence, 200 m from the Oak of Demmeringstrasse."
+  },
+  {
+    "id": "lpz_020",
+    "name": "The Copper Beech of Kirschbergstrasse",
+    "species": "Copper Beech (Fagus sylvatica 'Purpurea')",
+    "age_estimate": "not documented",
+    "height_m": 23,
+    "location": {
+      "address": "Kirschbergstrasse 48, 04159 Leipzig",
+      "latitude": 51.36455,
+      "longitude": 12.34853,
+      "neighbourhood": "Moeckern"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 64, Flurstueck 144a, Beschluss 601/96, 23 m)",
+      "https://www.wikidata.org/wiki/Q139832383",
+      "https://commons.wikimedia.org/wiki/File:64_Blutbuche_Kirschbergstr.48.JPG"
+    ],
+    "access": "Street address in Moeckern; whether it stands on public ground or inside a plot is not established. View from the street.",
+    "transport": "Moeckern, about 3.5 km north-west of the centre; stops not verified.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_seen": {
+      "file": "64 Blutbuche Kirschbergstr.48.JPG",
+      "license": "CC BY-SA 4.0",
+      "author": "Edlerin",
+      "date": "2015-06-21"
+    },
+    "story": "This copper beech is 23 metres tall on Leipzig's register, and the most recent proof we can find that it still stands is a photograph taken in June 2015.\n\nThat is the honest state of it. The city protects the tree as natural monument number 64, at Kirschbergstrasse 48 in Moeckern, under council resolution 601/96. The register gives a height and nothing more: no girth, no age, no date of planting. And nobody seems to have photographed or logged it since. Beeches are not immortal, and a decade is a long silence. If you walk past, tell us whether it is still there, and if you know how old it is, tell us that too.\n\nMoeckern is a name in the history books. On 16 October 1813, on the first day of the Battle of Leipzig, Prussian and French troops fought over the village street by street, and it changed hands several times. Nobody claims this beech saw it, and with no age on record nobody could.\n\nWhat it would show you is colour. A copper beech is a European beech with purple leaves, and at 23 metres this one is a big example of a tree people usually plant for the effect: the leaves open a translucent red in spring, darken almost to black by summer and turn copper before they fall.\n\nThe pin is the register's point only, and whether the tree stands on public ground or inside the plot is not established. Look from the street.",
+    "how_to_recognise": "You can recognise it by its dark purple leaves on a crown the register puts at 23 metres. It stands at Kirschbergstrasse 48 in Moeckern, possibly inside the plot, so look from the street."
+  },
+  {
+    "id": "lpz_021",
+    "name": "The Ginkgo of Kleinzschocher",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "girth_cm": 357,
+    "height_m": 24,
+    "location": {
+      "address": "Volkspark Kleinzschocher, Kantatenweg 31 (Rittergut Kleinzschocher), 04229 Leipzig",
+      "latitude": 51.314319,
+      "longitude": 12.329781,
+      "neighbourhood": "Kleinzschocher"
+    },
+    "verified_sources": [
+      "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34417507&outputFormat=application/json",
+      "https://www.baumkunde.de/baumregister/8482-ginkgo_im_volkspark_kleinzschocher_in_leipzig/",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+      "https://www.wikidata.org/wiki/Q117663121",
+      "https://de.wikipedia.org/wiki/Rittergut_Kleinzschocher",
+      "https://www.inaturalist.org/observations/395825130"
+    ],
+    "official_register": {
+      "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal tree N78815",
+      "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34417507&outputFormat=application/json"
+    },
+    "access": "Free, public park (Volkspark Kleinzschocher); baumkunde.de lists it as publicly accessible (visited 13.09.2026). No opening hours published.",
+    "transport": "Kleinzschocher, beside the Taborkirche; nearest stop and walking time not verified (Leipzig tram/bus network)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Naturdenkmal (Leipzig, listed in de.wikipedia Liste der Naturdenkmale in Leipzig; Wikidata Q117663121) known as 'Ginkgo im Rittergut'. City cadastre record N78815 (export of 2026-10-14, gefaellt_am empty so not felled): girth 357 cm (st_umfang), trunk diameter 114 cm, height 24 m, crown 10 m. baumkunde.de (treetrip) measured girth 3.44 m, height 20.0 m on 30.06.2021, male specimen, two crown supports (Kronensicherungen). Girth figures differ by 13 cm between sources (survey vs cadastre), recorded both. Cadastre planting year 1866 is a class estimate for ND trees, not a planting record: age not documented, no basis for a derived age beyond 'old for a ginkgo'. Alive: iNaturalist observation 2026-08-30 within lifecheck radius (https://www.inaturalist.org/observations/395825130) and baumkunde visit 13.09.2026. Pin is the cadastre point (tree-level survey point, identical to Wikidata), kept approximate until a photo or aerial crown confirms it. Photo in reach: Wikidata P18 on Q117663121 is a Commons set named 'Naturdenkmal Ginkgo im Rittergut Kleinzschocher-Kantatenweg 31 Leipzig' (files -2 shows the ND sign). Photo pass must check licence. FOLDED 2026-10-14: lpz_019 (Ginkgo of Kleinzschocher Manor, never published, held on access) is the same tree: identical coordinate and the same Wikidata item Q117663121. Its manor history (de.wikipedia Rittergut Kleinzschocher: first mentioned 1350, Bauernkantate 30 Aug 1742, Tauchnitz 1848), the city list height of 15 m (ND 18, Beschluss 601/96) and the white elm ND 17 about 45 m away come from lpz_019's notes; the access question is answered here (public Volkspark). Height disputed: list 15 m, baumkunde 2021 20.0 m, cadastre 24 m.",
+    "story": "Three records give this ginkgo three heights: 15 metres, 20 and 24. Leipzig's list of natural monuments says 15. A survey by the tree site baumkunde.de, made on 30 June 2021, measured 20. The city's own tree cadastre says 24. The trunk is less contested, 3.44 metres round in that survey and 3.57 in the cadastre, which makes it a big ginkgo by either figure.\n\nIt grows on the old grounds of the Rittergut Kleinzschocher, a manor first mentioned in 1350 and now the Volkspark Kleinzschocher, beside the Taborkirche. Bach's Peasant Cantata had its first performance at this manor on 30 August 1742, and the publisher Christian Bernhard Tauchnitz bought the estate in 1848. None of those dates belongs to the tree. No source says when it was planted or by whom, and we will not borrow a date from the house.\n\nIt is a male tree, so it drops none of the rancid-smelling seeds that female ginkgos are known for. Two braces now hold its crown together. A naturalist logged it in August 2026 and the survey site visited again that September, so it is still standing.\n\nGinkgo is the last species of a lineage otherwise known from fossils. In November the fan-shaped leaves turn yellow and fall within days of each other. A second protected tree, a European white elm, stands about 45 metres away on the same grounds.\n\nNobody has dated this ginkgo. If you know when it went in, tell us.",
+    "how_to_recognise": "You can recognise it by the fan-shaped leaves and the two braces in its crown, on a trunk about 3.5 metres round. It stands on the old manor grounds in Volkspark Kleinzschocher, about 45 metres from the protected white elm.",
+    "best_time": {
+      "months": [
+        11
+      ],
+      "kind": "autumn colour",
+      "label": "November, when the fan-shaped leaves turn yellow and fall within days of each other"
+    }
+  },
+  {
+    "id": "lpz_022",
+    "name": "The Elm of Poelitzstrasse",
+    "species": "European White Elm (Ulmus laevis)",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "girth_cm": 291,
+    "height_m": 19,
+    "location": {
+      "address": "Poelitzstrasse 32, 04155 Leipzig",
+      "latitude": 51.358188,
+      "longitude": 12.355995,
+      "neighbourhood": "Gohlis-Sued"
+    },
+    "verified_sources": [
+      "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34457488&outputFormat=application/json",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+      "https://www.wikidata.org/wiki/Q117663021"
+    ],
+    "official_register": {
+      "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal tree N78917",
+      "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34457488&outputFormat=application/json"
+    },
+    "access": "Free, street tree on the public pavement of Poelitzstrasse (cadastre area 'Strassengruen'). No opening hours apply.",
+    "transport": "Gohlis-Sued street tree; nearest stop and walking time not verified (Leipzig tram/bus network)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Naturdenkmal ND 159 (protected since 1999 per Wikidata Q117663021; protected surroundings 15 m radius, Flurstueck 461c per de.wikipedia list). City cadastre record N78917: Ulmus laevis, girth 291 cm, height 19 m, area Strassengruen, gefaellt_am empty in the export of 2026-10-14. SPECIES CONFLICT: de.wikipedia list and a Commons file call it Feldulme (Ulmus minor); Wikidata and the city cadastre say Flatterulme (Ulmus laevis). Cadastre is the owner of the tree, so Ulmus laevis used, conflict flagged. Cadastre planting year 1896 is a class estimate, not a planting record: age not documented. Alive: lifecheck NONE (no recent public observation); only evidence is the cadastre listing it unfelled today, hence flagged 'register only'. Pin is the cadastre tree point, matching Wikidata to ~5 m; kept approximate. Photo in reach: Wikidata P18 on Q117663021 is Commons 'Ulmus minor Mill 01.JPG' and '02' (the second shows the sign); photo pass must check that it is this tree and the licence. Wych/European white elm survivors are rare after Dutch elm disease (Flatterulme is more resistant), but no source in hand states that for this tree.",
+    "story": "The records cannot agree on what this tree is. Leipzig's list of natural monuments, as transcribed on Wikipedia, calls it a field elm. The city's tree cadastre and Wikidata call it a European white elm. We have gone with the cadastre, the city's own record of its trees, but the question is open.\n\nEither way it is an elm that made the list as a street tree. It stands on the pavement of Poelitzstrasse in Gohlis-Sued, 2.91 metres round the trunk and 19 metres tall by the cadastre's figures, and it has been protected as natural monument number 159 since 1999, with a protected zone 15 metres around it.\n\nElms are the trees Europe lost. Dutch elm disease has killed most of the continent's big field elms since the last century, while white elms have held out better. What this one came through, nobody has written down.\n\nThe record is thin in other ways. No source gives an age; the cadastre's planting year of 1896 is an estimate for an age class, not a record of this tree. And the latest sign of life is the cadastre still listing it as standing in October 2026. Nobody has posted a photograph or an observation of it lately.\n\nAnyone passing can settle both questions. White elm seeds hang on long stalks with a fringe of fine hairs; field elm seeds sit close to the twig. Tell us which you see, and that it is still there.",
+    "how_to_recognise": "You can recognise it by its size, an elm 2.91 metres round and 19 metres tall growing out of the pavement. It stands outside Poelitzstrasse 32 in Gohlis-Sued."
+  },
+  {
+    "id": "lpz_023",
+    "name": "The Oak of Probstheida Village Green",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "girth_cm": 374,
+    "height_m": 19,
+    "location": {
+      "address": "Dorfanger Probstheida at the Immanuelkirche, Russenstrasse, 04289 Leipzig",
+      "latitude": 51.306533,
+      "longitude": 12.428878,
+      "neighbourhood": "Probstheida"
+    },
+    "verified_sources": [
+      "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34408928&outputFormat=application/json",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+      "https://www.wikidata.org/wiki/Q109644239"
+    ],
+    "official_register": {
+      "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal tree N78812",
+      "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34408928&outputFormat=application/json"
+    },
+    "access": "Free, on the public village green (Dorfanger) beside the Immanuelkirche. No opening hours apply.",
+    "transport": "Probstheida village green on Russenstrasse; nearest stop and walking time not verified (Leipzig tram/bus network)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Naturdenkmal tree on the Dorfanger Probstheida (cadastre area 'Gruen- und Parkanlagen', 'Dorfanger Probstheida (Kirche)'). City cadastre record N78812: Quercus robur, girth 374 cm, trunk diameter 119 cm, height 19 m, crown 20 m, gefaellt_am empty in the export of 2026-10-14. Wikidata Q109644239 'Quercus robur, Russenstrasse Leipzig' carries the same position. Cadastre planting year 1886 is a class estimate, not a planting record: age not documented. The wider Dorfanger is also described by BUND Leipzig (campaign for traffic calming, 2024) as a protected Naturdenkmal village green, one of few historic ones left in the city. Alive: lifecheck NONE; only the cadastre listing it unfelled today, hence flagged 'register only'. Pin is the cadastre tree point, approximate; the green is too large to count as a small named site, so no location_site is set. Photo in reach: Wikidata P18 is Commons 'Leipzig Stieleiche Russenstrasse.jpg'; photo pass must check it shows this oak and the licence.",
+    "story": "This oak is wider than it is tall. Leipzig's tree cadastre gives it a crown 20 metres across on a height of 19, the shape an oak takes when nothing crowds it.\n\nNothing does, because it stands on a village green. The Dorfanger of Probstheida is the open heart of what was a village before it became a Leipzig district, beside the Immanuelkirche on Russenstrasse. The local branch of the conservation group BUND describes the green as a protected natural monument and one of the few historic village greens left in the city, and in 2024 it campaigned to calm the traffic around it.\n\nThe trunk is 3.74 metres round and 1.19 metres through, by the city's own measurement. That is a serious oak, but a measurement is not a date. The cadastre files a planting year of 1886, and that figure is an estimate for a whole age class rather than a record of this tree, so we leave it out.\n\nProbstheida was fought over on 18 October 1813, the decisive day of the Battle of Leipzig. Whether this oak was already on the green that day, nobody has written down.\n\nThe city still lists it as standing in October 2026, and that is the latest word: nobody has posted a photograph of it lately. If you are on Russenstrasse, tell us how it looks, and if you know when it was planted, tell us that too.",
+    "how_to_recognise": "You can recognise it by its crown, about 20 metres across and wider than the tree is tall, on a trunk 3.74 metres round. It stands on the Probstheida village green beside the Immanuelkirche on Russenstrasse."
+  },
+  {
+    "id": "lpz_024",
+    "name": "The Japanese Pagoda Tree of Flossplatz",
+    "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+    "age_estimate": "about 150 years",
+    "age_basis": "derived",
+    "age_min": 120,
+    "age_max": 200,
+    "girth_cm": 355,
+    "height_m": 25,
+    "location": {
+      "address": "Flossplatz, corner of Riemannstrasse, 04107 Leipzig",
+      "latitude": 51.33135,
+      "longitude": 12.37168,
+      "neighbourhood": "Zentrum-Sued"
+    },
+    "verified_sources": [
+      "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34789416&outputFormat=application/json",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+      "https://www.baumkunde.de/baumregister/8614-schnurbaum_zentrum_sued_leipzig/",
+      "https://commons.wikimedia.org/wiki/File:Jap._Schnurbaum_Lzg._Flo%C3%9Fpl.jpg"
+    ],
+    "official_register": {
+      "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 100, tree N78220",
+      "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34789416&outputFormat=application/json"
+    },
+    "access": "Free, on the public city square Flossplatz (cadastre area 'Gruen- und Parkanlagen'); baumkunde.de lists it as publicly accessible. No opening hours.",
+    "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo_candidate": {
+      "file": "File:Jap. Schnurbaum Lzg. Floßpl.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jap._Schnurbaum_Lzg._Flo%C3%9Fpl.jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Geisler Martin",
+      "taken": "2014-08-11",
+      "note": "Caption 'Japanischer Schnurbaum am Flossplatz Ecke Riemannstrasse', named for this tree, no geotag; seen via API metadata only, pixels not viewed"
+    },
+    "verify_notes": "Naturdenkmal ND 100 'Japanischer Schnurbaum am Flossplatz' (Sophora japonica L.), designated by city council resolution 1036/97 (de.wikipedia list; Leipzig Stadtrecht Satzung 8.8.4 lists it). Not among the list's dead or repealed trees. City cadastre N78220 (export 2026-10-16, record updated 2026-10-16, gefaellt_am empty): girth 355 cm, trunk diameter 113 cm, height 25 m, crown 20 m. List gives 23 m. baumkunde.de register 8614 (observer treetrip, measured 23.03.2022): girth 3.52 m, height 25 m, 'Baumveteran', vital, old callused wounds, several crown supports installed; 'possibly planted around 1873', age 150 (observer estimate, not a record). Cadastre planting year 1866 is a class estimate. Age therefore derived and broad, from register estimates only; no planting document. Pin: cadastre tree point 51.33135,12.37168 and the observer GPS (baumkunde, 51.33138,12.37170) agree within 4 m on a single large tree on a small square, so confirmed. OSM node 'ND100 Japanischer Schnurbaum' sits on the identical coordinate but was evidently imported from the list, so it is not counted as independent. Alive: cadastre unfelled in 2026, baumkunde observation 2022 vital; lifecheck hit was only a panorama of the square (2025), not this tree.",
+    "recognise_facts": "Single tall pagoda tree with propped crown on the Flossplatz at the Riemannstrasse corner; trunk 3.5 m round.",
+    "story": "Nobody knows when this pagoda tree was planted, but the two best guesses land seven years apart. The tree survey site baumkunde.de, measuring it in March 2022, thought it possibly went in around 1873. Leipzig's tree cadastre files 1866, a year it gives to a whole class of old trees rather than a record of this one. Neither is a document, so the honest age is a range: somewhere between 120 and 200 years.\n\nThe measurements are firmer. The cadastre gives the trunk 3.55 metres round and the crown 20 metres across, on a height of 25 metres. The 2022 survey found 3.52 metres and 25, while the city's list of natural monuments says 23. Leipzig protects it as natural monument number 100, under council resolution 1036/97.\n\nIt stands on the Flossplatz, a small public square south of the old town, at the corner of Riemannstrasse. The survey called it a Baumveteran and found it vital, with old wounds long since callused over and several supports fitted in the crown to hold it together. What it saw of the city's twentieth century, nobody has written down.\n\nDespite the name, the species comes from China. Time a visit for August if you can: that is when it flowers, in loose sprays of cream, at a point in the summer when almost nothing else is in bloom.",
+    "how_to_recognise": "You can recognise it by the supports in its crown and a trunk about 3.5 metres round, the one big pagoda tree on the square. It stands on the Flossplatz at the corner of Riemannstrasse.",
+    "best_time": {
+      "months": [
+        8
+      ],
+      "kind": "flowers",
+      "label": "August, when the crown carries cream flowers and almost nothing else is in bloom"
+    }
+  },
+  {
+    "id": "lpz_025",
+    "name": "The Oak of Kantatenweg",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "about 200 years",
+    "age_basis": "derived",
+    "age_min": 200,
+    "age_max": 300,
+    "girth_cm": 545,
+    "height_m": 19,
+    "location": {
+      "address": "Kantatenweg 5, 04229 Leipzig (Kleinzschocher)",
+      "latitude": 51.316171,
+      "longitude": 12.330764,
+      "neighbourhood": "Kleinzschocher"
+    },
+    "verified_sources": [
+      "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34702517&outputFormat=application/json",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+      "https://commons.wikimedia.org/wiki/File:Eiche_Lzg._Kantatenweg_5.JPG",
+      "https://www.openstreetmap.org/node/5607986199"
+    ],
+    "official_register": {
+      "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 158, tree N78916",
+      "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34702517&outputFormat=application/json"
+    },
+    "access": "Cadastre area 'Staedtische Liegenschaften' (city property), Kantatenweg 039. Whether the oak can be walked up to from the street is not stated by any source; it stands about 220 m from the Kleinzschocher manor ginkgo. OSM has it as a natural=tree 'Baumdenkmal' node. Visit from Kantatenweg.",
+    "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo_candidate": {
+      "file": "File:Eiche Lzg. Kantatenweg 5.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Eiche_Lzg._Kantatenweg_5.JPG",
+      "license": "CC BY-SA 4.0",
+      "author": "Martin Geisler",
+      "taken": "2018-05-03",
+      "note": "Caption 'Stieleiche am Kantatenweg 5 in Leipzig', no geotag; pixels not viewed"
+    },
+    "verify_notes": "Naturdenkmal ND 158 'Stieleiche Kantatenweg 5', designated by council resolution 1522/99; the de.wikipedia list gives 23 m and coordinate 51.316171,12.330764. Not on the list of dead or repealed trees. City cadastre N78916 (record updated 2026-10-16, gefaellt_am empty): girth 545 cm, trunk diameter 174 cm, height 19 m, crown 24 m; cadastre planting year 1816 is a class estimate only, so age is derived and broad (a girth of 5.4 m on an oak suggests it may be older than the estimate, no source says). Height conflict: list 23 m, cadastre 19 m. Pin: list coordinate, cadastre point (51.316183,12.330927, about 11 m east) and an OSM natural=tree node named 'Baumdenkmal' (51.3161745,12.3308213, 3 m from the list point) agree on one clear crown; confirmed. Cluster: 220 m from the Kleinzschocher ginkgo already live (lpz_021) and ND 17 elm; Volkspark Kleinzschocher is next door. Alive: cadastre unfelled in 2026; lifecheck NONE, so flagged.",
+    "recognise_facts": "Oak 5.4 m round beside Kantatenweg, a few minutes' walk from the Kleinzschocher manor ginkgo.",
+    "story": "A short walk from the Kleinzschocher manor ginkgo stands a much thicker tree: a pedunculate oak 5.45 metres round.\n\nLeipzig's tree cadastre measures the trunk at 1.74 metres through, under a crown 24 metres across. The records disagree on its height. The city's list of natural monuments says 23 metres; the cadastre, updated in October 2026, says 19. Either way the crown spreads wider than the tree stands tall. It has been protected as natural monument number 158 since council resolution 1522/99.\n\nIts age is an estimate with a wide margin. The cadastre files a planting year of 1816, but that is a figure it gives to a whole class of old trees, not a record of this one. So the age here is a band, 200 to 300 years, rather than a birthday. No document says when the oak went in or who planted it, and we will not borrow a date from the manor down the road.\n\nIt stands at Kantatenweg 5 on city-owned ground, about 220 metres from the ginkgo and next to the Volkspark Kleinzschocher, which makes the two an easy pair on one walk. No source says whether you can go right up to the trunk, so look from Kantatenweg.\n\nThe latest word on its health is the city still listing it as standing. Nobody has posted a photograph of it lately. If you pass, tell us how it looks, and if you know its history, tell us that too.",
+    "how_to_recognise": "You can recognise it by the trunk, about 5.4 metres round and far thicker than the ginkgo's, under a crown 24 metres across. It stands at Kantatenweg 5, about 220 metres from the Kleinzschocher manor ginkgo."
+  },
+  {
+    "id": "lpz_026",
+    "name": "The Starkeiche of Rosental",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "350 to 600 years, disputed",
+    "age_basis": "source",
+    "age_min": 350,
+    "age_max": 600,
+    "girth_cm": 669,
+    "height_m": 27,
+    "location": {
+      "address": "Rosental floodplain forest, path 'Zum Wackelturm', 04105 Leipzig",
+      "latitude": 51.355873,
+      "longitude": 12.349381,
+      "neighbourhood": "Zentrum-Nordwest"
+    },
+    "verified_sources": [
+      "https://www.monumentale-eichen.de/sachsen/2-kategorie/leipzig/",
+      "https://www.baumkunde.de/baumregister/5221-starke_eiche_im_auwald_in_leipzig/",
+      "https://www.openstreetmap.org/search?query=Starkeiche%20im%20Rosental"
+    ],
+    "access": "Free, public Rosental park and floodplain forest (baumkunde.de: publicly accessible). Stands in dense woodland just off the path 'Zum Wackelturm', hard to see in summer leaf. An information board in OSM names it 'Die Starkeiche im Rosental - Leipzigs aeltester Baum'.",
+    "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Widely called Leipzig's oldest and stoutest tree. Two independent surveys. (1) Rainer Lippert, monumentale-eichen.de, measured 2017, page updated 22 June 2017: girth at breast height 6.65 m, at ground 9.50 m, 7.20 m at 1 m, 5.96 m at 2.5 m, height about 27 m, crown about 20 m; trunk runs unbranched for over 10 m; one side has a 1 m wide opening rising over 5 m, inside fully hollow and soot-blackened; age 'about 350 years', he notes that the 600 years in circulation seems far too high; vitality 'still ok' (2017); some dead branches in the crown. (2) baumkunde.de register 5221, observers incl. treetrip, JoachimSt, HerrMoritz: girth 6.69 m measured 1 Dec 2021, height 27 m, age 350, lightning marks and fire traces, last visit 1 March 2024, last register update 20 Sept 2024, condition 'krank, kleine Krone, womoeglich zuruecksetzend' (sick, small crown, perhaps retrenching). Age conflict: 350 (surveys) vs 600 (press and Stadtforst circulation); the page should give the range. Not a Naturdenkmal and no city register record found, so no official_register. Pin: Lippert coordinate 51.355873,12.349381 and baumkunde GPS (51.355861,12.349389) agree within 2 m, and an OSM information board for the tree stands 4 m away (51.3558011,12.3493625); confirmed. Alive: seen March 2024 (baumkunde), but declining; flagged. No Commons photograph found (geosearch 200 m and name search empty); a reader or iNaturalist photo is needed. An adjacent Stadtforst poster (leipziger-auwald.de, Starkbaumkartierung) names other Rosental oaks of 6.50 m and 6.02 m girth: unnamed veterans nearby, lead for a pass with the poster in hand.",
+    "story": "The board beside this oak calls it Leipzig's oldest tree, and the age that travels with it is 600 years. The two surveys that put a tape round it think that is far too high.\n\nRainer Lippert, who records Germany's monumental oaks, measured it in 2017: 6.65 metres round at chest height, 9.50 at the ground, about 27 metres tall, the trunk running without a branch for more than ten metres. He put it at about 350 years and wrote that the 600 in circulation seems far too high. The tree register baumkunde.de measured 6.69 metres in December 2021 and also says 350. So the age sits somewhere between 350 and 600 years, with the people holding tape measures at the lower end. Even that lower figure means it was already old when Napoleon's armies fought for the city in 1813.\n\nThe trunk shows what it has been through. One side has an opening a metre wide that rises more than five metres, and behind it the tree is hollow and blackened with soot. Lightning marks and traces of fire are on record. At the last recorded visit, in March 2024, the register called it sick, with a small crown and perhaps retrenching, an old oak drawing its crown in.\n\nIt stands in the floodplain forest of the Rosental, just off the path Zum Wackelturm, and in summer the woodland hides it well. Go when the leaves are down.",
+    "how_to_recognise": "You can recognise it by the hollow trunk, about 6.7 metres round, with a metre-wide opening rising over five metres. It stands just off the Zum Wackelturm path in the Rosental woodland, beside its information board.",
+    "best_time": {
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "kind": "bare silhouette",
+      "label": "winter, when the leaves are down and the woodland stops hiding the trunk"
+    }
+  },
+  {
+    "id": "lpz_027",
+    "name": "The Steinlinde of Plausig",
+    "species": "Small-leaved Lime (Tilia cordata)",
+    "age_estimate": "about 160 years",
+    "age_basis": "derived",
+    "age_min": 150,
+    "age_max": 170,
+    "girth_cm": 390,
+    "height_m": 11,
+    "location": {
+      "address": "Plaussiger Dorfstrasse beside the parsonage, Grundstrasse 18, 04349 Leipzig",
+      "latitude": 51.392086,
+      "longitude": 12.455898,
+      "neighbourhood": "Plaussig"
+    },
+    "verified_sources": [
+      "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34672107&outputFormat=application/json",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+      "https://commons.wikimedia.org/wiki/File:Plaussig_Steinlinde-01.jpg",
+      "https://www.wikidata.org/wiki/Q117712502"
+    ],
+    "official_register": {
+      "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 145, tree N78908",
+      "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34672107&outputFormat=application/json"
+    },
+    "access": "Cadastre area 'Staedtische Liegenschaften', Plaussiger Dorfstrasse; stands in the village street beside the parsonage. Free to see from the street; access to the plot not stated.",
+    "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidate": {
+      "file": "File:Plaussig Steinlinde-01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Plaussig_Steinlinde-01.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Radler59",
+      "taken": "2017-05-26",
+      "geotag": "51.392162,12.455674 (about 17 m from the cadastre point)",
+      "note": "Caption names the tree; pixels not viewed"
+    },
+    "verify_notes": "Naturdenkmal ND 145 'Steinlinde Plaussig', council resolution 1522/99, Wikidata Q117712502; not on the list of dead or repealed trees. Cadastre N78908 (record updated 2026-10-16, gefaellt_am empty): Tilia cordata, girth 390 cm, trunk diameter 124 cm, height 11 m (kept low, heavily topped), crown 8 m. Planting dates conflict: Commons caption by the photographer says 'gepflanzt 1868' (beside the parsonage); cadastre class estimate says 1861; no planting document seen, so both are weak. The local name 'Steinlinde' is the register's own and no source seen explains it. Pin: cadastre point and the photo geotag within 17 m on a village street, not on the trunk, so approximate. Alive: cadastre unfelled in 2026, photo 2017; lifecheck not run, flagged. I could not find a second text source for the tree beyond the register, Wikidata and the Commons caption (the search summary that mentioned a Wikipedia Plaussig article could not be confirmed on the fetched article, which does not mention the lime).",
+    "story": "This lime has a trunk 3.90 metres round and stands only 11 metres tall. It has been cut back hard and kept low, so what you meet is nearly all girth.\n\nTwo dates compete for its planting. The photographer who put it on Wikimedia Commons in 2017 captioned it as planted in 1868, beside the parsonage. Leipzig's tree cadastre files 1861, but that is a year it gives to a whole class of old trees, not a record of this one. Nobody we have found has seen a planting document, so somewhere between 150 and 170 years is as close as it gets.\n\nIts name is a puzzle too. The city registers it as the Steinlinde, the stone lime, and no source we have read says why. If you know, tell us.\n\nPlaussig lies on Leipzig's north-eastern edge, and the lime stands in its village street beside the parsonage, by Grundstrasse 18. The cadastre measures the trunk at 1.24 metres through under a crown just 8 metres across. It has been protected as natural monument number 145 since council resolution 1522/99, and the city still lists it as standing.\n\nThe ground it stands on is city property, but no source says whether the plot is open, so look from the street. Come in July if you can. Small-leaved limes flower later than most limes, and the flowers are scented.",
+    "how_to_recognise": "You can recognise it by the short, hard-cut crown on a trunk 3.9 metres round, more girth than height. It stands in Plaussig's village street beside the parsonage, by Grundstrasse 18.",
+    "best_time": {
+      "months": [
+        7
+      ],
+      "kind": "flowers",
+      "label": "July, when the small-leaved lime flowers, later than most limes"
+    }
+  },
+  {
+    "id": "lpz_028",
+    "name": "The Red Oak of Viertelsweg",
+    "species": "Northern Red Oak (Quercus rubra)",
+    "age_estimate": "about 140 years",
+    "age_basis": "derived",
+    "age_min": 120,
+    "age_max": 160,
+    "girth_cm": 331,
+    "height_m": 19,
+    "location": {
+      "address": "Viertelsweg at the corner of Heinrich-Budde-Strasse, 04157 Leipzig",
+      "latitude": 51.371303,
+      "longitude": 12.373622,
+      "neighbourhood": "Gohlis-Mitte"
+    },
+    "verified_sources": [
+      "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34771140&outputFormat=application/json",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+      "https://commons.wikimedia.org/wiki/File:H_Buddensweg_63.JPG"
+    ],
+    "official_register": {
+      "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 63, tree N78850",
+      "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34771140&outputFormat=application/json"
+    },
+    "access": "Free, public city green at a street corner (cadastre area 'Gruen- und Parkanlagen', Viertelsweg/Heinrich-Budde-Strasse).",
+    "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidate": {
+      "file": "File:H Buddensweg 63.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:H_Buddensweg_63.JPG",
+      "license": "CC BY-SA 3.0 de",
+      "author": "Edlerin",
+      "taken": "2015-06-15",
+      "note": "Caption 'Leipzig, Naturdenkmal, Roteiche, Viertelsweg/Heinrich-Buddestr'; no geotag; pixels not viewed"
+    },
+    "verify_notes": "Naturdenkmal ND 63 'Roteiche Viertelsweg/Ecke Heinrich-Budde-Strasse', council resolution 601/96; not on the list of dead or repealed trees. Cadastre N78850 (record updated 2026-10-16, gefaellt_am empty): girth 331 cm, trunk diameter 105 cm, height 19 m (list says 25 m), crown 14 m. Cadastre planting year 1886 is a class estimate, age derived and broad. A non-native species (North American) that is large for its kind. Pin: list and cadastre point agree (same place within metres); an OSM node 'ND63 Roteiche' sits on the identical list coordinate and was evidently imported from it, so approximate. Alive: cadastre unfelled in 2026; lifecheck NONE, so flagged, register only.",
+    "story": "The oak on this Gohlis street corner comes from North America, and in October it gives itself away. A northern red oak's leaves turn a rich red in autumn, where the native oaks of Saxony go yellow and brown.\n\nLeipzig protects it as natural monument number 63, under council resolution 601/96, on a patch of public green where Viertelsweg meets Heinrich-Budde-Strasse. The city's tree cadastre measures the trunk at 3.31 metres round and 1.05 metres through, under a crown 14 metres across. Its height depends on which record you read: 19 metres in the cadastre, 25 in the city's list of natural monuments. For a species planted far from home, that is a big tree.\n\nNobody has published when it went in. The cadastre's planting year of 1886 is a figure it gives to a whole class of trees rather than a record of this one, which puts the oak at roughly 120 to 160 years and no closer. How an American oak came to be planted on this corner is not written down either. If you know, tell us.\n\nThe leaves are worth a look in any month. They are bigger than a native oak's and cut into pointed lobes that end in fine bristles, where the oaks Saxony grew up with have rounded ones.\n\nThe latest word on it is the city still listing it as standing, and nobody has posted a photograph of it lately. If you pass the corner, tell us how it looks.",
+    "how_to_recognise": "You can recognise it by the big, pointed, bristle-tipped leaves of an American red oak, which turn red in October. It stands on the green at the corner of Viertelsweg and Heinrich-Budde-Strasse.",
+    "best_time": {
+      "months": [
+        10
+      ],
+      "kind": "autumn colour",
+      "label": "October, when the leaves turn a rich red, unlike any native oak"
+    }
+  },
+  {
+    "id": "lpz_029",
+    "name": "The Oaks of Doelitz Torhaus",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "girth_cm": 570,
+    "height_m": 25,
+    "location": {
+      "address": "Helenenstrasse by the Torhaus Doelitz, 04279 Leipzig",
+      "latitude": 51.28749,
+      "longitude": 12.38919,
+      "neighbourhood": "Doelitz-Doesen"
+    },
+    "verified_sources": [
+      "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34678265&outputFormat=application/json",
+      "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34736314&outputFormat=application/json",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+      "https://commons.wikimedia.org/wiki/File:Stieleiche_Lzg._Helenenstr.jpg"
+    ],
+    "official_register": {
+      "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 114, trees N78884 and N78872",
+      "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34678265&outputFormat=application/json"
+    },
+    "access": "The larger oak N78872 stands in city green (cadastre area 'Gruen- und Parkanlagen', Helenenstrasse/Torhaus) beside the Doelitz war memorial and the Torhaus (a museum, Helenenstrasse 24); the ND-designated oak is 36 m away. Whether the second oak is reachable from the public green is not stated; view from Helenenstrasse.",
+    "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidate": {
+      "file": "File:Stieleiche Lzg. Helenenstr.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stieleiche_Lzg._Helenenstr.jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Geisler Martin",
+      "taken": "2014-04-23",
+      "note": "Caption 'Stieleiche in der Naehe der Helenenstrasse in Leipzig'; no geotag; unsettled which of the two oaks it shows; pixels not viewed"
+    },
+    "verify_notes": "Folded pair of cadastre oaks 36 m apart. ND 114 'Stieleiche Helenenstrasse' (council resolution 1142/98, Flurstueck 115/4, protected radius 21 m, list coordinate 51.28749,12.38919, not on the dead list) matches cadastre N78884 (girth 550 cm, diameter 175 cm, height 23 m, crown 14 m, 51.287454,12.389199, 4 m from the list point). The second cadastre oak N78872 (girth 570 cm, diameter 182 cm, height 25 m, crown 19 m, 51.287766,12.38873) is the larger and stands in the green by the Torhaus; both have cadastre planting year 1816, a class estimate that cannot be right for both and is not recorded as an age. Earlier lead noted the war memorial register mentions a Friedenseiche planted 1872 plus two later oaks, so identity of the trunks is unsettled and a 5.7 m girth does not fit an 1872 planting. Which trunk is worth the visit: the larger N78872. Pin approximate (cadastre points; OSM node 'ND114 Stieleiche' sits on the identical list coordinate, imported). Alive: cadastre unfelled in 2026; the lifecheck RECENT hit (iNaturalist 2026-04-26) is a dandelion at the spot, not evidence for the oak, so flagged, register only.",
+    "story": "Two big oaks stand 36 metres apart by the Torhaus in Doelitz, and the one Leipzig protects is not the bigger of the two.\n\nThe protected oak is natural monument number 114, the Stieleiche Helenenstrasse, designated under council resolution 1142/98. The city's tree cadastre gives it 5.50 metres round and 23 metres tall. Its neighbour, in the public green beside the Torhaus and the Doelitz war memorial, measures 5.70 metres round and 25 metres tall, with a crown 19 metres across against the other's 14. That neighbour is the trunk worth the walk.\n\nTheir history is tangled. The cadastre gives both the same planting year, 1816, a figure it assigns to a whole class of old trees, so it is a record for neither. A register of the war memorial mentions a peace oak planted in 1872 and two later oaks, but nobody has settled which trunk is which, and an oak 5.70 metres round is hard to square with an 1872 planting. So we give no age. If you know the story of these trees, tell us.\n\nThe Torhaus at Helenenstrasse 24 is now a museum. The bigger oak stands in open city green beside it. Whether the protected oak can be reached from that green is not recorded, so view it from Helenenstrasse. The pin marks the protected tree; the bigger one is about 36 metres away.\n\nThe city still lists both as standing.",
+    "how_to_recognise": "You can recognise it as the larger of two oaks 36 metres apart, 5.7 metres round, in the green beside the war memorial. It stands by the Torhaus Doelitz on Helenenstrasse; the pin marks the smaller, protected oak."
+  },
+  {
+    "id": "lpz_031",
+    "name": "The Great Oak of Leinestrasse",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "over 300 years",
+    "age_min": 300,
+    "age_max": 400,
+    "girth_cm": 530,
+    "height_m": 24,
+    "location": {
+      "address": "Leinestrasse, beside the allotment colony 'An der grossen Eiche' (fence no. 35), 04279 Leipzig",
+      "latitude": 51.2867,
+      "longitude": 12.40633,
+      "neighbourhood": "Doesen"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 101, Grosse Eiche Leinestrasse, Wikidata Q117662243)",
+      "https://geodienste.leipzig.de/l3/OpenData/wfs (layer OpenData:Baeume, baumnummer N78221: Stiel-Eiche, girth 530 cm, height 24 m, planting-year class 1686)",
+      "https://commons.wikimedia.org/wiki/File:MKBler_-_1377_-_Gro%C3%9Fe_Eiche_Leinestra%C3%9Fe.jpg (CC BY-SA 4.0, photographed 2019-12-28)",
+      "https://commons.wikimedia.org/wiki/File:D%C3%B6sen_Eiche.jpg (CC BY-SA 3.0, Martin Geisler, 2009: 'over 300 years old')"
+    ],
+    "official_register": {
+      "name": "Leipzig Naturdenkmal ND 101 (city Baumkataster N78221)",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig"
+    },
+    "access": "Free; the oak stands on the pavement of Leinestrasse at the fence of the allotment colony, seen from the public street. Do not enter the allotment gardens.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register (city Naturdenkmal list plus the city's open Baumkataster) only, so flagged. Leipzig's Naturdenkmal list says it is ND 101, one of only six tree monuments that existed before 1992, carried over from GDR law (before 1992 Leipzig had just these six tree NDs; about 140 more procedures followed; source: footnotes of the de.wikipedia list citing Aegerter, Schaarschmidt, Reusch, Baeume. Naturdenkmale in Leipzig, p. 4). Quercus robur. Register height conflict: list 28 m and crown 20 m, cadastre 24 m; girth 530 cm at the cadastre only (no second girth source, no register stem-height basis seen). Age: Commons caption (Geisler, 2009) says 'over 300 years'; cadastre planting-year class 1686 is a class estimate, not a planting record; kept broad 300 to 400, derived from the vague caption, not sharpened. The allotment colony is named after the oak ('An der grossen Eiche'). Alive: a dated photograph of 2019-12-28 (leafless crown, healthy structure, pixels viewed on 800 px render: massive furrowed trunk, wide crown, standing on the kerbside pavement beside street no. 35 fence); further MKBler uploads of the same oak exist dated 2024-2026 upload timestamps (photo dates 2018 and 2019); lifecheck.py returned NONE. Pin: register landmark coordinate 51.28670,12.40633 and cadastre 51.28672,12.40631 agree within 3 m, but no GPS on a trunk, so approximate. Public-transport: Doesen, in Leipzig's south, tram reach to be checked by the writer. Photo: several openly licensed Commons photos of THIS tree, CC BY-SA 4.0 (MKBler) and CC BY-SA 3.0 (Geisler); the 2019 winter photo (1377) fills the frame and is the strongest; a leafy summer frame would be better. Same pin 1.2 km from lpz_029 (Doelitz Torhaus oaks)."
   }
- },
- {
-  "id": "lpz_009",
-  "name": "The Pedunculate Oak of Dufourstrasse",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "not documented",
-  "age_basis": "derived",
-  "location": {
-   "address": "Dufourstrasse 6/8, 04107 Leipzig",
-   "latitude": 51.32858,
-   "longitude": 12.36948,
-   "neighbourhood": "Zentrum-Sued"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 46, Beschluss 1036/97 range)",
-   "https://commons.wikimedia.org/wiki/File:Stieleiche_Lzg._Dufourstr._6-8.jpg"
-  ],
-  "access": "Free; the oak stands beside the Pleissemuehlgraben canal and its public footpath (Commons photo from the path railing, 2014).",
-  "transport": "Zentrum-Sued, about 1.5 km south of the Markt; stops not verified",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "Stieleiche Lzg. Dufourstr. 6-8.jpg",
-   "license": "CC BY-SA 3.0",
-   "author": "Martin Geisler",
-   "date": "2014-07-02"
-  },
-  "verify_notes": "Naturdenkmal ND 46 in the city list; protected zone 33 m across, the joint widest in the list; the photo shows a broad crown filling the gap between two apartment blocks above the canal. No girth, height or age in the register. Pin is the Wikipedia list coordinate (5 decimals), not independently confirmed; the photo shows the tree beside the canal footpath, consistent. Alive: Commons photo 2014 only; lifecheck NONE, so register-only and old photo: flagged. Age and girth unknown: let the page ask the reader.",
-  "story": "Leipzig keeps a protected zone around every one of its natural monuments, and this oak's is 33 metres across, as wide as any on the city's list. That number is the register's way of saying how far the roots and crown are judged to reach, and here it means a canopy that fills the whole gap between two apartment blocks.\n\nThe oak stands beside the Pleissemuehlgraben, one of the narrow mill canals that carried the river Pleisse's water through the city, with a public footpath and a railing along the bank. From the path you see it at its best: a broad, many-limbed pedunculate oak rising out of a channel lined with concrete and housing, the one thing in the view that is not a right angle.\n\nThe city designated it Naturdenkmal number 46 in the late 1990s. Beyond that the record is thin. The register gives no height, no girth and no age, and nobody we know of has published a measurement. A tree this broad in a dense inner district is unlikely to be young, but unlikely is not a date, and this page will not pretend otherwise.\n\nSo it is a question rather than a number. If you pass it with a tape measure, the trunk's circumference at chest height would tell us more than any guess. Send it to us and the page will carry it.",
-  "how_to_recognise": "You can recognise it by the broad crown filling the gap between two apartment blocks above the canal. It stands beside the Pleissemuehlgraben footpath at Dufourstrasse 6 to 8, best seen from the railing."
- },
- {
-  "id": "lpz_010",
-  "name": "The Oak of Demmeringstrasse",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "not documented",
-  "age_basis": "derived",
-  "location": {
-   "address": "Demmeringstrasse 62, 04177 Leipzig",
-   "latitude": 51.33654,
-   "longitude": 12.3277,
-   "neighbourhood": "Lindenau"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 7, Beschluss 601/96)",
-   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stieleiche_01.jpg",
-   "https://www.wikidata.org/wiki/Q117666885"
-  ],
-  "access": "Free; a street oak at the kerb, seen from the pavement.",
-  "transport": "Lindenau, about 3.5 km west of the centre; stops not verified",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "Naturdenkmal Stieleiche 01.jpg",
-   "license": "CC BY-SA 4.0",
-   "author": "Pixelkaktus",
-   "date": "2017-05-07",
-   "geotag": "51.336285, 12.327255 (about 30 m from the register coordinate)"
-  },
-  "verify_notes": "Naturdenkmal ND 7, protected zone 20 m. Big single oak whose crown stands above the street and the brick wall behind it. Register coordinate 51.33654,12.32770; the Commons photographer geotag lies about 30 m away (likely the camera position), so the pin is approximate. Alive: Commons photos of 2017 (spring leaf), lifecheck NONE. No girth or age in register. Part of a Lindenau group with ND 8 (Karl-Ferlemann-Strasse 2, about 150 m away, delivered as lpz_011) and ND 6 (Bergulme Demmeringstr 77, behind a fence, not delivered).",
-  "story": "Lindenau has two protected oaks within 150 metres of each other, and this is the one that hangs over a brick wall. Its crown spreads across Demmeringstrasse and above the parked cars, wide enough that in May, when the new leaves are still the acid green of spring, it is the brightest thing in the street.\n\nLeipzig listed it as Naturdenkmal number 7 under resolution 601/96, the same 1996 decision that protects the villa trees of Karl-Heine-Strasse. The register draws a protected zone 20 metres across around it. That is all the paperwork holds: no girth, no height, no age.\n\nThe setting does the rest. This is a street of tenement blocks, parked cars and graffiti, and a single oak with a crown that size turns it, for one stretch, into something closer to a village lane. A pedunculate oak can live for many centuries; how much of that this one has used up is not recorded.\n\nIt makes a short walk with its neighbour on Karl-Ferlemann-Strasse, round the corner to the north-west. A third protected tree, a wych elm at Demmeringstrasse 77, stands behind a fence close by and cannot be visited.\n\nNobody has dated this oak. If you know when it went in, or have measured the trunk, tell us.",
-  "how_to_recognise": "You can recognise it by the wide oak crown hanging over a low brick wall above the parked cars. It stands at Demmeringstrasse 62; the other protected oak is about 150 metres away on Karl-Ferlemann-Strasse."
- },
- {
-  "id": "lpz_011",
-  "name": "The Oak of Karl-Ferlemann-Strasse",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "not documented",
-  "age_basis": "derived",
-  "location": {
-   "address": "Karl-Ferlemann-Strasse 2, 04177 Leipzig",
-   "latitude": 51.33769,
-   "longitude": 12.3264,
-   "neighbourhood": "Lindenau"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 8, Beschluss 601/96)",
-   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stieleiche_Karl-Ferlemann-Straße_2_05.jpg",
-   "https://www.wikidata.org/wiki/Q117683437"
-  ],
-  "access": "Free; stands on a street corner beside the roadway and a lawn strip, seen from the pavement.",
-  "transport": "Lindenau, about 3.5 km west of the centre; stops not verified",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "Naturdenkmal Stieleiche Karl-Ferlemann-Straße 2 05.jpg",
-   "license": "CC BY-SA 4.0",
-   "author": "Pixelkaktus",
-   "date": "2017-05-07",
-   "geotag": "51.337517, 12.326148 (about 20 m from register coordinate)"
-  },
-  "verify_notes": "Naturdenkmal ND 8, protected zone 20 m. Broad round-crowned oak on an open street corner with a green strip; the clearest \"stand and look up\" setting of the Lindenau trees. Register coordinate 51.33769,12.32640. Alive: Commons photos 2017; lifecheck NONE. Walkable pair with lpz_010 (about 150 m apart). No girth or age.",
-  "story": "Of Leipzig's protected street oaks, this is the one with room to be seen. It stands on an open corner of Karl-Ferlemann-Strasse with a strip of lawn beside it and open ground around it, so the crown has grown the way an oak grows when it is left alone: broad, round and almost symmetrical, on a single dark trunk.\n\nThat matters more than it sounds. Several of the protected trees on this page stand behind villa railings or garden walls, and you see them in pieces. Here you can stand back across the street and take in the whole tree in one look, which is the closest thing in Lindenau to the field oak of a village green.\n\nLeipzig listed it as Naturdenkmal number 8 in 1996, under resolution 601/96, with a protected zone 20 metres across. The register stops there. It gives no girth, no height and no age, and no other source we have found fills the gap.\n\nThe second protected oak of this short walk stands about 150 metres away on Demmeringstrasse, its crown hanging over a brick wall: two oaks, two very different settings, five minutes apart on foot.\n\nNobody has dated this tree. If you know its history, or measure the trunk at chest height, tell us.",
-  "how_to_recognise": "You can recognise it by the broad, round crown on a single dark trunk, standing free on an open corner beside a strip of lawn. It stands at Karl-Ferlemann-Strasse 2, about 150 metres from the Demmeringstrasse oak."
- },
- {
-  "id": "lpz_012",
-  "name": "The Peace Oak of Wahren",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "not documented",
-  "age_basis": "derived",
-  "location": {
-   "address": "Am Hirtenhaus / corner Rittergutsstrasse, 04159 Leipzig",
-   "latitude": 51.37274,
-   "longitude": 12.32244,
-   "neighbourhood": "Wahren"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 92, Beschluss 1036/97 range)",
-   "https://commons.wikimedia.org/wiki/File:File:92_Friedenseiche,_Am_Hirtenhaus_2.JPG"
-  ],
-  "access": "Free; stands on public ground at a street corner and road junction (photo shows pavement, signposts and road).",
-  "transport": "Wahren, about 5 km north-west of the centre; stops not verified",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "92 Friedenseiche, Am Hirtenhaus 2.JPG",
-   "license": "CC BY-SA 4.0",
-   "author": "Edlerin",
-   "date": "2015-06-21",
-   "geotag": "51.372569, 12.322278 (about 20 m from register)"
-  },
-  "verify_notes": "Official name in the Leipzig list is \"Friedenseiche\" (peace oak), ND 92, protected zone 21 m; the list gives no planting year, so any link to the 1871 peace is NOT stated by the source: the writer must not claim it (name only). Large upright oak at a junction. Register coordinate 51.37274,12.32244. Alive: Commons photo June 2015; lifecheck NONE. No girth or age.",
-  "story": "Leipzig's register calls this tree the Friedenseiche, the peace oak, and then says nothing about which peace. German towns and villages planted peace oaks to mark the end of more than one war, usually on a square or at a crossroads where everybody would pass them. This one stands exactly there, at the junction of Am Hirtenhaus and Rittergutsstrasse in Wahren, but the city's list gives no planting year and no occasion, and we will not supply one.\n\nThe street names do some of the remembering. Am Hirtenhaus means at the herdsman's house, and Rittergutsstrasse is named for a manor estate: the vocabulary of the village Wahren was before Leipzig absorbed it in 1922. The oak now stands among apartment blocks, signposts and a parked car or two, tall and upright on a single straight trunk, the oldest-looking thing at the crossing by a distance.\n\nThe city protects it as Naturdenkmal number 92, with a zone 21 metres across. There is no recorded girth, height or age, so its title is the only history on file.\n\nThat makes it the most answerable question on this page. Somebody in Wahren may know when the peace oak went in and what it was planted for, from a parish chronicle, a plaque that has since gone, or a grandparent. If that is you, tell us, and the page will say it.",
-  "how_to_recognise": "You can recognise it by the tall, upright oak on a single straight trunk at the road junction, beside the street signs. It stands on the corner of Am Hirtenhaus and Rittergutsstrasse in Wahren."
- },
- {
-  "id": "lpz_013",
-  "name": "The Plane Tree of Leibnizstrasse",
-  "species": "London Plane (Platanus x acerifolia)",
-  "age_estimate": "not documented",
-  "age_basis": "derived",
-  "location": {
-   "address": "Leibnizstrasse 12, 04105 Leipzig",
-   "latitude": 51.34416,
-   "longitude": 12.36446,
-   "neighbourhood": "Nordvorstadt (Gohlis-Sued border)"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 138, Beschluss 1522/99 range)",
-   "https://commons.wikimedia.org/wiki/File:File:138_gemeine_Platane,_Leibnitz-Str._12.JPG",
-   "https://www.wikidata.org/wiki/Q138747856"
-  ],
-  "access": "Free to view; the trunk stands at the edge of the pavement in front of a villa-lined street (Commons photo shows trunk at the street frontage). Do not enter the property.",
-  "transport": "Nordvorstadt, about 1.5 km north of the Markt; stops not verified",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "138 gemeine Platane, Leibnitz-Str. 12.JPG",
-   "license": "CC BY-SA 4.0",
-   "author": "Edlerin",
-   "date": "2015-06-05"
-  },
-  "verify_notes": "Naturdenkmal ND 138, protected zone 27 m across, one of the wider planes in the list. Huge cream-barked trunk flush with the street edge in the photo. Wikidata Q138747856 gives the same coordinate. A second plane, ND 131 (Gustav-Adolf-Strasse 19, 22 m zone), is listed about 65 m to the west at 51.34417,12.36352: same walk, not delivered because its photo was not viewed as public-side. Alive: Commons photo June 2015; lifecheck NONE. Flagged: register only and old photo; pin from list coordinate.",
-  "story": "The trunk of this plane stands flush with the street edge on Leibnizstrasse, so the pavement walks right past a pale, flaking column you cannot miss. Look up and the crown keeps going: it rises above the villa roofline on both sides, and Leipzig's register gives it a protected zone 27 metres across, one of the wider zones any plane on the city's list is granted.\n\nPlanes are the great survivors of nineteenth-century streets. They tolerate compacted soil, cut roots and soot, and they shed their bark in plates, which is why the trunk reads as a patchwork of cream, olive and grey. Those are the habits that keep a tree like this going on a street where the villas beside it are still being scaffolded and restored.\n\nThe city designated it Naturdenkmal number 138 in the late 1990s. The record says nothing about when it was planted, how tall it is or how big the trunk has grown.\n\nIt has company. A second protected plane, number 131, is listed about 65 metres to the west at Gustav-Adolf-Strasse 19. We have not confirmed that it can be seen from the street, so look for it on the way rather than counting on it.\n\nThe trunk itself stands at the front of a private property: view it from the pavement and do not go in. If you measure its girth, tell us.",
-  "how_to_recognise": "You can recognise it by the huge pale, flaking trunk standing flush with the pavement in front of the villas. It stands at Leibnizstrasse 12; a second listed plane is about 65 metres west on Gustav-Adolf-Strasse."
- },
- {
-  "id": "lpz_014",
-  "name": "The Lebanon Oak of Schoenau",
-  "species": "Lebanon Oak (Quercus libani)",
-  "age_estimate": "not documented",
-  "age_basis": "derived",
-  "location": {
-   "address": "Ludwigsburger Strasse 2, 04209 Leipzig",
-   "latitude": 51.32325,
-   "longitude": 12.29056,
-   "neighbourhood": "Schoenau"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 91, Beschluss 1036/97 range)",
-   "https://commons.wikimedia.org/wiki/File:File:Leipzig_Naturdenkmal_Nr._91_2024-05-04.jpg"
-  ],
-  "access": "Free; the Commons photo shows the tree beside an open footpath in public green (no fence). Access not documented by a source: flagged.",
-  "transport": "Schoenau, about 7 km west of the centre; stops not verified",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "Leipzig Naturdenkmal Nr. 91 2024-05-04.jpg",
-   "license": "CC BY-SA 4.0",
-   "author": "Vinaceus",
-   "date": "2024-05-04"
-  },
-  "verify_notes": "A Lebanon oak (Quercus libani, native to the Levant), an unusual species for a Leipzig street list, ND 91, protected zone 18 m. The list gives no age or girth. Alive: Commons photo of 4 May 2024, the freshest dated photo found for any candidate; lifecheck NONE. Register coordinate 51.32325,12.29056 (list). Far west and not in the Plagwitz cluster; outlier by about 5 km from the others. Pin approximate; photo shows it in a green path corridor.",
-  "story": "Lebanon oak belongs on the slopes of the Levant and the Taurus mountains, not on the western edge of Leipzig. Yet here it is, a natural monument in Schoenau, standing in a green corridor beside a footpath, and an unusual name to find on a German city's list of protected trees.\n\nUp close it does not look like the oaks you know, and the leaves are why. Instead of the rounded lobes of a pedunculate oak, Quercus libani carries long, narrow leaves edged with small bristle-tipped teeth, closer at first glance to a sweet chestnut than to anything a German child would draw as an oak. Its acorns take two summers to ripen rather than one.\n\nLeipzig protects it as Naturdenkmal number 91, with a protected zone 18 metres across. The city's list says nothing about who planted a Levantine oak on this spot, or when, and it gives no girth or height either. A photograph taken in May 2024 shows it in full leaf, which makes it the most recently confirmed tree of this group.\n\nIt is also the outlier: out on the city's western edge, kilometres from the Plagwitz villa trees, so this is a separate trip rather than part of the walk. Look at the leaves first, then at any oak you pass on the way back, and the difference is obvious.\n\nIf you know how this tree got here, tell us.",
-  "how_to_recognise": "You can recognise it by its long, narrow, chestnut-like leaves with bristle-tipped teeth, unlike any native oak. It stands beside the footpath in the green strip at Ludwigsburger Strasse 2 in Schoenau."
- },
- {
-  "id": "lpz_015",
-  "name": "The Medlar-Leaved Oak of Martin-Luther-Ring",
-  "species": "Sessile Oak, medlar-leaved cultivar (Quercus petraea \"Mespilifolia\")",
-  "age_estimate": "not documented",
-  "age_basis": "derived",
-  "location": {
-   "address": "Martin-Luther-Ring, 04109 Leipzig",
-   "latitude": 51.33549,
-   "longitude": 12.37067,
-   "neighbourhood": "Zentrum"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 1, Beschluss 601/96)",
-   "https://commons.wikimedia.org/wiki/File:Traubeneiche_Lzg._M.-Luther-R.jpg"
-  ],
-  "access": "Free; a street tree on the public pavement of the inner ring road.",
-  "transport": "Inner city, a few hundred metres from the Markt; stops not verified",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "Traubeneiche Lzg. M.-Luther-R.jpg",
-   "license": "CC BY-SA 3.0",
-   "author": "Martin Geisler",
-   "date": "2014-08-11"
-  },
-  "verify_notes": "Listed first (ND 1) among the city Naturdenkmale, protected zone 14 m. Register species is the unusual cultivar Quercus petraea Mespilifolia (leaves like a medlar); the Commons photo shows a tall tree on the kerb but the cultivar cannot be judged from it, so species is as the register states. Register coordinate 51.33549,12.37067. Alive: Commons photo Aug 2014 only; lifecheck NONE. Flagged: register only, old photo, cultivar unverified from the photo.",
-  "story": "Number 1 on Leipzig's list of natural monuments is not a giant in a park. It is a street tree on the inner ring road, a few hundred metres from the Markt, with trams and traffic running past its roots.\n\nIt is also stranger than it looks from the kerb. The register records it as Quercus petraea \"Mespilifolia\", a cultivar of the sessile oak whose leaves are long and narrow, shaped more like a medlar's than an oak's, with little or none of the lobing that makes an oak leaf an oak leaf. Seen from the pavement, the crown looks finer and lighter than an ordinary oak's. We have taken the cultivar from the register; nobody we know of has checked it leaf in hand, and if you do, tell us what you find.\n\nThe road it stands on carries history of its own. Leipzig's Ring is the road the Monday demonstrators of autumn 1989 made famous, tens of thousands of people walking the circuit of the old town week after week. Nobody has dated this oak, so whether it was already standing that October is a question the record cannot answer.\n\nThe city protects it with a zone 14 metres across, small beside the 33 metres of the Dufourstrasse oak, which is what a pavement leaves room for. Its girth and height are unrecorded. A tape measure would settle the first.",
-  "how_to_recognise": "You can recognise it by its long, narrow leaves, unlike the lobed leaves of an ordinary oak, on a tall tree at the kerb. It stands on the pavement of Martin-Luther-Ring, the inner ring road near the Markt."
- },
- {
-  "id": "lpz_016",
-  "name": "The Hungarian Oak of Erich-Zeigner-Allee",
-  "species": "Hungarian Oak (Quercus frainetto)",
-  "age_estimate": "not documented",
-  "height_m": 33,
-  "location": {
-   "address": "Erich-Zeigner-Allee 43 a, 04229 Leipzig",
-   "latitude": 51.32849,
-   "longitude": 12.33936,
-   "neighbourhood": "Plagwitz"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 59, Beschluss 601/96, 33 m)",
-   "https://www.wikidata.org/wiki/Q139832100",
-   "https://commons.wikimedia.org/wiki/File:220806_Leipzig_ND-59.jpg",
-   "https://www.inaturalist.org/observations/320483302"
-  ],
-  "access": "Street address in Plagwitz; whether the trunk stands on public ground or in a courtyard is not established. View from the street; do not enter private yards.",
-  "transport": "Plagwitz, about 4 km west of the centre; stops not verified. About 1.2 km from the Karl-Heine-Strasse cluster.",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "220806 Leipzig ND-59.jpg",
-   "license": "CC BY-SA 4.0",
-   "author": "Vinaceus",
-   "date": "2022-08-06"
-  },
-  "story": "The tallest tree in Leipzig's register of natural monuments is not a native. It is a Hungarian oak, a species from south-east Europe, and the city lists it at 33 metres.\n\nNo beech, plane or lime on that list is given a bigger figure. And it does not stand in a park or a villa garden. It stands at an ordinary street address on Erich-Zeigner-Allee in Plagwitz, the canal-cut district west of the centre that Leipzig built for its factories. The city protects it as natural monument number 59, under council resolution 601/96.\n\nHungarian oaks are rare this far north, and the leaves give one away: big, and cut into many deep, regular lobes, nothing like the small rounded leaves of the oaks Saxony grew up with. It was photographed in August 2022, and an observation was logged at the spot in October 2025, so as far as anyone has recorded, it is still up there.\n\nWhat it has lived through, we cannot honestly tell you. Nobody has published its age or the size of its trunk. If you have stood beside it with a tape measure, or know when it was planted, tell us.\n\nOne caution on the pin. It marks the register's point and has not been checked against aerial imagery. Whether the trunk stands on public ground or in a yard behind number 43a is not established either, so look from the street and stay out of private yards.",
-  "how_to_recognise": "You can recognise it by its leaves, big and cut into many deep, regular lobes, unlike a native oak's, on a crown the register puts at 33 metres. It stands at Erich-Zeigner-Allee 43a in Plagwitz; look from the street."
- },
- {
-  "id": "lpz_017",
-  "name": "The Honey Locust of Plagwitz Town Hall",
-  "species": "Honey Locust (Gleditsia triacanthos)",
-  "age_estimate": "not documented",
-  "height_m": 13,
-  "location": {
-   "address": "Alte Strasse, at the former Rathaus Plagwitz, 04229 Leipzig",
-   "latitude": 51.32956,
-   "longitude": 12.34063,
-   "neighbourhood": "Plagwitz"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 66, Beschluss 601/96, 13 m)",
-   "https://www.wikidata.org/wiki/Q139832163",
-   "https://commons.wikimedia.org/wiki/File:220806_Leipzig_ND-66.jpg",
-   "https://www.inaturalist.org/observations/207735634"
-  ],
-  "access": "Stands on Alte Strasse beside the old Plagwitz town hall; visible from the pavement (street position per register title, not independently checked).",
-  "transport": "Plagwitz, about 3.5 km west of the centre; stops not verified. About 250 m from the Karl-Heine-Strasse beech and pagoda tree.",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "220806 Leipzig ND-66.jpg",
-   "license": "CC BY-SA 4.0",
-   "author": "Vinaceus",
-   "date": "2022-08-06"
-  },
-  "story": "Outside the old town hall of Plagwitz, Leipzig protects a tree from the other side of the Atlantic: a honey locust, a North American species that arms its trunk with branched thorns.\n\nIt is not a giant. The city's register gives it 13 metres, well under half the height of the tallest tree on the same list. It is natural monument number 66, protected under council resolution 601/96. What it has instead is an address. The former Rathaus Plagwitz is a relic of the years when Plagwitz was a town of its own, the industrial suburb that grew up along the canals west of Leipzig before the city absorbed it. The tree stands on Alte Strasse beside that building, on the pavement side as far as the register's description goes.\n\nNobody has recorded when it was planted, so whether it saw the council of an independent Plagwitz come and go is anybody's guess, and we will not pretend otherwise. No girth has been published either. If you know its story, tell us.\n\nThe leaves are the thing to look at up close: fine and feathery, split into dozens of small leaflets, so the crown throws a light, broken shade rather than the solid shadow of a lime. It was photographed in 2022 and logged again at the spot in April 2024.\n\nIt also makes an easy start to a short walk. The copper beech and the Japanese pagoda tree on Karl-Heine-Strasse are about 250 metres away.",
-  "how_to_recognise": "You can recognise it by its fine, feathery leaves, split into many small leaflets, on a tree of about 13 metres. It stands on Alte Strasse beside the former Plagwitz town hall."
- },
- {
-  "id": "lpz_018",
-  "name": "The Wych Elm of Demmeringstrasse",
-  "species": "Wych Elm (Ulmus glabra)",
-  "age_estimate": "not documented",
-  "height_m": 14,
-  "location": {
-   "address": "Demmeringstrasse 77, 04177 Leipzig",
-   "latitude": 51.33512,
-   "longitude": 12.32398,
-   "neighbourhood": "Lindenau"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 6, Flurstueck 636c, Beschluss 601/96, 14 m)",
-   "https://www.wikidata.org/wiki/Q117667861",
-   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Bergulme_02.jpg",
-   "https://www.inaturalist.org/observations/308037929"
-  ],
-  "access": "Commons description says it stands on the plot at Demmeringstrasse 77, so possibly behind a fence; view from the street. Access not verified.",
-  "transport": "Lindenau, about 4.5 km west of the centre; stops not verified. About 150-250 m from lpz_010 (Oak of Demmeringstrasse) and lpz_011.",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "Naturdenkmal Bergulme 02.jpg",
-   "license": "CC BY-SA 4.0",
-   "author": "Pixelkaktus",
-   "date": "2017-05-07"
-  },
-  "story": "Dutch elm disease has been killing Europe's elms since the last century, wych elms among them, which is why a living, protected one in a Lindenau street is worth the detour.\n\nLeipzig lists it as natural monument number 6, on the plot at Demmeringstrasse 77, under council resolution 601/96. The register gives it 14 metres and nothing else: no girth, no age, no reason recorded beyond the designation itself. So we will not invent one. How old it is, and whether it was already standing when the epidemic swept through, nobody has published. If you know, tell us.\n\nWhat we can say is that it is alive. It was photographed in full leaf in May 2017, and an observation was logged at the spot in August 2025.\n\nWych elms are the elms of hillsides and riverbanks, and they are easy to tell apart once you have handled a leaf: big, rough as fine sandpaper on top, lopsided where it meets the stalk, and sometimes ending in a few extra points. In early spring, before the leaves, the twigs carry clusters of flat, papery seeds.\n\nIt is also the third tree on a short walk. The Oak of Demmeringstrasse, its crown hanging over a brick wall, and the Oak of Karl-Ferlemann-Strasse both stand about 200 metres away.\n\nThe pin is the register's point and has not been checked on aerial imagery. The elm may stand behind a fence, so look from the street.",
-  "how_to_recognise": "You can recognise it by its big leaves, rough as sandpaper on top and lopsided at the base, on a tree of about 14 metres. It stands on the plot at Demmeringstrasse 77, maybe behind a fence, 200 m from the Oak of Demmeringstrasse."
- },
- {
-  "id": "lpz_020",
-  "name": "The Copper Beech of Kirschbergstrasse",
-  "species": "Copper Beech (Fagus sylvatica 'Purpurea')",
-  "age_estimate": "not documented",
-  "height_m": 23,
-  "location": {
-   "address": "Kirschbergstrasse 48, 04159 Leipzig",
-   "latitude": 51.36455,
-   "longitude": 12.34853,
-   "neighbourhood": "Moeckern"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 64, Flurstueck 144a, Beschluss 601/96, 23 m)",
-   "https://www.wikidata.org/wiki/Q139832383",
-   "https://commons.wikimedia.org/wiki/File:64_Blutbuche_Kirschbergstr.48.JPG"
-  ],
-  "access": "Street address in Moeckern; whether it stands on public ground or inside a plot is not established. View from the street.",
-  "transport": "Moeckern, about 3.5 km north-west of the centre; stops not verified.",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "64 Blutbuche Kirschbergstr.48.JPG",
-   "license": "CC BY-SA 4.0",
-   "author": "Edlerin",
-   "date": "2015-06-21"
-  },
-  "story": "This copper beech is 23 metres tall on Leipzig's register, and the most recent proof we can find that it still stands is a photograph taken in June 2015.\n\nThat is the honest state of it. The city protects the tree as natural monument number 64, at Kirschbergstrasse 48 in Moeckern, under council resolution 601/96. The register gives a height and nothing more: no girth, no age, no date of planting. And nobody seems to have photographed or logged it since. Beeches are not immortal, and a decade is a long silence. If you walk past, tell us whether it is still there, and if you know how old it is, tell us that too.\n\nMoeckern is a name in the history books. On 16 October 1813, on the first day of the Battle of Leipzig, Prussian and French troops fought over the village street by street, and it changed hands several times. Nobody claims this beech saw it, and with no age on record nobody could.\n\nWhat it would show you is colour. A copper beech is a European beech with purple leaves, and at 23 metres this one is a big example of a tree people usually plant for the effect: the leaves open a translucent red in spring, darken almost to black by summer and turn copper before they fall.\n\nThe pin is the register's point only, and whether the tree stands on public ground or inside the plot is not established. Look from the street.",
-  "how_to_recognise": "You can recognise it by its dark purple leaves on a crown the register puts at 23 metres. It stands at Kirschbergstrasse 48 in Moeckern, possibly inside the plot, so look from the street."
- },
- {
-  "id": "lpz_021",
-  "name": "The Ginkgo of Kleinzschocher",
-  "species": "Ginkgo (Ginkgo biloba)",
-  "age_estimate": "not documented",
-  "age_basis": "derived",
-  "girth_cm": 357,
-  "height_m": 24,
-  "location": {
-   "address": "Volkspark Kleinzschocher, Kantatenweg 31 (Rittergut Kleinzschocher), 04229 Leipzig",
-   "latitude": 51.314319,
-   "longitude": 12.329781,
-   "neighbourhood": "Kleinzschocher"
-  },
-  "verified_sources": [
-   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34417507&outputFormat=application/json",
-   "https://www.baumkunde.de/baumregister/8482-ginkgo_im_volkspark_kleinzschocher_in_leipzig/",
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
-   "https://www.wikidata.org/wiki/Q117663121",
-   "https://de.wikipedia.org/wiki/Rittergut_Kleinzschocher",
-   "https://www.inaturalist.org/observations/395825130"
-  ],
-  "official_register": {
-   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal tree N78815",
-   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34417507&outputFormat=application/json"
-  },
-  "access": "Free, public park (Volkspark Kleinzschocher); baumkunde.de lists it as publicly accessible (visited 13.09.2026). No opening hours published.",
-  "transport": "Kleinzschocher, beside the Taborkirche; nearest stop and walking time not verified (Leipzig tram/bus network)",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "Naturdenkmal (Leipzig, listed in de.wikipedia Liste der Naturdenkmale in Leipzig; Wikidata Q117663121) known as 'Ginkgo im Rittergut'. City cadastre record N78815 (export of 2026-10-14, gefaellt_am empty so not felled): girth 357 cm (st_umfang), trunk diameter 114 cm, height 24 m, crown 10 m. baumkunde.de (treetrip) measured girth 3.44 m, height 20.0 m on 30.06.2021, male specimen, two crown supports (Kronensicherungen). Girth figures differ by 13 cm between sources (survey vs cadastre), recorded both. Cadastre planting year 1866 is a class estimate for ND trees, not a planting record: age not documented, no basis for a derived age beyond 'old for a ginkgo'. Alive: iNaturalist observation 2026-08-30 within lifecheck radius (https://www.inaturalist.org/observations/395825130) and baumkunde visit 13.09.2026. Pin is the cadastre point (tree-level survey point, identical to Wikidata), kept approximate until a photo or aerial crown confirms it. Photo in reach: Wikidata P18 on Q117663121 is a Commons set named 'Naturdenkmal Ginkgo im Rittergut Kleinzschocher-Kantatenweg 31 Leipzig' (files -2 shows the ND sign). Photo pass must check licence. FOLDED 2026-10-14: lpz_019 (Ginkgo of Kleinzschocher Manor, never published, held on access) is the same tree: identical coordinate and the same Wikidata item Q117663121. Its manor history (de.wikipedia Rittergut Kleinzschocher: first mentioned 1350, Bauernkantate 30 Aug 1742, Tauchnitz 1848), the city list height of 15 m (ND 18, Beschluss 601/96) and the white elm ND 17 about 45 m away come from lpz_019's notes; the access question is answered here (public Volkspark). Height disputed: list 15 m, baumkunde 2021 20.0 m, cadastre 24 m.",
-  "story": "Three records give this ginkgo three heights: 15 metres, 20 and 24. Leipzig's list of natural monuments says 15. A survey by the tree site baumkunde.de, made on 30 June 2021, measured 20. The city's own tree cadastre says 24. The trunk is less contested, 3.44 metres round in that survey and 3.57 in the cadastre, which makes it a big ginkgo by either figure.\n\nIt grows on the old grounds of the Rittergut Kleinzschocher, a manor first mentioned in 1350 and now the Volkspark Kleinzschocher, beside the Taborkirche. Bach's Peasant Cantata had its first performance at this manor on 30 August 1742, and the publisher Christian Bernhard Tauchnitz bought the estate in 1848. None of those dates belongs to the tree. No source says when it was planted or by whom, and we will not borrow a date from the house.\n\nIt is a male tree, so it drops none of the rancid-smelling seeds that female ginkgos are known for. Two braces now hold its crown together. A naturalist logged it in August 2026 and the survey site visited again that September, so it is still standing.\n\nGinkgo is the last species of a lineage otherwise known from fossils. In November the fan-shaped leaves turn yellow and fall within days of each other. A second protected tree, a European white elm, stands about 45 metres away on the same grounds.\n\nNobody has dated this ginkgo. If you know when it went in, tell us.",
-  "how_to_recognise": "You can recognise it by the fan-shaped leaves and the two braces in its crown, on a trunk about 3.5 metres round. It stands on the old manor grounds in Volkspark Kleinzschocher, about 45 metres from the protected white elm.",
-  "best_time": {
-   "months": [
-    11
-   ],
-   "kind": "autumn colour",
-   "label": "November, when the fan-shaped leaves turn yellow and fall within days of each other"
-  }
- },
- {
-  "id": "lpz_022",
-  "name": "The Elm of Poelitzstrasse",
-  "species": "European White Elm (Ulmus laevis)",
-  "age_estimate": "not documented",
-  "age_basis": "derived",
-  "girth_cm": 291,
-  "height_m": 19,
-  "location": {
-   "address": "Poelitzstrasse 32, 04155 Leipzig",
-   "latitude": 51.358188,
-   "longitude": 12.355995,
-   "neighbourhood": "Gohlis-Sued"
-  },
-  "verified_sources": [
-   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34457488&outputFormat=application/json",
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
-   "https://www.wikidata.org/wiki/Q117663021"
-  ],
-  "official_register": {
-   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal tree N78917",
-   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34457488&outputFormat=application/json"
-  },
-  "access": "Free, street tree on the public pavement of Poelitzstrasse (cadastre area 'Strassengruen'). No opening hours apply.",
-  "transport": "Gohlis-Sued street tree; nearest stop and walking time not verified (Leipzig tram/bus network)",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "Naturdenkmal ND 159 (protected since 1999 per Wikidata Q117663021; protected surroundings 15 m radius, Flurstueck 461c per de.wikipedia list). City cadastre record N78917: Ulmus laevis, girth 291 cm, height 19 m, area Strassengruen, gefaellt_am empty in the export of 2026-10-14. SPECIES CONFLICT: de.wikipedia list and a Commons file call it Feldulme (Ulmus minor); Wikidata and the city cadastre say Flatterulme (Ulmus laevis). Cadastre is the owner of the tree, so Ulmus laevis used, conflict flagged. Cadastre planting year 1896 is a class estimate, not a planting record: age not documented. Alive: lifecheck NONE (no recent public observation); only evidence is the cadastre listing it unfelled today, hence flagged 'register only'. Pin is the cadastre tree point, matching Wikidata to ~5 m; kept approximate. Photo in reach: Wikidata P18 on Q117663021 is Commons 'Ulmus minor Mill 01.JPG' and '02' (the second shows the sign); photo pass must check that it is this tree and the licence. Wych/European white elm survivors are rare after Dutch elm disease (Flatterulme is more resistant), but no source in hand states that for this tree.",
-  "story": "The records cannot agree on what this tree is. Leipzig's list of natural monuments, as transcribed on Wikipedia, calls it a field elm. The city's tree cadastre and Wikidata call it a European white elm. We have gone with the cadastre, the city's own record of its trees, but the question is open.\n\nEither way it is an elm that made the list as a street tree. It stands on the pavement of Poelitzstrasse in Gohlis-Sued, 2.91 metres round the trunk and 19 metres tall by the cadastre's figures, and it has been protected as natural monument number 159 since 1999, with a protected zone 15 metres around it.\n\nElms are the trees Europe lost. Dutch elm disease has killed most of the continent's big field elms since the last century, while white elms have held out better. What this one came through, nobody has written down.\n\nThe record is thin in other ways. No source gives an age; the cadastre's planting year of 1896 is an estimate for an age class, not a record of this tree. And the latest sign of life is the cadastre still listing it as standing in October 2026. Nobody has posted a photograph or an observation of it lately.\n\nAnyone passing can settle both questions. White elm seeds hang on long stalks with a fringe of fine hairs; field elm seeds sit close to the twig. Tell us which you see, and that it is still there.",
-  "how_to_recognise": "You can recognise it by its size, an elm 2.91 metres round and 19 metres tall growing out of the pavement. It stands outside Poelitzstrasse 32 in Gohlis-Sued."
- },
- {
-  "id": "lpz_023",
-  "name": "The Oak of Probstheida Village Green",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "not documented",
-  "age_basis": "derived",
-  "girth_cm": 374,
-  "height_m": 19,
-  "location": {
-   "address": "Dorfanger Probstheida at the Immanuelkirche, Russenstrasse, 04289 Leipzig",
-   "latitude": 51.306533,
-   "longitude": 12.428878,
-   "neighbourhood": "Probstheida"
-  },
-  "verified_sources": [
-   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34408928&outputFormat=application/json",
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
-   "https://www.wikidata.org/wiki/Q109644239"
-  ],
-  "official_register": {
-   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal tree N78812",
-   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34408928&outputFormat=application/json"
-  },
-  "access": "Free, on the public village green (Dorfanger) beside the Immanuelkirche. No opening hours apply.",
-  "transport": "Probstheida village green on Russenstrasse; nearest stop and walking time not verified (Leipzig tram/bus network)",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "Naturdenkmal tree on the Dorfanger Probstheida (cadastre area 'Gruen- und Parkanlagen', 'Dorfanger Probstheida (Kirche)'). City cadastre record N78812: Quercus robur, girth 374 cm, trunk diameter 119 cm, height 19 m, crown 20 m, gefaellt_am empty in the export of 2026-10-14. Wikidata Q109644239 'Quercus robur, Russenstrasse Leipzig' carries the same position. Cadastre planting year 1886 is a class estimate, not a planting record: age not documented. The wider Dorfanger is also described by BUND Leipzig (campaign for traffic calming, 2024) as a protected Naturdenkmal village green, one of few historic ones left in the city. Alive: lifecheck NONE; only the cadastre listing it unfelled today, hence flagged 'register only'. Pin is the cadastre tree point, approximate; the green is too large to count as a small named site, so no location_site is set. Photo in reach: Wikidata P18 is Commons 'Leipzig Stieleiche Russenstrasse.jpg'; photo pass must check it shows this oak and the licence.",
-  "story": "This oak is wider than it is tall. Leipzig's tree cadastre gives it a crown 20 metres across on a height of 19, the shape an oak takes when nothing crowds it.\n\nNothing does, because it stands on a village green. The Dorfanger of Probstheida is the open heart of what was a village before it became a Leipzig district, beside the Immanuelkirche on Russenstrasse. The local branch of the conservation group BUND describes the green as a protected natural monument and one of the few historic village greens left in the city, and in 2024 it campaigned to calm the traffic around it.\n\nThe trunk is 3.74 metres round and 1.19 metres through, by the city's own measurement. That is a serious oak, but a measurement is not a date. The cadastre files a planting year of 1886, and that figure is an estimate for a whole age class rather than a record of this tree, so we leave it out.\n\nProbstheida was fought over on 18 October 1813, the decisive day of the Battle of Leipzig. Whether this oak was already on the green that day, nobody has written down.\n\nThe city still lists it as standing in October 2026, and that is the latest word: nobody has posted a photograph of it lately. If you are on Russenstrasse, tell us how it looks, and if you know when it was planted, tell us that too.",
-  "how_to_recognise": "You can recognise it by its crown, about 20 metres across and wider than the tree is tall, on a trunk 3.74 metres round. It stands on the Probstheida village green beside the Immanuelkirche on Russenstrasse."
- },
- {
-  "id": "lpz_024",
-  "name": "The Japanese Pagoda Tree of Flossplatz",
-  "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
-  "age_estimate": "about 150 years",
-  "age_basis": "derived",
-  "age_min": 120,
-  "age_max": 200,
-  "girth_cm": 355,
-  "height_m": 25,
-  "location": {
-   "address": "Flossplatz, corner of Riemannstrasse, 04107 Leipzig",
-   "latitude": 51.33135,
-   "longitude": 12.37168,
-   "neighbourhood": "Zentrum-Sued"
-  },
-  "verified_sources": [
-   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34789416&outputFormat=application/json",
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
-   "https://www.baumkunde.de/baumregister/8614-schnurbaum_zentrum_sued_leipzig/",
-   "https://commons.wikimedia.org/wiki/File:Jap._Schnurbaum_Lzg._Flo%C3%9Fpl.jpg"
-  ],
-  "official_register": {
-   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 100, tree N78220",
-   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34789416&outputFormat=application/json"
-  },
-  "access": "Free, on the public city square Flossplatz (cadastre area 'Gruen- und Parkanlagen'); baumkunde.de lists it as publicly accessible. No opening hours.",
-  "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "photo_candidate": {
-   "file": "File:Jap. Schnurbaum Lzg. Floßpl.jpg",
-   "url": "https://commons.wikimedia.org/wiki/File:Jap._Schnurbaum_Lzg._Flo%C3%9Fpl.jpg",
-   "license": "CC BY-SA 3.0",
-   "author": "Geisler Martin",
-   "taken": "2014-08-11",
-   "note": "Caption 'Japanischer Schnurbaum am Flossplatz Ecke Riemannstrasse', named for this tree, no geotag; seen via API metadata only, pixels not viewed"
-  },
-  "verify_notes": "Naturdenkmal ND 100 'Japanischer Schnurbaum am Flossplatz' (Sophora japonica L.), designated by city council resolution 1036/97 (de.wikipedia list; Leipzig Stadtrecht Satzung 8.8.4 lists it). Not among the list's dead or repealed trees. City cadastre N78220 (export 2026-10-16, record updated 2026-10-16, gefaellt_am empty): girth 355 cm, trunk diameter 113 cm, height 25 m, crown 20 m. List gives 23 m. baumkunde.de register 8614 (observer treetrip, measured 23.03.2022): girth 3.52 m, height 25 m, 'Baumveteran', vital, old callused wounds, several crown supports installed; 'possibly planted around 1873', age 150 (observer estimate, not a record). Cadastre planting year 1866 is a class estimate. Age therefore derived and broad, from register estimates only; no planting document. Pin: cadastre tree point 51.33135,12.37168 and the observer GPS (baumkunde, 51.33138,12.37170) agree within 4 m on a single large tree on a small square, so confirmed. OSM node 'ND100 Japanischer Schnurbaum' sits on the identical coordinate but was evidently imported from the list, so it is not counted as independent. Alive: cadastre unfelled in 2026, baumkunde observation 2022 vital; lifecheck hit was only a panorama of the square (2025), not this tree.",
-  "recognise_facts": "Single tall pagoda tree with propped crown on the Flossplatz at the Riemannstrasse corner; trunk 3.5 m round.",
-  "story": "Nobody knows when this pagoda tree was planted, but the two best guesses land seven years apart. The tree survey site baumkunde.de, measuring it in March 2022, thought it possibly went in around 1873. Leipzig's tree cadastre files 1866, a year it gives to a whole class of old trees rather than a record of this one. Neither is a document, so the honest age is a range: somewhere between 120 and 200 years.\n\nThe measurements are firmer. The cadastre gives the trunk 3.55 metres round and the crown 20 metres across, on a height of 25 metres. The 2022 survey found 3.52 metres and 25, while the city's list of natural monuments says 23. Leipzig protects it as natural monument number 100, under council resolution 1036/97.\n\nIt stands on the Flossplatz, a small public square south of the old town, at the corner of Riemannstrasse. The survey called it a Baumveteran and found it vital, with old wounds long since callused over and several supports fitted in the crown to hold it together. What it saw of the city's twentieth century, nobody has written down.\n\nDespite the name, the species comes from China. Time a visit for August if you can: that is when it flowers, in loose sprays of cream, at a point in the summer when almost nothing else is in bloom.",
-  "how_to_recognise": "You can recognise it by the supports in its crown and a trunk about 3.5 metres round, the one big pagoda tree on the square. It stands on the Flossplatz at the corner of Riemannstrasse.",
-  "best_time": {
-   "months": [
-    8
-   ],
-   "kind": "flowers",
-   "label": "August, when the crown carries cream flowers and almost nothing else is in bloom"
-  }
- },
- {
-  "id": "lpz_025",
-  "name": "The Oak of Kantatenweg",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "about 200 years",
-  "age_basis": "derived",
-  "age_min": 200,
-  "age_max": 300,
-  "girth_cm": 545,
-  "height_m": 19,
-  "location": {
-   "address": "Kantatenweg 5, 04229 Leipzig (Kleinzschocher)",
-   "latitude": 51.316171,
-   "longitude": 12.330764,
-   "neighbourhood": "Kleinzschocher"
-  },
-  "verified_sources": [
-   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34702517&outputFormat=application/json",
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
-   "https://commons.wikimedia.org/wiki/File:Eiche_Lzg._Kantatenweg_5.JPG",
-   "https://www.openstreetmap.org/node/5607986199"
-  ],
-  "official_register": {
-   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 158, tree N78916",
-   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34702517&outputFormat=application/json"
-  },
-  "access": "Cadastre area 'Staedtische Liegenschaften' (city property), Kantatenweg 039. Whether the oak can be walked up to from the street is not stated by any source; it stands about 220 m from the Kleinzschocher manor ginkgo. OSM has it as a natural=tree 'Baumdenkmal' node. Visit from Kantatenweg.",
-  "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "photo_candidate": {
-   "file": "File:Eiche Lzg. Kantatenweg 5.JPG",
-   "url": "https://commons.wikimedia.org/wiki/File:Eiche_Lzg._Kantatenweg_5.JPG",
-   "license": "CC BY-SA 4.0",
-   "author": "Martin Geisler",
-   "taken": "2018-05-03",
-   "note": "Caption 'Stieleiche am Kantatenweg 5 in Leipzig', no geotag; pixels not viewed"
-  },
-  "verify_notes": "Naturdenkmal ND 158 'Stieleiche Kantatenweg 5', designated by council resolution 1522/99; the de.wikipedia list gives 23 m and coordinate 51.316171,12.330764. Not on the list of dead or repealed trees. City cadastre N78916 (record updated 2026-10-16, gefaellt_am empty): girth 545 cm, trunk diameter 174 cm, height 19 m, crown 24 m; cadastre planting year 1816 is a class estimate only, so age is derived and broad (a girth of 5.4 m on an oak suggests it may be older than the estimate, no source says). Height conflict: list 23 m, cadastre 19 m. Pin: list coordinate, cadastre point (51.316183,12.330927, about 11 m east) and an OSM natural=tree node named 'Baumdenkmal' (51.3161745,12.3308213, 3 m from the list point) agree on one clear crown; confirmed. Cluster: 220 m from the Kleinzschocher ginkgo already live (lpz_021) and ND 17 elm; Volkspark Kleinzschocher is next door. Alive: cadastre unfelled in 2026; lifecheck NONE, so flagged.",
-  "recognise_facts": "Oak 5.4 m round beside Kantatenweg, a few minutes' walk from the Kleinzschocher manor ginkgo.",
-  "story": "A short walk from the Kleinzschocher manor ginkgo stands a much thicker tree: a pedunculate oak 5.45 metres round.\n\nLeipzig's tree cadastre measures the trunk at 1.74 metres through, under a crown 24 metres across. The records disagree on its height. The city's list of natural monuments says 23 metres; the cadastre, updated in October 2026, says 19. Either way the crown spreads wider than the tree stands tall. It has been protected as natural monument number 158 since council resolution 1522/99.\n\nIts age is an estimate with a wide margin. The cadastre files a planting year of 1816, but that is a figure it gives to a whole class of old trees, not a record of this one. So the age here is a band, 200 to 300 years, rather than a birthday. No document says when the oak went in or who planted it, and we will not borrow a date from the manor down the road.\n\nIt stands at Kantatenweg 5 on city-owned ground, about 220 metres from the ginkgo and next to the Volkspark Kleinzschocher, which makes the two an easy pair on one walk. No source says whether you can go right up to the trunk, so look from Kantatenweg.\n\nThe latest word on its health is the city still listing it as standing. Nobody has posted a photograph of it lately. If you pass, tell us how it looks, and if you know its history, tell us that too.",
-  "how_to_recognise": "You can recognise it by the trunk, about 5.4 metres round and far thicker than the ginkgo's, under a crown 24 metres across. It stands at Kantatenweg 5, about 220 metres from the Kleinzschocher manor ginkgo."
- },
- {
-  "id": "lpz_026",
-  "name": "The Starkeiche of Rosental",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "350 to 600 years, disputed",
-  "age_basis": "source",
-  "age_min": 350,
-  "age_max": 600,
-  "girth_cm": 669,
-  "height_m": 27,
-  "location": {
-   "address": "Rosental floodplain forest, path 'Zum Wackelturm', 04105 Leipzig",
-   "latitude": 51.355873,
-   "longitude": 12.349381,
-   "neighbourhood": "Zentrum-Nordwest"
-  },
-  "verified_sources": [
-   "https://www.monumentale-eichen.de/sachsen/2-kategorie/leipzig/",
-   "https://www.baumkunde.de/baumregister/5221-starke_eiche_im_auwald_in_leipzig/",
-   "https://www.openstreetmap.org/search?query=Starkeiche%20im%20Rosental"
-  ],
-  "access": "Free, public Rosental park and floodplain forest (baumkunde.de: publicly accessible). Stands in dense woodland just off the path 'Zum Wackelturm', hard to see in summer leaf. An information board in OSM names it 'Die Starkeiche im Rosental - Leipzigs aeltester Baum'.",
-  "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "Widely called Leipzig's oldest and stoutest tree. Two independent surveys. (1) Rainer Lippert, monumentale-eichen.de, measured 2017, page updated 22 June 2017: girth at breast height 6.65 m, at ground 9.50 m, 7.20 m at 1 m, 5.96 m at 2.5 m, height about 27 m, crown about 20 m; trunk runs unbranched for over 10 m; one side has a 1 m wide opening rising over 5 m, inside fully hollow and soot-blackened; age 'about 350 years', he notes that the 600 years in circulation seems far too high; vitality 'still ok' (2017); some dead branches in the crown. (2) baumkunde.de register 5221, observers incl. treetrip, JoachimSt, HerrMoritz: girth 6.69 m measured 1 Dec 2021, height 27 m, age 350, lightning marks and fire traces, last visit 1 March 2024, last register update 20 Sept 2024, condition 'krank, kleine Krone, womoeglich zuruecksetzend' (sick, small crown, perhaps retrenching). Age conflict: 350 (surveys) vs 600 (press and Stadtforst circulation); the page should give the range. Not a Naturdenkmal and no city register record found, so no official_register. Pin: Lippert coordinate 51.355873,12.349381 and baumkunde GPS (51.355861,12.349389) agree within 2 m, and an OSM information board for the tree stands 4 m away (51.3558011,12.3493625); confirmed. Alive: seen March 2024 (baumkunde), but declining; flagged. No Commons photograph found (geosearch 200 m and name search empty); a reader or iNaturalist photo is needed. An adjacent Stadtforst poster (leipziger-auwald.de, Starkbaumkartierung) names other Rosental oaks of 6.50 m and 6.02 m girth: unnamed veterans nearby, lead for a pass with the poster in hand.",
-  "story": "The board beside this oak calls it Leipzig's oldest tree, and the age that travels with it is 600 years. The two surveys that put a tape round it think that is far too high.\n\nRainer Lippert, who records Germany's monumental oaks, measured it in 2017: 6.65 metres round at chest height, 9.50 at the ground, about 27 metres tall, the trunk running without a branch for more than ten metres. He put it at about 350 years and wrote that the 600 in circulation seems far too high. The tree register baumkunde.de measured 6.69 metres in December 2021 and also says 350. So the age sits somewhere between 350 and 600 years, with the people holding tape measures at the lower end. Even that lower figure means it was already old when Napoleon's armies fought for the city in 1813.\n\nThe trunk shows what it has been through. One side has an opening a metre wide that rises more than five metres, and behind it the tree is hollow and blackened with soot. Lightning marks and traces of fire are on record. At the last recorded visit, in March 2024, the register called it sick, with a small crown and perhaps retrenching, an old oak drawing its crown in.\n\nIt stands in the floodplain forest of the Rosental, just off the path Zum Wackelturm, and in summer the woodland hides it well. Go when the leaves are down.",
-  "how_to_recognise": "You can recognise it by the hollow trunk, about 6.7 metres round, with a metre-wide opening rising over five metres. It stands just off the Zum Wackelturm path in the Rosental woodland, beside its information board.",
-  "best_time": {
-   "months": [
-    12,
-    1,
-    2
-   ],
-   "kind": "bare silhouette",
-   "label": "winter, when the leaves are down and the woodland stops hiding the trunk"
-  }
- },
- {
-  "id": "lpz_027",
-  "name": "The Steinlinde of Plausig",
-  "species": "Small-leaved Lime (Tilia cordata)",
-  "age_estimate": "about 160 years",
-  "age_basis": "derived",
-  "age_min": 150,
-  "age_max": 170,
-  "girth_cm": 390,
-  "height_m": 11,
-  "location": {
-   "address": "Plaussiger Dorfstrasse beside the parsonage, Grundstrasse 18, 04349 Leipzig",
-   "latitude": 51.392086,
-   "longitude": 12.455898,
-   "neighbourhood": "Plaussig"
-  },
-  "verified_sources": [
-   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34672107&outputFormat=application/json",
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
-   "https://commons.wikimedia.org/wiki/File:Plaussig_Steinlinde-01.jpg",
-   "https://www.wikidata.org/wiki/Q117712502"
-  ],
-  "official_register": {
-   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 145, tree N78908",
-   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34672107&outputFormat=application/json"
-  },
-  "access": "Cadastre area 'Staedtische Liegenschaften', Plaussiger Dorfstrasse; stands in the village street beside the parsonage. Free to see from the street; access to the plot not stated.",
-  "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_candidate": {
-   "file": "File:Plaussig Steinlinde-01.jpg",
-   "url": "https://commons.wikimedia.org/wiki/File:Plaussig_Steinlinde-01.jpg",
-   "license": "CC BY-SA 4.0",
-   "author": "Radler59",
-   "taken": "2017-05-26",
-   "geotag": "51.392162,12.455674 (about 17 m from the cadastre point)",
-   "note": "Caption names the tree; pixels not viewed"
-  },
-  "verify_notes": "Naturdenkmal ND 145 'Steinlinde Plaussig', council resolution 1522/99, Wikidata Q117712502; not on the list of dead or repealed trees. Cadastre N78908 (record updated 2026-10-16, gefaellt_am empty): Tilia cordata, girth 390 cm, trunk diameter 124 cm, height 11 m (kept low, heavily topped), crown 8 m. Planting dates conflict: Commons caption by the photographer says 'gepflanzt 1868' (beside the parsonage); cadastre class estimate says 1861; no planting document seen, so both are weak. The local name 'Steinlinde' is the register's own and no source seen explains it. Pin: cadastre point and the photo geotag within 17 m on a village street, not on the trunk, so approximate. Alive: cadastre unfelled in 2026, photo 2017; lifecheck not run, flagged. I could not find a second text source for the tree beyond the register, Wikidata and the Commons caption (the search summary that mentioned a Wikipedia Plaussig article could not be confirmed on the fetched article, which does not mention the lime).",
-  "story": "This lime has a trunk 3.90 metres round and stands only 11 metres tall. It has been cut back hard and kept low, so what you meet is nearly all girth.\n\nTwo dates compete for its planting. The photographer who put it on Wikimedia Commons in 2017 captioned it as planted in 1868, beside the parsonage. Leipzig's tree cadastre files 1861, but that is a year it gives to a whole class of old trees, not a record of this one. Nobody we have found has seen a planting document, so somewhere between 150 and 170 years is as close as it gets.\n\nIts name is a puzzle too. The city registers it as the Steinlinde, the stone lime, and no source we have read says why. If you know, tell us.\n\nPlaussig lies on Leipzig's north-eastern edge, and the lime stands in its village street beside the parsonage, by Grundstrasse 18. The cadastre measures the trunk at 1.24 metres through under a crown just 8 metres across. It has been protected as natural monument number 145 since council resolution 1522/99, and the city still lists it as standing.\n\nThe ground it stands on is city property, but no source says whether the plot is open, so look from the street. Come in July if you can. Small-leaved limes flower later than most limes, and the flowers are scented.",
-  "how_to_recognise": "You can recognise it by the short, hard-cut crown on a trunk 3.9 metres round, more girth than height. It stands in Plaussig's village street beside the parsonage, by Grundstrasse 18.",
-  "best_time": {
-   "months": [
-    7
-   ],
-   "kind": "flowers",
-   "label": "July, when the small-leaved lime flowers, later than most limes"
-  }
- },
- {
-  "id": "lpz_028",
-  "name": "The Red Oak of Viertelsweg",
-  "species": "Northern Red Oak (Quercus rubra)",
-  "age_estimate": "about 140 years",
-  "age_basis": "derived",
-  "age_min": 120,
-  "age_max": 160,
-  "girth_cm": 331,
-  "height_m": 19,
-  "location": {
-   "address": "Viertelsweg at the corner of Heinrich-Budde-Strasse, 04157 Leipzig",
-   "latitude": 51.371303,
-   "longitude": 12.373622,
-   "neighbourhood": "Gohlis-Mitte"
-  },
-  "verified_sources": [
-   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34771140&outputFormat=application/json",
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
-   "https://commons.wikimedia.org/wiki/File:H_Buddensweg_63.JPG"
-  ],
-  "official_register": {
-   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 63, tree N78850",
-   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34771140&outputFormat=application/json"
-  },
-  "access": "Free, public city green at a street corner (cadastre area 'Gruen- und Parkanlagen', Viertelsweg/Heinrich-Budde-Strasse).",
-  "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_candidate": {
-   "file": "File:H Buddensweg 63.JPG",
-   "url": "https://commons.wikimedia.org/wiki/File:H_Buddensweg_63.JPG",
-   "license": "CC BY-SA 3.0 de",
-   "author": "Edlerin",
-   "taken": "2015-06-15",
-   "note": "Caption 'Leipzig, Naturdenkmal, Roteiche, Viertelsweg/Heinrich-Buddestr'; no geotag; pixels not viewed"
-  },
-  "verify_notes": "Naturdenkmal ND 63 'Roteiche Viertelsweg/Ecke Heinrich-Budde-Strasse', council resolution 601/96; not on the list of dead or repealed trees. Cadastre N78850 (record updated 2026-10-16, gefaellt_am empty): girth 331 cm, trunk diameter 105 cm, height 19 m (list says 25 m), crown 14 m. Cadastre planting year 1886 is a class estimate, age derived and broad. A non-native species (North American) that is large for its kind. Pin: list and cadastre point agree (same place within metres); an OSM node 'ND63 Roteiche' sits on the identical list coordinate and was evidently imported from it, so approximate. Alive: cadastre unfelled in 2026; lifecheck NONE, so flagged, register only.",
-  "story": "The oak on this Gohlis street corner comes from North America, and in October it gives itself away. A northern red oak's leaves turn a rich red in autumn, where the native oaks of Saxony go yellow and brown.\n\nLeipzig protects it as natural monument number 63, under council resolution 601/96, on a patch of public green where Viertelsweg meets Heinrich-Budde-Strasse. The city's tree cadastre measures the trunk at 3.31 metres round and 1.05 metres through, under a crown 14 metres across. Its height depends on which record you read: 19 metres in the cadastre, 25 in the city's list of natural monuments. For a species planted far from home, that is a big tree.\n\nNobody has published when it went in. The cadastre's planting year of 1886 is a figure it gives to a whole class of trees rather than a record of this one, which puts the oak at roughly 120 to 160 years and no closer. How an American oak came to be planted on this corner is not written down either. If you know, tell us.\n\nThe leaves are worth a look in any month. They are bigger than a native oak's and cut into pointed lobes that end in fine bristles, where the oaks Saxony grew up with have rounded ones.\n\nThe latest word on it is the city still listing it as standing, and nobody has posted a photograph of it lately. If you pass the corner, tell us how it looks.",
-  "how_to_recognise": "You can recognise it by the big, pointed, bristle-tipped leaves of an American red oak, which turn red in October. It stands on the green at the corner of Viertelsweg and Heinrich-Budde-Strasse.",
-  "best_time": {
-   "months": [
-    10
-   ],
-   "kind": "autumn colour",
-   "label": "October, when the leaves turn a rich red, unlike any native oak"
-  }
- },
- {
-  "id": "lpz_029",
-  "name": "The Oaks of Doelitz Torhaus",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "not documented",
-  "age_basis": "derived",
-  "girth_cm": 570,
-  "height_m": 25,
-  "location": {
-   "address": "Helenenstrasse by the Torhaus Doelitz, 04279 Leipzig",
-   "latitude": 51.28749,
-   "longitude": 12.38919,
-   "neighbourhood": "Doelitz-Doesen"
-  },
-  "verified_sources": [
-   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34678265&outputFormat=application/json",
-   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34736314&outputFormat=application/json",
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
-   "https://commons.wikimedia.org/wiki/File:Stieleiche_Lzg._Helenenstr.jpg"
-  ],
-  "official_register": {
-   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 114, trees N78884 and N78872",
-   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34678265&outputFormat=application/json"
-  },
-  "access": "The larger oak N78872 stands in city green (cadastre area 'Gruen- und Parkanlagen', Helenenstrasse/Torhaus) beside the Doelitz war memorial and the Torhaus (a museum, Helenenstrasse 24); the ND-designated oak is 36 m away. Whether the second oak is reachable from the public green is not stated; view from Helenenstrasse.",
-  "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_candidate": {
-   "file": "File:Stieleiche Lzg. Helenenstr.jpg",
-   "url": "https://commons.wikimedia.org/wiki/File:Stieleiche_Lzg._Helenenstr.jpg",
-   "license": "CC BY-SA 3.0",
-   "author": "Geisler Martin",
-   "taken": "2014-04-23",
-   "note": "Caption 'Stieleiche in der Naehe der Helenenstrasse in Leipzig'; no geotag; unsettled which of the two oaks it shows; pixels not viewed"
-  },
-  "verify_notes": "Folded pair of cadastre oaks 36 m apart. ND 114 'Stieleiche Helenenstrasse' (council resolution 1142/98, Flurstueck 115/4, protected radius 21 m, list coordinate 51.28749,12.38919, not on the dead list) matches cadastre N78884 (girth 550 cm, diameter 175 cm, height 23 m, crown 14 m, 51.287454,12.389199, 4 m from the list point). The second cadastre oak N78872 (girth 570 cm, diameter 182 cm, height 25 m, crown 19 m, 51.287766,12.38873) is the larger and stands in the green by the Torhaus; both have cadastre planting year 1816, a class estimate that cannot be right for both and is not recorded as an age. Earlier lead noted the war memorial register mentions a Friedenseiche planted 1872 plus two later oaks, so identity of the trunks is unsettled and a 5.7 m girth does not fit an 1872 planting. Which trunk is worth the visit: the larger N78872. Pin approximate (cadastre points; OSM node 'ND114 Stieleiche' sits on the identical list coordinate, imported). Alive: cadastre unfelled in 2026; the lifecheck RECENT hit (iNaturalist 2026-04-26) is a dandelion at the spot, not evidence for the oak, so flagged, register only.",
-  "story": "Two big oaks stand 36 metres apart by the Torhaus in Doelitz, and the one Leipzig protects is not the bigger of the two.\n\nThe protected oak is natural monument number 114, the Stieleiche Helenenstrasse, designated under council resolution 1142/98. The city's tree cadastre gives it 5.50 metres round and 23 metres tall. Its neighbour, in the public green beside the Torhaus and the Doelitz war memorial, measures 5.70 metres round and 25 metres tall, with a crown 19 metres across against the other's 14. That neighbour is the trunk worth the walk.\n\nTheir history is tangled. The cadastre gives both the same planting year, 1816, a figure it assigns to a whole class of old trees, so it is a record for neither. A register of the war memorial mentions a peace oak planted in 1872 and two later oaks, but nobody has settled which trunk is which, and an oak 5.70 metres round is hard to square with an 1872 planting. So we give no age. If you know the story of these trees, tell us.\n\nThe Torhaus at Helenenstrasse 24 is now a museum. The bigger oak stands in open city green beside it. Whether the protected oak can be reached from that green is not recorded, so view it from Helenenstrasse. The pin marks the protected tree; the bigger one is about 36 metres away.\n\nThe city still lists both as standing.",
-  "how_to_recognise": "You can recognise it as the larger of two oaks 36 metres apart, 5.7 metres round, in the green beside the war memorial. It stands by the Torhaus Doelitz on Helenenstrasse; the pin marks the smaller, protected oak."
- }
 ]
