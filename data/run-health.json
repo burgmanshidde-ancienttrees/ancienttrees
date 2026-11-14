@@ -2,38 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-09T08:29:47+00:00",
-   "date": "2026-09-09",
-   "run_id": "34329160559",
-   "minutes": 65.0,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 260,
-   "denials": 34,
-   "denials_source": "permission_denials: Bash(curl), Bash(echo), Bash(for), Bash(git), Bash(mkdir), Bash(nohup), Bash(python3), Bash(rm), Bash(test)",
-   "ended": "success",
-   "tokens": 7545443,
-   "claims_held": [],
-   "commits": 9,
-   "cities_touched": 3,
-   "cities": [
-    {
-     "city": "oahu",
-     "trees": 3
-    },
-    {
-     "city": "brisbane",
-     "trees": 0
-    },
-    {
-     "city": "the-hague",
-     "trees": 0
-    }
-   ],
-   "trees": 3,
-   "logged": false
-  },
-  {
    "started": "2026-09-09T11:53:21+00:00",
    "date": "2026-09-09",
    "run_id": "34347849052",
@@ -21027,6 +20995,44 @@
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-11-14T00:36:55+00:00",
+   "date": "2026-11-14",
+   "run_id": "43535305604",
+   "minutes": 25.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 101,
+   "denials": 2,
+   "denials_source": "permission_denials: Bash(cd && sed ; ? ; ? ...), Bash(cd ; cat ; import ; for ...)",
+   "ended": "success",
+   "tokens": 216163,
+   "claims_held": [
+    "leipzig"
+   ],
+   "commits": 15,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "fort-lauderdale",
+     "trees": 6
+    },
+    {
+     "city": "chicago",
+     "trees": 3
+    },
+    {
+     "city": "miami",
+     "trees": 2
+    },
+    {
+     "city": "leipzig",
+     "trees": 1
+    }
+   ],
+   "trees": 12,
    "logged": true
   }
  ],
