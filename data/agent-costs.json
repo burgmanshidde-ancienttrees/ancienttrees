@@ -2,15 +2,64 @@
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
     "2026-11-14": [
-      {"date": "2026-11-14", "kind": "verify", "target": "miami", "tokens": 110000, "trees": 0, "note": "2 Fairchild trees delivered (mia_013, 014), approximate pins, paid entry; staged unwritten because Miami paid share would pass a third"},
-      {"date": "2026-11-14", "kind": "scout", "target": "stratford-upon-avon", "tokens": 60000, "trees": 0, "note": "still stalled, retried 2026-11-14, Ancient Yew Group Avon PDFs untried"},
-      {"date": "2026-11-14", "kind": "verify", "target": "chicago", "tokens": 85000, "trees": 3, "note": "10 Cook County champion rows delivered, 7 were already live under other ids; 3 new"},
-      {"date": "2026-11-14", "kind": "write", "target": "chicago", "tokens": 106000, "trees": 3, "note": "3 stories merged (chi_048, 049, 051)"}
+      {
+        "date": "2026-11-14",
+        "kind": "verify",
+        "target": "miami",
+        "tokens": 110000,
+        "trees": 0,
+        "note": "2 Fairchild trees delivered (mia_013, 014), approximate pins, paid entry; staged unwritten because Miami paid share would pass a third"
+      },
+      {
+        "date": "2026-11-14",
+        "kind": "scout",
+        "target": "stratford-upon-avon",
+        "tokens": 60000,
+        "trees": 0,
+        "note": "still stalled, retried 2026-11-14, Ancient Yew Group Avon PDFs untried"
+      },
+      {
+        "date": "2026-11-14",
+        "kind": "verify",
+        "target": "chicago",
+        "tokens": 85000,
+        "trees": 3,
+        "note": "10 Cook County champion rows delivered, 7 were already live under other ids; 3 new"
+      },
+      {
+        "date": "2026-11-14",
+        "kind": "write",
+        "target": "chicago",
+        "tokens": 106000,
+        "trees": 3,
+        "note": "3 stories merged (chi_048, 049, 051)"
+      }
     ],
     "2026-11-13": [
-      {"date": "2026-11-13", "kind": "verify", "target": "sintra", "tokens": 65000, "trees": 0, "note": "Every register row already judged or duplicate; one Monserrate eucalyptus lead without girth or spot. Sintra walled 48h."},
-      {"date": "2026-11-13", "kind": "verify", "target": "braga", "tokens": 88000, "trees": 4, "note": "Turiz oak plus three Pindela trees; 5 of 10 candidates were duplicates of live trees"},
-      {"date": "2026-11-13", "kind": "write", "target": "braga", "tokens": 84000, "trees": 4, "note": "4 stories merged; app-only under APP_FIRST so place copy left alone"}
+      {
+        "date": "2026-11-13",
+        "kind": "verify",
+        "target": "sintra",
+        "tokens": 65000,
+        "trees": 0,
+        "note": "Every register row already judged or duplicate; one Monserrate eucalyptus lead without girth or spot. Sintra walled 48h."
+      },
+      {
+        "date": "2026-11-13",
+        "kind": "verify",
+        "target": "braga",
+        "tokens": 88000,
+        "trees": 4,
+        "note": "Turiz oak plus three Pindela trees; 5 of 10 candidates were duplicates of live trees"
+      },
+      {
+        "date": "2026-11-13",
+        "kind": "write",
+        "target": "braga",
+        "tokens": 84000,
+        "trees": 4,
+        "note": "4 stories merged; app-only under APP_FIRST so place copy left alone"
+      }
     ],
     "2026-11-12": [
       {
@@ -223,19 +272,123 @@
     "2026-11-04": [
       {
         "date": "2026-11-04",
-        "kind": "verify",
-        "target": "salt-lake-city",
-        "tokens": 90000,
+        "kind": "write",
+        "target": "washington-dc+new-york",
+        "tokens": 190000,
         "trees": 0,
-        "note": "5 University of Utah trees verified (slc_010 to slc_014) from the Utah Big Tree Register plus the campus tour, approximate pins, 3 flagged. Held for the pace."
+        "note": "20 stories (5 DC, 15 NYC) written into data/research/*-verified.json, not merged because the 24h pace cap was full; one duplicate (nyc_122 = nyc_025) moved to leads. Token figure is an estimate."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "photo",
+        "target": "held US and UK trees (all US/UK builders)",
+        "tokens": 320000,
+        "trees": 0,
+        "note": "Photo pass on the trees held for the pace, viewed by the session itself on contact sheets (no agent). 395 photo-less held trees asked: photo_hunt.candidates_for (Commons, iNat, Openverse), Geograph near-search for UK (CC BY-SA 2.0, keyless syndicator), and a tight iNat pass (genus within 25 m). 29 approved (US 14, UK 15), 3 held after reading their notes (John Knox's Yew 1981 slide, New Place mulberry may be the 1969 tree, Austin Central Market oak trunk unproven). Held US trees with a photo 13 -> 27 of 309, UK 41 -> 56 of 138. About 11k tokens per approved photo. No pins upgraded."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "philadelphia (west + center city)",
+        "tokens": 120085,
+        "trees": 0,
+        "note": "5 verified and held (phl_005..009): Bartram yellowwood, Woodlands zelkova, Laurel Hill cutleaf linden, Hobson St scholar tree, Washington Square sycamore. All free, approximate, one source. Woodlands elms all dead, Moon Tree and clone gone, Lady Petre pear unconfirmed. Overpass unreachable."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "tucson + tubac",
+        "tokens": 137400,
+        "trees": 9,
+        "note": "UA Campus Arboretum GIS gives per-tree points with heritage and champion flags. Tubac and Tumacacori nothing: the orchard was replanted in 2007."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "tucson follow-up (UA flagged accessions)",
+        "tokens": 122869,
+        "trees": 5,
+        "note": "tus_010..014. The jacaranda and guajillo national-champion claims rest on a GIS comment only: leads."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "sedona + flagstaff + prescott",
+        "tokens": 193575,
+        "trees": 5,
+        "note": "Prescott 3, Flagstaff 1, Sedona 1. Hotshots juniper and Skull Valley cottonwood have no pin: leads."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "santa-fe",
+        "tokens": 150781,
+        "trees": 3,
+        "note": "All flagged, all approximate. NM Big Tree rows for the county are private or dead."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "albuquerque",
+        "tokens": 146755,
+        "trees": 1,
+        "note": "Tight Grove only. The national champion cottonwood is private; bosque stands are not single trees."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "phoenix",
+        "tokens": 146350,
+        "trees": 2,
+        "note": "Phoenix proper none. One tree each in Scottsdale and Glendale, under their own place."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "denver + boulder",
+        "tokens": 174753,
+        "trees": 6,
+        "note": "Boulder 5 from the city's notable-tree story map, Denver 1."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "denver follow-up (Fairmount)",
+        "tokens": 93544,
+        "trees": 0,
+        "note": "Wall: one numbered map with no key, no champions, no coordinates."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "philadelphia (northwest: morris, wissahickon, germantown)",
+        "tokens": 118496,
+        "trees": 0,
+        "note": "2 at Morris (phl_020 weeping beech held for paid share, phl_021 wingceltis held: unfindable). phl_004 alive (Apr 2024). Free sites named nothing placeable; Andorra Great Beech dying since 2021. Stop the Germantown houses angle."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "philadelphia day trips (tyler, scott, haverford)",
+        "tokens": 116601,
+        "trees": 0,
+        "note": "3 at Tyler Arboretum, Media (mdp_001..003), over 30 min by transit so its own place. Scott Bender oak gone 2007, pendant linden lost 2025 storm. Haverford blocks fetches; its old oaks need a browser session."
       },
       {
         "date": "2026-11-04",
         "kind": "write",
-        "target": "salt-lake-city+cardiff+oahu+new-york-2/3/4/5",
-        "tokens": 200000,
+        "target": "philadelphia+media-pennsylvania",
+        "tokens": 163140,
         "trees": 0,
-        "note": "15 stories and recognition lines (how_to_recognise), 3 best_time. Merge dry run of 18 trees (incl. slc_007 to 009) failed only the pace: 43 in 24h against 25, so none committed. Merge script was out/tmp/merge_2026_11_04.py (keep how_to_recognise as written)."
+        "note": "9 stories (phl_005..009, phl_020, mdp_001..003) plus place copy in us-philadelphia-places.json; held in scripts/build_us_philadelphia.py for the pace."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "write",
+        "target": "winchester+cambridge+oxford+canterbury+stratford-upon-avon (READY leads)",
+        "tokens": 120000,
+        "trees": 0,
+        "note": "14 READY leads read, 2 verified from the owner's own pages and written, held for the pace (25/25 in 24 h): cam_010 single-leaf nut pine (CUBG, champion 11.8 m, storm 2000) and oxf_007 pagoda tree of West Walk (University Parks no. 14302, planted 1888, 3.43 m girth 2025), appended to cambridge/oxford-verified.json for build_uk_south.py, intros grown and trimmed under 100 words. Winchester 0 of 5 (one-source trail, ATI-only yew, no sizes): no city. Canterbury 2 and Stratford 1 fail access or sourcing; Cambridge tulip tree and Atlas cedar, Oxford Harcourt and Balliol scions held. Leads annotated."
       }
     ],
     "2026-11-03": [
@@ -2223,7 +2376,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -9423,7 +9576,7 @@
         "brief_wrong": false
       },
       {
-        "target": "_famous-france refill, batch Forest (Senonches/Réno-Valdieu)",
+        "target": "_famous-france refill, batch Forest (Senonches/R\u00e9no-Valdieu)",
         "kind": "verify",
         "tokens": 95000,
         "trees": 0,
@@ -9436,7 +9589,7 @@
         "kind": "verify",
         "tokens": 61000,
         "trees": 1,
-        "note": "4 candidates: Platane de Branféré verified, 1 blocked (not a living tree), 2 leads",
+        "note": "4 candidates: Platane de Branf\u00e9r\u00e9 verified, 1 blocked (not a living tree), 2 leads",
         "wasted": 0,
         "brief_wrong": false
       },
@@ -9454,7 +9607,7 @@
         "kind": "verify",
         "tokens": 175000,
         "trees": 2,
-        "note": "3 candidates: Ramolleux and Tronjoly verified, Chêne des Partisans blocked (fell 1926)",
+        "note": "3 candidates: Ramolleux and Tronjoly verified, Ch\u00eane des Partisans blocked (fell 1926)",
         "wasted": 0,
         "brief_wrong": false
       },
@@ -10134,7 +10287,7 @@
         "kind": "verify",
         "tokens": 50000,
         "trees": 2,
-        "note": "Verified Hrádecký dub and Buk u rybníčku (second sources found); Českolipský buk lesní and Buk v Jindřichovickém zámeckém parku still one source short, left as leads with resolved village-match questions and a noted 3-tree cluster at the Jindřichovice chateau park"
+        "note": "Verified Hr\u00e1deck\u00fd dub and Buk u rybn\u00ed\u010dku (second sources found); \u010ceskolipsk\u00fd buk lesn\u00ed and Buk v Jind\u0159ichovick\u00e9m z\u00e1meck\u00e9m parku still one source short, left as leads with resolved village-match questions and a noted 3-tree cluster at the Jind\u0159ichovice chateau park"
       },
       {
         "target": "los-angeles (4 candidates)",
@@ -10336,7 +10489,7 @@
         "kind": "verify",
         "tokens": 179831,
         "trees": 7,
-        "note": "7 verified (Saint-Jammes Beech France, Old Mulberry Bulgaria, Encina de San Roque Spain, Millennium Oak Ukraine, Kaņepju Oak Latvia, Pálffy Oak Slovakia, Oak of Prince Ulrich Czechia). 1 blocked on access: Plane Tree of Varna, Bulgaria, on private Galatex factory grounds, a source stating access is restricted. Checked and confirmed the Pálffy Oak is outside Bratislava day-trip boundary (37-38km/44-48min), ships as its own place."
+        "note": "7 verified (Saint-Jammes Beech France, Old Mulberry Bulgaria, Encina de San Roque Spain, Millennium Oak Ukraine, Ka\u0146epju Oak Latvia, P\u00e1lffy Oak Slovakia, Oak of Prince Ulrich Czechia). 1 blocked on access: Plane Tree of Varna, Bulgaria, on private Galatex factory grounds, a source stating access is restricted. Checked and confirmed the P\u00e1lffy Oak is outside Bratislava day-trip boundary (37-38km/44-48min), ships as its own place."
       },
       {
         "target": "_tree-of-the-year (7 trees, batch 3)",
@@ -13318,7 +13471,7 @@
         "kind": "enrich",
         "tokens": 44000,
         "trees": 0,
-        "note": "enrichment: all six trees got their Okinawa Prefecture Famous Trees (名木百選) page as register with certification number, plus girth and height where listed (1.3 m assumed, pages do not state it); nah_002's 19.53 m girth omitted as implausible; two trees also municipal/national natural monuments; 2 gaps dead-ended"
+        "note": "enrichment: all six trees got their Okinawa Prefecture Famous Trees (\u540d\u6728\u767e\u9078) page as register with certification number, plus girth and height where listed (1.3 m assumed, pages do not state it); nah_002's 19.53 m girth omitted as implausible; two trees also municipal/national natural monuments; 2 gaps dead-ended"
       },
       {
         "date": "2026-10-13",
@@ -13518,7 +13671,7 @@
         "kind": "enrich",
         "tokens": 66000,
         "trees": 0,
-        "note": "enrichment: City of Potsdam per-tree Naturdenkmal pages for 5 trees (Nr. 15, 19, 29, 31/32, 53); Jägerhof oak girth 566 cm from Ostdeutsches Baumarchiv; Berlin 6-99/B, 6-100/B, 6-105/B girth not found (Senate PDF unread), Jungfernsee pin open; 8 gaps dead-ended"
+        "note": "enrichment: City of Potsdam per-tree Naturdenkmal pages for 5 trees (Nr. 15, 19, 29, 31/32, 53); J\u00e4gerhof oak girth 566 cm from Ostdeutsches Baumarchiv; Berlin 6-99/B, 6-100/B, 6-105/B girth not found (Senate PDF unread), Jungfernsee pin open; 8 gaps dead-ended"
       },
       {
         "date": "2026-10-13",
@@ -14249,128 +14402,6 @@
         "photos_approved": 2,
         "note": "73 verdicts: 2 approved (ber_059 oak, leaves zoomed at full size; wdc_015 Smithsonian elm), 1 held (nyc_022), 70 rejected (cupcakes, kestrels, buildings, other trees); sweep is near exhausted for the roster"
       }
-    ],
-    "2026-11-04": [
-      {
-        "date": "2026-11-04",
-        "kind": "write",
-        "target": "washington-dc+new-york",
-        "tokens": 190000,
-        "trees": 0,
-        "note": "20 stories (5 DC, 15 NYC) written into data/research/*-verified.json, not merged because the 24h pace cap was full; one duplicate (nyc_122 = nyc_025) moved to leads. Token figure is an estimate."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "photo",
-        "target": "held US and UK trees (all US/UK builders)",
-        "tokens": 320000,
-        "trees": 0,
-        "note": "Photo pass on the trees held for the pace, viewed by the session itself on contact sheets (no agent). 395 photo-less held trees asked: photo_hunt.candidates_for (Commons, iNat, Openverse), Geograph near-search for UK (CC BY-SA 2.0, keyless syndicator), and a tight iNat pass (genus within 25 m). 29 approved (US 14, UK 15), 3 held after reading their notes (John Knox's Yew 1981 slide, New Place mulberry may be the 1969 tree, Austin Central Market oak trunk unproven). Held US trees with a photo 13 -> 27 of 309, UK 41 -> 56 of 138. About 11k tokens per approved photo. No pins upgraded."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "verify",
-        "target": "philadelphia (west + center city)",
-        "tokens": 120085,
-        "trees": 0,
-        "note": "5 verified and held (phl_005..009): Bartram yellowwood, Woodlands zelkova, Laurel Hill cutleaf linden, Hobson St scholar tree, Washington Square sycamore. All free, approximate, one source. Woodlands elms all dead, Moon Tree and clone gone, Lady Petre pear unconfirmed. Overpass unreachable."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "verify",
-        "target": "tucson + tubac",
-        "tokens": 137400,
-        "trees": 9,
-        "note": "UA Campus Arboretum GIS gives per-tree points with heritage and champion flags. Tubac and Tumacacori nothing: the orchard was replanted in 2007."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "verify",
-        "target": "tucson follow-up (UA flagged accessions)",
-        "tokens": 122869,
-        "trees": 5,
-        "note": "tus_010..014. The jacaranda and guajillo national-champion claims rest on a GIS comment only: leads."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "verify",
-        "target": "sedona + flagstaff + prescott",
-        "tokens": 193575,
-        "trees": 5,
-        "note": "Prescott 3, Flagstaff 1, Sedona 1. Hotshots juniper and Skull Valley cottonwood have no pin: leads."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "verify",
-        "target": "santa-fe",
-        "tokens": 150781,
-        "trees": 3,
-        "note": "All flagged, all approximate. NM Big Tree rows for the county are private or dead."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "verify",
-        "target": "albuquerque",
-        "tokens": 146755,
-        "trees": 1,
-        "note": "Tight Grove only. The national champion cottonwood is private; bosque stands are not single trees."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "verify",
-        "target": "phoenix",
-        "tokens": 146350,
-        "trees": 2,
-        "note": "Phoenix proper none. One tree each in Scottsdale and Glendale, under their own place."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "verify",
-        "target": "denver + boulder",
-        "tokens": 174753,
-        "trees": 6,
-        "note": "Boulder 5 from the city's notable-tree story map, Denver 1."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "verify",
-        "target": "denver follow-up (Fairmount)",
-        "tokens": 93544,
-        "trees": 0,
-        "note": "Wall: one numbered map with no key, no champions, no coordinates."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "verify",
-        "target": "philadelphia (northwest: morris, wissahickon, germantown)",
-        "tokens": 118496,
-        "trees": 0,
-        "note": "2 at Morris (phl_020 weeping beech held for paid share, phl_021 wingceltis held: unfindable). phl_004 alive (Apr 2024). Free sites named nothing placeable; Andorra Great Beech dying since 2021. Stop the Germantown houses angle."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "verify",
-        "target": "philadelphia day trips (tyler, scott, haverford)",
-        "tokens": 116601,
-        "trees": 0,
-        "note": "3 at Tyler Arboretum, Media (mdp_001..003), over 30 min by transit so its own place. Scott Bender oak gone 2007, pendant linden lost 2025 storm. Haverford blocks fetches; its old oaks need a browser session."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "write",
-        "target": "philadelphia+media-pennsylvania",
-        "tokens": 163140,
-        "trees": 0,
-        "note": "9 stories (phl_005..009, phl_020, mdp_001..003) plus place copy in us-philadelphia-places.json; held in scripts/build_us_philadelphia.py for the pace."
-      },
-      {
-        "date": "2026-11-04",
-        "kind": "write",
-        "target": "winchester+cambridge+oxford+canterbury+stratford-upon-avon (READY leads)",
-        "tokens": 120000,
-        "trees": 0,
-        "note": "14 READY leads read, 2 verified from the owner's own pages and written, held for the pace (25/25 in 24 h): cam_010 single-leaf nut pine (CUBG, champion 11.8 m, storm 2000) and oxf_007 pagoda tree of West Walk (University Parks no. 14302, planted 1888, 3.43 m girth 2025), appended to cambridge/oxford-verified.json for build_uk_south.py, intros grown and trimmed under 100 words. Winchester 0 of 5 (one-source trail, ATI-only yew, no sizes): no city. Canterbury 2 and Stratford 1 fail access or sourcing; Cambridge tulip tree and Atlas cedar, Oxford Harcourt and Balliol scions held. Leads annotated."
-      }
     ]
   },
   "passes": [
@@ -14701,7 +14732,7 @@
       "target": "photo-batch-2 (15 written, 10 kept, 8 new places)",
       "tokens": 175282,
       "trees": 10,
-      "note": "Opus write pass. Four Texas stories wasted: a night run had verified and written the same trees an hour earlier from the LOG's 'next lane' note (session claim was named photo-batch-2, so it could not see them). Häradseken held on access. Five intros lengthened after a Contract C refusal. Parked behind the pace guard (82 in 24 hours). Tokens from the agent's own usage line."
+      "note": "Opus write pass. Four Texas stories wasted: a night run had verified and written the same trees an hour earlier from the LOG's 'next lane' note (session claim was named photo-batch-2, so it could not see them). H\u00e4radseken held on access. Five intros lengthened after a Contract C refusal. Parked behind the pace guard (82 in 24 hours). Tokens from the agent's own usage line."
     },
     {
       "date": "2026-10-22",
@@ -14878,7 +14909,7 @@
       "target": "azores register",
       "tokens": 202092,
       "trees": 0,
-      "note": "Património Classificado dos Açores, exemplares_arboreos layer, 49 records / 58 trees, CC BY 4.0, 36 in Horta."
+      "note": "Patrim\u00f3nio Classificado dos A\u00e7ores, exemplares_arboreos layer, 49 records / 58 trees, CC BY 4.0, 36 in Horta."
     },
     {
       "date": "2026-11-02",
@@ -15481,7 +15512,7 @@
       "target": "santa-cruz-de-tenerife",
       "tokens": 154951,
       "trees": 9,
-      "note": "Santa Cruz municipal register (CC BY): Plaza del Príncipe and San Francisco figs, García Sanabria kapok, tamarind, banyan, two dragons, La Granja red gum and ombú; all pins approximate (Overpass down every attempt). Palmetum young, Viera y Clavijo closed since 2023, baobab planted ~2000; leads in data/leads/santa-cruz-de-tenerife.json."
+      "note": "Santa Cruz municipal register (CC BY): Plaza del Pr\u00edncipe and San Francisco figs, Garc\u00eda Sanabria kapok, tamarind, banyan, two dragons, La Granja red gum and omb\u00fa; all pins approximate (Overpass down every attempt). Palmetum young, Viera y Clavijo closed since 2023, baobab planted ~2000; leads in data/leads/santa-cruz-de-tenerife.json."
     },
     {
       "date": "2026-11-02",
@@ -15489,7 +15520,7 @@
       "target": "tenerife",
       "tokens": 200746,
       "trees": 5,
-      "note": "Cabildo catalogue scouted: ~300 entries, CC0 by the site-wide aviso legal, one page per tree, no dataset (OPEN_DATA_SURVEY.md). Drago de San Antonio, Drago del Cristo, Pino de Buen Paso, Pino del Señor (4 confirmed pins), Hijuela del Botánico drago; about two thirds of the dragos private, Drago de San Francisco dead March 2026."
+      "note": "Cabildo catalogue scouted: ~300 entries, CC0 by the site-wide aviso legal, one page per tree, no dataset (OPEN_DATA_SURVEY.md). Drago de San Antonio, Drago del Cristo, Pino de Buen Paso, Pino del Se\u00f1or (4 confirmed pins), Hijuela del Bot\u00e1nico drago; about two thirds of the dragos private, Drago de San Francisco dead March 2026."
     },
     {
       "date": "2026-11-03",
@@ -16514,6 +16545,14 @@
       "tokens": 183677,
       "trees": 11,
       "note": "11 stories, 10 place blocks."
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "verify",
+      "target": "fort-lauderdale",
+      "tokens": 120000,
+      "trees": 6,
+      "note": "Florida Champion register trees: 2 Hollywood Young Circle baobabs, Plantation Woods Senegal mahogany, 3 Flamingo Gardens; all approximate pins, flagged; token count estimated."
     }
   ]
 }

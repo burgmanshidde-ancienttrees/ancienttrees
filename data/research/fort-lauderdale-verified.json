@@ -1,0 +1,164 @@
+[
+ {
+  "id": "ftl_005",
+  "name": "Young Circle baobab (south end)",
+  "species": "Baobab (Adansonia digitata)",
+  "age_estimate": "not documented",
+  "girth_cm": 1057,
+  "height_m": 16.8,
+  "location": {
+   "address": "ArtsPark at Young Circle, 1 Young Circle, Hollywood, FL 33020",
+   "latitude": 26.01078,
+   "longitude": -80.143,
+   "neighbourhood": "Downtown Hollywood"
+  },
+  "verified_sources": [
+   "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/371",
+   "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1048",
+   "https://www.hollywoodfl.org/Facilities/Facility/Details/ArtsPark-at-Young-Circle-87"
+  ],
+  "official_register": {
+   "name": "Florida Forest Service Champion Tree Register",
+   "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1048"
+  },
+  "access": "Free. ArtsPark at Young Circle is a city park open 7:00 AM to 11:00 PM daily (City of Hollywood page); ADA accessible, street parking.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register: Florida Champion (Broward), circumference 416 in = 1057 cm, height 55 ft = 16.8 m, crown 78x74 ft, measured 2016-02-22 (register date field 1456099200000). Register location text: south end of the park. City of Hollywood page says the park is 'one of the few places in the United States where you can see five Baobab Trees' and calls baobabs 'the second widest species of tree in the world'. Planting date and planter undocumented: nursery page says locally believed 1930s-1940s; monumentaltrees.com (cross-check only) reasons ~1926 from a 1935 photo of the circle (then Harding Circle); a Substack blog argues far older from African growth rates, a blog inference, not used. Do not state an age. Dispute noted, no source names a planter, nothing links J. W. Young. A fountain in the park (Millennium Springs, Ritsuko Taho) is tied to the energy waves of one baobab (search snippet, not fetched; leave out unless seen). Pin = register coordinate in the park, not shown to land on one crown, so approximate. Sits ~115 m from ftl_006 (the park's other registered baobab); both could be told as one stop at Young Circle. Alive: city page current, register measured 2016, lifecheck NONE; 'flagged' thin alive evidence, no dated recent photo seen. One source plus city page (US bar met)."
+ },
+ {
+  "id": "ftl_006",
+  "name": "Young Circle baobab (west side)",
+  "species": "Baobab (Adansonia digitata)",
+  "age_estimate": "not documented",
+  "girth_cm": 864,
+  "height_m": 17.1,
+  "location": {
+   "address": "ArtsPark at Young Circle, 1 Young Circle, Hollywood, FL 33020",
+   "latitude": 26.01142,
+   "longitude": -80.14387,
+   "neighbourhood": "Downtown Hollywood"
+  },
+  "verified_sources": [
+   "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/393",
+   "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1163",
+   "https://www.hollywoodfl.org/Facilities/Facility/Details/ArtsPark-at-Young-Circle-87"
+  ],
+  "official_register": {
+   "name": "Florida Forest Service Champion Tree Register",
+   "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1163"
+  },
+  "access": "Free. ArtsPark at Young Circle is a city park open 7:00 AM to 11:00 PM daily (City of Hollywood page); ADA accessible, street parking.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register: Florida Challenger, circumference 340 in = 864 cm, height 56 ft = 17.1 m, crown 77x65 ft, measured 2016-02-26. Register location text: Young Circle, west side. Same park, ~115 m from ftl_005; the two are the register's two baobabs there and the city page says five stand in the park. Same age dispute as ftl_005, no documented age. Approximate pin on register coordinate. Alive evidence thin (see ftl_005)."
+ },
+ {
+  "id": "ftl_007",
+  "name": "Plantation Woods Senegal mahogany",
+  "species": "Senegal Mahogany (Khaya senegalensis)",
+  "age_estimate": "not documented",
+  "girth_cm": 417,
+  "height_m": 28.0,
+  "location": {
+   "address": "Plantation Woods Park, 5555 Palm Tree Rd, Plantation, FL 33317",
+   "latitude": 26.12881,
+   "longitude": -80.22569,
+   "neighbourhood": "Plantation"
+  },
+  "verified_sources": [
+   "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/701",
+   "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1287",
+   "https://www.plantation.org/Home/Components/FacilityDirectory/FacilityDirectory/28/285"
+  ],
+  "official_register": {
+   "name": "Florida Forest Service Champion Tree Register",
+   "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1287"
+  },
+  "access": "Free. Plantation Woods is a city park open 8:00 AM to dusk, closed Wednesdays until noon (City of Plantation page; confirm with 954-452-2510).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register: Florida Champion, circumference 164 in = 417 cm, height 92 ft = 28 m, crown 126x109 ft (a very wide spreading crown), measured 2024-06-06 (field 1717687709000), so the register is recent. Register location text: next to the restrooms in Plantation Woods Park. Native to West Africa; planted here, no planting date found. No age. Approximate pin on register coordinate, but the restrooms landmark helps the walker. Register only, one source, measured 2024 so alive evidence is recent; flagged 'one source'."
+ },
+ {
+  "id": "ftl_008",
+  "name": "Flamingo Gardens sandbox tree",
+  "species": "Sandbox Tree (Hura crepitans)",
+  "age_estimate": "not documented",
+  "girth_cm": 335,
+  "height_m": 26.8,
+  "location": {
+   "address": "Flamingo Gardens, 3750 S Flamingo Rd, Davie, FL 33330",
+   "latitude": 26.07388,
+   "longitude": -80.30753,
+   "neighbourhood": "Davie"
+  },
+  "verified_sources": [
+   "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/723",
+   "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1294",
+   "https://en.wikipedia.org/wiki/Flamingo_Gardens"
+  ],
+  "official_register": {
+   "name": "Florida Forest Service Champion Tree Register",
+   "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1294"
+  },
+  "access": "Paid entry to Flamingo Gardens: adults about US$24, children 3-11 about US$17 (search summary, not seen on a fetched page; official booking page 403s); open daily 9:30 AM to 5 PM except Thanksgiving and Christmas (summary). Tree stands in the rainforest ridge area.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register: Florida Challenger, circumference 132 in = 335 cm, height 88 ft = 26.8 m, crown 74x72 ft, measured 2024-08-27. Register spelling 'Hurea crepitans' is Hura crepitans; Wikipedia's Flamingo Gardens page lists a 'dynamite tree' in the arboretum, which links to the Sandbox tree article (the species is known for explosive seed pods, from general knowledge, add a source before use). Flamingo Gardens already holds four published trees (the Earpod Tree etc.); this is a different trunk. Approximate pin on register coordinate. Alive: measured 2024. Owner is Flamingo Gardens; Wikipedia says 23 champion trees."
+ },
+ {
+  "id": "ftl_009",
+  "name": "Flamingo Gardens gumbo limbo",
+  "species": "Gumbo Limbo (Bursera simaruba)",
+  "age_estimate": "not documented",
+  "girth_cm": 305,
+  "height_m": 13.7,
+  "location": {
+   "address": "Flamingo Gardens, 3750 S Flamingo Rd, Davie, FL 33330",
+   "latitude": 26.07273,
+   "longitude": -80.30595,
+   "neighbourhood": "Davie"
+  },
+  "verified_sources": [
+   "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/724",
+   "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1295",
+   "https://en.wikipedia.org/wiki/Flamingo_Gardens"
+  ],
+  "official_register": {
+   "name": "Florida Forest Service Champion Tree Register",
+   "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1295"
+  },
+  "access": "Paid entry to Flamingo Gardens (see ftl_008). Open daily 9:30 AM to 5 PM.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register: Florida Challenger, circumference 120 in = 305 cm, height 45 ft = 13.7 m, crown 49x37 ft, measured 2024-08-27. Register location text is only 'Flamingo gardens'; coordinate is the register's. A girth of 3 m on a gumbo limbo is large for the species (its smooth red peeling bark is the species' trait, general knowledge). Approximate pin. Alive: measured 2024."
+ },
+ {
+  "id": "ftl_010",
+  "name": "Flamingo Gardens candlenut tree",
+  "species": "Candlenut (Aleurites moluccanus)",
+  "age_estimate": "not documented",
+  "girth_cm": 229,
+  "height_m": 24.4,
+  "location": {
+   "address": "Flamingo Gardens, 3750 S Flamingo Rd, Davie, FL 33330",
+   "latitude": 26.07296,
+   "longitude": -80.30821,
+   "neighbourhood": "Davie"
+  },
+  "verified_sources": [
+   "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/717",
+   "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1296",
+   "https://en.wikipedia.org/wiki/Flamingo_Gardens"
+  ],
+  "official_register": {
+   "name": "Florida Forest Service Champion Tree Register",
+   "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1296"
+  },
+  "access": "Paid entry to Flamingo Gardens (see ftl_008). Open daily 9:30 AM to 5 PM. Stands in the tropical rainforest area, which a narrated tram ride passes (Wikipedia).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register: Florida Champion, circumference 90 in = 229 cm, height 80 ft = 24.4 m, crown 43x59 ft, measured 2024-08-27. Register location text: tropical rainforest area of Flamingo Gardens. Approximate pin on register coordinate. Alive: measured 2024."
+ }
+]
