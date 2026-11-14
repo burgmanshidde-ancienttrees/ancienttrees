@@ -1,5 +1,9 @@
 # LOG
 
+## 2026-11-14 Fort Lauderdale write pass (session)
+
+- **Fort Lauderdale: 6 trees written and live in the app** (ftl_005 Florida's champion baobab, 10.57 m round, and ftl_006 its challenger, both in ArtsPark at Young Circle, Hollywood, free; ftl_007 the state champion African mahogany in Plantation Woods Park, free, crown 38 m across; ftl_008 a challenger sandbox tree, ftl_009 a challenger gumbo limbo and ftl_010 the state champion candlenut, all three inside Flamingo Gardens, paid). App-only under APP FIRST, outside the pace. The two baobabs stay two entries: separate register records, separate measurements, 115 m apart, no single place to stand. No ages given (register measures size; baobab planting date disputed and stated so). Left out as unsourced: the Millennium Springs fountain, sandbox seed pods, gumbo-limbo bark. Species of ftl_007 set to the canonical "African Mahogany" used in Rio and Singapore. No best_time (no phenology files). Paid share now 7 of 10 (70%, a note); the free trees went some way, more free ones would help. City FAQ still says "all four" are paid at Flamingo Gardens, true of the web page's four. Claim released.
+
 ## 2026-11-14 write pass (session)
 
 - **Miami: 2 trees written and live in the app** (mia_013 Fairchild's Tantancayo, the 1942 planting at the Vine Pergola and a former Florida champion; mia_014 Fairchild's Cannon Ball Tree, the 1938 gift from Jamaica's Hope Gardens). App-only under APP FIRST, so no web page and outside the pace. Species of mia_014 set to the canonical "Cannon Ball Tree" used in Oahu and Singapore. No best_time (no phenology file for either). Paid share: Miami now 6 of 13 behind a ticket (46%, a note), so the next Miami work is free trees. Claim released (forced: the refusal named kyw_001, which is live in key-west.json).
