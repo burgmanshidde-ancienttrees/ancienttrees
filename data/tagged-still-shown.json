@@ -2,8 +2,8 @@
  "generated": "scripts/tagged_shown.py",
  "since": "2026-11-01",
  "google_data_through": "2026-11-13",
- "tagged_pages_shown": 1072,
- "impressions": 4472,
+ "tagged_pages_shown": 1071,
+ "impressions": 4468,
  "clicks": 83,
  "pages": [
   {
@@ -1317,6 +1317,21 @@
    "last_day": "2026-11-09"
   },
   {
+   "path": "/species/cork-oak",
+   "impressions": 19,
+   "clicks": 0,
+   "days": [
+    "2026-11-01",
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-08",
+    "2026-11-09",
+    "2026-11-13"
+   ],
+   "first_day": "2026-11-01",
+   "last_day": "2026-11-13"
+  },
+  {
    "path": "/prague/elm-of-ruzova-street",
    "impressions": 18,
    "clicks": 0,
@@ -1361,20 +1376,6 @@
    ],
    "first_day": "2026-11-01",
    "last_day": "2026-11-13"
-  },
-  {
-   "path": "/species/cork-oak",
-   "impressions": 18,
-   "clicks": 0,
-   "days": [
-    "2026-11-01",
-    "2026-11-02",
-    "2026-11-03",
-    "2026-11-08",
-    "2026-11-09"
-   ],
-   "first_day": "2026-11-01",
-   "last_day": "2026-11-09"
   },
   {
    "path": "/takayama/great-ginkgo-of-hida-kokubunji",
@@ -1995,6 +1996,19 @@
    "last_day": "2026-11-10"
   },
   {
+   "path": "/limmersdorf/tanzlinde-limmersdorf",
+   "impressions": 10,
+   "clicks": 0,
+   "days": [
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-08",
+    "2026-11-13"
+   ],
+   "first_day": "2026-11-02",
+   "last_day": "2026-11-13"
+  },
+  {
    "path": "/parks/fort-canning-park-singapore",
    "impressions": 10,
    "clicks": 0,
@@ -2448,18 +2462,6 @@
    "last_day": "2026-11-08"
   },
   {
-   "path": "/limmersdorf/tanzlinde-limmersdorf",
-   "impressions": 8,
-   "clicks": 0,
-   "days": [
-    "2026-11-02",
-    "2026-11-03",
-    "2026-11-08"
-   ],
-   "first_day": "2026-11-02",
-   "last_day": "2026-11-08"
-  },
-  {
    "path": "/nagoya/great-camphor-of-yakushiji",
    "impressions": 8,
    "clicks": 0,
@@ -2712,18 +2714,6 @@
    ],
    "first_day": "2026-11-02",
    "last_day": "2026-11-09"
-  },
-  {
-   "path": "/istanbul",
-   "impressions": 7,
-   "clicks": 0,
-   "days": [
-    "2026-11-01",
-    "2026-11-02",
-    "2026-11-03"
-   ],
-   "first_day": "2026-11-01",
-   "last_day": "2026-11-03"
   },
   {
    "path": "/ja/kyoto/taiko-weeping-cherry-of-daigo-ji",
