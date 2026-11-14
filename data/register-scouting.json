@@ -120,7 +120,9 @@
    "place": "Stratford-upon-Avon",
    "country": "United Kingdom",
    "status": "stalled",
-   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#313). Wikidata search holds no tree entries for the town. No Stratford-on-Avon District or Warwickshire notable-tree register with open terms seen; TPO points on planning.data.gov.uk (OGL v3.0) are protection, not remarkableness. Woodland Trust Ancient Tree Inventory has no reuse licence for us. Next angle: Shakespeare Birthplace Trust gardens (mulberry at New Place, a finding aid), Holy Trinity churchyard yews, Warwickshire veteran-tree surveys."
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#313). Wikidata search holds no tree entries for the town. No Stratford-on-Avon District or Warwickshire notable-tree register with open terms seen; TPO points on planning.data.gov.uk (OGL v3.0) are protection, not remarkableness. Woodland Trust Ancient Tree Inventory has no reuse licence for us. Next angle: Shakespeare Birthplace Trust gardens (mulberry at New Place, a finding aid), Holy Trinity churchyard yews, Warwickshire veteran-tree surveys.",
+   "retried": "2026-11-14",
+   "retry_note": "RETRIED 2026-11-14, nothing publishable. Warwickshire HER (ourwarwickshire.org.uk, 403 to fetch, seen only in a search snippet) describes Holy Trinity churchyard specimen planting (a cedar given in the 1870s, yews, other conifers, lime avenues) with no tree-level figures. A search snippet mentioned a 550 cm yew by Falk 2007 but its site could not be confirmed on a fetched page (the snippet may be another church), so it is not used. Ancient Yew Group has no fetched Holy Trinity page (database search 404). Charlecote Park (National Trust, about 6 miles, not walkable from town): Boundary Oak called veteran over 300 years, declining; no girth or coordinates seen on a fetched page. Tree of the Year: no Stratford entry (Cubbington Pear, Leamington holm oak are other towns). New Place and Hall's Croft mulberries already published. Untried: Ancient Yew Group Avon PDFs (Avon-part1/2.pdf) for a Holy Trinity row, fetched and read; Charlecote tree walk leaflet."
   },
   {
    "place": "Newark",

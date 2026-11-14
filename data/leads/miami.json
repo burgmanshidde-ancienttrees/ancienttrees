@@ -1157,6 +1157,12 @@
       "candidate": "Other trees",
       "reason": "2026-11-03: only the banyan was examined (mia_010).",
       "status": "open"
+    },
+    {
+      "site": "Fairchild Tropical Botanic Garden (paid)",
+      "candidate": "Devil tree (Alstonia scholaris, PK 1018) and Vera (Bulnesia arborea, PK 318)",
+      "reason": "2026-11-14 pass. Devil tree: register Emeritus Co-Champion, 142 in = 361 cm, 67 ft = 20.4 m, measured 2014, 25.67581,-80.275, just SE of the national champion thatch palm; no recent iNaturalist observation (only one 2007 with 999 m accuracy), so no alive evidence. Vera: register 236 cm, 26.5 m, 25.67722,-80.27747; iNaturalist Bulnesia fixes land at 25.6785,-80.2747, the Tantancayo spot, so identity is doubtful. Also named on the owner's early plantings page without a pin: three allspice (Plot 45, 1940 to 1942), Haldina cordifolia moved in the 2000s (PR Newswire), chestnut dioon cycad (1873 import).",
+      "status": "open"
     }
   ],
   "blocked": [
@@ -1175,6 +1181,10 @@
     {
       "site": "Castellow Hammock register coordinate",
       "reason": "2026-10-19: the register coordinate for the False Mastic champion (PK 19, 25.55937,-80.44945) lands on SW 157th Avenue about 700 m east of the preserve; delivered as mia_006 with the preserve centre instead. Do not use the register point as a pin."
+    },
+    {
+      "site": "Montgomery Botanical Center, 11901 Old Cutler Road (about 40 register champion rows, e.g. Sausage tree, Shaving brush tree, Siamese cassia)",
+      "reason": "2026-11-14 pass: research garden, register-only rows with garden-level coordinates and no tree-level evidence or photographs; not a walk-up public site (visits by tour or event) and no fetched page confirms open access. Hard rule 10, never ship without a source saying visitors may enter. Do not re-research without a Montgomery visitor-access page."
     }
   ],
   "verified_but_unpublished": [

@@ -2,6 +2,8 @@
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
     "2026-11-14": [
+      {"date": "2026-11-14", "kind": "verify", "target": "miami", "tokens": 110000, "trees": 0, "note": "2 Fairchild trees delivered (mia_013, 014), approximate pins, paid entry; staged unwritten because Miami paid share would pass a third"},
+      {"date": "2026-11-14", "kind": "scout", "target": "stratford-upon-avon", "tokens": 60000, "trees": 0, "note": "still stalled, retried 2026-11-14, Ancient Yew Group Avon PDFs untried"},
       {"date": "2026-11-14", "kind": "verify", "target": "chicago", "tokens": 85000, "trees": 3, "note": "10 Cook County champion rows delivered, 7 were already live under other ids; 3 new"},
       {"date": "2026-11-14", "kind": "write", "target": "chicago", "tokens": 106000, "trees": 3, "note": "3 stories merged (chi_048, 049, 051)"}
     ],

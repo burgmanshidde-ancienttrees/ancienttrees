@@ -4,6 +4,7 @@
 
 - **Chicago: 3 trees added** (chi_048 and chi_049 red oaks, chi_051 butternut, all Busse Forest South, Cook County champion register, confirmed GNSS pins, no photos). The verify pass delivered 10 rows but 7 were already live under other ids (chi_007/008/009/010/040/041/042); dropped from the research file. The butternut story states two facts outside the verify notes (endangered in Canada, canker first reported in Wisconsin 1967), both true but not yet sourced on the entry. For the next session: live stories chi_007, chi_014 and chi_037 count the ranked trees at Busse and now read too low.
 - Rung 1: nothing waiting in the inbox or notes. Tip-668 (Villa Salina oak, Castel Maggiore) has no coordinate and its photographs are not on this runner, so its verdict stays open. Health: only red item was the live site being behind main; dispatching deploy at the end.
+- Miami verify: only 2 new rows (mia_013 Fairchild tantancayo, mia_014 cannonball tree), both paid entry with approximate pins, so left staged in data/research/miami-verified.json unwritten (Miami would pass a third paid); claim mia stays until it expires. Stratford-upon-Avon scout: still stalled, no trees; next angle is the Ancient Yew Group Avon PDFs.
 - Portland refused (full, 33 of 30); the writable pile is a few trees under the 6-tree floor.
 
 ## 2026-11-13 19:05 run (night-run)
