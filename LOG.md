@@ -1,5 +1,10 @@
 # LOG
 
+## 2026-11-14 write pass (session)
+
+- **Miami: 2 trees written and live in the app** (mia_013 Fairchild's Tantancayo, the 1942 planting at the Vine Pergola and a former Florida champion; mia_014 Fairchild's Cannon Ball Tree, the 1938 gift from Jamaica's Hope Gardens). App-only under APP FIRST, so no web page and outside the pace. Species of mia_014 set to the canonical "Cannon Ball Tree" used in Oahu and Singapore. No best_time (no phenology file for either). Paid share: Miami now 6 of 13 behind a ticket (46%, a note), so the next Miami work is free trees. Claim released (forced: the refusal named kyw_001, which is live in key-west.json).
+- Nothing else on the brief list was writable: sfo_012 is held as the same tree as live sfo_004 (fold its pin and girth there); car_001 (Cardiff) and wol_001 (Wolverhampton) claim ids of other live trees and car_002/003, wol_002, sfo_014/015 sit on live trees; chicago-2026-11, boston-common, boston-arboretum, wisconsin, washington-dc-2 and north-england-yews are fully published. Still unwritten elsewhere in the US/UK: dartmoor (1); detroit has 2 written and waiting on merge.
+
 ## 2026-11-14 00:36 run (night-run)
 
 - **Chicago: 3 trees added** (chi_048 and chi_049 red oaks, chi_051 butternut, all Busse Forest South, Cook County champion register, confirmed GNSS pins, no photos). The verify pass delivered 10 rows but 7 were already live under other ids (chi_007/008/009/010/040/041/042); dropped from the research file. The butternut story states two facts outside the verify notes (endangered in Canada, canker first reported in Wisconsin 1967), both true but not yet sourced on the entry. For the next session: live stories chi_007, chi_014 and chi_037 count the ranked trees at Busse and now read too low.
