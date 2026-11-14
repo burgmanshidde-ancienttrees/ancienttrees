@@ -3705,7 +3705,9 @@ def _contributor_days(key):
     and taken_at is the camera's day, which for a picture from the camera roll
     can be a summer ago. Every photographed sighting counts, any route (app,
     website), any verdict, shared or not: the person uploaded it. One storage
-    listing per contributing account, a handful at our volume."""
+    listing per contributing account, a handful at our volume. Plus every
+    signed-in tree submission with a photograph (the website form), by its
+    created_at day."""
     rows, _ = _supa("/rest/v1/sightings?select=user_id,photo&photo=not.is.null&limit=10000", key)
     want = collections.defaultdict(set)
     for r in rows or []:
@@ -3723,6 +3725,17 @@ def _contributor_days(key):
                        if uid + "/" + f.get("name", "") in photos and f.get("created_at")})
         if days:
             out[uid] = days
+    # A tree sent with a photograph through the website's form while signed in
+    # counts too (Hidde, 2026-11-14, the Villa Salina oak: "waarom staan die
+    # hier niet?"): it lives in `submissions`, not `sightings`, so the count
+    # above never saw it. The day is the submission's own; an anonymous
+    # submission has no account and is not a person we can count.
+    subs, _ = _supa("/rest/v1/submissions?select=user_id,created_at,photo"
+                    "&photo=not.is.null&user_id=not.is.null&limit=10000", key)
+    for r in subs or []:
+        uid, day = r.get("user_id"), (r.get("created_at") or "")[:10]
+        if uid and day and not is_ours(uid):
+            out[uid] = sorted(set(out.get(uid, [])) | {day})
     return out
 
 

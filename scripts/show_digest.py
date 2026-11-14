@@ -393,8 +393,13 @@ def north_star_html(today):
         return None
     weeks = [today - datetime.timedelta(days=7 * k) for k in range(11, -1, -1)]
 
+    # The last point is NOW, not the end of the digest's day (Hidde, 2026-11-14:
+    # "dit is gewoon de digest van vandaag", when a reader who uploaded that
+    # morning was missing from "now"). Earlier points stay whole weeks.
+    cuts = [w.isoformat() for w in weeks[:-1]] + ["9999-12-31"]
+
     def series(nth):
-        return [sum(1 for d in days.values() if len(d) > nth and d[nth] < w.isoformat()) for w in weeks]
+        return [sum(1 for d in days.values() if len(d) > nth and d[nth] < c) for c in cuts]
 
     def spark(vals, label):
         W, H, P = 220, 48, 6
