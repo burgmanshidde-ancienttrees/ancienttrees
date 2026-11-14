@@ -23,6 +23,16 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-14
+
+Web half: the last 24 hours were Leipzig lpz_031, Fort Lauderdale ftl_005 to ftl_010 (app-only), a Fort Lauderdale FAQ fix and data digests. No em dashes in the sampled pages or the two changed city files. lpz_031 names its sources and register, and its access line says to stay out of the allotment gardens.
+
+- WARN site/dist/explore.html still says "Each pin opens a tree with its age, its species, why it is worth the walk, and directions from where you are" while app-only pins open a card with no story. Eighth review. Hard rule 2 and "a decision that changes what the product does also changes what the product says". Replacement: "Each pin opens a tree; some stories are in the app." Translations too.
+- WARN site/dist/contribute.html (source site/src/pages/contribute.astro) still says "verified against independent sources before it goes live" three times plus "independent sources before". False since "Good reader input IS the source" (2026-10-12). Nineteenth review. Replacement: "We read every submission before it is kept."
+- NOTE data/cities/windsor.json wsr_002 still narrates our process (iNaturalist sentence, flagged 11-13). Drop it.
+
+App half (iPhone SE: species, tree-nophoto, tree, city-map-full, city, collect-away): looked at tree-nophoto and collect-away; nothing a person would notice is wrong. The no-photo card reads honestly ("Yours would be the first on this page"). Did not open the other four.
+
 ## 2026-11-13
 
 Web half: the last 24 hours were a Rotterdam source link, Braga trees (app-only), Android parity harness, data digests. No em dashes in site/dist. The Rotterdam link change is sound.
