@@ -406,6 +406,65 @@
         "width": 1152,
         "height": 2048
       }
+    },
+    {
+      "id": "mia_013",
+      "name": "Fairchild's Tantancayo",
+      "species": "Tantancayo (Albizia niopoides)",
+      "age_estimate": "about 80 years",
+      "age_min": 75,
+      "age_max": 85,
+      "girth_cm": 437,
+      "height_m": 24.7,
+      "location": {
+        "address": "Fairchild Tropical Botanic Garden, 10901 Old Cutler Road, Coral Gables, FL 33156 (north end of the Vine Pergola)",
+        "latitude": 25.67861,
+        "longitude": -80.27472,
+        "neighbourhood": "Coral Gables / Old Cutler Road"
+      },
+      "verified_sources": [
+        "https://fairchildgarden.org/?p=104167",
+        "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1079",
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/query?where=PK%3D1079",
+        "https://www.inaturalist.org/observations/258329501"
+      ],
+      "official_register": {
+        "name": "Florida Forest Service Champion Tree Register (Emeritus Florida Champion, PK 1079)",
+        "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1079"
+      },
+      "access": "Paid entry to the garden, open daily 10am to 5pm except 25 December; adults $24.95, seniors $17.95, students $15.95, child 6-17 $11.95 (fairchildgarden.org tickets page fetched 2026-11-03, not re-fetched this pass); parking free; members free.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "OWNER SOURCE (fetched 2026-11-14): Fairchild's 'The Garden's Early Plantings' page lists 'Albizia niopoides' (spelled 'Albizi niopoides') as 'one of the largest trees in the Garden', planted 1942 at the north end of the Vine Pergola. No measurements on that page. REGISTER (second source, same species): Florida Forest Service register PK 1079, Tantancayo, Albizia niopoides, Miami-Dade, public ownership, title 'Emeritus Florida Champion', circumference 172 in = 437 cm, height 81 ft = 24.7 m, measured 2007-04-20 (about 19 years old now; the title is emeritus, so it no longer holds the crown), register coordinate 25.67861,-80.27472, location field blank. The register record page was seen only as a search pointer and its ArcGIS feature row (queried, fields read), not as a fetched Detail page (ffs.fdacs.gov refuses curl; Wayback has recent snapshots for neighbouring Detail ids). ALIVE: iNaturalist Albizia niopoides observations at the garden 2020-10-17 (25.67861,-80.27478), 2020-08-25, 2022 and 2025-01-12 (25.67846,-80.27483, accuracy 6 m); a fourth, 2021, has 542 m accuracy and is ignored. lifecheck at the coordinate RECENT 2026-09-13 (not necessarily this tree). The register coordinate and the three GPS fixes agree within about 15 m and sit at the Vine Pergola end the owner describes, but no source ties them to the single crown, so the pin stays approximate. AGE: planted 1942 by the owner's own page, so about 84 years; the 437 cm girth in 65 years (to 2007) is the working. GIRTH is a register figure, 2007. Planting year is for the species planted there; the register does not say it is the same individual, though an Albizia niopoides at exactly this spot matches the owner's location. Do not fold with the nearby Vera register record (PK 318, Bulnesia arborea, 236 cm, 26.5 m, 25.67722,-80.27747), whose iNaturalist observations land at the same spot (25.6785,-80.2747), i.e. possible misidentification; left as a lead. PAID: entry is paid, so this adds to the paid share of the city (mia_009 and mia_011 are paid as well; Fairchild stands about 0.3 km from mia_009). Writer's hook: a 1942 planting by the garden's founding generation that reached 24.7 m and a 4.4 m girth in 65 years, once the state's champion of its species.",
+      "story": "Florida once ranked a tantancayo at the north end of Fairchild's Vine Pergola as the state champion of its species.\n\nFairchild Tropical Botanic Garden planted its tantancayo, Albizia niopoides, in 1942, four years after the garden's first trees went into the ground. The garden's own history of its early plantings calls it one of the largest trees in the collection and places it at the north end of the Vine Pergola. That page gives no measurements.\n\nThe numbers come from the Florida Forest Service's champion tree register, which recorded an Albizia niopoides on this spot in April 2007 at 437 centimetres round and 24.7 metres tall. The register now lists it as an emeritus champion, so it no longer holds the state title. The register does not say its tree is the 1942 planting. The garden's page and the register's coordinate do point to the same end of the pergola, and if the date and the trunk belong together, the tree is about 84 years old and grew that girth in 65 years.\n\nThose figures are nearly two decades old. Visitors photographed a tantancayo at the pergola end as recently as January 2025, and their GPS fixes agree with the register's point within about 15 metres. That is close, not surveyed, so walk to the north end of the pergola and look up for the biggest crown.\n\nThe garden charges for entry and opens daily except Christmas Day. If you have measured the trunk lately, tell us.",
+      "how_to_recognise": "You can recognise it as one of the largest trees in the garden, 24.7 metres tall at the state's 2007 measurement. It stands at the north end of the Vine Pergola."
+    },
+    {
+      "id": "mia_014",
+      "name": "Fairchild's Cannonball Tree",
+      "species": "Cannon Ball Tree (Couroupita guianensis)",
+      "age_estimate": "roughly 80 years",
+      "age_min": 75,
+      "age_max": 90,
+      "location": {
+        "address": "Fairchild Tropical Botanic Garden, 10901 Old Cutler Road, Coral Gables, FL 33156 (Cycad Circle area)",
+        "latitude": 25.67625,
+        "longitude": -80.27595,
+        "neighbourhood": "Coral Gables / Old Cutler Road"
+      },
+      "verified_sources": [
+        "https://fairchildgarden.org/?p=104167",
+        "https://en.wikipedia.org/wiki/Fairchild_Tropical_Botanic_Garden",
+        "https://www.inaturalist.org/observations/407592038",
+        "https://www.inaturalist.org/observations/384001752",
+        "https://www.inaturalist.org/observations/365799637"
+      ],
+      "access": "Paid entry to the garden, open daily 10am to 5pm except 25 December; adults $24.95, seniors $17.95, students $15.95, child 6-17 $11.95 (fairchildgarden.org tickets page fetched 2026-11-03, not re-fetched this pass); parking free; members free.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "OWNER SOURCE (fetched 2026-11-14): Fairchild's 'The Garden's Early Plantings' page: cannonball tree (Couroupita guianensis), donated by Mrs. Sarah Jones in 1938, originally from the Hope Gardens of Jamaica, located 'across from the chestnut dioon near Cycad Circle'. Wikipedia (Fairchild Tropical Botanic Garden) separately calls it the most famous tropical flowering tree in the garden, planted 1938, and one of the only cannonball trees in the US (read in an earlier pass; not re-fetched). NOTE: the same owner page says of the 11 inaugural plantings of 23 March 1938 that one survives (the baobab); the cannonball is a 1938 donation, not one of those 11. CONFLICT recorded: an earlier pass saw a Fairchild shop listing (search pointer only) saying 1949; the owner's own page says 1938, kept. ALIVE: ten iNaturalist observations of Couroupita within 2 km, the nearest cluster at 25.6762 to 25.6765,-80.2758 to -80.2760 (accuracy 3 to 20 m), most recent 2026-10-11, 2026-07-19, 2026-05-27, 2026-03-25, 2026-01-18, 2025 several; the fixes repeat at one spot, so one tree is being photographed again and again (inference, not stated by any source). POSITION: the chestnut dioon the page names is mapped by iNaturalist Dioon fixes at 25.67634,-80.27445 (Cycad Circle), about 145 m east of the cannonball cluster; 'across from' is loose, so the pin is approximate and not tied to the 1938 crown by any source. No girth or height found. No register champion record for this species. Chestnut dioon (Dioon edule, a cycad, imported from Scotland in 1873, donated 1940, 'the oldest fellow of our collections') is on the same page, but a cycad is not a tree for this site; left as a note for the writer. Writer's hook: the founding-era tree whose flowers grow on trunk-hugging stems and whose fruit are the 'cannonballs'; one of very few in the US. PAID entry; with mia_013 and mia_009 the garden now carries three of the city's paid trees.",
+      "story": "Few cannonball trees grow anywhere in the United States, and this one came to Miami from Jamaica in 1938.\n\nFairchild Tropical Botanic Garden's history of its early plantings says Mrs. Sarah Jones donated it that year, from stock raised at the Hope Gardens in Jamaica, and that it stands across from the chestnut dioon near Cycad Circle. Wikipedia's article on the garden calls it the garden's most famous tropical flowering tree and one of the only cannonball trees in the country. A Fairchild shop listing once gave 1949 instead; we follow the garden's own history page, which says 1938.\n\nThat makes it nearly as old as the garden. The first eleven trees went in on 23 March 1938, and the garden says only its baobab survives from that day. The cannonball was a gift of the same year, not one of the eleven.\n\nThe name explains itself on sight. Its flowers grow on stems straight out of the trunk, and its fruit are the round, heavy cannonballs.\n\nVisitors photograph a cannonball tree near Cycad Circle again and again, most recently in October 2026, from the same few metres, though no source ties the 1938 gift to that exact spot. The landmark the garden names is a veteran too. The chestnut dioon is a cycad, imported from Scotland in 1873, which the garden calls the oldest member of its collections.\n\nThe garden charges for entry. Nobody has published its girth or height; if you have measured it, tell us.",
+      "how_to_recognise": "You can recognise it by its flowers and round fruit, which grow on stems straight out of the trunk. It stands near Cycad Circle, across from the chestnut dioon, a cycad."
     }
   ]
 }
