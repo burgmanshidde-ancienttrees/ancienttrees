@@ -12,6 +12,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-14 Istanbul reader's three photographs live (session)
+
+- **A reader's morning walk through Gülhane, three trees in half an hour, now on the pages.** The Gülhane London Plane (ist_012) and the Gülhane Nettle Tree (ist_013) had no photograph and now lead with theirs; the Taşlı Çınar (ist_004) takes theirs as the lead and keeps the old one in the strip. Their note on ist_013 ("the girth is recorded as 4.1m but that appears an over-estimate") is live as a tree note; the 411 cm figure is unchanged until a source or a second reader says otherwise. The "your photos are live" mail is pending for the next knock.
+
 ## 2026-11-14 Villa Salina oak live (session, Hidde's yes)
 
 - **New tree: The Oak of Villa Salina (bologna/bol_013)**, a reader's website submission (tip 668) from Castel Maggiore, just north of Bologna. Pedunculate oak, 580 cm and 36 m from the 2023 list of new Alberi Monumentali d'Italia; age 200 to 300 years by the reader's estimate. The reader's photograph is the lead; their words on the Malpighi engraving and the loggia ceiling are quoted unnamed, in English and in the kept Italian overlay. Pin from the July 2023 regional annex's coordinate, approximate. Access: the park opens for events and the Comune's bookable guided walks (rule 10). The reader's three further photographs show the engraving, the ceiling and the gate, not the tree, so they stay unpublished. Bologna's free-to-see FAQ now names the oak, and the oldest-tree answer says "precisely dated" (the reader's estimate runs past 206 years).

@@ -146,12 +146,17 @@
       "access": "Free, public street corner",
       "transport": "1 min walk from Gülhane tram stop (T1 line)",
       "photo": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/669764992/large.jpg",
-        "license": "CC BY 4.0",
-        "attribution": "Luke Padon, via iNaturalist",
+        "url": "https://ancienttrees.app/photos/ist_004-the-ta-l-nar-ef41d971.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
         "status": "approved",
-        "width": 768,
-        "height": 1024
+        "width": 1200,
+        "height": 1600,
+        "taken_month": 11,
+        "source": "contributor",
+        "contributor_user_id": "p_53b5a350aca5fce36f859ffc",
+        "sighting_id": "ef41d971-0c99-4fa5-b836-f3079f22fab9",
+        "note": "Photographed by a reader and sent through the app (2026-11-14); a viewing pass approved it on 2026-11-14: The Taşlı Çınar whole from the pavement: the massive burled pollard trunk with the hollow in the upper left limb, the Alemdar mosque dome and tram wires behind, daylight and colour. Stronger than the current lead; becomes the lead. Species seen: oriental plane: pale flaking patchwork bark, huge pollarded limbs, burled base. Fits the description: an enormous old pollard beside a mosque on a tram street, the cavity partway up the trunk visible, matching the recognition line and 1030 cm girth.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "curation_status": "ai_generated",
       "notes": "Upgraded to confirmed 2026-07-29: found the registry's own underlying data feed (anitagac.istanbul/treeList, a GeoJSON layer the site's map loads client-side, not reachable through page-rendering tools but fetchable directly) and matched record AVR-20AA0027, already cited as this entry's source, against it directly. The record's age (446), height (26m) and girth (328cm) all match this entry's own figures exactly, confirming it as the same tree rather than a same-species neighbour. Its surveyed coordinate is about 417m from the prior street-corner estimate. Photo added 2026-07-29: an iNaturalist CC BY 4.0 observation (Platanus orientalis, observed 2026-05-30) about 200m from this pin, at the Archaeology Museum/Gülhane boundary. Viewed directly: a large, clearly old plane trunk behind an official heritage-protection fence bearing a municipal culture-department seal, next to a carved stone architectural fragment and an old stone building, consistent with this street corner. Held at found_needs_check rather than approved since more than one large plane could plausibly stand in this immediate micro-area and the photo doesn't itself carry the tree's name.",
@@ -162,7 +167,17 @@
         "url": "https://anitagac.istanbul/agac/AVR-20AA0027"
       },
       "girth_cm": 1030,
-      "height_m": 26
+      "height_m": 26,
+      "photos": [
+        {
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/669764992/large.jpg",
+          "license": "CC BY 4.0",
+          "attribution": "Luke Padon, via iNaturalist",
+          "status": "approved",
+          "width": 768,
+          "height": 1024
+        }
+      ]
     },
     {
       "id": "ist_005",
@@ -423,10 +438,17 @@
       "access": "Free, inside Gulhane Park (open daily, standard park hours, no ticket)",
       "transport": "Gulhane tram stop (T1 line) at the park's Sarayburnu-side gate, immediate walk",
       "photo": {
-        "url": null,
-        "license": null,
+        "url": "https://ancienttrees.app/photos/ist_012-the-g-lhane-london-plane.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
         "attribution": null,
-        "status": "missing"
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "taken_month": 11,
+        "source": "contributor",
+        "contributor_user_id": "p_53b5a350aca5fce36f859ffc",
+        "sighting_id": "a1e58f4c-d1e3-40be-9872-61715485ec5e",
+        "note": "Photographed by a reader and sent through the app (2026-11-14); a viewing pass approved it on 2026-11-14: The Gülhane London Plane whole in daylight and colour, tall forked trunk on the lawn among the park's planes; the tree had no photograph. Species seen: plane: mottled grey and cream flaking bark, maple-like brown autumn leaves, ball fruits. Fits the description: a tall straight plane, crown far above the benches, on the Gülhane lawn, consistent with 33 m and a 381 cm girth.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -460,10 +482,17 @@
       "access": "Free, inside Gulhane Park (open daily, standard park hours, no ticket)",
       "transport": "Gulhane tram stop (T1 line) at the park's Sarayburnu-side gate, short walk within the park",
       "photo": {
-        "url": null,
-        "license": null,
+        "url": "https://ancienttrees.app/photos/ist_013-the-g-lhane-nettle-tree.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
         "attribution": null,
-        "status": "missing"
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "taken_month": 11,
+        "source": "contributor",
+        "contributor_user_id": "p_53b5a350aca5fce36f859ffc",
+        "sighting_id": "a441709a-94ad-424e-b0f7-812cf9ab0862",
+        "note": "Photographed by a reader and sent through the app (2026-11-14); a viewing pass approved it on 2026-11-14: The Gülhane Nettle Tree in daylight and colour, slim dark trunk and crown under heavy ivy, standing among the park's pale planes 6 m from our pin; the tree had no photograph and the reader left a note on its girth from the same spot. Species seen: not a plane: a slimmer dark trunk with old pruning knobs, crown largely clad in evergreen ivy, set apart from the flaking pale plane trunks around it. Fits the description: the slimmer non-plane trunk in Gülhane Park near the planes, as the recognition line says.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
