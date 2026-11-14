@@ -1,1348 +1,1348 @@
 {
-  "city": "Chicago",
-  "country": "USA",
-  "city_slug": "chicago",
-  "updated": "2026-08-09",
-  "note": "First verification pass on Chicago, web research from zero (no register). Delivered 3 verified candidates to data/research/chicago-verified.json (chi_001 to chi_003), below the 4-tree floor for a page. leads = trees that failed only on our evidence bar or on the count, raw material for a future pass. blocked = trees that must never ship whatever happens later, each with its reason. 2026-08-09 pass: found the Illinois Big Tree Register feature-service endpoint and delivered chi_004 (Champion Boxelder, Edgebrook Golf Course) to data/research/chicago-verified.json, bringing Chicago to 4 verified trees, the floor for a page.",
-  "leads": [
-    {
-      "name": "University of Chicago Main Quadrangle bur oak / black oak stand",
-      "species": "Bur Oak (Quercus macrocarpa) and Black Oak (Quercus velutina), mixed stand",
-      "location_hint": "Humanities Quadrangle and Social Sciences Quadrangle, University of Chicago main campus, Hyde Park, roughly 41.789, -87.5997",
-      "why_not_shipped": "Two native oak stands predate the University (founded 1890) and were deliberately preserved by trustee Judge Daniel Shorey when the quadrangles were laid out; a Chicago Maroon student column (2019) and a University of Chicago Magazine piece both confirm old oaks still stand in the quads today, and a University Facilities article (paywalled behind the intranet.uchicago.edu React app, could not be fetched by curl or WebFetch in this pass, both redirected to a JS-only shell) reportedly discusses the stand's history in more depth per search-engine summaries only, which is not something to trust without reading the source directly. No confirmed age figure or exact single-tree location was found that would clear the two-source bar for a specific collectible point; the sources describe a stand/cluster across two quads, not one tree with one place to stand. Worth a dedicated pass: visit or find the facilities.uchicago.edu article through a cached/archived copy, or contact UChicago Facilities (contact was named in secondary coverage: Richard Bumstead, associate director of campus environment) to pin an exact specimen and age.",
-      "update_2026_08_08": "The intranet source was read in a browser session: it quotes Goodspeed's History of the University of Chicago. Key passage: 'Judge Shorey was also the principle advocate for preserving the existing oaks on campus - oaks that in many cases predate the University.' Also: in the University's first year the western side was 'flat, but dry and covered with young oaks', so the preserved oaks were YOUNG in 1892, putting them at roughly 140-170 years now, not ancient. History is now double-sourced; what still fails is the collectible-point rule: every source describes a stand across two quadrangles, no single tree with one place to stand. Only a source naming one individual tree reopens this."
-    },
-    {
-      "name": "Graceland Cemetery arboretum (unspecified individual specimen)",
-      "species": "unknown - cemetery is a certified Morton Arboretum-affiliate arboretum of 2,000+ trees, 103+ species, including American Elm",
-      "location_hint": "Graceland Cemetery, 4001 N Clark St, Uptown, Chicago, roughly 41.9556, -87.6598",
-      "why_not_shipped": "Graceland publishes its own self-guided Tree Tour maps (PDF, e.g. https://www.gracelandcemetery.org/images/Tree_Tour_II_Map_-_to_be_added_to_website.pdf) which likely name specific notable specimens, but the tour pages fetched in this pass described the collection only in aggregate, with no individual tree's age, species or exact plot called out. A future pass should open the actual Tree Tour PDF map(s) rather than the landing page; if they name specific champion or notably old trees with locations, that could produce one or more strong candidates within a 25 to 30 minute transit ride of downtown (Red Line to Sheridan or Berwyn, or Clark St bus).",
-      "update_2026_08_08": "Both PDF tour maps (Tree Tour I, 50 numbered specimens, and Tree Tour II, 50 more) were opened and read in full this pass. Both are plain species-identification walks, one example of each species numbered on a map (White Pine, Bur Oak is not even listed; the closest natives are a Northern Pin Oak, a Pin Oak, an English Oak, a Black Oak and a Swamp White Oak scattered among ornamentals like Ginkgo, Katsura and Star Magnolia). Neither map gives an age, a girth, a 'champion' or 'notable' designation, or any text distinguishing one specimen as remarkable versus another; they exist to show garden diversity, not veteran trees. Targeted searches for a named old/champion tree at Graceland (elm survivor, champion oak, historic specimen) returned nothing beyond the same aggregate 'certified arboretum, 2,000+ trees' framing. This lead is now closed unless a future pass finds a specific news piece or arborist report naming one Graceland tree with an age and a plot location; the tour maps themselves are exhausted."
-    },
-    {
-      "name": "University of Chicago Laboratory Schools courtyard oak",
-      "species": "Oak (species unspecified)",
-      "location_hint": "UChicago Laboratory Schools, Blaine courtyard/playground, 1362 E 59th St, Hyde Park, roughly 41.789, -87.596",
-      "why_not_shipped": "2026-08-09 pass: same DNAinfo 2016 article that sourced chi_001 mentions 'a similarly sized oak tree in the University of Chicago Laboratory Schools courtyard', quoting the school's communications director and an alumna saying 'no one there could estimate its age'. No age, no second source beyond this one article, and the tree now sits inside a school playground/courtyard project (Culliton Quinn 'UChicago Lab Schools Playground | Blaine Courtyard', a climbable tree house built around a large oak at the courtyard's north entry corner) which raises a real access question: a K-12 school courtyard is not obviously open to the public the way a park or cemetery is. Would need: an age estimate from any source, confirmation the courtyard is publicly accessible (or specifically excluded if not), and ideally a look at whether the tree house construction has harmed the tree."
-    },
-    {
-      "name": "Old growth oak / \"Council\" tree, Beverly / Blue Island Ridge",
-      "species": "Oak (species unspecified)",
-      "location_hint": "Somewhere on the Blue Island glacial ridge, Beverly neighbourhood (Ridge Historic District) or the separate suburb of Blue Island immediately south; exact location not found",
-      "why_not_shipped": "2026-08-09 pass: a Beverly Review 'Good News 2022' piece quotes Robert Lane of the Ridge Historical Society describing an old-growth oak on the Blue Island ridge plausibly used by Native Americans travelling the Vincennes Trail, connected to events 'spanning 700 years'. The source article itself returned HTTP 429 on WebFetch (retry after a delay did not clear it in this pass) so the claim is second-hand via search snippet only, with no address, coordinates, current photo, or age figure. A 'Council Oak Montessori School' exists in Blue Island (the separate south-suburban town, not the Chicago neighbourhood of Beverly), suggesting local naming lore but not a specific standing tree. Needs: the actual Beverly Review article read in full (retry the fetch), or a direct approach to the Ridge Historical Society ([address removed], cited in other coverage) to name and locate the specific tree, plus a check on whether Blue Island proper is within the ~30 minute day-trip boundary (it has a Metra Rock Island District stop, roughly 30 min from LaSalle Street Station, so it is borderline)."
-    },
-    {
-      "name": "The Sago Palm (cycad) of Lincoln Park Conservatory's Fern Room",
-      "species": "possibly Cycas circinalis or Cycas revoluta (sources vary), a cycad, not a true tree",
-      "location_hint": "Lincoln Park Conservatory, Fern Room, 2391 N Stockton Dr, Lincoln Park, Chicago",
-      "why_not_shipped": "2026-08-09 pass: multiple travel-blog style sources (flowerchick.com and pages that appear to echo it) describe a 'century-old' sago palm/cycad in the Fern Room, said to have been an attraction people traveled to see during the 1893 World's Fair. The Conservatory's OWN official page (lincolnparkconservancy.org) only describes cycads generically ('among the most ancient group of plants... fossil records dating back at least 250 million years') with no mention of this specific dated specimen, so the striking claim has exactly one real source, repeated rather than corroborated. Two more open questions before this could ship even with a second source: exact species (sources conflict on the Latin name) and whether a potted greenhouse specimen fits the collectible-point / 'walk to a tree outdoors' product at all, which is a judgement call for a session with Hidde rather than a verification pass. Worth a future pass: ask the Chicago Park District or Lincoln Park Conservancy directly, or find a Chicago Tribune / local news piece with a acquisition date."
-    },
-    {
-      "name": "Red pine, Indian Boundary Golf Course",
-      "species": "Red Pine (Pinus resinosa)",
-      "location_hint": "Indian Boundary Golf Course, 8600 W Forest Preserve Ave, Chicago, IL 60634 (Forest Preserves of Cook County), roughly 41.939135, -87.844832",
-      "why_not_shipped": "RESOLVED 2026-08-09: delivered to data/research/chicago-verified.json as chi_005. Left here for history; do not re-research."
-    },
-    {
-      "name": "Smooth serviceberry",
-      "species": "Smooth serviceberry (Amelanchier laevis)",
-      "lat": 41.623458,
-      "lng": -87.797662,
-      "register_location": "Tinley Creek Woods",
-      "girth_cm": 49,
-      "height_m": 9.8,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Smooth serviceberry",
-      "species": "Smooth serviceberry (Amelanchier laevis)",
-      "lat": 41.629669,
-      "lng": -87.796469,
-      "register_location": "Tinley Creek Woods",
-      "girth_cm": 37,
-      "height_m": 7.3,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Sugar maple",
-      "species": "Sugar maple (Acer saccharum)",
-      "lat": 42.022437,
-      "lng": -87.998853,
-      "register_location": "Busse Forest South",
-      "girth_cm": 247,
-      "height_m": 36.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Sugar maple",
-      "species": "Sugar maple (Acer saccharum)",
-      "lat": 42.112598,
-      "lng": -87.886302,
-      "register_location": "Dam No. 1 Woods East",
-      "girth_cm": 353,
-      "height_m": 29.3,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "delivered chi_030 (data/research/chicago-verified.json, 2026-10-22)"
-    },
-    {
-      "name": "Silver maple",
-      "species": "Silver maple (Acer saccharinum)",
-      "lat": 42.061849,
-      "lng": -87.761434,
-      "register_location": "Harms Flatwoods",
-      "girth_cm": 432,
-      "height_m": 24.9,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Silver maple",
-      "species": "Silver maple (Acer saccharinum)",
-      "lat": 41.899989,
-      "lng": -87.832488,
-      "register_location": "Thatcher Woods",
-      "girth_cm": 427,
-      "height_m": 26.8,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Muslewood",
-      "species": "Muslewood (Carpinus caroliniana)",
-      "lat": 41.888846,
-      "lng": -87.807025,
-      "register_location": "Cummings Square",
-      "girth_cm": 58,
-      "height_m": 11.0,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Bitternut hickory",
-      "species": "Bitternut hickory (Carya cordiformis)",
-      "lat": 42.008769,
-      "lng": -87.79196,
-      "register_location": "Bunker Hill Woods",
-      "girth_cm": 244,
-      "height_m": 24.4,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "delivered chi_046 (data/research/chicago-verified.json, 2026-11-07)"
-    },
-    {
-      "name": "Bitternut hickory",
-      "species": "Bitternut hickory (Carya cordiformis)",
-      "lat": 41.89596,
-      "lng": -87.829652,
-      "register_location": "Thatcher Woods",
-      "girth_cm": 192,
-      "height_m": 34.1,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Hackberry",
-      "species": "Hackberry (Celtis occidentalis)",
-      "lat": 41.900515,
-      "lng": -87.833081,
-      "register_location": "Thatcher Woods",
-      "girth_cm": 351,
-      "height_m": 36.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Hackberry",
-      "species": "Hackberry (Celtis occidentalis)",
-      "lat": 41.839231,
-      "lng": -87.830116,
-      "register_location": "National Grove",
-      "girth_cm": 351,
-      "height_m": 34.1,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Witch hazel",
-      "species": "Witch hazel (Hamamelis virginiana)",
-      "lat": 42.126824,
-      "lng": -87.791431,
-      "register_location": "Chipilly Woods",
-      "girth_cm": 37,
-      "height_m": 6.1,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Butternut/white walnut",
-      "species": "Butternut/white walnut (Juglans cinerea)",
-      "lat": 42.022339,
-      "lng": -87.99885,
-      "register_location": "Busse Forest South",
-      "girth_cm": 223,
-      "height_m": 29.3,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Black walnut",
-      "species": "Black walnut (Juglans nigra)",
-      "lat": 41.678854,
-      "lng": -87.857757,
-      "register_location": "Swallow Cliff Woods",
-      "girth_cm": 329,
-      "height_m": 36.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "delivered chi_033 (data/research/chicago-verified.json, 2026-10-22)"
-    },
-    {
-      "name": "Eastern red cedar",
-      "species": "Eastern red cedar (Juniperus virginiana)",
-      "lat": 42.091133,
-      "lng": -87.882734,
-      "register_location": "Lake Avenue Woods East",
-      "girth_cm": 72,
-      "height_m": 13.7,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Ironwood",
-      "species": "Ironwood (Ostrya virginiana)",
-      "lat": 41.713868,
-      "lng": -87.901434,
-      "register_location": "Red Gate Woods",
-      "girth_cm": 96,
-      "height_m": 14.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Cottonwood",
-      "species": "Cottonwood (Populus deltoides)",
-      "lat": 41.898841,
-      "lng": -87.832668,
-      "register_location": "Thatcher Woods",
-      "girth_cm": 594,
-      "height_m": 41.5,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Cottonwood",
-      "species": "Cottonwood (Populus deltoides)",
-      "lat": 41.838197,
-      "lng": -87.830776,
-      "register_location": "National Grove",
-      "girth_cm": 582,
-      "height_m": 39.0,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Sycamore",
-      "species": "Sycamore (Platanus occidentalis)",
-      "lat": 41.678001,
-      "lng": -87.845263,
-      "register_location": "McClaughrey Springs Woods",
-      "girth_cm": 242,
-      "height_m": 34.1,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Black cherry",
-      "species": "Black cherry (Prunus serotina)",
-      "lat": 41.680922,
-      "lng": -87.863688,
-      "register_location": "Swallow Cliff Woods",
-      "girth_cm": 241,
-      "height_m": 34.7,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "White pine",
-      "species": "White pine (Pinus strobus)",
-      "lat": 41.674644,
-      "lng": -87.860306,
-      "register_location": "Swallow Cliff Woods",
-      "girth_cm": 282,
-      "height_m": 19.5,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "White pine",
-      "species": "White pine (Pinus strobus)",
-      "lat": 41.56839,
-      "lng": -87.59751,
-      "register_location": "Wampum Lake",
-      "girth_cm": 262,
-      "height_m": 29.3,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "held",
-      "reason": "beyond the day-trip boundary (Lansing, south Cook County)"
-    },
-    {
-      "name": "Swamp white oak",
-      "species": "Swamp white oak (Quercus bicolor)",
-      "lat": 41.725115,
-      "lng": -87.853176,
-      "register_location": "Spears Woods",
-      "girth_cm": 338,
-      "height_m": 21.9,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Bur oak",
-      "species": "Bur oak (Quercus macrocarpa)",
-      "lat": 42.057058,
-      "lng": -87.769042,
-      "register_location": "Harms Woods",
-      "girth_cm": 483,
-      "height_m": 24.4,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Red oak",
-      "species": "Red oak (Quercus rubra)",
-      "lat": 42.022426,
-      "lng": -87.998596,
-      "register_location": "Busse Forest South",
-      "girth_cm": 320,
-      "height_m": 36.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Red oak",
-      "species": "Red oak (Quercus rubra)",
-      "lat": 42.022093,
-      "lng": -87.998526,
-      "register_location": "Busse Forest South",
-      "girth_cm": 391,
-      "height_m": 31.7,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Black oak",
-      "species": "Black oak (Quercus velutina)",
-      "lat": 41.731248,
-      "lng": -87.873152,
-      "register_location": "Willow Springs Woods",
-      "girth_cm": 363,
-      "height_m": 36.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Bald cypress",
-      "species": "Bald cypress (Taxodium distichum)",
-      "lat": 41.644072,
-      "lng": -87.858684,
-      "register_location": "McGinnis Slough",
-      "girth_cm": 320,
-      "height_m": 25.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Bald cypress",
-      "species": "Bald cypress (Taxodium distichum)",
-      "lat": 41.643575,
-      "lng": -87.858584,
-      "register_location": "McGinnis Slough",
-      "girth_cm": 378,
-      "height_m": 20.0,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Sycamore",
-      "species": "Sycamore (Platanus occidentalis)",
-      "lat": 41.823072,
-      "lng": -87.817478,
-      "register_location": "Riverside Lawn",
-      "girth_cm": 391,
-      "height_m": 41.5,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Pin oak",
-      "species": "Pin oak (Quercus palustris)",
-      "lat": 42.033977,
-      "lng": -87.790325,
-      "register_location": "St. Paul Woods",
-      "girth_cm": 292,
-      "height_m": 31.7,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "delivered chi_039 (data/research/chicago-verified.json, 2026-10-22)"
-    },
-    {
-      "name": "White oak",
-      "species": "White oak (Quercus alba)",
-      "lat": 41.706313,
-      "lng": -87.901928,
-      "register_location": "Red Gate Woods",
-      "girth_cm": 421,
-      "height_m": 29.3,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Honey locust",
-      "species": "Honey locust (Gleditsia triacanthos)",
-      "lat": 41.654537,
-      "lng": -87.639522,
-      "register_location": "Whistler Woods",
-      "girth_cm": 320,
-      "height_m": 24.4,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Kentucky coffeetree",
-      "species": "Kentucky coffeetree (Gymnocladus dioicus)",
-      "lat": 42.030479,
-      "lng": -87.86696,
-      "register_location": "Belleau Lake",
-      "girth_cm": 167,
-      "height_m": 19.5,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Red maple",
-      "species": "Red maple (Acer rubrum)",
-      "lat": 42.006019,
-      "lng": -87.787536,
-      "register_location": "Bunker Hill Woods",
-      "girth_cm": 279,
-      "height_m": 15.8,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "delivered chi_047 (data/research/chicago-verified.json, 2026-11-07)"
-    },
-    {
-      "name": "Blackgum",
-      "species": "Blackgum (Nyssa sylvatica)",
-      "lat": 41.571172,
-      "lng": -87.592777,
-      "register_location": "Wampum Lake NP",
-      "girth_cm": 95,
-      "height_m": 13.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "held",
-      "reason": "beyond the day-trip boundary (Lansing, south Cook County)"
-    },
-    {
-      "name": "Blackgum",
-      "species": "Blackgum (Nyssa sylvatica)",
-      "lat": 41.571662,
-      "lng": -87.592849,
-      "register_location": "Wampum Lake",
-      "girth_cm": 187,
-      "height_m": 16.8,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "held",
-      "reason": "beyond the day-trip boundary (Lansing, south Cook County)"
-    },
-    {
-      "name": "Blackgum",
-      "species": "Blackgum (Nyssa sylvatica)",
-      "lat": 41.57196,
-      "lng": -87.593052,
-      "register_location": "Wampum Lake",
-      "girth_cm": 130,
-      "height_m": 11.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "held",
-      "reason": "beyond the day-trip boundary (Lansing, south Cook County)"
-    },
-    {
-      "name": "Red pine",
-      "species": "Red pine (Pinus resinosa)",
-      "lat": 41.605489,
-      "lng": -87.566853,
-      "register_location": "Sand Ridge Nature Center",
-      "girth_cm": 189,
-      "height_m": 18.9,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Sycamore",
-      "species": "Sycamore (Platanus occidentalis)",
-      "lat": 41.570576,
-      "lng": -87.594094,
-      "register_location": "Wampum Lake",
-      "girth_cm": 324,
-      "height_m": 25.5,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "held",
-      "reason": "beyond the day-trip boundary (Lansing, south Cook County)"
-    },
-    {
-      "name": "Ironwood",
-      "species": "Ironwood (Ostrya virginiana)",
-      "lat": 42.007966,
-      "lng": -87.79112,
-      "register_location": "Bunker Hill Woods",
-      "girth_cm": 97,
-      "height_m": 15.8,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Butternut/white walnut",
-      "species": "Butternut/white walnut (Juglans cinerea)",
-      "lat": 41.993505,
-      "lng": -87.860449,
-      "register_location": "Blue Beech Family Picnic Area",
-      "girth_cm": 144,
-      "height_m": 14.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "White oak",
-      "species": "White oak (Quercus alba)",
-      "lat": 41.676874,
-      "lng": -87.851525,
-      "register_location": "McClaughrey Springs Woods",
-      "girth_cm": 476,
-      "height_m": 21.0,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Black cherry",
-      "species": "Black cherry (Prunus serotina)",
-      "lat": 41.848759,
-      "lng": -87.824415,
-      "register_location": "Callahan Grove",
-      "girth_cm": 263,
-      "height_m": 21.9,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Sassafras",
-      "species": "Sassafras (Sassafras albidum)",
-      "lat": 41.569596,
-      "lng": -87.594439,
-      "register_location": "Thorn Creek Division LM",
-      "girth_cm": 326,
-      "height_m": 12.2,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Choke cherry",
-      "species": "Choke cherry (Prunus virginiana)",
-      "lat": 42.114855,
-      "lng": -87.775041,
-      "register_location": "Skokie Lagoons",
-      "girth_cm": 64,
-      "height_m": 7.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Slippery elm",
-      "species": "Slippery elm (Ulmus rubra)",
-      "lat": 41.602,
-      "lng": -87.553064,
-      "register_location": "Green Lake Woods",
-      "girth_cm": 226,
-      "height_m": 14.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Slippery elm",
-      "species": "Slippery elm (Ulmus rubra)",
-      "lat": 41.720819,
-      "lng": -87.848768,
-      "register_location": "Hidden Pond Woods",
-      "girth_cm": 137,
-      "height_m": 9.8,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Chinkapin oak",
-      "species": "Chinkapin oak (Quercus muehlenbergii)",
-      "lat": 41.841289,
-      "lng": -87.82926,
-      "register_location": "National Grove",
-      "girth_cm": 372,
-      "height_m": 29.3,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Basswood/American linden",
-      "species": "Basswood/American linden (Tilia americana)",
-      "lat": 42.100283,
-      "lng": -87.884227,
-      "register_location": "Allison Woods",
-      "girth_cm": 361,
-      "height_m": 19.5,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "delivered chi_034 (data/research/chicago-verified.json, 2026-10-22)"
-    },
-    {
-      "name": "Chinkapin oak",
-      "species": "Chinkapin oak (Quercus muehlenbergii)",
-      "lat": 42.028613,
-      "lng": -87.98843,
-      "register_location": "Busse Forest North",
-      "girth_cm": 104,
-      "height_m": 11.0,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Pin oak",
-      "species": "Pin oak (Quercus palustris)",
-      "lat": 41.958867,
-      "lng": -87.848379,
-      "register_location": "Schiller Woods",
-      "girth_cm": 279,
-      "height_m": 29.3,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "American elm",
-      "species": "American elm (Ulmus americana)",
-      "lat": 41.953161,
-      "lng": -87.844237,
-      "register_location": "Schiller Woods",
-      "girth_cm": 407,
-      "height_m": 25.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Black maple",
-      "species": "Black maple (Acer nigrum)",
-      "lat": 41.743421,
-      "lng": -87.680371,
-      "register_location": "Dan Ryan Woods North",
-      "girth_cm": 180,
-      "height_m": 12.2,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Northern pin/Hill's oak",
-      "species": "Northern pin/Hill's oak (Quercus ellipsoidalis)",
-      "lat": 41.831044,
-      "lng": -87.903183,
-      "register_location": "Bemis Woods North",
-      "girth_cm": 321,
-      "height_m": 24.4,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "delivered chi_032 (data/research/chicago-verified.json, 2026-10-22)"
-    },
-    {
-      "name": "Blackhaw",
-      "species": "Blackhaw (Viburnum prunifolium)",
-      "lat": 41.606075,
-      "lng": -87.565752,
-      "register_location": "Sand Ridge Nature Center",
-      "girth_cm": 49,
-      "height_m": 7.3,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Boxelder",
-      "species": "Boxelder (Acer negundo)",
-      "lat": 41.624839,
-      "lng": -87.785229,
-      "register_location": "Camp Sullivan",
-      "girth_cm": 268,
-      "height_m": 14.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Black maple",
-      "species": "Black maple (Acer nigrum)",
-      "lat": 41.60624,
-      "lng": -87.5659,
-      "register_location": "Sand Ridge Nature Center",
-      "girth_cm": 174,
-      "height_m": 19.5,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Sugar maple",
-      "species": "Sugar maple (Acer saccharum)",
-      "lat": 42.007998,
-      "lng": -87.790804,
-      "register_location": "Bunker Hill Woods",
-      "girth_cm": 297,
-      "height_m": 29.3,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "delivered chi_045 (data/research/chicago-verified.json, 2026-11-07)"
-    },
-    {
-      "name": "Shagbark hickory",
-      "species": "Shagbark hickory (Carya ovata)",
-      "lat": 41.67408,
-      "lng": -87.857609,
-      "register_location": "Swallow Cliff Woods",
-      "girth_cm": 265,
-      "height_m": 29.3,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "delivered chi_038 (data/research/chicago-verified.json, 2026-10-22)"
-    },
-    {
-      "name": "Ohio buckeye",
-      "species": "Ohio buckeye (Aesculus glabra)",
-      "lat": 42.016423,
-      "lng": -87.993219,
-      "register_location": "Busse Forest South",
-      "girth_cm": 313,
-      "height_m": 13.4,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "delivered chi_037 (data/research/chicago-verified.json, 2026-10-22)"
-    },
-    {
-      "name": "Redbud",
-      "species": "Redbud (Cercis canadensis)",
-      "lat": 41.70857,
-      "lng": -87.876155,
-      "register_location": "Little Red Schoolhouse Nature Center",
-      "girth_cm": 96,
-      "height_m": 6.1,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Muslewood",
-      "species": "Muslewood (Carpinus caroliniana)",
-      "lat": 41.849837,
-      "lng": -87.824329,
-      "register_location": "Callahan Grove",
-      "girth_cm": 32,
-      "height_m": 4.9,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Downy hawthorn",
-      "species": "Downy hawthorn (Crataegus mollis)",
-      "lat": 42.114284,
-      "lng": -87.775425,
-      "register_location": "Skokie Lagoons",
-      "girth_cm": 128,
-      "height_m": 7.3,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Pecan",
-      "species": "Pecan (Carya illinoensis)",
-      "lat": 42.115568,
-      "lng": -87.77494,
-      "register_location": "Skokie Lagoons",
-      "girth_cm": 32,
-      "height_m": 4.9,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Downy hawthorn",
-      "species": "Downy hawthorn (Crataegus mollis)",
-      "lat": 42.007665,
-      "lng": -87.864851,
-      "register_location": "Axehead Lake",
-      "girth_cm": 96,
-      "height_m": 6.7,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Hackberry",
-      "species": "Hackberry (Celtis occidentalis)",
-      "lat": 41.900247,
-      "lng": -87.832372,
-      "register_location": "Thatcher Woods",
-      "girth_cm": 335,
-      "height_m": 39.0,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Downy hawthorn",
-      "species": "Downy hawthorn (Crataegus mollis)",
-      "lat": 42.002388,
-      "lng": -87.78337,
-      "register_location": "Bunker Hill Woods",
-      "girth_cm": 161,
-      "height_m": 6.1,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Redbud",
-      "species": "Redbud (Cercis canadensis)",
-      "lat": 41.822276,
-      "lng": -87.902599,
-      "register_location": "Bemis Woods South",
-      "girth_cm": 80,
-      "height_m": 6.1,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Black walnut",
-      "species": "Black walnut (Juglans nigra)",
-      "lat": 41.681836,
-      "lng": -87.836111,
-      "register_location": "Paddock Woods",
-      "girth_cm": 347,
-      "height_m": 34.1,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "held",
-      "reason": "third-ranked in the county, not picked this pass; no photo or notable reason beyond rank"
-    },
-    {
-      "name": "Black cherry",
-      "species": "Black cherry (Prunus serotina)",
-      "lat": 42.026001,
-      "lng": -87.869356,
-      "register_location": "Camp Ground Road Woods",
-      "girth_cm": 335,
-      "height_m": 29.3,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "delivered chi_031 (data/research/chicago-verified.json, 2026-10-22)"
-    },
-    {
-      "name": "Eastern wahoo",
-      "species": "Eastern wahoo (Euonymus atropurpureus)",
-      "lat": 41.821601,
-      "lng": -87.909906,
-      "register_location": "Bemis Woods South",
-      "girth_cm": 60,
-      "height_m": 9.8,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Blue ash",
-      "species": "Blue ash (Fraxinus quadrangulata)",
-      "lat": 41.998561,
-      "lng": -87.778849,
-      "register_location": "Bunker Hill Woods",
-      "girth_cm": 128,
-      "height_m": 17.1,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Blue ash",
-      "species": "Blue ash (Fraxinus quadrangulata)",
-      "lat": 41.998579,
-      "lng": -87.779159,
-      "register_location": "Bunker Hill Woods",
-      "girth_cm": 136,
-      "height_m": 17.1,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Eastern wahoo",
-      "species": "Eastern wahoo (Euonymus atropurpureus)",
-      "lat": 41.823358,
-      "lng": -87.907431,
-      "register_location": "Bemis Woods South",
-      "girth_cm": 61,
-      "height_m": 8.2,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Eastern wahoo",
-      "species": "Eastern wahoo (Euonymus atropurpureus)",
-      "lat": 41.820407,
-      "lng": -87.911343,
-      "register_location": "Bemis Woods South",
-      "girth_cm": 96,
-      "height_m": 11.6,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open"
-    },
-    {
-      "name": "Millennium Landmark Tree (white oak), Morton Arboretum, Lisle",
-      "species": "White Oak (Quercus alba)",
-      "status": "open",
-      "reason": "No coordinate or trail location found: only 'near Lake Marmo, West Side' from the Arboretum's own fall-colour audio tour transcript (age 'about 250 years', Illinois Millennium Landmark Tree chosen by America the Beautiful Fund in 2000). A 2016 DNAinfo piece quotes the Arboretum's plant records manager as 'likely more than 330 years' (conflict 250 vs 330+). Walk-through arboretum, not a small site, so no findable pin; paid entry. Needs the Arboretum map or a plaque photo with GPS.",
-      "sources": [
-        "https://mortonarb.org/app/uploads/2021/10/FallColorAudioTourTranscript_WestSideLoop1_LakeMarmo.pdf",
-        "https://www.dnainfo.com/chicago/20160718/hyde-park/whats-oldest-tree-chicago-experts-are-stumped"
-      ]
-    },
-    {
-      "name": "Cottonwood outside Rate Field (former Comiskey Park site), Bridgeport",
-      "species": "Eastern Cottonwood (Populus deltoides)",
-      "status": "open",
-      "reason": "Morton Arboretum article (2025): planted 1910 as a sapling, dated by its horticulture head from vintage photographs, living, about 115 years, cuttings in the Arboretum greenhouse. No street, side of the ballpark or coordinate found; access to the ground not stated. Needs a located source before it can ship.",
-      "sources": [
-        "https://mortonarb.org/?p=1346031"
-      ]
-    },
-    {
-      "name": "Bur oak, Northwestern University 'Grandpa' and wide-trunked bur oak by Shakespeare Garden",
-      "species": "Bur Oak (Quercus macrocarpa)",
-      "status": "open",
-      "reason": "Described only qualitatively in a student nature magazine (no age, no girth); no location precise enough. Same Evanston campus as chi_044.",
-      "sources": [
-        "https://www.inournaturemag.com/all/2022/12/16/a-visual-guide-to-northwesterns-trees"
-      ]
-    },
-    {
-      "name": "Chicago Botanic Garden oldest oak (white oak, McDonald Woods near Lake Cook Road entrance)",
-      "species": "White Oak (Quercus alba)",
-      "status": "open",
-      "reason": "Garden's own material says only '100+' years and that ages cannot be told without cutting; no coordinate. Dropped unless a located, dated source appears.",
-      "sources": [
-        "https://www.chicagobotanic.org/sites/default/files/images/coloring_pages/CBG_oakgraphic_coloring_page.pdf"
-      ]
-    },
-    {
-      "name": "Kentucky coffeetree, Belleau Lake (rank #3 in the county)",
-      "species": "Kentucky Coffeetree (Gymnocladus dioicus)",
-      "status": "open",
-      "lat": 42.030479,
-      "lng": -87.86696,
-      "reason": "Register objectid 130, circumference 65.94 in (167 cm), height 64 ft (19.5 m), measured 2024-05-16. Modest size; held back this pass for the stronger Swallow Cliff and McClaughrey trees.",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D130&outFields=*&f=json"
-      ]
-    },
-    {
-      "name": "Black cherry, Callahan Grove (rank #3 in the county)",
-      "species": "Black Cherry (Prunus serotina)",
-      "status": "open",
-      "lat": 41.848759,
-      "lng": -87.824415,
-      "reason": "Register objectid 172, circumference 103.62 in (263 cm), height 72 ft (21.9 m); no measurement date. Third-ranked, modest height; held back this pass.",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D172&outFields=*&f=json"
-      ]
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Bur Oak, Lincoln Park Zoo South Lawn",
-      "species": "Bur Oak (Quercus macrocarpa)",
-      "location_hint": "Lincoln Park Zoo, South Lawn, Chicago",
-      "reason": "DEAD. This was Chicago's best-known candidate for oldest tree (estimated 250-300 years, predating the city and the USA), but it was removed by crane and chainsaw crews on 2023-05-02 after reaching the end of its life cycle; confirmed by Block Club Chicago, WTTW, NPR and Smithsonian Magazine, all archived. 36 scions were grafted at the Morton Arboretum to preserve its genetics, but the tree itself is gone. Never ship as a living entry."
-    },
-    {
-      "name": "Birdhouse Oak, Lincoln Park (near Farm in the Zoo)",
-      "species": "Oak (species unspecified in source), century-old",
-      "location_hint": "1911 N Stockton Dr, Lincoln Park, Chicago, across from the Farm in the Zoo",
-      "reason": "Source (Block Club Chicago, 2022) describes it explicitly as a 'dying oak tree' that was given a second life as a public-art bird sanctuary with 190 birdhouses attached, i.e. a snag/dying specimen rather than a living, thriving tree. Fails the 'alive now' bar as reported; would need a fresh 2025/2026 check to see whether it is still standing and whether calling it 'alive' would be honest, or whether it is functionally a dead-tree art installation (which the project's dead-tree rule excludes as a collectible entry regardless of fame)."
-    },
-    {
-      "name": "LaBagh Woods old-growth oak/hickory woodland",
-      "species": "mixed: swamp white oak, red oak, bur oak, hickory, maple",
-      "location_hint": "LaBagh Woods, Foster Ave near North Cicero Ave, Albany Park/North Park, Chicago",
-      "reason": "Not a collectible point: sources describe a whole closed-canopy woodland along the North Branch of the Chicago River, no single named or individually distinguished tree identified. Would need a specific standout specimen located first."
-    },
-    {
-      "name": "Dan Ryan Woods old-growth oak/hickory woodland",
-      "species": "mixed oak and hickory",
-      "location_hint": "Dan Ryan Woods, 87th and Western, Beverly, Chicago",
-      "reason": "Same as LaBagh Woods: a 60-acre closed-canopy woodland on high ground (former Blue Island), not a single collectible tree. No individual specimen identified in this pass."
-    },
-    {
-      "name": "Massacre Tree (Fort Dearborn cottonwood)",
-      "species": "Cottonwood",
-      "location_hint": "18th Street between Prairie Avenue and the lake, Chicago",
-      "reason": "DEAD since 1894. A cottonwood said to have been a sapling during the 1812 Fort Dearborn Massacre; a Chicago Tribune report of 1894-05-18 recorded it fell in a storm, was sawn in two and given to G. Pullman for his gardens. Historical-only, never a living entry."
-    },
-    {
-      "name": "Bur Oak Historical Marker tree, Spring Valley Nature Center",
-      "species": "Bur Oak (Quercus macrocarpa)",
-      "location_hint": "Schaumburg, Cook County, IL (hmdb.org marker #259980)",
-      "reason": "Not in Chicago and not within the ~30 minute day-trip boundary: Schaumburg is a far northwest suburb, well outside transit range of the city centre."
-    },
-    {
-      "name": "\"Champion\" white oak, Pioneer Woods",
-      "species": "White Oak (Quercus alba)",
-      "location_hint": "Pioneer Woods, Willow Springs, Cook County (Forest Preserve District of Cook County)",
-      "reason": "Roughly 300 years old per the Forest Preserves' resource-management director, but Willow Springs is a distant southwest suburb, well outside the ~30 minute day-trip boundary of downtown Chicago. Same exclusion applies to the Millennium Landmark Tree at Morton Arboretum in Lisle (330+ years, white oak) \u2014 genuinely one of the region's oldest trees but a different city's day trip, not Chicago's."
-    },
-    {
-      "name": "Heritage Bur Oak, 244 N Forest Ave, Oak Park",
-      "species": "Bur Oak (Quercus macrocarpa)",
-      "location_hint": "244 N Forest Ave, Oak Park, IL",
-      "reason": "DEAD. Roughly 200 years old, part of the same Oak Park heritage-oak cohort as the Kenilworth Witness Oak (chi_006) but a different, specific tree. Confirmed removed 2025-10-06 after developing disease following storm damage to a major limb; oakpark.com, 'After 200 years, beloved tree sees its last autumn' (2025-10-01). Never ship as a living entry."
-    },
-    {
-      "name": "Illinois Big Tree Register entries elsewhere in Cook County (non-Chicago)",
-      "species": "various: eastern wahoo (Bemis Woods), green hawthorn (Moraine Valley Community College), slippery elm (St. James at Sag Bridge Cemetery), butternut (Busse Woods), dotted hawthorn (Midway Woods), American elm (Wheeling HS), Allegheny serviceberry (Tinley Creek Ravines), blackhaw (Sand Ridge Nature Center), choke cherry (Skokie Lagoons)",
-      "reason": "2026-08-09 pass: queried the IBTR feature service for the full County='Cook' set (12 records; see resolved_2026_08_09 below). All 12 addresses checked by coordinate; only the boxelder (chi_004, Edgebrook) and red pine (chi_005, Indian Boundary) fall inside actual Chicago city limits. The other 9 are in far suburbs (Western Springs, Palos Hills, Lemont, Schaumburg/Elk Grove, Wheeling, Homewood-Flossmoor, Winnetka/Glencoe, Tinley Park, South Chicago Heights), well outside the ~30 minute day-trip boundary of downtown, and most of the species (hawthorns, wahoo, serviceberry, blackhaw) are shrubs/small trees rather than remarkable specimens anyway. Do not re-query the register for Chicago; it has been exhausted for this city."
-    },
-    {
-      "name": "Red pine",
-      "species": "Red pine (Pinus resinosa)",
-      "lat": 41.938313,
-      "lng": -87.844853,
-      "register_location": "Indian Boundary Golf Course",
-      "girth_cm": 167,
-      "height_m": 19.5,
-      "register_status": "Yes",
-      "sources": [
-        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
-      ],
-      "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
-      "status": "open",
-      "reason": "already published as The Champion Red Pine of Indian Boundary (chicago), 91 m away with matching name words"
-    },
-    {
-      "name": "Private garden bur oak, Evanston (about 600 years per the city arborist, 2013)",
-      "reason": "On a private residence, not seen from public ground per its source (garden-walk stop); not shippable. Estimate from trunk diameter only (580 to 696 years)."
-    },
-    {
-      "name": "Large white oak at 2728 Harrison St, Evanston",
-      "reason": "Ordered removed by the city per a neighbourhood blog; private street tree, presumed gone."
-    }
-  ],
-  "unexplored_2026_08_08": [
-    "Chicago Botanic Garden (Glencoe): checked briefly, the oldest documented specimen (a white oak in McDonald Woods) is only cited as 'over 100 years old', not old enough to be a strong candidate, and Glencoe is a genuine trek from downtown (Metra Union Pacific North to Braeside, then a walk/shuttle, likely 45+ minutes door to door), so it was not pursued further this pass.",
-    "Washington Park (Olmsted, 1870): DNAinfo's 2016 'oldest tree' survey states its oaks 'predate the earliest designs for the park by Frederick Law Olmsted in 1870', but no source found in this pass names or locates an individual specimen there; TCLF's landscape page describes groves only in aggregate. Worth a dedicated look at Chicago Park District records or a site visit.",
-    "hpherald.com's 'Hyde Park Stories: Bur Oaks' article (already a verified_source for chi_002) returned HTTP 429 on WebFetch and 302 on curl in this pass; worth a retry with a delay, it may contain more detail on the Wooded Island/Jackson Park grove or other Hyde Park specimens."
-  ],
-  "resolved_2026_08_09": {
-    "illinois_big_tree_register_feature_service": "The Experience Builder app at https://experience.arcgis.com/experience/df5e7296d76a4c8ba133c9e8adf1f85a is item df5e7296d76a4c8ba133c9e8adf1f85a on arcgis.com (\"IBTR Web Map 2026\", owner cwevans1, org GL0fWlNkwysZaKeV = University of Illinois Extension). Its config (arcgis.com/sharing/rest/content/items/<id>/data?f=json) names the underlying layer as https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0 (capability: Query only). Query with GET params geometry=<envelope>&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&f=json (or where=Common_name=... / County=...). Fields include Common_name, Species, County, Location (free-text, no address), Year_listed_Last_measured, Diameter_at_breast_height__in__, Circumference__ft__, Height__ft__, Spread__ft__, Total_Points (ranking score), pic_url (temporary signed S3 URL, expires), Lat/Long. No age field exists in this register at all. The County field does NOT reliably indicate Chicago city limits (Cook County is mostly suburbs); filter by lat/long against the actual city boundary instead. Never re-hunt this endpoint; query it directly next time."
+ "city": "Chicago",
+ "country": "USA",
+ "city_slug": "chicago",
+ "updated": "2026-08-09",
+ "note": "First verification pass on Chicago, web research from zero (no register). Delivered 3 verified candidates to data/research/chicago-verified.json (chi_001 to chi_003), below the 4-tree floor for a page. leads = trees that failed only on our evidence bar or on the count, raw material for a future pass. blocked = trees that must never ship whatever happens later, each with its reason. 2026-08-09 pass: found the Illinois Big Tree Register feature-service endpoint and delivered chi_004 (Champion Boxelder, Edgebrook Golf Course) to data/research/chicago-verified.json, bringing Chicago to 4 verified trees, the floor for a page.",
+ "leads": [
+  {
+   "name": "University of Chicago Main Quadrangle bur oak / black oak stand",
+   "species": "Bur Oak (Quercus macrocarpa) and Black Oak (Quercus velutina), mixed stand",
+   "location_hint": "Humanities Quadrangle and Social Sciences Quadrangle, University of Chicago main campus, Hyde Park, roughly 41.789, -87.5997",
+   "why_not_shipped": "Two native oak stands predate the University (founded 1890) and were deliberately preserved by trustee Judge Daniel Shorey when the quadrangles were laid out; a Chicago Maroon student column (2019) and a University of Chicago Magazine piece both confirm old oaks still stand in the quads today, and a University Facilities article (paywalled behind the intranet.uchicago.edu React app, could not be fetched by curl or WebFetch in this pass, both redirected to a JS-only shell) reportedly discusses the stand's history in more depth per search-engine summaries only, which is not something to trust without reading the source directly. No confirmed age figure or exact single-tree location was found that would clear the two-source bar for a specific collectible point; the sources describe a stand/cluster across two quads, not one tree with one place to stand. Worth a dedicated pass: visit or find the facilities.uchicago.edu article through a cached/archived copy, or contact UChicago Facilities (contact was named in secondary coverage: Richard Bumstead, associate director of campus environment) to pin an exact specimen and age.",
+   "update_2026_08_08": "The intranet source was read in a browser session: it quotes Goodspeed's History of the University of Chicago. Key passage: 'Judge Shorey was also the principle advocate for preserving the existing oaks on campus - oaks that in many cases predate the University.' Also: in the University's first year the western side was 'flat, but dry and covered with young oaks', so the preserved oaks were YOUNG in 1892, putting them at roughly 140-170 years now, not ancient. History is now double-sourced; what still fails is the collectible-point rule: every source describes a stand across two quadrangles, no single tree with one place to stand. Only a source naming one individual tree reopens this."
   },
-  "resolved_2026_08_09_verify_pass": {
-    "summary": "Second verification pass (deepen, target chi_005 onward). Queried the full IBTR County='Cook' set (12 records, up from the earlier bbox query's 5): only 2 fall inside actual Chicago city limits, the already-shipped boxelder (chi_004) and the red pine at Indian Boundary Golf Course, now delivered as chi_005. The register is genuinely exhausted for Chicago proper; see the new 'Illinois Big Tree Register entries elsewhere in Cook County' blocked entry for the full list of what was checked and ruled out.",
-    "chi_005_red_pine": "Delivered to data/research/chicago-verified.json. Single-source (register only) like chi_004; no independent writeup found naming this specific tree despite searching Sun-Times, Extension press releases and fpdcc.com. It is literally the only red pine on the statewide register (confirmed by querying Common_name='red pine' with no county filter), which is what makes it the register's default state champion for the species.",
-    "chi_006_kenilworth_oak": "Delivered to data/research/chicago-verified.json, a DAY-TRIP entry (Oak Park, not Chicago; CTA Green Line, well under 30 min). Two Wednesday Journal/oakpark.com articles (2011, 2014) corroborate existence, species and general story but disagree on age (230 vs ~300 years, both recorded). Not reconfirmed alive since 2014; flagged explicitly because a sibling Oak Park heritage oak on Forest Ave (different tree, same cohort) was confirmed dead and removed in October 2025, which is real reason for caution about 12-year-old sourcing on a tree of similar age and provenance.",
-    "dead_ends_this_pass": "Washington Park (still no individual specimen, only the Olmsted-era grove claim, unchanged from 2026-08-08), Rosehill Cemetery, Oak Woods Cemetery, Indian Boundary Park (West Ridge, distinct from the golf course of the same name), and a Jackson Park photo essay (southsideweekly.com) all searched with no individual named tree found. hpherald.com's Hyde Park bur oak article (previously 429) was reread successfully this pass via search snippet, added nothing beyond what chi_001/chi_002 already cite."
+  {
+   "name": "Graceland Cemetery arboretum (unspecified individual specimen)",
+   "species": "unknown - cemetery is a certified Morton Arboretum-affiliate arboretum of 2,000+ trees, 103+ species, including American Elm",
+   "location_hint": "Graceland Cemetery, 4001 N Clark St, Uptown, Chicago, roughly 41.9556, -87.6598",
+   "why_not_shipped": "Graceland publishes its own self-guided Tree Tour maps (PDF, e.g. https://www.gracelandcemetery.org/images/Tree_Tour_II_Map_-_to_be_added_to_website.pdf) which likely name specific notable specimens, but the tour pages fetched in this pass described the collection only in aggregate, with no individual tree's age, species or exact plot called out. A future pass should open the actual Tree Tour PDF map(s) rather than the landing page; if they name specific champion or notably old trees with locations, that could produce one or more strong candidates within a 25 to 30 minute transit ride of downtown (Red Line to Sheridan or Berwyn, or Clark St bus).",
+   "update_2026_08_08": "Both PDF tour maps (Tree Tour I, 50 numbered specimens, and Tree Tour II, 50 more) were opened and read in full this pass. Both are plain species-identification walks, one example of each species numbered on a map (White Pine, Bur Oak is not even listed; the closest natives are a Northern Pin Oak, a Pin Oak, an English Oak, a Black Oak and a Swamp White Oak scattered among ornamentals like Ginkgo, Katsura and Star Magnolia). Neither map gives an age, a girth, a 'champion' or 'notable' designation, or any text distinguishing one specimen as remarkable versus another; they exist to show garden diversity, not veteran trees. Targeted searches for a named old/champion tree at Graceland (elm survivor, champion oak, historic specimen) returned nothing beyond the same aggregate 'certified arboretum, 2,000+ trees' framing. This lead is now closed unless a future pass finds a specific news piece or arborist report naming one Graceland tree with an age and a plot location; the tour maps themselves are exhausted."
   },
-  "pass_2026_10_02_verify": "Chicago deepen pass, 0 verified. Graceland Tree Tour PDF is a map image, unreadable by curl/WebFetch, no named specimen text reachable; search only says labeled arboretum with a large bald cypress near the lake (lead, no source). UChicago: Maroon piece names only a ~100-year bur oak by Bartlett Gym (too young, not a collectible); facilities oaks article 302s to intranet; Lab School oak unchanged. Lincoln Park / Garfield Park cycads: only travel-blog and Wikipedia generic ('some cycads over 200 years old'), indoor plants, no individual dated specimen, not trees. IBTR 2025-26 additions near Chicago (Wheeling HS elm, Midway Woods witch hazel, St James at Sag Bridge slippery elm, South Suburban College serviceberry) are suburban, outside day-trip boundary. No Chicago Tree Initiative or Park District heritage-tree list found.",
-  "pass_2026_10_03_pin_photo": "Pin-and-photo pass: nothing placeable. Old Treaty Elm (Sauganash) fell 1934; Lincoln Park Zoo bur oak felled 2023-05-02 (both dead, do not publish). Forest Preserves of Cook County Champion Tree Register and map 403 to fetchers and no public FeatureServer found at gis12/gis.cookcountyil.gov (empty responses); Morton PP_Trees_Cook_County layer has no species or coordinates of named trees. Existing leads (UChicago quad stand, Graceland, Lab School oak) have no single trunk or no recoverable text.",
-  "pass_2026_11_04_verify": "Verify pass 2026-11-04: delivered chi_040..chi_044 to data/research/chicago-2026-11-verified.json (4 Forest Preserves champions: McClaughrey sycamore, Swallow Cliff black cherry and white pine, Schiller pin oak; plus Northwestern's bur oak by 1835 Hinman in Evanston). Morton Arboretum Millennium Landmark Tree, Rate Field cottonwood, Chicago Botanic Garden oak, Rosehill, Washington/Garfield/Humboldt/Lincoln Park individual trees: no placeable tree or no source, see leads. Evanston gave one shippable tree, so no Evanston place."
+  {
+   "name": "University of Chicago Laboratory Schools courtyard oak",
+   "species": "Oak (species unspecified)",
+   "location_hint": "UChicago Laboratory Schools, Blaine courtyard/playground, 1362 E 59th St, Hyde Park, roughly 41.789, -87.596",
+   "why_not_shipped": "2026-08-09 pass: same DNAinfo 2016 article that sourced chi_001 mentions 'a similarly sized oak tree in the University of Chicago Laboratory Schools courtyard', quoting the school's communications director and an alumna saying 'no one there could estimate its age'. No age, no second source beyond this one article, and the tree now sits inside a school playground/courtyard project (Culliton Quinn 'UChicago Lab Schools Playground | Blaine Courtyard', a climbable tree house built around a large oak at the courtyard's north entry corner) which raises a real access question: a K-12 school courtyard is not obviously open to the public the way a park or cemetery is. Would need: an age estimate from any source, confirmation the courtyard is publicly accessible (or specifically excluded if not), and ideally a look at whether the tree house construction has harmed the tree."
+  },
+  {
+   "name": "Old growth oak / \"Council\" tree, Beverly / Blue Island Ridge",
+   "species": "Oak (species unspecified)",
+   "location_hint": "Somewhere on the Blue Island glacial ridge, Beverly neighbourhood (Ridge Historic District) or the separate suburb of Blue Island immediately south; exact location not found",
+   "why_not_shipped": "2026-08-09 pass: a Beverly Review 'Good News 2022' piece quotes Robert Lane of the Ridge Historical Society describing an old-growth oak on the Blue Island ridge plausibly used by Native Americans travelling the Vincennes Trail, connected to events 'spanning 700 years'. The source article itself returned HTTP 429 on WebFetch (retry after a delay did not clear it in this pass) so the claim is second-hand via search snippet only, with no address, coordinates, current photo, or age figure. A 'Council Oak Montessori School' exists in Blue Island (the separate south-suburban town, not the Chicago neighbourhood of Beverly), suggesting local naming lore but not a specific standing tree. Needs: the actual Beverly Review article read in full (retry the fetch), or a direct approach to the Ridge Historical Society ([address removed], cited in other coverage) to name and locate the specific tree, plus a check on whether Blue Island proper is within the ~30 minute day-trip boundary (it has a Metra Rock Island District stop, roughly 30 min from LaSalle Street Station, so it is borderline)."
+  },
+  {
+   "name": "The Sago Palm (cycad) of Lincoln Park Conservatory's Fern Room",
+   "species": "possibly Cycas circinalis or Cycas revoluta (sources vary), a cycad, not a true tree",
+   "location_hint": "Lincoln Park Conservatory, Fern Room, 2391 N Stockton Dr, Lincoln Park, Chicago",
+   "why_not_shipped": "2026-08-09 pass: multiple travel-blog style sources (flowerchick.com and pages that appear to echo it) describe a 'century-old' sago palm/cycad in the Fern Room, said to have been an attraction people traveled to see during the 1893 World's Fair. The Conservatory's OWN official page (lincolnparkconservancy.org) only describes cycads generically ('among the most ancient group of plants... fossil records dating back at least 250 million years') with no mention of this specific dated specimen, so the striking claim has exactly one real source, repeated rather than corroborated. Two more open questions before this could ship even with a second source: exact species (sources conflict on the Latin name) and whether a potted greenhouse specimen fits the collectible-point / 'walk to a tree outdoors' product at all, which is a judgement call for a session with Hidde rather than a verification pass. Worth a future pass: ask the Chicago Park District or Lincoln Park Conservancy directly, or find a Chicago Tribune / local news piece with a acquisition date."
+  },
+  {
+   "name": "Red pine, Indian Boundary Golf Course",
+   "species": "Red Pine (Pinus resinosa)",
+   "location_hint": "Indian Boundary Golf Course, 8600 W Forest Preserve Ave, Chicago, IL 60634 (Forest Preserves of Cook County), roughly 41.939135, -87.844832",
+   "why_not_shipped": "RESOLVED 2026-08-09: delivered to data/research/chicago-verified.json as chi_005. Left here for history; do not re-research."
+  },
+  {
+   "name": "Smooth serviceberry",
+   "species": "Smooth serviceberry (Amelanchier laevis)",
+   "lat": 41.623458,
+   "lng": -87.797662,
+   "register_location": "Tinley Creek Woods",
+   "girth_cm": 49,
+   "height_m": 9.8,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Smooth serviceberry",
+   "species": "Smooth serviceberry (Amelanchier laevis)",
+   "lat": 41.629669,
+   "lng": -87.796469,
+   "register_location": "Tinley Creek Woods",
+   "girth_cm": 37,
+   "height_m": 7.3,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Sugar maple",
+   "species": "Sugar maple (Acer saccharum)",
+   "lat": 42.022437,
+   "lng": -87.998853,
+   "register_location": "Busse Forest South",
+   "girth_cm": 247,
+   "height_m": 36.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_050 (data/research/chicago-verified.json, 2026-11-14)"
+  },
+  {
+   "name": "Sugar maple",
+   "species": "Sugar maple (Acer saccharum)",
+   "lat": 42.112598,
+   "lng": -87.886302,
+   "register_location": "Dam No. 1 Woods East",
+   "girth_cm": 353,
+   "height_m": 29.3,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_030 (data/research/chicago-verified.json, 2026-10-22)"
+  },
+  {
+   "name": "Silver maple",
+   "species": "Silver maple (Acer saccharinum)",
+   "lat": 42.061849,
+   "lng": -87.761434,
+   "register_location": "Harms Flatwoods",
+   "girth_cm": 432,
+   "height_m": 24.9,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Silver maple",
+   "species": "Silver maple (Acer saccharinum)",
+   "lat": 41.899989,
+   "lng": -87.832488,
+   "register_location": "Thatcher Woods",
+   "girth_cm": 427,
+   "height_m": 26.8,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_052 (data/research/chicago-verified.json, 2026-11-14)"
+  },
+  {
+   "name": "Muslewood",
+   "species": "Muslewood (Carpinus caroliniana)",
+   "lat": 41.888846,
+   "lng": -87.807025,
+   "register_location": "Cummings Square",
+   "girth_cm": 58,
+   "height_m": 11.0,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Bitternut hickory",
+   "species": "Bitternut hickory (Carya cordiformis)",
+   "lat": 42.008769,
+   "lng": -87.79196,
+   "register_location": "Bunker Hill Woods",
+   "girth_cm": 244,
+   "height_m": 24.4,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_046 (data/research/chicago-verified.json, 2026-11-07)"
+  },
+  {
+   "name": "Bitternut hickory",
+   "species": "Bitternut hickory (Carya cordiformis)",
+   "lat": 41.89596,
+   "lng": -87.829652,
+   "register_location": "Thatcher Woods",
+   "girth_cm": 192,
+   "height_m": 34.1,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Hackberry",
+   "species": "Hackberry (Celtis occidentalis)",
+   "lat": 41.900515,
+   "lng": -87.833081,
+   "register_location": "Thatcher Woods",
+   "girth_cm": 351,
+   "height_m": 36.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_053 (data/research/chicago-verified.json, 2026-11-14)"
+  },
+  {
+   "name": "Hackberry",
+   "species": "Hackberry (Celtis occidentalis)",
+   "lat": 41.839231,
+   "lng": -87.830116,
+   "register_location": "National Grove",
+   "girth_cm": 351,
+   "height_m": 34.1,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_054 (data/research/chicago-verified.json, 2026-11-14)"
+  },
+  {
+   "name": "Witch hazel",
+   "species": "Witch hazel (Hamamelis virginiana)",
+   "lat": 42.126824,
+   "lng": -87.791431,
+   "register_location": "Chipilly Woods",
+   "girth_cm": 37,
+   "height_m": 6.1,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Butternut/white walnut",
+   "species": "Butternut/white walnut (Juglans cinerea)",
+   "lat": 42.022339,
+   "lng": -87.99885,
+   "register_location": "Busse Forest South",
+   "girth_cm": 223,
+   "height_m": 29.3,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_050 (data/research/chicago-verified.json, 2026-11-14)"
+  },
+  {
+   "name": "Black walnut",
+   "species": "Black walnut (Juglans nigra)",
+   "lat": 41.678854,
+   "lng": -87.857757,
+   "register_location": "Swallow Cliff Woods",
+   "girth_cm": 329,
+   "height_m": 36.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_033 (data/research/chicago-verified.json, 2026-10-22)"
+  },
+  {
+   "name": "Eastern red cedar",
+   "species": "Eastern red cedar (Juniperus virginiana)",
+   "lat": 42.091133,
+   "lng": -87.882734,
+   "register_location": "Lake Avenue Woods East",
+   "girth_cm": 72,
+   "height_m": 13.7,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Ironwood",
+   "species": "Ironwood (Ostrya virginiana)",
+   "lat": 41.713868,
+   "lng": -87.901434,
+   "register_location": "Red Gate Woods",
+   "girth_cm": 96,
+   "height_m": 14.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Cottonwood",
+   "species": "Cottonwood (Populus deltoides)",
+   "lat": 41.898841,
+   "lng": -87.832668,
+   "register_location": "Thatcher Woods",
+   "girth_cm": 594,
+   "height_m": 41.5,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Cottonwood",
+   "species": "Cottonwood (Populus deltoides)",
+   "lat": 41.838197,
+   "lng": -87.830776,
+   "register_location": "National Grove",
+   "girth_cm": 582,
+   "height_m": 39.0,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Sycamore",
+   "species": "Sycamore (Platanus occidentalis)",
+   "lat": 41.678001,
+   "lng": -87.845263,
+   "register_location": "McClaughrey Springs Woods",
+   "girth_cm": 242,
+   "height_m": 34.1,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_055 (data/research/chicago-verified.json, 2026-11-14)"
+  },
+  {
+   "name": "Black cherry",
+   "species": "Black cherry (Prunus serotina)",
+   "lat": 41.680922,
+   "lng": -87.863688,
+   "register_location": "Swallow Cliff Woods",
+   "girth_cm": 241,
+   "height_m": 34.7,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_056 (data/research/chicago-verified.json, 2026-11-14)"
+  },
+  {
+   "name": "White pine",
+   "species": "White pine (Pinus strobus)",
+   "lat": 41.674644,
+   "lng": -87.860306,
+   "register_location": "Swallow Cliff Woods",
+   "girth_cm": 282,
+   "height_m": 19.5,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_057 (data/research/chicago-verified.json, 2026-11-14)"
+  },
+  {
+   "name": "White pine",
+   "species": "White pine (Pinus strobus)",
+   "lat": 41.56839,
+   "lng": -87.59751,
+   "register_location": "Wampum Lake",
+   "girth_cm": 262,
+   "height_m": 29.3,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "held",
+   "reason": "beyond the day-trip boundary (Lansing, south Cook County)"
+  },
+  {
+   "name": "Swamp white oak",
+   "species": "Swamp white oak (Quercus bicolor)",
+   "lat": 41.725115,
+   "lng": -87.853176,
+   "register_location": "Spears Woods",
+   "girth_cm": 338,
+   "height_m": 21.9,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Bur oak",
+   "species": "Bur oak (Quercus macrocarpa)",
+   "lat": 42.057058,
+   "lng": -87.769042,
+   "register_location": "Harms Woods",
+   "girth_cm": 483,
+   "height_m": 24.4,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Red oak",
+   "species": "Red oak (Quercus rubra)",
+   "lat": 42.022426,
+   "lng": -87.998596,
+   "register_location": "Busse Forest South",
+   "girth_cm": 320,
+   "height_m": 36.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_049 (data/research/chicago-verified.json, 2026-11-14)"
+  },
+  {
+   "name": "Red oak",
+   "species": "Red oak (Quercus rubra)",
+   "lat": 42.022093,
+   "lng": -87.998526,
+   "register_location": "Busse Forest South",
+   "girth_cm": 391,
+   "height_m": 31.7,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_048 (data/research/chicago-verified.json, 2026-11-14)"
+  },
+  {
+   "name": "Black oak",
+   "species": "Black oak (Quercus velutina)",
+   "lat": 41.731248,
+   "lng": -87.873152,
+   "register_location": "Willow Springs Woods",
+   "girth_cm": 363,
+   "height_m": 36.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Bald cypress",
+   "species": "Bald cypress (Taxodium distichum)",
+   "lat": 41.644072,
+   "lng": -87.858684,
+   "register_location": "McGinnis Slough",
+   "girth_cm": 320,
+   "height_m": 25.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Bald cypress",
+   "species": "Bald cypress (Taxodium distichum)",
+   "lat": 41.643575,
+   "lng": -87.858584,
+   "register_location": "McGinnis Slough",
+   "girth_cm": 378,
+   "height_m": 20.0,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Sycamore",
+   "species": "Sycamore (Platanus occidentalis)",
+   "lat": 41.823072,
+   "lng": -87.817478,
+   "register_location": "Riverside Lawn",
+   "girth_cm": 391,
+   "height_m": 41.5,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Pin oak",
+   "species": "Pin oak (Quercus palustris)",
+   "lat": 42.033977,
+   "lng": -87.790325,
+   "register_location": "St. Paul Woods",
+   "girth_cm": 292,
+   "height_m": 31.7,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_039 (data/research/chicago-verified.json, 2026-10-22)"
+  },
+  {
+   "name": "White oak",
+   "species": "White oak (Quercus alba)",
+   "lat": 41.706313,
+   "lng": -87.901928,
+   "register_location": "Red Gate Woods",
+   "girth_cm": 421,
+   "height_m": 29.3,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Honey locust",
+   "species": "Honey locust (Gleditsia triacanthos)",
+   "lat": 41.654537,
+   "lng": -87.639522,
+   "register_location": "Whistler Woods",
+   "girth_cm": 320,
+   "height_m": 24.4,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Kentucky coffeetree",
+   "species": "Kentucky coffeetree (Gymnocladus dioicus)",
+   "lat": 42.030479,
+   "lng": -87.86696,
+   "register_location": "Belleau Lake",
+   "girth_cm": 167,
+   "height_m": 19.5,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Red maple",
+   "species": "Red maple (Acer rubrum)",
+   "lat": 42.006019,
+   "lng": -87.787536,
+   "register_location": "Bunker Hill Woods",
+   "girth_cm": 279,
+   "height_m": 15.8,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_047 (data/research/chicago-verified.json, 2026-11-07)"
+  },
+  {
+   "name": "Blackgum",
+   "species": "Blackgum (Nyssa sylvatica)",
+   "lat": 41.571172,
+   "lng": -87.592777,
+   "register_location": "Wampum Lake NP",
+   "girth_cm": 95,
+   "height_m": 13.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "held",
+   "reason": "beyond the day-trip boundary (Lansing, south Cook County)"
+  },
+  {
+   "name": "Blackgum",
+   "species": "Blackgum (Nyssa sylvatica)",
+   "lat": 41.571662,
+   "lng": -87.592849,
+   "register_location": "Wampum Lake",
+   "girth_cm": 187,
+   "height_m": 16.8,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "held",
+   "reason": "beyond the day-trip boundary (Lansing, south Cook County)"
+  },
+  {
+   "name": "Blackgum",
+   "species": "Blackgum (Nyssa sylvatica)",
+   "lat": 41.57196,
+   "lng": -87.593052,
+   "register_location": "Wampum Lake",
+   "girth_cm": 130,
+   "height_m": 11.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "held",
+   "reason": "beyond the day-trip boundary (Lansing, south Cook County)"
+  },
+  {
+   "name": "Red pine",
+   "species": "Red pine (Pinus resinosa)",
+   "lat": 41.605489,
+   "lng": -87.566853,
+   "register_location": "Sand Ridge Nature Center",
+   "girth_cm": 189,
+   "height_m": 18.9,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Sycamore",
+   "species": "Sycamore (Platanus occidentalis)",
+   "lat": 41.570576,
+   "lng": -87.594094,
+   "register_location": "Wampum Lake",
+   "girth_cm": 324,
+   "height_m": 25.5,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "held",
+   "reason": "beyond the day-trip boundary (Lansing, south Cook County)"
+  },
+  {
+   "name": "Ironwood",
+   "species": "Ironwood (Ostrya virginiana)",
+   "lat": 42.007966,
+   "lng": -87.79112,
+   "register_location": "Bunker Hill Woods",
+   "girth_cm": 97,
+   "height_m": 15.8,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Butternut/white walnut",
+   "species": "Butternut/white walnut (Juglans cinerea)",
+   "lat": 41.993505,
+   "lng": -87.860449,
+   "register_location": "Blue Beech Family Picnic Area",
+   "girth_cm": 144,
+   "height_m": 14.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "White oak",
+   "species": "White oak (Quercus alba)",
+   "lat": 41.676874,
+   "lng": -87.851525,
+   "register_location": "McClaughrey Springs Woods",
+   "girth_cm": 476,
+   "height_m": 21.0,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Black cherry",
+   "species": "Black cherry (Prunus serotina)",
+   "lat": 41.848759,
+   "lng": -87.824415,
+   "register_location": "Callahan Grove",
+   "girth_cm": 263,
+   "height_m": 21.9,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Sassafras",
+   "species": "Sassafras (Sassafras albidum)",
+   "lat": 41.569596,
+   "lng": -87.594439,
+   "register_location": "Thorn Creek Division LM",
+   "girth_cm": 326,
+   "height_m": 12.2,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Choke cherry",
+   "species": "Choke cherry (Prunus virginiana)",
+   "lat": 42.114855,
+   "lng": -87.775041,
+   "register_location": "Skokie Lagoons",
+   "girth_cm": 64,
+   "height_m": 7.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Slippery elm",
+   "species": "Slippery elm (Ulmus rubra)",
+   "lat": 41.602,
+   "lng": -87.553064,
+   "register_location": "Green Lake Woods",
+   "girth_cm": 226,
+   "height_m": 14.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Slippery elm",
+   "species": "Slippery elm (Ulmus rubra)",
+   "lat": 41.720819,
+   "lng": -87.848768,
+   "register_location": "Hidden Pond Woods",
+   "girth_cm": 137,
+   "height_m": 9.8,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Chinkapin oak",
+   "species": "Chinkapin oak (Quercus muehlenbergii)",
+   "lat": 41.841289,
+   "lng": -87.82926,
+   "register_location": "National Grove",
+   "girth_cm": 372,
+   "height_m": 29.3,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Basswood/American linden",
+   "species": "Basswood/American linden (Tilia americana)",
+   "lat": 42.100283,
+   "lng": -87.884227,
+   "register_location": "Allison Woods",
+   "girth_cm": 361,
+   "height_m": 19.5,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_034 (data/research/chicago-verified.json, 2026-10-22)"
+  },
+  {
+   "name": "Chinkapin oak",
+   "species": "Chinkapin oak (Quercus muehlenbergii)",
+   "lat": 42.028613,
+   "lng": -87.98843,
+   "register_location": "Busse Forest North",
+   "girth_cm": 104,
+   "height_m": 11.0,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Pin oak",
+   "species": "Pin oak (Quercus palustris)",
+   "lat": 41.958867,
+   "lng": -87.848379,
+   "register_location": "Schiller Woods",
+   "girth_cm": 279,
+   "height_m": 29.3,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "American elm",
+   "species": "American elm (Ulmus americana)",
+   "lat": 41.953161,
+   "lng": -87.844237,
+   "register_location": "Schiller Woods",
+   "girth_cm": 407,
+   "height_m": 25.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Black maple",
+   "species": "Black maple (Acer nigrum)",
+   "lat": 41.743421,
+   "lng": -87.680371,
+   "register_location": "Dan Ryan Woods North",
+   "girth_cm": 180,
+   "height_m": 12.2,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Northern pin/Hill's oak",
+   "species": "Northern pin/Hill's oak (Quercus ellipsoidalis)",
+   "lat": 41.831044,
+   "lng": -87.903183,
+   "register_location": "Bemis Woods North",
+   "girth_cm": 321,
+   "height_m": 24.4,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_032 (data/research/chicago-verified.json, 2026-10-22)"
+  },
+  {
+   "name": "Blackhaw",
+   "species": "Blackhaw (Viburnum prunifolium)",
+   "lat": 41.606075,
+   "lng": -87.565752,
+   "register_location": "Sand Ridge Nature Center",
+   "girth_cm": 49,
+   "height_m": 7.3,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Boxelder",
+   "species": "Boxelder (Acer negundo)",
+   "lat": 41.624839,
+   "lng": -87.785229,
+   "register_location": "Camp Sullivan",
+   "girth_cm": 268,
+   "height_m": 14.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Black maple",
+   "species": "Black maple (Acer nigrum)",
+   "lat": 41.60624,
+   "lng": -87.5659,
+   "register_location": "Sand Ridge Nature Center",
+   "girth_cm": 174,
+   "height_m": 19.5,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Sugar maple",
+   "species": "Sugar maple (Acer saccharum)",
+   "lat": 42.007998,
+   "lng": -87.790804,
+   "register_location": "Bunker Hill Woods",
+   "girth_cm": 297,
+   "height_m": 29.3,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_045 (data/research/chicago-verified.json, 2026-11-07)"
+  },
+  {
+   "name": "Shagbark hickory",
+   "species": "Shagbark hickory (Carya ovata)",
+   "lat": 41.67408,
+   "lng": -87.857609,
+   "register_location": "Swallow Cliff Woods",
+   "girth_cm": 265,
+   "height_m": 29.3,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_038 (data/research/chicago-verified.json, 2026-10-22)"
+  },
+  {
+   "name": "Ohio buckeye",
+   "species": "Ohio buckeye (Aesculus glabra)",
+   "lat": 42.016423,
+   "lng": -87.993219,
+   "register_location": "Busse Forest South",
+   "girth_cm": 313,
+   "height_m": 13.4,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_037 (data/research/chicago-verified.json, 2026-10-22)"
+  },
+  {
+   "name": "Redbud",
+   "species": "Redbud (Cercis canadensis)",
+   "lat": 41.70857,
+   "lng": -87.876155,
+   "register_location": "Little Red Schoolhouse Nature Center",
+   "girth_cm": 96,
+   "height_m": 6.1,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Muslewood",
+   "species": "Muslewood (Carpinus caroliniana)",
+   "lat": 41.849837,
+   "lng": -87.824329,
+   "register_location": "Callahan Grove",
+   "girth_cm": 32,
+   "height_m": 4.9,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Downy hawthorn",
+   "species": "Downy hawthorn (Crataegus mollis)",
+   "lat": 42.114284,
+   "lng": -87.775425,
+   "register_location": "Skokie Lagoons",
+   "girth_cm": 128,
+   "height_m": 7.3,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Pecan",
+   "species": "Pecan (Carya illinoensis)",
+   "lat": 42.115568,
+   "lng": -87.77494,
+   "register_location": "Skokie Lagoons",
+   "girth_cm": 32,
+   "height_m": 4.9,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Downy hawthorn",
+   "species": "Downy hawthorn (Crataegus mollis)",
+   "lat": 42.007665,
+   "lng": -87.864851,
+   "register_location": "Axehead Lake",
+   "girth_cm": 96,
+   "height_m": 6.7,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Hackberry",
+   "species": "Hackberry (Celtis occidentalis)",
+   "lat": 41.900247,
+   "lng": -87.832372,
+   "register_location": "Thatcher Woods",
+   "girth_cm": 335,
+   "height_m": 39.0,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Downy hawthorn",
+   "species": "Downy hawthorn (Crataegus mollis)",
+   "lat": 42.002388,
+   "lng": -87.78337,
+   "register_location": "Bunker Hill Woods",
+   "girth_cm": 161,
+   "height_m": 6.1,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Redbud",
+   "species": "Redbud (Cercis canadensis)",
+   "lat": 41.822276,
+   "lng": -87.902599,
+   "register_location": "Bemis Woods South",
+   "girth_cm": 80,
+   "height_m": 6.1,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Black walnut",
+   "species": "Black walnut (Juglans nigra)",
+   "lat": 41.681836,
+   "lng": -87.836111,
+   "register_location": "Paddock Woods",
+   "girth_cm": 347,
+   "height_m": 34.1,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "held",
+   "reason": "third-ranked in the county, not picked this pass; no photo or notable reason beyond rank"
+  },
+  {
+   "name": "Black cherry",
+   "species": "Black cherry (Prunus serotina)",
+   "lat": 42.026001,
+   "lng": -87.869356,
+   "register_location": "Camp Ground Road Woods",
+   "girth_cm": 335,
+   "height_m": 29.3,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "delivered chi_031 (data/research/chicago-verified.json, 2026-10-22)"
+  },
+  {
+   "name": "Eastern wahoo",
+   "species": "Eastern wahoo (Euonymus atropurpureus)",
+   "lat": 41.821601,
+   "lng": -87.909906,
+   "register_location": "Bemis Woods South",
+   "girth_cm": 60,
+   "height_m": 9.8,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Blue ash",
+   "species": "Blue ash (Fraxinus quadrangulata)",
+   "lat": 41.998561,
+   "lng": -87.778849,
+   "register_location": "Bunker Hill Woods",
+   "girth_cm": 128,
+   "height_m": 17.1,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Blue ash",
+   "species": "Blue ash (Fraxinus quadrangulata)",
+   "lat": 41.998579,
+   "lng": -87.779159,
+   "register_location": "Bunker Hill Woods",
+   "girth_cm": 136,
+   "height_m": 17.1,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Eastern wahoo",
+   "species": "Eastern wahoo (Euonymus atropurpureus)",
+   "lat": 41.823358,
+   "lng": -87.907431,
+   "register_location": "Bemis Woods South",
+   "girth_cm": 61,
+   "height_m": 8.2,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Eastern wahoo",
+   "species": "Eastern wahoo (Euonymus atropurpureus)",
+   "lat": 41.820407,
+   "lng": -87.911343,
+   "register_location": "Bemis Woods South",
+   "girth_cm": 96,
+   "height_m": 11.6,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open"
+  },
+  {
+   "name": "Millennium Landmark Tree (white oak), Morton Arboretum, Lisle",
+   "species": "White Oak (Quercus alba)",
+   "status": "open",
+   "reason": "No coordinate or trail location found: only 'near Lake Marmo, West Side' from the Arboretum's own fall-colour audio tour transcript (age 'about 250 years', Illinois Millennium Landmark Tree chosen by America the Beautiful Fund in 2000). A 2016 DNAinfo piece quotes the Arboretum's plant records manager as 'likely more than 330 years' (conflict 250 vs 330+). Walk-through arboretum, not a small site, so no findable pin; paid entry. Needs the Arboretum map or a plaque photo with GPS.",
+   "sources": [
+    "https://mortonarb.org/app/uploads/2021/10/FallColorAudioTourTranscript_WestSideLoop1_LakeMarmo.pdf",
+    "https://www.dnainfo.com/chicago/20160718/hyde-park/whats-oldest-tree-chicago-experts-are-stumped"
+   ]
+  },
+  {
+   "name": "Cottonwood outside Rate Field (former Comiskey Park site), Bridgeport",
+   "species": "Eastern Cottonwood (Populus deltoides)",
+   "status": "open",
+   "reason": "Morton Arboretum article (2025): planted 1910 as a sapling, dated by its horticulture head from vintage photographs, living, about 115 years, cuttings in the Arboretum greenhouse. No street, side of the ballpark or coordinate found; access to the ground not stated. Needs a located source before it can ship.",
+   "sources": [
+    "https://mortonarb.org/?p=1346031"
+   ]
+  },
+  {
+   "name": "Bur oak, Northwestern University 'Grandpa' and wide-trunked bur oak by Shakespeare Garden",
+   "species": "Bur Oak (Quercus macrocarpa)",
+   "status": "open",
+   "reason": "Described only qualitatively in a student nature magazine (no age, no girth); no location precise enough. Same Evanston campus as chi_044.",
+   "sources": [
+    "https://www.inournaturemag.com/all/2022/12/16/a-visual-guide-to-northwesterns-trees"
+   ]
+  },
+  {
+   "name": "Chicago Botanic Garden oldest oak (white oak, McDonald Woods near Lake Cook Road entrance)",
+   "species": "White Oak (Quercus alba)",
+   "status": "open",
+   "reason": "Garden's own material says only '100+' years and that ages cannot be told without cutting; no coordinate. Dropped unless a located, dated source appears.",
+   "sources": [
+    "https://www.chicagobotanic.org/sites/default/files/images/coloring_pages/CBG_oakgraphic_coloring_page.pdf"
+   ]
+  },
+  {
+   "name": "Kentucky coffeetree, Belleau Lake (rank #3 in the county)",
+   "species": "Kentucky Coffeetree (Gymnocladus dioicus)",
+   "status": "open",
+   "lat": 42.030479,
+   "lng": -87.86696,
+   "reason": "Register objectid 130, circumference 65.94 in (167 cm), height 64 ft (19.5 m), measured 2024-05-16. Modest size; held back this pass for the stronger Swallow Cliff and McClaughrey trees.",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D130&outFields=*&f=json"
+   ]
+  },
+  {
+   "name": "Black cherry, Callahan Grove (rank #3 in the county)",
+   "species": "Black Cherry (Prunus serotina)",
+   "status": "open",
+   "lat": 41.848759,
+   "lng": -87.824415,
+   "reason": "Register objectid 172, circumference 103.62 in (263 cm), height 72 ft (21.9 m); no measurement date. Third-ranked, modest height; held back this pass.",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D172&outFields=*&f=json"
+   ]
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Bur Oak, Lincoln Park Zoo South Lawn",
+   "species": "Bur Oak (Quercus macrocarpa)",
+   "location_hint": "Lincoln Park Zoo, South Lawn, Chicago",
+   "reason": "DEAD. This was Chicago's best-known candidate for oldest tree (estimated 250-300 years, predating the city and the USA), but it was removed by crane and chainsaw crews on 2023-05-02 after reaching the end of its life cycle; confirmed by Block Club Chicago, WTTW, NPR and Smithsonian Magazine, all archived. 36 scions were grafted at the Morton Arboretum to preserve its genetics, but the tree itself is gone. Never ship as a living entry."
+  },
+  {
+   "name": "Birdhouse Oak, Lincoln Park (near Farm in the Zoo)",
+   "species": "Oak (species unspecified in source), century-old",
+   "location_hint": "1911 N Stockton Dr, Lincoln Park, Chicago, across from the Farm in the Zoo",
+   "reason": "Source (Block Club Chicago, 2022) describes it explicitly as a 'dying oak tree' that was given a second life as a public-art bird sanctuary with 190 birdhouses attached, i.e. a snag/dying specimen rather than a living, thriving tree. Fails the 'alive now' bar as reported; would need a fresh 2025/2026 check to see whether it is still standing and whether calling it 'alive' would be honest, or whether it is functionally a dead-tree art installation (which the project's dead-tree rule excludes as a collectible entry regardless of fame)."
+  },
+  {
+   "name": "LaBagh Woods old-growth oak/hickory woodland",
+   "species": "mixed: swamp white oak, red oak, bur oak, hickory, maple",
+   "location_hint": "LaBagh Woods, Foster Ave near North Cicero Ave, Albany Park/North Park, Chicago",
+   "reason": "Not a collectible point: sources describe a whole closed-canopy woodland along the North Branch of the Chicago River, no single named or individually distinguished tree identified. Would need a specific standout specimen located first."
+  },
+  {
+   "name": "Dan Ryan Woods old-growth oak/hickory woodland",
+   "species": "mixed oak and hickory",
+   "location_hint": "Dan Ryan Woods, 87th and Western, Beverly, Chicago",
+   "reason": "Same as LaBagh Woods: a 60-acre closed-canopy woodland on high ground (former Blue Island), not a single collectible tree. No individual specimen identified in this pass."
+  },
+  {
+   "name": "Massacre Tree (Fort Dearborn cottonwood)",
+   "species": "Cottonwood",
+   "location_hint": "18th Street between Prairie Avenue and the lake, Chicago",
+   "reason": "DEAD since 1894. A cottonwood said to have been a sapling during the 1812 Fort Dearborn Massacre; a Chicago Tribune report of 1894-05-18 recorded it fell in a storm, was sawn in two and given to G. Pullman for his gardens. Historical-only, never a living entry."
+  },
+  {
+   "name": "Bur Oak Historical Marker tree, Spring Valley Nature Center",
+   "species": "Bur Oak (Quercus macrocarpa)",
+   "location_hint": "Schaumburg, Cook County, IL (hmdb.org marker #259980)",
+   "reason": "Not in Chicago and not within the ~30 minute day-trip boundary: Schaumburg is a far northwest suburb, well outside transit range of the city centre."
+  },
+  {
+   "name": "\"Champion\" white oak, Pioneer Woods",
+   "species": "White Oak (Quercus alba)",
+   "location_hint": "Pioneer Woods, Willow Springs, Cook County (Forest Preserve District of Cook County)",
+   "reason": "Roughly 300 years old per the Forest Preserves' resource-management director, but Willow Springs is a distant southwest suburb, well outside the ~30 minute day-trip boundary of downtown Chicago. Same exclusion applies to the Millennium Landmark Tree at Morton Arboretum in Lisle (330+ years, white oak) — genuinely one of the region's oldest trees but a different city's day trip, not Chicago's."
+  },
+  {
+   "name": "Heritage Bur Oak, 244 N Forest Ave, Oak Park",
+   "species": "Bur Oak (Quercus macrocarpa)",
+   "location_hint": "244 N Forest Ave, Oak Park, IL",
+   "reason": "DEAD. Roughly 200 years old, part of the same Oak Park heritage-oak cohort as the Kenilworth Witness Oak (chi_006) but a different, specific tree. Confirmed removed 2025-10-06 after developing disease following storm damage to a major limb; oakpark.com, 'After 200 years, beloved tree sees its last autumn' (2025-10-01). Never ship as a living entry."
+  },
+  {
+   "name": "Illinois Big Tree Register entries elsewhere in Cook County (non-Chicago)",
+   "species": "various: eastern wahoo (Bemis Woods), green hawthorn (Moraine Valley Community College), slippery elm (St. James at Sag Bridge Cemetery), butternut (Busse Woods), dotted hawthorn (Midway Woods), American elm (Wheeling HS), Allegheny serviceberry (Tinley Creek Ravines), blackhaw (Sand Ridge Nature Center), choke cherry (Skokie Lagoons)",
+   "reason": "2026-08-09 pass: queried the IBTR feature service for the full County='Cook' set (12 records; see resolved_2026_08_09 below). All 12 addresses checked by coordinate; only the boxelder (chi_004, Edgebrook) and red pine (chi_005, Indian Boundary) fall inside actual Chicago city limits. The other 9 are in far suburbs (Western Springs, Palos Hills, Lemont, Schaumburg/Elk Grove, Wheeling, Homewood-Flossmoor, Winnetka/Glencoe, Tinley Park, South Chicago Heights), well outside the ~30 minute day-trip boundary of downtown, and most of the species (hawthorns, wahoo, serviceberry, blackhaw) are shrubs/small trees rather than remarkable specimens anyway. Do not re-query the register for Chicago; it has been exhausted for this city."
+  },
+  {
+   "name": "Red pine",
+   "species": "Red pine (Pinus resinosa)",
+   "lat": 41.938313,
+   "lng": -87.844853,
+   "register_location": "Indian Boundary Golf Course",
+   "girth_cm": 167,
+   "height_m": 19.5,
+   "register_status": "Yes",
+   "sources": [
+    "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+   ],
+   "source": "Forest Preserves of Cook County champion tree register (government). No licence stated: use the facts for layer 1, never republish the dataset. Circumference assumed inches; check against the DBH field.",
+   "status": "open",
+   "reason": "already published as The Champion Red Pine of Indian Boundary (chicago), 91 m away with matching name words"
+  },
+  {
+   "name": "Private garden bur oak, Evanston (about 600 years per the city arborist, 2013)",
+   "reason": "On a private residence, not seen from public ground per its source (garden-walk stop); not shippable. Estimate from trunk diameter only (580 to 696 years)."
+  },
+  {
+   "name": "Large white oak at 2728 Harrison St, Evanston",
+   "reason": "Ordered removed by the city per a neighbourhood blog; private street tree, presumed gone."
+  }
+ ],
+ "unexplored_2026_08_08": [
+  "Chicago Botanic Garden (Glencoe): checked briefly, the oldest documented specimen (a white oak in McDonald Woods) is only cited as 'over 100 years old', not old enough to be a strong candidate, and Glencoe is a genuine trek from downtown (Metra Union Pacific North to Braeside, then a walk/shuttle, likely 45+ minutes door to door), so it was not pursued further this pass.",
+  "Washington Park (Olmsted, 1870): DNAinfo's 2016 'oldest tree' survey states its oaks 'predate the earliest designs for the park by Frederick Law Olmsted in 1870', but no source found in this pass names or locates an individual specimen there; TCLF's landscape page describes groves only in aggregate. Worth a dedicated look at Chicago Park District records or a site visit.",
+  "hpherald.com's 'Hyde Park Stories: Bur Oaks' article (already a verified_source for chi_002) returned HTTP 429 on WebFetch and 302 on curl in this pass; worth a retry with a delay, it may contain more detail on the Wooded Island/Jackson Park grove or other Hyde Park specimens."
+ ],
+ "resolved_2026_08_09": {
+  "illinois_big_tree_register_feature_service": "The Experience Builder app at https://experience.arcgis.com/experience/df5e7296d76a4c8ba133c9e8adf1f85a is item df5e7296d76a4c8ba133c9e8adf1f85a on arcgis.com (\"IBTR Web Map 2026\", owner cwevans1, org GL0fWlNkwysZaKeV = University of Illinois Extension). Its config (arcgis.com/sharing/rest/content/items/<id>/data?f=json) names the underlying layer as https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0 (capability: Query only). Query with GET params geometry=<envelope>&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&f=json (or where=Common_name=... / County=...). Fields include Common_name, Species, County, Location (free-text, no address), Year_listed_Last_measured, Diameter_at_breast_height__in__, Circumference__ft__, Height__ft__, Spread__ft__, Total_Points (ranking score), pic_url (temporary signed S3 URL, expires), Lat/Long. No age field exists in this register at all. The County field does NOT reliably indicate Chicago city limits (Cook County is mostly suburbs); filter by lat/long against the actual city boundary instead. Never re-hunt this endpoint; query it directly next time."
+ },
+ "resolved_2026_08_09_verify_pass": {
+  "summary": "Second verification pass (deepen, target chi_005 onward). Queried the full IBTR County='Cook' set (12 records, up from the earlier bbox query's 5): only 2 fall inside actual Chicago city limits, the already-shipped boxelder (chi_004) and the red pine at Indian Boundary Golf Course, now delivered as chi_005. The register is genuinely exhausted for Chicago proper; see the new 'Illinois Big Tree Register entries elsewhere in Cook County' blocked entry for the full list of what was checked and ruled out.",
+  "chi_005_red_pine": "Delivered to data/research/chicago-verified.json. Single-source (register only) like chi_004; no independent writeup found naming this specific tree despite searching Sun-Times, Extension press releases and fpdcc.com. It is literally the only red pine on the statewide register (confirmed by querying Common_name='red pine' with no county filter), which is what makes it the register's default state champion for the species.",
+  "chi_006_kenilworth_oak": "Delivered to data/research/chicago-verified.json, a DAY-TRIP entry (Oak Park, not Chicago; CTA Green Line, well under 30 min). Two Wednesday Journal/oakpark.com articles (2011, 2014) corroborate existence, species and general story but disagree on age (230 vs ~300 years, both recorded). Not reconfirmed alive since 2014; flagged explicitly because a sibling Oak Park heritage oak on Forest Ave (different tree, same cohort) was confirmed dead and removed in October 2025, which is real reason for caution about 12-year-old sourcing on a tree of similar age and provenance.",
+  "dead_ends_this_pass": "Washington Park (still no individual specimen, only the Olmsted-era grove claim, unchanged from 2026-08-08), Rosehill Cemetery, Oak Woods Cemetery, Indian Boundary Park (West Ridge, distinct from the golf course of the same name), and a Jackson Park photo essay (southsideweekly.com) all searched with no individual named tree found. hpherald.com's Hyde Park bur oak article (previously 429) was reread successfully this pass via search snippet, added nothing beyond what chi_001/chi_002 already cite."
+ },
+ "pass_2026_10_02_verify": "Chicago deepen pass, 0 verified. Graceland Tree Tour PDF is a map image, unreadable by curl/WebFetch, no named specimen text reachable; search only says labeled arboretum with a large bald cypress near the lake (lead, no source). UChicago: Maroon piece names only a ~100-year bur oak by Bartlett Gym (too young, not a collectible); facilities oaks article 302s to intranet; Lab School oak unchanged. Lincoln Park / Garfield Park cycads: only travel-blog and Wikipedia generic ('some cycads over 200 years old'), indoor plants, no individual dated specimen, not trees. IBTR 2025-26 additions near Chicago (Wheeling HS elm, Midway Woods witch hazel, St James at Sag Bridge slippery elm, South Suburban College serviceberry) are suburban, outside day-trip boundary. No Chicago Tree Initiative or Park District heritage-tree list found.",
+ "pass_2026_10_03_pin_photo": "Pin-and-photo pass: nothing placeable. Old Treaty Elm (Sauganash) fell 1934; Lincoln Park Zoo bur oak felled 2023-05-02 (both dead, do not publish). Forest Preserves of Cook County Champion Tree Register and map 403 to fetchers and no public FeatureServer found at gis12/gis.cookcountyil.gov (empty responses); Morton PP_Trees_Cook_County layer has no species or coordinates of named trees. Existing leads (UChicago quad stand, Graceland, Lab School oak) have no single trunk or no recoverable text.",
+ "pass_2026_11_04_verify": "Verify pass 2026-11-04: delivered chi_040..chi_044 to data/research/chicago-2026-11-verified.json (4 Forest Preserves champions: McClaughrey sycamore, Swallow Cliff black cherry and white pine, Schiller pin oak; plus Northwestern's bur oak by 1835 Hinman in Evanston). Morton Arboretum Millennium Landmark Tree, Rate Field cottonwood, Chicago Botanic Garden oak, Rosehill, Washington/Garfield/Humboldt/Lincoln Park individual trees: no placeable tree or no source, see leads. Evanston gave one shippable tree, so no Evanston place."
 }

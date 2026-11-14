@@ -1743,6 +1743,125 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "chi_048",
+      "name": "The Champion Red Oak of Busse Forest South",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 391,
+      "height_m": 31.7,
+      "location": {
+        "address": "Busse Forest South, Forest Preserves of Cook County, Elk Grove Village / Mount Prospect, Illinois",
+        "latitude": 42.022072,
+        "longitude": -87.998534,
+        "neighbourhood": "Busse Forest South"
+      },
+      "story": "Cook County's champion red oak is not the tallest red oak within fifty metres of where it stands.\n\nThe Forest Preserves of Cook County measured it on 11 August 2023 and ranked it first of its species on all their land. The trunk is 3.91 metres round, 154 inches, the height 31.7 metres, and the crown about 20 metres across in both directions. Forty-two metres away stands the county's third-ranked red oak, five metres taller at 36.6 but 71 centimetres thinner in the trunk. The register scores girth, height and crown together, and the thicker, rounder tree comes out on top.\n\nElsewhere on our map red oaks run bigger. Atlanta's champion in Herbert Taylor Park reaches 41.8 metres, and three in Portland, Oregon, carry trunks more than five and a half metres round. What Busse Forest South has instead is company. The county's second-ranked sugar maple stands 48 metres off, its champion butternut 39, and with the other red oak that makes four ranked trees inside about 60 metres. The champion Ohio buckeye is about 760 metres away.\n\nThe pin is the register's GPS fix at the trunk. We have not found which trail passes closest.\n\nThe register records size, rank and the day of measurement, and nothing about age. Nobody has dated this oak. If you know how old it is, tell us. Come in October, when red oaks turn a deep red.",
+      "how_to_recognise": "You can recognise it by the trunk, 3.91 metres round, the thicker of the two ranked red oaks here. It stands in Busse Forest South about 42 metres from the taller third-ranked red oak and 48 metres from the ranked sugar maple.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the red oak's leaves turn a rich red"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D72&outFields=*&f=json",
+        "https://fpdcc.com/nature/champion-tree-register/"
+      ],
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register",
+        "url": "https://fpdcc.com/nature/champion-tree-register/"
+      },
+      "access": "Public forest preserve, free; the register lists Public_Access = Yes. Hours not checked for this site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "chi_049",
+      "name": "The Third-Ranked Red Oak of Busse Forest South",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 320,
+      "height_m": 36.6,
+      "location": {
+        "address": "Busse Forest South, Forest Preserves of Cook County, Elk Grove Village / Mount Prospect, Illinois",
+        "latitude": 42.022444,
+        "longitude": -87.998606,
+        "neighbourhood": "Busse Forest South"
+      },
+      "story": "This red oak stands five metres taller than the county champion 42 metres away, and the register still places it third.\n\nThe Forest Preserves of Cook County measured it on 25 August 2023 at 36.6 metres tall, 120 feet, on a trunk 3.20 metres round, under a crown about 19 metres one way and 16.5 the other. The champion carries 71 more centimetres of trunk and a wider crown, and the county's score adds girth, height and crown together. Height alone does not win it. Somewhere else on preserve land, a second red oak sits between the two in the ranking.\n\nAmong the red oaks on our map with a recorded height, only Atlanta's champion in Herbert Taylor Park is taller, at 41.8 metres.\n\nThe survey that day turned up a neat coincidence. The county's second-ranked sugar maple, measured on the same date about 20 metres away, is also exactly 36.6 metres tall. Add the champion butternut, 23 metres off, and the champion red oak, and Busse Forest South holds four ranked trees of three species inside about 60 metres, an easy comparison on one short walk.\n\nThe pin is the register's GPS fix at the trunk. We have not found which trail passes closest.\n\nThe register gives size, rank and date, and no age. Nobody has dated this oak. If you know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by its height, 36.6 metres on a trunk 3.20 metres round, slimmer than the champion red oak. It stands in Busse Forest South about 42 metres from that champion and 20 metres from the ranked sugar maple.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the red oak's leaves turn a rich red"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D71&outFields=*&f=json",
+        "https://fpdcc.com/nature/champion-tree-register/"
+      ],
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register",
+        "url": "https://fpdcc.com/nature/champion-tree-register/"
+      },
+      "access": "Public forest preserve, free; the register lists Public_Access = Yes. Hours not checked for this site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "chi_051",
+      "name": "The Champion Butternut of Busse Forest South",
+      "species": "Butternut (Juglans cinerea)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 223,
+      "height_m": 29.3,
+      "location": {
+        "address": "Busse Forest South, Forest Preserves of Cook County, Elk Grove Village / Mount Prospect, Illinois",
+        "latitude": 42.022337,
+        "longitude": -87.998838,
+        "neighbourhood": "Busse Forest South"
+      },
+      "story": "Cook County's champion butternut belongs to a species Canada lists as endangered.\n\nButternut is a walnut, Juglans cinerea, and across its native range a fungal canker, first reported in Wisconsin in 1967, has killed a large share of the wild trees. The Forest Preserves of Cook County ranked this one first among the butternuts on their land, a tree their register also calls white walnut. They measured it on 11 August 2023 at 29.3 metres tall, 96 feet, on a trunk 2.23 metres round, with a crown about 15.5 metres one way and 13.4 the other. The register records its size, not its health, so we cannot say how it is faring.\n\nThe biggest butternut on our map is not in America at all. The Grey Walnut in Bologna's botanical garden is 4.20 metres round and 32.5 metres tall, nearly twice this trunk.\n\nBusse Forest South keeps the champion in ranked company. The county's second-ranked sugar maple, seven metres taller, stands 11 metres away. The third-ranked red oak is 23 metres off and the champion red oak 39, so four ranked trees share about 60 metres of woodland. The champion Ohio buckeye is some 800 metres away.\n\nThe pin is the register's GPS fix at the trunk. We have not found which trail passes closest.\n\nThe register gives no age, and nobody has dated this butternut. If you know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 2.23 metres round on a walnut 29.3 metres tall, the slimmest of the four ranked trees here. It stands in Busse Forest South 11 metres from the ranked sugar maple.",
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D32&outFields=*&f=json",
+        "https://fpdcc.com/nature/champion-tree-register/"
+      ],
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register",
+        "url": "https://fpdcc.com/nature/champion-tree-register/"
+      },
+      "access": "Public forest preserve, free; the register lists Public_Access = Yes. Hours not checked for this site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
